@@ -13,6 +13,8 @@
 
 export const IMAGE_VERSION = 'v2'
 export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
+// Anchor id for a subcategory section on its category page (/shop/<cat>/#<subSlug>).
+export const subSlug = (sub) => sub.toLowerCase().replace(/&/g, 'and').replace(/\+/g, '-plus').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 
 export const CATEGORIES = [
   {

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CategoryChips from '@/components/CategoryChips'
 import ProductCard from '@/components/ProductCard'
-import { SITE, CATEGORIES, POSTS, categoryBySlug, productsInCategory } from '@/config/site'
+import { SITE, CATEGORIES, POSTS, categoryBySlug, productsInCategory, subSlug } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
 
@@ -49,7 +49,7 @@ export default async function CategoryPage({ params }) {
         <div className="container">
           <CategoryChips current={c.slug} />
           {groups.map((g, i) => (
-            <section key={g.sub} aria-labelledby={`sub-${i}`} style={{ marginBottom: 48 }}>
+            <section key={g.sub} id={subSlug(g.sub)} aria-labelledby={`sub-${i}`} className="sub-section" style={{ marginBottom: 48 }}>
               <h2 id={`sub-${i}`}>{g.sub}</h2>
               <div className="product-grid">
                 {g.items.map((p, j) => (
