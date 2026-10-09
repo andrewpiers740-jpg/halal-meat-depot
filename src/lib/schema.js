@@ -3,7 +3,7 @@
 // Emails are deliberately NOT included (spam-scraper hygiene); phone is.
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '../config/site.js'
 
-const logo = () => `${SITE.url}/images/logo.webp`
+const logo = () => `${SITE.url}/images/logo-v2.webp`
 
 export function postalAddress() {
   const a = SITE.address
@@ -134,7 +134,7 @@ export function articleSchema(post) {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
-    image: `${SITE.url}/images/og-default.webp`,
+    image: `${SITE.url}/images/og-v2.webp`,
     datePublished: post.date,
     dateModified: post.updated || post.date,
     author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/` },

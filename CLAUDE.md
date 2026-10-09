@@ -32,4 +32,4 @@ Next.js 16 (App Router, JavaScript) ecommerce site for a Greenacre, Sydney halal
 - GSC/Bing codes: `SITE.gscCode` / `SITE.bingCode`.
 
 ## Brand facts (real only)
-Founded 2021 (owner confirmed; logo artwork wrongly says "Since 2023"). Delivery only — no pickup. 43 Banksia Rd, Greenacre NSW 2190. ABN 27 093 995 629. Phone/WhatsApp +61 489 989 442. Mon–Sat 06:00–18:00, Sun 07:00–16:00. Delivers Australia-wide. Payments: PayID, bank transfer, crypto (10% off). Min order $250, free delivery $500+, else $25. No reviews/awards supplied yet.
+Founded 2021 (owner confirmed). Logo: `assets/logo-source.png` (cow, lamb, rooster, kangaroo — never any artwork with a pig). Delivery only — no pickup. 43 Banksia Rd, Greenacre NSW 2190. ABN 27 093 995 629. Phone/WhatsApp +61 489 989 442. Mon–Sat 06:00–18:00, Sun 07:00–16:00. Delivers Australia-wide. Payments: PayID, bank transfer, crypto (10% off). Min order $250, free delivery $500+, else $25. No reviews/awards supplied yet.

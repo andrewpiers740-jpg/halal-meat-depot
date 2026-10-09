@@ -1,6 +1,6 @@
 // Image pipeline.
-//  1. Brand assets from assets/logo-source.jpg → public/images/logo.webp,
-//     src/app/icon.png, src/app/apple-icon.png, public/images/og-default.webp
+//  1. Brand assets from assets/logo-source.png → public/images/logo-v2.webp,
+//     src/app/icon.png, src/app/apple-icon.png, public/images/og-v2.webp
 //  2. Real product photos: assets/product-photos/<slug>.(jpg|png|webp|…) →
 //     trimmed, scaled to fill ~90% of a white 4:3 1600×1200 canvas, adaptive
 //     quality under 145KB, written as public/images/products/<slug>.webp + .avif
@@ -69,10 +69,15 @@ const TONES = {
   'wholesale-cartons': ['#151b22', '#2f4456'],
 }
 
-const logo = out('assets/logo-source.jpg')
-const logoCircle = async (size) => {
+// Full logo (wordmark + emblem) and the emblem alone (cow, lamb, rooster,
+// kangaroo) — the emblem is used wherever the logo is shown small.
+const logo = out('assets/logo-source.png')
+const emblem = await sharp(logo).extract({ left: 382, top: 150, width: 490, height: 465 }).resize(512, 512, { fit: 'contain', background: '#ffffff' }).flatten({ background: '#ffffff' }).png().toBuffer()
+const logoCircle = async (size, src = emblem) => {
   const mask = Buffer.from(`<svg width="${size}" height="${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${size / 2}" fill="#fff"/></svg>`)
-  return sharp(logo).resize(size, size).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer()
+  const inner = Math.round(size * 0.84)
+  const disc = sharp({ create: { width: size, height: size, channels: 4, background: '#ffffff' } }).composite([{ input: await sharp(src).resize(inner, inner, { fit: 'contain', background: '#ffffff' }).png().toBuffer(), gravity: 'centre' }])
+  return sharp(await disc.png().toBuffer()).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer()
 }
 
 function placeholderSvg({ w, h, tone, eyebrow, title, sub, foot, titleSize }) {
@@ -107,16 +112,17 @@ async function placeholder({ w, h, tone, eyebrow, title, sub, foot, titleSize, b
 }
 
 // 1 — brand assets
-await writeRetry('public/images/logo.webp', await sharp(logo).resize(512, 512).webp({ quality: 86 }).toBuffer())
-await writeRetry('src/app/icon.png', await sharp(await logoCircle(192)).png().toBuffer())
-await writeRetry('src/app/apple-icon.png', await sharp(logo).resize(180, 180).flatten({ background: '#ffffff' }).png().toBuffer())
+await writeRetry('public/images/logo-v2.webp', await sharp(logo).resize(512, 512).webp({ quality: 86 }).toBuffer())
+await writeRetry('public/images/logo-mark-v2.webp', await sharp(emblem).resize(128, 128).webp({ quality: 88 }).toBuffer())
+await writeRetry('src/app/icon.png', await sharp(emblem).resize(192, 192).png().toBuffer())
+await writeRetry('src/app/apple-icon.png', await sharp(emblem).resize(180, 180).png().toBuffer())
 {
   const svg = placeholderSvg({ w: 1200, h: 630, tone: ['#1a0d0e', '#6e1419'], eyebrow: 'HALAL MEAT DEPOT · SYDNEY', title: 'Certified halal meat, delivered Australia-wide', sub: '', foot: 'Certified by Halal Control Australia', titleSize: 64 })
-  const badge = await logoCircle(230)
+  const badge = await logoCircle(230, logo)
   const buf = await sharp(svg).composite([{ input: badge, top: 60, left: 1200 - 230 - 60 }]).webp({ quality: 84 }).toBuffer()
-  await writeRetry('public/images/og-default.webp', buf)
+  await writeRetry('public/images/og-v2.webp', buf)
 }
-console.log('brand assets: logo.webp, icon.png, apple-icon.png, og-default.webp')
+console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon.png, og-v2.webp')
 
 // 2 — real product photos
 const srcDir = out('assets/product-photos')

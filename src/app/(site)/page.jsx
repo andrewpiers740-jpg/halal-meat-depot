@@ -59,7 +59,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-emblem">
-            <Image src="/images/logo.webp" alt="Halal Meat Depot logo — butchery, premium, quality" width={512} height={512} priority sizes="(max-width: 900px) 80vw, 360px" />
+            <Image src="/images/logo-v2.webp" alt="Halal Meat Depot logo — cow, lamb, rooster and kangaroo" width={512} height={512} priority sizes="(max-width: 900px) 80vw, 360px" />
           </div>
         </div>
       </section>

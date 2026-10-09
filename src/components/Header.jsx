@@ -20,7 +20,7 @@ export default function Header({ siteName, nav, categories }) {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="logo" aria-label={`${siteName} — home`}>
-          <Image src="/images/logo.webp" alt="" width={46} height={46} priority />
+          <Image src="/images/logo-mark-v2.webp" alt="" width={46} height={46} priority />
           <span>
             Halal Meat Depot
             <small>Certified Halal · Sydney</small>

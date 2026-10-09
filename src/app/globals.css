@@ -161,8 +161,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero .brand-statement { font-size: 1.08rem; color: #ead8d5; max-width: 60ch; }
 .hero-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16); font-size: 0.85rem; font-weight: 600; color: #f7e3df; margin-bottom: 18px; }
-.hero-emblem { justify-self: center; width: min(360px, 80vw); aspect-ratio: 1; border-radius: 50%; background: #fff; padding: 18px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 0 10px rgba(255, 255, 255, 0.06); }
-.hero-emblem img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+.hero-emblem { justify-self: center; width: min(360px, 80vw); aspect-ratio: 1; border-radius: 50%; background: #fff; padding: 10%; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 0 10px rgba(255, 255, 255, 0.06); }
+.hero-emblem img { width: 100%; height: 100%; object-fit: contain; }
 .hero-facts { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 26px; font-size: 0.92rem; color: #ecd9d6; }
 .hero-facts span { display: inline-flex; align-items: center; gap: 8px; }
 .hero-facts .icon { color: var(--accent); }

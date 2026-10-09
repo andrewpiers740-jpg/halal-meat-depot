@@ -7,7 +7,7 @@ export const BUILD_TIME = new Date().toISOString()
 // descriptions 110–158 chars are enforced by scripts/crosscheck.mjs.
 export function pageMeta({ title, description, path = '/', image, noindex = false, type = 'website' }) {
   const url = `${SITE.url}${path}`
-  const img = image || `${SITE.url}/images/og-default.webp`
+  const img = image || `${SITE.url}/images/og-v2.webp`
   return {
     title: { absolute: title },
     description,

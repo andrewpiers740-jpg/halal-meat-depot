@@ -4,7 +4,7 @@
 - Name: Halal Meat Depot · Tagline: "Certified halal meat at depot prices, delivered Australia-wide"
 - Domain: **PENDING** (`SITE.domain = 'DOMAIN.com'`; absolute URLs use the Vercel production URL until set)
 - Brand colours: maroon `#9F1D24` (from logo), dark `#1A0D0E`, amber accent `#E3A83F` · Font: Plus Jakarta Sans (self-hosted via next/font)
-- Logo: `assets/logo-source.jpg` — logo artwork reads "SINCE 2023" but the business was founded **2021** (owner confirmed 2026-10-09); logo artwork needs updating
+- Logo: `assets/logo-source.png` — owner-supplied logo (2026-10-09), edited with owner approval: pig removed, emblem now cow, lamb, rooster, kangaroo. No year on the logo; founded **2021**. Favicon/header use the emblem crop; hero/OG use the full logo. Proposal files in `docs/logo-proposal/`.
 - GSC: pending · Bing: pending · IndexNow key: `b7f3c2e9a1d84f6c9e2b5a7d3c1f8e4a`
 
 ## Deploy
@@ -67,5 +67,6 @@ ADMIN_PASSCODE: not set · Redis: not connected · WhatsApp: 61489989442 · Emai
 - 2026-10-09 — Venison dropped (not in any category; owner didn't confirm).
 - 2026-10-09 — Placeholder product images (branded) until owner supplies photos; Unsplash stock removed.
 - 2026-10-09 — Pickup removed site-wide (owner: not offered). Delivery only.
-- 2026-10-09 — Founding year 2021 confirmed by owner (logo artwork still says 2023).
+- 2026-10-09 — Founding year 2021 confirmed by owner.
+- 2026-10-09 — New logo supplied by owner contained a pig; pig removed and replaced with kangaroo + redrawn rooster, owner approved. Never use logo artwork containing a pig.
 - 2026-10-09 — Refund & Returns Policy expanded (/refund/): 48-hour reporting window (was 24h, extended for Australia-wide delivery), ACL mandatory text, cancellations before packing, refunds within 5 business days, crypto refunds in same coin at AUD value.
