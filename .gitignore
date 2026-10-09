@@ -1,8 +1,14 @@
 node_modules/
-build/
+.next/
+out/
 dist/
-coverage/
-.DS_Store
+.env
+.env*.local
+.vercel
 *.log
-.env*
-!.env.example
+.claude/
+# generated at build time by scripts/gen-agent-files.mjs (vercel.json is generated too, but committed — Vercel reads it before the build)
+public/llms.txt
+public/auth.md
+public/.well-known/
+public/js/webmcp.js

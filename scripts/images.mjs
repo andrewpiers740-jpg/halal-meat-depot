@@ -1,0 +1,193 @@
+// Image pipeline.
+//  1. Brand assets from assets/logo-source.jpg → public/images/logo.webp,
+//     src/app/icon.png, src/app/apple-icon.png, public/images/og-default.webp
+//  2. Real product photos: assets/product-photos/<slug>.(jpg|png|webp|…) →
+//     trimmed, scaled to fill ~90% of a white 4:3 1600×1200 canvas, adaptive
+//     quality under 145KB, written as public/images/products/<slug>.webp + .avif
+//  3. Any product WITHOUT a real photo gets a branded placeholder at the same
+//     path, so swapping in a real photo later needs no code change.
+//  4. Category tiles → public/images/categories/<slug>.webp + .avif
+//  Also writes docs/_contact-sheet.png for review.
+import sharp from 'sharp'
+import { readdirSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { resolve, dirname, basename, extname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { PRODUCTS, CATEGORIES } from '../src/config/site.js'
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const out = (p) => resolve(root, p)
+const mk = (p) => mkdirSync(dirname(out(p)), { recursive: true })
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+const writeRetry = async (file, buf) => {
+  mk(file)
+  for (let i = 0; ; i++) {
+    try {
+      writeFileSync(out(file), buf)
+      return
+    } catch (e) {
+      if (i >= 8) throw e
+      await sleep(150)
+    }
+  }
+}
+const CAP = 145 * 1024
+async function encodeBoth(pipeline, base) {
+  for (const [fmt, qStart, ext] of [['webp', 88, 'webp'], ['avif', 62, 'avif']]) {
+    let buf
+    for (let q = qStart; ; q -= 6) {
+      buf = await pipeline.clone()[fmt]({ quality: q }).toBuffer()
+      if (buf.length <= CAP || q <= 40) break
+    }
+    await writeRetry(`${base}.${ext}`, buf)
+  }
+}
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+function wrap(text, max) {
+  const words = String(text).split(/\s+/)
+  const lines = []
+  let line = ''
+  for (const w of words) {
+    if ((line + ' ' + w).trim().length > max && line) {
+      lines.push(line)
+      line = w
+    } else line = (line + ' ' + w).trim()
+  }
+  if (line) lines.push(line)
+  return lines
+}
+
+// Warm, on-brand tone per category so grids read as intentional, not identical.
+const TONES = {
+  beef: ['#3b0f13', '#8f1c24'],
+  lamb: ['#3a1410', '#9a3b22'],
+  goat: ['#2f1a0f', '#8a5426'],
+  chicken: ['#3a2508', '#a8701c'],
+  camel: ['#33200f', '#94642c'],
+  duck: ['#16242a', '#2f5d68'],
+  kangaroo: ['#2c120f', '#7d2e22'],
+  'water-buffalo': ['#1c1a1f', '#4b3f52'],
+  'wholesale-cartons': ['#151b22', '#2f4456'],
+}
+
+const logo = out('assets/logo-source.jpg')
+const logoCircle = async (size) => {
+  const mask = Buffer.from(`<svg width="${size}" height="${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${size / 2}" fill="#fff"/></svg>`)
+  return sharp(logo).resize(size, size).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer()
+}
+
+function placeholderSvg({ w, h, tone, eyebrow, title, sub, foot, titleSize }) {
+  const [a, b] = tone
+  const lines = wrap(title, Math.round((w * 0.62) / (titleSize * 0.56)))
+  const lh = titleSize * 1.12
+  const startY = h / 2 - ((lines.length - 1) * lh) / 2 + titleSize * 0.1
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient>
+    <pattern id="p" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="36" fill="#ffffff" fill-opacity="0.04"/></pattern>
+    <radialGradient id="r" cx="0.85" cy="0.15" r="0.8"><stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#p)"/>
+  <rect width="100%" height="100%" fill="url(#r)"/>
+  <text x="${w * 0.07}" y="${h * 0.13}" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="${Math.round(titleSize * 0.32)}" letter-spacing="4" fill="#E3A83F">${esc(eyebrow)}</text>
+  ${lines.map((l, i) => `<text x="${w * 0.07}" y="${startY + i * lh}" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="${titleSize}" fill="#ffffff">${esc(l)}</text>`).join('\n  ')}
+  ${sub ? `<text x="${w * 0.07}" y="${startY + lines.length * lh + titleSize * 0.15}" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="${Math.round(titleSize * 0.42)}" fill="#F3DCD8">${esc(sub)}</text>` : ''}
+  <rect x="${w * 0.07}" y="${h * 0.86}" width="${w * 0.12}" height="4" fill="#E3A83F"/>
+  <text x="${w * 0.07}" y="${h * 0.93}" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="${Math.round(titleSize * 0.3)}" fill="#F3DCD8">${esc(foot)}</text>
+</svg>`)
+}
+
+async function placeholder({ w, h, tone, eyebrow, title, sub, foot, titleSize, base, badgeSize }) {
+  const badge = await logoCircle(badgeSize)
+  const pipe = sharp(placeholderSvg({ w, h, tone, eyebrow, title, sub, foot, titleSize })).composite([
+    { input: badge, top: Math.round(h * 0.07), left: Math.round(w - badgeSize - w * 0.06) },
+  ])
+  const flat = sharp(await pipe.png().toBuffer())
+  await encodeBoth(flat, base)
+}
+
+// 1 — brand assets
+await writeRetry('public/images/logo.webp', await sharp(logo).resize(512, 512).webp({ quality: 86 }).toBuffer())
+await writeRetry('src/app/icon.png', await sharp(await logoCircle(192)).png().toBuffer())
+await writeRetry('src/app/apple-icon.png', await sharp(logo).resize(180, 180).flatten({ background: '#ffffff' }).png().toBuffer())
+{
+  const svg = placeholderSvg({ w: 1200, h: 630, tone: ['#1a0d0e', '#6e1419'], eyebrow: 'HALAL MEAT DEPOT · SYDNEY', title: 'Certified halal meat, delivered Australia-wide', sub: '', foot: 'Certified by Halal Control Australia', titleSize: 64 })
+  const badge = await logoCircle(230)
+  const buf = await sharp(svg).composite([{ input: badge, top: 60, left: 1200 - 230 - 60 }]).webp({ quality: 84 }).toBuffer()
+  await writeRetry('public/images/og-default.webp', buf)
+}
+console.log('brand assets: logo.webp, icon.png, apple-icon.png, og-default.webp')
+
+// 2 — real product photos
+const srcDir = out('assets/product-photos')
+const photos = existsSync(srcDir) ? readdirSync(srcDir).filter((f) => /\.(jpe?g|png|webp|avif|tiff?)$/i.test(f)) : []
+const real = new Set()
+const W = 1600, H = 1200, FILL = 0.9
+for (const file of photos) {
+  const slug = basename(file, extname(file)).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+  const src = resolve(srcDir, file)
+  const meta = await sharp(src).rotate().metadata()
+  let buf = await sharp(src).rotate().toBuffer()
+  let tw = meta.width, th = meta.height
+  try {
+    const t = await sharp(buf).trim({ threshold: 12 }).toBuffer({ resolveWithObject: true })
+    if (t.info.width >= meta.width * 0.12 && t.info.height >= meta.height * 0.12) {
+      buf = t.data
+      tw = t.info.width
+      th = t.info.height
+    }
+  } catch {}
+  const scale = Math.min((W * FILL) / tw, (H * FILL) / th)
+  let inner = sharp(buf).resize(Math.round(W * FILL), Math.round(H * FILL), { fit: 'inside', kernel: 'lanczos3' })
+  if (scale > 1.1) inner = inner.sharpen({ sigma: 1 })
+  const canvas = sharp({ create: { width: W, height: H, channels: 4, background: '#ffffff' } })
+    .composite([{ input: await inner.toBuffer(), gravity: 'centre' }])
+    .flatten({ background: '#ffffff' })
+  await encodeBoth(sharp(await canvas.png().toBuffer()), `public/images/products/${slug}`)
+  real.add(slug)
+  if (Math.min(tw, th) < 500) console.log(`  low-res source (reshoot candidate): ${file} (${tw}x${th})`)
+}
+console.log(`product photos processed: ${real.size}`)
+
+// 3 — placeholders for products without photos
+let ph = 0
+for (const p of PRODUCTS) {
+  if (real.has(p.slug)) continue
+  const cat = CATEGORIES.find((c) => c.slug === p.cat)
+  await placeholder({
+    w: 1600, h: 1200, tone: TONES[p.cat] || TONES.beef, titleSize: 104, badgeSize: 230,
+    eyebrow: `HALAL MEAT DEPOT · ${cat.name.toUpperCase()}`,
+    title: p.name,
+    sub: p.unit,
+    foot: 'Certified halal · Halal Control Australia',
+    base: `public/images/products/${p.slug}`,
+  })
+  ph++
+}
+console.log(`product placeholders: ${ph}`)
+
+// 4 — category tiles
+for (const c of CATEGORIES) {
+  await placeholder({
+    w: 1200, h: 900, tone: TONES[c.slug] || TONES.beef, titleSize: 120, badgeSize: 170,
+    eyebrow: 'HALAL MEAT DEPOT · CERTIFIED HALAL',
+    title: '',
+    sub: '',
+    foot: '',
+    base: `public/images/categories/${c.slug}`,
+  })
+}
+console.log(`category tiles: ${CATEGORIES.length}`)
+
+// contact sheet (first 24 products) for review — docs/ never deploys
+{
+  const tiles = await Promise.all(
+    PRODUCTS.slice(0, 24).map(async (p) => ({ input: await sharp(out(`public/images/products/${p.slug}.webp`)).resize(400, 300).png().toBuffer() }))
+  )
+  const cols = 6
+  const sheet = sharp({ create: { width: cols * 400, height: Math.ceil(tiles.length / cols) * 300, channels: 3, background: '#ffffff' } }).composite(
+    tiles.map((t, i) => ({ ...t, left: (i % cols) * 400, top: Math.floor(i / cols) * 300 }))
+  )
+  await writeRetry('docs/_contact-sheet.png', await sheet.png().toBuffer())
+}
+console.log('contact sheet: docs/_contact-sheet.png')

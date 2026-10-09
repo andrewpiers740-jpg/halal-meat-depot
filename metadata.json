@@ -1,6 +1,0 @@
-{
-  "name": "Halal Meat Depot",
-  "description": "Sydney's premier 100% certified Halal meat depot in Greenacre NSW. Wholesale and retail cuts, beef, lamb, poultry, and goat.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
