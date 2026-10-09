@@ -12,7 +12,7 @@ import sharp from 'sharp'
 import { readdirSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { resolve, dirname, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { PRODUCTS, CATEGORIES } from '../src/config/site.js'
+import { PRODUCTS, CATEGORIES, categoryImage } from '../src/config/site.js'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const out = (p) => resolve(root, p)
@@ -72,10 +72,10 @@ const TONES = {
 // Full logo (wordmark + emblem) and the emblem alone (cow, lamb, rooster,
 // kangaroo) — the emblem is used wherever the logo is shown small.
 const logo = out('assets/logo-source.png')
-const emblem = await sharp(logo).extract({ left: 382, top: 150, width: 490, height: 465 }).resize(512, 512, { fit: 'contain', background: '#ffffff' }).flatten({ background: '#ffffff' }).png().toBuffer()
+const emblem = await sharp(logo).extract({ left: 340, top: 195, width: 575, height: 418 }).resize(512, 512, { fit: 'contain', background: '#ffffff' }).flatten({ background: '#ffffff' }).png().toBuffer()
 const logoCircle = async (size, src = emblem) => {
   const mask = Buffer.from(`<svg width="${size}" height="${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${size / 2}" fill="#fff"/></svg>`)
-  const inner = Math.round(size * 0.84)
+  const inner = Math.round(size * 0.8)
   const disc = sharp({ create: { width: size, height: size, channels: 4, background: '#ffffff' } }).composite([{ input: await sharp(src).resize(inner, inner, { fit: 'contain', background: '#ffffff' }).png().toBuffer(), gravity: 'centre' }])
   return sharp(await disc.png().toBuffer()).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer()
 }
@@ -149,7 +149,8 @@ for (const file of photos) {
   const canvas = sharp({ create: { width: W, height: H, channels: 4, background: '#ffffff' } })
     .composite([{ input: await inner.toBuffer(), gravity: 'centre' }])
     .flatten({ background: '#ffffff' })
-  await encodeBoth(sharp(await canvas.png().toBuffer()), `public/images/products/${slug}`)
+  const prod = PRODUCTS.find((p) => p.slug === slug)
+  await encodeBoth(sharp(await canvas.png().toBuffer()), `public/images/products/${prod ? prod.images[0].replace(/\.webp$/, '') : slug}`)
   real.add(slug)
   if (Math.min(tw, th) < 500) console.log(`  low-res source (reshoot candidate): ${file} (${tw}x${th})`)
 }
@@ -161,12 +162,12 @@ for (const p of PRODUCTS) {
   if (real.has(p.slug)) continue
   const cat = CATEGORIES.find((c) => c.slug === p.cat)
   await placeholder({
-    w: 1600, h: 1200, tone: TONES[p.cat] || TONES.beef, titleSize: 104, badgeSize: 230,
+    w: 1600, h: 1200, tone: TONES[p.cat] || TONES.beef, titleSize: 104, badgeSize: 280,
     eyebrow: `HALAL MEAT DEPOT · ${cat.name.toUpperCase()}`,
     title: p.name,
     sub: p.unit,
     foot: 'Certified halal · Halal Control Australia',
-    base: `public/images/products/${p.slug}`,
+    base: `public/images/products/${p.images[0].replace(/\.webp$/, '')}`,
   })
   ph++
 }
@@ -175,20 +176,39 @@ console.log(`product placeholders: ${ph}`)
 // 4 — category tiles
 for (const c of CATEGORIES) {
   await placeholder({
-    w: 1200, h: 900, tone: TONES[c.slug] || TONES.beef, titleSize: 120, badgeSize: 170,
-    eyebrow: 'HALAL MEAT DEPOT · CERTIFIED HALAL',
+    w: 1200, h: 900, tone: TONES[c.slug] || TONES.beef, titleSize: 120, badgeSize: 220,
+    eyebrow: 'HALAL MEAT DEPOT',
     title: '',
     sub: '',
     foot: '',
-    base: `public/images/categories/${c.slug}`,
+    base: `public/images/categories/${categoryImage(c.slug).replace(/\.webp$/, '')}`,
   })
 }
 console.log(`category tiles: ${CATEGORIES.length}`)
 
+// prune image files no product/category uses any more (old versions)
+{
+  const { unlinkSync } = await import('node:fs')
+  const keep = new Set([
+    ...PRODUCTS.flatMap((p) => p.images.flatMap((i) => [i, i.replace(/\.webp$/, '.avif')])),
+    ...CATEGORIES.flatMap((c) => [categoryImage(c.slug), categoryImage(c.slug).replace(/\.webp$/, '.avif')]),
+  ])
+  let pruned = 0
+  for (const dir of ['public/images/products', 'public/images/categories']) {
+    for (const f of readdirSync(out(dir))) {
+      if (!keep.has(f)) {
+        unlinkSync(out(`${dir}/${f}`))
+        pruned++
+      }
+    }
+  }
+  console.log(`pruned old image files: ${pruned}`)
+}
+
 // contact sheet (first 24 products) for review — docs/ never deploys
 {
   const tiles = await Promise.all(
-    PRODUCTS.slice(0, 24).map(async (p) => ({ input: await sharp(out(`public/images/products/${p.slug}.webp`)).resize(400, 300).png().toBuffer() }))
+    PRODUCTS.slice(0, 24).map(async (p) => ({ input: await sharp(out(`public/images/products/${p.images[0]}`)).resize(400, 300).png().toBuffer() }))
   )
   const cols = 6
   const sheet = sharp({ create: { width: cols * 400, height: Math.ceil(tiles.length / cols) * 300, channels: 3, background: '#ffffff' } }).composite(

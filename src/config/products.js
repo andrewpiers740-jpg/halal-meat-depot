@@ -5,10 +5,14 @@
 // (October 2026, see docs/PROJECT.md → "Pricing basis"), discounted for depot
 // bulk packs. The owner should review them before launch.
 //
-// Images: every product points at /images/products/<slug>.webp. Until real
+// Images: every product points at /images/products/<slug>-<IMAGE_VERSION>.webp.
+// Bump IMAGE_VERSION whenever images are regenerated so no cache serves old ones. Until real
 // photos are supplied, scripts/images.mjs generates a branded placeholder at
 // that exact path — dropping a real photo into assets/product-photos/<slug>.jpg
 // and running `npm run images` replaces it with no code change.
+
+export const IMAGE_VERSION = 'v2'
+export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
 
 export const CATEGORIES = [
   {
@@ -167,7 +171,7 @@ function p(cat, sub, name, unit, kg, perKg, short, desc, extra = {}) {
     desc,
     badge: extra.badge || null,
     featured: Boolean(extra.featured),
-    images: [`${slug}.webp`],
+    images: [`${slug}-${IMAGE_VERSION}.webp`],
   }
 }
 

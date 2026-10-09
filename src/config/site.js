@@ -4,7 +4,7 @@
 // The domain appears in exactly ONE place: SITE.domain. To go live, change that
 // one line, rebuild and push — never find-and-replace a domain across files.
 
-export { CATEGORIES, PRODUCTS, productBySlug, categoryBySlug, productsInCategory } from './products.js'
+export { CATEGORIES, PRODUCTS, productBySlug, categoryBySlug, productsInCategory, IMAGE_VERSION, categoryImage } from './products.js'
 export { POSTS, FAQS, postBySlug } from './content.js'
 
 export const SITE = {

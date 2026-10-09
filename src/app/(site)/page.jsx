@@ -4,7 +4,7 @@ import Icon from '@/components/Icon'
 import SmartImage from '@/components/SmartImage'
 import ProductCard from '@/components/ProductCard'
 import JsonLd from '@/components/JsonLd'
-import { SITE, CATEGORIES, PRODUCTS, POSTS, FAQS } from '@/config/site'
+import { SITE, CATEGORIES, PRODUCTS, POSTS, FAQS, categoryImage } from '@/config/site'
 import { organizationSchema, websiteSchema, faqSchema, speakableSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
 import { waChatLink } from '@/lib/whatsapp'
@@ -109,7 +109,7 @@ export default function HomePage() {
           <div className="grid-3">
             {CATEGORIES.map((c, i) => (
               <Link key={c.slug} href={`/shop/${c.slug}/`} className="cat-tile">
-                <SmartImage src={`/images/categories/${c.slug}.webp`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
+                <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
                 <span className="scrim" aria-hidden="true" />
                 <span className="cat-label">
                   <strong>{c.name}</strong>

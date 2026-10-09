@@ -269,6 +269,16 @@ for (const p of PRODUCTS) for (const img of p.images) {
   check(existsSync(base) && existsSync(base.replace(/\.webp$/, '.avif')), '11', `${p.slug}: missing ${img} or AVIF sibling`)
   if (existsSync(base)) check(statSync(base).size <= 150 * 1024, '45', `${img} over 150KB`)
 }
+// every category has its own tile (WebP + AVIF), and no two products/categories share an image file
+const { categoryImage } = await import('../src/config/site.js')
+const catFiles = CATEGORIES.map((c) => categoryImage(c.slug))
+check(new Set(catFiles).size === CATEGORIES.length && catFiles.every((f) => f.startsWith(CATEGORIES[catFiles.indexOf(f)].slug)), '11', `category images not unique: ${catFiles.join(', ')}`)
+for (const f of catFiles) {
+  const base = resolve(root, 'public/images/categories', f)
+  check(existsSync(base) && existsSync(base.replace(/\.webp$/, '.avif')), '11', `missing category image ${f}`)
+}
+const prodFiles = PRODUCTS.map((p) => p.images[0])
+check(new Set(prodFiles).size === PRODUCTS.length, '11', 'two products share an image file')
 // ── CSS (6, 44, 46) ────────────────────────────────────────────────────────
 const css = readFileSync(resolve(root, 'src/app/globals.css'), 'utf8')
 check(css.includes('overflow-x: hidden') && css.includes("[style*='grid-template-columns']"), '6', 'mobile overflow guards missing')

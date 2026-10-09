@@ -76,7 +76,7 @@ export default function CartView() {
         {t.items.map((i) => (
           <div key={i.slug} className="cart-line">
             <Link href={`/product/${i.slug}/`} className="thumb" tabIndex={-1} aria-hidden="true">
-              <Image src={`/images/products/${i.slug}.webp`} alt="" fill sizes="88px" />
+              <Image src={`/images/products/${productBySlug(i.slug).images[0]}`} alt="" fill sizes="88px" />
             </Link>
             <div>
               <div className="line-top">
