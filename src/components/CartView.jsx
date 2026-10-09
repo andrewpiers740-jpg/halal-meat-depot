@@ -125,7 +125,7 @@ export default function CartView() {
             <span>{money(t.total)}</span>
           </div>
           <p className="muted" style={{ fontSize: '0.88rem', marginTop: 8 }}>
-            Pay with crypto at checkout and save {money(cryptoSaving)} ({SITE.cryptoDiscountPct}% off). Pickup from Greenacre is free.
+            Pay with crypto at checkout and save {money(cryptoSaving)} ({SITE.cryptoDiscountPct}% off).
           </p>
           {t.freeShipShortfall > 0 ? (
             <>

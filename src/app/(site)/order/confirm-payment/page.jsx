@@ -4,7 +4,7 @@ import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
   title: 'Confirm Your Payment | Halal Meat Depot',
-  description: 'Upload a screenshot or receipt of your payment for your Halal Meat Depot order so we can confirm it and schedule your delivery or pickup.',
+  description: 'Upload a screenshot or receipt of your payment for your Halal Meat Depot order so we can confirm it and schedule delivery of your order.',
   path: '/order/confirm-payment/',
   noindex: true,
 })

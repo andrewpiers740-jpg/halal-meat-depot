@@ -49,7 +49,7 @@ export default function ContactPage() {
             </div>
             <div className="card card--tint">
               <span className="icon-badge"><Icon name="pin" /></span>
-              <h2 style={{ fontSize: '1.2rem' }}>Depot &amp; pickup</h2>
+              <h2 style={{ fontSize: '1.2rem' }}>Business address &amp; hours</h2>
               <p style={{ marginBottom: 8 }}>{SITE.addressLine}</p>
               <ul className="check-list">
                 {SITE.hours.map((h) => (

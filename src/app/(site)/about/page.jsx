@@ -65,11 +65,11 @@ export default function AboutPage() {
               groups ordering for Eid, weddings and Aqeeqah. Trade customers can order <Link href="/shop/wholesale-cartons/">wholesale cartons</Link>{' '}
               online or open a <Link href="/wholesale/">weekly account</Link>.
             </p>
-            <h2>Delivery Australia-wide, pickup in Greenacre</h2>
+            <h2>Delivery Australia-wide</h2>
             <p>
-              We deliver Australia-wide. Orders are packed chilled and dispatched once payment clears, and we confirm your delivery date with
-              you directly. Delivery is free on orders over ${SITE.freeShipOver}; otherwise it is a flat ${SITE.flatShip}. You can also pick up for free
-              from our depot at {SITE.addressLine}. Full details are on our <Link href="/shipping/">delivery page</Link>.
+              We deliver Australia-wide from our depot at {SITE.addressLine}. Orders are packed chilled and dispatched once payment clears,
+              and we confirm your delivery date with you directly. Delivery is free on orders over ${SITE.freeShipOver}; otherwise it is a flat $
+              {SITE.flatShip}. Full details are on our <Link href="/shipping/">delivery policy</Link> page.
             </p>
             <h2>Straightforward payment</h2>
             <p>

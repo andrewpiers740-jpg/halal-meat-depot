@@ -3,7 +3,7 @@ import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
   title: 'Checkout | Halal Meat Depot',
-  description: 'Check out your halal meat order — pay by PayID, bank transfer or crypto (10% off). Delivery Australia-wide or free pickup from Greenacre, Sydney.',
+  description: 'Check out your halal meat order — pay by PayID, bank transfer or crypto (10% off). Delivered Australia-wide, free on orders over $500.',
   path: '/checkout/',
   noindex: true,
 })

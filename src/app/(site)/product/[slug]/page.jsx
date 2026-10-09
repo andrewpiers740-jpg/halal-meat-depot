@@ -90,7 +90,7 @@ export default async function ProductPage({ params }) {
                   <Icon name="truck" /> Delivered Australia-wide — free over ${SITE.freeShipOver}, otherwise ${SITE.flatShip}
                 </li>
                 <li>
-                  <Icon name="store" /> Free pickup from our Greenacre depot
+                  <Icon name="chilled" /> Packed chilled and dispatched once payment clears
                 </li>
                 <li>
                   <Icon name="percent" /> {SITE.cryptoDiscountPct}% off your meat total when you pay with crypto

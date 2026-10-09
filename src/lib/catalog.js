@@ -69,7 +69,7 @@ export function policies() {
     freeDeliveryOver: SITE.freeShipOver,
     flatDeliveryFee: SITE.flatShip,
     deliveryArea: SITE.deliveryArea,
-    pickup: SITE.pickupAvailable ? `Free pickup from ${SITE.addressLine}` : null,
+    pickup: SITE.pickupAvailable ? `Free pickup from ${SITE.addressLine}` : 'Not offered — delivery only',
     paymentMethods: ['PayID', 'Bank transfer', 'Cryptocurrency'],
     cryptoDiscount: `${SITE.cryptoDiscountPct}% off the meat total when paying in cryptocurrency`,
     gst: 'Fresh, unprocessed meat is GST-free in Australia.',

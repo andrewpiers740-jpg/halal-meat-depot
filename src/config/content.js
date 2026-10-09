@@ -159,12 +159,12 @@ export const FAQS = [
   },
   {
     q: 'Where does Halal Meat Depot deliver?',
-    a: 'We deliver Australia-wide. Orders are packed chilled and dispatched once payment clears, and we confirm your delivery date with you by email or WhatsApp. You can also choose free pickup from our depot at 43 Banksia Rd, Greenacre NSW 2190.',
+    a: 'We deliver Australia-wide from our depot in Greenacre, Sydney. Orders are packed chilled and dispatched once payment clears, and we confirm your delivery date with you by email or WhatsApp. We are a delivery-only business, so pickup is not available.',
     home: true,
   },
   {
     q: 'What is the minimum order and how much is delivery?',
-    a: 'The minimum order is $250. Delivery is free on orders of $500 or more; below that, a flat $25 delivery fee applies. Pickup from our Greenacre depot is always free.',
+    a: 'The minimum order is $250. Delivery is free on orders of $500 or more anywhere in Australia; below that, a flat $25 delivery fee applies.',
     home: true,
   },
   {
@@ -193,7 +193,7 @@ export const FAQS = [
   },
   {
     q: 'What if there is a problem with my order?',
-    a: 'Contact us within 24 hours of delivery with photos and your order number. If a product arrives damaged or not as ordered, we will arrange a replacement or refund in line with the Australian Consumer Law.',
+    a: 'Contact us within 48 hours of delivery with your order number and photos. If a product arrives damaged, spoiled, incorrect or missing, we will replace it or refund you in line with our Refund & Returns Policy and the Australian Consumer Law.',
   },
   {
     q: 'Is Halal Meat Depot a registered business?',

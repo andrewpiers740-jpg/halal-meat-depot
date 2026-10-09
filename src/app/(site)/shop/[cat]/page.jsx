@@ -79,7 +79,7 @@ export default async function CategoryPage({ params }) {
                   <Link href="/faq/">Delivery, payment and ordering FAQ</Link>
                 </li>
                 <li>
-                  <Link href="/shipping/">Delivery and pickup details</Link>
+                  <Link href="/shipping/">Delivery details</Link>
                 </li>
               </ul>
             </div>

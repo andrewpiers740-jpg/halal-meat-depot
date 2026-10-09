@@ -35,7 +35,7 @@ async function handleOrder(body, base) {
   const name = clean(c.name, 120)
   const email = clean(c.email, 200).toLowerCase()
   const phone = clean(c.phone, 40)
-  const fulfilment = body.fulfilment === 'pickup' ? 'pickup' : 'delivery'
+  const fulfilment = 'delivery' // delivery only — pickup is not offered
   const address = clean(body.address, 300)
   const method = findMethod(body.paymentMethod)
 

@@ -3,36 +3,39 @@ import { SITE } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Delivery & Pickup | Halal Meat Depot',
-  description: `Halal meat delivered Australia-wide: free delivery over $${SITE.freeShipOver}, otherwise $${SITE.flatShip} flat. Free pickup from Greenacre, NSW. Minimum order $${SITE.minOrder}.`,
+  title: 'Delivery Policy | Halal Meat Depot',
+  description: `Halal meat delivered Australia-wide from Greenacre, Sydney: free delivery over $${SITE.freeShipOver}, otherwise $${SITE.flatShip} flat. Minimum order $${SITE.minOrder}.`,
   path: '/shipping/',
 })
 
 export default function ShippingPage() {
   return (
     <LegalPage
-      title="Delivery and pickup"
-      crumb="Delivery & Pickup"
+      title="Delivery policy"
+      crumb="Delivery Policy"
       path="/shipping/"
-      intro={`We deliver certified halal meat Australia-wide, or you can pick up for free from our depot at ${SITE.addressLine}.`}
+      intro="We are a delivery-only business: every order is packed chilled at our Greenacre, Sydney depot and delivered to your address anywhere in Australia."
       blocks={[
         ['h2', 'Order rules at a glance'],
         ['ul', [
           `Minimum order: $${SITE.minOrder} (meat subtotal, before discounts).`,
-          `Delivery: free on orders of $${SITE.freeShipOver} or more; a flat $${SITE.flatShip} below that.`,
-          `Pickup: always free from ${SITE.addressLine}.`,
+          `Delivery fee: free on orders of $${SITE.freeShipOver} or more; a flat $${SITE.flatShip} below that.`,
+          'Delivery area: Australia-wide.',
+          'Pickup: not available — all orders are delivered.',
           `Payment: PayID, bank transfer or cryptocurrency (${SITE.cryptoDiscountPct}% off the meat total).`,
         ]],
         ['h2', 'When your order is dispatched'],
-        ['p', 'After you place an order we email you the payment details for the method you chose. Your order is confirmed once payment is received. We then pack it chilled and confirm the delivery date (or pickup time) with you by email, phone or WhatsApp.'],
-        ['h2', 'Where we deliver'],
-        ['p', 'We deliver Australia-wide. Delivery times depend on your location; we tell you the expected delivery date before dispatch. If we cannot deliver to a particular address, we will contact you before taking payment.'],
+        ['p', 'After you place an order we email you the payment details for the method you chose. Your order is confirmed once payment is received. We then pack it chilled and confirm the delivery date with you by email, phone or WhatsApp before it leaves our depot.'],
+        ['h2', 'Delivery times'],
+        ['p', 'Delivery times depend on where you are in Australia. We tell you the expected delivery date before dispatch. If we cannot deliver to your address, we will contact you before you pay, or refund you in full if you have already paid.'],
         ['h2', 'Receiving your delivery'],
-        ['p', 'Fresh meat is perishable. Please make sure someone is available to receive the delivery, or leave clear instructions in the order notes for a safe, shaded place. Refrigerate or freeze your order as soon as it arrives.'],
-        ['h2', 'Pickup'],
-        ['p', `Choose pickup at checkout and we will confirm when your order is ready. Our opening hours are ${SITE.hours.map((h) => `${h.days} ${h.opens}–${h.closes}`).join(', ')}.`],
+        ['p', 'Fresh meat is perishable. Please make sure someone is available to receive the delivery, or leave clear instructions in the order notes for a safe, shaded place. Refrigerate or freeze your order as soon as it arrives, and check it straight away.'],
+        ['h2', 'Incorrect address or missed delivery'],
+        ['p', 'Please double-check your delivery address at checkout. If a delivery cannot be completed because the address was incorrect or nobody was available and no safe place was given, contact us straight away and we will do our best to help. Because meat is perishable, we may not be able to re-deliver or refund an order that could not be delivered for these reasons.'],
+        ['h2', 'Damaged or missing items'],
+        ['p', 'If anything arrives damaged, warm, spoiled, incorrect or missing, see our [Refund & Returns Policy](/refund/) — please contact us within 48 hours of delivery.'],
         ['h2', 'Questions'],
-        ['p', 'For delivery questions, [contact us](/contact/) or see the [FAQ](/faq/). For problems with a delivered order, see our [refunds policy](/refund/).'],
+        ['p', `Message us on WhatsApp on ${SITE.phone}, use our [contact form](/contact/), or see the [FAQ](/faq/).`],
       ]}
     />
   )

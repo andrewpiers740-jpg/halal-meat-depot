@@ -64,7 +64,7 @@ export const SITE = {
   flatShip: 25,
   cryptoDiscountPct: 10,
   deliveryArea: 'Australia-wide',
-  pickupAvailable: true,
+  pickupAvailable: false, // delivery only — the depot address is the business address, not a pickup point
 
   gscCode: '', // Google Search Console verification — set when GSC is connected
   bingCode: '',
@@ -113,7 +113,7 @@ export const REPLY = {
   orderPrefix: 'HMD',
   channels: { email: SITE.email, whatsapp: SITE.phoneRaw },
   headerTagline: 'Certified Halal Meat · Greenacre, Sydney',
-  dispatchLine: 'Your order is packed chilled and dispatched once payment clears — we confirm your delivery or pickup date with you.',
+  dispatchLine: 'Your order is packed chilled and dispatched once payment clears — we confirm your delivery date with you.',
   paymentMethods: PAYMENT_METHODS,
 }
 
@@ -162,6 +162,7 @@ export const COMPLIANCE = {
     'HCAA', 'AFIC', 'ANIC', 'Halal Certification Authority Australia', 'Australian Federation of Islamic Councils',
     'Imams Council', 'NSW Halal Board', 'NSW Halal Authority', 'NSW-FA-49210', 'AU884',
     'web3forms', 'organic', 'grass-fed', 'MSA graded',
+    'free pickup', 'pick up for free', 'pickup from our', // delivery only — no pickup (owner, 2026-10-09)
   ],
 }
 

@@ -13,7 +13,7 @@ export default function CheckoutForm() {
   const router = useRouter()
   const { lines, clear } = useCart()
   const [f, setF] = useState({ name: '', email: '', phone: '', street: '', suburb: '', state: 'NSW', postcode: '', notes: '', password: '' })
-  const [fulfilment, setFulfilment] = useState('delivery')
+  const fulfilment = 'delivery' // delivery only — no pickup
   const [payment, setPayment] = useState('payid')
   const [createAccount, setCreateAccount] = useState(false)
   const [user, setUser] = useState(null)
@@ -246,23 +246,11 @@ export default function CheckoutForm() {
         </fieldset>
 
         <fieldset className="card">
-          <legend>Delivery or pickup</legend>
-          <div className="choice-list">
-            <label className="choice">
-              <input type="radio" name="fulfilment" value="delivery" checked={fulfilment === 'delivery'} onChange={() => setFulfilment('delivery')} />
-              <span>
-                <strong>Delivery — Australia-wide</strong>
-                <span>{t.subtotal >= SITE.freeShipOver ? 'Free on this order' : `${money(SITE.flatShip)} flat · free over ${money(SITE.freeShipOver)}`}</span>
-              </span>
-            </label>
-            <label className="choice">
-              <input type="radio" name="fulfilment" value="pickup" checked={fulfilment === 'pickup'} onChange={() => setFulfilment('pickup')} />
-              <span>
-                <strong>Pickup — free</strong>
-                <span>{SITE.addressLine}</span>
-              </span>
-            </label>
-          </div>
+          <legend>Delivery address</legend>
+          <p className="muted" style={{ margin: 0 }}>
+            Delivered Australia-wide —{' '}
+            {t.subtotal >= SITE.freeShipOver ? 'free on this order.' : `${money(SITE.flatShip)} flat, free over ${money(SITE.freeShipOver)}.`}
+          </p>
           {fulfilment === 'delivery' && (
             <div className="form" style={{ marginTop: 16 }}>
               <div className="field">
@@ -399,7 +387,8 @@ export default function CheckoutForm() {
             Order via WhatsApp
           </button>
           <p className="muted" style={{ fontSize: '0.82rem', margin: 0 }}>
-            Both options create the same order and send you a confirmation email. By ordering you agree to our <Link href="/terms/">terms of sale</Link>.
+            Both options create the same order and send you a confirmation email. By ordering you agree to our <Link href="/terms/">terms of sale</Link> and{' '}
+            <Link href="/refund/">Refund &amp; Returns Policy</Link>.
           </p>
         </div>
       </aside>

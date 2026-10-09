@@ -54,7 +54,7 @@ export default function HomePage() {
                 <Icon name="percent" /> {SITE.cryptoDiscountPct}% off with crypto
               </span>
               <span>
-                <Icon name="pin" /> Pickup in Greenacre, NSW
+                <Icon name="pin" /> Greenacre, Sydney · since {SITE.founded}
               </span>
             </div>
           </div>
@@ -173,8 +173,8 @@ export default function HomePage() {
             </p>
             <h3>How ordering works</h3>
             <p>
-              The minimum order is ${SITE.minOrder}. Delivery is free on orders over ${SITE.freeShipOver}, otherwise a flat ${SITE.flatShip}, and
-              you can choose free pickup from our Greenacre depot. We accept PayID, bank transfer and cryptocurrency — paying in crypto takes{' '}
+              The minimum order is ${SITE.minOrder}. We deliver Australia-wide — free on orders over ${SITE.freeShipOver}, otherwise a flat $
+              {SITE.flatShip}. We accept PayID, bank transfer and cryptocurrency — paying in crypto takes{' '}
               {SITE.cryptoDiscountPct}% off your meat total automatically. Fresh, unprocessed meat is GST-free in Australia.
             </p>
             <p>
@@ -186,7 +186,7 @@ export default function HomePage() {
           <div className="stack">
             <div className="card card--tint">
               <span className="icon-badge"><Icon name="store" /></span>
-              <h3>Visit the depot</h3>
+              <h3>Our depot</h3>
               <p className="muted" style={{ marginBottom: 8 }}>{SITE.addressLine}</p>
               <ul className="check-list">
                 {SITE.hours.map((h) => (
@@ -254,7 +254,7 @@ export default function HomePage() {
               ['cart', 'Build your cart', `Choose packs from any category. The minimum order is $${SITE.minOrder}.`],
               ['file', 'Check out', 'Place the order online or send it on WhatsApp — you get a confirmation email either way.'],
               ['mail', 'Receive payment details', `We email payment details for PayID, bank transfer or crypto (${SITE.cryptoDiscountPct}% off).`],
-              ['truck', 'Delivery or pickup', 'Once payment clears, we pack your order chilled and confirm your delivery or pickup date.'],
+              ['truck', 'Delivery', 'Once payment clears, we pack your order chilled and confirm your delivery date with you.'],
             ].map(([icon, title, text], i) => (
               <li key={title} className="card">
                 <span className="icon-badge"><Icon name={icon} /></span>

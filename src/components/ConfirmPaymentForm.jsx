@@ -18,7 +18,7 @@ export default function ConfirmPaymentForm() {
   }
 
   if (state.s === 'done')
-    return <p className="notice notice--ok">Thank you — we&apos;ve received your payment confirmation for order {id}. We&apos;ll be in touch to confirm your delivery or pickup date.</p>
+    return <p className="notice notice--ok">Thank you — we&apos;ve received your payment confirmation for order {id}. We&apos;ll be in touch to confirm your delivery date.</p>
 
   return (
     <form className="form" onSubmit={submit}>

@@ -4,7 +4,7 @@
 - Name: Halal Meat Depot · Tagline: "Certified halal meat at depot prices, delivered Australia-wide"
 - Domain: **PENDING** (`SITE.domain = 'DOMAIN.com'`; absolute URLs use the Vercel production URL until set)
 - Brand colours: maroon `#9F1D24` (from logo), dark `#1A0D0E`, amber accent `#E3A83F` · Font: Plus Jakarta Sans (self-hosted via next/font)
-- Logo: `assets/logo-source.jpg` (logo text reads "SINCE 2023" — owner said founded 2021; **to confirm**)
+- Logo: `assets/logo-source.jpg` — logo artwork reads "SINCE 2023" but the business was founded **2021** (owner confirmed 2026-10-09); logo artwork needs updating
 - GSC: pending · Bing: pending · IndexNow key: `b7f3c2e9a1d84f6c9e2b5a7d3c1f8e4a`
 
 ## Deploy
@@ -20,7 +20,7 @@
 - Country AU · Currency AUD · Fresh meat GST-free
 
 ## Order rules
-- Min order $250 · free delivery $500+ · flat $25 below · free pickup Greenacre (assumed — **owner to confirm pickup is offered**)
+- Min order $250 · free delivery $500+ · flat $25 below · **delivery only — no pickup** (owner, 2026-10-09)
 - Payment: PayID, bank transfer, crypto (10% off meat subtotal, auto-applied, server-recomputed) — owner confirmed
 - Old discount codes (HALAL10, WELCOME5, DEPOT50) removed — not confirmed by owner
 - Ordering: order form + WhatsApp, both save the order and email the customer
@@ -66,4 +66,6 @@ ADMIN_PASSCODE: not set · Redis: not connected · WhatsApp: 61489989442 · Emai
 - 2026-10-09 — Payment methods reduced to PayID, bank transfer, crypto (owner). Card and cash-on-pickup removed.
 - 2026-10-09 — Venison dropped (not in any category; owner didn't confirm).
 - 2026-10-09 — Placeholder product images (branded) until owner supplies photos; Unsplash stock removed.
-- 2026-10-09 — Policy pages (refund 24-hour window, terms, privacy) drafted — owner to review.
+- 2026-10-09 — Pickup removed site-wide (owner: not offered). Delivery only.
+- 2026-10-09 — Founding year 2021 confirmed by owner (logo artwork still says 2023).
+- 2026-10-09 — Refund & Returns Policy expanded (/refund/): 48-hour reporting window (was 24h, extended for Australia-wide delivery), ACL mandatory text, cancellations before packing, refunds within 5 business days, crypto refunds in same coin at AUD value.

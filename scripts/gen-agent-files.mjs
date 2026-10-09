@@ -42,7 +42,7 @@ ${SITE.name} sells halal beef, lamb, goat, chicken, camel, duck, kangaroo and wa
 - Address: ${SITE.addressLine}, Australia
 - ABN: ${SITE.abn}
 - Halal certification: all products certified by ${SITE.certifier}
-- Delivery: Australia-wide; free pickup from the Greenacre depot
+- Delivery: Australia-wide (delivery only — no pickup)
 - Minimum order: $${SITE.minOrder} AUD; free delivery over $${SITE.freeShipOver}; otherwise $${SITE.flatShip} flat
 - Payment: PayID, bank transfer, cryptocurrency (${SITE.cryptoDiscountPct}% off the meat total with crypto)
 - GST: fresh, unprocessed meat is GST-free in Australia

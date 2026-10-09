@@ -63,8 +63,8 @@ export default function Footer() {
           <nav aria-label="Policies">
             <h2>Policies</h2>
             <ul>
-              <li><Link href="/shipping/">Delivery &amp; pickup</Link></li>
-              <li><Link href="/refund/">Refunds &amp; returns</Link></li>
+              <li><Link href="/shipping/">Delivery policy</Link></li>
+              <li><Link href="/refund/">Refund &amp; returns policy</Link></li>
               <li><Link href="/terms/">Terms of sale</Link></li>
               <li><Link href="/privacy/">Privacy policy</Link></li>
             </ul>

@@ -6,7 +6,7 @@ import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
   title: 'Order Received | Halal Meat Depot',
-  description: 'Thank you for your halal meat order. Watch for our follow-up email with payment details, then we confirm your delivery or pickup date with you.',
+  description: 'Thank you for your halal meat order. Watch for our follow-up email with payment details, then we confirm your delivery date with you directly.',
   path: '/thank-you-order/',
   noindex: true,
 })
@@ -26,7 +26,7 @@ export default function ThankYouOrderPage() {
           <h2 style={{ fontSize: '1.2rem' }}>What happens next</h2>
           <p>
             Watch for a follow-up email from us with the payment details for the method you chose. Your order is confirmed once payment is
-            received, and we will confirm your delivery or pickup date with you.
+            received, and we will confirm your delivery date with you.
           </p>
           <div className="btn-row">
             <Link href="/shop/" className="btn btn--primary">
