@@ -70,3 +70,5 @@ ADMIN_PASSCODE: not set · Redis: not connected · WhatsApp: 61489989442 · Emai
 - 2026-10-09 — Founding year 2021 confirmed by owner.
 - 2026-10-09 — New logo supplied by owner contained a pig; pig removed and replaced with kangaroo + redrawn rooster, owner approved. Never use logo artwork containing a pig.
 - 2026-10-09 — Refund & Returns Policy expanded (/refund/): 48-hour reporting window (was 24h, extended for Australia-wide delivery), ACL mandatory text, cancellations before packing, refunds within 5 business days, crypto refunds in same coin at AUD value.
+
+- 2026-10-09 — Website email working via Zoho SMTP: SMTP_HOST=smtp.zoho.com, port 465, user sales@halalmeatdepot.com.au, Zoho app-specific password (Secret). smtppro.zoho.com returned EAUTH for this account — use smtp.zoho.com. Verified: test enquiry ENQ-OT3X0KCJ arrived in Zoho inbox.
