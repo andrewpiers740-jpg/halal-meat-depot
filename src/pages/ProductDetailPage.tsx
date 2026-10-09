@@ -151,7 +151,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 {/* Halal Badge */}
                 <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-xl shadow-md border border-rose-200 flex items-center gap-1.5 text-xs font-bold text-rose-950">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>100% Hand Zabiha Halal</span>
+                  <span>Certified Halal</span>
                 </div>
 
                 {/* Badge if available */}
@@ -181,7 +181,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 </div>
                 <div className="p-3 bg-zinc-50 rounded-xl border border-zinc-200">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 mx-auto mb-1" />
-                  <span className="font-bold text-zinc-900 block text-[11px]">HCAA &amp; AFIC</span>
+                  <span className="font-bold text-zinc-900 block text-[11px]">Halal Control Australia</span>
                   <span className="text-[10px] text-zinc-500">Dual Certified</span>
                 </div>
                 <div className="p-3 bg-zinc-50 rounded-xl border border-zinc-200">
@@ -444,11 +444,11 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 <div className="p-6 bg-emerald-50/50 rounded-2xl border border-emerald-200 text-xs text-emerald-950 space-y-3">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-5 h-5 text-emerald-700" />
-                    <h4 className="font-bold text-sm text-emerald-900">100% Hand Zabiha Slaughter Guarantee</h4>
+                    <h4 className="font-bold text-sm text-emerald-900">Certified Halal by Halal Control Australia</h4>
                   </div>
                   <p className="leading-relaxed">
-                    This product is strictly sourced from registered Australian abattoirs operating under the supervision of the 
-                    <strong> Halal Certification Authority Australia (HCAA)</strong> and the <strong>Australian Federation of Islamic Councils (AFIC)</strong>.
+                    This product is certified Halal by
+                    <strong> Halal Control Australia</strong>.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                     <div className="p-3 bg-white rounded-xl border border-emerald-200 font-semibold">

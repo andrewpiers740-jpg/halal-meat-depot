@@ -111,7 +111,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80',
     summary: 'A complete guide to wild rangeland exotic meats — nutrition profiles, leanness, and culinary techniques for camel, buffalo, and kangaroo.',
     content: [
-      'Australia’s vast rangelands are home to some of the cleanest, most organic wild game meats on Earth. Halal Meat Depot is one of Sydney’s rare certified depots offering 100% Zabiha slaughtered camel, water buffalo, and kangaroo.',
+      'Australia’s vast rangelands are home to some of the cleanest, most organic wild game meats on Earth. Halal Meat Depot is one of Sydney’s rare depots offering camel, water buffalo, and kangaroo certified Halal by Halal Control Australia.',
       'Camel meat is deeply prized across the Arabian Peninsula and North Africa. It is remarkably lean with higher protein and lower cholesterol than commercial beef. Camel hump is pure delicate fat, ideal for rendering into fragrant cooking oil, while camel striploin and ribs braise into succulent barbecue dishes.',
       'Water Buffalo offers an iron-rich flavor similar to prime beef but with 70% less fat. Buffalo striploin and ribeye can be grilled exactly like beef steaks, retaining moisture and hearty aroma.',
       'Wild Kangaroo is recognized as one of the leanest red meats in the world (under 2% fat). It must be cooked quickly to medium-rare or slow-braised with root vegetables in aromatic stocks.'
@@ -135,14 +135,14 @@ export const BLOG_POSTS: BlogPost[] = [
     summary: 'Why hand slaughter by practicing Muslim slaughtermen with continuous Tasmiyah is the gold standard of Halal certification in Australia.',
     content: [
       'In modern commercial poultry and meat production, automated rotary slaughter blades process thousands of animals per hour. For many observant Muslim families and restaurants, this mechanical method raises serious questions of Islamic compliance.',
-      'At Halal Meat Depot, we hold strict fidelity to 100% Hand Slaughtered Zabiha. Every single animal is individually slaughtered by a trained Muslim slaughterman who invokes the name of Allah (Bismillah Allahu Akbar) at the precise moment of incision.',
-      'Under the oversight of the Halal Certification Authority Australia (HCAA) and the Australian Federation of Islamic Councils (AFIC), the jugular veins, carotid arteries, and windpipe are cleanly severed with a razor-sharp blade.',
+      'In Zabiha slaughter, each animal is individually slaughtered by a trained Muslim slaughterman who invokes the name of Allah (Bismillah Allahu Akbar) at the precise moment of incision.',
+      'The jugular veins, carotid arteries, and windpipe are cleanly severed with a razor-sharp blade. At Halal Meat Depot, all of our products are certified Halal by Halal Control Australia.',
       'This humane, swift cut ensures rapid blood drainage, producing hygienic, pure meat (Tayyib) with optimal shelf stability and peace of mind for every family.'
     ],
     tips: [
       'Verify Halal certificates have genuine abattoir plant registration numbers.',
       'Ask whether poultry is hand-slaughtered or mechanically processed.',
-      'Look for the official HCAA and AFIC seals on all commercial wholesale cartons.'
+      'Look for a recognised Halal certifier’s seal on all commercial wholesale cartons.'
     ],
     recommendedMeatCategory: 'halal-certificate',
   },
@@ -354,7 +354,7 @@ export const BlogPage: React.FC = () => {
               <div className="p-4 bg-zinc-950 text-white rounded-2xl flex items-center justify-between gap-4 text-xs">
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                  <span>100% Hand Zabiha Halal Certified by HCAA &amp; AFIC.</span>
+                  <span>100% Halal Certified by Halal Control Australia.</span>
                 </div>
                 <span className="text-[11px] text-zinc-400 uppercase font-mono">Greenacre NSW</span>
               </div>

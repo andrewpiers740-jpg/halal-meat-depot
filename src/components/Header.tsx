@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
       content: (
         <span className="flex items-center gap-2 text-rose-300 font-bold tracking-wide">
           <ShieldCheck className="w-4 h-4 text-rose-400 flex-shrink-0" />
-          <span>100% Certified Hand Zabiha Halal</span>
+          <span>Certified Halal by Halal Control Australia</span>
         </span>
       ),
     },
@@ -427,7 +427,7 @@ export const Header: React.FC<HeaderProps> = ({
                     </span>
                   </h3>
                   <p className="text-[11px] text-zinc-400 mt-0.5">
-                    100% Hand-slaughtered Zabiha Halal, custom cut by experienced Sydney butchers &amp; cryovac packed.
+                    Certified Halal by Halal Control Australia, custom cut by experienced Sydney butchers &amp; cryovac packed.
                   </p>
                 </div>
               </div>
@@ -511,7 +511,7 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="flex items-center gap-5 flex-wrap">
                 <span className="flex items-center gap-1.5 font-semibold text-zinc-800">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>100% Hand Zabiha Halal Certified</span>
+                  <span>Certified Halal by Halal Control Australia</span>
                 </span>
                 <span className="flex items-center gap-1.5 font-semibold text-zinc-800">
                   <Truck className="w-4 h-4 text-rose-700 flex-shrink-0" />
@@ -649,7 +649,7 @@ export const Header: React.FC<HeaderProps> = ({
             <p className="font-semibold text-zinc-900">Halal Meat Depot Greenacre</p>
             <p>{STORE_CONFIG.address}</p>
             <p>Phone: {STORE_CONFIG.phone}</p>
-            <p className="text-rose-800 font-bold">100% Hand-Slaughtered Zabiha Certified</p>
+            <p className="text-rose-800 font-bold">Certified Halal by Halal Control Australia</p>
           </div>
         </div>
       )}

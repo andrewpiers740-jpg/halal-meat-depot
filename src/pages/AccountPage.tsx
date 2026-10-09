@@ -434,11 +434,11 @@ export const AccountPage: React.FC = () => {
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-zinc-200 shadow-sm space-y-4">
               <div className="inline-flex items-center gap-2 bg-rose-50 text-rose-900 px-3 py-1 rounded-full text-xs font-bold border border-rose-200">
                 <ShieldCheck className="w-4 h-4 text-rose-700" />
-                <span>100% Hand Zabiha Guarantee</span>
+                <span>Certified Halal by Halal Control Australia</span>
               </div>
               <h3 className="text-xl font-black uppercase tracking-tight text-zinc-950">Dual Halal Certification</h3>
               <p className="text-xs text-zinc-600 leading-relaxed">
-                Every carton and primal cut handled at our Greenacre depot is strictly supervised under HCAA and AFIC slaughter regulations with zero machine slaughter.
+                Every carton and primal cut handled at our Greenacre depot is certified Halal by Halal Control Australia.
               </p>
               <button
                 onClick={() => {

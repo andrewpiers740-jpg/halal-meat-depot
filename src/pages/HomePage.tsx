@@ -83,7 +83,7 @@ export const HomePage: React.FC<HomePageProps> = ({ setCurrentTab, setSelectedCa
               
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-950/80 border border-amber-500/40 text-amber-300 text-xs font-bold shadow-sm">
                 <ShieldCheck className="w-4 h-4 text-amber-400" />
-                <span>100% Certified Hand Zabiha Halal • Greenacre NSW</span>
+                <span>Certified Halal by Halal Control Australia • Greenacre NSW</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.1]">
@@ -286,11 +286,11 @@ export const HomePage: React.FC<HomePageProps> = ({ setCurrentTab, setSelectedCa
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
                 <div className="flex items-center gap-2 text-rose-200">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                  <span>100% Hand-Slaughtered Zabiha Options</span>
+                  <span>100% Certified Halal Meats</span>
                 </div>
                 <div className="flex items-center gap-2 text-rose-200">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                  <span>Certified by HCAA &amp; AFIC Authorities</span>
+                  <span>Certified by Halal Control Australia</span>
                 </div>
                 <div className="flex items-center gap-2 text-rose-200">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />

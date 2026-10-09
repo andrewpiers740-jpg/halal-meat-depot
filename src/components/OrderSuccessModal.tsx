@@ -84,7 +84,7 @@ export const OrderSuccessModal: React.FC<OrderSuccessModalProps> = ({ order, onC
                 What happens next?
               </h4>
               <p className="text-[11px] leading-relaxed">
-                1. Our master butcher reviews and prepares your primal cuts according to strict Islamic Zabiha rites.
+                1. Our master butcher reviews and prepares your primal cuts to your requested specifications.
               </p>
               <p className="text-[11px] leading-relaxed">
                 2. Items are vacuum-sealed in heavy gauge barrier cryovac bags to preserve cold-chain freshness.

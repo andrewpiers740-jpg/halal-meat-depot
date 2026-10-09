@@ -68,7 +68,7 @@ export const TaxInvoiceModal: React.FC<TaxInvoiceModalProps> = ({ order, onClose
                 >
                   {STORE_CONFIG.abn}
                 </a>{' '}
-                • NSW Food Authority Lic #NSW-FA-49210<br />
+                
                 Phone: {STORE_CONFIG.phone} • Email: {STORE_CONFIG.email}
               </p>
             </div>
@@ -214,9 +214,9 @@ export const TaxInvoiceModal: React.FC<TaxInvoiceModalProps> = ({ order, onClose
             </div>
 
             <div className="p-4 bg-rose-50 rounded-2xl border border-rose-200 text-zinc-950">
-              <span className="font-bold block mb-1">100% Halal Zabiha Guarantee:</span>
+              <span className="font-bold block mb-1">Halal Certification:</span>
               <p className="text-[11px] leading-relaxed text-rose-950">
-                All livestock processed under strict supervision of accredited Islamic slaughter authorities. Hand-slaughtered, free from non-Halal contamination, temperature monitored in refrigerated vans.
+                All products are certified Halal by Halal Control Australia. Free from non-Halal contamination, temperature monitored in refrigerated vans.
               </p>
             </div>
           </div>

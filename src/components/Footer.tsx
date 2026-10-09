@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             <div>
               <h4 className="font-bold text-white text-sm">100% Certified Halal</h4>
-              <p className="text-xs text-zinc-400 mt-1">Strict hand-slaughtered Zabiha compliant with AFIC &amp; HCAA oversight.</p>
+              <p className="text-xs text-zinc-400 mt-1">Certified Halal by Halal Control Australia.</p>
             </div>
           </div>
 
@@ -105,12 +105,12 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             
             <p className="text-xs text-zinc-400 leading-relaxed">
-              Sydney&apos;s trusted Halal meat depot in Greenacre NSW. 100% genuine Australian pasture-fed meats &amp; poultry with uncompromising Zabiha slaughter integrity.
+              Sydney&apos;s trusted Halal meat depot in Greenacre NSW. 100% genuine Australian pasture-fed meats &amp; poultry certified Halal by Halal Control Australia.
             </p>
 
             <div className="pt-1 text-xs text-rose-400 font-semibold space-y-1">
               <p>• NSW Food Authority Plant</p>
-              <p>• HCAA &amp; AFIC Halal Certified</p>
+              <p>• Halal Certified by Halal Control Australia</p>
             </div>
           </div>
 

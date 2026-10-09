@@ -52,7 +52,7 @@ export const AboutPage: React.FC = () => {
             Halal Meat Depot operates on a wholesale-direct depot model. By procuring primal cuts, whole carcasses, and carton lots directly from audited Halal abattoirs in the Riverina, Gippsland, Bourke, and New England tablelands, we eliminate unnecessary middlemen.
           </p>
           <p>
-            The result? Exceptional Black Angus Scotch fillets, sweet milk-fed Victorian lamb cutlets, tender Boer goat, fresh daily chicken, and wild exotic meats at authentic depot wholesale rates, with complete peace of mind that your meat is 100% Hand-Slaughtered Zabiha.
+            The result? Exceptional Black Angus Scotch fillets, sweet milk-fed Victorian lamb cutlets, tender Boer goat, fresh daily chicken, and wild exotic meats at authentic depot wholesale rates, with complete peace of mind that your meat is certified Halal by Halal Control Australia.
           </p>
 
           <div className="pt-2 grid grid-cols-2 gap-4 text-xs font-bold text-zinc-900">
@@ -95,7 +95,7 @@ export const AboutPage: React.FC = () => {
             <ShieldCheck className="w-6 h-6 text-rose-800" />
             <h4 className="font-bold text-zinc-900 text-sm">Sacred Trust (Amanah)</h4>
             <p>
-              Halal is not just a commercial logo to us; it is a sacred trust. We only process animals from verified plants with full traceability and hand-slaughtered certificates.
+              Halal is not just a commercial logo to us; it is a sacred trust. Every product we sell is certified Halal by Halal Control Australia.
             </p>
           </div>
 

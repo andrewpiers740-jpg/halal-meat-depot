@@ -65,7 +65,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
               {/* Halal Badge */}
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-red-950 border border-red-200 text-xs font-bold mb-3">
                 <ShieldCheck className="w-4 h-4 text-red-700" />
-                <span>100% Certified Zabiha Halal</span>
+                <span>Certified Halal by Halal Control Australia</span>
               </div>
 
               <h2 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">

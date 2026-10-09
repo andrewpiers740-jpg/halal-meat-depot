@@ -705,7 +705,7 @@ Please confirm receipt and booking of my Halal butchery dispatch.`;
               </div>
 
               <div className="pt-2 text-[11px] text-zinc-500 text-center space-y-1">
-                <p>✓ 100% Hand Zabiha Halal Certified (HCAA &amp; AFIC)</p>
+                <p>✓ Certified Halal by Halal Control Australia</p>
                 <p>✓ NSW Food Authority Registered Depot Plant</p>
               </div>
 
