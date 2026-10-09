@@ -11,7 +11,10 @@ export const SITE = {
   name: 'Halal Meat Depot',
   brand: 'Halal Meat Depot',
   tagline: 'Certified halal meat at depot prices, delivered Australia-wide',
-  domain: 'DOMAIN.com', // PENDING — set the real domain here when it is connected
+  domain: 'halalmeatdepot.com.au', // the ONLY place the domain is written
+  // Vercel's Domains dashboard already redirects www → apex (308), so
+  // vercel.json must NOT add its own www rule (two rules = redirect loop risk).
+  wwwRedirectHandledByPlatform: true,
   get domainPending() {
     return this.domain === 'DOMAIN.com'
   },
@@ -35,9 +38,15 @@ export const SITE = {
   foundedPlace: 'Greenacre, Sydney, NSW, Australia',
   certifier: 'Halal Control Australia',
 
-  // Emails are being created — leave blank until the mailboxes exist. Blank
-  // emails are simply not rendered anywhere on the site.
-  email: '',
+  // Official business email — receives every order, contact and wholesale
+  // enquiry (unless overridden by ORDER_EMAIL / CONTACT_EMAIL / WHOLESALE_EMAIL).
+  // Always rendered entity-encoded via <Email /> — never as plain text.
+  email: 'sales@halalmeatdepot.com.au',
+  // "Halal Meat Depot" is a registered business name of this entity.
+  legalName: 'AUSBD HALAL FOODS PTY LTD',
+  get legalLine() {
+    return `${this.name} is a business name of ${this.legalName} (ABN ${this.abn})`
+  },
   phone: '+61 489 989 442',
   phoneRaw: '61489989442',
   abn: '27 093 995 629',
@@ -119,10 +128,12 @@ export const REPLY = {
 
 export const FORMS = {
   provider: 'smtp',
-  smtpFrom: '', // set SMTP_FROM in Vercel once the mailbox exists
+  smtpFrom: `${SITE.name} <${SITE.email}>`, // SMTP_FROM env var overrides
   resendFrom: '',
   turnstileSiteKey: '',
-  destinations: { contact: '', order: '', wholesale: '' }, // CONTACT_EMAIL / ORDER_EMAIL / WHOLESALE_EMAIL env vars override
+  // Orders and enquiries all go to the business email. CONTACT_EMAIL /
+  // ORDER_EMAIL / WHOLESALE_EMAIL env vars override without a code change.
+  destinations: { contact: SITE.email, order: SITE.email, wholesale: SITE.email },
 }
 
 export const CHAT = {

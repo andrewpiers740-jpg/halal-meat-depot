@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Icon from '@/components/Icon'
+import Email from '@/components/Email'
 import { SITE, CATEGORIES } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
@@ -75,10 +76,12 @@ export default function HalalCertificationPage() {
             <div className="card">
               <h2 style={{ fontSize: '1.2rem' }}>Business details</h2>
               <p className="muted" style={{ marginBottom: 0 }}>
-                {SITE.name}, {SITE.addressLine} · ABN{' '}
+                {SITE.name} is a business name of {SITE.legalName}, {SITE.addressLine} · ABN{' '}
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
                 </a>
+                <br />
+                Certificate requests: <Email />
               </p>
             </div>
           </div>

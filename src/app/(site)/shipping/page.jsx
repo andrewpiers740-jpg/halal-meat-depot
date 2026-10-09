@@ -35,7 +35,8 @@ export default function ShippingPage() {
         ['h2', 'Damaged or missing items'],
         ['p', 'If anything arrives damaged, warm, spoiled, incorrect or missing, see our [Refund & Returns Policy](/refund/) — please contact us within 48 hours of delivery.'],
         ['h2', 'Questions'],
-        ['p', `Message us on WhatsApp on ${SITE.phone}, use our [contact form](/contact/), or see the [FAQ](/faq/).`],
+        ['p', `Email {{email}}, message us on WhatsApp on ${SITE.phone}, use our [contact form](/contact/), or see the [FAQ](/faq/).`],
+        ['p', `${SITE.name} is a business name of ${SITE.legalName} (ABN ${SITE.abn}).`],
       ]}
     />
   )

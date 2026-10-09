@@ -1,8 +1,17 @@
 import Link from 'next/link'
 import { Fragment } from 'react'
+import Email from './Email'
 
-// Renders [anchor](/path/) as real links inside plain text.
+// Renders [anchor](/path/) as real links inside plain text, and {{email}} as
+// the entity-encoded business email link.
 function inline(text) {
+  if (text.includes('{{email}}')) {
+    return text.split('{{email}}').flatMap((part, i) => (i === 0 ? inline(part) : [<Email key={`e${i}`} />, ...inline(part)]))
+  }
+  return linkify(text)
+}
+
+function linkify(text) {
   const out = []
   const re = /\[([^\]]+)\]\(([^)]+)\)/g
   let last = 0

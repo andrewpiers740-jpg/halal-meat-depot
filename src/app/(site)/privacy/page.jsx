@@ -14,8 +14,10 @@ export default function PrivacyPage() {
       title="Privacy policy"
       crumb="Privacy Policy"
       path="/privacy/"
-      intro={`${SITE.name} respects your privacy and handles personal information in line with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.`}
+      intro={`${SITE.legalName}, trading as ${SITE.name}, respects your privacy and handles personal information in line with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.`}
       blocks={[
+        ['h2', 'Who we are'],
+        ['p', `${SITE.name} is a registered business name of ${SITE.legalName} (ABN ${SITE.abn}), ${SITE.addressLine}. ${SITE.legalName} is responsible for the personal information collected through this website.`],
         ['h2', 'What we collect'],
         ['p', 'When you order, create an account or contact us, we collect your name, email address, phone number, delivery address, order details and any notes you give us. Wholesale enquiries may also include your business name, ABN and location.'],
         ['h2', 'How we use it'],
@@ -31,9 +33,9 @@ export default function PrivacyPage() {
         ['h2', 'Cookies and local storage'],
         ['p', 'Your cart is stored in your own browser. If you sign in, we set one essential cookie to keep you signed in. We do not use advertising or tracking cookies.'],
         ['h2', 'Access and correction'],
-        ['p', 'You can view and update your account details on the [My account](/account/) page, or ask us to access, correct or delete your information through our [contact form](/contact/).'],
+        ['p', 'You can view and update your account details on the [My account](/account/) page, or ask us to access, correct or delete your information by emailing {{email}} or through our [contact form](/contact/).'],
         ['h2', 'Complaints'],
-        ['p', 'If you have a privacy concern, contact us first and we will respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner (OAIC).'],
+        ['p', 'If you have a privacy concern, email {{email}} first and we will respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner (OAIC).'],
       ]}
     />
   )

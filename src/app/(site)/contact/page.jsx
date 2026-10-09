@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import WebForm from '@/components/WebForm'
 import Icon from '@/components/Icon'
+import Email from '@/components/Email'
+import { encodeEmail } from '@/components/EmailLink'
 import JsonLd from '@/components/JsonLd'
 import { SITE } from '@/config/site'
 import { localBusinessSchema } from '@/lib/schema'
@@ -10,7 +12,7 @@ import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
   title: 'Contact Halal Meat Depot | Greenacre, Sydney',
-  description: 'Contact Halal Meat Depot in Greenacre, Sydney for orders, product questions, event orders and halal certificate requests. Call, WhatsApp or send a message.',
+  description: 'Contact Halal Meat Depot in Greenacre, Sydney for orders, wholesale, event orders and halal certificate requests. Call, WhatsApp, email or message us.',
   path: '/contact/',
 })
 
@@ -32,7 +34,7 @@ export default function ContactPage() {
         <div className="container split">
           <section className="card" aria-labelledby="form-title">
             <h2 id="form-title">Send us a message</h2>
-            <WebForm kind="contact" />
+            <WebForm kind="contact" email={encodeEmail(SITE.email)} />
           </section>
           <aside className="stack" aria-label="Contact details">
             <div className="card card--dark">
@@ -46,6 +48,13 @@ export default function ContactPage() {
               <a className="btn btn--wa" href={waChatLink()} target="_blank" rel="noopener noreferrer">
                 Chat on WhatsApp
               </a>
+            </div>
+            <div className="card">
+              <span className="icon-badge"><Icon name="mail" /></span>
+              <h2 style={{ fontSize: '1.2rem' }}>Email</h2>
+              <p style={{ marginBottom: 0 }}>
+                Orders, wholesale and general enquiries: <Email />
+              </p>
             </div>
             <div className="card card--tint">
               <span className="icon-badge"><Icon name="pin" /></span>
@@ -63,7 +72,7 @@ export default function ContactPage() {
               <span className="icon-badge"><Icon name="file" /></span>
               <h2 style={{ fontSize: '1.2rem' }}>Business details</h2>
               <p className="muted" style={{ marginBottom: 0 }}>
-                {SITE.name} · ABN{' '}
+                {SITE.name} is a business name of {SITE.legalName} · ABN{' '}
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
                 </a>

@@ -2,7 +2,7 @@
 
 ## Identity
 - Name: Halal Meat Depot · Tagline: "Certified halal meat at depot prices, delivered Australia-wide"
-- Domain: **PENDING** (`SITE.domain = 'DOMAIN.com'`; absolute URLs use the Vercel production URL until set)
+- Domain: **halalmeatdepot.com.au** (bought and connected by owner 2026-10-09; Vercel redirects www → apex, so vercel.json has no www rule)
 - Brand colours: maroon `#9F1D24` (from logo), dark `#1A0D0E`, amber accent `#E3A83F` · Font: Plus Jakarta Sans (self-hosted via next/font)
 - Logo: `assets/logo-source.png` — owner-supplied logo (2026-10-09), edited with owner approval: pig removed, emblem now cow, lamb, rooster, kangaroo. No year on the logo; founded **2021**. Favicon/header use the emblem crop; hero/OG use the full logo. Proposal files in `docs/logo-proposal/`.
 - GSC: pending · Bing: pending · IndexNow key: `b7f3c2e9a1d84f6c9e2b5a7d3c1f8e4a`
@@ -15,7 +15,7 @@
 
 ## Contact & business
 - Address: 43 Banksia Rd, Greenacre NSW 2190 (confirmed real) · ABN 27 093 995 629 (confirmed real)
-- Phone/WhatsApp: +61 489 989 442 · Emails: being created (not shown on site until set)
+- Phone/WhatsApp: +61 489 989 442 · Email: sales@halalmeatdepot.com.au (official; receives all orders, contact and wholesale enquiries; shown entity-encoded)
 - Hours: Mon–Sat 06:00–18:00, Sun 07:00–16:00 (confirmed real)
 - Country AU · Currency AUD · Fresh meat GST-free
 

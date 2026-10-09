@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '@/components/Icon'
+import Email from '@/components/Email'
 import SmartImage from '@/components/SmartImage'
 import ProductCard from '@/components/ProductCard'
 import JsonLd from '@/components/JsonLd'
@@ -200,11 +201,15 @@ export default function HomePage() {
               <span className="icon-badge"><Icon name="award" /></span>
               <h3>Registered Australian business</h3>
               <p className="muted" style={{ marginBottom: 0 }}>
+                {SITE.legalName} trading as {SITE.name}
+                <br />
                 ABN{' '}
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
                 </a>{' '}
                 · Operating since {SITE.founded}
+                <br />
+                <Email />
               </p>
             </div>
             <div className="card card--dark">

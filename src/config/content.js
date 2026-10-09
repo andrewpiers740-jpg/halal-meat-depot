@@ -173,7 +173,7 @@ export const FAQS = [
   },
   {
     q: 'How do I place an order?',
-    a: 'Add products to your cart, go to checkout and fill in your details. You can place the order online or send it to us on WhatsApp — both create the same order and you receive a confirmation email. We then send payment details and confirm your delivery date.',
+    a: 'Add products to your cart, go to checkout and fill in your details. You can place the order online or send it to us on WhatsApp — both create the same order and you receive a confirmation email. We then send payment details and confirm your delivery date. For large or custom orders you can also email our sales team — details are on the contact page.',
   },
   {
     q: 'Do I need an account to order?',
@@ -197,6 +197,6 @@ export const FAQS = [
   },
   {
     q: 'Is Halal Meat Depot a registered business?',
-    a: 'Yes. Halal Meat Depot is a registered Australian business, ABN 27 093 995 629, operating from 43 Banksia Rd, Greenacre NSW 2190. You can verify our ABN on the Australian Business Register.',
+    a: 'Yes. Halal Meat Depot is a registered business name of AUSBD HALAL FOODS PTY LTD, ABN 27 093 995 629, operating from 43 Banksia Rd, Greenacre NSW 2190. You can verify our ABN on the Australian Business Register.',
   },
 ]

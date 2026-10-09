@@ -38,7 +38,7 @@ export default function RefundPage() {
         ]],
         ['h2', 'How to report a problem'],
         ['ul', [
-          'Contact us within 48 hours of delivery — on WhatsApp (' + SITE.phone + ') or through our [contact form](/contact/).',
+          'Contact us within 48 hours of delivery — email {{email}}, WhatsApp ' + SITE.phone + ', or use our [contact form](/contact/).',
           'Include your order number (it starts with HMD-) and a short description of the problem.',
           'Send clear photos of the product, its packaging and label, and the delivery carton.',
           'Keep the product refrigerated or frozen and do not use it until we have replied — we may ask for more photos.',
@@ -63,7 +63,8 @@ export default function RefundPage() {
         ['h2', 'Wholesale and trade customers'],
         ['p', 'The same policy applies to wholesale cartons. For weekly accounts, any different terms we agree with you in writing also apply.'],
         ['h2', 'Contact us'],
-        ['p', `${SITE.name}, ${SITE.addressLine} · ABN ${SITE.abn} · WhatsApp or phone ${SITE.phone} · [Contact form](/contact/).`],
+        ['p', `${SITE.legalName} trading as ${SITE.name} · ${SITE.addressLine} · ABN ${SITE.abn}`],
+        ['p', `Email {{email}} · WhatsApp or phone ${SITE.phone} · [Contact form](/contact/)`],
       ]}
     />
   )

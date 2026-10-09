@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { SITE, CATEGORIES } from '@/config/site'
 import { waChatLink } from '@/lib/whatsapp'
+import Email from './Email'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -22,14 +23,12 @@ export default function Footer() {
               <a href={waChatLink()} rel="noopener noreferrer" target="_blank">
                 WhatsApp us
               </a>
-              {SITE.email && (
-                <>
-                  <br />
-                  <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-                </>
-              )}
+              <br />
+              <Email />
             </p>
             <p>
+              {SITE.name} is a business name of {SITE.legalName}.
+              <br />
               <a href={SITE.abnUrl} rel="noopener noreferrer" target="_blank">
                 ABN {SITE.abn}
               </a>
@@ -80,7 +79,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>
-            © {year} {SITE.name}. All products certified halal by {SITE.certifier}.
+            © {year} {SITE.legalName} trading as {SITE.name}. All products certified halal by {SITE.certifier}.
           </span>
           <span>Prices in AUD. Fresh meat is GST-free.</span>
         </div>

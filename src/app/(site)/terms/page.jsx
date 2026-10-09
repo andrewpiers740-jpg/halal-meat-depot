@@ -14,8 +14,10 @@ export default function TermsPage() {
       title="Terms of sale"
       crumb="Terms of Sale"
       path="/terms/"
-      intro={`These terms apply to orders placed with ${SITE.name} (ABN ${SITE.abn}), ${SITE.addressLine}, through this website or WhatsApp.`}
+      intro={`These terms apply to orders placed with ${SITE.legalName} trading as ${SITE.name} (ABN ${SITE.abn}), ${SITE.addressLine}, through this website, email or WhatsApp.`}
       blocks={[
+        ['h2', 'Who you are dealing with'],
+        ['p', `${SITE.name} is a registered business name of ${SITE.legalName} (ABN ${SITE.abn}). In these terms, "we", "us" and "${SITE.name}" mean ${SITE.legalName}. Contact: {{email}} · ${SITE.phone}.`],
         ['h2', '1. Prices and GST'],
         ['p', 'All prices are in Australian dollars and are per pack as described on each product. Fresh, unprocessed meat is GST-free in Australia. We may change prices at any time, but the price confirmed in your order confirmation email applies to that order.'],
         ['h2', '2. Pack sizes and weights'],

@@ -24,12 +24,12 @@ Next.js 16 (App Router, JavaScript) ecommerce site for a Greenacre, Sydney halal
 - Never commit `.env*`, `node_modules/`, `.next/`.
 
 ## Live placeholders (Vercel → Settings → Environment Variables)
-- Domain: pending → set `SITE.domain`, rebuild, push.
+- Domain: halalmeatdepot.com.au (live). Email sales@halalmeatdepot.com.au receives all orders/enquiries (env vars ORDER_EMAIL etc. override).
 - `ADMIN_PASSCODE` — admin dashboard at `/admin/` returns 503 until set.
 - Upstash Redis (Vercel Storage) — orders/enquiries/accounts not stored until connected.
 - `SESSION_SECRET` (32+ chars) — customer accounts disabled until set.
-- `SMTP_HOST/PORT/USER/PASS/SMTP_FROM`, `ORDER_EMAIL`, `CONTACT_EMAIL`, `WHOLESALE_EMAIL` — no emails until set (mailboxes being created).
+- `SMTP_HOST/PORT/USER/PASS` (+ optional `SMTP_FROM`) for sales@halalmeatdepot.com.au — no emails are sent until set. Order/contact/wholesale destinations default to sales@ (`ORDER_EMAIL` etc. override).
 - GSC/Bing codes: `SITE.gscCode` / `SITE.bingCode`.
 
 ## Brand facts (real only)
-Founded 2021 (owner confirmed). Logo: `assets/logo-source.png` (cow, lamb, rooster, kangaroo — never any artwork with a pig). Delivery only — no pickup. 43 Banksia Rd, Greenacre NSW 2190. ABN 27 093 995 629. Phone/WhatsApp +61 489 989 442. Mon–Sat 06:00–18:00, Sun 07:00–16:00. Delivers Australia-wide. Payments: PayID, bank transfer, crypto (10% off). Min order $250, free delivery $500+, else $25. No reviews/awards supplied yet.
+Legal entity: AUSBD HALAL FOODS PTY LTD ("Halal Meat Depot" is its business name). Founded 2021 (owner confirmed). Logo: `assets/logo-source.png` (cow, lamb, rooster, kangaroo — never any artwork with a pig). Delivery only — no pickup. 43 Banksia Rd, Greenacre NSW 2190. ABN 27 093 995 629. Phone/WhatsApp +61 489 989 442. Mon–Sat 06:00–18:00, Sun 07:00–16:00. Delivers Australia-wide. Payments: PayID, bank transfer, crypto (10% off). Min order $250, free delivery $500+, else $25. No reviews/awards supplied yet.

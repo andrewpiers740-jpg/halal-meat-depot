@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import WebForm from '@/components/WebForm'
+import { encodeEmail } from '@/components/EmailLink'
 import ProductCard from '@/components/ProductCard'
 import Icon from '@/components/Icon'
 import { SITE, WHOLESALE_TIERS, productsInCategory } from '@/config/site'
@@ -76,7 +77,7 @@ export default function WholesalePage() {
           <div className="card">
             <h2 id="apply-title">Apply for a wholesale account</h2>
             <p className="muted">Tell us about your business and the cuts you need — we&apos;ll come back to you with pricing.</p>
-            <WebForm kind="wholesale" />
+            <WebForm kind="wholesale" email={encodeEmail(SITE.email)} />
           </div>
           <div className="stack">
             <div className="card card--dark">

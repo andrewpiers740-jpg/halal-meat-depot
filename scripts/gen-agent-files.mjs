@@ -38,6 +38,8 @@ ${SITE.name} sells halal beef, lamb, goat, chicken, camel, duck, kangaroo and wa
 ## Brand facts (cite these)
 
 - Name: ${SITE.name}
+- Legal entity: ${SITE.name} is a business name of ${SITE.legalName} (ABN ${SITE.abn})
+- Email: ${SITE.email} (orders, wholesale and enquiries)
 - Established: ${SITE.founded}, ${SITE.foundedPlace}
 - Address: ${SITE.addressLine}, Australia
 - ABN: ${SITE.abn}
@@ -172,7 +174,8 @@ write(pub('.well-known/mcp/server-card.json'), {
     version: '1.0.0',
     description: SITE.brandStatement,
     homepage: `${U}/`,
-    contact: { whatsapp: `+${SITE.phoneRaw}` },
+    contact: { email: SITE.email, whatsapp: `+${SITE.phoneRaw}` },
+    operator: { legalName: SITE.legalName, abn: SITE.abn },
   },
   transport: isVercel ? { type: 'streamable-http', endpoint: `${U}/api/mcp/` } : { type: 'none', note: 'human_ordering_only' },
   capabilities: {
@@ -250,7 +253,8 @@ write(pub('.well-known/acp.json'), {
     minimum_order: SITE.minOrder,
     free_shipping_threshold: SITE.freeShipOver,
   },
-  contact: { whatsapp: `https://wa.me/${SITE.phoneRaw}` },
+  contact: { whatsapp: `https://wa.me/${SITE.phoneRaw}`, email: SITE.email },
+  operator: { legal_name: SITE.legalName, abn: SITE.abn },
   legal: { age_restriction: 'none', region: 'AU', ships_to: 'Australia', product_type: 'Fresh halal meat', compliance: `Certified halal by ${SITE.certifier}` },
 })
 
@@ -350,7 +354,9 @@ if (isVercel) {
     $schema: 'https://openapi.vercel.sh/vercel.json',
     framework: 'nextjs',
     trailingSlash: true,
-    ...(SITE.domainPending
+    // Skip our own www rule when Vercel's Domains dashboard already redirects
+    // www → apex — two competing rules can loop.
+    ...(SITE.domainPending || SITE.wwwRedirectHandledByPlatform
       ? {}
       : { redirects: [{ source: '/:path*', has: [{ type: 'host', value: `www.${SITE.domain}` }], destination: `https://${SITE.domain}/:path*`, permanent: true }] }),
     headers: [

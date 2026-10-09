@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { waChatLink } from '@/lib/whatsapp'
+import EmailLink from './EmailLink'
 
 const CONFIG = {
   contact: {
@@ -32,7 +33,7 @@ const CONFIG = {
   },
 }
 
-export default function WebForm({ kind = 'contact' }) {
+export default function WebForm({ kind = 'contact', email }) {
   const cfg = CONFIG[kind]
   const router = useRouter()
   const init = Object.fromEntries(cfg.fields.map((f) => [f.k, f.type === 'select' ? f.options[0] : '']))
@@ -92,8 +93,14 @@ export default function WebForm({ kind = 'contact' }) {
             Sorry — your message could not be sent right now. Please{' '}
             <a href={waChatLink()} target="_blank" rel="noopener noreferrer">
               message us on WhatsApp
-            </a>{' '}
-            instead.
+            </a>
+            {email ? (
+              <>
+                {' '}or email <EmailLink address={email} />.
+              </>
+            ) : (
+              ' instead.'
+            )}
           </div>
         )}
       </div>

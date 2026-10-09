@@ -50,7 +50,7 @@ ${meta ? `<div style="font:400 12px/1.5 Arial,Helvetica,sans-serif;color:#C9BDBD
 </td></tr>
 <tr><td style="height:3px;background:${ACCENT};line-height:3px;font-size:3px;">&nbsp;</td></tr>
 <tr><td style="padding:26px 28px 8px 28px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">${body}</table></td></tr>
-<tr><td style="padding:16px 28px 22px 28px;border-top:1px solid ${C.rule};font:400 11px/1.6 Arial,Helvetica,sans-serif;color:${C.soft};">${escapeHtml(footer)} · ${escapeHtml(SITE.addressLine)} · ABN ${escapeHtml(SITE.abn)}<br>All products certified halal by ${escapeHtml(SITE.certifier)}.</td></tr>
+<tr><td style="padding:16px 28px 22px 28px;border-top:1px solid ${C.rule};font:400 11px/1.6 Arial,Helvetica,sans-serif;color:${C.soft};">${escapeHtml(footer)} · ${escapeHtml(SITE.addressLine)}<br>${escapeHtml(SITE.name)} is a business name of ${escapeHtml(SITE.legalName)} · ABN ${escapeHtml(SITE.abn)}<br>${SITE.email ? `<a href="mailto:${escapeHtml(SITE.email)}" style="color:${C.soft};">${escapeHtml(SITE.email)}</a> · ` : ''}${escapeHtml(SITE.phone)} · All products certified halal by ${escapeHtml(SITE.certifier)}.</td></tr>
 </table></td></tr></table></body></html>`
 }
 

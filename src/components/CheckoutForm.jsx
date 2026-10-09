@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useCart } from '@/lib/cart-client'
 import { computeTotals, money, makeOrderNumber, findMethod } from '@/lib/order'
 import { waOrderLink, waChatLink } from '@/lib/whatsapp'
+import EmailLink from './EmailLink'
 import { SITE, PAYMENT_METHODS } from '@/config/site'
 
 const STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT']
@@ -112,7 +113,7 @@ export default function CheckoutForm() {
       clear()
       router.push(`/thank-you-order/?id=${encodeURIComponent(orderNumber)}`)
     } catch {
-      setStatus({ state: 'error', message: 'We could not send your order online. Please send it on WhatsApp instead — nothing has been charged.' })
+      setStatus({ state: 'error', message: 'We could not send your order online, and nothing has been charged. Please send it by' })
     }
   }
 
@@ -206,8 +207,9 @@ export default function CheckoutForm() {
             <div className="notice notice--err">
               {status.message}{' '}
               <a href={waChatLink()} target="_blank" rel="noopener noreferrer">
-                Open WhatsApp
-              </a>
+                WhatsApp
+              </a>{' '}
+              or email it to <EmailLink address={SITE.email} />.
             </div>
           )}
         </div>

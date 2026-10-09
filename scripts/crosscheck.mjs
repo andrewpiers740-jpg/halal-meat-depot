@@ -121,6 +121,8 @@ for (const path of pages) {
   // emails in plaintext (none should exist while SITE.email is empty)
   const emails = body.replace(/<[^>]+>/g, ' ').match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || []
   check(!emails.length, '7', `${path}: plaintext email(s) ${emails.join(', ')}`)
+  // the raw HTML (incl. serialised component props) must not carry the business email unencoded
+  if (SITE.email) check(!h.includes(SITE.email), '7', `${path}: business email appears unencoded in raw HTML`)
   // JSON-LD
   const blocks = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1])
   let types = []

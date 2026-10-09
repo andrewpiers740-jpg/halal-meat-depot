@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer'
-import { FORMS } from '../config/site.js'
+import { FORMS, SITE } from '../config/site.js'
 
 export function isMailerConfigured() {
   return Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS)
@@ -32,7 +32,8 @@ export async function sendMail({ to, subject, html, text, replyTo, attachments }
   if (!isMailerConfigured()) return { sent: false, reason: 'not-configured' }
   if (!to) return { sent: false, reason: 'no-recipient' }
   try {
-    await transporter().sendMail({ from: fromAddress(), to, replyTo, subject, text, html, ...(attachments ? { attachments } : {}) })
+    // Customer-facing emails reply to the business inbox by default.
+    await transporter().sendMail({ from: fromAddress(), to, replyTo: replyTo || SITE.email || undefined, subject, text, html, ...(attachments ? { attachments } : {}) })
     return { sent: true }
   } catch (err) {
     console.error('sendMail failed:', err?.code || err?.message)

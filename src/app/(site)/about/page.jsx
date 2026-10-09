@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Icon from '@/components/Icon'
+import Email from '@/components/Email'
 import JsonLd from '@/components/JsonLd'
 import { SITE, CATEGORIES, PRODUCTS } from '@/config/site'
 import { organizationSchema, speakableSchema } from '@/lib/schema'
@@ -77,6 +78,12 @@ export default function AboutPage() {
               payment is taken on the website: after you order, we email the payment details for your chosen method, and your order is
               confirmed once payment is received.
             </p>
+            <h2>The business behind Halal Meat Depot</h2>
+            <p>
+              {SITE.name} is a registered business name operated by <strong>{SITE.legalName}</strong> (ABN {SITE.abn}), from{' '}
+              {SITE.addressLine}. Orders, wholesale accounts and invoices are issued by {SITE.legalName} trading as {SITE.name}. For
+              any enquiry, email <Email /> or <Link href="/contact/">contact us</Link>.
+            </p>
           </div>
           <div className="stack">
             <div className="card card--dark">
@@ -101,14 +108,20 @@ export default function AboutPage() {
               </ul>
             </div>
             <div className="card">
-              <h2 style={{ fontSize: '1.2rem' }}>Find us</h2>
+              <h2 style={{ fontSize: '1.2rem' }}>Business details</h2>
+              <p className="muted">
+                {SITE.name} is a business name of <strong>{SITE.legalName}</strong>.
+              </p>
               <p className="muted">{SITE.addressLine}</p>
               <p className="muted" style={{ marginBottom: 0 }}>
                 ABN{' '}
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
-                </a>{' '}
-                · <Link href="/contact/">Contact us</Link>
+                </a>
+                <br />
+                <Email />
+                <br />
+                <Link href="/contact/">Contact us</Link>
               </p>
             </div>
           </div>
