@@ -58,7 +58,7 @@ Primary keyword: **not set** — owner will choose during the SEO/AI-visibility 
 5 published guides (certification, beef cuts, goat curry cuts, lean exotic meats, lamb cuts). Next topics in keyword-map.md.
 
 ## Reply Portal block
-ADMIN_PASSCODE: not set · Redis: not connected · WhatsApp: 61489989442 · Email provider: smtp (creds pending)
+ADMIN_PASSCODE: set (owner) · Redis: Upstash free plan `upstash-kv-bole-crystal`, iad1, connected (KV_* vars) · SESSION_SECRET: set · WhatsApp: 61489989442 · Email: Zoho SMTP working
 
 ## Decisions log
 - 2026-10-09 — Rebuilt from Vite/AI Studio SPA to Next.js (WebForge) — SPA had one URL and orders/forms went nowhere.
@@ -72,3 +72,4 @@ ADMIN_PASSCODE: not set · Redis: not connected · WhatsApp: 61489989442 · Emai
 - 2026-10-09 — Refund & Returns Policy expanded (/refund/): 48-hour reporting window (was 24h, extended for Australia-wide delivery), ACL mandatory text, cancellations before packing, refunds within 5 business days, crypto refunds in same coin at AUD value.
 
 - 2026-10-09 — Website email working via Zoho SMTP: SMTP_HOST=smtp.zoho.com, port 465, user sales@halalmeatdepot.com.au, Zoho app-specific password (Secret). smtppro.zoho.com returned EAUTH for this account — use smtp.zoho.com. Verified: test enquiry ENQ-OT3X0KCJ arrived in Zoho inbox.
+- 2026-10-09 — Upstash Redis (free, iad1) connected; ADMIN_PASSCODE and SESSION_SECRET set by owner. Verified live: test order HMD-TESTTR saved + emailed (shop + customer); /api/account/me enabled:true; admin API returns 401 without passcode.
