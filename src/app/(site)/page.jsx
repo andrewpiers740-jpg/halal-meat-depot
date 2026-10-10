@@ -170,7 +170,7 @@ export default function HomePage() {
             </p>
             <p>
               We also carry meats that are hard to find certified halal in one place. Alongside everyday beef, lamb, goat and chicken, you
-              can order camel steaks and tomahawk, Pekin duck, kangaroo fillet and water buffalo striploin in the same order.
+              can order camel steaks and tomahawk, Pekin duck, kangaroo fillet and water buffalo tomahawk in the same order.
             </p>
             <h3>How ordering works</h3>
             <p>

@@ -195,4 +195,10 @@ export const RETIRED_PRODUCTS = {
   'camel-ribs-and-shoulder': '/product/camel-neck-disc-bone-in/',
   'camel-stir-fry-strips': '/product/diced-camel-boneless/',
   'camel-shoulder-boneless': '/product/diced-camel-boneless/',
+  'buffalo-striploin-steaks': '/product/buffalo-porterhouse-steaks/',
+  'buffalo-striploin-whole': '/product/buffalo-porterhouse-steaks/',
+  'buffalo-rump-steaks': '/shop/water-buffalo/',
+  'buffalo-curry-cut-bone-in': '/shop/water-buffalo/',
+  'buffalo-short-ribs': '/product/buffalo-asado-ribs/',
+  'buffalo-stir-fry-strips': '/product/diced-buffalo-boneless/',
 }
