@@ -9,7 +9,7 @@
 //  4. Category tiles → public/images/categories/<slug>.webp + .avif
 //  Also writes docs/_contact-sheet.png for review.
 import sharp from 'sharp'
-import { readdirSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { readdirSync, existsSync, mkdirSync, writeFileSync, readFileSync, copyFileSync } from 'node:fs'
 import { resolve, dirname, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PRODUCTS, CATEGORIES, categoryImage } from '../src/config/site.js'
@@ -131,13 +131,29 @@ await writeRetry('src/app/apple-icon.png', await sharp(emblem).resize(180, 180).
 console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon.png, og-v2.webp')
 
 // 2 — real product photos
+// assets/product-photos/<slug>.<ext> → that product. Files starting with "_" are
+// shared photos: _shared.json maps each one to a list of product slugs, e.g.
+// { "_carton.webp": ["beef-mince-carton", …] }, so one image serves many
+// products without storing copies.
 const srcDir = out('assets/product-photos')
-const photos = existsSync(srcDir) ? readdirSync(srcDir).filter((f) => /\.(jpe?g|png|webp|avif|tiff?)$/i.test(f)) : []
+const IMG_RE = /\.(jpe?g|png|webp|avif|tiff?)$/i
+const photos = existsSync(srcDir) ? readdirSync(srcDir).filter((f) => IMG_RE.test(f) && !f.startsWith('_')) : []
+const sharedMap = existsSync(resolve(srcDir, '_shared.json')) ? JSON.parse(readFileSync(resolve(srcDir, '_shared.json'), 'utf8')) : {}
 const real = new Set()
 const W = 1600, H = 1200, FILL = 0.9
-for (const file of photos) {
-  const slug = basename(file, extname(file)).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
-  const src = resolve(srcDir, file)
+const productBase = (slug) => {
+  const prod = PRODUCTS.find((p) => p.slug === slug)
+  return `public/images/products/${prod ? prod.images[0].replace(/\.webp$/, '') : slug}`
+}
+for (const [file, slugs] of Object.entries(sharedMap)) {
+  const { pipeline } = await framePhoto(resolve(srcDir, file), W, H)
+  const [first, ...rest] = slugs
+  await encodeBoth(pipeline, productBase(first))
+  for (const slug of rest) for (const ext of ['webp', 'avif']) copyFileSync(out(`${productBase(first)}.${ext}`), out(`${productBase(slug)}.${ext}`))
+  slugs.forEach((s) => real.add(s))
+}
+// Trim the background, fit the subject to FILL of a white WxH canvas.
+async function framePhoto(src, W, H) {
   const meta = await sharp(src).rotate().metadata()
   let buf = await sharp(src).rotate().toBuffer()
   let tw = meta.width, th = meta.height
@@ -155,8 +171,13 @@ for (const file of photos) {
   const canvas = sharp({ create: { width: W, height: H, channels: 4, background: '#ffffff' } })
     .composite([{ input: await inner.toBuffer(), gravity: 'centre' }])
     .flatten({ background: '#ffffff' })
-  const prod = PRODUCTS.find((p) => p.slug === slug)
-  await encodeBoth(sharp(await canvas.png().toBuffer()), `public/images/products/${prod ? prod.images[0].replace(/\.webp$/, '') : slug}`)
+  return { pipeline: sharp(await canvas.png().toBuffer()), tw, th }
+}
+for (const file of photos) {
+  const slug = basename(file, extname(file)).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+  if (real.has(slug)) continue
+  const { pipeline, tw, th } = await framePhoto(resolve(srcDir, file), W, H)
+  await encodeBoth(pipeline, productBase(slug))
   real.add(slug)
   if (Math.min(tw, th) < 500) console.log(`  low-res source (reshoot candidate): ${file} (${tw}x${th})`)
 }
@@ -179,8 +200,16 @@ for (const p of PRODUCTS) {
 }
 console.log(`product placeholders: ${ph}`)
 
-// 4 — category tiles
+// 4 — category tiles: a real photo from assets/category-photos/<slug>.<ext> if present
+const catDir = out('assets/category-photos')
+const catPhotos = existsSync(catDir) ? readdirSync(catDir).filter((f) => IMG_RE.test(f)) : []
 for (const c of CATEGORIES) {
+  const photo = catPhotos.find((f) => basename(f, extname(f)) === c.slug)
+  if (photo) {
+    const { pipeline } = await framePhoto(resolve(catDir, photo), 1200, 900)
+    await encodeBoth(pipeline, `public/images/categories/${categoryImage(c.slug).replace(/\.webp$/, '')}`)
+    continue
+  }
   await placeholder({
     w: 1200, h: 900, tone: TONES[c.slug] || TONES.beef, titleSize: 120, badgeSize: 220,
     eyebrow: 'HALAL MEAT DEPOT',
