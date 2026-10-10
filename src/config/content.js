@@ -108,7 +108,7 @@ export const POSTS = [
       ['h2', 'Water buffalo: beef\'s leaner cousin'],
       ['p', 'Buffalo tastes similar to beef but cleaner and slightly sweeter. Use [buffalo mince](/product/buffalo-mince/) anywhere you would use beef mince. [Buffalo porterhouse](/product/buffalo-porterhouse-steaks/) and thin-cut [asado ribs](/product/buffalo-asado-ribs/) need a hot grill and a short cook; [diced buffalo](/product/diced-buffalo-boneless/) and [osso buco](/product/buffalo-osso-buco/) reward slow braising.'],
       ['h2', 'Kangaroo: the leanest red meat'],
-      ['p', 'Kangaroo has very little fat, so overcooking is the main risk. Sear a [kangaroo fillet](/product/kangaroo-fillet/) for two to three minutes a side, rest it well and slice thinly. For slow cooking, [diced kangaroo](/product/diced-kangaroo/) and [kangaroo tail](/product/kangaroo-tail/) become tender after long, gentle braising.'],
+      ['p', 'Kangaroo has very little fat, so overcooking is the main risk. Sear a [kangaroo fillet](/product/kangaroo-fillets/) for two to three minutes a side, rest it well and slice thinly. For slow cooking, [kangaroo topside](/product/kangaroo-topside/) and [kangaroo tail](/product/kangaroo-tail/) become tender after long, gentle braising.'],
       ['h2', 'Three rules for lean meat'],
       ['ul', [
         'Oil the meat, not the pan, and get the pan very hot for steaks.',
