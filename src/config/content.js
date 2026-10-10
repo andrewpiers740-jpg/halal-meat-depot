@@ -103,8 +103,8 @@ export const POSTS = [
     body: [
       ['p', 'Camel, water buffalo and kangaroo share one thing: they are much leaner than beef and lamb. Lean meat cooks faster and dries out sooner, so the rules are simple — cook it either very quickly or very slowly, and never in between.'],
       ['h2', 'Camel: lean, slightly sweet and traditional'],
-      ['p', 'Camel is a staple in Middle Eastern, Somali and North African kitchens. [Bone-in camel curry pieces](/product/camel-curry-pieces-bone-in/) suit kabsa, mandi and stews — simmer gently for two to three hours. [Diced camel](/product/diced-camel-boneless/) works well for suqaar, cut small and stir-fried with onion and spices.'],
-      ['p', 'Traditionally, [camel hump](/product/camel-hump/) — which is mostly fat — is diced and cooked with the lean meat to add richness. [Camel steaks](/product/camel-striploin-steaks/) should be seared quickly and served medium-rare.'],
+      ['p', 'Camel is a staple in Middle Eastern, Somali and North African kitchens. [Diced camel](/product/diced-camel-boneless/) suits kabsa, mandi and stews — simmer gently for two to three hours — and works well for suqaar, cut small and stir-fried with onion and spices.'],
+      ['p', 'Bone-in [camel neck](/product/camel-neck-disc-bone-in/) and [osso buco](/product/camel-osso-buco/) reward long, slow braising. [Camel steaks](/product/camel-porterhouse-steaks/) should be seared quickly and served medium-rare.'],
       ['h2', 'Water buffalo: beef\'s leaner cousin'],
       ['p', 'Buffalo tastes similar to beef but cleaner and slightly sweeter. Use [buffalo mince](/product/buffalo-mince/) anywhere you would use beef mince. [Buffalo striploin](/product/buffalo-striploin-steaks/) needs a hot grill and a short cook; [buffalo curry cut](/product/buffalo-curry-cut-bone-in/) and [osso buco](/product/buffalo-osso-buco/) reward slow braising.'],
       ['h2', 'Kangaroo: the leanest red meat'],

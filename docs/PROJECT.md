@@ -41,7 +41,7 @@ Halal Meat Depot is a Greenacre, Sydney-based halal meat supplier established in
 - No age gate. Privacy Act 1988 / APPs privacy policy. No tracking cookies → no consent banner.
 
 ## Shop structure
-Type A (Category → Subcategory → Product). 9 categories: Beef, Lamb, Goat, Chicken, Camel, Duck, Kangaroo, Water Buffalo, Wholesale Cartons. 142 products, one or more per subcategory (71 added October 2026, priced against Sydney halal butchers' online listings — Halal Meat Company, Abu Ahmad Butchery, Australian Meat Emporium, Super Butcher — set at depot level below retail; camel, buffalo and duck remain estimates).
+Type A (Category → Subcategory → Product). 9 categories: Beef, Lamb, Goat, Chicken, Camel, Duck, Kangaroo, Water Buffalo, Wholesale Cartons. 141 products, one or more per subcategory (71 added October 2026, priced against Sydney halal butchers' online listings — Halal Meat Company, Abu Ahmad Butchery, Australian Meat Emporium, Super Butcher — set at depot level below retail; buffalo and duck remain estimates). Camel range (10 frozen products) replaced 10 Oct 2026 on the owner's instruction to match Gamekeepers of Australia's camel range (gamekeepersmeat.com.au/collections/camel), at their listed prices; descriptions are our own. Retired product URLs 301 via RETIRED_PRODUCTS in site.js.
 
 ## Pricing basis (researched 2026-10-09 — owner to review)
 Owner asked for real wholesale prices sourced from the web. Published Sydney halal wholesale price lists are rare, so prices are set ~10–15% below current Sydney halal butcher retail prices for bulk packs:

@@ -185,3 +185,14 @@ export const NAV = [
   { href: '/blog/', label: 'Blog' },
   { href: '/contact/', label: 'Contact' },
 ]
+
+// Product pages that were removed from the catalogue → where their old URLs now go
+// (301, applied in next.config.mjs). Keep entries so indexed/shared links never 404.
+export const RETIRED_PRODUCTS = {
+  'camel-curry-pieces-bone-in': '/shop/camel/',
+  'camel-hump': '/shop/camel/',
+  'camel-striploin-steaks': '/product/camel-porterhouse-steaks/',
+  'camel-ribs-and-shoulder': '/product/camel-neck-disc-bone-in/',
+  'camel-stir-fry-strips': '/product/diced-camel-boneless/',
+  'camel-shoulder-boneless': '/product/diced-camel-boneless/',
+}
