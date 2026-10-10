@@ -32,11 +32,17 @@ const writeRetry = async (file, buf) => {
 }
 const CAP = 145 * 1024
 async function encodeBoth(pipeline, base) {
+  // Lower quality first; if a busy photo (e.g. textured dark background) still
+  // exceeds the cap at q40, step the dimensions down too (1600 → 1280 → 1024px).
   for (const [fmt, qStart, ext] of [['webp', 88, 'webp'], ['avif', 62, 'avif']]) {
     let buf
-    for (let q = qStart; ; q -= 6) {
-      buf = await pipeline.clone()[fmt]({ quality: q }).toBuffer()
-      if (buf.length <= CAP || q <= 40) break
+    sizes: for (const width of [null, 1280, 1024]) {
+      const src = width ? pipeline.clone().resize({ width }) : pipeline.clone()
+      for (let q = qStart; ; q -= 6) {
+        buf = await src.clone()[fmt]({ quality: q }).toBuffer()
+        if (buf.length <= CAP) break sizes
+        if (q <= 40) break
+      }
     }
     await writeRetry(`${base}.${ext}`, buf)
   }
