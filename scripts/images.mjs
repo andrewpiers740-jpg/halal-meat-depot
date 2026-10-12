@@ -131,6 +131,16 @@ await writeRetry('src/app/apple-icon.png', await sharp(emblem).resize(180, 180).
 }
 console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon.png, og-v2.webp')
 
+// 1b — halal certificate (owner-supplied scan) → webp for display + jpg for full view
+{
+  const cert = out('assets/halal-certificate.jpg')
+  if (existsSync(cert)) {
+    await writeRetry('public/images/halal-certificate-v1.webp', await sharp(cert).webp({ quality: 88 }).toBuffer())
+    await writeRetry('public/images/halal-certificate-v1.jpg', await sharp(cert).jpeg({ quality: 88, mozjpeg: true }).toBuffer())
+    console.log('halal certificate: halal-certificate-v1.webp/.jpg')
+  }
+}
+
 // 2 — real product photos
 // assets/product-photos/<slug>.<ext> → that product. Files starting with "_" are
 // shared photos: _shared.json maps each one to a list of product slugs, e.g.

@@ -6,6 +6,7 @@ Next.js 16 (App Router, JavaScript) ecommerce site for a Greenacre, Sydney halal
 - The ONLY certifier is **Halal Control Australia**. Never name any other certifier (HCAA, AFIC, ANIC, "NSW Halal Board/Authority", etc.).
 - Never claim "hand-slaughtered", "hand Zabiha", "non-stunned", "Zabiha certified", "organic", "grass-fed" or "MSA graded" for our products — the owner has not confirmed them.
 - Never invent licence numbers, certificate numbers, reviews, awards, statistics or milestones. Licence numbers will be supplied later.
+- The real halal certificate (owner-supplied) is `assets/halal-certificate.jpg`; its number and expiry live in `SITE.certificate`. Update both when it is renewed.
 - Authority: Australian Consumer Law (misleading claims). These terms are in `COMPLIANCE.bannedTerms` and the crosscheck fails the build if they appear.
 - If a request would require breaking any of the above, stop and say so rather than complying.
 

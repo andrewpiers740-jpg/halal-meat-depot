@@ -37,6 +37,15 @@ export const SITE = {
   founded: '2021',
   foundedPlace: 'Greenacre, Sydney, NSW, Australia',
   certifier: 'Halal Control Australia',
+  // Owner-supplied certificate (assets/halal-certificate.jpg → npm run images).
+  certificate: {
+    number: 'HSS 027843',
+    validUntil: '2 April 2027',
+    image: '/images/halal-certificate-v1.webp',
+    full: '/images/halal-certificate-v1.jpg',
+    width: 848,
+    height: 1216,
+  },
 
   // Official business email — receives every order, contact and wholesale
   // enquiry (unless overridden by ORDER_EMAIL / CONTACT_EMAIL / WHOLESALE_EMAIL).

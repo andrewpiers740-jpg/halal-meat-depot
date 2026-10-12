@@ -56,8 +56,28 @@ export default function HalalCertificationPage() {
                 <strong style={{ fontSize: '1.1rem' }}>{SITE.certifier}</strong>
                 <br />
                 Certifier for 100% of our range.
+                <br />
+                Certificate No. {SITE.certificate.number} · valid until {SITE.certificate.validUntil}
               </div>
             </div>
+            <figure className="card" id="certificate" style={{ margin: 0 }}>
+              <a href={SITE.certificate.full} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={SITE.certificate.image}
+                  width={SITE.certificate.width}
+                  height={SITE.certificate.height}
+                  alt={`Halal certificate No. ${SITE.certificate.number} issued by ${SITE.certifier} to ${SITE.legalName}, trading as ${SITE.name}`}
+                  loading="lazy"
+                  style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius)' }}
+                />
+              </a>
+              <figcaption className="muted" style={{ fontSize: '0.9rem', marginTop: 10 }}>
+                Our current halal certificate from {SITE.certifier}.{' '}
+                <a href={SITE.certificate.full} target="_blank" rel="noopener noreferrer">
+                  View full size
+                </a>
+              </figcaption>
+            </figure>
             <div className="card card--tint">
               <h2 style={{ fontSize: '1.2rem' }}>Certified categories</h2>
               <ul className="check-list">

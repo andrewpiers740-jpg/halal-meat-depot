@@ -86,7 +86,8 @@ export default async function ProductPage({ params }) {
                   <strong>Certified halal by {SITE.certifier}</strong>
                   <br />
                   <span style={{ fontSize: '0.9rem' }}>
-                    <Link href="/halal-certification/">How our meat is certified and regulated</Link>.
+                    Certificate No. {SITE.certificate.number} —{' '}
+                    <Link href="/halal-certification/#certificate">view certificate</Link>.
                   </span>
                 </div>
               </div>

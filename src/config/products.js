@@ -11,7 +11,7 @@
 // that exact path — dropping a real photo into assets/product-photos/<slug>.jpg
 // and running `npm run images` replaces it with no code change.
 
-export const IMAGE_VERSION = 'v2'
+export const IMAGE_VERSION = 'v3'
 export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
 // Anchor id for a subcategory section on its category page (/shop/<cat>/#<subSlug>).
 export const subSlug = (sub) => sub.toLowerCase().replace(/&/g, 'and').replace(/\+/g, '-plus').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
@@ -264,15 +264,9 @@ export const PRODUCTS = [
   p("beef", "Angus MB2+ to MB4+", "Angus Beef Rump Steaks MB3-4+", "2kg pack", 2, 28.99,
     "Marble score 3–4+ Angus rump steaks — great value with real marbling.",
     "Marbled rump that eats like a premium steak. Grill hot and slice across the grain."),
-  p("beef", "Angus MB2+ to MB4+", "Angus Beef Porterhouse Portion MB2+", "approx. 3kg portion", 3, 46.99,
-    "A whole Angus porterhouse portion (MB2+) for cutting your own steaks.",
-    "Portion it into steaks at your preferred thickness, or roast it whole and carve thin slices."),
   p("beef", "Angus MB2+ to MB4+", "Angus Beef Porterhouse Portion MB3-4+", "approx. 2.5kg portion", 2.5, 48.99,
     "A marble score 3–4+ Angus porterhouse portion for restaurants.",
     "Cut your own steaks to order and keep the trim for kebabs. Store chilled and portion as needed."),
-  p("beef", "Angus MB2+ to MB4+", "Angus Beef Rump Portion MB3-4+", "approx. 2.5kg portion", 2.5, 26.49,
-    "An Angus rump portion (MB3–4+) for steaks, skewers and roasting.",
-    "Separate the muscles for steaks, cube the trim for kebabs or roast it whole."),
   p("beef", "Angus MB2+ to MB4+", "Black Angus Beef Rump Whole MB3-4+", "approx. 7kg whole rump", 7, 26.49,
     "A whole Black Angus rump (MB3–4+) for steakhouses and kebab kitchens.",
     "The whole rump gives cap, centre and eye. Ideal for kitchens that portion their own steaks and skewers.", {badge: "Trade"}),
@@ -465,15 +459,6 @@ export const PRODUCTS = [
   p("beef", "Mince, Diced & Kebabs", "Beef Chuck & Brisket Burgers", "2kg pack (approx. 16 burgers)", 2, 20.49,
     "Beef burgers made from chuck and brisket.",
     "Cook over medium-high heat for four minutes a side. Rest briefly before serving."),
-  p("beef", "Veal", "Veal Eye Fillet", "approx. 2kg", 2, 56.49,
-    "Tender, mild veal eye fillet.",
-    "Sear and finish in the oven to medium. Slice into medallions with a pan sauce."),
-  p("beef", "Veal", "Veal Cutlets", "2kg pack", 2, 22.49,
-    "Bone-in veal cutlets for pan-frying and crumbing.",
-    "Crumb for cotoletta or pan-fry in butter until just cooked through."),
-  p("beef", "Veal", "Veal Schnitzel", "2kg pack", 2, 22.49,
-    "Thin veal schnitzel slices ready to crumb.",
-    "Crumb and shallow-fry for two minutes a side for a classic schnitzel."),
   p("beef", "Veal", "Veal Osso Buco", "2kg pack", 2, 14.99,
     "Cross-cut veal shank for osso buco.",
     "Braise in tomato and stock for two hours until tender and serve with gremolata."),
