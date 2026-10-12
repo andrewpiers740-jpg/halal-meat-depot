@@ -11,7 +11,7 @@
 // that exact path — dropping a real photo into assets/product-photos/<slug>.jpg
 // and running `npm run images` replaces it with no code change.
 
-export const IMAGE_VERSION = 'v3'
+export const IMAGE_VERSION = 'v4'
 export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
 // Anchor id for a subcategory section on its category page (/shop/<cat>/#<subSlug>).
 export const subSlug = (sub) => sub.toLowerCase().replace(/&/g, 'and').replace(/\+/g, '-plus').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')

@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Icon from '@/components/Icon'
 import Email from '@/components/Email'
 import SmartImage from '@/components/SmartImage'
+import HeroSlider from '@/components/HeroSlider'
 import ProductCard from '@/components/ProductCard'
 import JsonLd from '@/components/JsonLd'
 import { SITE, CATEGORIES, PRODUCTS, POSTS, FAQS, categoryImage } from '@/config/site'
@@ -19,6 +19,16 @@ export const metadata = pageMeta({
 
 const homeFaqs = FAQS.filter((f) => f.home)
 
+// Homepage category tiles: Wholesale Cartons first, the rest in their usual order.
+const homeCategories = [...CATEGORIES.filter((c) => c.slug === 'wholesale-cartons'), ...CATEGORIES.filter((c) => c.slug !== 'wholesale-cartons')]
+
+// Hero background slides (sources in assets/hero/ → npm run images).
+const HERO_SLIDES = [
+  { src: '/images/hero/hero-1-v1.webp' },
+  { src: '/images/hero/hero-2-v1.webp', position: 'center top' },
+  { src: '/images/hero/hero-3-v1.webp' },
+]
+
 export default function HomePage() {
   const featured = PRODUCTS.filter((p) => p.featured).slice(0, 8)
   const posts = [...POSTS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
@@ -29,7 +39,8 @@ export default function HomePage() {
       <JsonLd data={[organizationSchema(), websiteSchema(), faqSchema(homeFaqs), speakableSchema('/', ['.brand-statement', '.about-intro'])]} />
 
       {/* 1 — Hero */}
-      <section className="hero" aria-labelledby="hero-title">
+      <section className="hero hero--slides" aria-labelledby="hero-title">
+        <HeroSlider slides={HERO_SLIDES} />
         <div className="container">
           <div className="reveal">
             <span className="hero-pill">
@@ -58,9 +69,6 @@ export default function HomePage() {
                 <Icon name="pin" /> Greenacre, Sydney · since {SITE.founded}
               </span>
             </div>
-          </div>
-          <div className="hero-emblem">
-            <Image src="/images/logo-v2.webp" alt="Halal Meat Depot logo — cow, lamb, rooster and kangaroo" width={512} height={512} priority sizes="(max-width: 900px) 80vw, 360px" />
           </div>
         </div>
       </section>
@@ -108,7 +116,7 @@ export default function HomePage() {
             <p>Eight kinds of halal meat plus trade cartons — choose a category to see every cut, pack size and price.</p>
           </div>
           <div className="grid-3">
-            {CATEGORIES.map((c, i) => (
+            {homeCategories.map((c, i) => (
               <Link key={c.slug} href={`/shop/${c.slug}/`} className="cat-tile">
                 <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
                 <span className="scrim" aria-hidden="true" />

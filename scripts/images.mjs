@@ -141,6 +141,17 @@ console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon
   }
 }
 
+// 1c — homepage hero slides: assets/hero/hero-<n>.<ext> → public/images/hero/hero-<n>-v1.webp (1920 wide max)
+{
+  const heroDir = out('assets/hero')
+  const heroes = existsSync(heroDir) ? readdirSync(heroDir).filter((f) => /^hero-\d+\.(jpe?g|png|webp|avif)$/i.test(f)) : []
+  for (const f of heroes) {
+    const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: 1920, withoutEnlargement: true }).webp({ quality: 80 }).toBuffer()
+    await writeRetry(`public/images/hero/${basename(f, extname(f))}-v1.webp`, buf)
+  }
+  if (heroes.length) console.log(`hero slides: ${heroes.length}`)
+}
+
 // 2 — real product photos
 // assets/product-photos/<slug>.<ext> → that product. Files starting with "_" are
 // shared photos: _shared.json maps each one to a list of product slugs, e.g.
@@ -217,7 +228,14 @@ const catPhotos = existsSync(catDir) ? readdirSync(catDir).filter((f) => IMG_RE.
 for (const c of CATEGORIES) {
   const photo = catPhotos.find((f) => basename(f, extname(f)) === c.slug)
   if (photo) {
-    const { pipeline } = await framePhoto(resolve(catDir, photo), 1200, 900)
+    // Scenic tile photos fill the whole tile (centre cover crop; tall photos crop on the
+    // most interesting area so the animals stay in frame).
+    // The wholesale carton is a product shot on white, so it is framed whole instead.
+    const position = c.slug === 'lamb' ? sharp.strategy.attention : 'centre'
+    const pipeline =
+      c.slug === 'wholesale-cartons'
+        ? (await framePhoto(resolve(catDir, photo), 1200, 900)).pipeline
+        : sharp(await sharp(resolve(catDir, photo)).rotate().resize(1200, 900, { fit: 'cover', position }).png().toBuffer())
     await encodeBoth(pipeline, `public/images/categories/${categoryImage(c.slug).replace(/\.webp$/, '')}`)
     continue
   }

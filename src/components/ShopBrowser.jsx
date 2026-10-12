@@ -31,6 +31,12 @@ export default function ShopBrowser({ categories, products }) {
   // Read filters from the URL once on load (shareable filtered views).
   useEffect(() => {
     const q = new URLSearchParams(window.location.search)
+    // Old ?cat= links forward to the category's own page.
+    const legacyCat = q.get('cat')
+    if (legacyCat && categories.some((c) => c.slug === legacyCat)) {
+      window.location.replace(`/shop/${legacyCat}/${q.get('sub') ? `#${q.get('sub')}` : ''}`)
+      return
+    }
     setCat(q.get('cat') || '')
     setSub(q.get('sub') || '')
     setMin(q.get('min') || '')
@@ -99,9 +105,10 @@ export default function ShopBrowser({ categories, products }) {
             </li>
             {categories.map((c) => (
               <li key={c.slug}>
-                <a href={`/shop/${c.slug}/`} className={cat === c.slug && !sub ? 'is-active' : ''} aria-current={cat === c.slug && !sub ? 'true' : undefined} onClick={pick(c.slug)}>
+                {/* Each category opens its own page (/shop/<slug>/), not an in-place filter. */}
+                <Link href={`/shop/${c.slug}/`} className={cat === c.slug && !sub ? 'is-active' : ''} aria-current={cat === c.slug && !sub ? 'true' : undefined}>
                   {c.name} <span>{c.count}</span>
-                </a>
+                </Link>
                 {cat === c.slug && c.subs.length > 0 && (
                   <ul>
                     {c.subs.map((s) => (
