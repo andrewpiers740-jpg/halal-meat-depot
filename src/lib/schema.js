@@ -25,7 +25,7 @@ export function organizationSchema() {
     foundingDate: SITE.founded,
     foundingLocation: { '@type': 'Place', name: SITE.foundedPlace },
     address: postalAddress(),
-    telephone: SITE.phone,
+    telephone: SITE.phoneIntl,
     taxID: SITE.abn,
     areaServed: { '@type': 'Country', name: 'Australia' },
     numberOfItems: PRODUCTS.length,
@@ -35,7 +35,7 @@ export function organizationSchema() {
     knowsAbout: ['Halal meat', 'Wholesale halal meat', ...CATEGORIES.map((c) => c.kw)],
     brand: { '@type': 'Brand', name: SITE.name },
     openingHoursSpecification: SITE.hours.map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: h.schema, opens: h.opens, closes: h.closes })),
-    contactPoint: { '@type': 'ContactPoint', telephone: SITE.phone, contactType: 'customer service', areaServed: 'AU', availableLanguage: 'English' },
+    contactPoint: { '@type': 'ContactPoint', telephone: SITE.phoneIntl, contactType: 'customer service', areaServed: 'AU', availableLanguage: 'English' },
     makesOffer: {
       '@type': 'AggregateOffer',
       priceCurrency: SITE.currency,
@@ -155,7 +155,7 @@ export function localBusinessSchema() {
     url: `${SITE.url}/`,
     image: logo(),
     address: postalAddress(),
-    telephone: SITE.phone,
+    telephone: SITE.phoneIntl,
     priceRange: '$$',
     openingHoursSpecification: SITE.hours.map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: h.schema, opens: h.opens, closes: h.closes })),
   }

@@ -84,11 +84,7 @@ export default function WholesalePage() {
               <span className="icon-badge"><Icon name="shield" /></span>
               <h3>One certifier, the whole range</h3>
               <p style={{ marginBottom: 0 }}>
-                Everything we supply is certified halal by {SITE.certifier}. Keep a copy of our certificate on file for your customers —{' '}
-                <Link href="/contact/" style={{ color: '#f6d48f' }}>
-                  request it here
-                </Link>
-                .
+                Everything we supply is certified halal by {SITE.certifier}, so one supplier covers your whole menu.
               </p>
             </div>
             <div className="card card--tint">

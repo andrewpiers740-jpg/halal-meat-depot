@@ -72,6 +72,7 @@ const TONES = {
   duck: ['#16242a', '#2f5d68'],
   kangaroo: ['#2c120f', '#7d2e22'],
   'water-buffalo': ['#1c1a1f', '#4b3f52'],
+  offal: ['#2a0d14', '#6b1f33'],
   'wholesale-cartons': ['#151b22', '#2f4456'],
 }
 

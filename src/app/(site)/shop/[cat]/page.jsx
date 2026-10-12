@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CategoryChips from '@/components/CategoryChips'
 import ProductCard from '@/components/ProductCard'
+import Regulators from '@/components/Regulators'
 import { SITE, CATEGORIES, POSTS, categoryBySlug, productsInCategory, subSlug } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
@@ -58,6 +59,9 @@ export default async function CategoryPage({ params }) {
               </div>
             </section>
           ))}
+          <div className="card" style={{ marginBottom: 24 }}>
+            <Regulators cat={c.slug} title={`How ${c.name.toLowerCase()} is regulated in Australia`} />
+          </div>
           <div className="grid-2">
             <div className="card card--tint">
               <h2>Ordering {c.name.toLowerCase()} from Halal Meat Depot</h2>

@@ -11,7 +11,7 @@ const CONFIG = {
       { k: 'name', label: 'Your name', type: 'text', auto: 'name', required: true },
       { k: 'email', label: 'Email', type: 'email', auto: 'email', required: true },
       { k: 'phone', label: 'Phone (optional)', type: 'tel', auto: 'tel' },
-      { k: 'subject', label: 'Subject', type: 'select', options: ['General question', 'Product question', 'Order question', 'Event or bulk order', 'Halal certificate request', 'Other'] },
+      { k: 'subject', label: 'Subject', type: 'select', options: ['General question', 'Product question', 'Order question', 'Event or bulk order', 'Wholesale account', 'Other'] },
       { k: 'message', label: 'Message', type: 'textarea', required: true },
     ],
     submit: 'Send message',

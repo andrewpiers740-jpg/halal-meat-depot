@@ -50,7 +50,7 @@ export default function AboutPage() {
             <h2>One certifier across the whole range</h2>
             <p>
               Every product we sell is certified halal by {SITE.certifier}. We use one certifier for everything so there is never any doubt
-              about who stands behind the halal status of your meat, and we provide a copy of our certificate on request. Read more on our{' '}
+              about who stands behind the halal status of your meat. Read more on our{' '}
               <Link href="/halal-certification/">halal certification page</Link>.
             </p>
             <h2>Meats that are hard to find in one place</h2>

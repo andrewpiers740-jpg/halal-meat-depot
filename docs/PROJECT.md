@@ -15,7 +15,7 @@
 
 ## Contact & business
 - Address: 43 Banksia Rd, Greenacre NSW 2190 (confirmed real) · ABN 27 093 995 629 (confirmed real)
-- Phone/WhatsApp: +61 489 989 442 · Email: sales@halalmeatdepot.com.au (official; receives all orders, contact and wholesale enquiries; shown entity-encoded)
+- Phone/WhatsApp: 0489 989 442 (display format; +61 489 989 442 in schema and tel:/WhatsApp links) · Email: sales@halalmeatdepot.com.au (official; receives all orders, contact and wholesale enquiries; shown entity-encoded)
 - Hours: Mon–Sat 06:00–18:00, Sun 07:00–16:00 (confirmed real)
 - Country AU · Currency AUD · Fresh meat GST-free
 
@@ -41,7 +41,15 @@ Halal Meat Depot is a Greenacre, Sydney-based halal meat supplier established in
 - No age gate. Privacy Act 1988 / APPs privacy policy. No tracking cookies → no consent banner.
 
 ## Shop structure
-Type A (Category → Subcategory → Product). 9 categories: Beef, Lamb, Goat, Chicken, Camel, Duck, Kangaroo, Water Buffalo, Wholesale Cartons. 141 products, one or more per subcategory (71 added October 2026, priced against Sydney halal butchers' online listings — Halal Meat Company, Abu Ahmad Butchery, Australian Meat Emporium, Super Butcher — set at depot level below retail; duck remains an estimate). Camel range (10 frozen products) replaced 10 Oct 2026 on the owner's instruction to match Gamekeepers of Australia's camel range (gamekeepersmeat.com.au/collections/camel), at their listed prices; descriptions are our own. Water buffalo range (9 frozen products) replaced the same way from gamekeepersmeat.com.au/collections/buffalo. Duck range (8) replaced from mcd.com.au/poultry/duck at its per-kg prices (owner says MCD is also their business; 6 photos used, bones + duck fat photos skipped as they showed other products; MCD's photos are Shutterstock stock — licence is the owner's responsibility). Kangaroo range (8) replaced from Queen Victoria Market's online shop listing (qvm.com.au) — names/sizes/prices only; QVM photos NOT used (QVM is a public market with independent traders); kangaroo salamis excluded (contain pork fat); marinated red-wine fillet option excluded; owner must confirm sausage casings are halal. Kangaroo tail weight (approx. 1kg) is an estimate. Retired product URLs 301 via RETIRED_PRODUCTS in site.js.
+Type A (Category → Subcategory → Product). 10 categories: Beef, Lamb, Goat, Chicken, Camel, Duck, Kangaroo, Water Buffalo, Offal, Wholesale Cartons. 217 products (12 Oct 2026 rebuild).
+
+**12 Oct 2026 catalogue rebuild (owner instruction):** beef (except Beef Tomahawk Steaks), lamb (except Whole & Half Carcass), goat (except Whole Goat Carcass), chicken (except Bulk Commercial Cartons) and kangaroo replaced with the cuts listed by Australian Meat Emporium (meatemporium.com.au: beef, wagyu, lamb, goat-1, poultry collections + its 2 kangaroo products); new Offal category from its offal collection; new beef subcategory Whole, Half & Quarter Carcass (5 products, owner photos from Desktop/edits). Names cleaned of unconfirmed claims (Grass Fed, Free Range, Our Farm, 100 Day Grain Fed, brand names). Excluded: pork-containing/unclear items (Chorizo, Truffle Parmesan sausages — parmesan rennet), A5 Japanese Wagyu (3 — imported, halal status unknown), non-meat (gift card, salt pack), owner-excluded items, near-duplicates; offal items appear only under Offal. Meat Emporium product IMAGES NOT USED (separate business; owner claim of ownership not accepted) — reused owner-supplied photos where the cut matches. Owner must confirm halal casings/marinades for sausages, kofta, lamb ham and marinated chicken.
+
+**Pricing rule (12 Oct 2026):** wholesale packs (min 2kg — smaller packs sold as a case, MIN_PACK_KG in products.js); per-kg price = 95% of the lowest competitor per-kg found, rounded down to .49/.99 (competitors: Australian Meat Emporium, Halal Meat Company, Abu Ahmad Butchery, Super Butcher; carcasses vs Free Range Butcher, Outback Beef, Farmgate to Plate, Naked Butcher). Camel/buffalo/duck cut 5% below their source listings. Carcass/carton prices were already below competitors.
+
+**Regulators cited** (REGULATORS in site.js, shown on category, product and certification pages): FSANZ, NSW Food Authority, DAFF (AGAHP — export halal red meat), AUS-MEAT, MLA, NSW Kangaroo Management Program. None certifies domestic halal status.
+
+**Certificate:** all "copy of our certificate on request" wording and the form option removed (owner will add their own certificate later). An edited copy of another business's HCA certificate (HSS 027843, Al-Sultan Butchery) was supplied and NOT published.
 
 ## Pricing basis (researched 2026-10-09 — owner to review)
 Owner asked for real wholesale prices sourced from the web. Published Sydney halal wholesale price lists are rare, so prices are set ~10–15% below current Sydney halal butcher retail prices for bulk packs:

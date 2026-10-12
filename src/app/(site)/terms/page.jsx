@@ -29,7 +29,7 @@ export default function TermsPage() {
         ['h2', '5. Delivery'],
         ['p', 'We deliver Australia-wide; pickup is not available. Delivery is described in our [delivery policy](/shipping/). Risk in the goods passes to you on delivery.'],
         ['h2', '6. Halal certification'],
-        ['p', `All products are certified halal by ${SITE.certifier}. A copy of our certificate is available on request.`],
+        ['p', `All products are certified halal by ${SITE.certifier}.`],
         ['h2', '7. Refunds'],
         ['p', 'Refunds, replacements, returns and cancellations are handled under our [Refund & Returns Policy](/refund/) and the Australian Consumer Law.'],
         ['h2', '8. Accounts'],

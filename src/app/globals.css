@@ -270,6 +270,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .check-list .icon { color: var(--brand); margin-top: 2px; }
 .cert-box { display: flex; gap: 14px; align-items: flex-start; padding: 16px; border-radius: var(--radius); background: var(--ok-bg); border: 1px solid #c6e6d1; color: #143d24; }
 .cert-box .icon { color: var(--ok); width: 26px; height: 26px; }
+.regulators h2 { font-size: 1.2rem; margin-top: 0; }
+.regulators ul { margin: 0; padding-left: 1.1rem; }
+.regulators li { margin-bottom: 8px; font-size: 0.93rem; line-height: 1.5; }
+.regulators li:last-child { margin-bottom: 0; }
+.regulators a { font-weight: 700; }
 
 /* ── Chips, breadcrumbs, notices ────────────────────────────────────────── */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding: 0; list-style: none; }
@@ -419,3 +424,37 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 @media print {
   .site-header, .announce, .site-footer, .chat-fab { display: none !important; }
 }
+
+/* ── Shop browser: left sidebar + filtered grid ──────────────────────────── */
+.shop-layout { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: start; }
+.shop-filter-toggle { justify-self: start; }
+.shop-sidebar { display: none; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+.shop-sidebar.is-open { display: block; }
+.shop-side-block + .shop-side-block { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 16px; }
+.shop-side-block h2 { font-size: 1rem; margin: 0 0 10px; letter-spacing: 0.01em; }
+.shop-side-note { font-size: 0.82rem; margin: -6px 0 10px; }
+.shop-cats, .shop-cats ul, .shop-ranges { list-style: none; margin: 0; padding: 0; }
+.shop-cats ul { margin: 2px 0 6px 12px; border-left: 2px solid var(--tint-2); padding-left: 8px; }
+.shop-cats a { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 6px 10px; border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.93rem; }
+.shop-cats ul a { font-weight: 500; font-size: 0.88rem; min-height: 36px; }
+.shop-cats a span { color: var(--muted); font-weight: 500; font-size: 0.8rem; }
+.shop-cats a:hover, .shop-cats a.is-active { background: var(--tint); color: var(--brand); }
+.shop-cats a.is-active span { color: var(--brand); }
+.shop-ranges { display: grid; gap: 6px; }
+.shop-ranges button { width: 100%; text-align: left; min-height: 40px; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; color: var(--ink); font: inherit; font-size: 0.9rem; cursor: pointer; }
+.shop-ranges button:hover, .shop-ranges button.is-active { border-color: var(--brand); color: var(--brand); background: var(--tint); }
+.shop-price-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.shop-price-inputs label { display: grid; gap: 4px; font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+.shop-price-inputs input { width: 100%; min-height: 40px; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm); font: inherit; font-size: 0.95rem; }
+.shop-sidebar > .btn { margin-top: 16px; width: 100%; }
+.shop-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+.shop-toolbar p { margin: 0; }
+.shop-sort { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+.shop-sort select { min-height: 40px; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm); font: inherit; background: #fff; }
+@media (min-width: 960px) {
+  .shop-layout { grid-template-columns: 260px minmax(0, 1fr); gap: 32px; }
+  .shop-filter-toggle { display: none; }
+  .shop-sidebar { display: block; position: sticky; top: calc(var(--header-h) + 16px); max-height: calc(100vh - var(--header-h) - 32px); overflow-y: auto; overscroll-behavior: contain; }
+  .shop-main .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1180px) { .shop-main .product-grid { grid-template-columns: repeat(3, 1fr); } }

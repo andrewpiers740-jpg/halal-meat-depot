@@ -6,6 +6,8 @@ import ProductCard from '@/components/ProductCard'
 import AddToCart from '@/components/AddToCart'
 import Icon from '@/components/Icon'
 import JsonLd from '@/components/JsonLd'
+import Regulators from '@/components/Regulators'
+import { hasRealPhoto } from '@/lib/photos'
 import { SITE, PRODUCTS, productBySlug, categoryBySlug } from '@/config/site'
 import { productSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
@@ -28,6 +30,7 @@ export async function generateMetadata({ params }) {
   if (description.length > 158) description = `${p.name}, ${p.unit}, ${money(p.price)}. Certified halal by Halal Control Australia. Delivered Australia-wide.`
   if (description.length > 158) description = description.slice(0, 155).replace(/\s+\S*$/, '') + '…'
   if (description.length < 110) description = `${description} Certified halal by Halal Control Australia.`
+  if (description.length < 110) description = `${description} Wholesale prices, delivered Australia-wide.`
   return pageMeta({ title, description, path: `/product/${p.slug}/`, image: `${SITE.url}/images/products/${p.images[0]}` })
 }
 
@@ -59,9 +62,11 @@ export default async function ProductPage({ params }) {
                 {p.badge && <span className={`badge badge--${p.badge.replace(/\s+/g, '')}`}>{p.badge}</span>}
                 <SmartImage src={`/images/products/${p.images[0]}`} alt={`${p.name} — ${p.unit} — Halal Meat Depot`} fill sizes="(max-width: 900px) 100vw, 55vw" priority />
               </div>
-              <p className="muted" style={{ fontSize: '0.85rem', marginTop: 10 }}>
-                Product photo coming soon — image shows the pack name and size.
-              </p>
+              {!hasRealPhoto(p.slug) && (
+                <p className="muted" style={{ fontSize: '0.85rem', marginTop: 10 }}>
+                  Product photo coming soon — image shows the pack name and size.
+                </p>
+              )}
             </div>
             <div className="stack">
               <span className="product-meta">
@@ -81,7 +86,7 @@ export default async function ProductPage({ params }) {
                   <strong>Certified halal by {SITE.certifier}</strong>
                   <br />
                   <span style={{ fontSize: '0.9rem' }}>
-                    Certificate available on request — <Link href="/halal-certification/">how our meat is certified</Link>.
+                    <Link href="/halal-certification/">How our meat is certified and regulated</Link>.
                   </span>
                 </div>
               </div>
@@ -125,6 +130,10 @@ export default async function ProductPage({ params }) {
                 </Link>
               </div>
             </aside>
+          </div>
+
+          <div className="card" style={{ marginTop: 32 }}>
+            <Regulators cat={p.cat} id="pdp-regulation" />
           </div>
 
           {related.length > 0 && (

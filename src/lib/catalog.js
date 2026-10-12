@@ -39,7 +39,7 @@ export function searchProducts({ query = '', category, maxPrice, limit = 50 } = 
     if (!terms.length) return true
     const hay = `${p.name} ${p.short} ${p.sub} ${p.cat} ${categoryBySlug(p.cat)?.name}`.toLowerCase()
     return terms.every((t) => hay.includes(t))
-  }).slice(0, Math.max(1, Math.min(200, Number(limit) || 50)))
+  }).slice(0, Math.max(1, Math.min(500, Number(limit) || 50)))
 }
 
 export function searchPosts(query = '') {

@@ -12,7 +12,7 @@ import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
   title: 'Contact Halal Meat Depot | Greenacre, Sydney',
-  description: 'Contact Halal Meat Depot in Greenacre, Sydney for orders, wholesale, event orders and halal certificate requests. Call, WhatsApp, email or message us.',
+  description: 'Contact Halal Meat Depot in Greenacre, Sydney for orders, wholesale accounts, event and bulk orders. Call, WhatsApp, email or send us a message.',
   path: '/contact/',
 })
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
           <Breadcrumbs crumbs={[{ name: 'Contact', path: '/contact/' }]} />
           <h1>Contact Halal Meat Depot</h1>
           <p className="lead">
-            Questions about cuts, quantities, event orders or our halal certificate? WhatsApp is the fastest way to reach us, or send a message
+            Questions about cuts, quantities, wholesale or event orders? WhatsApp is the fastest way to reach us, or send a message
             below.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
                 </a>
-                . Need a copy of our halal certificate? Choose &ldquo;Halal certificate request&rdquo; in the form. See also the{' '}
+                . See also the{' '}
                 <Link href="/faq/">FAQ</Link>.
               </p>
             </div>

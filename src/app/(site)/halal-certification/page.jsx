@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Icon from '@/components/Icon'
-import Email from '@/components/Email'
+import Regulators from '@/components/Regulators'
 import { SITE, CATEGORIES } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
   title: 'Halal Certification — Halal Control Australia | HMD',
-  description: 'Every product at Halal Meat Depot is certified halal by Halal Control Australia. See what certification covers and how to request a copy of our certificate.',
+  description: 'Every product at Halal Meat Depot is certified halal by Halal Control Australia. See what halal certification covers and how meat is regulated in Australia.',
   path: '/halal-certification/',
 })
 
@@ -30,15 +30,9 @@ export default function HalalCertificationPage() {
             <h2 id="cert-title">Certified by {SITE.certifier}</h2>
             <p>
               Halal certification in Australia is issued by independent Islamic certification organisations, which audit suppliers against
-              their published halal standard. We use a single certifier, {SITE.certifier}, for our entire range — beef, lamb, goat, chicken,
-              camel, duck, kangaroo, water buffalo and wholesale cartons — so there is one clear answer to the question &ldquo;who certifies this
+              their published halal standard. We use a single certifier, {SITE.certifier}, for our entire range —{' '}
+              {CATEGORIES.map((c) => c.name.toLowerCase()).join(', ').replace(/, ([^,]*)$/, ' and $1')} — so there is one clear answer to the question &ldquo;who certifies this
               meat?&rdquo;
-            </p>
-            <h2>Request a copy of our certificate</h2>
-            <p>
-              We provide a copy of our current halal certificate on request — useful for restaurants and caterers who keep supplier records,
-              and for anyone ordering for a religious occasion. Ask through the <Link href="/contact/">contact form</Link> (choose &ldquo;Halal
-              certificate request&rdquo;) or message us on WhatsApp.
             </p>
             <h2>What halal certification covers</h2>
             <p>A halal certifier typically checks that:</p>
@@ -48,6 +42,7 @@ export default function HalalCertificationPage() {
               <li>halal products are kept separate from non-halal products through processing, storage and transport;</li>
               <li>records let each product be traced to a certified source.</li>
             </ul>
+            <Regulators title="Who regulates the meat we sell" />
             <p>
               If a specific requirement matters to you, we recommend reading {SITE.certifier}&apos;s published standard or asking us before you order.
               Our guide <Link href="/blog/what-halal-certification-means-australia/">What halal certification means when you buy meat in Australia</Link>{' '}
@@ -60,7 +55,7 @@ export default function HalalCertificationPage() {
               <div>
                 <strong style={{ fontSize: '1.1rem' }}>{SITE.certifier}</strong>
                 <br />
-                Certifier for 100% of our range. Certificate available on request.
+                Certifier for 100% of our range.
               </div>
             </div>
             <div className="card card--tint">
@@ -80,8 +75,6 @@ export default function HalalCertificationPage() {
                 <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
                   {SITE.abn}
                 </a>
-                <br />
-                Certificate requests: <Email />
               </p>
             </div>
           </div>

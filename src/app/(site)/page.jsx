@@ -159,8 +159,7 @@ export default function HomePage() {
               <Link href="/shop/goat/">goat</Link>, <Link href="/shop/chicken/">chicken</Link>, <Link href="/shop/camel/">camel</Link>,{' '}
               <Link href="/shop/duck/">duck</Link>, <Link href="/shop/kangaroo/">kangaroo</Link> and{' '}
               <Link href="/shop/water-buffalo/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
-              range and share a copy of our certificate on request, so you always know exactly who stands behind the halal status of your
-              meat. Read more on our <Link href="/halal-certification/">halal certification page</Link>.
+              range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-certification/">halal certification page</Link>.
             </p>
             <h3>What makes us different</h3>
             <p>
