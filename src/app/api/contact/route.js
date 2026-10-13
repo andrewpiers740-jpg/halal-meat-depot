@@ -3,6 +3,7 @@
 // the browser. Either checkout channel (website or WhatsApp) saves the order,
 // emails the shop AND sends the customer confirmation — unconditionally.
 import { computeTotals, findMethod, ORDER_REF_RE } from '@/lib/order'
+import { postcodeFromAddress } from '@/config/delivery'
 import { saveOrder } from '@/lib/orderStore'
 import { saveEnquiry, generateEnquiryId } from '@/lib/enquiryStore'
 import { sendMail, destination } from '@/lib/mailer'
@@ -45,7 +46,8 @@ async function handleOrder(body, base) {
   if (!method) return Response.json({ ok: false, error: 'bad-payment-method' }, { status: 400 })
 
   const lines = Array.isArray(body.lines) ? body.lines.slice(0, 100) : []
-  const t = computeTotals(lines, { paymentMethod: method.id, fulfilment })
+  const speed = body.deliverySpeed === 'priority' ? 'priority' : 'standard'
+  const t = computeTotals(lines, { paymentMethod: method.id, fulfilment, speed, postcode: postcodeFromAddress(address) })
   if (!t.items.length) return Response.json({ ok: false, error: 'empty-cart' }, { status: 400 })
   if (!t.meetsMinimum) return Response.json({ ok: false, error: 'below-minimum' }, { status: 400 })
 
@@ -86,6 +88,9 @@ async function handleOrder(body, base) {
     discount: t.discount,
     discountPct: t.discountPct,
     shipping: t.shipping,
+    deliverySpeed: t.deliverySpeed,
+    deliveryZone: t.deliveryZone,
+    deliveryLabel: t.deliveryLabel,
     amountDue: t.total,
   }
 

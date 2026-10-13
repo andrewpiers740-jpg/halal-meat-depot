@@ -50,6 +50,8 @@ export const TOOLS = [
           items: { type: 'object', properties: { slug: { type: 'string' }, quantity: { type: 'integer', minimum: 1 } }, required: ['slug', 'quantity'] },
         },
         payment_method: { type: 'string', enum: ['payid', 'bank_transfer', 'crypto'] },
+        delivery_speed: { type: 'string', enum: ['standard', 'priority'], description: 'Priority Delivery is priced by distance from the depot and needs a postcode.' },
+        postcode: { type: 'string', pattern: '^[0-9]{4}$', description: 'Australian delivery postcode.' },
       },
       required: ['items'],
     },
@@ -72,7 +74,7 @@ export async function runTool(name, args = {}) {
       return { tiers: WHOLESALE_TIERS, apply: `${SITE.url}/halal-meat-wholesale/`, cartons: `${SITE.url}/shop/bulk-meat-boxes/` }
     case 'create_order_draft': {
       const lines = (Array.isArray(args.items) ? args.items : []).map((i) => ({ slug: String(i.slug), qty: Number(i.quantity) }))
-      const totals = computeTotals(lines, { paymentMethod: args.payment_method })
+      const totals = computeTotals(lines, { paymentMethod: args.payment_method, speed: args.delivery_speed, postcode: args.postcode })
       const add = totals.items.map((i) => `${i.slug}:${i.quantity}`).join(',')
       return {
         ...totals,

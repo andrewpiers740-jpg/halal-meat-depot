@@ -489,3 +489,11 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 /* Live audit fixes (Lighthouse, 2026-10-13): footer phone/WhatsApp tap targets; heading contrast on dark cards */
 .site-footer a.footer-contact { display: inline-flex; align-items: center; min-height: 44px; }
 .card--dark h2 { color: #fff; }
+
+/* Data tables in prose (delivery zones) */
+.table-wrap { overflow-x: auto; margin: 0 0 1.2em; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.data-table caption { text-align: left; font-weight: 600; padding: 0 0 8px; }
+.data-table th, .data-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); vertical-align: top; }
+.data-table thead th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.data-table tbody th { font-weight: 600; }

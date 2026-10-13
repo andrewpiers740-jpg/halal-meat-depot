@@ -2,6 +2,7 @@
 // (API routes, emails). The server always recomputes totals from PRODUCTS, so
 // a tampered client price can never change what the customer is charged.
 import { SITE, REPLY, PAYMENT_METHODS, productBySlug } from '../config/site.js'
+import { deliveryZone } from '../config/delivery.js'
 
 export function money(n) {
   const { code, locale } = REPLY.currency
@@ -18,8 +19,12 @@ export function findMethod(id) {
  * Compute every total from {slug, qty} lines. Crypto discount applies to the
  * meat subtotal only (not delivery), automatically, whenever the selected
  * payment method carries a discount.
+ *
+ * Delivery: 'standard' is free over SITE.freeShipOver, else SITE.flatShip.
+ * 'priority' is priced by the postcode's distance zone (src/config/delivery.js)
+ * and charged on every order; without a valid postcode it falls back to standard.
  */
-export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery' } = {}) {
+export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', speed = 'standard', postcode = '' } = {}) {
   const items = []
   for (const line of lines || []) {
     const product = productBySlug(line.slug)
@@ -31,7 +36,10 @@ export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery' } 
   const method = findMethod(paymentMethod)
   const discountPct = method?.discountPct || 0
   const discount = round2((subtotal * discountPct) / 100)
-  const shipping = fulfilment === 'pickup' || subtotal >= SITE.freeShipOver || subtotal === 0 ? 0 : SITE.flatShip
+  const zone = deliveryZone(postcode)
+  const deliverySpeed = speed === 'priority' && zone ? 'priority' : 'standard'
+  const standardShip = fulfilment === 'pickup' || subtotal >= SITE.freeShipOver || subtotal === 0 ? 0 : SITE.flatShip
+  const shipping = deliverySpeed === 'priority' && subtotal > 0 ? zone.priorityPrice : standardShip
   const total = round2(subtotal - discount + shipping)
   return {
     items,
@@ -39,11 +47,20 @@ export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery' } 
     discountPct,
     discount,
     shipping,
+    deliverySpeed,
+    deliveryZone: zone ? zone.id : null,
+    deliveryLabel: deliveryLabel(deliverySpeed, zone),
     total,
     meetsMinimum: subtotal >= SITE.minOrder,
     shortfall: round2(Math.max(0, SITE.minOrder - subtotal)),
     freeShipShortfall: round2(Math.max(0, SITE.freeShipOver - subtotal)),
   }
+}
+
+/** Human label for the delivery line in summaries, emails and WhatsApp. */
+export function deliveryLabel(speed, zone) {
+  if (speed === 'priority' && zone) return `Priority Delivery — ${zone.name}, ${zone.priorityTime}`
+  return `Standard Delivery — ${SITE.delivery.transitDays[0]}–${SITE.delivery.transitDays[1]} days`
 }
 
 // ── Order numbers ─────────────────────────────────────────────────────────

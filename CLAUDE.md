@@ -16,6 +16,7 @@ Next.js 16 (App Router, JavaScript) ecommerce site for a Greenacre, Sydney halal
 - Never hand-edit generated files: `public/llms.txt`, `public/auth.md`, `public/.well-known/*`, `public/js/webmcp.js`, `vercel.json` — edit config; `scripts/gen-agent-files.mjs` regenerates them.
 - Domain lives ONLY in `SITE.domain` (currently pending: `DOMAIN.com`, so URLs fall back to the Vercel production URL).
 - Totals are always recomputed on the server (`computeTotals` in `src/lib/order.js`). Crypto = 10% off meat subtotal, automatic.
+- Delivery (owner, 2026-10-13): Standard 2–5 days, free over $500 else $25. Priority Delivery priced by distance from Greenacre — zones (postcode ranges), prices and times live ONLY in `src/config/delivery.js`; checkout, server totals, emails, delivery page, Product schema (`shippingDetails`) and llms.txt read from it.
 
 ## Rules
 - `npm run build && npm run crosscheck` must pass before every push. Always ask the owner before `git push`.

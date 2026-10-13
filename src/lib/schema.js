@@ -2,6 +2,7 @@
 // never templated as strings. Every URL is absolute (SITE.url + path).
 // Emails are deliberately NOT included (spam-scraper hygiene); phone is.
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '../config/site.js'
+import { DELIVERY_ZONES, effectiveRanges } from '../config/delivery.js'
 import { productImageSeo, imageObject } from './imageSeo.js'
 import { PRODUCT_KEYWORDS } from '../config/product-keywords.js'
 
@@ -113,16 +114,7 @@ export function productSchema(p) {
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: { '@id': `${SITE.url}/#organization` },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: { '@type': 'MonetaryAmount', value: SITE.flatShip, currency: SITE.currency },
-        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: { '@type': 'QuantitativeValue', minValue: SITE.delivery.handlingDays[0], maxValue: SITE.delivery.handlingDays[1], unitCode: 'DAY' },
-          transitTime: { '@type': 'QuantitativeValue', minValue: SITE.delivery.transitDays[0], maxValue: SITE.delivery.transitDays[1], unitCode: 'DAY' },
-        },
-      },
+      shippingDetails: shippingDetailsSchema(),
       // Mirrors the published Refund & Returns Policy: no change-of-mind returns on fresh meat
       // (faulty/incorrect items are replaced or refunded under the ACL — see /refund/).
       hasMerchantReturnPolicy: {
@@ -177,4 +169,33 @@ export function localBusinessSchema() {
     priceRange: '$$',
     openingHoursSpecification: SITE.hours.map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: h.schema, opens: h.opens, closes: h.closes })),
   }
+}
+
+// Standard Delivery (Australia-wide) plus one Priority Delivery entry per distance zone,
+// each scoped to that zone's postcode ranges — mirrors src/config/delivery.js and checkout.
+function shippingDetailsSchema() {
+  const days = (min, max) => ({ '@type': 'QuantitativeValue', minValue: min, maxValue: max, unitCode: 'DAY' })
+  const standard = {
+    '@type': 'OfferShippingDetails',
+    shippingLabel: 'Standard Delivery',
+    shippingRate: { '@type': 'MonetaryAmount', value: SITE.flatShip, currency: SITE.currency },
+    shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
+    deliveryTime: {
+      '@type': 'ShippingDeliveryTime',
+      handlingTime: days(SITE.delivery.handlingDays[0], SITE.delivery.handlingDays[1]),
+      transitTime: days(SITE.delivery.transitDays[0], SITE.delivery.transitDays[1]),
+    },
+  }
+  const priority = DELIVERY_ZONES.map((z) => ({
+    '@type': 'OfferShippingDetails',
+    shippingLabel: `Priority Delivery — ${z.name}`,
+    shippingRate: { '@type': 'MonetaryAmount', value: z.priorityPrice, currency: SITE.currency },
+    shippingDestination: {
+      '@type': 'DefinedRegion',
+      addressCountry: 'AU',
+      postalCodeRange: effectiveRanges(z.id).map(([a, b]) => ({ '@type': 'PostalCodeRangeSpecification', postalCodeBegin: String(a).padStart(4, '0'), postalCodeEnd: String(b).padStart(4, '0') })),
+    },
+    deliveryTime: { '@type': 'ShippingDeliveryTime', handlingTime: days(0, 0), transitTime: days(z.priorityDays[0], z.priorityDays[1]) },
+  }))
+  return [standard, ...priority]
 }

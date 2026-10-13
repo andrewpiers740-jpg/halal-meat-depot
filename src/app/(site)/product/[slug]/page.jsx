@@ -12,6 +12,7 @@ import { productImageSeo } from '@/lib/imageSeo'
 import { productContent } from '@/lib/productContent'
 import { SITE, PRODUCTS, productBySlug, categoryBySlug, containsFocus, postBySlug } from '@/config/site'
 import { productSchema } from '@/lib/schema'
+import { PRIORITY_FROM } from '@/config/delivery'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
 import { waLink } from '@/lib/whatsapp'
@@ -117,6 +118,10 @@ export default async function ProductPage({ params }) {
               <ul className="check-list">
                 <li>
                   <Icon name="truck" /> Delivered Australia-wide in {SITE.delivery.transitDays[0]}–{SITE.delivery.transitDays[1]} days — free over ${SITE.freeShipOver}, otherwise ${SITE.flatShip}
+                </li>
+                <li>
+                  <Icon name="clock" /> Priority Delivery from ${PRIORITY_FROM} — within 24 hours in Sydney,{' '}
+                  <Link href="/halal-meat-delivery/#priority">priced by distance</Link>
                 </li>
                 <li>
                   <Icon name="chilled" /> Packed chilled and dispatched once payment clears

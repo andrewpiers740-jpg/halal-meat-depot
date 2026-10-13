@@ -2,6 +2,7 @@
 // tools all serialise through toPublicProduct(), so agents never see three
 // subtly different product objects.
 import { SITE, CATEGORIES, PRODUCTS, POSTS, categoryBySlug } from '../config/site.js'
+import { ZONES_BY_DISTANCE } from '../config/delivery.js'
 
 export function productUrl(p) {
   return `${SITE.url}/product/${p.slug}/`
@@ -68,6 +69,8 @@ export function policies() {
     minimumOrder: SITE.minOrder,
     freeDeliveryOver: SITE.freeShipOver,
     flatDeliveryFee: SITE.flatShip,
+    standardDeliveryDays: SITE.delivery.transitDays,
+    priorityDelivery: ZONES_BY_DISTANCE.map((z) => ({ zone: z.name, distanceFromDepot: z.distance, price: z.priorityPrice, time: z.priorityTime })),
     deliveryArea: SITE.deliveryArea,
     pickup: SITE.pickupAvailable ? `Free pickup from ${SITE.addressLine}` : 'Not offered — delivery only',
     paymentMethods: ['PayID', 'Bank transfer', 'Cryptocurrency'],

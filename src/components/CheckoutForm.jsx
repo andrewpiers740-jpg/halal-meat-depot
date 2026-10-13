@@ -7,6 +7,7 @@ import { computeTotals, money, makeOrderNumber, findMethod } from '@/lib/order'
 import { waOrderLink, waChatLink } from '@/lib/whatsapp'
 import EmailLink from './EmailLink'
 import { SITE, PAYMENT_METHODS } from '@/config/site'
+import { deliveryZone, PRIORITY_FROM } from '@/config/delivery'
 
 const STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT']
 
@@ -16,6 +17,7 @@ export default function CheckoutForm() {
   const [f, setF] = useState({ name: '', email: '', phone: '', street: '', suburb: '', state: 'NSW', postcode: '', notes: '', password: '' })
   const fulfilment = 'delivery' // delivery only — no pickup
   const [payment, setPayment] = useState('payid')
+  const [speed, setSpeed] = useState('standard')
   const [createAccount, setCreateAccount] = useState(false)
   const [user, setUser] = useState(null)
   const [accountsOn, setAccountsOn] = useState(false)
@@ -37,7 +39,8 @@ export default function CheckoutForm() {
       .catch(() => {})
   }, [])
 
-  const t = computeTotals(lines, { paymentMethod: payment, fulfilment })
+  const zone = deliveryZone(f.postcode)
+  const t = computeTotals(lines, { paymentMethod: payment, fulfilment, speed, postcode: f.postcode })
   const method = findMethod(payment)
   const set = (k) => (e) => setF((v) => ({ ...v, [k]: e.target.value }))
 
@@ -51,6 +54,7 @@ export default function CheckoutForm() {
       if (f.suburb.trim().length < 2) e.suburb = 'Enter your suburb.'
       if (!/^\d{4}$/.test(f.postcode.trim())) e.postcode = 'Enter a 4-digit postcode.'
     }
+    if (speed === 'priority' && !zone && !e.postcode) e.postcode = 'Enter your postcode to price Priority Delivery.'
     if (createAccount && !user && f.password.length < 8) e.password = 'Choose a password of at least 8 characters.'
     setErrors(e)
     if (Object.keys(e).length) setTimeout(() => errRef.current?.focus(), 0)
@@ -75,6 +79,8 @@ export default function CheckoutForm() {
       discount: t.discount,
       discountPct: t.discountPct,
       shipping: t.shipping,
+      deliverySpeed: t.deliverySpeed,
+      deliveryLabel: t.deliveryLabel,
       amountDue: t.total,
     }
   }
@@ -94,6 +100,7 @@ export default function CheckoutForm() {
         customer: { name: order.customerName, email: order.customerEmail, phone: order.customerPhone },
         address: order.address,
         fulfilment,
+        deliverySpeed: t.deliverySpeed,
         paymentMethod: payment,
         notes: order.notes,
         createAccount: createAccount && !user ? { password: f.password } : null,
@@ -136,6 +143,7 @@ export default function CheckoutForm() {
         customer: { name: order.customerName, email: order.customerEmail, phone: order.customerPhone },
         address: order.address,
         fulfilment,
+        deliverySpeed: t.deliverySpeed,
         paymentMethod: payment,
         notes: order.notes,
         createAccount: createAccount && !user ? { password: f.password } : null,
@@ -287,6 +295,37 @@ export default function CheckoutForm() {
         </fieldset>
 
         <fieldset className="card">
+          <legend>Delivery speed</legend>
+          <div className="choice-list">
+            <label className="choice">
+              <input type="radio" name="speed" value="standard" checked={speed === 'standard'} onChange={() => setSpeed('standard')} />
+              <span>
+                <strong>
+                  Standard Delivery — {SITE.delivery.transitDays[0]}–{SITE.delivery.transitDays[1]} days
+                  <span className="tag">{t.subtotal >= SITE.freeShipOver ? 'FREE' : money(SITE.flatShip)}</span>
+                </strong>
+                <span>Free on orders over {money(SITE.freeShipOver)}. Packed chilled, Australia-wide.</span>
+              </span>
+            </label>
+            <label className="choice">
+              <input type="radio" name="speed" value="priority" checked={speed === 'priority'} onChange={() => setSpeed('priority')} />
+              <span>
+                <strong>
+                  Priority Delivery{zone ? ` — ${zone.priorityTime}` : ''}
+                  <span className="tag">{zone ? money(zone.priorityPrice) : `from ${money(PRIORITY_FROM)}`}</span>
+                </strong>
+                <span>
+                  {zone
+                    ? `${zone.name} (${zone.distance} from our Greenacre depot). Counted from when your payment clears.`
+                    : 'Priced by distance from our Greenacre depot — enter your postcode above to see your price and delivery time.'}{' '}
+                  <Link href="/halal-meat-delivery/#priority">All zones</Link>
+                </span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset className="card">
           <legend>Payment method</legend>
           <div className="choice-list">
             {PAYMENT_METHODS.map((m) => (
@@ -368,7 +407,7 @@ export default function CheckoutForm() {
             </div>
           )}
           <div className="summary-row">
-            <span>{fulfilment === 'pickup' ? 'Pickup' : 'Delivery'}</span>
+            <span>{t.deliverySpeed === 'priority' ? 'Priority Delivery' : 'Delivery'}</span>
             <span>{t.shipping ? money(t.shipping) : 'Free'}</span>
           </div>
           <div className="summary-row summary-row--total">

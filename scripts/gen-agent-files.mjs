@@ -9,6 +9,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import { SITE, CATEGORIES, PRODUCTS, POSTS, WHOLESALE_TIERS } from '../src/config/site.js'
+import { ZONES_BY_DISTANCE } from '../src/config/delivery.js'
 import { TOOLS } from '../src/lib/tools.js'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -45,7 +46,9 @@ ${SITE.name} sells halal beef, lamb, goat, chicken, camel, duck, kangaroo and wa
 - ABN: ${SITE.abn}
 - Halal certification: all products certified by ${SITE.certifier}
 - Delivery: Australia-wide (delivery only — no pickup)
-- Minimum order: $${SITE.minOrder} AUD; free delivery over $${SITE.freeShipOver}; otherwise $${SITE.flatShip} flat
+- Minimum order: $${SITE.minOrder} AUD; standard delivery ${SITE.delivery.transitDays[0]}–${SITE.delivery.transitDays[1]} days, free over $${SITE.freeShipOver}, otherwise $${SITE.flatShip} flat
+- Priority Delivery, priced by distance from the Greenacre depot:
+${ZONES_BY_DISTANCE.map((z) => `  - ${z.name} (${z.distance}): $${z.priorityPrice}, ${z.priorityTime}`).join('\n')}
 - Payment: PayID, bank transfer, cryptocurrency (${SITE.cryptoDiscountPct}% off the meat total with crypto)
 - GST: fresh, unprocessed meat is GST-free in Australia
 - Phone / WhatsApp: ${SITE.phone}

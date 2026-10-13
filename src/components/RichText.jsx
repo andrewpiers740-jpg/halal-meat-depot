@@ -36,11 +36,34 @@ function linkify(text) {
 }
 
 export default function RichText({ blocks }) {
-  return blocks.map(([type, content], i) => (
+  return blocks.map(([type, content, id], i) => (
     <Fragment key={i}>
-      {type === 'h2' && <h2>{content}</h2>}
+      {type === 'h2' && <h2 id={id}>{content}</h2>}
       {type === 'h3' && <h3>{content}</h3>}
       {type === 'p' && <p>{inline(content)}</p>}
+      {type === 'table' && (
+        <div className="table-wrap">
+          <table className="data-table">
+            {content.caption && <caption>{content.caption}</caption>}
+            <thead>
+              <tr>
+                {content.head.map((h) => (
+                  <th key={h} scope="col">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {content.rows.map((row, r) => (
+                <tr key={r}>
+                  {row.map((cell, c) => (c === 0 ? <th key={c} scope="row">{cell}</th> : <td key={c}>{cell}</td>))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
       {type === 'ul' && (
         <ul>
           {content.map((li, j) => (

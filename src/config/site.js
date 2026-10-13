@@ -87,8 +87,8 @@ export const SITE = {
   flatShip: 25,
   // Delivery times (owner, 2026-10-13): standard "Free Delivery" 2–5 days in transit; orders are packed
   // and dispatched once payment clears (0–1 day). Used on product pages and in Product schema.
-  // "Priority Delivery (24 hours)" is NOT listed until its price and coverage are confirmed and it
-  // exists at checkout — schema must match what customers can actually buy.
+  // "Priority Delivery" (owner, 2026-10-13) is priced by distance — zones, prices and times live in
+  // src/config/delivery.js and feed checkout, totals, the delivery page and Product schema.
   delivery: { transitDays: [2, 5], handlingDays: [0, 1] },
   cryptoDiscountPct: 10,
   deliveryArea: 'Australia-wide',

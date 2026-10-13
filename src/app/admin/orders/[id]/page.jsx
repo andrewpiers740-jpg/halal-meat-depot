@@ -75,7 +75,7 @@ export default function AdminOrder() {
               </>
             )}
             <br />
-            Delivery: {o.shipping ? money(o.shipping) : 'Free'}
+            {o.deliveryLabel || 'Delivery'}: {o.shipping ? money(o.shipping) : 'Free'}
             <br />
             <strong>Total due: {money(o.amountDue)}</strong>
           </p>

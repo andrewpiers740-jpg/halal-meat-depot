@@ -36,7 +36,7 @@ export function waOrderLink(order) {
     '',
     `Subtotal: ${money(order.subtotal)}`,
     ...(order.discount ? [`Crypto discount (${order.discountPct}%): −${money(order.discount)}`] : []),
-    `Delivery: ${order.shipping ? money(order.shipping) : 'Free'}`,
+    `${order.deliveryLabel || 'Delivery'}: ${order.shipping ? money(order.shipping) : 'Free'}`,
     `Total: ${money(order.amountDue)}`,
     `Payment: ${order.paymentLabel}`,
     `${order.fulfilment === 'pickup' ? 'Pickup from Greenacre depot' : `Deliver to: ${order.address}`}`,
