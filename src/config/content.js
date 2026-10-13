@@ -132,7 +132,7 @@ export const POSTS = [
       ['p', 'Keep fresh beef in the coldest part of the fridge and cook steaks within a few days. For bulk packs, divide the meat into meal-sized portions, wrap tightly to keep air out and freeze flat so it thaws evenly. Always thaw beef in the fridge overnight rather than on the bench, and never refreeze meat that has been thawed raw.'],
       ['h2', 'Buying whole primals saves money'],
       ['p', 'If you run a kitchen, buying whole primals and portioning them yourself is almost always cheaper per kilo than buying cut steaks — and you control the thickness. Our [wholesale cartons](/shop/bulk-meat-boxes/) include cryovac rump, striploin and brisket by the carton. Browse the full [halal beef range](/shop/halal-beef/) to compare every cut, or open a [halal meat wholesale](/halal-meat-wholesale/) account for regular orders.'],
-      ['p', 'Further reading: [AUS-MEAT](https://ausmeat.com.au/) maintains the national meat language — the standard cut names and marble scores used across the Australian beef industry — and [Meat & Livestock Australia](https://www.mla.com.au/) publishes industry information on Australian beef.'],
+      ['p', 'Further reading: [AUS-MEAT](https://www.ausmeat.com.au/) maintains the national meat language — the standard cut names and marble scores used across the Australian beef industry — and [Meat & Livestock Australia](https://www.mla.com.au/) publishes industry information on Australian beef.'],
     ],
   },
   {
@@ -357,7 +357,7 @@ export const POSTS = [
       ['p', 'For family events, Aqeeqah or simply stocking the freezer, a [whole lamb](/product/whole-lamb-carcass/) or [half lamb](/product/half-lamb-carcass/) cut to your instructions is the best way to buy lamb in bulk. Tell us your preferred cuts in the order notes and we pack it the way you want. Our page on [whole lamb and goat for Aqeeqah and Qurbani](/whole-lamb-aqeeqah-qurbani/) explains event orders.'],
       ['h2', 'Halal lamb delivered Australia-wide'],
       ['p', 'All our halal lamb is certified by Halal Control Australia and delivered Australia-wide from Greenacre, Sydney. Browse the full [halal lamb range](/shop/lamb/) to compare cuts and prices per kilo.'],
-      ['p', 'Further reading: [Meat & Livestock Australia](https://www.mla.com.au/) publishes information on the Australian lamb industry, and [AUS-MEAT](https://ausmeat.com.au/) maintains the standard names for lamb cuts.'],
+      ['p', 'Further reading: [Meat & Livestock Australia](https://www.mla.com.au/) publishes information on the Australian lamb industry, and [AUS-MEAT](https://www.ausmeat.com.au/) maintains the standard names for lamb cuts.'],
     ],
   },
 ]

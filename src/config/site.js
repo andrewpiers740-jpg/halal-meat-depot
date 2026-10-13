@@ -216,7 +216,7 @@ export const REGULATORS = [
   },
   {
     name: 'AUS-MEAT',
-    url: 'https://ausmeat.com.au/',
+    url: 'https://www.ausmeat.com.au/',
     role: 'Maintains the national meat language — the standard cut descriptions and marble scores used across the Australian meat industry.',
     cats: ['beef', 'lamb', 'goat', 'water-buffalo', 'offal', 'wholesale-cartons'],
   },

@@ -157,6 +157,8 @@ export default function ShopBrowser({ categories, products }) {
       </aside>
 
       <div className="shop-main">
+        {/* The sidebar (and its h2s) is hidden on mobile — keep h1 → h2 → h3 order there too. */}
+        <h2 className="sr-only">Products</h2>
         <div className="shop-toolbar">
           <p aria-live="polite">
             <strong>{list.length}</strong> {list.length === 1 ? 'product' : 'products'}
