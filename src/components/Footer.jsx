@@ -18,9 +18,9 @@ export default function Footer() {
             <p>
               {SITE.addressLine}
               <br />
-              <a href={`tel:+${SITE.phoneRaw}`}>{SITE.phone}</a>
+              <a className="footer-contact" href={`tel:+${SITE.phoneRaw}`}>{SITE.phone}</a>
               <br />
-              <a href={waChatLink()} rel="noopener noreferrer" target="_blank">
+              <a className="footer-contact" href={waChatLink()} rel="noopener noreferrer" target="_blank">
                 WhatsApp us
               </a>
               <br />

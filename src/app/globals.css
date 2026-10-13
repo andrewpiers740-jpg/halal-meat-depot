@@ -486,3 +486,6 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .cat-head-figure { margin: 0; }
 .cat-head-media { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #fff; }
 .cat-head-media img { object-fit: cover; }
+/* Live audit fixes (Lighthouse, 2026-10-13): footer phone/WhatsApp tap targets; heading contrast on dark cards */
+.site-footer a.footer-contact { display: inline-flex; align-items: center; min-height: 44px; }
+.card--dark h2 { color: #fff; }

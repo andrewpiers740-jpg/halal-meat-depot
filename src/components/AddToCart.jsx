@@ -19,7 +19,7 @@ export default function AddToCart({ slug, name, idPrefix = 'q', showViewCart = f
     <div className="stack" style={{ marginTop: 0 }}>
       <div className="add-row">
         <QtyStepper id={`${idPrefix}-${slug}`} value={qty} onChange={setQty} label={`Quantity of ${name}`} />
-        <button type="button" className="btn btn--primary" onClick={onAdd} aria-label={`Add ${name} to cart`}>
+        <button type="button" className="btn btn--primary" onClick={onAdd} aria-label={`Add to cart: ${name}`}>
           {added ? 'Added ✓' : 'Add to cart'}
         </button>
       </div>

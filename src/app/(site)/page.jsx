@@ -29,7 +29,7 @@ const homeCategories = [...CATEGORIES.filter((c) => c.slug === 'wholesale-carton
 const HERO_SLIDES = [
   {
     name: 'hero-1',
-    widths: [768, 1080],
+    widths: [640, 768, 1080],
     alt: 'Halal meat barbecue spread with sliced brisket, ribs and sausages',
     title: 'Halal meat for the barbecue',
     caption: 'Halal meat for the barbecue',
@@ -37,7 +37,7 @@ const HERO_SLIDES = [
   },
   {
     name: 'hero-2',
-    widths: [768, 1280, 1600],
+    widths: [640, 768, 1280, 1600],
     position: 'center top',
     alt: 'Halal meat: lamb leg, lamb chops and lamb racks with herbs and spices',
     title: 'Halal meat: lamb leg, chops and racks',
@@ -46,7 +46,7 @@ const HERO_SLIDES = [
   },
   {
     name: 'hero-3',
-    widths: [768, 1280, 1920],
+    widths: [640, 768, 1280, 1920],
     alt: 'Halal meat: raw steaks and whole chickens on a wooden board',
     title: 'Halal meat: steaks and whole chickens',
     caption: 'Halal meat: steaks and whole chickens',

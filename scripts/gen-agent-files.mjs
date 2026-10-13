@@ -400,7 +400,8 @@ if (isVercel) {
           { key: 'Link', value: link },
         ],
       },
-      { source: '/images/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, stale-while-revalidate=86400' }] },
+      // Image filenames are versioned (-v4, -v1, hero widths), so they can be cached for a year.
+      { source: '/images/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
       { source: '/admin/(.*)', headers: [{ key: 'Cache-Control', value: 'no-store' }, { key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
       { source: '/api/admin/(.*)', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       { source: '/api/account/(.*)', headers: [{ key: 'Cache-Control', value: 'no-store' }] },

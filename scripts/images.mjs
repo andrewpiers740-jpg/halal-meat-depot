@@ -150,7 +150,7 @@ console.log('brand assets: apple-icon.png, og-v2.webp (logos + favicon are SVG)'
   const heroes = existsSync(heroDir) ? readdirSync(heroDir).filter((f) => /^hero-\d+\.(jpe?g|png|webp|avif)$/i.test(f)) : []
   for (const f of heroes) {
     const { width: srcW } = await sharp(resolve(heroDir, f)).metadata()
-    const widths = [...new Set([768, 1280, 1920].map((w) => Math.min(w, srcW)))]
+    const widths = [...new Set([640, 768, 1280, 1920].map((w) => Math.min(w, srcW)))]
     for (const w of widths) {
       const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: w }).avif({ quality: 55 }).toBuffer()
       await writeRetry(`public/images/hero/${basename(f, extname(f))}-${w}.avif`, buf)
