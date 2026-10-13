@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import AddToCart from './AddToCart'
+import CardCart from './CardCart'
 
 // Shop page browser: left sidebar (categories, subcategories, price range) filtering a
 // product grid in place. Receives a light product index as props so the full catalogue
@@ -205,7 +205,7 @@ export default function ShopBrowser({ categories, products }) {
                     <span className="unit">{p.unit}</span>
                     <span className="per-kg">≈ {money(p.perKg)}/kg</span>
                   </div>
-                  <AddToCart slug={p.slug} name={p.name} idPrefix="shop" />
+                  <CardCart key={p.slug} slug={p.slug} name={p.name} idPrefix="shop" />
                 </div>
               </article>
             ))}

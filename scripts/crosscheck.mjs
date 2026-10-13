@@ -235,6 +235,9 @@ for (const path of pages) {
   if (indexable && path !== '/') check(types.includes('BreadcrumbList'), '3', `${path}: BreadcrumbList missing`)
   if (blocks.some((b) => /"@type":"Product"/.test(b)) && !isProduct) fail('3', `${path}: nested Product on non-product page`)
   // links
+  // every href must be absolute, root-relative, a fragment or a known scheme (catches href="undefined…")
+  const badHrefs = [...body.matchAll(/href="([^"]*)"/g)].map((m) => m[1]).filter((h) => !/^(\/|#|https?:|mailto:|tel:|sms:|data:)/.test(h))
+  check(!badHrefs.length, '5', `${path}: malformed href ${[...new Set(badHrefs)].slice(0, 3).join(', ')}`)
   for (const m of body.matchAll(/href="(\/[^"#]*)"/g)) if (!m[1].startsWith('/_next') && !m[1].startsWith('/api/')) internalLinks.add(m[1].split('?')[0])
   // compliance
   const lower = body.replace(/<[^>]+>/g, ' ').toLowerCase() + ' ' + blocks.join(' ').toLowerCase()

@@ -500,3 +500,8 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 
 /* Skip layout/paint for product cards until they near the viewport (long category pages). */
 .product-card { content-visibility: auto; contain-intrinsic-size: auto 480px; }
+
+/* CardCart (delegated add-to-cart): label swap driven by data-added, set by CartDelegate */
+.when-added { display: none; }
+[data-added] .when-idle { display: none; }
+[data-added] .when-added { display: inline; }

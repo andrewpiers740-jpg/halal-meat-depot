@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import SmartImage from './SmartImage'
-import AddToCart from './AddToCart'
+import CardCart from './CardCart'
 import { money } from '@/lib/order'
 import { categoryBySlug } from '@/config/site'
 import { productImageSeo } from '@/lib/imageSeo'
@@ -35,7 +35,7 @@ export default function ProductCard({ product: p, priority = false }) {
           <span className="unit">{p.unit}</span>
           <span className="per-kg">≈ {money(p.perKg)}/kg</span>
         </div>
-        <AddToCart slug={p.slug} name={p.name} />
+        <CardCart slug={p.slug} name={p.name} />
       </div>
     </article>
   )
