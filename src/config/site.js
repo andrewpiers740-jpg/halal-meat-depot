@@ -4,7 +4,10 @@
 // The domain appears in exactly ONE place: SITE.domain. To go live, change that
 // one line, rebuild and push — never find-and-replace a domain across files.
 
-export { CATEGORIES, PRODUCTS, productBySlug, categoryBySlug, productsInCategory, IMAGE_VERSION, categoryImage, subSlug } from './products.js'
+export { CATEGORIES, PRODUCTS, productBySlug, categoryBySlug, categoryPath, productsInCategory, IMAGE_VERSION, categoryImage, subSlug } from './products.js'
+export { PAGE_MOVES, PAGE_SEO, POST_SEO, containsFocus, focusWords } from './seo.js'
+import { PRODUCTS as ALL_PRODUCTS, CATEGORIES as ALL_CATEGORIES } from './products.js'
+import { PAGE_MOVES as MOVES } from './seo.js'
 export { POSTS, FAQS, postBySlug } from './content.js'
 
 export const SITE = {
@@ -86,10 +89,15 @@ export const SITE = {
   deliveryArea: 'Australia-wide',
   pickupAvailable: false, // delivery only — the depot address is the business address, not a pickup point
 
-  gscCode: '', // Google Search Console verification — set when GSC is connected
-  bingCode: '',
+  gscCode: 'sGGRSb0Z8dIct0rg_qApLhQTsEuBv0EfbPp8hIErqwM', // Google Search Console (URL-prefix property, HTML tag) — added 2026-10-13
+  bingCode: '00105D0B4F58136BEF6025904E01ABAF', // Bing Webmaster Tools (meta tag) — added 2026-10-13
   indexNowKey: 'b7f3c2e9a1d84f6c9e2b5a7d3c1f8e4a',
-  sameAs: [], // official social profiles — add real URLs only
+  // Official social profiles (owner-supplied, resolved to canonical profile URLs) — add real URLs only
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61594376379964',
+    'https://www.tiktok.com/@halal.meat.depot',
+    'https://www.pinterest.com.au/halalmeatdepot/',
+  ],
 
   brandStatement:
     'Halal Meat Depot is a Greenacre, Sydney-based halal meat supplier established in 2021, offering beef, lamb, goat, chicken, camel, duck, kangaroo and water buffalo certified halal by Halal Control Australia. Halal Meat Depot delivers Australia-wide and specialises in bulk packs, whole carcasses and wholesale cartons for households, restaurants and caterers at depot prices.',
@@ -233,8 +241,8 @@ export const COMPLIANCE = {
 }
 
 export const NAV = [
-  { href: '/shop/', label: 'Shop' },
-  { href: '/wholesale/', label: 'Wholesale' },
+  { href: '/halal-meat-shop/', label: 'Shop' },
+  { href: '/halal-meat-wholesale/', label: 'Wholesale' },
   { href: '/halal-certification/', label: 'Halal Certification' },
   { href: '/about/', label: 'About' },
   { href: '/blog/', label: 'Blog' },
@@ -328,3 +336,28 @@ export const RETIRED_PRODUCTS = {
   'kangaroo-sausages': '/shop/kangaroo/',
   'kangaroo-tail': '/shop/kangaroo/',
 }
+
+// Where an old URL lives now (keyword URLs, src/config/seo.js). Used for every 301 and to
+// point retired-product redirects straight at the final page (no redirect chains).
+export function currentPath(path) {
+  if (MOVES[path]) return MOVES[path]
+  const shop = path.match(/^\/shop\/([^/]+)\/(#.*)?$/)
+  if (shop) {
+    const c = ALL_CATEGORIES.find((x) => x.slug === shop[1] || x.urlSlug === shop[1])
+    if (c) return c.path + (shop[2] || '')
+  }
+  const prod = path.match(/^\/product\/([^/]+)\/$/)
+  if (prod) {
+    const p = ALL_PRODUCTS.find((x) => x.oldSlug === prod[1])
+    if (p) return `/product/${p.slug}/`
+  }
+  return path
+}
+
+// Every permanent redirect (applied in next.config.mjs).
+export const REDIRECTS = [
+  ...Object.entries(MOVES).map(([source, destination]) => ({ source, destination })),
+  ...ALL_CATEGORIES.filter((c) => c.urlSlug !== c.slug).map((c) => ({ source: `/shop/${c.slug}/`, destination: c.path })),
+  ...ALL_PRODUCTS.filter((p) => p.oldSlug).map((p) => ({ source: `/product/${p.oldSlug}/`, destination: `/product/${p.slug}/` })),
+  ...Object.entries(RETIRED_PRODUCTS).map(([slug, dest]) => ({ source: `/product/${slug}/`, destination: currentPath(dest) })),
+]

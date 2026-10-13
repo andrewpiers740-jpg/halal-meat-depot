@@ -53,7 +53,7 @@ export default function RefundPage() {
         ['h2', 'Cancelling an order'],
         ['p', 'You can cancel an order at no cost any time before it has been packed for dispatch — just message us with your order number. If you have already paid, we refund you in full. Once an order has been packed or dispatched, it can no longer be cancelled.'],
         ['h2', 'Deliveries that could not be completed'],
-        ['p', 'If we could not deliver because the address was incorrect, or nobody was available and no safe place was given, please see our [delivery policy](/shipping/). We will always try to contact you first.'],
+        ['p', 'If we could not deliver because the address was incorrect, or nobody was available and no safe place was given, please see our [delivery policy](/halal-meat-delivery/). We will always try to contact you first.'],
         ['h2', 'How refunds are paid'],
         ['ul', [
           'PayID and bank transfer payments are refunded to the account they came from.',

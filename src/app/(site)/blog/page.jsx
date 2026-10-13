@@ -5,7 +5,7 @@ import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
   title: 'Halal Meat Guides & Cooking Tips | Halal Meat Depot Blog',
-  description: 'Guides to halal beef, lamb and goat cuts, cooking camel, buffalo and kangaroo, and what halal certification means when you buy meat in Australia.',
+  description: 'Our blog: guides to halal beef, lamb and goat cuts, cooking camel, buffalo and kangaroo, and what halal certification means when buying meat.',
   path: '/blog/',
 })
 
@@ -18,7 +18,7 @@ export default function BlogIndex() {
       <div className="page-head">
         <div className="container">
           <Breadcrumbs crumbs={[{ name: 'Blog', path: '/blog/' }]} />
-          <h1>Halal meat guides and cooking tips</h1>
+          <h1>Halal meat blog: guides and cooking tips</h1>
           <p className="lead">Practical guides to choosing cuts, cooking lean and unusual meats, and buying certified halal meat with confidence.</p>
         </div>
       </div>

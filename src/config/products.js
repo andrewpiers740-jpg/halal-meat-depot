@@ -11,6 +11,8 @@
 // that exact path — dropping a real photo into assets/product-photos/<slug>.jpg
 // and running `npm run images` replaces it with no code change.
 
+import { PRODUCT_SEO, CATEGORY_SEO, focusFromName } from './seo.js'
+
 export const IMAGE_VERSION = 'v4'
 export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
 // Anchor id for a subcategory section on its category page (/shop/<cat>/#<subSlug>).
@@ -158,7 +160,7 @@ export const CATEGORIES = [
   {
     slug: "wholesale-cartons",
     name: "Wholesale Cartons",
-    kw: "wholesale halal meat",
+    kw: "bulk halal meat cartons",
     tagline: "Cryovac primals, restaurant cartons and catering packs",
     intro:
       "Wholesale halal meat cartons for restaurants, takeaways, caterers and community events. Cryovac beef primals, 20kg lamb and goat curry-cut cartons and 20kg beef mince are priced per carton for trade buyers. For weekly volume pricing, open a wholesale account.",
@@ -857,6 +859,25 @@ export const PRODUCTS = [
     "Enough chicken curry cut for a big event, cut to a consistent size so every pot cooks evenly.", {badge: "Trade"}),
 ]
 
-export const productBySlug = (slug) => PRODUCTS.find((x) => x.slug === slug)
-export const categoryBySlug = (slug) => CATEGORIES.find((c) => c.slug === slug)
+// Focus keywords + keyword URLs (src/config/seo.js). Image files keep the original slug
+// (imageSlug); `oldSlug` lets carts, links and the API still resolve the previous URL.
+for (const x of PRODUCTS) {
+  const s = PRODUCT_SEO[x.slug]
+  x.imageSlug = x.slug
+  x.focus = s?.focus || focusFromName(x.name)
+  if (s?.slug) {
+    x.oldSlug = x.slug
+    x.slug = s.slug
+  }
+}
+for (const c of CATEGORIES) {
+  c.focus = CATEGORY_SEO[c.slug]?.focus || c.slug
+  c.urlSlug = CATEGORY_SEO[c.slug]?.urlSlug || c.slug
+  c.path = `/shop/${c.urlSlug}/`
+}
+
+export const productBySlug = (slug) => PRODUCTS.find((x) => x.slug === slug || x.oldSlug === slug)
+// Accepts the category id (product.cat) or its URL slug.
+export const categoryBySlug = (slug) => CATEGORIES.find((c) => c.slug === slug || c.urlSlug === slug)
+export const categoryPath = (id) => categoryBySlug(id)?.path || '/halal-meat-shop/'
 export const productsInCategory = (slug) => PRODUCTS.filter((x) => x.cat === slug)

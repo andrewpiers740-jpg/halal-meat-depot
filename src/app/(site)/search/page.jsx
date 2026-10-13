@@ -17,7 +17,7 @@ export default function SearchPage() {
         <div className="container">
           <h1>Search</h1>
           <p className="lead">
-            Find a cut by name, or <Link href="/shop/">browse the full range</Link>.
+            Find a cut by name, or <Link href="/halal-meat-shop/">browse the full range</Link>.
           </p>
         </div>
       </div>

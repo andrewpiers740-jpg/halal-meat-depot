@@ -3,17 +3,20 @@ import SmartImage from './SmartImage'
 import AddToCart from './AddToCart'
 import { money } from '@/lib/order'
 import { categoryBySlug } from '@/config/site'
+import { productImageSeo } from '@/lib/imageSeo'
 
 export default function ProductCard({ product: p, priority = false }) {
   const cat = categoryBySlug(p.cat)
   const href = `/product/${p.slug}/`
+  const img = productImageSeo(p)
   return (
     <article className="product-card">
       <Link href={href} className="product-frame" tabIndex={-1} aria-hidden="true">
         {p.badge && <span className={`badge badge--${p.badge.replace(/\s+/g, '')}`}>{p.badge}</span>}
         <SmartImage
           src={`/images/products/${p.images[0]}`}
-          alt={`${p.name} — ${p.unit} — Halal Meat Depot`}
+          alt={img.alt}
+          title={img.title}
           fill
           sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
           priority={priority}

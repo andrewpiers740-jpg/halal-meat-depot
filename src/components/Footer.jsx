@@ -38,11 +38,11 @@ export default function Footer() {
             <h2>Shop</h2>
             <ul>
               <li>
-                <Link href="/shop/">All products</Link>
+                <Link href="/halal-meat-shop/">All products</Link>
               </li>
               {CATEGORIES.map((c) => (
                 <li key={c.slug}>
-                  <Link href={`/shop/${c.slug}/`}>{c.name}</Link>
+                  <Link href={`${c.path}`}>{c.name}</Link>
                 </li>
               ))}
             </ul>
@@ -52,7 +52,9 @@ export default function Footer() {
             <ul>
               <li><Link href="/about/">About us</Link></li>
               <li><Link href="/halal-certification/">Halal certification</Link></li>
-              <li><Link href="/wholesale/">Wholesale accounts</Link></li>
+              <li><Link href="/halal-meat-wholesale/">Wholesale accounts</Link></li>
+              <li><Link href="/whole-lamb-aqeeqah-qurbani/">Aqeeqah &amp; Qurbani</Link></li>
+              <li><Link href="/wagyu-steak/">Wagyu steak</Link></li>
               <li><Link href="/blog/">Blog</Link></li>
               <li><Link href="/faq/">FAQ</Link></li>
               <li><Link href="/contact/">Contact</Link></li>
@@ -62,7 +64,7 @@ export default function Footer() {
           <nav aria-label="Policies">
             <h2>Policies</h2>
             <ul>
-              <li><Link href="/shipping/">Delivery policy</Link></li>
+              <li><Link href="/halal-meat-delivery/">Delivery policy</Link></li>
               <li><Link href="/refund/">Refund &amp; returns policy</Link></li>
               <li><Link href="/terms/">Terms of sale</Link></li>
               <li><Link href="/privacy/">Privacy policy</Link></li>

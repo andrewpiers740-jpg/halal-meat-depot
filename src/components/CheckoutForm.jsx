@@ -152,7 +152,7 @@ export default function CheckoutForm() {
     return (
       <div className="card center">
         <h2>Your cart is empty</h2>
-        <Link href="/shop/" className="btn btn--primary">
+        <Link href="/halal-meat-shop/" className="btn btn--primary">
           Shop halal meat
         </Link>
       </div>
@@ -166,7 +166,7 @@ export default function CheckoutForm() {
         <p>
           The minimum order is {money(SITE.minOrder)}. Add {money(t.shortfall)} more to check out.
         </p>
-        <Link href="/shop/" className="btn btn--primary">
+        <Link href="/halal-meat-shop/" className="btn btn--primary">
           Keep shopping
         </Link>
       </div>

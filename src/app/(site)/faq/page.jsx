@@ -6,8 +6,8 @@ import { faqSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'FAQ — Halal Meat Depot',
-  description: 'Answers about halal certification, Australia-wide delivery, the minimum order, paying by PayID, bank transfer or crypto, accounts and wholesale.',
+  title: 'Halal Meat Delivery & Ordering FAQ | Halal Meat Depot',
+  description: 'FAQ: answers about halal certification, Australia-wide delivery, the minimum order, paying by PayID, bank transfer or crypto, accounts and wholesale.',
   path: '/faq/',
 })
 
@@ -18,7 +18,7 @@ export default function FaqPage() {
       <div className="page-head">
         <div className="container">
           <Breadcrumbs crumbs={[{ name: 'FAQ', path: '/faq/' }]} />
-          <h1>Frequently asked questions</h1>
+          <h1>Halal meat FAQ: frequently asked questions</h1>
           <p className="lead">
             Everything about certification, ordering, delivery and payment. Still stuck? <Link href="/contact/">Contact us</Link>.
           </p>
@@ -37,7 +37,7 @@ export default function FaqPage() {
             ))}
           </div>
           <p className="center" style={{ marginTop: 32 }}>
-            <Link href="/shop/" className="btn btn--primary">
+            <Link href="/halal-meat-shop/" className="btn btn--primary">
               Shop halal meat
             </Link>
           </p>

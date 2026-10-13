@@ -60,7 +60,7 @@ export default function AccountView() {
           <div className="card card--tint">
             <h2>Accounts are coming soon</h2>
             <p className="muted" style={{ marginBottom: 0 }}>
-              You don&apos;t need an account to order — <Link href="/shop/">shop now</Link> and check out as a guest. You can track a guest order
+              You don&apos;t need an account to order — <Link href="/halal-meat-shop/">shop now</Link> and check out as a guest. You can track a guest order
               using the form on this page.
             </p>
           </div>
@@ -207,7 +207,7 @@ function Dashboard({ user, orders, reload }) {
         <h2 id="orders-title">Your orders</h2>
         {orders.length === 0 ? (
           <p className="muted" style={{ marginBottom: 0 }}>
-            No orders yet. <Link href="/shop/">Start shopping</Link>.
+            No orders yet. <Link href="/halal-meat-shop/">Start shopping</Link>.
           </p>
         ) : (
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

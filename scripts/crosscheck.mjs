@@ -5,8 +5,10 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs'
 import { resolve, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
-import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE } from '../src/config/site.js'
+import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords } from '../src/config/site.js'
 import { TOOLS } from '../src/lib/tools.js'
+import { STATIC_PAGES } from '../src/lib/sitemaps.js'
+import { PRODUCT_KEYWORDS } from '../src/config/product-keywords.js'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const PORT = 3100
@@ -65,8 +67,59 @@ for (const c of childUrls) {
   pageUrls.push(...locs)
 }
 check(new Set(pageUrls).size === pageUrls.length, '41', 'a URL appears in two sitemaps')
-check(pageUrls.length === 12 + PRODUCTS.length + CATEGORIES.length + POSTS.length, '41', `sitemap URL count ${pageUrls.length} does not match routes`)
+check(pageUrls.length === STATIC_PAGES.length + PRODUCTS.length + CATEGORIES.length + POSTS.length, '41', `sitemap URL count ${pageUrls.length} does not match routes`)
 
+
+// ── focus keywords: one per indexable page, unique site-wide ───────────────
+const FOCUS = new Map([
+  ...Object.entries(PAGE_SEO),
+  ...CATEGORIES.map((c) => [c.path, c.focus]),
+  ...PRODUCTS.map((p) => [`/product/${p.slug}/`, p.focus]),
+  ...Object.entries(POST_SEO).map(([slug, f]) => [`/blog/${slug}/`, f]),
+])
+{
+  const seen = new Map()
+  for (const [path, f] of FOCUS) {
+    const key = focusWords(f).join(' ')
+    if (seen.has(key)) fail('F5', `focus keyword "${f}" used by ${seen.get(key)} and ${path}`)
+    seen.set(key, path)
+  }
+}
+
+// ── image formats (owner rule, 2026-10-13): products/categories WebP, hero AVIF, logos/icons SVG ──
+{
+  const ls = (d) => (existsSync(join(root, d)) ? readdirSync(join(root, d)) : [])
+  check(ls('public/images/products').every((f) => f.endsWith('.webp')), 'F8', 'product images must all be .webp')
+  check(ls('public/images/categories').every((f) => f.endsWith('.webp')), 'F8', 'category images must all be .webp')
+  check(ls('public/images/hero').length > 0 && ls('public/images/hero').every((f) => f.endsWith('.avif')), 'F8', 'hero images must all be .avif')
+  check(existsSync(join(root, 'public/images/logo.svg')) && existsSync(join(root, 'public/images/logo-mark.svg')), 'F8', 'SVG logos missing')
+  check(existsSync(join(root, 'src/app/icon.svg')) && !existsSync(join(root, 'src/app/icon.png')), 'F8', 'favicon must be src/app/icon.svg (apple-icon.png is the only raster icon, for iOS)')
+  check(!ls('public/images').some((f) => /^logo.*\.(webp|png|jpe?g)$/.test(f)), 'F8', 'raster logo files left in public/images')
+}
+
+// ── content rules (owner, 2026-10-13) ──────────────────────────────────────
+{
+  const { PRODUCT_ABOUT } = await import('../src/config/product-about.js')
+  const { PRODUCT_SEO, CATEGORY_SEO } = await import('../src/config/seo.js')
+  for (const p of PRODUCTS) {
+    check(p.short && p.desc && PRODUCT_ABOUT[p.imageSlug], 'F10', `${p.slug}: missing short description, description or about copy`)
+    const s = PRODUCT_SEO[p.imageSlug]
+    check(!s?.intent || /T|C/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
+  }
+  for (const [id, s] of Object.entries(CATEGORY_SEO)) check(/T|C/.test(s.intent || ''), 'F12', `category ${id}: primary keyword "${s.focus}" is not Transactional/Commercial`)
+  const all = Object.values(PRODUCT_KEYWORDS).flat()
+  const share = (i) => all.filter((k) => k.intent === i).length / all.length
+  check(Math.abs(share('T') - 0.45) <= 0.05 && Math.abs(share('C') - 0.45) <= 0.05 && Math.abs(share('I') - 0.1) <= 0.05, 'F10', `product keyword mix ${(share('T') * 100).toFixed(0)}/${(share('C') * 100).toFixed(0)}/${(share('I') * 100).toFixed(0)} — target 45/45/10`)
+  const text = (b) => b.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  for (const post of POSTS) {
+    const t = text(post.body)
+    check(t.split(/\s+/).length >= 1000, 'F11', `${post.slug}: ${t.split(/\s+/).length} words (need 1,000+)`)
+    const kw = post.keywords || []
+    for (const k of kw) check(containsFocus(t, k.kw), 'F11', `${post.slug}: keyword "${k.kw}" not used`)
+    const n = (i) => kw.filter((k) => k.intent === i).length / (kw.length || 1)
+    check(kw.length >= 4 && Math.abs(n('I') - 0.5) <= 0.1 && Math.abs(n('C') - 0.25) <= 0.1 && Math.abs(n('T') - 0.25) <= 0.1, 'F11', `${post.slug}: keyword mix not 50/25/25 informational/commercial/transactional`)
+  }
+}
 // ── crawl every indexable page + the noindex pages ─────────────────────────
 const NOINDEX = ['/cart/', '/checkout/', '/account/', '/search/', '/thank-you-order/', '/thank-you-contact/', '/thank-you-wholesale/', '/order/payment-details/', '/order/confirm-payment/', '/account/reset-password/']
 const pages = [...pageUrls.map(toPath), ...NOINDEX]
@@ -97,6 +150,49 @@ for (const path of pages) {
     check(d.length >= 110 && d.length <= 158, '5', `${path}: meta description ${d.length} chars`)
     if (titles.has(title)) fail('B-dup', `${path}: duplicate title with ${titles.get(title)}`)
     titles.set(title, path)
+    // Owner rule (2026-10-13): unique focus keyword in SEO title, meta description and slug.
+    const focus = FOCUS.get(path)
+    if (!focus) fail('F1', `${path}: no focus keyword (src/config/seo.js)`)
+    else {
+      check(containsFocus(decode(title), focus), 'F2', `${path}: focus "${focus}" missing from title "${decode(title)}"`)
+      check(containsFocus(d, focus), 'F3', `${path}: focus "${focus}" missing from meta description`)
+      if (path !== '/') check(containsFocus(path.split('/').filter(Boolean).pop(), focus), 'F4', `${path}: focus "${focus}" missing from slug`)
+      // Image SEO (owner rule, 2026-10-13): every content <figure> image carries the focus keyword
+      // of the product/page it shows in alt, title and caption; JSON-LD carries it in an image description.
+      const attr = (tag, name) => decode((tag.match(new RegExp(`\\s${name}="([^"]*)"`)) || [])[1] || '')
+      const figs = [...body.matchAll(/(?:href="([^"]*)"[^>]*>\s*)?<figure[^>]*>([\s\S]*?)<\/figure>/g)]
+      for (const [, href, inner] of figs) {
+        const tag = (inner.match(/<img\b[^>]*>/) || [])[0]
+        if (!tag) continue
+        const isTile = /class="cat-figure"/.test(inner) || (href && FOCUS.has(href) && href !== path && /cat-label/.test(inner))
+        const want = isTile ? FOCUS.get(href) : focus
+        const cap = decode(((inner.match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/) || [])[1] || '').replace(/<[^>]+>/g, ' '))
+        check(containsFocus(attr(tag, 'alt'), want), 'F6', `${path}: image alt missing focus "${want}"`)
+        check(containsFocus(attr(tag, 'title'), want), 'F6', `${path}: image title missing focus "${want}"`)
+        check(containsFocus(cap, want), 'F6', `${path}: image caption missing focus "${want}"`)
+      }
+      // Owner rules (2026-10-13): focus keyword in the H1; product descriptions lead with it.
+      const heads = (lvl, html) => [...html.matchAll(new RegExp(`<h${lvl}[^>]*>([\\s\\S]*?)</h${lvl}>`, 'g'))].map((m) => decode(m[1].replace(/<[^>]+>/g, ' ')))
+      check(heads(1, body).some((x) => containsFocus(x, focus)), 'F9', `${path}: H1 missing focus "${focus}"`)
+      if (path.startsWith('/product/')) {
+        const p = PRODUCTS.find((x) => `/product/${x.slug}/` === path)
+        const kws = (PRODUCT_KEYWORDS[p.imageSlug] || []).map((k) => k.kw)
+        const desc = (body.match(/<section[^>]*class="prose product-description"[^>]*>([\s\S]*?)<\/section>/) || [])[1] || ''
+        const text = decode(desc.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim()
+        const words = text.split(' ')
+        check(containsFocus(words.slice(0, Math.ceil(words.length * 0.2)).join(' '), focus), 'F10', `${path}: focus "${focus}" not in the first 20% of the description`)
+        check(kws.length >= 5 && kws.length <= 10, 'F10', `${path}: ${kws.length} supporting keywords (need 5–10)`)
+        const pageText = decode(body.replace(/<[^>]+>/g, ' '))
+        for (const k of kws) check(containsFocus(pageText, k), 'F10', `${path}: supporting keyword "${k}" not used`)
+        check(heads(2, desc).some((x) => containsFocus(x, focus)), 'F10', `${path}: description H2 missing focus`)
+        check(heads(3, desc).some((x) => containsFocus(x, focus) || kws.some((k) => containsFocus(x, k)) || containsFocus(x, focus.replace(/^buy | online$| price$| for sale$/g, ''))), 'F10', `${path}: no H3 with the focus or a supporting keyword`)
+      }
+      if (figs.some(([, , inner]) => /<img\b/.test(inner) && !/class="cat-figure"/.test(inner))) {
+        const ld = [...h.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]).join(' ')
+        const descs = [...ld.matchAll(/"@type":"ImageObject"[^{}]*?"description":"([^"]*)"/g)].map((m) => m[1])
+        check(descs.some((x) => containsFocus(x, focus)), 'F7', `${path}: no JSON-LD image description containing focus "${focus}"`)
+      }
+    }
     if (descs.has(desc)) fail('B-dup', `${path}: duplicate description with ${descs.get(desc)}`)
     descs.set(desc, path)
     check(!/<meta name="robots" content="[^"]*noindex/.test(h), '43', `${path}: indexable page carries noindex`)
@@ -268,16 +364,16 @@ for (const p of PRODUCTS) {
 // ── images (11) ────────────────────────────────────────────────────────────
 for (const p of PRODUCTS) for (const img of p.images) {
   const base = resolve(root, 'public/images/products', img)
-  check(existsSync(base) && existsSync(base.replace(/\.webp$/, '.avif')), '11', `${p.slug}: missing ${img} or AVIF sibling`)
+  check(existsSync(base), '11', `${p.slug}: missing ${img}`)
   if (existsSync(base)) check(statSync(base).size <= 150 * 1024, '45', `${img} over 150KB`)
 }
-// every category has its own tile (WebP + AVIF), and no two products/categories share an image file
+// every category has its own WebP tile, and no two products/categories share an image file
 const { categoryImage } = await import('../src/config/site.js')
 const catFiles = CATEGORIES.map((c) => categoryImage(c.slug))
 check(new Set(catFiles).size === CATEGORIES.length && catFiles.every((f) => f.startsWith(CATEGORIES[catFiles.indexOf(f)].slug)), '11', `category images not unique: ${catFiles.join(', ')}`)
 for (const f of catFiles) {
   const base = resolve(root, 'public/images/categories', f)
-  check(existsSync(base) && existsSync(base.replace(/\.webp$/, '.avif')), '11', `missing category image ${f}`)
+  check(existsSync(base), '11', `missing category image ${f}`)
 }
 const prodFiles = PRODUCTS.map((p) => p.images[0])
 check(new Set(prodFiles).size === PRODUCTS.length, '11', 'two products share an image file')

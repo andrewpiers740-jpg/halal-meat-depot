@@ -3,6 +3,7 @@ import Icon from '@/components/Icon'
 import Email from '@/components/Email'
 import SmartImage from '@/components/SmartImage'
 import HeroSlider from '@/components/HeroSlider'
+import { categoryImageSeo, imageObject } from '@/lib/imageSeo'
 import ProductCard from '@/components/ProductCard'
 import JsonLd from '@/components/JsonLd'
 import { SITE, CATEGORIES, PRODUCTS, POSTS, FAQS, categoryImage } from '@/config/site'
@@ -11,9 +12,9 @@ import { pageMeta } from '@/lib/meta'
 import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Depot — Certified Halal Meat Australia-Wide',
+  title: 'Halal Meat Delivery Sydney & Australia | Halal Meat Depot',
   description:
-    'Halal beef, lamb, goat, chicken, camel, duck, kangaroo and buffalo certified by Halal Control Australia. Depot prices, bulk packs, delivery Australia-wide.',
+    'Halal meat delivery from Sydney, Australia-wide: beef, lamb, goat, chicken, camel and more, certified by Halal Control Australia. Order online, depot prices.',
   path: '/',
 })
 
@@ -23,11 +24,35 @@ const homeFaqs = FAQS.filter((f) => f.home)
 const homeCategories = [...CATEGORIES.filter((c) => c.slug === 'wholesale-cartons'), ...CATEGORIES.filter((c) => c.slug !== 'wholesale-cartons')]
 
 // Hero background slides (sources in assets/hero/ → npm run images).
+// AVIF at each generated width (scripts/images.mjs step 1c). Alt, title, caption and
+// description carry the homepage focus keyword, "halal meat" (image SEO rule).
 const HERO_SLIDES = [
-  { src: '/images/hero/hero-1-v1.webp' },
-  { src: '/images/hero/hero-2-v1.webp', position: 'center top' },
-  { src: '/images/hero/hero-3-v1.webp' },
-]
+  {
+    name: 'hero-1',
+    widths: [768, 1080],
+    alt: 'Halal meat barbecue spread with sliced brisket, ribs and sausages',
+    title: 'Halal meat for the barbecue',
+    caption: 'Halal meat for the barbecue',
+    description: 'A barbecue spread of halal meat — sliced brisket, ribs and sausages — from Halal Meat Depot, delivered Australia-wide.',
+  },
+  {
+    name: 'hero-2',
+    widths: [768, 1280, 1600],
+    position: 'center top',
+    alt: 'Halal meat: lamb leg, lamb chops and lamb racks with herbs and spices',
+    title: 'Halal meat: lamb leg, chops and racks',
+    caption: 'Halal meat: lamb leg, chops and racks',
+    description: 'Raw halal meat — a whole lamb leg, lamb chops and frenched lamb racks — certified by Halal Control Australia.',
+  },
+  {
+    name: 'hero-3',
+    widths: [768, 1280, 1920],
+    alt: 'Halal meat: raw steaks and whole chickens on a wooden board',
+    title: 'Halal meat: steaks and whole chickens',
+    caption: 'Halal meat: steaks and whole chickens',
+    description: 'Raw halal meat — thick-cut steaks and whole chickens — from Halal Meat Depot in Greenacre, Sydney.',
+  },
+].map((s) => ({ ...s, src: `/images/hero/${s.name}-${s.widths.at(-1)}.avif`, srcSet: s.widths.map((w) => `/images/hero/${s.name}-${w}.avif ${w}w`).join(', ') }))
 
 export default function HomePage() {
   const featured = PRODUCTS.filter((p) => p.featured).slice(0, 8)
@@ -36,7 +61,21 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[organizationSchema(), websiteSchema(), faqSchema(homeFaqs), speakableSchema('/', ['.brand-statement', '.about-intro'])]} />
+      <JsonLd
+        data={[
+          organizationSchema(),
+          websiteSchema(),
+          faqSchema(homeFaqs),
+          speakableSchema('/', ['.brand-statement', '.about-intro']),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ImageGallery',
+            name: 'Halal meat from Halal Meat Depot',
+            url: `${SITE.url}/`,
+            image: HERO_SLIDES.map((s) => imageObject(`${SITE.url}${s.src}`, s, { encodingFormat: 'image/avif' })),
+          },
+        ]}
+      />
 
       {/* 1 — Hero */}
       <section className="hero hero--slides" aria-labelledby="hero-title">
@@ -47,14 +86,14 @@ export default function HomePage() {
               <Icon name="shield" /> Certified halal by {SITE.certifier}
             </span>
             <h1 id="hero-title">
-              Certified halal meat at <em>depot prices</em>, delivered Australia-wide
+              Halal meat delivery from Sydney to all of Australia, at <em>depot prices</em>
             </h1>
             <p className="brand-statement">{SITE.brandStatement}</p>
             <div className="btn-row" style={{ marginTop: 24 }}>
-              <Link href="/shop/" className="btn btn--accent">
+              <Link href="/halal-meat-shop/" className="btn btn--accent">
                 Shop all halal meat <Icon name="arrow" />
               </Link>
-              <Link href="/wholesale/" className="btn btn--light">
+              <Link href="/halal-meat-wholesale/" className="btn btn--light">
                 Wholesale accounts
               </Link>
             </div>
@@ -116,17 +155,26 @@ export default function HomePage() {
             <p>Eight kinds of halal meat plus trade cartons — choose a category to see every cut, pack size and price.</p>
           </div>
           <div className="grid-3">
-            {homeCategories.map((c, i) => (
-              <Link key={c.slug} href={`/shop/${c.slug}/`} className="cat-tile">
-                <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
-                <span className="scrim" aria-hidden="true" />
-                <span className="cat-label">
-                  <strong>{c.name}</strong>
-                  <span>{c.tagline}</span>
-                </span>
-              </Link>
-            ))}
+            {homeCategories.map((c, i) => {
+              const img = categoryImageSeo(c)
+              return (
+                <Link key={c.slug} href={`${c.path}`} className="cat-tile">
+                  <figure className="cat-figure">
+                    <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
+                    <span className="scrim" aria-hidden="true" />
+                    <figcaption className="cat-label">
+                      <strong>{img.caption}</strong>
+                      <span>{c.tagline}</span>
+                    </figcaption>
+                  </figure>
+                </Link>
+              )
+            })}
           </div>
+          <p style={{ marginTop: 24, textAlign: 'center' }}>
+            Also popular: <Link href="/wagyu-steak/">Wagyu steak MB5+ and MB9+</Link> ·{' '}
+            <Link href="/whole-lamb-aqeeqah-qurbani/">whole lamb and goat for Aqeeqah and Qurbani</Link>
+          </p>
         </div>
       </section>
 
@@ -144,7 +192,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="center" style={{ marginTop: 32 }}>
-            <Link href="/shop/" className="btn btn--primary">
+            <Link href="/halal-meat-shop/" className="btn btn--primary">
               View all {PRODUCTS.length} products <Icon name="arrow" />
             </Link>
           </div>
@@ -163,10 +211,10 @@ export default function HomePage() {
               Australia-wide.
             </p>
             <p>
-              Every product we sell — from <Link href="/shop/beef/">halal beef</Link> and <Link href="/shop/lamb/">lamb</Link> to{' '}
-              <Link href="/shop/goat/">goat</Link>, <Link href="/shop/chicken/">chicken</Link>, <Link href="/shop/camel/">camel</Link>,{' '}
-              <Link href="/shop/duck/">duck</Link>, <Link href="/shop/kangaroo/">kangaroo</Link> and{' '}
-              <Link href="/shop/water-buffalo/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
+              Every product we sell — from <Link href="/shop/halal-beef/">halal beef</Link> and <Link href="/shop/lamb/">lamb</Link> to{' '}
+              <Link href="/shop/goat-meat-for-sale/">goat</Link>, <Link href="/shop/halal-chicken/">chicken</Link>, <Link href="/shop/camel-meat-australia/">camel</Link>,{' '}
+              <Link href="/shop/duck-meat/">duck</Link>, <Link href="/shop/kangaroo-meat-for-sale/">kangaroo</Link> and{' '}
+              <Link href="/shop/buffalo-meat/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
               range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-certification/">halal certification page</Link>.
             </p>
             <h3>What makes us different</h3>
@@ -186,8 +234,8 @@ export default function HomePage() {
               {SITE.cryptoDiscountPct}% off your meat total automatically. Fresh, unprocessed meat is GST-free in Australia.
             </p>
             <p>
-              Restaurants and caterers can order <Link href="/shop/wholesale-cartons/">wholesale cartons</Link> online or{' '}
-              <Link href="/wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
+              Restaurants and caterers can order <Link href="/shop/bulk-meat-boxes/">wholesale cartons</Link> online or{' '}
+              <Link href="/halal-meat-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
               <Link href="/blog/cooking-camel-buffalo-kangaroo/">guide to cooking lean meats</Link>.
             </p>
           </div>
@@ -343,10 +391,10 @@ export default function HomePage() {
             </p>
           </div>
           <div className="btn-row">
-            <Link href="/wholesale/" className="btn btn--accent">
+            <Link href="/halal-meat-wholesale/" className="btn btn--accent">
               Apply for a wholesale account
             </Link>
-            <Link href="/shop/wholesale-cartons/" className="btn btn--light">
+            <Link href="/shop/bulk-meat-boxes/" className="btn btn--light">
               Browse trade cartons
             </Link>
           </div>

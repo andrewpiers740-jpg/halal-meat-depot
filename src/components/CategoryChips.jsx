@@ -7,13 +7,13 @@ export default function CategoryChips({ current }) {
     <nav aria-label="Categories">
       <ul className="chips">
         <li>
-          <Link href="/shop/" aria-current={!current ? 'page' : undefined}>
+          <Link href="/halal-meat-shop/" aria-current={!current ? 'page' : undefined}>
             All products
           </Link>
         </li>
         {CATEGORIES.map((c) => (
           <li key={c.slug}>
-            <Link href={`/shop/${c.slug}/`} aria-current={current === c.slug ? 'page' : undefined}>
+            <Link href={`${c.path}`} aria-current={current === c.slug ? 'page' : undefined}>
               {c.name}
             </Link>
           </li>

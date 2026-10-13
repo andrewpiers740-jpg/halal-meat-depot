@@ -122,7 +122,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.97); border-bottom: 1px solid var(--line); backdrop-filter: saturate(1.4) blur(8px); }
 .header-inner { display: flex; align-items: center; gap: 16px; min-height: var(--header-h); }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-weight: 800; letter-spacing: -0.01em; }
-.logo img { width: 46px; height: 46px; border-radius: 50%; }
+.logo img { width: 46px; height: 46px; object-fit: contain; }
 .logo span { font-size: 1.05rem; line-height: 1.1; }
 .logo small { display: block; font-size: 0.68rem; font-weight: 700; color: var(--brand); letter-spacing: 0.08em; text-transform: uppercase; }
 @media (max-width: 420px) {
@@ -230,6 +230,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .cat-tile { position: relative; display: block; border-radius: var(--radius); overflow: hidden; text-decoration: none; color: #fff; box-shadow: var(--shadow); transition: transform 0.2s ease, box-shadow 0.2s ease; aspect-ratio: 4 / 3; background: var(--brand-ink); }
 .cat-tile:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); color: #fff; }
 .cat-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cat-tile .cat-figure { position: absolute; inset: 0; margin: 0; }
 .cat-tile .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 8, 9, 0) 35%, rgba(20, 8, 9, 0.88) 100%); }
 .cat-tile .cat-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px; }
 .cat-tile .cat-label strong { display: block; font-size: 1.25rem; }
@@ -371,6 +372,10 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 @media (min-width: 1000px) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; } }
 .site-footer h2 { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+/* Tap targets ≥ 44px tall on touch screens (PageSpeed audit M5) */
+.site-footer li a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (min-width: 900px) { .site-footer li a { min-height: 32px; } }
+.crumbs a { display: inline-block; padding: 8px 0; }
 .site-footer li a { display: inline-flex; align-items: center; min-height: 36px; }
 .footer-brand p { font-size: 0.92rem; color: #cdbbb8; }
 .footer-bottom { border-top: 1px solid #3b2526; margin-top: 40px; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.85rem; color: #bda8a5; }
@@ -469,3 +474,15 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
   .shop-main .product-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1180px) { .shop-main .product-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Image captions (image SEO: visible caption carries the focus keyword) */
+.pdp-figure { margin: 0; }
+.img-caption { margin-top: 10px; font-size: 0.88rem; color: var(--muted, #6b6b6b); }
+.hero-caption { position: absolute; z-index: 1; right: 16px; bottom: 14px; max-width: 60%; margin: 0; font-size: 0.78rem; color: rgba(255, 255, 255, 0.78); text-align: right; transition: opacity 0.9s ease; }
+@media (max-width: 899px) { .hero-caption { display: none; } }
+.hero-slide { margin: 0; }
+.cat-head { display: grid; gap: 22px; align-items: center; }
+@media (min-width: 900px) { .cat-head { grid-template-columns: 1fr 380px; } }
+.cat-head-figure { margin: 0; }
+.cat-head-media { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #fff; }
+.cat-head-media img { object-fit: cover; }

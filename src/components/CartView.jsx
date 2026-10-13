@@ -43,7 +43,7 @@ export default function CartView() {
       <div className="card center" style={{ maxWidth: 560, margin: '0 auto' }}>
         <h2>Your cart is empty</h2>
         <p className="muted">Browse halal beef, lamb, goat, chicken and more — all certified by {SITE.certifier}.</p>
-        <Link href="/shop/" className="btn btn--primary">
+        <Link href="/halal-meat-shop/" className="btn btn--primary">
           Shop halal meat
         </Link>
         {undo && (
@@ -103,7 +103,7 @@ export default function CartView() {
           <button type="button" className="link-btn" onClick={onClear}>
             Empty cart
           </button>{' '}
-          · <Link href="/shop/">Continue shopping</Link>
+          · <Link href="/halal-meat-shop/">Continue shopping</Link>
         </p>
       </section>
 

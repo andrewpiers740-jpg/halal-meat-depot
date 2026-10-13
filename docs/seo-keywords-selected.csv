@@ -1,0 +1,1007 @@
+Keyword,Intent,Volume,KD,CPC,Score,Role,Target page
+halal butcher near me,Transactional,5400,17,0.72,778,PRIMARY,/
+halal meat near me,Transactional,3600,7,0.67,528,secondary,/
+halal meat,Commercial,2900,25,1.03,330,secondary,/
+halal meat close to me,Informational,3600,15,0.67,260,secondary,/
+halal meat shop near me,Transactional,1900,17,0.9,254,secondary,/
+halal butcher,Commercial,1900,17,1,216,secondary,/
+halal meat store near me,Transactional,1300,17,0.9,164,secondary,/
+halal butchers,Commercial,1000,21,1,91,secondary,/
+butcher sydney,Commercial,590,15,0.7,49,secondary,/
+the halal butchery,Commercial,590,16,0,45,supporting,/
+halal meats,Commercial,590,23,0.81,33,supporting,/
+halal meat butchers,Commercial,390,17,1,20,supporting,/
+the halal butcher,Informational,590,14,0,19,supporting,/
+meat shops halal,Commercial,390,18,0,15,supporting,/
+halal barbeque,Commercial,210,7,0,13,supporting,/
+halal meats near me,Transactional,390,25,0.67,11,supporting,/
+premium halal,"Informational, Transactional",260,15,0,9,supporting,/
+halal meat shop,Commercial,320,19,0,4,supporting,/
+halal meat bbq,Commercial,210,12,0,3,supporting,/
+aus halal meats,Commercial,320,22,1.01,1,supporting,/
+halal butchery,Commercial,140,10,1,1,supporting,/
+halal shop,Commercial,170,11,0,0,supporting,/
+halal butchers near me,"Informational, Transactional",260,21,0.72,-1,supporting,/
+premium halal meat,Commercial,260,19,0,-4,supporting,/
+halal meat store,Commercial,260,20,0,-6,supporting,/
+halel meat,Commercial,140,14,1.03,-7,supporting,/
+halal butcher shop near me,Transactional,170,17,0,-8,supporting,/
+halal meat shops near me,Transactional,110,14,0.98,-9,supporting,/
+butchers halal,Commercial,140,16,1.16,-10,supporting,/
+halal butcher shop,Commercial,90,12,0,-12,supporting,/
+hallal meats,Commercial,140,17,1.03,-13,supporting,/
+butcher halal,Commercial,110,16,1.16,-14,supporting,/
+halal meat sydney,Commercial,110,16,0.58,-16,supporting,/
+butchery near me halal,Transactional,70,14,0,-17,supporting,/
+halal butchery near me,Transactional,50,14,0.72,-18,supporting,/
+fresh halal meat,Commercial,90,16,0,-20,supporting,/
+butcher near me halal,Transactional,70,16,0,-21,supporting,/
+halal meat shop online,Commercial,70,17,0.66,-23,supporting,/
+butcher halal near me,Transactional,110,22,0.89,-25,supporting,/
+butcher shop halal,Commercial,90,19,0,-26,supporting,/
+halal fresh meats,Commercial,90,23,0,-34,supporting,/
+halal butcher store,Commercial,90,24,0,-36,supporting,/
+eye fillet,Informational,8100,9,0.55,632,PRIMARY,beef-eye-fillet-steaks
+eye fillet steak,Informational,4400,11,0.52,332,secondary,beef-eye-fillet-steaks
+beef eye fillet,"Informational, Transactional",2400,18,0.52,326,secondary,beef-eye-fillet-steaks
+eye fillet roast,Informational,1000,8,0.54,66,secondary,beef-eye-fillet-steaks
+beef fillet steak,Informational,1000,11,0.48,59,secondary,beef-eye-fillet-steaks
+beef eye fillet roast,Informational,720,7,0.54,45,secondary,beef-eye-fillet-steaks
+eye filet,"Informational, Transactional",320,12,0.55,26,secondary,beef-eye-fillet-steaks
+beef tenderloin price,Transactional,90,6,0,2,secondary,beef-eye-fillet-steaks
+beef eye fillet price,Transactional,50,5,0.21,-2,secondary,beef-eye-fillet-steaks
+australia beef tenderloin,"Informational, Commercial",70,6,0,-3,supporting,beef-eye-fillet-steaks
+buy beef fillet online,Transactional,50,6,0,-4,supporting,beef-eye-fillet-steaks
+beef tenderloin cost,"Informational, Commercial",70,19,0,-29,supporting,beef-eye-fillet-steaks
+halal steak,Commercial,720,8,0.64,80,PRIMARY,/shop/beef/
+steaks halal near me,Transactional,1000,12,0.99,129,secondary,/shop/beef/
+beef slices,Commercial,720,9,1.81,81,secondary,/shop/beef/
+halal beef steak,Commercial,590,8,0.82,63,secondary,/shop/beef/
+blade beef,Informational,590,10,0.42,28,secondary,/shop/beef/
+halal beef meat,Commercial,260,7,0.35,21,secondary,/shop/beef/
+extra lean beef strips,"Informational, Commercial",170,4,1.93,20,secondary,/shop/beef/
+thin cut beef,"Informational, Commercial",390,19,1.8,18,secondary,/shop/beef/
+beef meat price,Transactional,260,13,0.35,14,secondary,/shop/beef/
+black angus steak,"Informational, Commercial",260,11,0,12,supporting,/shop/beef/
+extra lean beef,Transactional,260,14,0.41,12,supporting,/shop/beef/
+thin beef slices,"Informational, Commercial",170,8,1.8,12,supporting,/shop/beef/
+beef box,Commercial,90,1,0.92,12,supporting,/shop/beef/
+buy angus beef sausage online,Transactional,70,0,0,11,supporting,/shop/beef/
+buy crumbed beef online,Transactional,70,0,0,11,supporting,/shop/beef/
+angus beef sausages,Commercial,170,6,0,10,supporting,/shop/beef/
+beef steaks,"Informational, Commercial",260,13,0.35,9,supporting,/shop/beef/
+rump steak cost,"Informational, Commercial",170,7,0.19,9,supporting,/shop/beef/
+veal near me,Transactional,170,11,1.68,9,supporting,/shop/beef/
+steak 500g,"Informational, Commercial",140,5,0,8,supporting,/shop/beef/
+beef whole,"Informational, Commercial",70,1,0.19,8,supporting,/shop/beef/
+thin sliced beef,Commercial,320,20,1.8,7,supporting,/shop/beef/
+beef steak price,Transactional,140,8,0.23,6,supporting,/shop/beef/
+whole rump beef,"Informational, Commercial",70,2,0.3,6,supporting,/shop/beef/
+beef steak cost,Commercial,170,9,0.23,5,supporting,/shop/beef/
+halal beef,Commercial,210,12,0.35,4,supporting,/shop/beef/
+1kg steak,"Informational, Commercial",140,7,0,4,supporting,/shop/beef/
+steak price,Transactional,140,9,0.23,4,supporting,/shop/beef/
+beef scotch steak,"Informational, Commercial",110,6,0.66,4,supporting,/shop/beef/
+steak bulk,Commercial,110,6,0.43,4,supporting,/shop/beef/
+butcher steak,Commercial,260,16,0.48,3,supporting,/shop/beef/
+beef loin price,Transactional,70,4,0,3,supporting,/shop/beef/
+cheap beef steak,Commercial,390,25,0.4,2,supporting,/shop/beef/
+beef meat price in australia,Transactional,210,17,1.42,2,supporting,/shop/beef/
+buy veal online,Transactional,90,6,0,2,supporting,/shop/beef/
+steak cost,"Informational, Commercial",140,9,0.23,1,supporting,/shop/beef/
+1kg of beef,"Informational, Commercial",70,4,0,1,supporting,/shop/beef/
+buy beef kebabs online,Transactional,70,5,0,1,supporting,/shop/beef/
+beef tail meat,Commercial,90,6,0,0,supporting,/shop/beef/
+steak prices,Transactional,140,12,0.23,-2,supporting,/shop/beef/
+frozen sliced beef,Commercial,110,10,1.32,-2,supporting,/shop/beef/
+buying beef in bulk,Commercial,70,6,0.33,-2,supporting,/shop/beef/
+veal meat near me,Transactional,170,17,1.68,-3,supporting,/shop/beef/
+beef cheap,Commercial,110,9,0.32,-3,supporting,/shop/beef/
+cheapest cut of beef australia,"Informational, Commercial",50,5,0,-3,supporting,/shop/beef/
+bulk steaks,Commercial,50,6,0.47,-4,supporting,/shop/beef/
+price of a steak,Transactional,50,6,0.23,-4,supporting,/shop/beef/
+premium cuts of beef,Commercial,90,9,0.39,-5,supporting,/shop/beef/
+beef meat halal,Commercial,90,9,0.35,-5,supporting,/shop/beef/
+1kg beef,"Informational, Commercial",70,7,0,-5,supporting,/shop/beef/
+cheapest beef cuts australia,"Informational, Commercial",70,7,0,-5,supporting,/shop/beef/
+beef cap meat,Commercial,70,7,0,-5,supporting,/shop/beef/
+cheap beef cuts australia,Commercial,70,7,0,-5,supporting,/shop/beef/
+cheapest cuts of beef australia,"Informational, Commercial",70,7,0,-5,supporting,/shop/beef/
+scotch beef,"Informational, Commercial",70,7,0,-5,supporting,/shop/beef/
+top side cut beef,"Informational, Commercial",70,7,0,-5,supporting,/shop/beef/
+steak and bbq,Commercial,50,6,0.28,-5,supporting,/shop/beef/
+halal steak sydney,Commercial,260,20,0,-6,supporting,/shop/beef/
+marble beef,"Informational, Transactional",50,7,0,-6,supporting,/shop/beef/
+beef bulk,Commercial,90,10,0.35,-7,supporting,/shop/beef/
+halal beef near me,Transactional,70,10,0.88,-7,supporting,/shop/beef/
+price beef meat,Transactional,90,11,0.22,-8,supporting,/shop/beef/
+steak halal near me,Transactional,50,9,0.99,-8,supporting,/shop/beef/
+beef prices,Transactional,210,21,0.35,-9,supporting,/shop/beef/
+cheap beef,Commercial,110,12,0.32,-9,supporting,/shop/beef/
+steak halal,Commercial,110,13,0.82,-9,supporting,/shop/beef/
+cost of beef,Commercial,210,19,0.35,-10,supporting,/shop/beef/
+beef whole fillet,"Informational, Commercial",90,11,0,-10,supporting,/shop/beef/
+frozen beef steak,Commercial,70,12,1.47,-10,supporting,/shop/beef/
+steak sale,Transactional,70,11,0.34,-10,supporting,/shop/beef/
+black angus beef,Commercial,210,21,0.77,-12,supporting,/shop/beef/
+cheapest steak,Commercial,170,18,0.48,-12,supporting,/shop/beef/
+steaks on sale,Transactional,90,14,0.34,-13,supporting,/shop/beef/
+frozen beef,Commercial,140,17,0.66,-14,supporting,/shop/beef/
+beef price,Commercial,140,17,0.35,-15,supporting,/shop/beef/
+beef tounge,"Informational, Transactional",110,16,0,-15,supporting,/shop/beef/
+beef organ meat,Commercial,90,16,1.81,-15,supporting,/shop/beef/
+buy steak,Transactional,70,14,0.53,-16,supporting,/shop/beef/
+price of beef in australia,Transactional,50,12,0.26,-16,supporting,/shop/beef/
+fillet beef,"Informational, Transactional",170,22,0.45,-17,supporting,/shop/beef/
+steak on sale,Transactional,50,13,0.34,-17,supporting,/shop/beef/
+beef steak meat cuts,"Informational, Commercial",110,16,0,-18,supporting,/shop/beef/
+buy beef steak,Transactional,70,15,0.53,-18,supporting,/shop/beef/
+aged beef near me,Transactional,70,15,0.42,-18,supporting,/shop/beef/
+cheap cuts of beef,Commercial,170,21,0.34,-19,supporting,/shop/beef/
+butcher steaks,Commercial,110,17,0.39,-19,supporting,/shop/beef/
+cheap beef meat,Commercial,90,16,0.32,-19,supporting,/shop/beef/
+beef leg,"Informational, Commercial",210,24,0,-21,supporting,/shop/beef/
+cheap steaks,Commercial,90,17,0.4,-21,supporting,/shop/beef/
+price of beef,Transactional,90,18,0.35,-21,supporting,/shop/beef/
+angus steak,Commercial,210,25,0.37,-22,supporting,/shop/beef/
+black angus black angus,Commercial,140,20,0,-22,supporting,/shop/beef/
+beef price per kg,Commercial,110,18,0,-22,supporting,/shop/beef/
+beef in bulk,"Informational, Commercial",50,15,0.35,-22,supporting,/shop/beef/
+steak cuts cheap,Commercial,70,16,0,-23,supporting,/shop/beef/
+steak types best,Commercial,140,21,0,-24,supporting,/shop/beef/
+beef price australia,Commercial,70,19,1.42,-25,supporting,/shop/beef/
+cuts of beef top round,"Informational, Commercial",70,17,0,-25,supporting,/shop/beef/
+beef sale,Transactional,50,17,0.48,-25,supporting,/shop/beef/
+steak angus,Transactional,110,22,0.37,-26,supporting,/shop/beef/
+cheap beef steak cuts,Commercial,90,19,0,-26,supporting,/shop/beef/
+halal steaks near me,Transactional,50,17,0,-26,supporting,/shop/beef/
+beef top side,"Informational, Commercial",90,20,0.44,-27,supporting,/shop/beef/
+buy frozen beef online,Transactional,70,19,0,-27,supporting,/shop/beef/
+black angus meat for sale,Transactional,20,17,0,-31,supporting,/shop/beef/
+cheapest cuts of beef,"Informational, Commercial",110,24,0.34,-33,supporting,/shop/beef/
+cheapest cut steak,Commercial,50,21,0,-35,supporting,/shop/beef/
+shop steaks,Commercial,50,24,0.39,-40,supporting,/shop/beef/
+lean steaks,"Informational, Commercial",50,25,0,-43,supporting,/shop/beef/
+lamb,"Informational, Transactional",12100,19,0.35,1778,PRIMARY,/shop/lamb/
+lamb prices,Transactional,590,23,0.31,43,secondary,/shop/lamb/
+lamb price,Transactional,320,12,0.73,26,secondary,/shop/lamb/
+lamb meat near me,Transactional,210,11,0.35,11,secondary,/shop/lamb/
+price for a lamb,Commercial,210,10,0.73,9,secondary,/shop/lamb/
+sheep meat near me,Transactional,170,11,0.35,5,secondary,/shop/lamb/
+lamb price per kg,Transactional,140,10,0.24,2,secondary,/shop/lamb/
+buy a lamb,Transactional,90,7,0.63,1,secondary,/shop/lamb/
+butcher lamb cuts of meat,"Informational, Transactional",70,6,0,-1,secondary,/shop/lamb/
+price of a lamb,Transactional,90,9,0.73,-2,supporting,/shop/lamb/
+lamb butcher,Commercial,170,13,0.44,-3,supporting,/shop/lamb/
+lamb or beef,"Informational, Commercial",110,9,0,-4,supporting,/shop/lamb/
+buy lamb,Transactional,90,10,0.63,-5,supporting,/shop/lamb/
+halal meat lamb,Commercial,90,9,0,-6,supporting,/shop/lamb/
+lamb halal meat,Commercial,90,9,0,-6,supporting,/shop/lamb/
+lamb meat halal,Commercial,90,9,0,-6,supporting,/shop/lamb/
+halal lamb,Commercial,90,10,0,-8,supporting,/shop/lamb/
+halal lamb meat,Commercial,90,10,0,-8,supporting,/shop/lamb/
+lamb for sell,Commercial,90,11,0,-10,supporting,/shop/lamb/
+lamb prices nsw,Transactional,140,17,0,-13,supporting,/shop/lamb/
+price of lamb in australia,Transactional,110,16,0,-15,supporting,/shop/lamb/
+lamb prices in australia,Transactional,140,20,0,-19,supporting,/shop/lamb/
+lamb price australia,Transactional,110,19,0,-21,supporting,/shop/lamb/
+lamb prices australia,Commercial,140,20,0,-22,supporting,/shop/lamb/
+australia lamb prices,Transactional,110,20,0,-23,supporting,/shop/lamb/
+scotch fillet steak,Informational,6600,9,0.66,512,PRIMARY,beef-scotch-fillet-steaks
+rib eye of beef,Informational,3600,12,0.49,265,secondary,beef-scotch-fillet-steaks
+beef scotch fillet,Informational,1000,8,0.4,65,secondary,beef-scotch-fillet-steaks
+roast beef ribeye,Informational,1000,13,0.69,56,secondary,beef-scotch-fillet-steaks
+beef ribeye,Informational,590,14,0.49,21,secondary,beef-scotch-fillet-steaks
+beef ribeye price,Transactional,140,5,0.38,12,secondary,beef-scotch-fillet-steaks
+beef ribeye steak price,Transactional,90,6,0.33,2,secondary,beef-scotch-fillet-steaks
+beef rib eye price,Transactional,90,6,0.33,2,secondary,beef-scotch-fillet-steaks
+rib eye beef price,Transactional,90,6,0.33,2,secondary,beef-scotch-fillet-steaks
+scotch fillet ribeye,"Informational, Transactional",110,10,0,-3,supporting,beef-scotch-fillet-steaks
+eye fillet or scotch fillet,"Informational, Commercial",50,6,0,-5,supporting,beef-scotch-fillet-steaks
+buy ribeye steak near me,Transactional,110,12,0,-7,supporting,beef-scotch-fillet-steaks
+asado rib eye,"Informational, Transactional",20,7,0,-11,supporting,beef-scotch-fillet-steaks
+wagyu steak,Commercial,2400,19,0.6,276,PRIMARY,/shop/beef/wagyu/ (proposed)
+wagyu near me,Transactional,880,14,0.33,105,secondary,/shop/beef/wagyu/ (proposed)
+australian wagyu,Informational,1000,7,0.46,67,secondary,/shop/beef/wagyu/ (proposed)
+wagyu beef near me,Transactional,480,17,0.42,39,secondary,/shop/beef/wagyu/ (proposed)
+australian wagyu beef,"Informational, Commercial",480,19,0.46,26,secondary,/shop/beef/wagyu/ (proposed)
+buy wagyu beef online,Transactional,260,8,0.64,25,secondary,/shop/beef/wagyu/ (proposed)
+wagyu beef flank steak,"Informational, Commercial",210,4,0.64,21,secondary,/shop/beef/wagyu/ (proposed)
+wagyu butcher near me,Transactional,260,11,0.69,19,secondary,/shop/beef/wagyu/ (proposed)
+wagyu beef price,Transactional,210,8,0,16,secondary,/shop/beef/wagyu/ (proposed)
+wagyu beef butcher,Commercial,320,14,0.43,15,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef slices,"Informational, Transactional",110,2,0.53,14,supporting,/shop/beef/wagyu/ (proposed)
+butcher wagyu beef,Commercial,320,17,0.43,9,supporting,/shop/beef/wagyu/ (proposed)
+wagyu sydney,Navigational,320,13,0.76,8,supporting,/shop/beef/wagyu/ (proposed)
+order wagyu beef online,Commercial,170,8,0.64,8,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef price per kg,Transactional,170,9,0,8,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef australia,Commercial,320,19,1.04,7,supporting,/shop/beef/wagyu/ (proposed)
+sliced wagyu beef,"Informational, Transactional",110,6,0.53,6,supporting,/shop/beef/wagyu/ (proposed)
+price for wagyu beef,Transactional,140,8,0,5,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef online,Commercial,210,13,0.58,3,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef mince,"Informational, Commercial",90,6,1.06,3,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef sydney,Navigational,320,17,0.76,0,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef burger patties,Commercial,110,8,0.44,0,supporting,/shop/beef/wagyu/ (proposed)
+buy wagyu beef,Transactional,210,17,0.44,-1,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef steak price,Transactional,70,6,0,-1,supporting,/shop/beef/wagyu/ (proposed)
+australia wagyu beef price,Transactional,70,6,0.25,-1,supporting,/shop/beef/wagyu/ (proposed)
+premium wagyu beef,"Informational, Commercial",140,12,0.82,-3,supporting,/shop/beef/wagyu/ (proposed)
+halal wagyu beef,Commercial,70,7,0.53,-3,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef online australia,Commercial,140,12,0.58,-4,supporting,/shop/beef/wagyu/ (proposed)
+cost wagyu beef,Commercial,170,14,0,-6,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef patties,"Informational, Commercial",170,15,0.62,-6,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef price australia,Commercial,50,7,0.37,-6,supporting,/shop/beef/wagyu/ (proposed)
+wagyu meat for sale,Transactional,40,7,0.57,-6,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef for sale,Transactional,140,15,0.57,-7,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef delivery,Commercial,170,17,0.91,-9,supporting,/shop/beef/wagyu/ (proposed)
+wagyu premium beef,"Informational, Commercial",170,16,0,-10,supporting,/shop/beef/wagyu/ (proposed)
+australia wagyu beef,Commercial,170,17,0.46,-11,supporting,/shop/beef/wagyu/ (proposed)
+buy wagyu beef near me,Transactional,50,10,0.24,-12,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef prices,Transactional,50,10,0.26,-12,supporting,/shop/beef/wagyu/ (proposed)
+buying wagyu beef online,Transactional,90,14,0.57,-13,supporting,/shop/beef/wagyu/ (proposed)
+order wagyu beef,Commercial,140,17,0.44,-14,supporting,/shop/beef/wagyu/ (proposed)
+australian wagyu beef price,Commercial,70,12,0,-15,supporting,/shop/beef/wagyu/ (proposed)
+australian wagyu beef online,"Informational, Commercial",140,17,0,-16,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef online delivery,"Navigational, Commercial",90,15,0,-18,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef buy,Transactional,70,15,0.45,-18,supporting,/shop/beef/wagyu/ (proposed)
+buy wagyu beef online australia,Transactional,170,24,0,-22,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef shop,Commercial,70,17,0.29,-24,supporting,/shop/beef/wagyu/ (proposed)
+wagyu beef sydney wholesale,Navigational,90,24,0.77,-37,supporting,/shop/beef/wagyu/ (proposed)
+beef wagyu steak,Transactional,50,25,0.6,-41,supporting,/shop/beef/wagyu/ (proposed)
+shop wagyu beef,"Navigational, Commercial",50,24,0.29,-41,supporting,/shop/beef/wagyu/ (proposed)
+sausages,"Informational, Transactional",5400,23,0.8,766,PRIMARY,beef-herb-and-garlic-sausages
+beef sausage,Commercial,1000,17,0.35,97,secondary,beef-herb-and-garlic-sausages
+beef sausages,"Informational, Commercial",880,20,0.82,77,secondary,beef-herb-and-garlic-sausages
+sausage meat,"Informational, Transactional",720,17,0.62,76,secondary,beef-herb-and-garlic-sausages
+beef sausage meat,Informational,720,9,0,40,secondary,beef-herb-and-garlic-sausages
+halal sausages,Commercial,480,12,0.6,40,secondary,beef-herb-and-garlic-sausages
+bulk sausage,Commercial,210,4,1.13,23,secondary,beef-herb-and-garlic-sausages
+sausage near me,Transactional,320,13,0,22,secondary,beef-herb-and-garlic-sausages
+bulk sausages,Commercial,210,9,1.07,13,secondary,beef-herb-and-garlic-sausages
+thin beef sausages,"Informational, Commercial",170,8,0,6,supporting,beef-herb-and-garlic-sausages
+lean beef sausages,Commercial,140,6,0,6,supporting,beef-herb-and-garlic-sausages
+extra lean beef sausages,Commercial,140,8,0,2,supporting,beef-herb-and-garlic-sausages
+halal sausage,Commercial,110,9,0.6,-2,supporting,beef-herb-and-garlic-sausages
+extra lean sausages,"Informational, Commercial",260,20,0,-6,supporting,beef-herb-and-garlic-sausages
+halal beef sausages,Commercial,90,9,0,-6,supporting,beef-herb-and-garlic-sausages
+sausages halal,Commercial,50,10,0.6,-12,supporting,beef-herb-and-garlic-sausages
+ox tongue,"Informational, Transactional",1300,14,0.65,169,PRIMARY,beef-tongue
+beef tongue,"Informational, Transactional",1000,14,0,122,secondary,beef-tongue
+cow tongue beef,"Informational, Transactional",880,17,0.65,100,secondary,beef-tongue
+ox tongue meat,Informational,1300,13,0.65,80,secondary,beef-tongue
+tongue of cow,"Informational, Transactional",720,17,0,74,secondary,beef-tongue
+cow tongue,Informational,720,13,0,32,secondary,beef-tongue
+tongue cow,Informational,720,15,0.65,30,secondary,beef-tongue
+tongue beef,"Informational, Transactional",320,12,0,24,secondary,beef-tongue
+ox tounge,"Informational, Transactional",260,12,0.65,17,secondary,beef-tongue
+cow tounge,"Informational, Transactional",210,17,0,-2,supporting,beef-tongue
+beef tongue near me,Transactional,50,5,0,-2,supporting,beef-tongue
+beef tongue meat,"Informational, Transactional",140,14,0,-7,supporting,beef-tongue
+beef tongue butcher,Commercial,20,6,0,-9,supporting,beef-tongue
+cow tongue near me,Transactional,50,9,0,-10,supporting,beef-tongue
+beef ox tongue,"Informational, Transactional",20,9,0,-15,supporting,beef-tongue
+beef cow tongue,"Informational, Transactional",110,19,0.65,-20,supporting,beef-tongue
+sirloin steak beef,"Informational, Transactional",4400,17,0.53,628,PRIMARY,beef-porterhouse-steaks
+beef striploin,Informational,720,11,0,36,secondary,beef-porterhouse-steaks
+sirloin beef,"Informational, Transactional",320,18,0,12,secondary,beef-porterhouse-steaks
+porterhouse steak price,Transactional,170,8,0,10,secondary,beef-porterhouse-steaks
+buy porterhouse steak online,Transactional,140,6,0,9,secondary,beef-porterhouse-steaks
+sirloin price,Transactional,110,4,0,9,secondary,beef-porterhouse-steaks
+beef sirloin price,Transactional,90,3,0,8,secondary,beef-porterhouse-steaks
+sirloin steak price,Transactional,90,3,0,8,secondary,beef-porterhouse-steaks
+beef sirloin steak price,Transactional,70,3,0,5,secondary,beef-porterhouse-steaks
+poterhouse steak,"Informational, Transactional",320,23,0.55,4,supporting,beef-porterhouse-steaks
+beef strip loin,"Informational, Transactional",170,15,0.94,-2,supporting,beef-porterhouse-steaks
+rump or porterhouse,"Informational, Commercial",50,6,0,-5,supporting,beef-porterhouse-steaks
+porthouse steak,"Informational, Transactional",260,23,0,-7,supporting,beef-porterhouse-steaks
+sirloin cut,"Informational, Transactional",170,22,0,-18,supporting,beef-porterhouse-steaks
+top sirloin australia,Commercial,110,18,0,-22,supporting,beef-porterhouse-steaks
+oxtail,"Informational, Transactional",4400,24,0.82,614,PRIMARY,beef-oxtail
+ox tail,"Informational, Transactional",1600,17,0.81,208,secondary,beef-oxtail
+oxtails near me,Transactional,260,9,0.51,23,secondary,beef-oxtail
+oxtail price,Transactional,90,14,0,-14,secondary,beef-oxtail
+oxtail near me,Transactional,210,25,0,-18,secondary,beef-oxtail
+oxtail meat,Commercial,90,18,0,-24,secondary,beef-oxtail
+extra lean beef mince,"Informational, Commercial",2400,19,0.43,275,PRIMARY,extra-lean-beef-mince
+lean beef mince,Commercial,1900,11,0.49,226,secondary,extra-lean-beef-mince
+lean mince meat,Informational,1600,11,0.49,107,secondary,extra-lean-beef-mince
+lean mince beef,Commercial,170,6,0.49,12,secondary,extra-lean-beef-mince
+extra lean beef mince 1kg,Commercial,170,7,0.37,9,secondary,extra-lean-beef-mince
+1kg lean beef mince,Commercial,90,6,0.29,1,secondary,extra-lean-beef-mince
+lean beef mince 1kg,Commercial,90,7,0,-2,secondary,extra-lean-beef-mince
+crumbed lamb cutlets,Informational,1900,10,0.2,133,PRIMARY,lamb-cutlets-frenched
+crumbed cutlets lamb,Informational,1600,13,0.2,103,secondary,lamb-cutlets-frenched
+lamb cutlet,Informational,1300,15,1.76,79,secondary,lamb-cutlets-frenched
+lamb cutlets price,Transactional,320,8,0.65,34,secondary,lamb-cutlets-frenched
+lamb cutlets price per kg,Transactional,170,8,0,10,secondary,lamb-cutlets-frenched
+lamb cutlets near me,Transactional,140,10,0,1,secondary,lamb-cutlets-frenched
+mince beef,Informational,880,14,0.3,43,PRIMARY,premium-beef-mince
+1kg beef mince,Commercial,390,9,0.6,35,secondary,premium-beef-mince
+premium beef mince,"Informational, Commercial",320,6,0.67,32,secondary,premium-beef-mince
+beef mince 1kg,Commercial,320,8,0.6,27,secondary,premium-beef-mince
+500g beef mince,Commercial,260,10,0.66,16,secondary,premium-beef-mince
+beef mince price,Transactional,210,10,0.35,13,secondary,premium-beef-mince
+beef mince lean,Commercial,210,9,0.49,11,secondary,premium-beef-mince
+buy beef mince online,Transactional,140,6,0,9,secondary,premium-beef-mince
+extra lean ground beef,"Informational, Commercial",170,8,0.51,8,secondary,premium-beef-mince
+beef mince bulk buy,Transactional,90,4,0.45,7,supporting,premium-beef-mince
+beef mince premium,Commercial,140,7,0.67,6,supporting,premium-beef-mince
+halal beef mince,Commercial,140,7,0.44,6,supporting,premium-beef-mince
+beef mince butcher,Commercial,140,8,0.66,4,supporting,premium-beef-mince
+mince price,Transactional,170,12,0.35,3,supporting,premium-beef-mince
+beef mince extra lean,Commercial,170,10,0,2,supporting,premium-beef-mince
+buy mince beef sausage online,Transactional,70,5,0,1,supporting,premium-beef-mince
+buy beef mince,Transactional,140,11,0.38,0,supporting,premium-beef-mince
+beef mince online,Commercial,90,6,0,0,supporting,premium-beef-mince
+buy mince beef online,Transactional,70,6,0,-1,supporting,premium-beef-mince
+premium mince beef,"Informational, Commercial",70,6,0.67,-1,supporting,premium-beef-mince
+mince beef online,"Informational, Commercial",90,7,0,-2,supporting,premium-beef-mince
+beef mince price per kg,Transactional,70,7,0.4,-2,supporting,premium-beef-mince
+cheap beef mince,Commercial,70,6,0.33,-2,supporting,premium-beef-mince
+1kg mince beef,"Informational, Commercial",90,8,0.6,-3,supporting,premium-beef-mince
+lean minced beef,"Informational, Commercial",90,8,0.49,-3,supporting,premium-beef-mince
+beef premium mince,Commercial,70,6,0,-3,supporting,premium-beef-mince
+minced beef online,Commercial,70,6,0,-3,supporting,premium-beef-mince
+beef mince 500g,Commercial,70,8,0.15,-6,supporting,premium-beef-mince
+frozen beef mince,Commercial,70,8,0,-7,supporting,premium-beef-mince
+500g of minced beef,"Informational, Commercial",70,17,0.15,-24,supporting,premium-beef-mince
+halal mince,Commercial,90,21,0.62,-28,supporting,premium-beef-mince
+chicken feet,"Informational, Transactional",3600,18,0.89,507,PRIMARY,chicken-feet
+chickens feet,"Informational, Transactional",590,17,1.15,58,secondary,chicken-feet
+chicken paws,"Informational, Transactional",480,13,1.16,49,secondary,chicken-feet
+chicken feet near me,Transactional,320,13,0.63,24,secondary,chicken-feet
+flank steak beef,"Informational, Transactional",3600,21,0.91,501,PRIMARY,beef-flank-steak
+flank meat,Informational,590,13,0.91,24,secondary,beef-flank-steak
+flank steak price,Transactional,50,6,0,-4,secondary,beef-flank-steak
+flank beef,"Informational, Transactional",260,24,0.91,-6,secondary,beef-flank-steak
+beef chuck meat,"Informational, Transactional",1000,13,0.37,125,PRIMARY,beef-chuck-steak
+beef chuck steak,Informational,720,13,0.39,33,secondary,beef-chuck-steak
+beef chuck roll,"Informational, Commercial",390,13,0.85,27,secondary,beef-chuck-steak
+chuck in beef,Informational,590,12,0.4,24,secondary,beef-chuck-steak
+chuck on beef,Informational,590,12,0.35,24,secondary,beef-chuck-steak
+chuck steak meat,"Informational, Transactional",260,11,0.56,19,secondary,beef-chuck-steak
+beef chuck steak price,Transactional,110,3,0.33,11,secondary,beef-chuck-steak
+chuck meat price,Transactional,110,6,0.33,5,secondary,beef-chuck-steak
+chuck steak price,Transactional,110,6,0.33,5,secondary,beef-chuck-steak
+beef chuck cost,"Informational, Commercial",70,2,0,5,supporting,beef-chuck-steak
+beef chuck price,Transactional,90,5,0.29,4,supporting,beef-chuck-steak
+beef chuck roast price,Transactional,90,6,0,2,supporting,beef-chuck-steak
+price of beef chuck,Transactional,70,5,0,1,supporting,beef-chuck-steak
+price chuck steak,Transactional,50,4,0.24,0,supporting,beef-chuck-steak
+ground chuck meat,"Informational, Transactional",110,11,0,-5,supporting,beef-chuck-steak
+beef ground chuck,"Informational, Transactional",70,17,0,-23,supporting,beef-chuck-steak
+flat iron steak beef,"Informational, Transactional",2400,15,0.26,331,PRIMARY,beef-oyster-blade-steaks
+beef oyster blade,Informational,1300,14,0.91,79,secondary,beef-oyster-blade-steaks
+beef oyster blade steak,Informational,720,12,1.53,38,secondary,beef-oyster-blade-steaks
+goat meat near me,Transactional,1600,13,0.73,216,PRIMARY,/shop/goat/
+goat meat,Informational,1900,14,0.91,127,secondary,/shop/goat/
+where to buy goat meat near me,Transactional,170,8,0.61,11,secondary,/shop/goat/
+price for a goat,Transactional,140,10,0,1,secondary,/shop/goat/
+goats meat,"Informational, Transactional",210,17,0.91,0,secondary,/shop/goat/
+goat price,Transactional,140,14,0,-7,secondary,/shop/goat/
+goat meat for sale,Transactional,40,8,0,-10,secondary,/shop/goat/
+goat roasting,"Informational, Transactional",70,15,0,-19,secondary,/shop/goat/
+bolar blade roast,Informational,1900,10,0,132,PRIMARY,beef-bolar-blade-roast
+beef blade roast,Informational,1600,10,1.51,113,secondary,beef-bolar-blade-roast
+beef bolar blade,Informational,720,9,0,40,secondary,beef-bolar-blade-roast
+beef liver,Informational,3600,10,1.71,273,PRIMARY,beef-liver
+beef liver meat,"Informational, Commercial",70,2,1.59,10,secondary,beef-liver
+beef liver near me,Transactional,90,7,1.08,3,secondary,beef-liver
+buy beef liver,Transactional,50,6,1.15,-1,secondary,beef-liver
+beef burger,Informational,1900,13,0.26,127,PRIMARY,beef-chuck-and-brisket-burgers
+beef patties,"Informational, Commercial",1000,11,0.27,109,secondary,beef-chuck-and-brisket-burgers
+halal burger patties,Commercial,90,4,0,4,secondary,beef-chuck-and-brisket-burgers
+frozen beef patties,Commercial,260,17,0.6,2,secondary,beef-chuck-and-brisket-burgers
+extra lean beef burgers,Commercial,110,11,0,-8,secondary,beef-chuck-and-brisket-burgers
+extra lean beef patties,Commercial,110,13,0,-12,secondary,beef-chuck-and-brisket-burgers
+frozen beef burgers,Commercial,140,22,0,-26,secondary,beef-chuck-and-brisket-burgers
+camel burger near me,Transactional,140,25,0,-29,secondary,beef-chuck-and-brisket-burgers
+lamb mince,Informational,2400,12,0.89,171,PRIMARY,lamb-mince
+lamb mince meat,Informational,880,11,0.89,51,secondary,lamb-mince
+buy mince lamb online,Transactional,50,6,0,-4,secondary,lamb-mince
+buy minced lamb online,Transactional,50,6,0,-4,secondary,lamb-mince
+ground lamb meat,Commercial,170,23,1.7,-19,secondary,lamb-mince
+halal chicken,Commercial,1300,15,1.47,143,PRIMARY,/shop/chicken/
+halal chicken near me,Transactional,590,25,0.85,41,secondary,/shop/chicken/
+chicken butcher,Commercial,390,15,0.71,23,secondary,/shop/chicken/
+fresh chicken,Commercial,320,19,0.59,5,secondary,/shop/chicken/
+chicken halal,Commercial,140,12,1.47,-1,secondary,/shop/chicken/
+marylands chicken,"Informational, Navigational",210,15,0.54,-7,secondary,/shop/chicken/
+halah chicken,Commercial,50,11,1.61,-11,secondary,/shop/chicken/
+duck meat,Commercial,880,11,0.8,95,PRIMARY,/shop/duck/
+duck near me,Transactional,480,9,0,54,secondary,/shop/duck/
+duck for sale,Transactional,320,7,0,34,secondary,/shop/duck/
+frozen duck,Transactional,320,11,0,26,secondary,/shop/duck/
+where to buy duck,Transactional,170,9,0,8,secondary,/shop/duck/
+buy duck,Transactional,210,13,0,6,secondary,/shop/duck/
+duck meat near me,Transactional,320,23,0,2,secondary,/shop/duck/
+duck sale,Transactional,90,7,0,0,secondary,/shop/duck/
+buying duck,Transactional,110,9,0,-1,secondary,/shop/duck/
+duck price,Transactional,50,6,0,-4,supporting,/shop/duck/
+kangaroo steak,Commercial,2900,15,0.67,349,PRIMARY,kangaroo-rump-steaks
+whole lamb,Commercial,390,6,0.61,41,PRIMARY,/aqeeqah-qurbani/
+lamb spit,Informational,720,8,1.11,45,secondary,/aqeeqah-qurbani/
+lamb whole,"Informational, Commercial",320,4,0.61,35,secondary,/aqeeqah-qurbani/
+whole lamb price,Transactional,260,3,0.5,35,secondary,/aqeeqah-qurbani/
+whole lamb for sale,Transactional,170,7,0.4,13,secondary,/aqeeqah-qurbani/
+whole lamb meat for sale,Transactional,170,8,0.68,12,secondary,/aqeeqah-qurbani/
+lamb for sale,Transactional,210,14,0.35,5,secondary,/aqeeqah-qurbani/
+lamb for spit,"Informational, Commercial",170,10,1.11,5,secondary,/aqeeqah-qurbani/
+buy whole lamb,Transactional,90,6,0.45,3,secondary,/aqeeqah-qurbani/
+buy whole lamb meat,Transactional,90,7,0.45,1,supporting,/aqeeqah-qurbani/
+buy a whole lamb,Transactional,70,6,0.58,0,supporting,/aqeeqah-qurbani/
+leg of lamb for sale,Transactional,90,10,0,-6,supporting,/aqeeqah-qurbani/
+buy beef brisket,Transactional,260,11,0.42,18,PRIMARY,beef-brisket-whole
+beef brisket burger,Informational,590,11,0,25,secondary,beef-brisket-whole
+beef brisket price,Transactional,210,7,0.3,18,secondary,beef-brisket-whole
+beef brisket for sale online,Transactional,140,6,0,9,secondary,beef-brisket-whole
+beef brisket price per kg,Transactional,110,5,0.33,7,secondary,beef-brisket-whole
+buy beef brisket online,Transactional,70,3,0.47,6,secondary,beef-brisket-whole
+beef brisket online,Commercial,90,4,0.44,5,secondary,beef-brisket-whole
+beef brisket delivery near me,Transactional,110,8,0.74,3,secondary,beef-brisket-whole
+order beef brisket online,"Informational, Transactional",70,4,0,3,secondary,beef-brisket-whole
+beef brisket bone,"Informational, Commercial",70,5,1.05,2,supporting,beef-brisket-whole
+beef brisket order,Commercial,140,10,0.54,0,supporting,beef-brisket-whole
+beef brisket delivery,Commercial,110,9,0.85,-1,supporting,beef-brisket-whole
+online beef brisket,"Informational, Commercial",70,6,0.58,-1,supporting,beef-brisket-whole
+beef brisket for sale,Transactional,90,9,0.53,-3,supporting,beef-brisket-whole
+price beef brisket,Transactional,50,6,0.27,-4,supporting,beef-brisket-whole
+price on beef brisket,Transactional,50,6,0.27,-4,supporting,beef-brisket-whole
+halal beef brisket,Commercial,110,12,0.3,-9,supporting,beef-brisket-whole
+brisket meat for sale,Transactional,20,8,0,-13,supporting,beef-brisket-whole
+beef brisket slices,"Informational, Commercial",170,18,0,-14,supporting,beef-brisket-whole
+halal brisket,Commercial,140,19,0.3,-19,supporting,beef-brisket-whole
+beef steak t-bone,"Informational, Transactional",2400,19,0.32,323,PRIMARY,beef-t-bone-steaks
+beef t bone,"Informational, Transactional",210,8,0.34,17,secondary,beef-t-bone-steaks
+chicken liver,Informational,1900,13,1.34,130,PRIMARY,chicken-livers
+chicken livers,Informational,590,11,1.34,29,secondary,chicken-livers
+dry aged beef,Informational,1300,13,0.76,80,PRIMARY,dry-aged-new-york-strip-bone-in
+aged beef,Informational,590,15,0.76,19,secondary,dry-aged-new-york-strip-bone-in
+dry aged beef ribeye,"Informational, Commercial",140,7,0.47,6,secondary,dry-aged-new-york-strip-bone-in
+dry aged beef online,Commercial,70,4,0,1,secondary,dry-aged-new-york-strip-bone-in
+dry aged beef near me,Transactional,70,7,0.42,-2,secondary,dry-aged-new-york-strip-bone-in
+dry age beef,"Informational, Commercial",210,23,0.54,-17,secondary,dry-aged-new-york-strip-bone-in
+halal meat supplier,Commercial,260,19,1.23,-1,PRIMARY,/wholesale/
+chicken wholesale,Commercial,320,13,1.23,19,secondary,/wholesale/
+wholesale lamb,Commercial,170,7,0.73,10,secondary,/wholesale/
+lamb wholesale,Commercial,140,6,0.73,8,secondary,/wholesale/
+wholesale beef mince,Commercial,90,5,0.65,4,secondary,/wholesale/
+angus beef wholesale,Commercial,50,4,0,-1,secondary,/wholesale/
+halal wholesale,Commercial,110,10,0.43,-4,secondary,/wholesale/
+halal meat wholesale,Commercial,90,9,0.43,-5,secondary,/wholesale/
+beef wholesale,Commercial,140,13,0.34,-7,secondary,/wholesale/
+chicken wholesale near me,Transactional,210,24,0.82,-14,supporting,/wholesale/
+wagyu beef wholesale,Commercial,140,17,0.59,-14,supporting,/wholesale/
+meat wholesaler for sale,Transactional,50,11,0,-14,supporting,/wholesale/
+halal suppliers,Commercial,210,25,1.23,-19,supporting,/wholesale/
+halal meat suppliers,Commercial,50,18,1.23,-26,supporting,/wholesale/
+beef wholesalers,Commercial,50,20,0.5,-32,supporting,/wholesale/
+halal supplier,Commercial,50,21,1.23,-32,supporting,/wholesale/
+wholesale beef near me,Transactional,90,25,0.47,-35,supporting,/wholesale/
+chicken thigh fillet,Informational,1000,10,0.27,61,PRIMARY,chicken-thigh-fillets
+thigh fillet,Informational,720,15,0.16,28,secondary,chicken-thigh-fillets
+chicken thigh price,Transactional,210,12,0.15,8,secondary,chicken-thigh-fillets
+beef bones,"Informational, Commercial",880,9,0.64,98,PRIMARY,beef-soup-bones
+bone broth best bones,Commercial,590,14,1.05,52,secondary,beef-soup-bones
+beef bone,"Informational, Commercial",390,8,0.85,37,secondary,beef-soup-bones
+buy beef bones online,Transactional,70,5,0,1,secondary,beef-soup-bones
+beef new york steak,"Informational, Transactional",1900,11,0.94,266,PRIMARY,beef-new-york-strip-bone-in
+topside beef,Informational,1300,12,0.54,82,PRIMARY,beef-topside-whole
+topside beef steak,Informational,590,6,0.45,37,secondary,beef-topside-whole
+rolled roast beef,Informational,720,8,1.32,46,PRIMARY,roast-beef-joint
+buy roast beef online,Transactional,170,6,0,14,secondary,roast-beef-joint
+buy beef roasts online,Transactional,140,4,0,13,secondary,roast-beef-joint
+roast beef order online,"Informational, Commercial",70,1,0,7,secondary,roast-beef-joint
+order roast beef online,"Informational, Commercial",90,6,0,0,secondary,roast-beef-joint
+roast beef online,Commercial,70,5,0,-1,secondary,roast-beef-joint
+buy roast beef,Transactional,110,11,0.85,-3,secondary,roast-beef-joint
+roast beef buy,Transactional,70,10,0.85,-7,secondary,roast-beef-joint
+roast beef near me,Transactional,140,17,0,-13,secondary,roast-beef-joint
+the beef joint butchery,Navigational,90,15,0,-21,supporting,roast-beef-joint
+beef roast near me,Transactional,140,22,0,-23,supporting,roast-beef-joint
+lamb neck,Informational,1000,9,0.84,65,PRIMARY,lamb-neck
+lamb neck chops,Informational,590,11,0.39,26,secondary,lamb-neck
+chicken necks,Commercial,880,8,1.52,103,PRIMARY,chicken-necks
+chicken neck,Informational,590,11,1.52,30,secondary,chicken-necks
+marrow bones,"Informational, Commercial",720,10,1.03,77,PRIMARY,beef-marrow-bones
+beef marrow bones,"Informational, Commercial",480,8,0.73,49,secondary,beef-marrow-bones
+bone marrow beef,"Informational, Commercial",170,6,0.8,13,secondary,beef-marrow-bones
+beef bone marrow bones,"Informational, Commercial",70,2,0.8,8,secondary,beef-marrow-bones
+chicken frames,"Informational, Commercial",720,10,2.85,82,PRIMARY,chicken-frames
+chicken frame,Informational,590,6,1.83,41,secondary,chicken-frames
+chicken frames near me,Transactional,70,9,0,-7,secondary,chicken-frames
+chicken frames for sale,Transactional,20,6,0,-9,secondary,chicken-frames
+kangaroo meat near me,Transactional,320,13,0.93,25,PRIMARY,/shop/kangaroo/
+kangaroo meat butcher,Commercial,210,9,0.68,11,secondary,/shop/kangaroo/
+diced kangaroo,Commercial,140,7,0,4,secondary,/shop/kangaroo/
+kangaroo meat for sale,Transactional,110,9,0.55,0,secondary,/shop/kangaroo/
+kangaroo meat sydney,Commercial,260,19,0.76,-2,secondary,/shop/kangaroo/
+buy halal kangaroo meat,Transactional,20,8,0,-13,secondary,/shop/kangaroo/
+buy kangaroo meat,Transactional,110,17,0.77,-15,secondary,/shop/kangaroo/
+kangroo meat,Commercial,210,25,0.67,-21,secondary,/shop/kangaroo/
+meat boxes,Commercial,720,21,1.42,56,PRIMARY,/shop/wholesale-cartons/
+bulk chicken breast,Commercial,390,7,0.7,39,secondary,/shop/wholesale-cartons/
+bulk beef mince,Commercial,110,3,0.39,9,secondary,/shop/wholesale-cartons/
+bulk halal meat,Commercial,70,18,0.52,-25,secondary,/shop/wholesale-cartons/
+forequarter chops,Informational,880,11,0.59,50,PRIMARY,lamb-forequarter-chops
+lamb chops near me,Transactional,320,9,0,30,secondary,lamb-forequarter-chops
+camel meat,Informational,720,10,0.63,39,PRIMARY,/shop/camel/
+camel meat australia,"Informational, Commercial",50,8,0,-9,secondary,/shop/camel/
+camel meat halal,Commercial,40,7,0,-9,secondary,/shop/camel/
+camel meat near me,Transactional,40,8,0,-10,secondary,/shop/camel/
+buy camel meat near me,Transactional,20,7,0,-11,secondary,/shop/camel/
+camel meat halal near me,Transactional,20,7,0,-11,secondary,/shop/camel/
+camel meat sydney,Commercial,30,8,0,-12,secondary,/shop/camel/
+camel meat australia price,Transactional,20,8,0,-13,secondary,/shop/camel/
+camel meat butcher,"Navigational, Transactional",20,8,0,-13,secondary,/shop/camel/
+camel meat cost,"Informational, Commercial",20,8,0,-13,supporting,/shop/camel/
+camel meat for sale near me,Transactional,20,8,0,-13,supporting,/shop/camel/
+camel meat near,Commercial,20,8,0,-13,supporting,/shop/camel/
+buy camel meat australia,Transactional,20,9,0,-15,supporting,/shop/camel/
+camel meat for sale,Transactional,20,9,0,-15,supporting,/shop/camel/
+australia camel meat,Commercial,30,10,0,-16,supporting,/shop/camel/
+buy camel meat,Transactional,20,10,0,-17,supporting,/shop/camel/
+tenderloin chicken,Informational,720,9,1.56,44,PRIMARY,chicken-tenderloins
+frozen chicken tenderloins,Commercial,390,9,0.38,34,secondary,chicken-tenderloins
+beef rib eye rib roast,Informational,1000,14,0.69,54,PRIMARY,angus-standing-rib-roast-mb3-4
+rump eye steak,Informational,590,9,0,29,PRIMARY,beef-rump-steaks
+rump beef,"Informational, Transactional",390,17,0.31,25,secondary,beef-rump-steaks
+buffalo meat,"Informational, Commercial",590,8,0.97,64,PRIMARY,/shop/water-buffalo/
+buffalo meat near me,Transactional,170,7,0.47,13,secondary,/shop/water-buffalo/
+buffalo meat australia,Commercial,140,5,0.66,10,secondary,/shop/water-buffalo/
+buffalo meat for sale near me,Transactional,20,5,0,-7,secondary,/shop/water-buffalo/
+buffalo meat for sale,Transactional,20,6,0,-9,secondary,/shop/water-buffalo/
+steak buffalo,Transactional,20,10,0,-17,secondary,/shop/water-buffalo/
+steak in buffalo,Transactional,20,18,0,-33,secondary,/shop/water-buffalo/
+diced beef,Informational,880,12,0.49,48,PRIMARY,diced-beef
+buy diced beef online,Transactional,70,3,0,5,secondary,diced-beef
+wagyu beef ribeye steak,"Informational, Commercial",390,16,0.7,21,PRIMARY,wagyu-scotch-fillet-steaks-mb5
+wagyu ribeye,"Informational, Commercial",390,20,0.7,13,secondary,wagyu-scotch-fillet-steaks-mb5
+wagyu beef ribeye,"Informational, Commercial",110,16,0,-18,secondary,wagyu-scotch-fillet-steaks-mb5
+whole duck,Commercial,590,11,1.12,58,PRIMARY,whole-duck-size-20-23
+duck whole,"Informational, Commercial",260,12,1.12,13,secondary,whole-duck-size-20-23
+maryland fillet,Informational,720,9,0,40,PRIMARY,chicken-maryland
+buy chicken maryland online,Transactional,70,3,0,5,secondary,chicken-maryland
+beef cheeks near me,Transactional,210,12,0.63,9,PRIMARY,beef-cheeks
+beef cheeks price,Transactional,110,6,0.64,6,secondary,beef-cheeks
+buy beef cheeks,Transactional,170,12,0.63,3,secondary,beef-cheeks
+beef cheek meat price,Transactional,70,6,0.64,0,secondary,beef-cheeks
+beef cheeks buy,Transactional,70,8,0.68,-3,secondary,beef-cheeks
+beef cheeks butcher,Commercial,110,10,0,-6,secondary,beef-cheeks
+beef cheek meat for sale,Transactional,20,7,0,-11,secondary,beef-cheeks
+diced lamb,"Informational, Commercial",590,11,1.41,59,PRIMARY,diced-lamb-boneless
+diced lamb shoulder,Commercial,90,7,0.28,-1,secondary,diced-lamb-boneless
+buy diced lamb online,Transactional,70,6,0,-1,secondary,diced-lamb-boneless
+kebab skewers,Commercial,720,22,0.6,51,PRIMARY,beef-cocktail-kebabs
+chicken drumettes,Informational,720,10,1.82,43,PRIMARY,chicken-mini-drumettes
+beef ribs near me,Transactional,260,12,0.39,16,PRIMARY,beef-short-ribs
+beef short ribs price,Transactional,70,4,0.41,4,secondary,beef-short-ribs
+short rib of beef price,Transactional,90,6,0.41,3,secondary,beef-short-ribs
+beef short ribs cost,Commercial,90,6,0.41,1,secondary,beef-short-ribs
+beef short ribs near me,Transactional,90,9,0.51,-3,secondary,beef-short-ribs
+buy beef short ribs,Transactional,50,8,0.59,-7,secondary,beef-short-ribs
+beef short ribs butcher,Commercial,70,9,0,-9,secondary,beef-short-ribs
+cheap meat,Commercial,590,12,0.56,54,PRIMARY,/shop/
+beef brisket online butcher,Commercial,90,4,0,4,secondary,/shop/
+beef rump cap,Informational,590,13,0.84,24,PRIMARY,beef-rump-cap
+tomahawk beef,Informational,590,9,0.89,32,PRIMARY,beef-tomahawk-steaks
+confit duck leg,"Informational, Transactional",480,22,0,28,PRIMARY,duck-legs
+buy duck legs near me,Transactional,20,7,0,-11,secondary,duck-legs
+buy confit duck legs,Transactional,20,9,0,-15,secondary,duck-legs
+buy duck leg confit,Transactional,20,9,0,-15,secondary,duck-legs
+duck confit leg,"Informational, Transactional",40,25,0,-44,secondary,duck-legs
+buffalo steak near me,Transactional,170,11,0,4,PRIMARY,buffalo-rib-eye-steak
+buffalo steaks near me,Transactional,30,5,0.47,-4,secondary,buffalo-rib-eye-steak
+buffalo meat steak,Commercial,20,5,0,-7,secondary,buffalo-rib-eye-steak
+buffalo steaks online,Commercial,20,6,0,-9,secondary,buffalo-rib-eye-steak
+buffalo steaks for sale,Transactional,20,9,0,-15,secondary,buffalo-rib-eye-steak
+water buffalo steak,"Informational, Transactional",20,12,0,-21,secondary,buffalo-rib-eye-steak
+buffalo steak,Commercial,70,16,0,-23,secondary,buffalo-rib-eye-steak
+mutton meat,"Informational, Transactional",210,15,0,2,PRIMARY,whole-mutton-carcass
+whole mutton price,Transactional,90,7,0.5,1,secondary,whole-mutton-carcass
+duck breast near me,Transactional,260,10,0,19,PRIMARY,duck-breast-fillets
+wagyu eye fillet,"Informational, Commercial",260,7,0.57,22,PRIMARY,wagyu-eye-fillet-steaks-mb5
+wagyu beef porterhouse,Commercial,170,8,0.59,8,PRIMARY,wagyu-porterhouse-steaks-mb5
+wagyu beef strip steak,Commercial,90,9,0,-6,secondary,wagyu-porterhouse-steaks-mb5
+buy wagyu beef brisket online,Transactional,140,7,0,7,PRIMARY,wagyu-brisket-mb9
+wagyu beef brisket,"Informational, Commercial",90,8,0.52,-3,secondary,wagyu-brisket-mb9
+whole beef rump,Commercial,210,4,0.3,20,PRIMARY,black-angus-beef-rump-whole-mb3-4
+whole beef sirloin,"Informational, Transactional",110,6,0.4,6,PRIMARY,beef-porterhouse-portion
+whole beef loin,"Informational, Transactional",90,12,0,-10,secondary,beef-porterhouse-portion
+goat leg,"Informational, Transactional",170,9,0,8,PRIMARY,goat-leg-bone-in
+black angus beef ribeye,"Informational, Commercial",50,5,0,-3,PRIMARY,angus-beef-scotch-fillet-steaks-mb3-4
+angus beef ribeye steak,"Informational, Commercial",110,15,0,-16,secondary,angus-beef-scotch-fillet-steaks-mb3-4
+wagyu beef sausages,"Informational, Transactional",110,6,0,5,PRIMARY,wagyu-texan-chilli-sausages
+whole beef fillet,"Informational, Commercial",90,15,0,-18,PRIMARY,beef-eye-fillet-whole
+whole beef,"Informational, Commercial",70,0,0.19,10,PRIMARY,whole-beef
+asado cut ribs,"Informational, Transactional",20,6,0,-9,PRIMARY,beef-asado-ribs
+asado cut short rib,"Informational, Transactional",20,7,0,-11,secondary,beef-asado-ribs
+ribs asado,"Informational, Transactional",20,7,0,-11,secondary,beef-asado-ribs
+diced goat,Commercial,20,4,0,-5,PRIMARY,diced-goat-bone-in
+diced goat meat,Commercial,20,6,0,-9,secondary,diced-goat-bone-in
+diced goat meat near me,Transactional,20,7,0,-11,secondary,diced-goat-bone-in
+camel steak australia,"Informational, Transactional",20,6,0,-9,PRIMARY,camel-porterhouse-steaks
+camel steak near me,Transactional,20,6,0,-9,secondary,camel-porterhouse-steaks
+buy duck liver,Transactional,20,6,0,-9,PRIMARY,duck-livers
+buy duck liver near me,Transactional,20,7,0,-11,secondary,duck-livers
+goat shanks near me,Transactional,20,6,0,-9,PRIMARY,goat-foreshanks
+goat shank near me,Transactional,20,8,0,-13,secondary,goat-foreshanks
+meat goat for sale,Transactional,30,6,0,-7,PRIMARY,whole-goat-carcass
+buffalo ribs,"Informational, Transactional",20,14,0,-25,PRIMARY,buffalo-asado-ribs
+buffalo tomahawk steak,Commercial,20,6,0,-9,PRIMARY,buffalo-tomahawk
+camel tomahawk steak,"Informational, Transactional",20,7,0,-11,PRIMARY,camel-tomahawk
+minced duck meat,Commercial,20,9,0,-15,PRIMARY,duck-mince
+goat shoulder near me,Transactional,20,8,0,-13,PRIMARY,goat-shoulder-square-cut
+halal lamb sausages,Transactional,20,4,0,-5,PRIMARY,lamb-and-rosemary-sausages
+blue beef steak,Informational,2400,12,0,168,blog,/shop/beef/
+best beef stew dumplings near me,Transactional,1300,24,0,147,blog,/shop/beef/
+medium rare beef steak temperature,Informational,1600,9,0,110,blog,/shop/beef/
+beef salad,Informational,1000,14,0.15,52,blog,/shop/beef/
+beef rump recipes,Informational,880,12,0.13,47,blog,/shop/beef/
+what is a wagyu,Informational,720,11,0.03,36,blog,/shop/beef/
+best cuts of beef,Commercial,590,24,0.33,30,blog,/shop/beef/
+what is the best type of steak,Commercial,320,8,0.09,26,blog,/shop/beef/
+best steak meat part,"Informational, Commercial",390,13,0.11,25,blog,/shop/beef/
+what is the best beef steak,"Informational, Commercial",480,20,0.09,23,blog,/shop/beef/
+what is the best cut of steak,Commercial,390,15,0.09,21,blog,/shop/beef/
+cooked beef in the fridge how long,Informational,590,14,0,19,blog,/shop/beef/
+beef and mushroom casserole,Informational,590,15,0.17,18,blog,/shop/beef/
+what is the best piece of steak,"Informational, Commercial",260,8,0.09,18,blog,/shop/beef/
+best beef for slow cooking,Commercial,390,17,0.08,17,blog,/shop/beef/
+best steak for bbq,Commercial,320,13,0.11,16,blog,/shop/beef/
+best beef cut to slow cook,"Informational, Commercial",320,15,0.07,12,blog,/shop/beef/
+best meat for bbq,Commercial,210,8,0.21,12,blog,/shop/beef/
+angus beef vs wagyu beef,Commercial,140,5,0,8,blog,/shop/beef/
+best beef cuts for steak,"Informational, Commercial",320,17,0.11,8,blog,/shop/beef/
+what part of beef is best for steak,"Informational, Commercial",390,22,0.09,7,blog,/shop/beef/
+what is the best cut of beef for steak,"Informational, Commercial",260,14,0.09,6,blog,/shop/beef/
+angus vs wagyu beef,Commercial,140,6,0,6,blog,/shop/beef/
+best beef cuts,Commercial,260,14,0.11,6,blog,/shop/beef/
+best beef cut steak,Commercial,210,11,0.11,6,blog,/shop/beef/
+best cut for slow cooked beef,Commercial,260,16,0.07,2,blog,/shop/beef/
+wagyu beef vs angus,"Informational, Commercial",140,8,0,2,blog,/shop/beef/
+best beef cut for roasting,Commercial,390,25,0,1,blog,/shop/beef/
+what is the best cut of meat for steak,"Informational, Commercial",210,14,0.09,0,blog,/shop/beef/
+buy slow cook bbq beef online,Transactional,70,6,0,-1,blog,/shop/beef/
+best beef for steak,Commercial,260,19,0.95,-1,blog,/shop/beef/
+best cut of beef for slow cooker,"Informational, Commercial",260,18,0.07,-2,blog,/shop/beef/
+what is the best steak,Commercial,170,12,0,-2,blog,/shop/beef/
+best cuts beef,Commercial,70,6,0.33,-2,blog,/shop/beef/
+best meat for barbecue,"Informational, Commercial",210,16,0.44,-3,blog,/shop/beef/
+best beef to slow cook,"Informational, Commercial",260,19,0.08,-4,blog,/shop/beef/
+beef soup stock powder,Commercial,140,12,0.41,-5,blog,/shop/beef/
+buy braised beef and mash online,Transactional,70,8,0,-5,blog,/shop/beef/
+cuts of beef to grill,Commercial,50,6,0,-5,blog,/shop/beef/
+what cut of steak is the best,"Informational, Commercial",260,20,0.09,-6,blog,/shop/beef/
+thai beef salad near me,Transactional,210,19,0,-6,blog,/shop/beef/
+what is the best cut of steak in australia,Commercial,90,9,0,-6,blog,/shop/beef/
+angus beef vs wagyu,"Informational, Commercial",50,7,0,-7,blog,/shop/beef/
+best cut of beef for steak,"Informational, Commercial",260,21,0.33,-7,blog,/shop/beef/
+what is the nicest steak,Commercial,110,11,0,-8,blog,/shop/beef/
+which part of steak is the best,Commercial,90,10,0,-8,blog,/shop/beef/
+best beef cut for slow cooking,Commercial,90,10,0.07,-8,blog,/shop/beef/
+best steak for barbecue,Commercial,210,18,0.11,-8,blog,/shop/beef/
+best type of steak,Commercial,110,11,0,-8,blog,/shop/beef/
+best of beef,Commercial,70,9,0,-9,blog,/shop/beef/
+best steak for bbq australia,Commercial,50,8,0,-9,blog,/shop/beef/
+what is the best beef cut for roasting,Commercial,140,14,0,-10,blog,/shop/beef/
+best beef,Commercial,70,11,0.82,-10,blog,/shop/beef/
+how to buy wagyu beef,Commercial,50,9,0,-11,blog,/shop/beef/
+best steak cuts australia,Commercial,70,10,0,-11,blog,/shop/beef/
+best steak to bbq,Commercial,50,9,0,-11,blog,/shop/beef/
+what cut is the best steak,Commercial,210,20,0.09,-12,blog,/shop/beef/
+what are the best cuts for steak,"Informational, Commercial",210,21,0.09,-14,blog,/shop/beef/
+what steak cut is best,Commercial,210,21,0.09,-14,blog,/shop/beef/
+best cut of beef for roasting,Commercial,260,24,0,-14,blog,/shop/beef/
+beef cuts for slow cooking,"Informational, Commercial",170,19,0.36,-15,blog,/shop/beef/
+what is the best steak cut,Commercial,90,14,0,-16,blog,/shop/beef/
+best beef cuts for slow cooking,Commercial,90,14,0.1,-16,blog,/shop/beef/
+easter beef recipes,"Informational, Commercial",70,13,0,-17,blog,/shop/beef/
+what steak cut is the best,"Informational, Commercial",210,23,0.09,-18,blog,/shop/beef/
+what cut of beef is best for roast,"Informational, Commercial",140,18,0,-18,blog,/shop/beef/
+which part of beef is best for steak,"Informational, Commercial",90,15,0,-18,blog,/shop/beef/
+best for steak,Commercial,210,24,0.95,-18,blog,/shop/beef/
+best cut of beef for slow cooking,"Informational, Commercial",140,19,0.1,-19,blog,/shop/beef/
+what are the best cuts of steak,"Informational, Commercial",90,16,0.43,-19,blog,/shop/beef/
+beef vs veal,"Informational, Commercial",50,13,0,-19,blog,/shop/beef/
+best beef cut for steak,"Informational, Commercial",110,17,0.33,-19,blog,/shop/beef/
+best beef for bbq,Commercial,50,13,0,-19,blog,/shop/beef/
+what is the best beef cut for steak,"Informational, Commercial",210,24,0.09,-20,blog,/shop/beef/
+best cuts of beef for slow cooking,Commercial,70,15,0.07,-21,blog,/shop/beef/
+beef casserole jamie oliver,"Informational, Transactional",170,24,0,-22,blog,/shop/beef/
+what's the best cut of beef,"Informational, Commercial",90,17,0,-22,blog,/shop/beef/
+which cuts of steak are the best,"Informational, Commercial",90,17,0,-22,blog,/shop/beef/
+best cut of beef for a roast,"Informational, Commercial",110,18,0,-22,blog,/shop/beef/
+best beef in australia,"Informational, Commercial",70,17,0.87,-22,blog,/shop/beef/
+australian beef recipes,"Informational, Navigational",90,16,0,-23,blog,/shop/beef/
+best beef cut for slow cooker,Commercial,70,16,0.07,-23,blog,/shop/beef/
+which is best cut of steak,Commercial,90,18,0,-24,blog,/shop/beef/
+what's best cut of steak,Commercial,70,17,0,-25,blog,/shop/beef/
+which are the best cuts of steak,Commercial,90,19,0,-26,blog,/shop/beef/
+beef stew jamie oliver,"Informational, Transactional",110,22,0,-27,blog,/shop/beef/
+what is best cut of beef,"Informational, Commercial",50,17,0.09,-27,blog,/shop/beef/
+best part beef steak,Commercial,50,17,0,-27,blog,/shop/beef/
+what is best steak,"Informational, Commercial",140,23,0,-28,blog,/shop/beef/
+which steak cut is the best,Commercial,110,21,0,-28,blog,/shop/beef/
+what is the best piece of beef for roasting,"Informational, Commercial",110,21,0,-28,blog,/shop/beef/
+which beef steak is the best,Commercial,90,20,0,-28,blog,/shop/beef/
+what is the best beef cut for roast,Commercial,70,19,0,-29,blog,/shop/beef/
+best beef wagyu,Commercial,70,19,0,-29,blog,/shop/beef/
+best steak australia,Commercial,90,21,0,-30,blog,/shop/beef/
+best steak meat,Commercial,90,21,0,-30,blog,/shop/beef/
+slow cooker beef ragu simple home edit,"Informational, Navigational",170,24,0,-31,blog,/shop/beef/
+what steaks are best,Commercial,140,25,0,-32,blog,/shop/beef/
+what cut of beef is best for a roast,"Informational, Commercial",110,23,0,-32,blog,/shop/beef/
+what is the best beef cut for a roast,Commercial,110,23,0,-32,blog,/shop/beef/
+what is the best cut of beef for roast,"Informational, Commercial",110,23,0,-32,blog,/shop/beef/
+which part of beef is best,Commercial,90,22,0,-32,blog,/shop/beef/
+which cut of beef is the best,Commercial,70,21,0,-33,blog,/shop/beef/
+best cut of beef to slow cook,Commercial,70,21,0.07,-33,blog,/shop/beef/
+what beef is best for roast,Commercial,70,21,0,-33,blog,/shop/beef/
+what is the best beef for roast,"Informational, Commercial",70,21,0,-33,blog,/shop/beef/
+what's the best steak,Commercial,70,22,0,-35,blog,/shop/beef/
+what are the best steak cuts,"Informational, Commercial",50,21,0.09,-35,blog,/shop/beef/
+best wagyu beef,Commercial,70,22,0,-35,blog,/shop/beef/
+best cut of beef to roast,Commercial,50,21,0,-35,blog,/shop/beef/
+beef stew recipe jamie oliver,"Informational, Transactional",50,22,0,-36,blog,/shop/beef/
+best slow cook beef,"Informational, Commercial",50,22,0.08,-37,blog,/shop/beef/
+best cut of beef for roast,"Informational, Commercial",70,23,0,-37,blog,/shop/beef/
+best types of steak,"Informational, Commercial",50,22,0,-37,blog,/shop/beef/
+how to tenderize a beef steak,"Informational, Commercial",90,25,0.01,-38,blog,/shop/beef/
+which part of beef is the best for steak,"Informational, Commercial",90,25,0,-38,blog,/shop/beef/
+which steaks are the best,Commercial,90,25,0,-38,blog,/shop/beef/
+best slow cook beef recipe,"Informational, Commercial",50,24,0.04,-41,blog,/shop/beef/
+porterhouse vs scotch fillet,"Informational, Commercial",1000,8,0,114,blog,beef-scotch-fillet-steaks
+scotch fillet vs porterhouse,"Informational, Commercial",720,12,0,70,blog,beef-scotch-fillet-steaks
+sirloin vs scotch fillet,Commercial,590,9,0,59,blog,beef-scotch-fillet-steaks
+how to cook scotch fillet,Informational,1000,12,0.04,56,blog,beef-scotch-fillet-steaks
+how to cook scotch fillet steak,Informational,880,8,0.05,55,blog,beef-scotch-fillet-steaks
+eye fillet vs scotch fillet,"Informational, Commercial",480,7,0,48,blog,beef-scotch-fillet-steaks
+scotch fillet vs eye fillet,"Informational, Commercial",390,10,0,31,blog,beef-scotch-fillet-steaks
+rib eye vs scotch fillet,Commercial,320,10,0,22,blog,beef-scotch-fillet-steaks
+ribeye vs eye fillet,Commercial,260,7,0,20,blog,beef-scotch-fillet-steaks
+beef scotch fillet steak recipes,Informational,590,14,0.03,19,blog,beef-scotch-fillet-steaks
+sirloin vs ribeye vs filet,Commercial,260,9,0,16,blog,beef-scotch-fillet-steaks
+scotch fillet vs ribeye,Commercial,260,9,0,16,blog,beef-scotch-fillet-steaks
+ribeye vs sirloin vs filet,Commercial,260,11,0,12,blog,beef-scotch-fillet-steaks
+ribeye vs scotch fillet,Commercial,390,20,0,11,blog,beef-scotch-fillet-steaks
+scotch fillet vs sirloin,"Informational, Commercial",170,9,0,4,blog,beef-scotch-fillet-steaks
+is scotch fillet or porterhouse better,"Informational, Commercial",140,7,0,4,blog,beef-scotch-fillet-steaks
+rib eye steak versus sirloin,"Informational, Commercial",210,12,0,3,blog,beef-scotch-fillet-steaks
+rib fillet vs scotch fillet,Commercial,90,6,0,0,blog,beef-scotch-fillet-steaks
+rump steak vs scotch fillet,"Informational, Commercial",90,6,0,0,blog,beef-scotch-fillet-steaks
+is ribeye and eye fillet the same,"Informational, Commercial",70,5,0,-1,blog,beef-scotch-fillet-steaks
+rump vs scotch fillet,"Informational, Commercial",170,12,0,-2,blog,beef-scotch-fillet-steaks
+eye fillet vs rib eye,"Informational, Commercial",140,10,0,-2,blog,beef-scotch-fillet-steaks
+eye fillet vs ribeye,Commercial,110,8,0,-2,blog,beef-scotch-fillet-steaks
+striploin vs scotch fillet,Commercial,110,8,0,-2,blog,beef-scotch-fillet-steaks
+is rib eye the same as eye fillet,Commercial,70,6,0,-3,blog,beef-scotch-fillet-steaks
+is ribeye the same as eye fillet,"Informational, Commercial",70,6,0,-3,blog,beef-scotch-fillet-steaks
+scotch fillet vs rump,"Informational, Commercial",110,9,0,-4,blog,beef-scotch-fillet-steaks
+ribeye steak vs porterhouse,Commercial,210,16,0,-5,blog,beef-scotch-fillet-steaks
+is scotch fillet tender,"Informational, Commercial",50,6,0,-5,blog,beef-scotch-fillet-steaks
+porterhouse steak vs scotch fillet,"Informational, Commercial",110,11,0,-8,blog,beef-scotch-fillet-steaks
+is scotch fillet same as ribeye,"Informational, Commercial",90,10,0,-8,blog,beef-scotch-fillet-steaks
+is scotch fillet lean,"Informational, Commercial",70,9,0,-9,blog,beef-scotch-fillet-steaks
+ribeye vs sirloin,Commercial,140,15,0,-12,blog,beef-scotch-fillet-steaks
+porterhouse steak vs ribeye,Commercial,170,19,0,-16,blog,beef-scotch-fillet-steaks
+porterhouse vs ribeye,Commercial,170,19,0,-16,blog,beef-scotch-fillet-steaks
+ribeye vs porterhouse,Commercial,170,19,0,-16,blog,beef-scotch-fillet-steaks
+slow cooked beef cheeks,"Informational, Transactional",1900,13,0.03,259,blog,beef-cheeks
+slow cooker beef cheeks,Informational,880,8,0.03,54,blog,beef-cheeks
+beef cheeks crock pot,Informational,880,14,0.03,42,blog,beef-cheeks
+beef cheeks in the slow cooker,Informational,720,8,0.03,42,blog,beef-cheeks
+beef cheeks recipe slow cooker,Informational,720,8,0.03,42,blog,beef-cheeks
+braised cheek beef,"Informational, Transactional",390,14,0,31,blog,beef-cheeks
+beef cheek substitute,"Informational, Commercial",140,18,0,-18,blog,beef-cheeks
+best beef cheek recipe,"Informational, Commercial",140,24,0.02,-30,blog,beef-cheeks
+lamb casserole dishes,Informational,1300,12,0.02,80,blog,/shop/lamb/
+lamb casserole recipe,Informational,1300,13,0.02,78,blog,/shop/lamb/
+lamb casserole recipes,Informational,880,12,0.02,46,blog,/shop/lamb/
+slow cooker lamb recipe,"Informational, Commercial",480,25,0.02,12,blog,/shop/lamb/
+beef vs lamb,Commercial,140,10,0,-2,blog,/shop/lamb/
+lamb vs beef,"Informational, Commercial",140,10,0,-2,blog,/shop/lamb/
+beef versus lamb,Commercial,140,13,0,-8,blog,/shop/lamb/
+lamb meat vs beef,"Informational, Commercial",110,11,0,-8,blog,/shop/lamb/
+is lamb healthier than beef,Commercial,50,8,0,-9,blog,/shop/lamb/
+slow roast lamb slow cooker,Informational,2900,12,0.03,208,blog,lamb-leg-bone-in
+slow cooker lamb roast,Informational,1300,14,0.03,76,blog,lamb-leg-bone-in
+what is the sirloin steak,Informational,590,13,0,21,blog,beef-porterhouse-steaks
+sirloin vs porterhouse,Commercial,320,11,0,20,blog,beef-porterhouse-steaks
+beef striploin vs sirloin,"Informational, Commercial",260,7,0,20,blog,beef-porterhouse-steaks
+rump versus sirloin,Commercial,260,9,0,16,blog,beef-porterhouse-steaks
+porterhouse vs sirloin,"Informational, Commercial",210,7,0,13,blog,beef-porterhouse-steaks
+rump vs porterhouse,"Informational, Commercial",210,8,0,11,blog,beef-porterhouse-steaks
+rump vs sirloin,Commercial,260,12,0,10,blog,beef-porterhouse-steaks
+sirloin vs rump,"Informational, Commercial",260,12,0,10,blog,beef-porterhouse-steaks
+is porterhouse the best steak,Commercial,320,17,0,8,blog,beef-porterhouse-steaks
+porterhouse vs rump,Commercial,170,8,0,6,blog,beef-porterhouse-steaks
+best way to cook porterhouse steak,"Informational, Commercial",390,25,0.04,1,blog,beef-porterhouse-steaks
+scotch vs porterhouse,"Informational, Commercial",110,8,0,-2,blog,beef-porterhouse-steaks
+is rump or porterhouse better,"Informational, Commercial",70,6,0,-3,blog,beef-porterhouse-steaks
+rump steak vs porterhouse,Commercial,90,8,0,-4,blog,beef-porterhouse-steaks
+rump vs sirloin steak,Commercial,210,16,0,-5,blog,beef-porterhouse-steaks
+t bone vs sirloin,Commercial,170,17,0,-12,blog,beef-porterhouse-steaks
+rump steak vs sirloin,"Informational, Commercial",70,14,0,-19,blog,beef-porterhouse-steaks
+porterhouse vs rump steak,Commercial,50,14,0,-21,blog,beef-porterhouse-steaks
+sirloin vs porterhouse australia,Commercial,50,14,0,-21,blog,beef-porterhouse-steaks
+sirloin vs rump steak,"Informational, Commercial",50,14,0,-21,blog,beef-porterhouse-steaks
+sirloin vs t bone,Commercial,70,17,0,-25,blog,beef-porterhouse-steaks
+chicken maryland recipes,Informational,2400,11,0.03,170,blog,chicken-maryland
+chicken maryland recipe,Informational,1300,10,0.03,84,blog,chicken-maryland
+best chicken maryland recipes,"Informational, Commercial",110,18,0.03,-22,blog,chicken-maryland
+lamb forequarter chops recipe,Informational,1300,11,0.14,82,blog,lamb-forequarter-chops
+slow cooker recipes lamb chops,Informational,880,13,0.02,44,blog,lamb-forequarter-chops
+air fryer lamb chops,Informational,880,14,0.02,42,blog,lamb-forequarter-chops
+lamb chop casserole,Informational,590,7,0,33,blog,lamb-forequarter-chops
+dish with mince,Informational,1900,12,0.04,128,blog,premium-beef-mince
+beef mince ideas,Informational,720,14,0.03,30,blog,premium-beef-mince
+30 minute beef mince recipes,Informational,590,14,0.05,19,blog,premium-beef-mince
+best way to defrost minced beef,"Informational, Commercial",90,18,0,-24,blog,premium-beef-mince
+ground beef vs mince,"Informational, Commercial",70,22,0,-35,blog,premium-beef-mince
+recipe for beef blade roast,Informational,880,10,0,50,blog,beef-bolar-blade-roast
+blade roast recipe,Informational,880,15,0,40,blog,beef-bolar-blade-roast
+beef bolar blade roast recipe,Informational,590,8,0,31,blog,beef-bolar-blade-roast
+beef blade roast slow cooker,Informational,590,11,0.08,25,blog,beef-bolar-blade-roast
+best cut for roast beef,Commercial,480,21,0,20,blog,roast-beef-joint
+best cut of beef for roast beef,Commercial,390,24,0,3,blog,roast-beef-joint
+best beef for roast beef,Commercial,320,21,0.15,0,blog,roast-beef-joint
+best cut for roast beef australia,"Informational, Commercial",70,11,0,-13,blog,roast-beef-joint
+what cut of beef roast is best,"Informational, Commercial",110,15,0,-16,blog,roast-beef-joint
+best beef cut for roast beef,"Informational, Commercial",210,24,0,-21,blog,roast-beef-joint
+best beef roast to buy,Commercial,70,15,0,-21,blog,roast-beef-joint
+what is the best type of beef roast,"Informational, Commercial",110,18,0,-22,blog,roast-beef-joint
+best roast beef cut,Commercial,170,23,0,-24,blog,roast-beef-joint
+what are the best roast beef cuts,"Informational, Commercial",140,22,0,-26,blog,roast-beef-joint
+what is the best cut for a beef roast,"Informational, Commercial",110,20,0,-26,blog,roast-beef-joint
+best roast beef to buy,Commercial,90,19,0,-26,blog,roast-beef-joint
+what is the best cut for a roast beef,"Informational, Commercial",140,23,0,-28,blog,roast-beef-joint
+what are the best beef roast cuts,"Informational, Commercial",110,21,0,-28,blog,roast-beef-joint
+best beef roast cut,Commercial,70,19,0,-29,blog,roast-beef-joint
+what beef roast is best,"Informational, Commercial",70,20,0,-31,blog,roast-beef-joint
+what is the best roast beef cut,Commercial,110,23,0,-32,blog,roast-beef-joint
+internal temperature for medium rare roast beef,"Informational, Commercial",90,24,0,-36,blog,roast-beef-joint
+cooking time beef roast,"Informational, Commercial",70,23,0.06,-37,blog,roast-beef-joint
+best beef for stir fry,Commercial,480,23,0.02,16,blog,beef-stir-fry-strips
+best cut of beef to stir fry,Commercial,210,12,0,3,blog,beef-stir-fry-strips
+best beef part for stir fry,Commercial,170,14,0,-6,blog,beef-stir-fry-strips
+best cut beef for stir fry,"Informational, Commercial",210,19,0,-11,blog,beef-stir-fry-strips
+best beef cut for stir fry,Commercial,210,20,0,-13,blog,beef-stir-fry-strips
+best cut of beef for stir fry,Commercial,210,20,0,-13,blog,beef-stir-fry-strips
+best part of beef for stir fry,Commercial,210,20,0,-13,blog,beef-stir-fry-strips
+best cut for beef stir fry,Commercial,210,22,0,-17,blog,beef-stir-fry-strips
+best cut of meat for beef stir fry,Commercial,170,20,0,-18,blog,beef-stir-fry-strips
+best beef cut stir fry,"Informational, Commercial",210,24,0,-21,blog,beef-stir-fry-strips
+best cut for stir fry beef,Commercial,210,24,0,-21,blog,beef-stir-fry-strips
+best stir fry beef cut,"Informational, Commercial",170,23,0,-24,blog,beef-stir-fry-strips
+what beef cut for stir fry,"Informational, Commercial",70,17,0,-25,blog,beef-stir-fry-strips
+what cut of beef for stir fry,"Informational, Commercial",70,25,0,-41,blog,beef-stir-fry-strips
+beef oyster blade steak recipe,Informational,1000,8,0.03,64,blog,beef-oyster-blade-steaks
+beef oyster blade recipes,Informational,720,11,0.03,36,blog,beef-oyster-blade-steaks
+eye fillet recipes,Informational,880,11,0.77,51,blog,beef-eye-fillet-steaks
+rib fillet vs eye fillet,Commercial,260,7,0,20,blog,beef-eye-fillet-steaks
+rump vs eye fillet,"Informational, Commercial",90,6,0,0,blog,beef-eye-fillet-steaks
+sirloin vs eye fillet,"Informational, Commercial",90,7,0,-2,blog,beef-eye-fillet-steaks
+scotch vs eye fillet,Commercial,90,7,0,-2,blog,beef-eye-fillet-steaks
+eye fillet vs sirloin,Commercial,50,6,0,-5,blog,beef-eye-fillet-steaks
+eye fillet vs rump,"Informational, Commercial",90,9,0,-6,blog,beef-eye-fillet-steaks
+porterhouse vs eye fillet,"Informational, Commercial",90,13,0,-14,blog,beef-eye-fillet-steaks
+eye fillet vs porterhouse,"Informational, Commercial",70,12,0,-15,blog,beef-eye-fillet-steaks
+kangaroo recipes,Informational,720,11,0,36,blog,/shop/kangaroo/
+is kangaroo halal,Informational,720,13,0,32,blog,/shop/kangaroo/
+kangaroo meat vs beef,"Informational, Commercial",90,13,0,-14,blog,/shop/kangaroo/
+is kangaroo halal islamqa,"Navigational, Transactional",20,17,0,-31,blog,/shop/kangaroo/
+kangaroo vs beef,"Informational, Commercial",90,23,0,-34,blog,/shop/kangaroo/
+best bones for bone broth,Commercial,590,20,0.53,38,blog,beef-soup-bones
+beef soup bones,Informational,720,15,1,31,blog,beef-soup-bones
+chicken vs beef bone broth,Commercial,70,15,0,-21,blog,beef-soup-bones
+best beef bone broth,Commercial,50,17,0.82,-25,blog,beef-soup-bones
+chicken bone broth vs beef bone broth,"Informational, Commercial",70,19,0,-29,blog,beef-soup-bones
+best beef bone soup recipe,"Informational, Commercial",50,21,0,-35,blog,beef-soup-bones
+slow cooked lamb shanks slow cooker,Informational,880,11,0.03,48,blog,lamb-shanks
+cooking lamb shanks in pressure cooker,Informational,590,11,0.02,25,blog,lamb-shanks
+beef meat patties recipe,Informational,1300,14,0.1,76,blog,beef-chuck-and-brisket-burgers
+best beef rissole recipe,"Informational, Commercial",70,16,0,-23,blog,beef-chuck-and-brisket-burgers
+best beef for a burger,Commercial,70,17,0,-25,blog,beef-chuck-and-brisket-burgers
+best butcher near me,Transactional,1300,18,0.64,161,blog,/
+honey soy chicken drumsticks,Informational,1000,9,0.07,62,blog,chicken-drumsticks
+what is gravy beef,Informational,720,10,0,38,blog,gravy-beef
+what is flank steak in australia,Informational,590,10,0,27,blog,beef-flank-steak
+diced lamb dishes,Informational,590,14,0.03,19,blog,diced-lamb-boneless
+kangaroo steak recipe,Informational,590,10,0,27,blog,kangaroo-rump-steaks
+gravy beef vs chuck,"Informational, Commercial",260,15,0,4,blog,beef-chuck-steak
+gravy beef vs chuck steak,"Informational, Commercial",90,16,0,-20,blog,beef-chuck-steak
+chuck steak vs gravy beef,"Informational, Commercial",70,16,0,-23,blog,beef-chuck-steak
+chicken vs beef protein,Commercial,50,10,0,-13,blog,/shop/chicken/
+beef vs chicken bone broth,"Informational, Commercial",90,19,0,-26,blog,/shop/chicken/
+beef vs chicken protein,Commercial,110,24,0,-34,blog,/shop/chicken/
+luv a duck recipes,"Informational, Navigational",170,8,0,1,blog,/shop/duck/
+how much is a duck,Commercial,70,11,0,-13,blog,/shop/duck/
+buy slow cook beef brisket online,Transactional,50,6,0,-4,blog,beef-brisket-whole
+best temperature to smoke beef brisket,"Informational, Commercial",90,16,0,-20,blog,beef-brisket-whole
+best way to reheat beef brisket,"Informational, Commercial",50,22,0,-37,blog,beef-brisket-whole
+chicken liver versus beef liver,Commercial,70,20,0,-31,blog,chicken-livers
+chicken liver vs beef liver,Commercial,70,25,0,-41,blog,chicken-livers
+buy casserole beef online,Transactional,70,6,0,-1,blog,diced-beef
+cuts of beef for stew meat,"Informational, Commercial",50,20,0,-33,blog,diced-beef
+porterhouse vs t-bone vs ribeye,Commercial,110,20,0,-26,blog,beef-t-bone-steaks
+porterhouse steak vs new york strip,"Informational, Commercial",90,19,0,-26,blog,beef-new-york-strip-bone-in
+cattleman cutlet vs tomahawk,Commercial,70,11,0,-13,blog,beef-tomahawk-steaks
+best of the bone beef liver,Commercial,70,5,0.68,1,blog,beef-liver
+beef spare ribs vs short ribs,"Informational, Commercial",50,13,0,-19,blog,beef-short-ribs
+which is better goat leg or shoulder,"Informational, Commercial",20,12,0,-21,blog,goat-leg-bone-in
+goat leg vs shoulder,Commercial,20,13,0,-23,blog,goat-leg-bone-in
+best way to cook duck legs,"Informational, Commercial",20,21,0,-39,blog,duck-legs
+are lamb sausages healthy,"Informational, Commercial",20,9,0,-15,blog,lamb-and-rosemary-sausages
+free range chicken,"Informational, Commercial",1600,12,0.69,186,PENDING-CLAIM,/shop/chicken/
+organic beef,Commercial,480,21,0.83,23,PENDING-CLAIM,/shop/beef/
+grass fed lamb,Commercial,390,10,0.87,33,PENDING-CLAIM,/shop/lamb/
+organic lamb,Transactional,320,9,0.81,32,PENDING-CLAIM,/shop/lamb/
+organic beef liver,Commercial,260,17,1.4,4,PENDING-CLAIM,beef-liver
+grass fed beef mince,Commercial,260,6,0.75,24,PENDING-CLAIM,premium-beef-mince
+organic grass fed beef,"Informational, Transactional",260,15,1.04,12,PENDING-CLAIM,/shop/beef/
+organic chicken liver,Commercial,260,7,0.65,22,PENDING-CLAIM,chicken-livers
+grass fed beef steak,Commercial,210,10,1.48,12,PENDING-CLAIM,/shop/beef/
+grass fed beef near me,Transactional,210,19,0.62,-5,PENDING-CLAIM,/shop/beef/
+organic beef mince,Commercial,210,6,0.73,17,PENDING-CLAIM,premium-beef-mince
+grass fed lamb meat,Commercial,210,9,0.87,12,PENDING-CLAIM,/shop/lamb/
+organic beef steak,Commercial,170,17,0.8,-9,PENDING-CLAIM,/shop/beef/
+grass fed beef meat,Commercial,170,19,0.96,-13,PENDING-CLAIM,/shop/beef/
+grass fed beef melbourne,Commercial,170,13,0.74,-2,PENDING-CLAIM,/shop/beef/
+organic beef stock,Commercial,170,7,0,8,PENDING-CLAIM,/shop/beef/
+grass fed beef perth,Commercial,140,17,0.68,-14,PENDING-CLAIM,/shop/beef/
+grass fed beef perth wa,Commercial,140,11,0.68,-2,PENDING-CLAIM,/shop/beef/
+grass fed beef sausages,Commercial,140,6,0,6,PENDING-CLAIM,beef-herb-and-garlic-sausages
+grass fed ground beef,"Informational, Commercial",140,5,0.48,10,PENDING-CLAIM,premium-beef-mince
+grass fed veal,"Informational, Commercial",140,10,0,-2,PENDING-CLAIM,/shop/beef/
+free range lamb,"Informational, Commercial",140,5,0,8,PENDING-CLAIM,/shop/lamb/
+100 grass fed beef,Commercial,110,10,0.72,-4,PENDING-CLAIM,/shop/beef/
+dandaragan organic beef,Navigational,110,17,0.74,-21,PENDING-CLAIM,/shop/beef/
+grass fed beef bones,Commercial,110,2,0.82,13,PENDING-CLAIM,beef-soup-bones
+grass fed beef brisket,Commercial,110,6,0.92,5,PENDING-CLAIM,beef-brisket-whole
+grass fed beef broth,Commercial,110,5,0.87,7,PENDING-CLAIM,/shop/beef/
+grass fed beef patties,"Informational, Commercial",110,6,0,2,PENDING-CLAIM,beef-chuck-and-brisket-burgers
+organic beef online,Commercial,110,20,1.07,-22,PENDING-CLAIM,/shop/beef/
+grass-fed beef steaks,Transactional,90,17,1.48,-16,PENDING-CLAIM,/shop/beef/
+australian grass fed beef,"Informational, Commercial",90,11,1.01,-7,PENDING-CLAIM,/shop/beef/
+beef bone broth organic,Commercial,90,5,1.05,5,PENDING-CLAIM,beef-soup-bones
+buy grass fed beef online,Transactional,90,22,1.05,-27,PENDING-CLAIM,/shop/beef/
+buy organic beef online,Transactional,90,17,1.36,-16,PENDING-CLAIM,/shop/beef/
+grass fed beef australia,"Informational, Commercial",90,5,1.01,5,PENDING-CLAIM,/shop/beef/
+grass fed beef ribeye,Commercial,90,6,0.96,3,PENDING-CLAIM,beef-scotch-fillet-steaks
+grass-fed beef brisket,Commercial,90,0,0.68,14,PENDING-CLAIM,beef-brisket-whole
+melbourne grass fed beef,Commercial,90,25,0,-38,PENDING-CLAIM,/shop/beef/
+organic beef bone broth,Commercial,90,5,1.05,5,PENDING-CLAIM,beef-soup-bones
+organic beef bones,Commercial,90,6,0.74,2,PENDING-CLAIM,beef-soup-bones
+organic minced beef,Commercial,90,6,0.75,2,PENDING-CLAIM,premium-beef-mince
+premium grass fed beef,Commercial,90,7,2.28,5,PENDING-CLAIM,/shop/beef/
+organic chicken feet,Commercial,90,5,0.88,4,PENDING-CLAIM,chicken-feet
+bulk grass fed beef,Commercial,70,6,0.7,-1,PENDING-CLAIM,/shop/beef/
+buy organic beef steak online,Transactional,70,17,0,-23,PENDING-CLAIM,/shop/beef/
+grass fed beef steaks,Transactional,70,17,1.48,-19,PENDING-CLAIM,/shop/beef/
+buy organic beef mince online,Transactional,70,2,0,7,PENDING-CLAIM,premium-beef-mince
+buy organic beef stir fry online,Transactional,70,3,0,5,PENDING-CLAIM,beef-stir-fry-strips
+grass fed beef delivery,"Informational, Commercial",70,19,1.64,-24,PENDING-CLAIM,/shop/beef/
+grass fed beef protein powder,Commercial,70,8,1.87,-1,PENDING-CLAIM,/shop/beef/
+grass fed organic beef,Commercial,70,12,1.23,-11,PENDING-CLAIM,/shop/beef/
+order grass fed beef online,Commercial,70,17,1.05,-22,PENDING-CLAIM,/shop/beef/
+organic beef liver powder,Commercial,70,6,1.41,1,PENDING-CLAIM,beef-liver
+hand slaughtered chicken near me,Transactional,70,5,0,1,PENDING-CLAIM,/shop/chicken/
+beef grass fed,Transactional,50,10,1.16,-9,PENDING-CLAIM,/shop/beef/
+beef liver grass fed,"Informational, Commercial",50,0,1.34,11,PENDING-CLAIM,beef-liver
+cell squared organic beef organs,Navigational,50,5,6.27,14,PENDING-CLAIM,/shop/beef/
+grain fed beef australia,"Informational, Commercial",50,7,0,-7,PENDING-CLAIM,/shop/beef/
+grass fed australian beef,"Informational, Commercial",50,10,1.01,-10,PENDING-CLAIM,/shop/beef/
+grass fed beef adelaide,Commercial,50,3,0.67,3,PENDING-CLAIM,/shop/beef/
+grass fed or grain fed beef,Commercial,50,7,0.07,-7,PENDING-CLAIM,/shop/beef/
+organic beef broth,Commercial,50,3,0.96,3,PENDING-CLAIM,/shop/beef/
+organic beef sausages,"Informational, Commercial",50,3,1.11,4,PENDING-CLAIM,beef-herb-and-garlic-sausages
+organic lamb meat for sale,Transactional,40,6,0,-6,PENDING-CLAIM,/shop/lamb/
+pasture availability vs calving beef graph,Commercial,320,13,0,16,PENDING-CLAIM,/shop/beef/
+grass fed beef vs grain,"Informational, Commercial",260,14,0.09,6,PENDING-CLAIM,/shop/beef/
+grass fed beef vs grain fed beef,"Informational, Commercial",260,17,0.08,0,PENDING-CLAIM,/shop/beef/
+grass fed vs grain fed beef,"Informational, Commercial",260,17,0.09,0,PENDING-CLAIM,/shop/beef/
+grass vs grain fed beef,Commercial,260,12,0.09,10,PENDING-CLAIM,/shop/beef/
+grass fed beef vs grain fed,Commercial,170,22,0.08,-22,PENDING-CLAIM,/shop/beef/
+grain fed vs grass fed beef,"Informational, Commercial",50,19,0.09,-31,PENDING-CLAIM,/shop/beef/
+grain vs grass fed beef,Commercial,50,14,0.08,-21,PENDING-CLAIM,/shop/beef/

@@ -2,8 +2,9 @@
 // never templated as strings. Every URL is absolute (SITE.url + path).
 // Emails are deliberately NOT included (spam-scraper hygiene); phone is.
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '../config/site.js'
+import { productImageSeo, imageObject } from './imageSeo.js'
 
-const logo = () => `${SITE.url}/images/logo-v2.webp`
+const logo = () => `${SITE.url}/images/logo.svg`
 
 export function postalAddress() {
   const a = SITE.address
@@ -96,7 +97,7 @@ export function productSchema(p) {
     '@type': 'Product',
     name: p.name,
     description: `${p.short} ${p.desc}`,
-    image: p.images.map((img) => `${SITE.url}/images/products/${img}`),
+    image: p.images.map((img) => imageObject(`${SITE.url}/images/products/${img}`, productImageSeo(p))),
     sku: p.slug,
     category: cat?.name,
     brand: { '@type': 'Brand', name: SITE.name },
@@ -114,6 +115,14 @@ export function productSchema(p) {
         shippingRate: { '@type': 'MonetaryAmount', value: SITE.flatShip, currency: SITE.currency },
         shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
       },
+      // Mirrors the published Refund & Returns Policy: no change-of-mind returns on fresh meat
+      // (faulty/incorrect items are replaced or refunded under the ACL — see /refund/).
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'AU',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+        url: `${SITE.url}/refund/`,
+      },
     },
   }
 }
@@ -123,9 +132,9 @@ export function offerCatalogSchema() {
     '@context': 'https://schema.org',
     '@type': 'OfferCatalog',
     name: `${SITE.name} — halal meat range`,
-    url: `${SITE.url}/shop/`,
+    url: `${SITE.url}/halal-meat-shop/`,
     numberOfItems: PRODUCTS.length,
-    itemListElement: CATEGORIES.map((c) => ({ '@type': 'OfferCatalog', name: c.name, url: `${SITE.url}/shop/${c.slug}/` })),
+    itemListElement: CATEGORIES.map((c) => ({ '@type': 'OfferCatalog', name: c.name, url: `${SITE.url}${c.path}` })),
   }
 }
 

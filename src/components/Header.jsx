@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Icon from './Icon'
@@ -40,7 +39,8 @@ export default function Header({ siteName, nav, categories }) {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="logo" aria-label={`${siteName} — home`}>
-          <Image src="/images/logo-mark-v2.webp" alt="" width={46} height={46} priority />
+          {/* eslint-disable-next-line @next/next/no-img-element -- SVG logo served as-is */}
+          <img src="/images/logo-mark.svg" alt="" width={46} height={46} />
           <span>
             Halal Meat Depot
             <small>Certified Halal · Sydney</small>
@@ -50,7 +50,7 @@ export default function Header({ siteName, nav, categories }) {
         <nav className="main-nav" aria-label="Primary">
           <ul>
             {nav.map((n) =>
-              n.href === '/shop/' ? (
+              n.href === '/halal-meat-shop/' ? (
                 <li
                   key={n.href}
                   className={`has-mega${shopOpen ? ' is-open' : ''}${suppress ? ' is-suppressed' : ''}`}
@@ -77,14 +77,14 @@ export default function Header({ siteName, nav, categories }) {
                     <div className="mega-grid">
                       {categories.map((c) => (
                         <div key={c.slug} className="mega-col">
-                          <Link href={`/shop/${c.slug}/`} className="mega-cat">
+                          <Link href={`${c.path}`} className="mega-cat">
                             {c.name}
                           </Link>
                           {c.subs.length > 0 && (
                             <ul>
                               {c.subs.map((s) => (
                                 <li key={s.id}>
-                                  <Link href={`/shop/${c.slug}/#${s.id}`}>{s.name}</Link>
+                                  <Link href={`${c.path}#${s.id}`}>{s.name}</Link>
                                 </li>
                               ))}
                             </ul>
@@ -92,7 +92,7 @@ export default function Header({ siteName, nav, categories }) {
                         </div>
                       ))}
                     </div>
-                    <Link href="/shop/" className="mega-all">
+                    <Link href="/halal-meat-shop/" className="mega-all">
                       View all halal meat <Icon name="arrow" />
                     </Link>
                   </div>
@@ -158,17 +158,17 @@ export default function Header({ siteName, nav, categories }) {
                     <summary>{c.name}</summary>
                     <ul>
                       <li>
-                        <Link href={`/shop/${c.slug}/`}>All {c.name.toLowerCase()}</Link>
+                        <Link href={`${c.path}`}>All {c.name.toLowerCase()}</Link>
                       </li>
                       {c.subs.map((s) => (
                         <li key={s.id}>
-                          <Link href={`/shop/${c.slug}/#${s.id}`}>{s.name}</Link>
+                          <Link href={`${c.path}#${s.id}`}>{s.name}</Link>
                         </li>
                       ))}
                     </ul>
                   </details>
                 ) : (
-                  <Link href={`/shop/${c.slug}/`}>{c.name}</Link>
+                  <Link href={`${c.path}`}>{c.name}</Link>
                 )}
               </li>
             ))}

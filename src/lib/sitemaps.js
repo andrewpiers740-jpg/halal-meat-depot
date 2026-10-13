@@ -1,16 +1,19 @@
 import { SITE, PRODUCTS, CATEGORIES, POSTS } from '../config/site.js'
+import { LASTMOD } from '../config/lastmod.js'
 
 // Split sitemap: /sitemap.xml index → /sitemap/0..3.xml (pages, products,
 // categories, blog). Product entries carry <image:image>. Every noindex page
 // (cart, checkout, account, search, thank-you, order/*, admin) is excluded.
-export const STATIC_PAGES = ['/', '/shop/', '/wholesale/', '/halal-certification/', '/about/', '/contact/', '/faq/', '/blog/', '/shipping/', '/refund/', '/terms/', '/privacy/']
+export const STATIC_PAGES = ['/', '/halal-meat-shop/', '/wagyu-steak/', '/halal-meat-wholesale/', '/whole-lamb-aqeeqah-qurbani/', '/halal-certification/', '/about/', '/contact/', '/faq/', '/blog/', '/halal-meat-delivery/', '/refund/', '/terms/', '/privacy/']
 
 export function sitemapEntries(id) {
   const now = new Date().toISOString()
-  if (id === 1) return PRODUCTS.map((p) => ({ loc: `${SITE.url}/product/${p.slug}/`, lastmod: now, images: p.images.map((i) => `${SITE.url}/images/products/${i}`) }))
-  if (id === 2) return CATEGORIES.map((c) => ({ loc: `${SITE.url}/shop/${c.slug}/`, lastmod: now }))
+  // Real change dates from scripts/lastmod.mjs (falls back to now for a URL it has not seen yet).
+  const lm = (path) => LASTMOD[path]?.date || now
+  if (id === 1) return PRODUCTS.map((p) => ({ loc: `${SITE.url}/product/${p.slug}/`, lastmod: lm(`/product/${p.slug}/`), images: p.images.map((i) => `${SITE.url}/images/products/${i}`) }))
+  if (id === 2) return CATEGORIES.map((c) => ({ loc: `${SITE.url}${c.path}`, lastmod: lm(c.path) }))
   if (id === 3) return POSTS.map((p) => ({ loc: `${SITE.url}/blog/${p.slug}/`, lastmod: new Date(p.updated || p.date).toISOString() }))
-  return STATIC_PAGES.map((path) => ({ loc: `${SITE.url}${path}`, lastmod: now }))
+  return STATIC_PAGES.map((path) => ({ loc: `${SITE.url}${path}`, lastmod: lm(path) }))
 }
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;')

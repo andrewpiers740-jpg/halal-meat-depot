@@ -31,10 +31,11 @@ const writeRetry = async (file, buf) => {
   }
 }
 const CAP = 145 * 1024
+// Product and category images are WebP only (owner rule, 2026-10-13); hero slides are AVIF.
 async function encodeBoth(pipeline, base) {
   // Lower quality first; if a busy photo (e.g. textured dark background) still
   // exceeds the cap at q40, step the dimensions down too (1600 → 1280 → 1024px).
-  for (const [fmt, qStart, ext] of [['webp', 88, 'webp'], ['avif', 62, 'avif']]) {
+  for (const [fmt, qStart, ext] of [['webp', 88, 'webp']]) {
     let buf
     sizes: for (const width of [null, 1280, 1024]) {
       const src = width ? pipeline.clone().resize({ width }) : pipeline.clone()
@@ -118,10 +119,10 @@ async function placeholder({ w, h, tone, eyebrow, title, sub, foot, titleSize, b
   await encodeBoth(flat, base)
 }
 
-// 1 — brand assets
-await writeRetry('public/images/logo-v2.webp', await sharp(logo).resize(512, 512).webp({ quality: 86 }).toBuffer())
-await writeRetry('public/images/logo-mark-v2.webp', await sharp(emblem).resize(128, 128).webp({ quality: 88 }).toBuffer())
-await writeRetry('src/app/icon.png', await sharp(emblem).resize(192, 192).png().toBuffer())
+// 1 — brand assets. Logos and the favicon are true vector SVGs traced from
+// assets/logo-source.png (public/images/logo.svg, logo-mark.svg, src/app/icon.svg — committed,
+// not generated here). Only the rasters that must stay raster are written below:
+// apple-icon.png (iOS ignores SVG touch icons) and the og image (social cards need a bitmap).
 await writeRetry('src/app/apple-icon.png', await sharp(emblem).resize(180, 180).png().toBuffer())
 {
   const svg = placeholderSvg({ w: 1200, h: 630, tone: ['#1a0d0e', '#6e1419'], eyebrow: 'HALAL MEAT DEPOT · SYDNEY', title: 'Certified halal meat, delivered Australia-wide', sub: '', foot: 'Certified by Halal Control Australia', titleSize: 64 })
@@ -129,7 +130,7 @@ await writeRetry('src/app/apple-icon.png', await sharp(emblem).resize(180, 180).
   const buf = await sharp(svg).composite([{ input: badge, top: 60, left: 1200 - 230 - 60 }]).webp({ quality: 84 }).toBuffer()
   await writeRetry('public/images/og-v2.webp', buf)
 }
-console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon.png, og-v2.webp')
+console.log('brand assets: apple-icon.png, og-v2.webp (logos + favicon are SVG)')
 
 // 1b — halal certificate (owner-supplied scan) → webp for display + jpg for full view
 {
@@ -141,15 +142,21 @@ console.log('brand assets: logo-v2.webp, logo-mark-v2.webp, icon.png, apple-icon
   }
 }
 
-// 1c — homepage hero slides: assets/hero/hero-<n>.<ext> → public/images/hero/hero-<n>-v1.webp (1920 wide max)
+// 1c — homepage hero slides (AVIF, owner rule 2026-10-13): assets/hero/hero-<n>.<ext> →
+// public/images/hero/hero-<n>-<width>.avif at 768 / 1280 / 1920 px (never upscaled; the
+// source width is used instead). HERO_SLIDES in src/app/(site)/page.jsx lists the widths.
 {
   const heroDir = out('assets/hero')
   const heroes = existsSync(heroDir) ? readdirSync(heroDir).filter((f) => /^hero-\d+\.(jpe?g|png|webp|avif)$/i.test(f)) : []
   for (const f of heroes) {
-    const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: 1920, withoutEnlargement: true }).webp({ quality: 80 }).toBuffer()
-    await writeRetry(`public/images/hero/${basename(f, extname(f))}-v1.webp`, buf)
+    const { width: srcW } = await sharp(resolve(heroDir, f)).metadata()
+    const widths = [...new Set([768, 1280, 1920].map((w) => Math.min(w, srcW)))]
+    for (const w of widths) {
+      const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: w }).avif({ quality: 55 }).toBuffer()
+      await writeRetry(`public/images/hero/${basename(f, extname(f))}-${w}.avif`, buf)
+    }
+    console.log(`hero ${f}: ${widths.join(', ')}px AVIF`)
   }
-  if (heroes.length) console.log(`hero slides: ${heroes.length}`)
 }
 
 // 2 — real product photos
@@ -164,7 +171,7 @@ const sharedMap = existsSync(resolve(srcDir, '_shared.json')) ? JSON.parse(readF
 const real = new Set()
 const W = 1600, H = 1200, FILL = 0.9
 const productBase = (slug) => {
-  const prod = PRODUCTS.find((p) => p.slug === slug)
+  const prod = PRODUCTS.find((p) => (p.imageSlug || p.slug) === slug) // photos are named by the original slug
   return `public/images/products/${prod ? prod.images[0].replace(/\.webp$/, '') : slug}`
 }
 for (const [file, slugs] of Object.entries(sharedMap)) {
@@ -208,7 +215,7 @@ console.log(`product photos processed: ${real.size}`)
 // 3 — placeholders for products without photos
 let ph = 0
 for (const p of PRODUCTS) {
-  if (real.has(p.slug)) continue
+  if (real.has(p.imageSlug || p.slug)) continue
   const cat = CATEGORIES.find((c) => c.slug === p.cat)
   await placeholder({
     w: 1600, h: 1200, tone: TONES[p.cat] || TONES.beef, titleSize: 104, badgeSize: 280,
@@ -254,8 +261,8 @@ console.log(`category tiles: ${CATEGORIES.length}`)
 {
   const { unlinkSync } = await import('node:fs')
   const keep = new Set([
-    ...PRODUCTS.flatMap((p) => p.images.flatMap((i) => [i, i.replace(/\.webp$/, '.avif')])),
-    ...CATEGORIES.flatMap((c) => [categoryImage(c.slug), categoryImage(c.slug).replace(/\.webp$/, '.avif')]),
+    ...PRODUCTS.flatMap((p) => p.images),
+    ...CATEGORIES.map((c) => categoryImage(c.slug)),
   ])
   let pruned = 0
   for (const dir of ['public/images/products', 'public/images/categories']) {

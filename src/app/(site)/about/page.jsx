@@ -9,7 +9,7 @@ import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
   title: 'About Halal Meat Depot | Greenacre, Sydney Since 2021',
-  description: 'Halal Meat Depot is a Greenacre, Sydney halal meat supplier established in 2021, certified by Halal Control Australia and delivering Australia-wide.',
+  description: 'About Halal Meat Depot: a Greenacre, Sydney halal meat supplier established in 2021, certified by Halal Control Australia, delivering Australia-wide.',
   path: '/about/',
 })
 
@@ -55,22 +55,22 @@ export default function AboutPage() {
             </p>
             <h2>Meats that are hard to find in one place</h2>
             <p>
-              Alongside everyday <Link href="/shop/beef/">beef</Link>, <Link href="/shop/lamb/">lamb</Link>, <Link href="/shop/goat/">goat</Link> and{' '}
-              <Link href="/shop/chicken/">chicken</Link>, we stock <Link href="/shop/camel/">camel</Link>, <Link href="/shop/duck/">duck</Link>,{' '}
-              <Link href="/shop/kangaroo/">kangaroo</Link> and <Link href="/shop/water-buffalo/">water buffalo</Link> — all certified halal, all in the
+              Alongside everyday <Link href="/shop/halal-beef/">beef</Link>, <Link href="/shop/lamb/">lamb</Link>, <Link href="/shop/goat-meat-for-sale/">goat</Link> and{' '}
+              <Link href="/shop/halal-chicken/">chicken</Link>, we stock <Link href="/shop/camel-meat-australia/">camel</Link>, <Link href="/shop/duck-meat/">duck</Link>,{' '}
+              <Link href="/shop/kangaroo-meat-for-sale/">kangaroo</Link> and <Link href="/shop/buffalo-meat/">water buffalo</Link> — all certified halal, all in the
               same order. Our range currently covers {PRODUCTS.length} products across {CATEGORIES.length} categories.
             </p>
             <h2>Who we supply</h2>
             <p>
               Families and households buying in bulk; restaurants, takeaways and kebab shops; caterers and event organisers; and community
-              groups ordering for Eid, weddings and Aqeeqah. Trade customers can order <Link href="/shop/wholesale-cartons/">wholesale cartons</Link>{' '}
-              online or open a <Link href="/wholesale/">weekly account</Link>.
+              groups ordering for Eid, weddings and Aqeeqah. Trade customers can order <Link href="/shop/bulk-meat-boxes/">wholesale cartons</Link>{' '}
+              online or open a <Link href="/halal-meat-wholesale/">weekly account</Link>.
             </p>
             <h2>Delivery Australia-wide</h2>
             <p>
               We deliver Australia-wide from our depot at {SITE.addressLine}. Orders are packed chilled and dispatched once payment clears,
               and we confirm your delivery date with you directly. Delivery is free on orders over ${SITE.freeShipOver}; otherwise it is a flat $
-              {SITE.flatShip}. Full details are on our <Link href="/shipping/">delivery policy</Link> page.
+              {SITE.flatShip}. Full details are on our <Link href="/halal-meat-delivery/">delivery policy</Link> page.
             </p>
             <h2>Straightforward payment</h2>
             <p>

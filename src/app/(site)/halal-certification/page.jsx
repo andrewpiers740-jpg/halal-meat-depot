@@ -4,6 +4,16 @@ import Icon from '@/components/Icon'
 import Regulators from '@/components/Regulators'
 import { SITE, CATEGORIES } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
+import JsonLd from '@/components/JsonLd'
+import { imageObject } from '@/lib/imageSeo'
+
+// Image SEO: the page focus keyword ("halal certification") in alt, title, caption and description.
+const certImg = {
+  alt: `Halal certification certificate No. ${SITE.certificate.number} issued by ${SITE.certifier} to ${SITE.legalName}, trading as ${SITE.name}`,
+  title: `Halal certification — ${SITE.certifier} certificate No. ${SITE.certificate.number}`,
+  caption: `Our halal certification: certificate No. ${SITE.certificate.number} from ${SITE.certifier}, valid until ${SITE.certificate.validUntil}`,
+  description: `Halal certification for ${SITE.name} (${SITE.legalName}): ${SITE.certifier} certificate No. ${SITE.certificate.number}, covering all meat sold, valid until ${SITE.certificate.validUntil}.`,
+}
 
 export const metadata = pageMeta({
   title: 'Halal Certification — Halal Control Australia | HMD',
@@ -14,6 +24,7 @@ export const metadata = pageMeta({
 export default function HalalCertificationPage() {
   return (
     <>
+      <JsonLd data={{ '@context': 'https://schema.org', ...imageObject(`${SITE.url}${SITE.certificate.image}`, certImg, { encodingFormat: 'image/webp' }) }} />
       <div className="page-head">
         <div className="container">
           <Breadcrumbs crumbs={[{ name: 'Halal Certification', path: '/halal-certification/' }]} />
@@ -66,13 +77,14 @@ export default function HalalCertificationPage() {
                   src={SITE.certificate.image}
                   width={SITE.certificate.width}
                   height={SITE.certificate.height}
-                  alt={`Halal certificate No. ${SITE.certificate.number} issued by ${SITE.certifier} to ${SITE.legalName}, trading as ${SITE.name}`}
+                  alt={certImg.alt}
+                  title={certImg.title}
                   loading="lazy"
                   style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius)' }}
                 />
               </a>
               <figcaption className="muted" style={{ fontSize: '0.9rem', marginTop: 10 }}>
-                Our current halal certificate from {SITE.certifier}.{' '}
+                {certImg.caption}.{' '}
                 <a href={SITE.certificate.full} target="_blank" rel="noopener noreferrer">
                   View full size
                 </a>
@@ -83,7 +95,7 @@ export default function HalalCertificationPage() {
               <ul className="check-list">
                 {CATEGORIES.map((c) => (
                   <li key={c.slug}>
-                    <Icon name="check" /> <Link href={`/shop/${c.slug}/`}>{c.name}</Link>
+                    <Icon name="check" /> <Link href={`${c.path}`}>{c.name}</Link>
                   </li>
                 ))}
               </ul>

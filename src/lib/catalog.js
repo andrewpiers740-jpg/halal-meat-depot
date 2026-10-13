@@ -58,7 +58,7 @@ export function publicCategories() {
     description: c.tagline,
     subcategories: c.subcategories,
     productCount: PRODUCTS.filter((p) => p.cat === c.slug).length,
-    url: `${SITE.url}/shop/${c.slug}/`,
+    url: `${SITE.url}${c.path}`,
   }))
 }
 
@@ -75,7 +75,7 @@ export function policies() {
     gst: 'Fresh, unprocessed meat is GST-free in Australia.',
     halalCertification: `All products are certified halal by ${SITE.certifier}.`,
     ordering: 'Orders are completed by a human: the customer checks out on the website or WhatsApp, then receives payment details by email.',
-    shippingPolicy: `${SITE.url}/shipping/`,
+    shippingPolicy: `${SITE.url}/halal-meat-delivery/`,
     refundPolicy: `${SITE.url}/refund/`,
   }
 }

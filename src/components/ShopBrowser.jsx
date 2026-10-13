@@ -34,7 +34,7 @@ export default function ShopBrowser({ categories, products }) {
     // Old ?cat= links forward to the category's own page.
     const legacyCat = q.get('cat')
     if (legacyCat && categories.some((c) => c.slug === legacyCat)) {
-      window.location.replace(`/shop/${legacyCat}/${q.get('sub') ? `#${q.get('sub')}` : ''}`)
+      window.location.replace(`${categories.find((c) => c.slug === legacyCat).path}${q.get("sub") ? `#${q.get("sub")}` : ""}`)
       return
     }
     setCat(q.get('cat') || '')
@@ -99,21 +99,21 @@ export default function ShopBrowser({ categories, products }) {
           <h2>Categories</h2>
           <ul className="shop-cats">
             <li>
-              <a href="/shop/" className={!cat ? 'is-active' : ''} aria-current={!cat ? 'true' : undefined} onClick={pick('')}>
+              <a href="/halal-meat-shop/" className={!cat ? 'is-active' : ''} aria-current={!cat ? 'true' : undefined} onClick={pick('')}>
                 All products <span>{products.length}</span>
               </a>
             </li>
             {categories.map((c) => (
               <li key={c.slug}>
                 {/* Each category opens its own page (/shop/<slug>/), not an in-place filter. */}
-                <Link href={`/shop/${c.slug}/`} className={cat === c.slug && !sub ? 'is-active' : ''} aria-current={cat === c.slug && !sub ? 'true' : undefined}>
+                <Link href={`${c.path}`} className={cat === c.slug && !sub ? 'is-active' : ''} aria-current={cat === c.slug && !sub ? 'true' : undefined}>
                   {c.name} <span>{c.count}</span>
                 </Link>
                 {cat === c.slug && c.subs.length > 0 && (
                   <ul>
                     {c.subs.map((s) => (
                       <li key={s.id}>
-                        <a href={`/shop/${c.slug}/#${s.id}`} className={sub === s.id ? 'is-active' : ''} aria-current={sub === s.id ? 'true' : undefined} onClick={pick(c.slug, s.id)}>
+                        <a href={`${c.path}#${s.id}`} className={sub === s.id ? 'is-active' : ''} aria-current={sub === s.id ? 'true' : undefined} onClick={pick(c.slug, s.id)}>
                           {s.name} <span>{s.count}</span>
                         </a>
                       </li>
@@ -190,7 +190,7 @@ export default function ShopBrowser({ categories, products }) {
               <article key={p.slug} className="product-card">
                 <Link href={`/product/${p.slug}/`} className="product-frame" tabIndex={-1} aria-hidden="true">
                   {p.badge && <span className={`badge badge--${p.badge.replace(/\s+/g, '')}`}>{p.badge}</span>}
-                  <Image src={p.img} alt={`${p.name} — ${p.unit} — Halal Meat Depot`} fill sizes="(max-width: 560px) 100vw, (max-width: 1180px) 50vw, 30vw" priority={i < 2} />
+                  <Image src={p.img} alt={p.imgAlt} title={p.imgTitle} fill sizes="(max-width: 560px) 100vw, (max-width: 1180px) 50vw, 30vw" priority={i < 2} />
                 </Link>
                 <div className="product-body">
                   <span className="product-meta">

@@ -16,10 +16,10 @@ export default function ThankYouWholesalePage() {
           <h1>Thanks — your wholesale enquiry is in</h1>
           <p>We&apos;ll review your cuts and volumes and get back to you with pricing. In the meantime you can order trade cartons online.</p>
           <div className="btn-row">
-            <Link href="/shop/wholesale-cartons/" className="btn btn--primary">
+            <Link href="/shop/bulk-meat-boxes/" className="btn btn--primary">
               Browse trade cartons
             </Link>
-            <Link href="/shop/" className="btn btn--ghost">
+            <Link href="/halal-meat-shop/" className="btn btn--ghost">
               Full range
             </Link>
           </div>

@@ -1,0 +1,35 @@
+# keyword-cluster.txt — updated by audit 2026-10-12
+# Changes: 5 clusters marked USED (live posts), 1 landing page built, 20 blog clusters queued
+# Format: [STATUS]  primary keyword  slug  intent  tier  words  schema  — notes
+# Tiers are provisional (no volume/KD data yet); all primaries are Google AU autocomplete-validated
+# or catalogue-led. Link every post to its category/landing page and to /aqeeqah-qurbani/ or /wholesale/ where relevant.
+
+## Live
+[USED]    halal certified meat australia      /blog/what-halal-certification-means-australia/   Info   T2  1500w  Article   — 🟡 DRIFTED: no FAQ section, thin (335–556 words) — expand
+[USED]    halal beef cuts                     /blog/guide-to-halal-beef-cuts/                   Info   T2  1500w  Article   — 🟡 DRIFTED: no FAQ section, thin (335–556 words) — expand
+[USED]    halal goat curry cut                /blog/goat-curry-cuts-guide/                      Info   T1  1200w  Article   — 🟡 DRIFTED: no FAQ section, thin (335–556 words) — expand
+[USED]    halal camel meat                    /blog/cooking-camel-buffalo-kangaroo/             Info   T1  1200w  Article   — 🟡 DRIFTED: no FAQ section, thin (335–556 words) — expand
+[USED]    halal lamb cuts                     /blog/lamb-cuts-guide/                            Info   T2  1200w  Article   — 🟡 DRIFTED: no FAQ section, thin (335–556 words) — expand
+[USED]    whole lamb for sale sydney          /aqeeqah-qurbani/                                 Trans  T1  —      FAQPage   ← landing page, built 2026-10-12
+
+## Queue — bottom of funnel first (build in this order)
+[UNUSED]  qurbani price australia             /blog/qurbani-lamb-goat-guide-australia/          Comm   T1  1500w  Article+FAQPage   — publish by March 2027 (Eid al-Adha); link /aqeeqah-qurbani/
+[UNUSED]  aqeeqah lamb or goat                /blog/aqeeqah-lamb-or-goat-how-much-meat/         Info   T1  1500w  Article+FAQPage   — carcass weights from catalogue only
+[UNUSED]  halal meat suppliers for restaurants /blog/choosing-a-halal-meat-supplier-restaurants/ Comm  T1  1800w  Article+FAQPage   — link /wholesale/
+[UNUSED]  bulk halal meat                     /blog/buying-halal-meat-in-bulk-guide/            Comm   T1  1800w  Article+FAQPage   — freezer storage + cost per kg; link cartons
+[UNUSED]  halal meat price per kg             /blog/halal-meat-price-per-kg-bulk-vs-supermarket/ Comm  T2  1500w  Article           — uses our real per-kg prices only
+[UNUSED]  whole lamb price                    /blog/whole-lamb-price-what-you-get/              Comm   T1  1500w  Article+FAQPage   — carcass weight, cuts, cost; link /aqeeqah-qurbani/
+[UNUSED]  halal wagyu sydney                  /blog/halal-wagyu-marble-scores-explained/        Comm   T1  1800w  Article+FAQPage   — MB5+ vs MB9+; link /shop/beef/#wagyu-mb5-plus-and-mb9-plus
+[UNUSED]  halal chicken wholesale             /blog/halal-chicken-cuts-cost-per-kg/             Comm   T2  1500w  Article+FAQPage   — whole bird vs fillet vs carton
+[UNUSED]  halal meat delivery australia       /blog/how-halal-meat-delivery-works-australia/    Info   T2  1200w  Article+FAQPage   — packing, chilled/frozen, timing (owner facts needed)
+[UNUSED]  halal lamb shanks                   /blog/halal-lamb-shanks-slow-cook-guide/          Info   T1  1200w  Article+HowTo     — link /product/lamb-shanks/
+[UNUSED]  halal goat meat near me             /blog/where-to-buy-halal-goat-meat-sydney/        Comm   T1  1200w  Article+FAQPage   — no suburb pages; one Sydney-wide guide
+[UNUSED]  halal lamb cutlets                  /blog/halal-lamb-cutlets-vs-rack-vs-chops/        Comm   T2  1200w  Article           — comparison
+[UNUSED]  halal camel meat australia          /blog/is-camel-meat-halal-buying-guide/           Info   T1  1200w  Article+FAQPage   — link /shop/camel/
+[UNUSED]  halal buffalo meat                  /blog/water-buffalo-vs-beef-halal-guide/          Comm   T1  1200w  Article           — link /shop/water-buffalo/
+[UNUSED]  halal kangaroo meat                 /blog/is-kangaroo-meat-halal/                     Info   T1  1000w  Article+FAQPage   — also thickens thin /shop/kangaroo/
+[UNUSED]  halal duck                          /blog/how-to-roast-a-whole-duck/                  Info   T2  1200w  Article+HowTo     — link /shop/duck/
+[UNUSED]  halal offal                         /blog/halal-offal-guide-liver-tongue-oxtail/      Info   T1  1200w  Article           — link /shop/offal/
+[UNUSED]  halal meat for catering             /blog/how-much-meat-per-person-catering/          Info   T2  1500w  Article+FAQPage   — events, weddings; link cartons
+[UNUSED]  halal bbq meat                      /blog/halal-bbq-meat-pack-guide/                  Comm   T2  1200w  Article           — steaks, kofta, chipolatas, kebabs
+[UNUSED]  halal meat woolworths               /blog/halal-meat-supermarket-vs-butcher/          Comm   T2  1500w  Article           — no disparaging claims; facts only

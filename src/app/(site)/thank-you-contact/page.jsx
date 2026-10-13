@@ -17,7 +17,7 @@ export default function ThankYouContactPage() {
           <h1>Thanks — your message has been sent</h1>
           <p>We&apos;ll reply by email or phone as soon as we can during opening hours. For anything urgent, WhatsApp is the fastest way to reach us.</p>
           <div className="btn-row">
-            <Link href="/shop/" className="btn btn--primary">
+            <Link href="/halal-meat-shop/" className="btn btn--primary">
               Browse the shop
             </Link>
             <a href={waChatLink()} className="btn btn--wa" target="_blank" rel="noopener noreferrer">

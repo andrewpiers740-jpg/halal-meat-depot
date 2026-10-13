@@ -27,7 +27,7 @@ export default function TermsPage() {
         ['h2', '4. Payment'],
         ['p', `We accept PayID, bank transfer and cryptocurrency. No payment is taken on the website — we email payment details after you order. Orders paid in cryptocurrency receive ${SITE.cryptoDiscountPct}% off the meat subtotal (not delivery), applied automatically at checkout. Use your order number as the payment reference.`],
         ['h2', '5. Delivery'],
-        ['p', 'We deliver Australia-wide; pickup is not available. Delivery is described in our [delivery policy](/shipping/). Risk in the goods passes to you on delivery.'],
+        ['p', 'We deliver Australia-wide; pickup is not available. Delivery is described in our [delivery policy](/halal-meat-delivery/). Risk in the goods passes to you on delivery.'],
         ['h2', '6. Halal certification'],
         ['p', `All products are certified halal by ${SITE.certifier}.`],
         ['h2', '7. Refunds'],

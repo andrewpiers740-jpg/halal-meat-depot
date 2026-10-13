@@ -20,7 +20,7 @@ export default function NotFound() {
               <h1>Page not found</h1>
               <p className="muted">Sorry — that page doesn&apos;t exist or has moved.</p>
               <div className="btn-row" style={{ justifyContent: 'center' }}>
-                <Link href="/shop/" className="btn btn--primary">
+                <Link href="/halal-meat-shop/" className="btn btn--primary">
                   Shop halal meat
                 </Link>
                 <Link href="/" className="btn btn--ghost">
