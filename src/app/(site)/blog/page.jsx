@@ -35,7 +35,7 @@ export default function BlogIndex() {
                   </Link>
                 </h2>
                 <p className="muted">{p.excerpt}</p>
-                <Link href={`/blog/${p.slug}/`} className="read" aria-label={`Read: ${p.title}`}>
+                <Link href={`/blog/${p.slug}/`} className="read" aria-label={`Read the guide: ${p.title}`}>
                   Read the guide →
                 </Link>
               </div>

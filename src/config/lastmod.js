@@ -889,8 +889,8 @@ export const LASTMOD = {
   "date": "2026-10-13T08:15:59.581Z"
  },
  "/": {
-  "hash": "d23bc5a9f99dd851",
-  "date": "2026-10-13T09:11:09.186Z"
+  "hash": "8b17db3ba217a4d8",
+  "date": "2026-10-13T10:14:40.372Z"
  },
  "/halal-meat-shop/": {
   "hash": "419cb4e929fe371d",
@@ -925,8 +925,8 @@ export const LASTMOD = {
   "date": "2026-10-13T08:21:51.795Z"
  },
  "/blog/": {
-  "hash": "ce93efce393eb63f",
-  "date": "2026-10-13T08:21:51.795Z"
+  "hash": "a7c4f4dc5ae2f9e3",
+  "date": "2026-10-13T10:14:40.372Z"
  },
  "/halal-meat-delivery/": {
   "hash": "badb2e1ff4e07ba8",

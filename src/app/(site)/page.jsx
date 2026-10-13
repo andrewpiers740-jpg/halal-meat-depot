@@ -369,7 +369,7 @@ export default function HomePage() {
                     <Link href={`/blog/${p.slug}/`}>{p.title}</Link>
                   </h3>
                   <p className="muted">{p.excerpt}</p>
-                  <Link href={`/blog/${p.slug}/`} className="read" aria-label={`Read: ${p.title}`}>
+                  <Link href={`/blog/${p.slug}/`} className="read" aria-label={`Read the guide: ${p.title}`}>
                     Read the guide →
                   </Link>
                 </div>

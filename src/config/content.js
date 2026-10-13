@@ -72,7 +72,7 @@ export const POSTS = [
       ['h2', 'Halal certification and food safety are separate'],
       ['p', 'Halal certification is about religious requirements; food safety is regulated separately. In New South Wales, meat businesses are licensed and audited by the NSW Food Authority, and national food standards are set by Food Standards Australia New Zealand. A trustworthy supplier will hold both — a current halal certificate and the food safety licences required for its business — and will be open about each.'],
       ['p', 'If you have a question about any product, [contact us](/contact/) or message us on WhatsApp before you order — we are happy to send the certificate details for your records.'],
-      ['p', 'Further reading: [Halal Control Australia](https://www.halalcontrol.com.au/), our certifier; the [NSW Food Authority](https://www.foodauthority.nsw.gov.au/industry/meat) on licensing meat businesses; and the Australian Government\'s [halal red meat export program](https://www.agriculture.gov.au/biosecurity-trade/export/controlled-goods/meat/exporting-halal-red-meat-and-products).'],
+      ['p', 'Further reading: [Halal Control Australia](https://halalcontrol.com.au/), our certifier; the [NSW Food Authority](https://www.foodauthority.nsw.gov.au/industry/meat) on licensing meat businesses; and the Australian Government\'s [halal red meat export program](https://www.agriculture.gov.au/biosecurity-trade/export/controlled-goods/meat/exporting-halal-red-meat-and-products).'],
     ],
   },
   {
