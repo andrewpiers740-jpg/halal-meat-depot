@@ -7,7 +7,9 @@ const nextConfig = {
   output: isStatic ? 'export' : undefined,
   trailingSlash: true,
   // Product/category images are served as WebP (owner rule); hero slides are pre-built AVIF.
-  images: isStatic ? { unoptimized: true } : { formats: ['image/webp'] },
+  // Widths trimmed to what the layouts use (sources are at most 1600px wide): shorter srcsets keep
+  // category pages (60+ cards) lighter, and the fallback src is 1600w instead of 3840w.
+  images: isStatic ? { unoptimized: true } : { formats: ['image/webp'], deviceSizes: [640, 828, 1080, 1200, 1600], imageSizes: [96, 256, 384] },
   poweredByHeader: false,
   // Static export can't redirect; on Vercel moved and retired URLs 301 to their current page.
   ...(isStatic

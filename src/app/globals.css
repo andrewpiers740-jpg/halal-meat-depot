@@ -497,3 +497,6 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .data-table th, .data-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); vertical-align: top; }
 .data-table thead th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .data-table tbody th { font-weight: 600; }
+
+/* Skip layout/paint for product cards until they near the viewport (long category pages). */
+.product-card { content-visibility: auto; contain-intrinsic-size: auto 480px; }
