@@ -5,7 +5,7 @@
 // one line, rebuild and push — never find-and-replace a domain across files.
 
 export { CATEGORIES, PRODUCTS, productBySlug, categoryBySlug, categoryPath, productsInCategory, IMAGE_VERSION, categoryImage, subSlug } from './products.js'
-export { PAGE_MOVES, PAGE_SEO, POST_SEO, containsFocus, focusWords } from './seo.js'
+export { PAGE_MOVES, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, exactWords, POWER_WORDS, powerWordCount } from './seo.js'
 import { PRODUCTS as ALL_PRODUCTS, CATEGORIES as ALL_CATEGORIES } from './products.js'
 import { PAGE_MOVES as MOVES } from './seo.js'
 export { POSTS, FAQS, postBySlug } from './content.js'
@@ -248,7 +248,7 @@ export const COMPLIANCE = {
 export const NAV = [
   { href: '/halal-meat-shop/', label: 'Shop' },
   { href: '/halal-meat-wholesale/', label: 'Wholesale' },
-  { href: '/halal-certification/', label: 'Halal Certification' },
+  { href: '/halal-certified-meat/', label: 'Halal Certification' },
   { href: '/about/', label: 'About' },
   { href: '/blog/', label: 'Blog' },
   { href: '/contact/', label: 'Contact' },
@@ -353,7 +353,7 @@ export function currentPath(path) {
   }
   const prod = path.match(/^\/product\/([^/]+)\/$/)
   if (prod) {
-    const p = ALL_PRODUCTS.find((x) => x.oldSlug === prod[1])
+    const p = ALL_PRODUCTS.find((x) => x.oldSlug === prod[1] || x.prevSlugs?.includes(prod[1]))
     if (p) return `/product/${p.slug}/`
   }
   return path
@@ -364,5 +364,6 @@ export const REDIRECTS = [
   ...Object.entries(MOVES).map(([source, destination]) => ({ source, destination })),
   ...ALL_CATEGORIES.filter((c) => c.urlSlug !== c.slug).map((c) => ({ source: `/shop/${c.slug}/`, destination: c.path })),
   ...ALL_PRODUCTS.filter((p) => p.oldSlug).map((p) => ({ source: `/product/${p.oldSlug}/`, destination: `/product/${p.slug}/` })),
+  ...ALL_PRODUCTS.flatMap((p) => (p.prevSlugs || []).map((s) => ({ source: `/product/${s}/`, destination: `/product/${p.slug}/` }))),
   ...Object.entries(RETIRED_PRODUCTS).map(([slug, dest]) => ({ source: `/product/${slug}/`, destination: currentPath(dest) })),
 ]

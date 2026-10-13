@@ -4,7 +4,7 @@ import { ZONES_BY_DISTANCE, PRIORITY_FROM } from '@/config/delivery'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Delivery Policy | Australia-Wide | HMD',
+  title: 'Fresh Halal Meat Delivery Policy | Australia-Wide | HMD',
   description: `Halal meat delivery Australia-wide from Greenacre: free over $${SITE.freeShipOver} in ${SITE.delivery.transitDays[0]}–${SITE.delivery.transitDays[1]} days, or Priority Delivery from $${PRIORITY_FROM} priced by distance.`,
   path: '/halal-meat-delivery/',
 })

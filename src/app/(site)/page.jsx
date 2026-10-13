@@ -12,7 +12,7 @@ import { pageMeta } from '@/lib/meta'
 import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Delivery Sydney & Australia | Halal Meat Depot',
+  title: 'Fresh Halal Meat Delivery Sydney & Australia | HMD',
   description:
     'Halal meat delivery from Sydney, Australia-wide: beef, lamb, goat, chicken, camel and more, certified by Halal Control Australia. Order online, depot prices.',
   path: '/',
@@ -215,7 +215,7 @@ export default function HomePage() {
               <Link href="/shop/goat-meat-for-sale/">goat</Link>, <Link href="/shop/halal-chicken/">chicken</Link>, <Link href="/shop/camel-meat-australia/">camel</Link>,{' '}
               <Link href="/shop/duck-meat/">duck</Link>, <Link href="/shop/kangaroo-meat-for-sale/">kangaroo</Link> and{' '}
               <Link href="/shop/buffalo-meat/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
-              range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-certification/">halal certification page</Link>.
+              range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-certified-meat/">halal certification page</Link>.
             </p>
             <h3>What makes us different</h3>
             <p>
@@ -236,7 +236,7 @@ export default function HomePage() {
             <p>
               Restaurants and caterers can order <Link href="/shop/bulk-meat-boxes/">wholesale cartons</Link> online or{' '}
               <Link href="/halal-meat-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
-              <Link href="/blog/cooking-camel-buffalo-kangaroo/">guide to cooking lean meats</Link>.
+              <Link href="/blog/cooking-camel-meat-buffalo-kangaroo/">guide to cooking lean meats</Link>.
             </p>
           </div>
           <div className="stack">

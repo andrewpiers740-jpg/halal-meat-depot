@@ -7,18 +7,18 @@ import { pageMeta } from '@/lib/meta'
 import JsonLd from '@/components/JsonLd'
 import { imageObject } from '@/lib/imageSeo'
 
-// Image SEO: the page focus keyword ("halal certification") in alt, title, caption and description.
+// Image SEO: the page focus keyword ("halal certified meat") in alt, title, caption and description.
 const certImg = {
-  alt: `Halal certification certificate No. ${SITE.certificate.number} issued by ${SITE.certifier} to ${SITE.legalName}, trading as ${SITE.name}`,
-  title: `Halal certification — ${SITE.certifier} certificate No. ${SITE.certificate.number}`,
-  caption: `Our halal certification: certificate No. ${SITE.certificate.number} from ${SITE.certifier}, valid until ${SITE.certificate.validUntil}`,
-  description: `Halal certification for ${SITE.name} (${SITE.legalName}): ${SITE.certifier} certificate No. ${SITE.certificate.number}, covering all meat sold, valid until ${SITE.certificate.validUntil}.`,
+  alt: `Halal certified meat: certificate No. ${SITE.certificate.number} issued by ${SITE.certifier} to ${SITE.legalName}, trading as ${SITE.name}`,
+  title: `Halal certified meat — ${SITE.certifier} certificate No. ${SITE.certificate.number}`,
+  caption: `Our halal certified meat: certificate No. ${SITE.certificate.number} from ${SITE.certifier}, valid until ${SITE.certificate.validUntil}`,
+  description: `Halal certified meat from ${SITE.name} (${SITE.legalName}): ${SITE.certifier} certificate No. ${SITE.certificate.number}, covering all meat sold, valid until ${SITE.certificate.validUntil}.`,
 }
 
 export const metadata = pageMeta({
-  title: 'Halal Certification — Halal Control Australia | HMD',
-  description: 'Every product at Halal Meat Depot is certified halal by Halal Control Australia. See what halal certification covers and how meat is regulated in Australia.',
-  path: '/halal-certification/',
+  title: 'Halal Certified Meat — Halal Control Australia | HMD',
+  description: 'All our halal certified meat is certified by Halal Control Australia. See what halal certification covers and how meat is regulated in Australia.',
+  path: '/halal-certified-meat/',
 })
 
 export default function HalalCertificationPage() {
@@ -27,8 +27,8 @@ export default function HalalCertificationPage() {
       <JsonLd data={{ '@context': 'https://schema.org', ...imageObject(`${SITE.url}${SITE.certificate.image}`, certImg, { encodingFormat: 'image/webp' }) }} />
       <div className="page-head">
         <div className="container">
-          <Breadcrumbs crumbs={[{ name: 'Halal Certification', path: '/halal-certification/' }]} />
-          <h1>Our halal certification</h1>
+          <Breadcrumbs crumbs={[{ name: 'Halal Certification', path: '/halal-certified-meat/' }]} />
+          <h1>Halal certified meat: our certificate</h1>
           <p className="lead">
             Every product sold by Halal Meat Depot — across all {CATEGORIES.length} categories — is certified halal by {SITE.certifier}.
           </p>
@@ -56,7 +56,7 @@ export default function HalalCertificationPage() {
             <Regulators title="Who regulates the meat we sell" />
             <p>
               If a specific requirement matters to you, we recommend reading {SITE.certifier}&apos;s published standard or asking us before you order.
-              Our guide <Link href="/blog/what-halal-certification-means-australia/">What halal certification means when you buy meat in Australia</Link>{' '}
+              Our guide <Link href="/blog/halal-meat-australia-certification/">What halal certification means when you buy meat in Australia</Link>{' '}
               explains more.
             </p>
           </div>

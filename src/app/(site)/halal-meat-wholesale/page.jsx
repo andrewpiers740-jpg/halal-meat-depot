@@ -8,7 +8,7 @@ import { SITE, WHOLESALE_TIERS, productsInCategory } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Wholesale Sydney | Restaurant Supplier | HMD',
+  title: 'Fresh Halal Meat Wholesale Sydney | Restaurant Supplier',
   description: 'Halal meat wholesale from Sydney for restaurants, takeaways, caterers and butchers Australia-wide. Trade cartons or a weekly account. HCA certified.',
   path: '/halal-meat-wholesale/',
 })

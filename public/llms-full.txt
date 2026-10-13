@@ -5,7 +5,7 @@
 ## Facts
 
 - Legal entity: AUSBD HALAL FOODS PTY LTD (ABN 27 093 995 629), 43 Banksia Rd, Greenacre NSW 2190
-- Halal certification: Halal Control Australia, certificate No. HSS 027843, valid until 2 April 2027 — https://halalmeatdepot.com.au/halal-certification/
+- Halal certification: Halal Control Australia, certificate No. HSS 027843, valid until 2 April 2027 — https://halalmeatdepot.com.au/halal-certified-meat/
 - Delivery only (no pickup), Australia-wide. Minimum order $250; free delivery over $500, otherwise $25.
 - Payment: PayID, bank transfer or crypto (10% off the meat total with crypto). Phone/WhatsApp 0489 989 442.
 - Returns: no change-of-mind returns on fresh meat; problems reported within 48 hours are replaced or refunded — https://halalmeatdepot.com.au/refund/
@@ -155,7 +155,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/angus-beef-eye-fillet-steaks-mb3-4/
 - Pack: 2kg pack — $169.98 (about $84.99/kg)
 - Marble score 3–4+ Angus eye fillet steaks.
-- These eye fillet steaks come from Angus cattle graded at marble score 3 to 4 plus, so they carry visibly more intramuscular fat than a standard fillet. That marbling adds richness to the leanest, most tender muscle on the animal.
+- These eye fillet steaks come from Angus cattle graded at marble score 3 to 4 plus, so they carry visibly more intramuscular fat than a standard fillet. That marbling adds richness to the leanest, most tender muscle on the animal. Because they are richer than a standard fillet, they need very little: salt, a hot pan and a knob of butter basted over in the last minute. Serve them as tall medallions at medium-rare with a mushroom or red-pepper sauce for a dinner-party main.
 - Cooking: Extra marbling over standard eye fillet gives a richer, juicier steak. Sear quickly and serve medium-rare.
 
 ### Angus Beef Scotch Fillet Steaks MB3-4+
@@ -171,7 +171,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/angus-beef-porterhouse-steaks-mb3-4/
 - Pack: 2kg pack — $103.98 (about $51.99/kg)
 - Marble score 3–4+ Angus porterhouse steaks.
-- An Angus porterhouse at marble score 3 to 4 plus keeps the firm grain of the striploin but with extra marbling through the muscle. It suits diners who want a steak with bite that is still juicy at medium.
+- An Angus porterhouse at marble score 3 to 4 plus keeps the firm grain of the striploin but with extra marbling through the muscle. It suits diners who want a steak with bite that is still juicy at medium. Cook it like a classic porterhouse: render the fat strip on its edge first, then sear hard and pull it at medium-rare to medium. Slice it across the grain for steak sandwiches, or serve it whole with chips, a peppercorn sauce and a crisp green salad.
 - Cooking: A marbled porterhouse with a firm bite. Render the fat cap first, then grill to medium-rare.
 
 ### Angus Beef Rump Steaks MB3-4+
@@ -179,7 +179,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/angus-beef-rump-steaks-mb3-4/
 - Pack: 2kg pack — $57.98 (about $28.99/kg)
 - Marble score 3–4+ Angus rump steaks — great value with real marbling.
-- Rump from marble score 3 to 4 plus Angus brings marbling to a cut that is usually lean. It keeps the full flavour rump is known for while eating noticeably softer and juicier, which makes it strong value per kilo.
+- Rump from marble score 3 to 4 plus Angus brings marbling to a cut that is usually lean. It keeps the full flavour rump is known for while eating noticeably softer and juicier, which makes it strong value per kilo. Rump suits marinades better than any loin steak, so try it with garlic, lemon and oregano, or a yoghurt and spice rub for kebabs. Cut against the grain into thin strips, it also makes a rich, beefy stir-fry for a fraction of the cost of fillet.
 - Cooking: Marbled rump that eats like a premium steak. Grill hot and slice across the grain.
 
 ### Angus Beef Porterhouse Portion MB3-4+
@@ -187,7 +187,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/angus-beef-porterhouse-portion-mb3-4/
 - Pack: approx. 2.5kg portion — $122.48 (about $48.99/kg)
 - A marble score 3–4+ Angus porterhouse portion for restaurants.
-- This is a section of Angus striploin at marble score 3 to 4 plus, left whole so kitchens can cut steaks to their own thickness. Portioning in-house gives restaurants control over plate weights and keeps the trim for skewers.
+- This is a section of Angus striploin at marble score 3 to 4 plus, left whole so kitchens can cut steaks to their own thickness. Portioning in-house gives restaurants control over plate weights and keeps the trim for skewers. Cut it into 300g steaks for a classic à la carte plate, or into thinner 200g steaks for lunch specials. The whole piece can also be roasted as a marbled sirloin roast and sliced for carveries and functions.
 - Cooking: Cut your own steaks to order and keep the trim for kebabs. Store chilled and portion as needed.
 
 ### Black Angus Beef Rump Whole MB3-4+
@@ -283,7 +283,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-eye-fillet-steaks-mb5/
 - Pack: 2kg pack — $274.98 (about $137.49/kg)
 - MB5+ Wagyu eye fillet steaks.
-- This is the tenderloin from marble score 5 plus Wagyu. Fillet is normally lean; Wagyu adds marbling, so you get the soft texture of eye fillet with noticeably more richness and moisture.
+- This is the tenderloin from marble score 5 plus Wagyu. Fillet is normally lean; Wagyu adds marbling, so you get the soft texture of eye fillet with noticeably more richness and moisture. Sear them hard and finish in the oven to medium-rare, then rest well so the softened marbling stays in the meat. They suit couples and small celebrations, where one rich medallion each is plenty.
 - Cooking: Tenderness of eye fillet with Wagyu marbling. Two minutes a side and a long rest.
 
 ### Wagyu Eye Fillet Steaks MB9+
@@ -291,7 +291,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-eye-fillet-steaks-mb9/
 - Pack: 2kg pack — $378.98 (about $189.49/kg)
 - MB9+ Wagyu eye fillet steaks for fine dining.
-- Marble score 9 plus Wagyu eye fillet is the most tender muscle from the most heavily marbled cattle we supply. It is a fine-dining cut, best served in small, carefully cooked portions.
+- Marble score 9 plus Wagyu eye fillet is the most tender muscle from the most heavily marbled cattle we supply. It is a fine-dining cut, best served in small, carefully cooked portions. At this marbling, 100 to 150g per person is a generous serve. Cook them gently and briefly — a quick sear and a short rest — and serve with simple sides so the beef stays the centre of attention.
 - Cooking: Exceptionally tender and richly marbled. Serve in small portions, seared and rested.
 
 ### Wagyu Rump Steaks MB5+
@@ -299,7 +299,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-rump-steaks-mb5/
 - Pack: 2kg pack — $112.98 (about $56.49/kg)
 - MB5+ Wagyu rump steaks — Wagyu flavour at a friendlier price.
-- Wagyu rump steaks come from the hip of marble score 5 plus cattle. Rump has more flavour than the loin, and the marbling adds juiciness — the combination gives Wagyu eating quality at a lower price per kilo than loin cuts.
+- Wagyu rump steaks come from the hip of marble score 5 plus cattle. Rump has more flavour than the loin, and the marbling adds juiciness — the combination gives Wagyu eating quality at a lower price per kilo than loin cuts. Cook them to medium-rare and slice across the grain to show off the marbling. They make a striking steak salad or steak frites, and the rich flavour stands up well to chimichurri or garlic butter.
 - Cooking: Rump brings beefy flavour, Wagyu brings juiciness. Grill to medium-rare and slice.
 
 ### Wagyu Rump Steaks MB9+
@@ -307,7 +307,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-rump-steaks-mb9/
 - Pack: 2kg pack — $150.98 (about $75.49/kg)
 - MB9+ Wagyu rump steaks.
-- At marble score 9 plus, these rump steaks are so well marbled that they eat like a loin steak while keeping rump's fuller flavour. They suit restaurants wanting a premium steak at a sharper price point.
+- At marble score 9 plus, these rump steaks are so well marbled that they eat like a loin steak while keeping rump's fuller flavour. They suit restaurants wanting a premium steak at a sharper price point. With this much marbling, keep portions modest and the cooking brief: a very hot pan, a minute or two a side and a proper rest. Serve sliced, so everyone at the table gets a taste of the richest rump steak we sell.
 - Cooking: Heavily marbled rump that eats like a premium loin steak. Sear briefly and rest.
 
 ### Wagyu Rump Whole MB5+
@@ -339,7 +339,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-blade-steaks-mb5/
 - Pack: 2kg pack — $61.98 (about $30.99/kg)
 - MB5+ Wagyu blade steaks for grilling and braising.
-- Blade steaks are cut from the shoulder, a working muscle with plenty of flavour. With marble score 5 plus Wagyu marbling, they grill well when sliced thin and become silky when braised.
+- Blade steaks are cut from the shoulder, a working muscle with plenty of flavour. With marble score 5 plus Wagyu marbling, they grill well when sliced thin and become silky when braised. They are a good-value way into Wagyu: grill them whole to medium-rare and slice thinly against the grain, or dice them for a rich beef curry that cooks faster and stays juicier than ordinary chuck.
 - Cooking: Marbled blade that grills well when sliced thin, or braises into rich, tender meat.
 
 ### Wagyu Blade Steaks MB9+
@@ -347,7 +347,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/wagyu-blade-steaks-mb9/
 - Pack: 2kg pack — $78.98 (about $39.49/kg)
 - MB9+ Wagyu blade steaks.
-- These marble score 9 plus Wagyu blade steaks carry extreme marbling for a shoulder cut. They are a favourite for Korean barbecue, where thin slices cook in seconds and the fat crisps on the grill.
+- These marble score 9 plus Wagyu blade steaks carry extreme marbling for a shoulder cut. They are a favourite for Korean barbecue, where thin slices cook in seconds and the fat crisps on the grill. Slice them 3–5mm thick for the barbecue plate or hot pot, where they cook in moments. For a whole steak, keep the heat high and the time short, because this much marbling softens quickly.
 - Cooking: Slice thin for Korean-style barbecue or cook whole to medium. Rich and juicy.
 
 ### Wagyu Chuck Steak MB5+
@@ -427,7 +427,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/beef-porterhouse-portion/
 - Pack: approx. 3kg portion — $101.97 (about $33.99/kg)
 - A beef porterhouse (striploin) portion for cutting your own steaks.
-- A porterhouse portion is a section of whole striploin, the muscle porterhouse steaks are cut from. Restaurants and families buy it this way to cut steaks to the thickness they want and pay less per kilo.
+- A porterhouse portion is a section of whole striploin, the muscle porterhouse steaks are cut from. Restaurants and families buy it this way to cut steaks to the thickness they want and pay less per kilo. A typical portion yields several thick steaks plus trim for stir-fries or skewers. Leave the fat cap on while you cut, trim it to about 5mm on each steak, and freeze any steaks you will not cook within a few days.
 - Cooking: Portion into steaks, or roast whole and slice. The cheapest way to buy porterhouse.
 
 ### Beef Porterhouse Portion MB4+
@@ -435,7 +435,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 - URL: https://halalmeatdepot.com.au/product/beef-porterhouse-portion-mb4/
 - Pack: approx. 3kg portion — $197.97 (about $65.99/kg)
 - An MB4+ beef porterhouse portion for premium steaks.
-- This striploin portion is graded MB4 plus, so it carries more marbling than our standard porterhouse portion. Cut it into thick premium steaks or roast it whole as a sirloin roast.
+- This striploin portion is graded MB4 plus, so it carries more marbling than our standard porterhouse portion. Cut it into thick premium steaks or roast it whole as a sirloin roast. The extra marbling makes it worth cutting thicker — 3 to 4cm — and cooking reverse-sear style: gently in a low oven, then seared hard. Roasted whole, it slices into rosy, marbled rounds for a special occasion.
 - Cooking: Marbled striploin for restaurants cutting their own steaks to order.
 
 ### Beef Scotch Fillet Portion MB4+
@@ -456,7 +456,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Rump Cap
 
-- URL: https://halalmeatdepot.com.au/product/buy-beef-rump-cap-online/
+- URL: https://halalmeatdepot.com.au/product/beef-rump-cap/
 - Pack: approx. 2.5kg (2 pieces) — $72.47 (about $28.99/kg)
 - Beef rump cap (picanha) with its fat cap on.
 - Rump cap is the triangular muscle on top of the rump, with a thick layer of fat left on. Brazilian barbecue calls it picanha; the fat cap bastes the meat as it cooks over coals.
@@ -576,7 +576,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Gravy Beef
 
-- URL: https://halalmeatdepot.com.au/product/buy-gravy-beef-online/
+- URL: https://halalmeatdepot.com.au/product/gravy-beef/
 - Pack: 5kg pack — $102.45 (about $20.49/kg)
 - Gravy beef (shin meat) for rich stews and nihari.
 - Gravy beef is boneless meat from the shin. It is full of collagen that breaks down over hours of simmering, giving stews, soups and nihari a silky, glossy sauce.
@@ -820,7 +820,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Leg Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/lamb-leg-bone-in/
+- URL: https://halalmeatdepot.com.au/product/leg-of-lamb-for-sale-bone-in/
 - Pack: approx. 3kg whole leg — $53.97 (about $17.99/kg)
 - Whole bone-in leg of lamb for roasting, raan and slow cooking.
 - A bone-in leg of lamb is the whole hind leg, from the hip to the shank. Roasting on the bone keeps the meat moist, and the leg is the traditional cut for raan and festive roasts.
@@ -900,7 +900,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Neck
 
-- URL: https://halalmeatdepot.com.au/product/buy-lamb-neck-online/
+- URL: https://halalmeatdepot.com.au/product/lamb-neck/
 - Pack: 3kg pack — $35.97 (about $11.99/kg)
 - Lamb neck for curries, stews and slow braises.
 - Lamb neck is a well-marbled, collagen-rich cut that many cooks consider the most flavourful part of the lamb. It needs slow cooking, after which the meat becomes soft and rich.
@@ -1035,7 +1035,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 - URL: https://halalmeatdepot.com.au/product/goat-mini-leg-boned-and-rolled/
 - Pack: 2 legs, approx. 3.8kg — $93.06 (about $24.49/kg)
 - Boneless rolled goat legs for even roasting.
-- These smaller goat legs are boned, rolled and netted into neat roasts. Removing the bone makes them easier to carve into even slices.
+- These smaller goat legs are boned, rolled and netted into neat roasts. Removing the bone makes them easier to carve into even slices. The smaller size suits a dinner for three or four: roast it at 180°C until just pink in the centre for neat slices, or braise it in a covered pot with spices if you prefer it well done and tender. Leg is the leaner choice of the goat roasts.
 - Cooking: Roast covered with a little stock, then uncover to brown. Slice neatly.
 
 ### Goat Shoulder Boned and Rolled
@@ -1043,7 +1043,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 - URL: https://halalmeatdepot.com.au/product/goat-shoulder-boned-and-rolled/
 - Pack: approx. 2.2kg — $63.78 (about $28.99/kg)
 - Boneless rolled goat shoulder for slow roasting.
-- A boned and rolled goat shoulder is the shoulder meat tied into an even roast. Shoulder has more marbling than leg, so it stays tender through slow roasting.
+- A boned and rolled goat shoulder is the shoulder meat tied into an even roast. Shoulder has more marbling than leg, so it stays tender through slow roasting. Unlike the leaner leg, shoulder is happiest cooked low and slow: braise it for three hours with onions, garlic and warm spices, or roast it covered at 160°C until it pulls apart. It is the goat roast to choose for shredding into rice dishes or wraps.
 - Cooking: Roast low and slow until tender, or slice for shawarma-style wraps.
 
 ### Goat Shoulder Butterflied
@@ -1051,7 +1051,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 - URL: https://halalmeatdepot.com.au/product/goat-shoulder-butterflied/
 - Pack: approx. 2kg — $46.98 (about $23.49/kg)
 - Butterflied goat shoulder for the grill or oven.
-- A butterflied goat shoulder is boned and opened out flat. The flat shape cooks evenly on a grill or in the oven and soaks up marinades.
+- A butterflied goat shoulder is boned and opened out flat. The flat shape cooks evenly on a grill or in the oven and soaks up marinades. Marinate it overnight in yoghurt, garlic and spices, then grill or roast it hot for crisp edges and a juicy centre, about 50–60 minutes at 200°C. Because it lies flat, it is the quickest way to roast a whole goat shoulder for a family gathering.
 - Cooking: Marinate in spices and lemon, then grill or roast flat until tender.
 
 ### Goat Shoulder Square Cut
@@ -1059,7 +1059,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 - URL: https://halalmeatdepot.com.au/product/goat-shoulder-square-cut/
 - Pack: approx. 2.5kg — $61.22 (about $24.49/kg)
 - Square-cut goat shoulder for mandi and slow roasting.
-- The square-cut goat shoulder is the bone-in shoulder trimmed into a neat block. It is the traditional cut for mandi and other slow-roasted rice dishes.
+- The square-cut goat shoulder is the bone-in shoulder trimmed into a neat block. It is the traditional cut for mandi and other slow-roasted rice dishes. Keeping the bone in adds flavour and helps the meat stay moist through hours of slow cooking. Rub it with spices, wrap it in foil and roast it low for three to four hours until it falls from the bone, then serve it over fragrant rice with the cooking juices.
 - Cooking: The shoulder's marbling keeps it succulent through long cooking.
 
 ### Goat Frenched Rack
@@ -1223,7 +1223,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 - URL: https://halalmeatdepot.com.au/product/honey-soy-marinated-chicken-wings/
 - Pack: 3kg pack — $46.47 (about $15.49/kg)
 - Chicken wings in a sweet honey soy marinade.
-- These chicken wings come already coated in a sweet honey soy marinade. The sugars in the glaze caramelise in the oven to give sticky, glossy wings.
+- These chicken wings come already coated in a sweet honey soy marinade. The sugars in the glaze caramelise in the oven to give sticky, glossy wings. Because honey burns quickly, roast them at 190°C and turn them halfway, watching closely in the last ten minutes. Kids love them with steamed rice and cucumber, and they make an easy party platter scattered with sesame seeds and spring onion.
 - Cooking: Bake at 200°C for 30–35 minutes until sticky and caramelised.
 
 ### Chimichurri Marinated Chicken Wings
@@ -1231,7 +1231,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 - URL: https://halalmeatdepot.com.au/product/chimichurri-marinated-chicken-wings/
 - Pack: 3kg pack — $46.47 (about $15.49/kg)
 - Chicken wings in a herby chimichurri marinade.
-- These wings are marinated in chimichurri, the Argentinian sauce of herbs, garlic and vinegar. The herbs char lightly on the grill for a fresh, tangy finish.
+- These wings are marinated in chimichurri, the Argentinian sauce of herbs, garlic and vinegar. The herbs char lightly on the grill for a fresh, tangy finish. Their herby, garlicky flavour suits the charcoal grill best, where the edges blacken slightly. Squeeze over fresh lemon to finish and serve them with grilled corn, a tomato and onion salad or warm flatbread for a South American-style barbecue spread.
 - Cooking: Grill or bake until charred at the edges and cooked through.
 
 ### Buffalo Marinated Chicken Wings
@@ -1239,7 +1239,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 - URL: https://halalmeatdepot.com.au/product/buffalo-marinated-chicken-wings/
 - Pack: 3kg pack — $46.47 (about $15.49/kg)
 - Chicken wings in a spicy buffalo-style marinade.
-- These wings are marinated in a spicy buffalo-style sauce, inspired by the classic American bar snack. They are best cooked until crisp and served with a cooling dip.
+- These wings are marinated in a spicy buffalo-style sauce, inspired by the classic American bar snack. They are best cooked until crisp and served with a cooling dip. For the crispiest result, bake them on a rack at 220°C or air-fry them, turning once, rather than crowding a tray. Serve them as game-day finger food with celery sticks and a cooling yoghurt or ranch-style dip to balance the heat.
 - Cooking: Bake or air-fry until crisp. Serve with a cooling dip.
 
 ### Portuguese Marinated Split Chicken
@@ -1255,7 +1255,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 - URL: https://halalmeatdepot.com.au/product/lime-and-pepper-marinated-split-chicken/
 - Pack: 6 birds, approx. 6kg — $83.94 (about $13.99/kg)
 - Split chickens marinated in lime and cracked pepper.
-- These split chickens are marinated with lime and cracked pepper for a zesty, peppery flavour. They suit charcoal grills, ovens and family barbecues.
+- These split chickens are marinated with lime and cracked pepper for a zesty, peppery flavour. They suit charcoal grills, ovens and family barbecues. The citrus and pepper suit charcoal flavour, so cook it over medium coals with the lid down, turning once, until the juices run clear and the thickest part reaches 75°C. A squeeze of fresh lime at the table brightens it, and it pairs well with rice, slaw or grilled vegetables.
 - Cooking: Roast or grill until the juices run clear and the skin is golden.
 
 ### House Blend Marinated Split Chicken
@@ -1263,7 +1263,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 - URL: https://halalmeatdepot.com.au/product/house-blend-marinated-split-chicken/
 - Pack: 6 birds, approx. 6kg — $89.94 (about $14.99/kg)
 - Split chickens in a savoury house-blend marinade.
-- These split chickens are coated in our savoury house-blend marinade. They are prepared ready to cook, saving time for families and food businesses.
+- These split chickens are coated in our savoury house-blend marinade. They are prepared ready to cook, saving time for families and food businesses. Cook it skin side down on a covered barbecue or hot grill first, then turn it and finish over gentler heat until the thickest part reaches 75°C. In the oven, roast at 200°C for about 45–55 minutes. Serve with chips, garlic sauce and pickles for a takeaway-style dinner at home.
 - Cooking: Roast at 200°C for about 45 minutes, basting once.
 
 ### Smokey Heat Marinated Split Chicken
@@ -1608,7 +1608,7 @@ Halal offal and bones for traditional cooking, broths and slow braises: beef che
 
 ### Chicken Livers
 
-- URL: https://halalmeatdepot.com.au/product/buy-chicken-livers-online/
+- URL: https://halalmeatdepot.com.au/product/chicken-livers/
 - Pack: 2kg pack — $16.98 (about $8.49/kg)
 - Chicken livers for pâté, pan-frying and curries.
 - Chicken livers are small, mild-flavoured organ meat with a smooth, creamy texture when cooked just pink. They are used in pâté, curries and quick pan-fried dishes.
@@ -1663,7 +1663,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 - URL: https://halalmeatdepot.com.au/product/beef-rump-cryovac-carton/
 - Pack: approx. 20kg carton — $480.00 (about $24.00/kg)
 - A carton of cryovac beef rump primals (about 20kg) for steakhouses and grill restaurants.
-- This carton holds whole beef rumps vacuum-sealed in cryovac, about 20kg in total. Cryovac packaging keeps primals in good condition so kitchens can portion steaks and skewers as needed.
+- This carton holds whole beef rumps vacuum-sealed in cryovac, about 20kg in total. Cryovac packaging keeps primals in good condition so kitchens can portion steaks and skewers as needed. Each rump can be broken into its natural muscles — eye, cap, centre and knuckle — giving premium steaks, a roasting cap and trim for kebabs from a single primal. Keep unopened cryovac in the coldest part of the coolroom and portion only what you need.
 - Cooking: Whole rumps in cryovac, packed by the carton for kitchens that portion their own steaks and skewers. Contact us for weekly standing orders.
 
 ### Beef Striploin Cryovac Carton
@@ -1671,7 +1671,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 - URL: https://halalmeatdepot.com.au/product/beef-striploin-cryovac-carton/
 - Pack: approx. 20kg carton — $560.00 (about $28.00/kg)
 - A carton of cryovac beef striploins (about 20kg) for steakhouses and restaurants.
-- This carton holds whole striploins in cryovac, about 20kg in total. Restaurants cut their own porterhouse steaks from the striploin to control thickness and plate cost.
+- This carton holds whole striploins in cryovac, about 20kg in total. Restaurants cut their own porterhouse steaks from the striploin to control thickness and plate cost. A whole striploin gives uniform porterhouse steaks with very little waste, which keeps plate costs predictable on a steak menu. Trim the fat cap to an even layer and the chain muscle for staff meals or stir-fry before cutting.
 - Cooking: Whole striploins in cryovac for kitchens that cut their own porterhouse steaks. Ask us about weekly standing orders.
 
 ### Beef Brisket Cryovac Carton
@@ -1679,7 +1679,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 - URL: https://halalmeatdepot.com.au/product/beef-brisket-cryovac-carton/
 - Pack: approx. 25kg carton — $362.50 (about $14.50/kg)
 - A carton of cryovac beef briskets (about 25kg) for smokehouses, nihari kitchens and caterers.
-- This carton holds whole briskets in cryovac, about 25kg in total. It is the bulk format smokehouses, nihari kitchens and caterers use to keep brisket on hand.
+- This carton holds whole briskets in cryovac, about 25kg in total. It is the bulk format smokehouses, nihari kitchens and caterers use to keep brisket on hand. Whole briskets in cryovac can be smoked as full packers, split into point and flat for different dishes, or diced for curries and nihari. Buying by the carton gives the lowest price per kilo for kitchens that cook brisket every week.
 - Cooking: Whole briskets packed in cryovac by the carton. Trade pricing for kitchens that smoke or braise brisket every day.
 
 ### Lamb Leg Cryovac Carton

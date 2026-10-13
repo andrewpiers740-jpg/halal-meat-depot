@@ -865,6 +865,7 @@ for (const x of PRODUCTS) {
   const s = PRODUCT_SEO[x.slug]
   x.imageSlug = x.slug
   x.focus = s?.focus || focusFromName(x.name)
+  x.prevSlugs = s?.prevSlugs || []
   if (s?.slug) {
     x.oldSlug = x.slug
     x.slug = s.slug
@@ -876,7 +877,7 @@ for (const c of CATEGORIES) {
   c.path = `/shop/${c.urlSlug}/`
 }
 
-export const productBySlug = (slug) => PRODUCTS.find((x) => x.slug === slug || x.oldSlug === slug)
+export const productBySlug = (slug) => PRODUCTS.find((x) => x.slug === slug || x.oldSlug === slug || x.prevSlugs.includes(slug))
 // Accepts the category id (product.cat) or its URL slug.
 export const categoryBySlug = (slug) => CATEGORIES.find((c) => c.slug === slug || c.urlSlug === slug)
 export const categoryPath = (id) => categoryBySlug(id)?.path || '/halal-meat-shop/'

@@ -3,7 +3,7 @@ import { SITE } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Refund & Returns Policy | Halal Meat Depot',
+  title: 'Refund & Returns Policy: Simple Guide | Halal Meat Depot',
   description: 'Our Refund & Returns Policy for fresh halal meat: report a problem within 48 hours for a replacement or refund, in line with the Australian Consumer Law.',
   path: '/refund/',
 })

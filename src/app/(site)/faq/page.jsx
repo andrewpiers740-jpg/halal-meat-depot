@@ -6,7 +6,7 @@ import { faqSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Delivery & Ordering FAQ | Halal Meat Depot',
+  title: 'Halal Meat Delivery & Ordering FAQ: Simple Answers | HMD',
   description: 'FAQ: answers about halal certification, Australia-wide delivery, the minimum order, paying by PayID, bank transfer or crypto, accounts and wholesale.',
   path: '/faq/',
 })

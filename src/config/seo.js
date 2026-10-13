@@ -65,10 +65,15 @@ export const PRODUCT_SEO = {
   'duck-mince': { focus: 'minced duck meat', intent: 'C', vol: 20, kd: 9, slug: 'minced-duck-meat' },
   'lamb-and-rosemary-sausages': { focus: 'halal lamb sausages', intent: 'T', vol: 20, kd: 4, slug: 'halal-lamb-sausages-rosemary' },
   // exact product name is Informational in the data → buying form instead
-  'lamb-neck': { focus: 'buy lamb neck online', intent: 'T*', slug: 'buy-lamb-neck-online' },
-  'gravy-beef': { focus: 'buy gravy beef online', intent: 'T*', slug: 'buy-gravy-beef-online' },
-  'beef-rump-cap': { focus: 'buy beef rump cap online', intent: 'T*', slug: 'buy-beef-rump-cap-online' },
-  'chicken-livers': { focus: 'buy chicken livers online', intent: 'T*', slug: 'buy-chicken-livers-online' },
+  // Owner decision (2026-10-13): the exact file keyword replaces a made-up "buy … online" phrase, even
+  // though Semrush marks it Informational (ownerOk lets it past the T/C rule). Old URLs 301 via prevSlugs.
+  'lamb-neck': { focus: 'lamb neck', intent: 'I', vol: 1000, kd: 9, ownerOk: true, prevSlugs: ['buy-lamb-neck-online'] },
+  'gravy-beef': { focus: 'gravy beef', intent: 'I', vol: 2900, kd: 14, ownerOk: true, prevSlugs: ['buy-gravy-beef-online'] },
+  'beef-rump-cap': { focus: 'beef rump cap', intent: 'I', vol: 590, kd: 13, ownerOk: true, prevSlugs: ['buy-beef-rump-cap-online'] },
+  'chicken-livers': { focus: 'chicken livers', intent: 'I', vol: 590, kd: 11, ownerOk: true, prevSlugs: ['buy-chicken-livers-online'] },
+  // Owner fallback rule (2026-10-13): exact file keywords with KD 0–29 for products that had none.
+  'lamb-leg-bone-in': { focus: 'leg of lamb for sale', intent: 'T', vol: 90, kd: 10, slug: 'leg-of-lamb-for-sale-bone-in' },
+  'buffalo-t-bone-steak': { focus: 'buffalo t bone steak', intent: 'C', vol: 10, kd: 4 },
 }
 
 // Categories — keyed by category id (products reference the id; only the URL changes).
@@ -91,6 +96,12 @@ export const PAGE_MOVES = {
   '/wholesale/': '/halal-meat-wholesale/',
   '/aqeeqah-qurbani/': '/whole-lamb-aqeeqah-qurbani/',
   '/shipping/': '/halal-meat-delivery/',
+  '/halal-certification/': '/halal-certified-meat/',
+  // Blog posts moved so the slug carries the exact file keyword (2026-10-13).
+  '/blog/what-halal-certification-means-australia/': '/blog/halal-meat-australia-certification/',
+  '/blog/goat-curry-cuts-guide/': '/blog/goat-meat-curry-cuts-guide/',
+  '/blog/cooking-camel-buffalo-kangaroo/': '/blog/cooking-camel-meat-buffalo-kangaroo/',
+  '/blog/lamb-cuts-guide/': '/blog/lamb-cuts-australia-guide/',
 }
 
 // Focus keywords for static pages (the homepage has no slug, so only title + meta apply).
@@ -101,7 +112,7 @@ export const PAGE_SEO = {
   '/halal-meat-wholesale/': 'halal meat wholesale',
   '/whole-lamb-aqeeqah-qurbani/': 'whole lamb',
   '/halal-meat-delivery/': 'halal meat delivery',
-  '/halal-certification/': 'halal certification',
+  '/halal-certified-meat/': 'halal certified meat',
   '/about/': 'about',
   '/contact/': 'contact',
   '/faq/': 'faq',
@@ -113,11 +124,26 @@ export const PAGE_SEO = {
 
 // Blog posts — keyed by post slug.
 export const POST_SEO = {
-  'what-halal-certification-means-australia': 'what halal certification means',
+  'halal-meat-australia-certification': 'halal meat australia',
   'guide-to-halal-beef-cuts': 'halal beef cuts',
-  'goat-curry-cuts-guide': 'goat curry cuts',
-  'cooking-camel-buffalo-kangaroo': 'cooking camel',
-  'lamb-cuts-guide': 'lamb cuts',
+  'goat-meat-curry-cuts-guide': 'goat meat',
+  'cooking-camel-meat-buffalo-kangaroo': 'camel meat',
+  'lamb-cuts-australia-guide': 'lamb cuts australia',
+  'scotch-fillet-vs-porterhouse-vs-eye-fillet': 'scotch fillet vs porterhouse',
+  'slow-cooked-beef-cheeks': 'slow cooked beef cheeks',
+  'lamb-casserole-recipe': 'lamb casserole recipe',
+  'slow-roast-lamb-slow-cooker': 'slow roast lamb slow cooker',
+  'chicken-maryland-recipes': 'chicken maryland recipes',
+  'sirloin-vs-porterhouse-vs-rump': 'sirloin vs porterhouse',
+  '30-minute-beef-mince-recipes': '30 minute beef mince recipes',
+  'beef-bolar-blade-roast-recipe': 'beef bolar blade roast recipe',
+  'beef-oyster-blade-steak-recipe': 'beef oyster blade steak recipe',
+  'slow-cooked-lamb-shanks': 'slow cooked lamb shanks',
+  'best-beef-cut-for-roasting': 'best beef cut for roasting',
+  'best-bones-for-bone-broth': 'best bones for bone broth',
+  'gravy-beef-vs-chuck': 'gravy beef vs chuck',
+  'best-beef-for-stir-fry': 'best beef for stir fry',
+  'best-temperature-to-smoke-beef-brisket': 'best temperature to smoke beef brisket',
 }
 
 // Default focus keyword for a product with no keyword data: its own name.
@@ -127,3 +153,15 @@ export const focusFromName = (name) => name.toLowerCase().replace(/\s*\(([^)]*)\
 export const focusWords = (t) =>
   String(t).toLowerCase().replace(/&amp;/g, 'and').replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(Boolean).map((w) => w.replace(/(?<!s)s$/, ''))
 export const containsFocus = (text, focus) => ` ${focusWords(text).join(' ')} `.includes(` ${focusWords(focus).join(' ')} `)
+
+// EXACT keyword match (owner rule, 2026-10-13): the keyword's words, unmodified and in order —
+// no plural folding, no "&" → "and". Only case and punctuation between words are ignored, so
+// "Buffalo T-Bone Steak" carries "buffalo t bone steak" and "Lamb & Rosemary" carries "lamb & rosemary".
+export const exactWords = (t) =>
+  String(t).toLowerCase().replace(/&amp;/g, '&').replace(/&#x27;|&#39;|[’‘]/g, "'").replace(/[^a-z0-9']+/g, ' ').replace(/(^| )'|'( |$)/g, ' ').trim()
+export const containsExact = (text, kw) => ` ${exactWords(text)} `.includes(` ${exactWords(kw)} `)
+
+// SEO power words (owner rule, 2026-10-13): every SEO title carries 1–2 of these. Only words that
+// are true of what we sell — no "cheapest", "#1", "award-winning" (Australian Consumer Law).
+export const POWER_WORDS = ['fresh', 'premium', 'certified', 'best', 'easy', 'ultimate', 'complete', 'quick', 'simple', 'essential', 'expert', 'tender', 'delicious']
+export const powerWordCount = (title) => exactWords(title).split(' ').filter((w) => POWER_WORDS.includes(w)).length

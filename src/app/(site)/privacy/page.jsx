@@ -3,7 +3,7 @@ import { SITE } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Privacy Policy | Halal Meat Depot',
+  title: 'Privacy Policy: Simple Guide | Halal Meat Depot',
   description: 'How Halal Meat Depot collects, uses and protects your personal information under the Privacy Act 1988 and the Australian Privacy Principles.',
   path: '/privacy/',
 })

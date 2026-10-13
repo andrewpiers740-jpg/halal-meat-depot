@@ -35,8 +35,9 @@ function describe(c, items) {
 }
 
 function titleFor(c) {
-  if (c.slug === 'wholesale-cartons') return 'Meat Boxes & Bulk Halal Meat Cartons | Halal Meat Depot'
-  const head = saysBuy(c) ? cap(phrase(c)) : `Buy ${cap(phrase(c))} Online`
+  // Owner rule (2026-10-13): 1–2 SEO power words in every title ("Fresh" never splits the focus keyword).
+  if (c.slug === 'wholesale-cartons') return 'Fresh Meat Boxes & Bulk Halal Meat Cartons | HMD'
+  const head = saysBuy(c) ? `Fresh ${cap(phrase(c))}` : `Buy Fresh ${cap(phrase(c))} Online`
   return [`${head} | Sydney & Australia-Wide`, `${head} | Delivered Australia-Wide`, `${head} | Halal Meat Depot`, head].find((t) => t.length <= 60)
 }
 
@@ -153,7 +154,7 @@ export default async function CategoryPage({ params }) {
             <div className="card card--tint">
               <h2>Ordering {c.name.toLowerCase()} from Halal Meat Depot</h2>
               <p className="muted" style={{ marginBottom: 0 }}>
-                All {c.name.toLowerCase()} is certified halal by {SITE.certifier} — see our <Link href="/halal-certification/">certification page</Link>.
+                All {c.name.toLowerCase()} is certified halal by {SITE.certifier} — see our <Link href="/halal-certified-meat/">certification page</Link>.
                 Minimum order ${SITE.minOrder}, free delivery over ${SITE.freeShipOver}, {SITE.cryptoDiscountPct}% off with crypto. Buying for a
                 restaurant? <Link href="/halal-meat-wholesale/">Open a wholesale account</Link>.
               </p>

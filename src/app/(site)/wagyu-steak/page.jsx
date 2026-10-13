@@ -13,7 +13,7 @@ const WAGYU = PRODUCTS.filter((p) => p.sub === 'Wagyu MB5+ & MB9+')
 const low = Math.min(...WAGYU.map((p) => p.price))
 
 export const metadata = pageMeta({
-  title: 'Wagyu Steak | Halal Wagyu Beef MB5+ & MB9+ | HMD',
+  title: 'Premium Wagyu Steak | Halal Wagyu Beef MB5+ & MB9+ | HMD',
   description: `Wagyu steak and halal Wagyu beef at marble score 5+ and 9+: tomahawk, scotch fillet, eye fillet, rump and brisket, from ${money(low)}. Delivered Australia-wide.`,
   path: '/wagyu-steak/',
 })

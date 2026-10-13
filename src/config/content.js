@@ -4,15 +4,16 @@
 // 25% Commercial, 25% Transactional, favouring high volume and low KD (owner's Semrush data).
 // `keywords` lists each post's targets with Semrush intent/volume/KD; the build check verifies
 // every one appears in the post.
+import { GUIDE_POSTS } from './posts-guides.js'
 
 export const POSTS = [
   {
-    slug: 'what-halal-certification-means-australia',
-    title: 'What Halal Certification Means When You Buy Meat in Australia',
-    seoTitle: 'What Halal Certification Means in Australia',
+    slug: 'halal-meat-australia-certification',
+    title: 'Halal Meat Australia: What Halal Certification Means When You Buy',
+    seoTitle: 'Halal Meat Australia: What Certified Halal Means',
     date: '2026-10-09',
     updated: '2026-10-13',
-    kw: 'halal certified meat Australia',
+    kw: 'halal meat australia',
     keywords: [
       { kw: 'est halal check', intent: 'I', vol: 1000, kd: 8 },
       { kw: 'est halal', intent: 'I', vol: 1000, kd: 7 },
@@ -24,13 +25,13 @@ export const POSTS = [
       { kw: 'halal butcher near me', intent: 'T', vol: 5400, kd: 17 },
     ],
     excerpt:
-      'What halal certification means in Australia: who issues it, how it works and the simple checks to make before buying halal meat from any supplier.',
+      'Halal meat Australia guide: what halal certification means, who issues it, how it works and the simple checks to make before buying from any supplier.',
     body: [
       ['p', 'Halal certification is how a meat supplier proves that its products meet Islamic dietary requirements — from how the animal is slaughtered to how the meat is stored, cut and transported. Knowing what halal certification means, and what it does not mean, is the simplest way to buy halal meat with confidence in Australia, whether you shop at a local halal butcher or order online.'],
       ['p', 'This guide explains who certifies halal meat in Australia, what a certifier actually checks, what the EST number on a carton tells you, and the questions worth asking any supplier before you hand over your money.'],
       ['h2', 'Who certifies halal meat in Australia?'],
       ['p', 'Australia does not have a single government halal authority for meat sold within the country. Instead, independent Islamic certification bodies audit abattoirs, processors and suppliers, and issue certificates to those that meet their published standards. For export, the Australian Government runs a separate program that approves Islamic organisations to certify red meat sent overseas, because importing countries require it.'],
-      ['p', 'That means the name on the certificate matters. Two suppliers can both say "halal" and be certified by different organisations with slightly different standards. Every product sold by Halal Meat Depot is certified by one certifier, Halal Control Australia — you can read the certificate on our [halal certification page](/halal-certification/).'],
+      ['p', 'That means the name on the certificate matters. Two suppliers can both say "halal" and be certified by different organisations with slightly different standards. Every product sold by Halal Meat Depot is certified by one certifier, Halal Control Australia — you can read the certificate on our [halal certification page](/halal-certified-meat/).'],
       ['h2', 'What does a halal certifier actually check?'],
       ['p', 'Certification is more than a logo on a box. A certifier typically checks:'],
       ['ul', [
@@ -78,7 +79,7 @@ export const POSTS = [
   {
     slug: 'guide-to-halal-beef-cuts',
     title: 'A Practical Guide to Halal Beef Cuts: Primals, Steaks and Mince',
-    seoTitle: 'Halal Beef Cuts Guide: Primals, Steaks and Mince',
+    seoTitle: 'Complete Halal Beef Cuts Guide: Steaks and Mince',
     date: '2026-10-09',
     updated: '2026-10-13',
     kw: 'halal beef cuts',
@@ -136,23 +137,24 @@ export const POSTS = [
     ],
   },
   {
-    slug: 'goat-curry-cuts-guide',
-    title: 'Goat Curry Cuts Explained: Bone-in, Boneless and Whole Goat',
+    slug: 'goat-meat-curry-cuts-guide',
+    title: 'Goat Meat for Curry: Bone-in, Boneless and Whole Goat Cuts Explained',
+    seoTitle: 'Goat Meat Curry Cuts: The Essential Guide',
     date: '2026-10-09',
     updated: '2026-10-13',
-    kw: 'halal goat curry cut',
+    kw: 'goat meat',
     keywords: [
-      { kw: 'goat meat', intent: 'I', vol: 1900, kd: 14 },
+      { kw: 'goat meat or lamb meat', intent: 'I', vol: 140, kd: 20 },
       { kw: 'which is better goat leg or shoulder', intent: 'I', vol: 20, kd: 12 },
-      { kw: 'how to cook goat curry', intent: 'I' },
-      { kw: 'how much goat per person', intent: 'I' },
+      { kw: 'goat meat recipes', intent: 'I', vol: 170, kd: 22 },
+      { kw: 'diced goat meat recipes', intent: 'I', vol: 20, kd: 6 },
       { kw: 'diced goat', intent: 'C', vol: 20, kd: 4 },
       { kw: 'goat leg vs shoulder', intent: 'C', vol: 20, kd: 13 },
       { kw: 'goat meat for sale', intent: 'T', vol: 40, kd: 8 },
       { kw: 'goat price', intent: 'T', vol: 140, kd: 14 },
     ],
     excerpt:
-      'Goat curry cuts explained: why bone-in goat makes the best curry, how much to buy per person, and when a whole goat carcass is the smarter choice.',
+      'Goat meat curry cuts explained: why bone-in goat makes the best curry, how much to buy per person, and when a whole goat carcass is the smarter choice.',
     body: [
       ['p', 'Goat curry cuts make the difference between a rich, tender curry and a tough, watery one. Goat meat is the most widely eaten red meat in the world and the backbone of curries, biryani, karahi and mandi, yet it behaves differently from lamb and beef. This guide explains which cuts to buy, how to cook them, and how much you need.'],
       ['h2', 'What makes goat meat different?'],
@@ -160,7 +162,7 @@ export const POSTS = [
       ['h2', 'Why bone-in curry cut is the classic choice'],
       ['p', '[Bone-in diced goat](/product/diced-goat-bone-in/) is cut through the bone into evenly sized pieces from across the carcass. As it simmers, marrow and collagen dissolve into the sauce, thickening it and adding depth that boneless meat cannot match. The mix of shoulder, leg, rib and neck pieces also gives every plate a range of textures.'],
       ['h2', 'How to cook goat curry so it is tender'],
-      ['p', 'Here is how to cook goat curry for tender meat every time:'],
+      ['p', 'Whether you are choosing goat meat or lamb meat for a curry, most goat meat recipes start the same way. Here is how to cook goat curry for tender meat every time:'],
       ['ul', [
         'Marinate the pieces for at least two hours, ideally overnight, in yoghurt, ginger, garlic and spices.',
         'Brown the onions slowly until deep golden — this is where most of the curry\'s flavour comes from.',
@@ -180,7 +182,7 @@ export const POSTS = [
         'Choose [boned and rolled shoulder](/product/goat-shoulder-boned-and-rolled/) when you want slow-roast tenderness with easy carving.',
       ]],
       ['h2', 'How much goat per person?'],
-      ['p', 'How much goat per person you need depends on the cut and whether the bone is included. As a guide:'],
+      ['p', 'For diced goat meat recipes, how much goat per person you need depends on the cut and whether the bone is included. As a guide:'],
       ['ul', [
         'Bone-in curry cut: allow 300–350g per person.',
         'Boneless diced goat: allow 200–250g per person.',
@@ -216,14 +218,14 @@ export const POSTS = [
     ],
   },
   {
-    slug: 'cooking-camel-buffalo-kangaroo',
-    title: 'Cooking Camel, Water Buffalo and Kangaroo: A Beginner\'s Guide',
-    seoTitle: 'Cooking Camel, Buffalo and Kangaroo',
+    slug: 'cooking-camel-meat-buffalo-kangaroo',
+    title: `Cooking Camel Meat, Water Buffalo and Kangaroo: A Beginner's Guide`,
+    seoTitle: 'Cooking Camel Meat, Buffalo & Kangaroo: Easy Guide',
     date: '2026-10-09',
     updated: '2026-10-13',
-    kw: 'halal camel meat',
+    kw: 'camel meat',
     keywords: [
-      { kw: 'camel meat', intent: 'I', vol: 720, kd: 10 },
+      { kw: 'camel burger', intent: 'I', vol: 590, kd: 13 },
       { kw: 'is kangaroo halal', intent: 'I', vol: 720, kd: 13 },
       { kw: 'kangaroo recipes', intent: 'I', vol: 720, kd: 11 },
       { kw: 'kangaroo steak recipe', intent: 'I', vol: 590, kd: 10 },
@@ -233,7 +235,7 @@ export const POSTS = [
       { kw: 'buy kangaroo meat', intent: 'T', vol: 110, kd: 17 },
     ],
     excerpt:
-      'Cooking camel, water buffalo and kangaroo: lean, flavourful and easy to get wrong. How to keep each one tender, with the right cut for every dish.',
+      'Cooking camel meat, water buffalo and kangaroo: lean, flavourful and easy to get wrong. How to keep each one tender, with the right cut for every dish.',
     body: [
       ['p', 'Cooking camel, water buffalo and kangaroo is easier than it looks once you know one thing: all three are much leaner than beef and lamb. Lean meat cooks faster and dries out sooner, so the rules are simple — cook it either very quickly or very slowly, and never in between. This guide covers each meat in turn, with the best cuts, cooking methods and a few simple recipes.'],
       ['h2', 'Why lean meats need different cooking'],
@@ -249,7 +251,7 @@ export const POSTS = [
         'Cover and cook for two and a half to three hours, until the meat is tender, then season and serve with rice.',
       ]],
       ['h2', 'Buffalo meat: Australia\'s leaner beef alternative'],
-      ['p', 'Australian buffalo meat comes from water buffalo, and it tastes similar to beef but cleaner and slightly sweeter, with less fat. Use [buffalo mince](/product/buffalo-mince/) anywhere you would use beef mince. [Buffalo porterhouse](/product/buffalo-porterhouse-steaks/) and thin-cut [buffalo asado ribs](/product/buffalo-asado-ribs/) need a hot grill and a short cook, while [diced buffalo](/product/diced-buffalo-boneless/) and [buffalo osso buco](/product/buffalo-osso-buco/) reward slow braising for nihari and rendang.'],
+      ['p', 'Buffalo meat Australia-wide comes from water buffalo, and it tastes similar to beef but cleaner and slightly sweeter, with less fat. Use [buffalo mince](/product/buffalo-mince/) anywhere you would use beef mince. [Buffalo porterhouse](/product/buffalo-porterhouse-steaks/) and thin-cut [buffalo asado ribs](/product/buffalo-asado-ribs/) need a hot grill and a short cook, while [diced buffalo](/product/diced-buffalo-boneless/) and [buffalo osso buco](/product/buffalo-osso-buco/) reward slow braising for nihari and rendang.'],
       ['h2', 'Kangaroo: the leanest red meat'],
       ['p', 'Kangaroo has very little fat — typically even less than chicken breast — so overcooking is the main risk. It has a rich, slightly gamey flavour that suits bold seasoning such as pepper, garlic, juniper and smoked paprika.'],
       ['h3', 'Is kangaroo halal?'],
@@ -274,7 +276,7 @@ export const POSTS = [
       ['ul', [
         'Quick and hot (grill or pan): camel and buffalo porterhouse, scotch fillet and eye fillet; kangaroo loin fillet and rump steaks; thin-cut buffalo asado ribs.',
         'Low and slow (braise or stew): diced camel and diced buffalo; camel neck; camel and buffalo osso buco.',
-        'Everyday cooking: camel and buffalo mince for burgers, kofta and sauces — add a little oil or grated onion to keep them moist.',
+        'Everyday cooking: camel and buffalo mince for a camel burger, kofta and sauces — add a little oil or grated onion to keep them moist.',
         'Showpiece: the camel or buffalo tomahawk, reverse-seared and carved at the table.',
       ]],
       ['h2', 'Thawing and storing lean meats'],
@@ -287,12 +289,12 @@ export const POSTS = [
     ],
   },
   {
-    slug: 'lamb-cuts-guide',
-    title: 'Halal Lamb Cuts Guide: Cutlets, Legs, Shanks and Curry Pieces',
-    seoTitle: 'Halal Lamb Cuts Guide: Cutlets, Legs, Shanks, Curry',
+    slug: 'lamb-cuts-australia-guide',
+    title: 'Lamb Cuts Australia: Halal Cutlets, Legs, Shanks and Curry Pieces',
+    seoTitle: 'Lamb Cuts Australia: The Complete Halal Guide',
     date: '2026-10-09',
     updated: '2026-10-13',
-    kw: 'halal lamb cuts',
+    kw: 'lamb cuts australia',
     keywords: [
       { kw: 'slow roast lamb slow cooker', intent: 'I', vol: 2900, kd: 12 },
       { kw: 'lamb casserole recipe', intent: 'I', vol: 1300, kd: 13 },
@@ -304,7 +306,7 @@ export const POSTS = [
       { kw: 'buy lamb', intent: 'T', vol: 90, kd: 10 },
     ],
     excerpt:
-      'Halal lamb cuts from frenched cutlets to whole carcasses — which lamb cut to buy for grilling, roasting, curries and family events.',
+      'Lamb cuts Australia guide: halal cuts from frenched cutlets to whole carcasses, and which lamb cut to buy for grilling, roasting, curries and events.',
     body: [
       ['p', 'Halal lamb cuts cover everything from delicate frenched cutlets to whole carcasses for a celebration, and lamb is one of the most versatile meats in a halal kitchen. The trick is matching the cut to the cooking method: tender cuts from the loin and rack for fast cooking, and hard-working cuts from the shoulder, neck and shank for slow cooking. This guide explains the main lamb cuts, how to cook them and how to get the best value.'],
       ['h2', 'How a lamb carcass is divided'],
@@ -320,7 +322,7 @@ export const POSTS = [
         'For a slow-cooked version, brown the chops and braise them in a spiced tomato sauce for 90 minutes.',
       ]],
       ['h2', 'For roasting: leg and shoulder'],
-      ['p', 'A [bone-in leg of lamb](/product/lamb-leg-bone-in/) is the classic roast and the base for raan. The [boned and rolled leg](/product/lamb-leg-boned-and-rolled/) carves more easily, and the [butterflied leg](/product/lamb-leg-butterflied/) is made for the barbecue. [Rolled lamb shoulder](/product/lamb-shoulder-boned-and-rolled/) has more fat and is perfect for slow roasting and homemade shawarma.'],
+      ['p', 'A [bone-in leg of lamb](/product/leg-of-lamb-for-sale-bone-in/) is the classic roast and the base for raan. The [boned and rolled leg](/product/lamb-leg-boned-and-rolled/) carves more easily, and the [butterflied leg](/product/lamb-leg-butterflied/) is made for the barbecue. [Rolled lamb shoulder](/product/lamb-shoulder-boned-and-rolled/) has more fat and is perfect for slow roasting and homemade shawarma.'],
       ['h3', 'Slow roast lamb: slow cooker method'],
       ['p', 'A slow roast lamb in the slow cooker is one of the easiest ways to cook a shoulder or half leg:'],
       ['ul', [
@@ -330,7 +332,7 @@ export const POSTS = [
         'Rest for 15 minutes, shred or carve, and spoon over the cooking juices.',
       ]],
       ['h2', 'For slow cooking: shanks, neck and curry pieces'],
-      ['p', '[Lamb shanks](/product/lamb-shanks/) braised for three hours fall off the bone. [Lamb neck](/product/buy-lamb-neck-online/) is the cut for curries, biryani and mansaf — the bone and collagen give the sauce body.'],
+      ['p', '[Lamb shanks](/product/lamb-shanks/) braised for three hours fall off the bone. [Lamb neck](/product/lamb-neck/) is the cut for curries, biryani and mansaf — the bone and collagen give the sauce body.'],
       ['h3', 'Slow cooked lamb shanks: slow cooker method'],
       ['p', 'For slow cooked lamb shanks in the slow cooker, brown the shanks, then place them in the cooker with onion, garlic, a tin of tomatoes, stock and your choice of spices. Cook on low for seven to eight hours, until the meat slides off the bone, and reduce the sauce on the stove if it is too thin.'],
       ['h3', 'An easy lamb casserole recipe'],
@@ -360,6 +362,8 @@ export const POSTS = [
       ['p', 'Further reading: [Meat & Livestock Australia](https://www.mla.com.au/) publishes information on the Australian lamb industry, and [AUS-MEAT](https://www.ausmeat.com.au/) maintains the standard names for lamb cuts.'],
     ],
   },
+  // Recipe and "which cut" guides (blog plan posts 1–9, 11–16) live in posts-guides.js.
+  ...GUIDE_POSTS,
 ]
 
 export const postBySlug = (slug) => POSTS.find((x) => x.slug === slug)

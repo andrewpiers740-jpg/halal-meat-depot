@@ -1,4 +1,4 @@
-import { SITE, containsFocus } from '../config/site.js'
+import { SITE, containsExact } from '../config/site.js'
 
 // Image SEO (owner rule, 2026-10-13): the focus keyword of the product or page an image
 // belongs to appears in the image's alt, title, caption and description.
@@ -11,7 +11,7 @@ const cap = (s) => s.replace(/\b\w/g, (m) => m.toUpperCase())
 const halal = (f) => (/\bhalal\b/i.test(f) ? f : `halal ${f}`)
 
 export function productImageSeo(p) {
-  const named = containsFocus(p.name, p.focus)
+  const named = containsExact(p.name, p.focus)
   const subject = named ? `Halal ${p.name}` : `${cap(halal(p.focus))} (${p.name})`
   const caption = `${subject}, ${p.unit}`
   return {

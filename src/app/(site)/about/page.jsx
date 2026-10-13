@@ -8,7 +8,7 @@ import { organizationSchema, speakableSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'About Halal Meat Depot | Greenacre, Sydney Since 2021',
+  title: 'About Halal Meat Depot | Fresh Halal Meat Since 2021',
   description: 'About Halal Meat Depot: a Greenacre, Sydney halal meat supplier established in 2021, certified by Halal Control Australia, delivering Australia-wide.',
   path: '/about/',
 })
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <p>
               Every product we sell is certified halal by {SITE.certifier}. We use one certifier for everything so there is never any doubt
               about who stands behind the halal status of your meat. Read more on our{' '}
-              <Link href="/halal-certification/">halal certification page</Link>.
+              <Link href="/halal-certified-meat/">halal certification page</Link>.
             </p>
             <h2>Meats that are hard to find in one place</h2>
             <p>

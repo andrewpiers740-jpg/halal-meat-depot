@@ -51,7 +51,7 @@ export default function Footer() {
             <h2>Company</h2>
             <ul>
               <li><Link href="/about/">About us</Link></li>
-              <li><Link href="/halal-certification/">Halal certification</Link></li>
+              <li><Link href="/halal-certified-meat/">Halal certification</Link></li>
               <li><Link href="/halal-meat-wholesale/">Wholesale accounts</Link></li>
               <li><Link href="/whole-lamb-aqeeqah-qurbani/">Aqeeqah &amp; Qurbani</Link></li>
               <li><Link href="/wagyu-steak/">Wagyu steak</Link></li>

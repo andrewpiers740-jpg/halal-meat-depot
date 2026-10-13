@@ -57,7 +57,7 @@ ${ZONES_BY_DISTANCE.map((z) => `  - ${z.name} (${z.distance}): $${z.priorityPric
 
 ## What makes ${SITE.name} different
 
-- One certifier (${SITE.certifier}) across the entire range — certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}, published at ${U}/halal-certification/
+- One certifier (${SITE.certifier}) across the entire range — certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}, published at ${U}/halal-certified-meat/
 - Bulk packs, whole carcasses and trade cartons priced per pack, with price per kilo shown
 - Camel, duck, kangaroo and water buffalo alongside beef, lamb, goat and chicken in one order
 - Whole lamb and goat cut to the customer's instructions
@@ -69,7 +69,7 @@ ${catLines.join('\n')}
 ## Key pages
 
 - [Shop all halal meat](${U}/halal-meat-shop/): full range by category
-- [Halal certification](${U}/halal-certification/): certifier and the published certificate
+- [Halal certification](${U}/halal-certified-meat/): certifier and the published certificate
 - [Wholesale](${U}/halal-meat-wholesale/): halal meat wholesaler for restaurants, caterers and butchers — trade cartons and weekly accounts
 - [Aqeeqah & Qurbani](${U}/whole-lamb-aqeeqah-qurbani/): whole and half lamb and goat carcasses for Aqeeqah and Qurbani
 - [About](${U}/about/): company story and facts
@@ -111,7 +111,7 @@ write(pub('llms.txt'), llms)
     '## Facts',
     '',
     `- Legal entity: ${SITE.legalName} (ABN ${SITE.abn}), ${SITE.addressLine}`,
-    `- Halal certification: ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil} — ${U}/halal-certification/`,
+    `- Halal certification: ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil} — ${U}/halal-certified-meat/`,
     `- Delivery only (no pickup), Australia-wide. Minimum order $${SITE.minOrder}; free delivery over $${SITE.freeShipOver}, otherwise $${SITE.flatShip}.`,
     `- Payment: PayID, bank transfer or crypto (${SITE.cryptoDiscountPct}% off the meat total with crypto). Phone/WhatsApp ${SITE.phone}.`,
     `- Returns: no change-of-mind returns on fresh meat; problems reported within 48 hours are replaced or refunded — ${U}/refund/`,
@@ -191,7 +191,7 @@ const skills = [
   ['search-products', 'navigation', 'Search products by name, cut or category', isVercel ? `${U}/api/search/?q={query}` : `${U}/search/?q={query}`],
   ['prepare-order', 'commerce', `Prepare a cart for a human to check out. Minimum order $${SITE.minOrder} AUD.`, isVercel ? `${U}/api/mcp/` : `${U}/cart/`],
   ['wholesale-inquiry', 'commerce', 'Wholesale cartons and weekly trade accounts', `${U}/halal-meat-wholesale/`],
-  ['halal-certification', 'content', `Halal certification details (${SITE.certifier})`, `${U}/halal-certification/`],
+  ['halal-certification', 'content', `Halal certification details (${SITE.certifier})`, `${U}/halal-certified-meat/`],
   ['guides', 'content', 'Guides to halal meat cuts and cooking', `${U}/blog/`],
   ['contact', 'support', 'Contact by WhatsApp, phone or form', `${U}/contact/`],
 ].map(([name, type, description, url]) => ({ name, type, description, url, sha256: sha(`${name}|${url}`) }))

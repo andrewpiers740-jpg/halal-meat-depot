@@ -8,7 +8,7 @@ import { pageMeta } from '@/lib/meta'
 import { productImageSeo } from '@/lib/imageSeo'
 
 export const metadata = pageMeta({
-  title: 'Halal Meat Shop | Buy Halal Meat Online Australia-Wide',
+  title: 'Halal Meat Shop | Buy Fresh Halal Meat Online Australia',
   description: `Halal meat shop online: ${PRODUCTS.length} beef, lamb, goat, chicken, camel, duck, kangaroo, buffalo and offal packs at depot prices, certified by Halal Control Australia.`,
   path: '/halal-meat-shop/',
 })
@@ -65,7 +65,7 @@ export default function ShopPage() {
             <h2>Need more help choosing?</h2>
             <p className="muted">
               Read our <Link href="/blog/guide-to-halal-beef-cuts/">guide to halal beef cuts</Link>, see{' '}
-              <Link href="/halal-certification/">how our meat is certified and regulated</Link>, check the <Link href="/faq/">FAQ</Link>, or open a{' '}
+              <Link href="/halal-certified-meat/">how our meat is certified and regulated</Link>, check the <Link href="/faq/">FAQ</Link>, or open a{' '}
               <Link href="/halal-meat-wholesale/">wholesale account</Link> for weekly volume pricing.
             </p>
           </div>

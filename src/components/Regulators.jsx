@@ -10,7 +10,7 @@ export default function Regulators({ cat, title = 'Regulation and standards', id
       <h2 id={id}>{title}</h2>
       <p className="muted">
         Meat sold in Australia is regulated for food safety and labelling by the bodies below. Halal certification of everything we sell is by{' '}
-        {SITE.certifier} — <Link href="/halal-certification/">how our meat is certified</Link>.
+        {SITE.certifier} — <Link href="/halal-certified-meat/">how our meat is certified</Link>.
       </p>
       <ul>
         {list.map((r) => (

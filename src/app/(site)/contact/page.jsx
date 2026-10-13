@@ -11,7 +11,7 @@ import { pageMeta } from '@/lib/meta'
 import { waChatLink } from '@/lib/whatsapp'
 
 export const metadata = pageMeta({
-  title: 'Contact Halal Meat Depot | Greenacre, Sydney',
+  title: 'Contact Halal Meat Depot | Fresh Halal Meat, Greenacre',
   description: 'Contact Halal Meat Depot in Greenacre, Sydney for orders, wholesale accounts, event and bulk orders. Call, WhatsApp, email or send us a message.',
   path: '/contact/',
 })

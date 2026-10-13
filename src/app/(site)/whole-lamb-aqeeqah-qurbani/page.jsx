@@ -14,7 +14,7 @@ import { waChatLink } from '@/lib/whatsapp'
 // the carcass products, their prices, the certifier and delivery rules. No claims
 // about slaughter method or timing — those details come from the owner.
 export const metadata = pageMeta({
-  title: 'Whole Lamb & Goat for Aqeeqah and Qurbani | Halal Meat Depot',
+  title: 'Fresh Whole Lamb & Goat for Aqeeqah and Qurbani | HMD',
   description:
     'Whole lamb or goat for Aqeeqah and Qurbani — whole and half carcasses, certified halal by Halal Control Australia and delivered Australia-wide.',
   path: '/whole-lamb-aqeeqah-qurbani/',
@@ -90,7 +90,7 @@ export default function AqeeqahQurbaniPage() {
             friends and those in need.
           </p>
           <p>
-            Every carcass we supply is certified halal by {SITE.certifier} — see our <Link href="/halal-certification/">halal certificate</Link>.
+            Every carcass we supply is certified halal by {SITE.certifier} — see our <Link href="/halal-certified-meat/">halal certificate</Link>.
             For rulings on your own Aqeeqah or Qurbani, please follow the guidance of your local imam or scholar.
           </p>
         </div>

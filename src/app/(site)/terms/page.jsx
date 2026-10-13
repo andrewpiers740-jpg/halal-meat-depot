@@ -3,7 +3,7 @@ import { SITE } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 
 export const metadata = pageMeta({
-  title: 'Terms of Sale | Halal Meat Depot',
+  title: 'Terms of Sale: Simple Guide | Halal Meat Depot',
   description: 'Terms of sale for Halal Meat Depot: pricing in AUD, pack weights, minimum order, payment by PayID, bank transfer or crypto, delivery and liability.',
   path: '/terms/',
 })

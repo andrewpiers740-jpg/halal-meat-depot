@@ -4,7 +4,7 @@ import { LASTMOD } from '../config/lastmod.js'
 // Split sitemap: /sitemap.xml index → /sitemap/0..3.xml (pages, products,
 // categories, blog). Product entries carry <image:image>. Every noindex page
 // (cart, checkout, account, search, thank-you, order/*, admin) is excluded.
-export const STATIC_PAGES = ['/', '/halal-meat-shop/', '/wagyu-steak/', '/halal-meat-wholesale/', '/whole-lamb-aqeeqah-qurbani/', '/halal-certification/', '/about/', '/contact/', '/faq/', '/blog/', '/halal-meat-delivery/', '/refund/', '/terms/', '/privacy/']
+export const STATIC_PAGES = ['/', '/halal-meat-shop/', '/wagyu-steak/', '/halal-meat-wholesale/', '/whole-lamb-aqeeqah-qurbani/', '/halal-certified-meat/', '/about/', '/contact/', '/faq/', '/blog/', '/halal-meat-delivery/', '/refund/', '/terms/', '/privacy/']
 
 export function sitemapEntries(id) {
   const now = new Date().toISOString()

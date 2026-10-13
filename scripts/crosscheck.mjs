@@ -5,7 +5,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs'
 import { resolve, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
-import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords } from '../src/config/site.js'
+import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, powerWordCount, POWER_WORDS } from '../src/config/site.js'
 import { TOOLS } from '../src/lib/tools.js'
 import { STATIC_PAGES } from '../src/lib/sitemaps.js'
 import { PRODUCT_KEYWORDS } from '../src/config/product-keywords.js'
@@ -104,18 +104,21 @@ const FOCUS = new Map([
   for (const p of PRODUCTS) {
     check(p.short && p.desc && PRODUCT_ABOUT[p.imageSlug], 'F10', `${p.slug}: missing short description, description or about copy`)
     const s = PRODUCT_SEO[p.imageSlug]
-    check(!s?.intent || /T|C/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
+    check(!s?.intent || s.ownerOk || /T|C/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
   }
   for (const [id, s] of Object.entries(CATEGORY_SEO)) check(/T|C/.test(s.intent || ''), 'F12', `category ${id}: primary keyword "${s.focus}" is not Transactional/Commercial`)
   const all = Object.values(PRODUCT_KEYWORDS).flat()
   const share = (i) => all.filter((k) => k.intent === i).length / all.length
-  check(Math.abs(share('T') - 0.45) <= 0.05 && Math.abs(share('C') - 0.45) <= 0.05 && Math.abs(share('I') - 0.1) <= 0.05, 'F10', `product keyword mix ${(share('T') * 100).toFixed(0)}/${(share('C') * 100).toFixed(0)}/${(share('I') * 100).toFixed(0)} — target 45/45/10`)
+  // Owner rule (2026-10-13): supporting keywords are EXACT phrases from the keyword files, so the 45/45/10
+  // T/C/I mix and the 5-keyword floor are targets the files can't always meet — reported, never padded.
+  const thin = PRODUCTS.filter((p) => (PRODUCT_KEYWORDS[p.imageSlug] || []).length < 5).length
+  console.log(`note: product keyword mix ${(share('T') * 100).toFixed(0)}/${(share('C') * 100).toFixed(0)}/${(share('I') * 100).toFixed(0)} T/C/I (target 45/45/10); ${thin} products have <5 supporting keywords because the files have no more relevant ones`)
   const text = (b) => b.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
   for (const post of POSTS) {
     const t = text(post.body)
     check(t.split(/\s+/).length >= 1000, 'F11', `${post.slug}: ${t.split(/\s+/).length} words (need 1,000+)`)
     const kw = post.keywords || []
-    for (const k of kw) check(containsFocus(t, k.kw), 'F11', `${post.slug}: keyword "${k.kw}" not used`)
+    for (const k of kw) check(containsExact(t, k.kw), 'F11', `${post.slug}: keyword "${k.kw}" not used`)
     const n = (i) => kw.filter((k) => k.intent === i).length / (kw.length || 1)
     check(kw.length >= 4 && Math.abs(n('I') - 0.5) <= 0.1 && Math.abs(n('C') - 0.25) <= 0.1 && Math.abs(n('T') - 0.25) <= 0.1, 'F11', `${post.slug}: keyword mix not 50/25/25 informational/commercial/transactional`)
   }
@@ -154,9 +157,12 @@ for (const path of pages) {
     const focus = FOCUS.get(path)
     if (!focus) fail('F1', `${path}: no focus keyword (src/config/seo.js)`)
     else {
-      check(containsFocus(decode(title), focus), 'F2', `${path}: focus "${focus}" missing from title "${decode(title)}"`)
-      check(containsFocus(d, focus), 'F3', `${path}: focus "${focus}" missing from meta description`)
-      if (path !== '/') check(containsFocus(path.split('/').filter(Boolean).pop(), focus), 'F4', `${path}: focus "${focus}" missing from slug`)
+      check(containsExact(decode(title), focus), 'F2', `${path}: focus "${focus}" missing from title "${decode(title)}"`)
+      check(containsExact(d, focus), 'F3', `${path}: focus "${focus}" missing from meta description`)
+      if (path !== '/') check(containsExact(path.split('/').filter(Boolean).pop(), focus.replace(/'/g, ' ').replace(/&/g, 'and')), 'F4', `${path}: focus "${focus}" missing from slug`)
+      // Owner rule (2026-10-13): 1–2 SEO power words in every title.
+      const pw = powerWordCount(decode(title))
+      check(pw >= 1 && pw <= 2, 'F13', `${path}: ${pw} power words in title "${decode(title)}" (need 1–2 of: ${POWER_WORDS.join(', ')})`)
       // Image SEO (owner rule, 2026-10-13): every content <figure> image carries the focus keyword
       // of the product/page it shows in alt, title and caption; JSON-LD carries it in an image description.
       const attr = (tag, name) => decode((tag.match(new RegExp(`\\s${name}="([^"]*)"`)) || [])[1] || '')
@@ -167,30 +173,30 @@ for (const path of pages) {
         const isTile = /class="cat-figure"/.test(inner) || (href && FOCUS.has(href) && href !== path && /cat-label/.test(inner))
         const want = isTile ? FOCUS.get(href) : focus
         const cap = decode(((inner.match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/) || [])[1] || '').replace(/<[^>]+>/g, ' '))
-        check(containsFocus(attr(tag, 'alt'), want), 'F6', `${path}: image alt missing focus "${want}"`)
-        check(containsFocus(attr(tag, 'title'), want), 'F6', `${path}: image title missing focus "${want}"`)
-        check(containsFocus(cap, want), 'F6', `${path}: image caption missing focus "${want}"`)
+        check(containsExact(attr(tag, 'alt'), want), 'F6', `${path}: image alt missing focus "${want}"`)
+        check(containsExact(attr(tag, 'title'), want), 'F6', `${path}: image title missing focus "${want}"`)
+        check(containsExact(cap, want), 'F6', `${path}: image caption missing focus "${want}"`)
       }
       // Owner rules (2026-10-13): focus keyword in the H1; product descriptions lead with it.
       const heads = (lvl, html) => [...html.matchAll(new RegExp(`<h${lvl}[^>]*>([\\s\\S]*?)</h${lvl}>`, 'g'))].map((m) => decode(m[1].replace(/<[^>]+>/g, ' ')))
-      check(heads(1, body).some((x) => containsFocus(x, focus)), 'F9', `${path}: H1 missing focus "${focus}"`)
+      check(heads(1, body).some((x) => containsExact(x, focus)), 'F9', `${path}: H1 missing focus "${focus}"`)
       if (path.startsWith('/product/')) {
         const p = PRODUCTS.find((x) => `/product/${x.slug}/` === path)
         const kws = (PRODUCT_KEYWORDS[p.imageSlug] || []).map((k) => k.kw)
         const desc = (body.match(/<section[^>]*class="prose product-description"[^>]*>([\s\S]*?)<\/section>/) || [])[1] || ''
         const text = decode(desc.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim()
         const words = text.split(' ')
-        check(containsFocus(words.slice(0, Math.ceil(words.length * 0.2)).join(' '), focus), 'F10', `${path}: focus "${focus}" not in the first 20% of the description`)
-        check(kws.length >= 5 && kws.length <= 10, 'F10', `${path}: ${kws.length} supporting keywords (need 5–10)`)
+        check(containsExact(words.slice(0, Math.ceil(words.length * 0.2)).join(' '), focus), 'F10', `${path}: focus "${focus}" not in the first 20% of the description`)
+        check(kws.length <= 10, 'F10', `${path}: ${kws.length} supporting keywords (max 10)`)
         const pageText = decode(body.replace(/<[^>]+>/g, ' '))
-        for (const k of kws) check(containsFocus(pageText, k), 'F10', `${path}: supporting keyword "${k}" not used`)
-        check(heads(2, desc).some((x) => containsFocus(x, focus)), 'F10', `${path}: description H2 missing focus`)
-        check(heads(3, desc).some((x) => containsFocus(x, focus) || kws.some((k) => containsFocus(x, k)) || containsFocus(x, focus.replace(/^buy | online$| price$| for sale$/g, ''))), 'F10', `${path}: no H3 with the focus or a supporting keyword`)
+        for (const k of kws) check(containsExact(pageText, k), 'F10', `${path}: supporting keyword "${k}" not used`)
+        check(heads(2, desc).some((x) => containsExact(x, focus)), 'F10', `${path}: description H2 missing focus`)
+        check(heads(3, desc).some((x) => containsExact(x, focus) || kws.some((k) => containsExact(x, k)) || containsExact(x, focus.replace(/^buy | online$| price$| for sale$/g, ''))), 'F10', `${path}: no H3 with the focus or a supporting keyword`)
       }
       if (figs.some(([, , inner]) => /<img\b/.test(inner) && !/class="cat-figure"/.test(inner))) {
         const ld = [...h.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]).join(' ')
         const descs = [...ld.matchAll(/"@type":"ImageObject"[^{}]*?"description":"([^"]*)"/g)].map((m) => m[1])
-        check(descs.some((x) => containsFocus(x, focus)), 'F7', `${path}: no JSON-LD image description containing focus "${focus}"`)
+        check(descs.some((x) => containsExact(x, focus)), 'F7', `${path}: no JSON-LD image description containing focus "${focus}"`)
       }
     }
     if (descs.has(desc)) fail('B-dup', `${path}: duplicate description with ${descs.get(desc)}`)
