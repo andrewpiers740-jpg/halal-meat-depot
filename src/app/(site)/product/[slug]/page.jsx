@@ -10,7 +10,7 @@ import Regulators from '@/components/Regulators'
 import { hasRealPhoto } from '@/lib/photos'
 import { productImageSeo } from '@/lib/imageSeo'
 import { productContent } from '@/lib/productContent'
-import { SITE, PRODUCTS, productBySlug, categoryBySlug, containsFocus } from '@/config/site'
+import { SITE, PRODUCTS, productBySlug, categoryBySlug, containsFocus, postBySlug } from '@/config/site'
 import { productSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
@@ -20,6 +20,16 @@ export const dynamicParams = false
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }))
+}
+
+// Blog guide each product links to (outbound) — gives every post inbound links from products.
+const GUIDE_BY_CAT = {
+  beef: 'guide-to-halal-beef-cuts',
+  lamb: 'lamb-cuts-guide',
+  goat: 'goat-curry-cuts-guide',
+  camel: 'cooking-camel-buffalo-kangaroo',
+  kangaroo: 'cooking-camel-buffalo-kangaroo',
+  'water-buffalo': 'cooking-camel-buffalo-kangaroo',
 }
 
 export async function generateMetadata({ params }) {
@@ -46,9 +56,12 @@ export default async function ProductPage({ params }) {
   const p = productBySlug(slug)
   if (!p) notFound()
   const cat = categoryBySlug(p.cat)
-  const related = PRODUCTS.filter((x) => x.cat === p.cat && x.slug !== p.slug)
-    .sort((a, b) => (a.sub === p.sub ? -1 : 0) - (b.sub === p.sub ? -1 : 0))
-    .slice(0, 3)
+  // Related products: the neighbours either side in the category list, so every product is
+  // linked from at least three others (inbound links), not just the first few in each category.
+  const siblings = PRODUCTS.filter((x) => x.cat === p.cat)
+  const at = siblings.findIndex((x) => x.slug === p.slug)
+  const related = [...new Set([1, 2, -1, 3].map((d) => siblings[(at + d + siblings.length) % siblings.length]))].filter((x) => x && x.slug !== p.slug).slice(0, 3)
+  const guide = postBySlug(GUIDE_BY_CAT[p.cat] || 'what-halal-certification-means-australia')
   const enquire = waLink(`I have a question about ${p.name} (${p.unit}).`)
   const img = productImageSeo(p)
   const copy = productContent(p)
@@ -103,7 +116,7 @@ export default async function ProductPage({ params }) {
               </div>
               <ul className="check-list">
                 <li>
-                  <Icon name="truck" /> Delivered Australia-wide — free over ${SITE.freeShipOver}, otherwise ${SITE.flatShip}
+                  <Icon name="truck" /> Delivered Australia-wide in {SITE.delivery.transitDays[0]}–{SITE.delivery.transitDays[1]} days — free over ${SITE.freeShipOver}, otherwise ${SITE.flatShip}
                 </li>
                 <li>
                   <Icon name="chilled" /> Packed chilled and dispatched once payment clears
@@ -135,6 +148,19 @@ export default async function ProductPage({ params }) {
               </p>
               <h3>{copy.cookHeading}</h3>
               <p>{copy.cook}</p>
+              <p>
+                More in our guide: <Link href={`/blog/${guide.slug}/`}>{guide.title}</Link>
+                {p.sub === 'Wagyu MB5+ & MB9+' && (
+                  <>
+                    {' '}· See all <Link href="/wagyu-steak/">Wagyu steak</Link>
+                  </>
+                )}
+                {/carcass|catering pack/i.test(p.name) && (p.cat === 'lamb' || p.cat === 'goat' || p.slug === 'whole-lamb-catering-pack') && (
+                  <>
+                    {' '}· <Link href="/whole-lamb-aqeeqah-qurbani/">Whole lamb and goat for Aqeeqah and Qurbani</Link>
+                  </>
+                )}
+              </p>
             </section>
             <aside className="card card--tint" aria-labelledby="help-title">
               <h2 id="help-title" style={{ fontSize: '1.2rem' }}>

@@ -27,7 +27,7 @@ export default function ShippingPage() {
         ['h2', 'When your order is dispatched'],
         ['p', 'After you place an order we email you the payment details for the method you chose. Your order is confirmed once payment is received. We then pack it chilled and confirm the delivery date with you by email, phone or WhatsApp before it leaves our depot.'],
         ['h2', 'Delivery times'],
-        ['p', 'Delivery times depend on where you are in Australia. We tell you the expected delivery date before dispatch. If we cannot deliver to your address, we will contact you before you pay, or refund you in full if you have already paid.'],
+        ['p', `Standard delivery takes ${SITE.delivery.transitDays[0]}–${SITE.delivery.transitDays[1]} days, depending on where you are in Australia. We tell you the expected delivery date before dispatch. If we cannot deliver to your address, we will contact you before you pay, or refund you in full if you have already paid.`],
         ['h2', 'Receiving your delivery'],
         ['p', 'Fresh meat is perishable. Please make sure someone is available to receive the delivery, or leave clear instructions in the order notes for a safe, shaded place. Refrigerate or freeze your order as soon as it arrives, and check it straight away.'],
         ['h2', 'Incorrect address or missed delivery'],

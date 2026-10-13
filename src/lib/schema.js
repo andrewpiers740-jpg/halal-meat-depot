@@ -3,6 +3,7 @@
 // Emails are deliberately NOT included (spam-scraper hygiene); phone is.
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '../config/site.js'
 import { productImageSeo, imageObject } from './imageSeo.js'
+import { PRODUCT_KEYWORDS } from '../config/product-keywords.js'
 
 const logo = () => `${SITE.url}/images/logo.svg`
 
@@ -99,6 +100,8 @@ export function productSchema(p) {
     description: `${p.short} ${p.desc}`,
     image: p.images.map((img) => imageObject(`${SITE.url}/images/products/${img}`, productImageSeo(p))),
     sku: p.slug,
+    // Keyword data: the product's focus keyword plus its supporting keywords (src/config/product-keywords.js).
+    keywords: [p.focus, ...(PRODUCT_KEYWORDS[p.imageSlug] || []).map((k) => k.kw)].join(', '),
     category: cat?.name,
     brand: { '@type': 'Brand', name: SITE.name },
     offers: {
@@ -114,6 +117,11 @@ export function productSchema(p) {
         '@type': 'OfferShippingDetails',
         shippingRate: { '@type': 'MonetaryAmount', value: SITE.flatShip, currency: SITE.currency },
         shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: { '@type': 'QuantitativeValue', minValue: SITE.delivery.handlingDays[0], maxValue: SITE.delivery.handlingDays[1], unitCode: 'DAY' },
+          transitTime: { '@type': 'QuantitativeValue', minValue: SITE.delivery.transitDays[0], maxValue: SITE.delivery.transitDays[1], unitCode: 'DAY' },
+        },
       },
       // Mirrors the published Refund & Returns Policy: no change-of-mind returns on fresh meat
       // (faulty/incorrect items are replaced or refunded under the ACL — see /refund/).
@@ -151,6 +159,7 @@ export function articleSchema(post) {
     publisher: { '@type': 'Organization', name: SITE.name, logo: { '@type': 'ImageObject', url: logo() } },
     mainEntityOfPage: `${SITE.url}/blog/${post.slug}/`,
     about: { '@type': 'Thing', name: post.kw },
+    ...(post.keywords ? { keywords: post.keywords.map((k) => k.kw).join(', ') } : {}),
   }
 }
 

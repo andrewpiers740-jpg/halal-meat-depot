@@ -85,6 +85,11 @@ export const SITE = {
   minOrder: 250,
   freeShipOver: 500,
   flatShip: 25,
+  // Delivery times (owner, 2026-10-13): standard "Free Delivery" 2–5 days in transit; orders are packed
+  // and dispatched once payment clears (0–1 day). Used on product pages and in Product schema.
+  // "Priority Delivery (24 hours)" is NOT listed until its price and coverage are confirmed and it
+  // exists at checkout — schema must match what customers can actually buy.
+  delivery: { transitDays: [2, 5], handlingDays: [0, 1] },
   cryptoDiscountPct: 10,
   deliveryArea: 'Australia-wide',
   pickupAvailable: false, // delivery only — the depot address is the business address, not a pickup point

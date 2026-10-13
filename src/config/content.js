@@ -72,6 +72,7 @@ export const POSTS = [
       ['h2', 'Halal certification and food safety are separate'],
       ['p', 'Halal certification is about religious requirements; food safety is regulated separately. In New South Wales, meat businesses are licensed and audited by the NSW Food Authority, and national food standards are set by Food Standards Australia New Zealand. A trustworthy supplier will hold both — a current halal certificate and the food safety licences required for its business — and will be open about each.'],
       ['p', 'If you have a question about any product, [contact us](/contact/) or message us on WhatsApp before you order — we are happy to send the certificate details for your records.'],
+      ['p', 'Further reading: [Halal Control Australia](https://www.halalcontrol.com.au/), our certifier; the [NSW Food Authority](https://www.foodauthority.nsw.gov.au/industry/meat) on licensing meat businesses; and the Australian Government\'s [halal red meat export program](https://www.agriculture.gov.au/biosecurity-trade/export/controlled-goods/meat/exporting-halal-red-meat-and-products).'],
     ],
   },
   {
@@ -131,6 +132,7 @@ export const POSTS = [
       ['p', 'Keep fresh beef in the coldest part of the fridge and cook steaks within a few days. For bulk packs, divide the meat into meal-sized portions, wrap tightly to keep air out and freeze flat so it thaws evenly. Always thaw beef in the fridge overnight rather than on the bench, and never refreeze meat that has been thawed raw.'],
       ['h2', 'Buying whole primals saves money'],
       ['p', 'If you run a kitchen, buying whole primals and portioning them yourself is almost always cheaper per kilo than buying cut steaks — and you control the thickness. Our [wholesale cartons](/shop/bulk-meat-boxes/) include cryovac rump, striploin and brisket by the carton. Browse the full [halal beef range](/shop/halal-beef/) to compare every cut, or open a [halal meat wholesale](/halal-meat-wholesale/) account for regular orders.'],
+      ['p', 'Further reading: [AUS-MEAT](https://ausmeat.com.au/) maintains the national meat language — the standard cut names and marble scores used across the Australian beef industry — and [Meat & Livestock Australia](https://www.mla.com.au/) publishes industry information on Australian beef.'],
     ],
   },
   {
@@ -210,6 +212,7 @@ export const POSTS = [
       ['p', 'For weddings, Aqeeqah and community events, a [whole goat carcass](/product/whole-goat-carcass/) cut to your instructions is usually the best value. You choose the mix — curry pieces, legs for roasting, chops for the grill. A [half goat](/product/half-goat-carcass/) suits a family gathering, and for really large functions our 20kg [goat catering pack](/product/goat-curry-cut-catering-pack/) gives you curry cut in one order. See our page on [whole lamb and goat for Aqeeqah and Qurbani](/whole-lamb-aqeeqah-qurbani/) for event orders.'],
       ['h2', 'Halal goat meat for sale online'],
       ['p', 'All our goat meat for sale is certified halal by Halal Control Australia and delivered Australia-wide from our Greenacre, Sydney depot. Browse the full [goat range](/shop/goat-meat-for-sale/) for legs, shoulders, racks, ribs and curry cuts, or [message us](/contact/) to plan quantities for an event.'],
+      ['p', 'Further reading: [Meat & Livestock Australia](https://www.mla.com.au/) covers the Australian goat meat industry, and [Food Standards Australia New Zealand](https://www.foodstandards.gov.au/) sets the national standards for producing and processing meat.'],
     ],
   },
   {
@@ -280,6 +283,7 @@ export const POSTS = [
       ['p', 'Mild camel meat suits warm Middle Eastern spice blends: cumin, coriander, cardamom, cinnamon and black lime. Buffalo takes the same seasonings as beef — garlic, pepper, rosemary or a classic curry masala. Kangaroo stands up to stronger flavours such as cracked pepper, juniper, smoked paprika and a splash of pomegranate molasses. Whatever you choose, salt the meat just before it goes in the pan so it does not draw out moisture.'],
       ['h2', 'Where to buy camel, buffalo and kangaroo meat'],
       ['p', 'Most butchers do not stock these meats, which is why many customers buy kangaroo meat, camel and buffalo online. Our kangaroo meat for sale, along with camel and water buffalo, is certified halal by Halal Control Australia and delivered Australia-wide from our Greenacre, Sydney depot. Explore the [camel meat](/shop/camel-meat-australia/), [water buffalo](/shop/buffalo-meat/) and [kangaroo](/shop/kangaroo-meat-for-sale/) ranges, or [contact us](/contact/) with any questions before you order.'],
+      ['p', 'Further reading: the [NSW kangaroo management program](https://www.environment.nsw.gov.au/topics/animals-and-plants/wildlife-management/kangaroo-management) explains how kangaroo harvesting is regulated, and [Food Standards Australia New Zealand](https://www.foodstandards.gov.au/) sets national meat standards.'],
     ],
   },
   {
@@ -353,6 +357,7 @@ export const POSTS = [
       ['p', 'For family events, Aqeeqah or simply stocking the freezer, a [whole lamb](/product/whole-lamb-carcass/) or [half lamb](/product/half-lamb-carcass/) cut to your instructions is the best way to buy lamb in bulk. Tell us your preferred cuts in the order notes and we pack it the way you want. Our page on [whole lamb and goat for Aqeeqah and Qurbani](/whole-lamb-aqeeqah-qurbani/) explains event orders.'],
       ['h2', 'Halal lamb delivered Australia-wide'],
       ['p', 'All our halal lamb is certified by Halal Control Australia and delivered Australia-wide from Greenacre, Sydney. Browse the full [halal lamb range](/shop/lamb/) to compare cuts and prices per kilo.'],
+      ['p', 'Further reading: [Meat & Livestock Australia](https://www.mla.com.au/) publishes information on the Australian lamb industry, and [AUS-MEAT](https://ausmeat.com.au/) maintains the standard names for lamb cuts.'],
     ],
   },
 ]
