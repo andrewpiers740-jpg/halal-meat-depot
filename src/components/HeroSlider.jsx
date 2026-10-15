@@ -33,8 +33,6 @@ export default function HeroSlider({ slides, interval = 5000 }) {
             src={s.src}
             srcSet={s.srcSet}
             sizes="100vw"
-            width={1080}
-            height={s.height}
             alt={s.alt}
             title={s.title}
             loading={i === 0 ? 'eager' : 'lazy'}

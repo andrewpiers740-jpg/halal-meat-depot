@@ -889,8 +889,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/": {
-  "hash": "81f7629eaabbde07",
-  "date": "2026-10-15T19:41:12.407Z"
+  "hash": "92b27c4a030c92eb",
+  "date": "2026-10-15T20:49:12.592Z"
  },
  "/halal-meat-shop/": {
   "hash": "2dbaff0e5fa8cb78",
@@ -917,20 +917,20 @@ export const LASTMOD = {
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/contact/": {
-  "hash": "9b97b7fef28d24ad",
-  "date": "2026-10-15T19:41:12.407Z"
+  "hash": "3674a18e70a2ac47",
+  "date": "2026-10-15T20:49:12.592Z"
  },
  "/faq/": {
-  "hash": "140698894ff9b0c3",
-  "date": "2026-10-15T19:41:12.407Z"
+  "hash": "6f1c77837a03f0d0",
+  "date": "2026-10-15T20:49:12.592Z"
  },
  "/blog/": {
   "hash": "402a90131725e935",
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/halal-meat-delivery/": {
-  "hash": "1e3a9ce5647eeea7",
-  "date": "2026-10-15T19:41:12.407Z"
+  "hash": "c44f53725e0830dd",
+  "date": "2026-10-15T20:49:12.592Z"
  },
  "/refund/": {
   "hash": "cabc6a8e5f5d2db0",
