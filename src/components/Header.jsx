@@ -40,7 +40,7 @@ export default function Header({ siteName, nav, categories }) {
       <div className="container header-inner">
         <Link href="/" className="logo" aria-label={`${siteName} — home`}>
           {/* eslint-disable-next-line @next/next/no-img-element -- SVG logo served as-is */}
-          <img src="/images/logo-mark.svg" alt="" width={46} height={46} />
+          <img src="/images/logo-mark.svg" alt="Halal Meat Depot logo" width={46} height={46} />
           <span>
             Halal Meat Depot
             <small>Certified Halal · Sydney</small>
@@ -109,7 +109,7 @@ export default function Header({ siteName, nav, categories }) {
         </nav>
 
         <div className="header-actions">
-          <Link href="/search/" className="icon-btn" aria-label="Search products">
+          <Link href="/search/" prefetch={false} className="icon-btn" aria-label="Search products">
             <Icon name="search" />
           </Link>
           <Link href="/account/" className="icon-btn" aria-label="My account">

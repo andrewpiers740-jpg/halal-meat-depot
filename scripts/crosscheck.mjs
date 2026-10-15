@@ -258,7 +258,7 @@ for (const link of internalLinks) {
 }
 
 // ── agent files (B6) + placeholders (32) + compliance in agent files ──────
-const agentFiles = ['/llms.txt', '/auth.md', '/robots.txt', '/.well-known/api-catalog', '/.well-known/agent-skills/index.json', '/.well-known/mcp/server-card.json', '/.well-known/oauth-protected-resource', '/.well-known/oauth-authorization-server', '/.well-known/openid-configuration', '/.well-known/acp.json', '/.well-known/ucp', '/js/webmcp.js', `/${SITE.indexNowKey}.txt`]
+const agentFiles = ['/llms.txt', '/auth.md', '/robots.txt', '/.well-known/api-catalog', '/.well-known/agent-skills/index.json', '/.well-known/mcp/server-card.json', '/.well-known/oauth-protected-resource', '/.well-known/oauth-authorization-server', '/.well-known/openid-configuration', '/.well-known/acp.json', '/.well-known/ucp', '/.well-known/ard.json', '/.well-known/ai-catalog.json', '/.well-known/poppy.json', '/js/webmcp.js', `/${SITE.indexNowKey}.txt`]
 const agentText = {}
 for (const f of agentFiles) {
   const r = await get(f)
@@ -282,9 +282,18 @@ for (const f of agentFiles.filter((f) => f.startsWith('/.well-known/'))) {
   }
 }
 const ucp = JSON.parse(agentText['/.well-known/ucp'])
-check(ucp.ucp === '1.0', '28', '.well-known/ucp missing "ucp":"1.0"')
+// ucp.dev profile: `ucp` is an object with a YYYY-MM-DD version; services + payment_handlers present (may be empty).
+check(/^\d{4}-\d{2}-\d{2}$/.test(ucp.ucp?.version || '') && ucp.ucp.services && ucp.ucp.payment_handlers, '28', '.well-known/ucp is not a valid UCP profile')
 const skills = JSON.parse(agentText['/.well-known/agent-skills/index.json'])
-check(skills.$schema && skills.skills?.every((s) => s.name && s.type && s.description && s.url && s.sha256), '22', 'agent-skills index incomplete')
+check(skills.$schema && skills.skills?.every((s) => s.name && s.type && s.description && s.url && /^sha256:[0-9a-f]{64}$/.test(s.digest)), '22', 'agent-skills index incomplete')
+// Every SKILL.md resolves, starts with name/description frontmatter, and matches its published digest.
+for (const s of skills.skills || []) {
+  const r = await get(s.url.replace(SITE.url, ''))
+  check(r.status === 200 && r.text.startsWith(`---\nname: ${s.name}\ndescription: `), '22', `${s.url}: missing or bad SKILL.md`)
+  check('sha256:' + createHash('sha256').update(r.text).digest('hex') === s.digest, '22', `${s.url}: digest mismatch`)
+}
+const ard = JSON.parse(agentText['/.well-known/ard.json'])
+check(ard.entries?.length && ard.entries.every((e) => /^urn:air:/.test(e.identifier) && e.displayName && e.type && (e.url ? !e.data : e.data)), '22', 'ard.json entries incomplete')
 const card = JSON.parse(agentText['/.well-known/mcp/server-card.json'])
 check(card.serverInfo && card.transport && card.capabilities, '23', 'server-card missing blocks')
 check(/^# .+\n\n> /.test(agentText['/llms.txt']), '19', 'llms.txt not in llmstxt.org format')

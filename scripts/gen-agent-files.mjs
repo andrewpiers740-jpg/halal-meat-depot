@@ -185,17 +185,39 @@ write(pub('.well-known/api-catalog'), {
   ],
 })
 
-// ── E — agent-skills index ───────────────────────────────────────────────
-const skills = [
-  ['browse-products', 'navigation', 'Browse the halal meat catalogue by category', `${U}/halal-meat-shop/`],
-  ['search-products', 'navigation', 'Search products by name, cut or category', isVercel ? `${U}/api/search/?q={query}` : `${U}/search/?q={query}`],
-  ['prepare-order', 'commerce', `Prepare a cart for a human to check out. Minimum order $${SITE.minOrder} AUD.`, isVercel ? `${U}/api/mcp/` : `${U}/cart/`],
-  ['wholesale-inquiry', 'commerce', 'Wholesale cartons and weekly trade accounts', `${U}/halal-meat-wholesale/`],
-  ['halal-certification', 'content', `Halal certification details (${SITE.certifier})`, `${U}/halal-certified-meat/`],
-  ['guides', 'content', 'Guides to halal meat cuts and cooking', `${U}/blog/`],
-  ['contact', 'support', 'Contact by WhatsApp, phone or form', `${U}/contact/`],
-].map(([name, type, description, url]) => ({ name, type, description, url, sha256: sha(`${name}|${url}`) }))
-write(pub('.well-known/agent-skills/index.json'), { $schema: 'https://agentskills.io/schema/v0.2.0/index.json', name: SITE.name, url: U, description: SITE.tagline, skills })
+// ── E — agent-skills index (Agent Skills Discovery RFC v0.2.0) ────────────
+// Each skill is a real SKILL.md (YAML frontmatter name + description, then instructions) and the
+// index carries its digest as "sha256:<64 hex>" so agents can verify it before loading.
+const api = (path, html) => (isVercel ? `${U}${path}` : `${U}${html}`)
+const skillDocs = [
+  ['browse-products', 'Browse the Halal Meat Depot catalogue of certified halal meat by category, with prices per pack and per kg.', `Use this skill to find halal meat products on ${SITE.name}.
+
+1. List categories: GET ${api('/api/categories/', '/halal-meat-shop/')}
+2. List products (optionally ?category=<slug>): GET ${api('/api/products/', '/halal-meat-shop/')}
+3. Product detail: GET ${api('/api/products/<slug>/', '/product/<slug>/')} or open the product page URL returned.
+
+Prices are in ${SITE.currency} per pack, with an approximate per-kg price. Every product is certified halal by ${SITE.certifier}.`],
+  ['search-products', 'Search Halal Meat Depot products and cooking guides by name, cut or category.', `Search products and guides: GET ${api('/api/search/?q=<query>', '/search/?q=<query>')}
+
+Results include the product name, price, category and an absolute URL. Use the cut name a shopper would use (for example "lamb shanks", "beef brisket", "goat curry").`],
+  ['prepare-order', `Prepare a Halal Meat Depot order draft for a person to check out. Minimum order $${SITE.minOrder} ${SITE.currency}.`, `Agents may prepare an order; a person always completes it. Never collect payment or card details.
+
+- Order rules: minimum order $${SITE.minOrder} across the whole cart; Standard Delivery 2–5 days, free over $${SITE.freeShipOver}, otherwise $${SITE.flatShip}; Priority Delivery is priced by distance from Greenacre (postcode zones).
+- Payment: PayID, bank transfer or cryptocurrency (${SITE.cryptoDiscountPct}% off the meat total). Payment details are emailed after the order is placed.
+${isVercel ? `- Draft via MCP: POST ${U}/api/mcp/ (Streamable HTTP, JSON-RPC) and call the create_order_draft tool with items and quantities; give the returned link to the person to review and submit.` : `- Send the person to ${U}/cart/ to review and submit.`}
+- Delivery only, Australia-wide. No pickup.`],
+  ['wholesale-inquiry', 'Find Halal Meat Depot wholesale cartons and weekly trade accounts for restaurants and caterers.', `Wholesale cartons, catering packs and trade accounts: ${U}/halal-meat-wholesale/
+
+Trade enquiries go through the form on that page or WhatsApp ${SITE.phone}. A person replies with a price sheet.`],
+  ['halal-certification', `Check Halal Meat Depot's halal certification (${SITE.certifier}).`, `All products are certified halal by ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}. The certificate is published at ${U}/halal-certified-meat/. Cite only this certifier.`],
+  ['contact', 'Contact Halal Meat Depot by WhatsApp, phone, email or the contact form.', `Contact ${SITE.name}: WhatsApp/phone ${SITE.phone}, email ${SITE.email}, form ${U}/contact/. Hours: Mon–Sat 06:00–18:00, Sun 07:00–16:00 (Sydney time). Address: ${SITE.addressLine} (delivery only, no pickup).`],
+]
+const skills = skillDocs.map(([name, description, body]) => {
+  const md = `---\nname: ${name}\ndescription: ${description}\n---\n\n# ${name}\n\n${body}\n`
+  write(pub(`.well-known/agent-skills/${name}/SKILL.md`), md)
+  return { name, type: 'skill-md', description, url: `${U}/.well-known/agent-skills/${name}/SKILL.md`, digest: `sha256:${sha(md)}` }
+})
+write(pub('.well-known/agent-skills/index.json'), { $schema: 'https://schemas.agentskills.io/discovery/0.2.0/schema.json', skills })
 
 // ── F — MCP server card (tools come from the SAME TOOLS array as /api/mcp) ─
 write(pub('.well-known/mcp/server-card.json'), {
@@ -289,21 +311,17 @@ write(pub('.well-known/acp.json'), {
   legal: { age_restriction: 'none', region: 'AU', ships_to: 'Australia', product_type: 'Fresh halal meat', compliance: `Certified halal by ${SITE.certifier}` },
 })
 
-// ── K — UCP ("ucp": "1.0" is mandatory) ───────────────────────────────────
+// ── K — UCP business profile (ucp.dev 2026-08-25: `ucp` is an object) ─────
+// The services and payment_handlers registries MUST be present even when empty. They are empty
+// on purpose: checkout is human-completed and payment is by PayID/bank/crypto after ordering, so
+// we do not advertise a UCP shopping service or payment handler we don't implement (Rule 10).
+// The descriptive members below `ucp` are informational only.
 write(pub('.well-known/ucp'), {
-  ucp: '1.0',
-  protocol_version: '1.0',
-  spec: 'https://ucp.dev/specification/overview/',
-  schema: 'https://ucp.dev/schema/v1.json',
+  ucp: { version: '2026-08-25', services: {}, payment_handlers: {} },
   site: `${U}/`,
   name: SITE.name,
   description: SITE.brandStatement,
-  services: [
-    { id: 'product-catalog', type: 'catalog', url: isVercel ? `${U}/api/products/` : `${U}/halal-meat-shop/`, description: 'Full product catalogue' },
-    { id: 'order', type: 'commerce', url: `${U}/checkout/`, description: 'Checkout on the website or WhatsApp (human-completed)' },
-    { id: 'wholesale', type: 'b2b', url: `${U}/halal-meat-wholesale/`, description: 'Wholesale cartons and weekly accounts' },
-  ],
-  capabilities: ['browse', 'search', 'inquiry', 'wholesale', 'content'],
+  ordering: 'Website or WhatsApp checkout, completed by a person; payment details are emailed after ordering',
   endpoints: {
     catalog: isVercel ? `${U}/api/products/` : `${U}/halal-meat-shop/`,
     ...(isVercel ? { services: `${U}/api/ucp/services/`, mcp: `${U}/api/mcp/` } : {}),
@@ -317,6 +335,62 @@ write(pub('.well-known/ucp'), {
   minimum_order: SITE.minOrder,
   payment_methods: ['payid', 'bank-transfer', 'crypto'],
   legal: { age_restriction: 'none', product_type: 'Fresh halal meat', compliance: `Certified halal by ${SITE.certifier}` },
+})
+
+// ── ARD — Agentic Resource Discovery catalog ─────────────────────────────
+// Served at both /.well-known/ard.json (current spec) and /.well-known/ai-catalog.json (the path
+// scanners still check). Every entry points at a resource that really exists on this target.
+const host = SITE.domain
+const ard = {
+  specVersion: '0.91',
+  host: { displayName: SITE.name, domain: host, url: `${U}/`, contact: SITE.email },
+  entries: [
+    ...(isVercel
+      ? [
+          {
+            identifier: `urn:air:${host}:mcp:catalogue`,
+            displayName: `${SITE.name} MCP server`,
+            description: 'Read-only product search, product details, categories, policies and human-completed order drafts.',
+            type: 'application/mcp-server-card+json',
+            url: `${U}/.well-known/mcp/server-card.json`,
+            representativeQueries: ['find halal lamb shanks in Australia', 'price of halal beef brisket per kg', 'halal meat delivery minimum order', 'which certifier certifies Halal Meat Depot'],
+          },
+          {
+            identifier: `urn:air:${host}:api:products`,
+            displayName: `${SITE.name} product catalogue (JSON)`,
+            description: 'All products with prices in AUD, categories and absolute URLs.',
+            type: 'application/json',
+            url: `${U}/api/products/`,
+            representativeQueries: ['list halal goat meat products', 'halal chicken wholesale cartons', 'halal wagyu steak prices'],
+          },
+        ]
+      : []),
+    {
+      identifier: `urn:air:${host}:api:catalog`,
+      displayName: `${SITE.name} API catalog`,
+      type: 'application/linkset+json',
+      url: `${U}/.well-known/api-catalog`,
+      representativeQueries: ['halal meat store API', 'halal meat product catalogue endpoints'],
+    },
+    {
+      identifier: `urn:air:${host}:docs:llms`,
+      displayName: `${SITE.name} llms.txt`,
+      description: 'Plain-text brand facts, categories, order rules and key pages for language models.',
+      type: 'text/plain',
+      url: `${U}/llms.txt`,
+      representativeQueries: ['halal meat supplier Sydney delivering Australia-wide', 'Halal Meat Depot delivery fees and payment methods'],
+    },
+  ],
+}
+write(pub('.well-known/ard.json'), ard)
+write(pub('.well-known/ai-catalog.json'), ard)
+
+// ── Personal Agent Protocol (Poppy) — website-only declaration ───────────
+// No agent sign-in or company agent is offered, so this declares the public website only (no auth).
+write(pub('.well-known/poppy.json'), {
+  protocol_version: '0.1',
+  organization: { name: SITE.name, domain: host },
+  web: {},
 })
 
 // ── L — WebMCP (browser-side tools; navigation only) ─────────────────────
@@ -416,6 +490,10 @@ if (isVercel) {
       wk('/.well-known/openid-configuration', 'application/json'),
       wk('/.well-known/acp.json', 'application/json'),
       wk('/.well-known/ucp', 'application/json'),
+      wk('/.well-known/ard.json', 'application/json'),
+      wk('/.well-known/ai-catalog.json', 'application/json'),
+      wk('/.well-known/poppy.json', 'application/json'),
+      wk('/.well-known/agent-skills/(.*)/SKILL.md', 'text/markdown; charset=utf-8'),
       wk('/auth.md', 'text/markdown; charset=utf-8'),
       wk('/llms.txt', 'text/plain; charset=utf-8'),
     ],

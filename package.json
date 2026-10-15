@@ -3,6 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "sideEffects": ["*.css"],
   "scripts": {
     "dev": "node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs && next dev -p 3000",
     "prebuild": "node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs",

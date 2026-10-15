@@ -37,7 +37,7 @@ const HERO_SLIDES = [
   },
   {
     name: 'hero-2',
-    widths: [640, 768, 1280, 1600],
+    widths: [640, 768, 1080],
     position: 'center top',
     alt: 'Halal meat: lamb leg, lamb chops and lamb racks with herbs and spices',
     title: 'Halal meat: lamb leg, chops and racks',
@@ -46,13 +46,13 @@ const HERO_SLIDES = [
   },
   {
     name: 'hero-3',
-    widths: [640, 768, 1280, 1920],
+    widths: [640, 768, 1080],
     alt: 'Halal meat: raw steaks and whole chickens on a wooden board',
     title: 'Halal meat: steaks and whole chickens',
     caption: 'Halal meat: steaks and whole chickens',
     description: 'Raw halal meat — thick-cut steaks and whole chickens — from Halal Meat Depot in Greenacre, Sydney.',
   },
-].map((s) => ({ ...s, src: `/images/hero/${s.name}-${s.widths.at(-1)}.avif`, srcSet: s.widths.map((w) => `/images/hero/${s.name}-${w}.avif ${w}w`).join(', ') }))
+].map((s) => ({ ...s, src: `/images/hero/${s.name}-v2-${s.widths.at(-1)}.avif`, srcSet: s.widths.map((w) => `/images/hero/${s.name}-v2-${w}.avif ${w}w`).join(', ') }))
 
 export default function HomePage() {
   const featured = PRODUCTS.filter((p) => p.featured).slice(0, 8)
@@ -160,7 +160,7 @@ export default function HomePage() {
               return (
                 <Link key={c.slug} href={`${c.path}`} className="cat-tile">
                   <figure className="cat-figure">
-                    <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" priority={i < 3} />
+                    <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" />
                     <span className="scrim" aria-hidden="true" />
                     <figcaption className="cat-label">
                       <strong>{img.caption}</strong>
