@@ -458,6 +458,10 @@ if (isVercel) {
   const vercel = {
     $schema: 'https://openapi.vercel.sh/vercel.json',
     framework: 'nextjs',
+    // next build + the post-build JS step (the dashboard default ran bare `next build`, 2026-10-16).
+    // Not `npm run build`: its prebuild generators are committed outputs and must not re-run on Linux
+    // (lastmod fingerprints would differ by line endings and reset every sitemap date).
+    buildCommand: 'next build && node scripts/postbuild-js.mjs',
     trailingSlash: true,
     // Skip our own www rule when Vercel's Domains dashboard already redirects
     // www → apex — two competing rules can loop.
