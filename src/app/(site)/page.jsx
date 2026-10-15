@@ -30,6 +30,7 @@ const HERO_SLIDES = [
   {
     name: 'hero-1',
     widths: [640, 768, 1080],
+    height: 608, // intrinsic height at 1080px wide
     alt: 'Halal meat barbecue spread with sliced brisket, ribs and sausages',
     title: 'Halal meat for the barbecue',
     caption: 'Halal meat for the barbecue',
@@ -38,6 +39,7 @@ const HERO_SLIDES = [
   {
     name: 'hero-2',
     widths: [640, 768, 1080],
+    height: 608, // intrinsic height at 1080px wide
     position: 'center top',
     alt: 'Halal meat: lamb leg, lamb chops and lamb racks with herbs and spices',
     title: 'Halal meat: lamb leg, chops and racks',
@@ -47,6 +49,7 @@ const HERO_SLIDES = [
   {
     name: 'hero-3',
     widths: [640, 768, 1080],
+    height: 612, // intrinsic height at 1080px wide
     alt: 'Halal meat: raw steaks and whole chickens on a wooden board',
     title: 'Halal meat: steaks and whole chickens',
     caption: 'Halal meat: steaks and whole chickens',

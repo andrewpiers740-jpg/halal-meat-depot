@@ -46,7 +46,7 @@ export default function ShippingPage() {
         ['p', 'If anything arrives damaged, warm, spoiled, incorrect or missing, see our [Refund & Returns Policy](/refund/) — please contact us within 48 hours of delivery.'],
         ['h2', 'Questions'],
         ['p', `Email {{email}}, message us on WhatsApp on ${SITE.phone}, use our [contact form](/contact/), or see the [FAQ](/faq/).`],
-        ['p', `${SITE.name} is a business name of ${SITE.legalName} (ABN ${SITE.abn}).`],
+        ['p', `${SITE.name} is a business name of ${SITE.legalName} (ABN ${SITE.abn}). Read more [about Halal Meat Depot](/about/), our [terms of sale](/terms/) and our [privacy policy](/privacy/).`],
       ]}
     />
   )

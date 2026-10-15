@@ -409,28 +409,28 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/lamb-leg-boned-and-rolled/": {
-  "hash": "b3d718505600069c",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "a2ee366bbc9ea617",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/lamb-leg-butterflied/": {
-  "hash": "d2cfb425da66649a",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "480667084e5d2556",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/lamb-leg-steaks/": {
   "hash": "9a9d344f4016a3a5",
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/milk-fed-lamb-leg-bone-in/": {
-  "hash": "b9284d84ceef10b6",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "59f8bbfad8d07398",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/lamb-shoulder-boned-and-rolled/": {
-  "hash": "22f61f655213861d",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "2931cf7137328723",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/lamb-shoulder-butterflied/": {
-  "hash": "af5e5f615fc65c34",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "46ac1502d59f8f7f",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/milk-fed-lamb-forequarter/": {
   "hash": "aef1211f22b905a1",
@@ -449,12 +449,12 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/lamb-riblets/": {
-  "hash": "0bb396be951c62ef",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "86aa6b5f9aef7ea1",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/lamb-full-plate-ribs/": {
-  "hash": "562888aca1f85ab7",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "af9e765840aad0f4",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/diced-lamb-boneless/": {
   "hash": "039c0007b7150885",
@@ -621,12 +621,12 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/smokey-heat-marinated-split-chicken/": {
-  "hash": "9ec0a8c5df3f2d89",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "25859bd3cbe03174",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/truffle-buffalo-marinated-split-chicken/": {
-  "hash": "2ed70471d5c588b1",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "bf33e5531fdca1c7",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/chicken-breast-fillet-carton/": {
   "hash": "0d8372a16a5ba437",
@@ -717,12 +717,12 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/kangaroo-loin-fillet/": {
-  "hash": "e3c8809b18f88c5e",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "8bcc87b4c802bbec",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/kangaroo-steak-rump/": {
-  "hash": "e50470d3027074bb",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "b2c3274e0c760100",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/buffalo-porterhouse-steaks/": {
   "hash": "f363dd8e68098319",
@@ -837,16 +837,16 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/goat-curry-cut-catering-pack/": {
-  "hash": "13b102820eeb88dc",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "06d3c8ef4bb7a138",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/product/whole-lamb-catering-pack/": {
   "hash": "50d934a6dd6487b9",
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/chicken-curry-cut-catering-pack/": {
-  "hash": "dbfc9dc089b4551d",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "209ed56fc3b5a28c",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/shop/halal-beef/": {
   "hash": "3928ed414d58a64b",
@@ -889,8 +889,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/": {
-  "hash": "ea9a9d91004086f7",
-  "date": "2026-10-15T18:38:00.912Z"
+  "hash": "81f7629eaabbde07",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/halal-meat-shop/": {
   "hash": "2dbaff0e5fa8cb78",
@@ -917,20 +917,20 @@ export const LASTMOD = {
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/contact/": {
-  "hash": "93075207681a0b65",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "9b97b7fef28d24ad",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/faq/": {
-  "hash": "a687014143d75ac2",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "140698894ff9b0c3",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/blog/": {
   "hash": "402a90131725e935",
   "date": "2026-10-13T21:24:51.014Z"
  },
  "/halal-meat-delivery/": {
-  "hash": "d06b83fc451e9d2d",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "1e3a9ce5647eeea7",
+  "date": "2026-10-15T19:41:12.407Z"
  },
  "/refund/": {
   "hash": "cabc6a8e5f5d2db0",

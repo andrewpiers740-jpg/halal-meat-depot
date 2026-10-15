@@ -36,7 +36,11 @@ export default function FaqPage() {
               </details>
             ))}
           </div>
-          <p className="center" style={{ marginTop: 32 }}>
+          <p className="center muted" style={{ marginTop: 32 }}>
+            More detail: <Link href="/about/">about Halal Meat Depot</Link> · <Link href="/terms/">terms of sale</Link> ·{' '}
+            <Link href="/privacy/">privacy policy</Link> · <Link href="/refund/">refund and returns policy</Link>
+          </p>
+          <p className="center" style={{ marginTop: 16 }}>
             <Link href="/halal-meat-shop/" className="btn btn--primary">
               Shop halal meat
             </Link>

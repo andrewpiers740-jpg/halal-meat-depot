@@ -83,6 +83,43 @@ export default function ContactPage() {
           </aside>
         </div>
       </div>
+      <section className="section section--tint" aria-labelledby="help-title">
+        <div className="container prose">
+          <h2 id="help-title">How we can help</h2>
+          <p>
+            Contact Halal Meat Depot for anything to do with an order, before or after you place it. Common questions we answer every
+            day:
+          </p>
+          <ul>
+            <li>
+              <strong>Choosing cuts and quantities.</strong> Tell us the dish and how many people you are feeding and we will suggest
+              the right cut, pack size or whole carcass. Cutting instructions can go in the order notes at checkout.
+            </li>
+            <li>
+              <strong>Orders and payment.</strong> The minimum order is ${SITE.minOrder} across your whole cart. We email PayID, bank
+              transfer or crypto payment details after you order, and crypto takes {SITE.cryptoDiscountPct}% off your meat total.
+            </li>
+            <li>
+              <strong>Delivery.</strong> We deliver Australia-wide from Greenacre (delivery only, no pickup): Standard Delivery is free
+              over ${SITE.freeShipOver}, otherwise ${SITE.flatShip}, and Priority Delivery is priced by distance. See{' '}
+              <Link href="/halal-meat-delivery/">halal meat delivery</Link> for zones and times.
+            </li>
+            <li>
+              <strong>Wholesale and events.</strong> Restaurants, caterers and large family or community events can ask about cartons,
+              catering packs and regular orders on our <Link href="/halal-meat-wholesale/">halal meat wholesale</Link> page.
+            </li>
+            <li>
+              <strong>A problem with an order.</strong> If anything arrives damaged, spoiled, incorrect or missing, contact us within
+              48 hours as set out in our <Link href="/refund/">refund and returns policy</Link>.
+            </li>
+          </ul>
+          <p>
+            Every product is certified halal by {SITE.certifier} (see our <Link href="/halal-certified-meat/">halal certified meat</Link>{' '}
+            page). Read more <Link href="/about/">about Halal Meat Depot</Link>, our <Link href="/terms/">terms of sale</Link> and how we
+            handle your details in our <Link href="/privacy/">privacy policy</Link>.
+          </p>
+        </div>
+      </section>
     </>
   )
 }
