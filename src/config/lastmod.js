@@ -469,8 +469,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/lamb-ham/": {
-  "hash": "a53a5e9789dcebf7",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "daedc1f1fa8dfad2",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/lamb-kofta/": {
   "hash": "6dd4cd9d1d132de3",
@@ -481,8 +481,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/lamb-and-rosemary-chipolatas/": {
-  "hash": "63bd21b5f6b14ef6",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "796d528de632f5d3",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/lamb-lemon-and-oregano-sausages/": {
   "hash": "5ad824fdcc6253ff",
@@ -521,12 +521,12 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/goat-frenched-rack/": {
-  "hash": "4c7b2b2578d958a4",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "aaca1b8ae5f8d40f",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/goat-rolled-loin/": {
-  "hash": "2f2d1158aeb36f51",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "603e45c2636b62f8",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/goat-rump/": {
   "hash": "6bf102d1a4c0cd14",
@@ -649,8 +649,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/camel-porterhouse-on-the-bone/": {
-  "hash": "47c90525415d5f50",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "b67187ef918f43c2",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/camel-scotch-fillet-steaks/": {
   "hash": "119e64776373c60d",
@@ -669,8 +669,8 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/diced-camel-boneless/": {
-  "hash": "9006ebc776cc02f8",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "33761869e8d42cb1",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/camel-mince/": {
   "hash": "c50aca9fb11e2b8a",
@@ -825,16 +825,16 @@ export const LASTMOD = {
   "date": "2026-10-13T21:36:41.182Z"
  },
  "/product/lamb-curry-pieces-carton/": {
-  "hash": "479c0139cdc3f509",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "701958ddd7d5bf1e",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/diced-beef-carton/": {
-  "hash": "be2913370015ad1c",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "2d6ce814eef7e170",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/lamb-shoulder-carton/": {
-  "hash": "2ca468d3e93d00ce",
-  "date": "2026-10-13T21:36:41.182Z"
+  "hash": "c266d8258822328f",
+  "date": "2026-10-15T21:27:21.291Z"
  },
  "/product/goat-curry-cut-catering-pack/": {
   "hash": "06d3c8ef4bb7a138",
