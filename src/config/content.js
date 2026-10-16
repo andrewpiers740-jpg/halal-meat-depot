@@ -368,7 +368,8 @@ export const POSTS = [
   ...GUIDE_POSTS,
   // Recipe, technique and buying guides added 2026-10-16 (posts-blog-*.js).
   ...BLOG_POSTS,
-].map((p) => ({ ...p, images: POST_IMAGES[p.slug] || [] }))
+// Photos were added to every post on 2026-10-16, so posts dated earlier count as updated then.
+].map((p) => ({ ...p, images: POST_IMAGES[p.slug] || [], updated: POST_IMAGES[p.slug] && (p.updated || p.date) < '2026-10-16' ? '2026-10-16' : p.updated }))
 
 export const postBySlug = (slug) => POSTS.find((x) => x.slug === slug)
 

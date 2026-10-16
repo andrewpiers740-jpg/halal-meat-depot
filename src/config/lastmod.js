@@ -925,8 +925,8 @@ export const LASTMOD = {
   "date": "2026-10-15T20:49:12.592Z"
  },
  "/blog/": {
-  "hash": "764456b88475ccc2",
-  "date": "2026-10-16T05:06:20.403Z"
+  "hash": "234cb6431b791dc6",
+  "date": "2026-10-16T08:05:37.805Z"
  },
  "/halal-meat-delivery/": {
   "hash": "c44f53725e0830dd",

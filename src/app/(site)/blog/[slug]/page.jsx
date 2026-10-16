@@ -7,6 +7,7 @@ import JsonLd from '@/components/JsonLd'
 import { SITE, POSTS, postBySlug } from '@/config/site'
 import { articleSchema } from '@/lib/schema'
 import { pageMeta } from '@/lib/meta'
+import { relatedPosts } from '@/config/blog-topics'
 
 export const dynamicParams = false
 
@@ -27,7 +28,7 @@ export default async function BlogPost({ params }) {
   const { slug } = await params
   const post = postBySlug(slug)
   if (!post) notFound()
-  const others = POSTS.filter((p) => p.slug !== post.slug).slice(0, 2)
+  const others = relatedPosts(post, POSTS)
   // Photo 1 sits under the intro; photos 2–4 go before H2s spread evenly through the post.
   const h2s = post.body.flatMap(([t], i) => (t === 'h2' ? [i] : []))
   const insert = {}
@@ -64,7 +65,7 @@ export default async function BlogPost({ params }) {
               </Link>
             </div>
             <div className="card card--tint">
-              <h2 style={{ fontSize: '1.2rem' }}>More guides</h2>
+              <h2 style={{ fontSize: '1.2rem' }}>Related guides</h2>
               <ul style={{ marginBottom: 0 }}>
                 {others.map((p) => (
                   <li key={p.slug}>
