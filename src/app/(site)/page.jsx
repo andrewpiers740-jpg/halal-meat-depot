@@ -1,3 +1,4 @@
+import PostThumb from '@/components/PostThumb'
 import Link from 'next/link'
 import Icon from '@/components/Icon'
 import Email from '@/components/Email'
@@ -362,7 +363,7 @@ export default function HomePage() {
           <div className="grid-3">
             {posts.map((p) => (
               <article key={p.slug} className="post-card">
-                <div className="post-band" aria-hidden="true">{p.kw}</div>
+                <PostThumb post={p} />
                 <div className="post-body">
                   <time dateTime={p.date}>{new Date(p.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
                   <h3>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import PostThumb from '@/components/PostThumb'
 import { POSTS } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 import { TOPICS } from '@/config/blog-topics'
@@ -16,7 +17,7 @@ const fmt = (d) => new Date(d).toLocaleDateString('en-AU', { day: 'numeric', mon
 function PostCard({ p }) {
   return (
     <article className="post-card">
-      <div className="post-band" aria-hidden="true">{p.kw}</div>
+      <PostThumb post={p} />
       <div className="post-body">
         <time dateTime={p.date}>{fmt(p.date)}</time>
         <h3 style={{ fontSize: '1.15rem', margin: 0 }}>
