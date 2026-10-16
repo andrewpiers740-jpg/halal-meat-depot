@@ -1,6 +1,6 @@
 import { postImageSeo } from '@/lib/imageSeo'
 
-// Pre-sized WebP files in /images/blog/ (640px + full width) served directly, so blog photos
+// Pre-sized WebP files in /images/blog/ (640, 768 and full width; 768 covers phones at ~1.75 DPR) served directly, so blog photos
 // never use Vercel image-optimisation transformations.
 export const postImageSrc = (slug, img, w) => `/images/blog/${slug}-${img.n}-${w}.webp`
 
@@ -11,7 +11,7 @@ export default function PostFigure({ post, img, index }) {
     <figure className="post-figure">
       <img
         src={postImageSrc(post.slug, img, img.w)}
-        srcSet={`${postImageSrc(post.slug, img, 640)} 640w, ${postImageSrc(post.slug, img, img.w)} ${img.w}w`}
+        srcSet={`${postImageSrc(post.slug, img, 640)} 640w, ${postImageSrc(post.slug, img, 768)} 768w, ${postImageSrc(post.slug, img, img.w)} ${img.w}w`}
         sizes="(max-width: 900px) calc(100vw - 32px), 720px"
         width={img.w}
         height={img.h}

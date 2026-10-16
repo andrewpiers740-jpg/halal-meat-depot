@@ -347,9 +347,12 @@ write(pub('.well-known/ucp'), {
 // ── ARD — Agentic Resource Discovery catalog ─────────────────────────────
 // Served at both /.well-known/ard.json (current spec) and /.well-known/ai-catalog.json (the path
 // scanners still check). Every entry points at a resource that really exists on this target.
+// Lighthouse 13 Agentic Browsing (2026-10-16) validates this file: specVersion must be '1.0' and every
+// entry type must be a standard discovery type, so the JSON API, API catalog and llms.txt are not listed
+// here (agents still find them via the Link header, /.well-known/api-catalog and robots.txt).
 const host = SITE.domain
 const ard = {
-  specVersion: '0.91',
+  specVersion: '1.0',
   host: { displayName: SITE.name, domain: host, url: `${U}/`, contact: SITE.email },
   entries: [
     ...(isVercel
@@ -362,31 +365,15 @@ const ard = {
             url: `${U}/.well-known/mcp/server-card.json`,
             representativeQueries: ['find halal lamb shanks in Australia', 'price of halal beef brisket per kg', 'halal meat delivery minimum order', 'which certifier certifies Halal Meat Depot'],
           },
-          {
-            identifier: `urn:air:${host}:api:products`,
-            displayName: `${SITE.name} product catalogue (JSON)`,
-            description: 'All products with prices in AUD, categories and absolute URLs.',
-            type: 'application/json',
-            url: `${U}/api/products/`,
-            representativeQueries: ['list halal goat meat products', 'halal chicken wholesale cartons', 'halal wagyu steak prices'],
-          },
         ]
       : []),
-    {
-      identifier: `urn:air:${host}:api:catalog`,
-      displayName: `${SITE.name} API catalog`,
-      type: 'application/linkset+json',
-      url: `${U}/.well-known/api-catalog`,
-      representativeQueries: ['halal meat store API', 'halal meat product catalogue endpoints'],
-    },
-    {
-      identifier: `urn:air:${host}:docs:llms`,
-      displayName: `${SITE.name} llms.txt`,
-      description: 'Plain-text brand facts, categories, order rules and key pages for language models.',
-      type: 'text/plain',
-      url: `${U}/llms.txt`,
-      representativeQueries: ['halal meat supplier Sydney delivering Australia-wide', 'Halal Meat Depot delivery fees and payment methods'],
-    },
+    ...skills.map((k) => ({
+      identifier: `urn:air:${host}:skill:${k.name}`,
+      displayName: `${SITE.name}: ${k.name.replace(/-/g, ' ')}`,
+      description: k.description,
+      type: 'text/markdown; profile="urn:air:agent-skills"',
+      url: k.url,
+    })),
   ],
 }
 write(pub('.well-known/ard.json'), ard)

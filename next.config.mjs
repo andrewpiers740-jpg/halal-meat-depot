@@ -28,6 +28,11 @@ const nextConfig = {
             { source: '/favicon.ico', destination: '/icon.svg', permanent: true },
           ]
         },
+        // RFC 9728 path-inserted lookups (/.well-known/oauth-protected-resource/<page path>) — agents
+        // check the metadata for the exact page they are on (isitagentready, 2026-10-16).
+        async rewrites() {
+          return [{ source: '/.well-known/oauth-protected-resource/:path+', destination: '/api/oauth-protected-resource/:path+' }]
+        },
         async headers() {
           return [
             // RFC 9727 media type — the extensionless static file is otherwise served as octet-stream
