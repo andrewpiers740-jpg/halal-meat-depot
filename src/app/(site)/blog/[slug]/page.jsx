@@ -21,7 +21,9 @@ export async function generateMetadata({ params }) {
   if (!post) return {}
   const base = post.seoTitle || post.title
   const t = `${base} | HMD Blog`
-  return pageMeta({ title: t.length <= 60 ? t : base, description: post.excerpt, path: `/blog/${post.slug}/`, type: 'article' })
+  // Share image = the post's first photo (2026-10-16), not the generic site image.
+  const img = post.images?.[0]
+  return pageMeta({ title: t.length <= 60 ? t : base, description: post.excerpt, path: `/blog/${post.slug}/`, type: 'article', ...(img ? { image: `${SITE.url}/images/blog/${post.slug}-${img.n}-${img.w}.webp`, imageSize: [img.w, img.h] } : {}) })
 }
 
 export default async function BlogPost({ params }) {

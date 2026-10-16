@@ -351,9 +351,20 @@ write(pub('.well-known/ucp'), {
 // entry type must be a standard discovery type, so the JSON API, API catalog and llms.txt are not listed
 // here (agents still find them via the Link header, /.well-known/api-catalog and robots.txt).
 const host = SITE.domain
+// 2–5 search queries per skill (schema: representativeQueries minItems 2, maxItems 5), used for indexing.
+const SKILL_QUERIES = {
+  'browse-products': ['browse halal beef cuts with prices per kg', 'halal lamb and goat meat online Australia', 'halal chicken products delivered'],
+  'search-products': ['find halal lamb shanks', 'search halal wagyu steak', 'halal meat recipe guides'],
+  'prepare-order': ['order halal meat online for delivery', 'halal meat minimum order and delivery fee', 'prepare a halal meat order draft'],
+  'wholesale-inquiry': ['halal meat wholesale supplier Sydney', 'bulk halal meat cartons for restaurants', 'halal catering meat packs'],
+  'halal-certification': ['who certifies Halal Meat Depot', 'halal certificate for Halal Meat Depot meat'],
+  contact: ['contact Halal Meat Depot', 'Halal Meat Depot phone and opening hours'],
+}
 const ard = {
   specVersion: '1.0',
-  host: { displayName: SITE.name, domain: host, url: `${U}/`, contact: SITE.email },
+  // ai-catalog.schema.json (ards-project/ard-spec): host allows only displayName, identifier,
+  // documentationUrl, logoUrl and trustManifest (additionalProperties: false).
+  host: { displayName: SITE.name, documentationUrl: `${U}/llms.txt`, logoUrl: `${U}/images/logo.svg` },
   entries: [
     ...(isVercel
       ? [
@@ -373,6 +384,7 @@ const ard = {
       description: k.description,
       type: 'text/markdown; profile="urn:air:agent-skills"',
       url: k.url,
+      ...(SKILL_QUERIES[k.name] ? { representativeQueries: SKILL_QUERIES[k.name] } : {}),
     })),
   ],
 }

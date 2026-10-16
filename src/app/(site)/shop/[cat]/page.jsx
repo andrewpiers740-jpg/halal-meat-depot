@@ -67,7 +67,7 @@ export async function generateMetadata({ params }) {
   const c = categoryBySlug(cat)
   if (!c) return {}
   const items = productsInCategory(c.slug)
-  return pageMeta({ title: titleFor(c), description: describe(c, items), path: `${c.path}` })
+  return pageMeta({ title: titleFor(c), description: describe(c, items), path: `${c.path}`, image: `${SITE.url}/images/categories/${categoryImage(c.slug)}`, imageSize: [1200, 900] })
 }
 
 export default async function CategoryPage({ params }) {

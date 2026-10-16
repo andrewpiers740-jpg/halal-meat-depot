@@ -849,44 +849,44 @@ export const LASTMOD = {
   "date": "2026-10-15T19:41:12.407Z"
  },
  "/shop/halal-beef/": {
-  "hash": "3928ed414d58a64b",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "b89f961e9ac9dfb2",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/lamb/": {
-  "hash": "c9cdc81616cdcef5",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "fba10e838740cf2c",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/goat-meat-for-sale/": {
-  "hash": "5edbe8003cf54fac",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "e7e5cdefeeb23eab",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/halal-chicken/": {
-  "hash": "60cfbe83053cc022",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "29d599a6ccbf03d2",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/camel-meat-australia/": {
-  "hash": "dd46bc4cd5ca7da2",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "dc163e75b8a3dc27",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/duck-meat/": {
-  "hash": "ea6b615d95bb1e21",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "5ccfc126daa8e492",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/kangaroo-meat-for-sale/": {
-  "hash": "199696d60a530348",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "dccfc2758256b47d",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/buffalo-meat/": {
-  "hash": "ce14e96d6e4856bb",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "edb4b58ef451fe94",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/offal-beef-organ-meat/": {
-  "hash": "63fb6d7db1f64e6b",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "efd7b8fd23c48797",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/shop/bulk-meat-boxes/": {
-  "hash": "bf52a2956c7a6dcf",
-  "date": "2026-10-13T21:24:51.014Z"
+  "hash": "8d1c0c98c0dec152",
+  "date": "2026-10-16T09:27:13.604Z"
  },
  "/": {
   "hash": "76e03287b1a85848",
