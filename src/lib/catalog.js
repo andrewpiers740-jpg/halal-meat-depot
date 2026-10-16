@@ -1,7 +1,8 @@
 // One product shape for every consumer — /search/, the JSON API and the MCP
 // tools all serialise through toPublicProduct(), so agents never see three
 // subtly different product objects.
-import { SITE, CATEGORIES, PRODUCTS, POSTS, categoryBySlug } from '../config/site.js'
+import { SITE, CATEGORIES, PRODUCTS, categoryBySlug } from '../config/site.js'
+import { POST_INDEX } from '../config/post-index.js'
 import { ZONES_BY_DISTANCE } from '../config/delivery.js'
 
 export function productUrl(p) {
@@ -46,7 +47,7 @@ export function searchProducts({ query = '', category, maxPrice, limit = 50 } = 
 export function searchPosts(query = '') {
   const terms = String(query).toLowerCase().split(/\s+/).filter(Boolean)
   if (!terms.length) return []
-  return POSTS.filter((p) => {
+  return POST_INDEX.filter((p) => {
     const hay = `${p.title} ${p.excerpt} ${p.kw}`.toLowerCase()
     return terms.every((t) => hay.includes(t))
   }).map((p) => ({ slug: p.slug, title: p.title, excerpt: p.excerpt, url: `${SITE.url}/blog/${p.slug}/` }))

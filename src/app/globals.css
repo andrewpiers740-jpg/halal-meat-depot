@@ -505,3 +505,9 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .when-added { display: none; }
 [data-added] .when-idle { display: none; }
 [data-added] .when-added { display: inline; }
+
+/* Blog post photos (2026-10-16) */
+.post-figure { margin: 1.4em 0; }
+.post-figure img { display: block; width: 100%; height: auto; border-radius: var(--radius); background: #eee; }
+.post-figure .credit { white-space: normal; }
+.post-figure .credit a { color: inherit; }

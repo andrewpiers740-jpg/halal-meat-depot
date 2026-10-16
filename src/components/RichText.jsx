@@ -35,9 +35,11 @@ function linkify(text) {
   return out
 }
 
-export default function RichText({ blocks }) {
+// insert: { [blockIndex]: node } renders extra content (e.g. a photo) before that block.
+export default function RichText({ blocks, insert = {} }) {
   return blocks.map(([type, content, id], i) => (
     <Fragment key={i}>
+      {insert[i]}
       {type === 'h2' && <h2 id={id}>{content}</h2>}
       {type === 'h3' && <h3>{content}</h3>}
       {type === 'p' && <p>{inline(content)}</p>}

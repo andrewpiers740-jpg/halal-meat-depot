@@ -36,3 +36,18 @@ export function categoryImageSeo(c) {
 export function imageObject(url, seo, extra = {}) {
   return { '@type': 'ImageObject', url, contentUrl: url, name: seo.title, caption: seo.caption, description: seo.description, ...extra }
 }
+
+// Blog post photos (owner request 2026-10-16): four openly licensed photos per post, credited in the caption.
+// The post's focus keyword leads the alt, title, caption and description (F6–F7).
+export function postImageSeo(post, img, i) {
+  const subject = post.kw.charAt(0).toUpperCase() + post.kw.slice(1)
+  const caption = `${subject}: ${img.alt}`
+  const credit = `Photo: ${img.creator || 'unknown'}, ${img.license}`
+  return {
+    alt: caption,
+    title: `${subject} (photo ${i + 1} of ${post.images?.length || 4})`,
+    caption,
+    credit,
+    description: `${caption}. Illustrative photo for the ${SITE.name} guide "${post.title}". ${credit}.`,
+  }
+}

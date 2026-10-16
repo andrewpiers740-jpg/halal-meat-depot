@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import RichText from '@/components/RichText'
+import PostFigure from '@/components/PostFigure'
 import JsonLd from '@/components/JsonLd'
 import { SITE, POSTS, postBySlug } from '@/config/site'
 import { articleSchema } from '@/lib/schema'
@@ -27,6 +28,13 @@ export default async function BlogPost({ params }) {
   const post = postBySlug(slug)
   if (!post) notFound()
   const others = POSTS.filter((p) => p.slug !== post.slug).slice(0, 2)
+  // Photo 1 sits under the intro; photos 2–4 go before H2s spread evenly through the post.
+  const h2s = post.body.flatMap(([t], i) => (t === 'h2' ? [i] : []))
+  const insert = {}
+  post.images.slice(1).forEach((img, k, rest) => {
+    const at = h2s[Math.min(h2s.length - 1, Math.round(((k + 1) * h2s.length) / (rest.length + 1)))]
+    if (at !== undefined && !insert[at]) insert[at] = <PostFigure post={post} img={img} index={k + 1} />
+  })
   return (
     <>
       <JsonLd data={articleSchema(post)} />
@@ -44,7 +52,8 @@ export default async function BlogPost({ params }) {
         <div className="container split">
           <article className="prose">
             <p className="lead">{post.excerpt}</p>
-            <RichText blocks={post.body} />
+            {post.images[0] && <PostFigure post={post} img={post.images[0]} index={0} />}
+            <RichText blocks={post.body} insert={insert} />
           </article>
           <aside className="stack" aria-label="Related">
             <div className="card card--dark">

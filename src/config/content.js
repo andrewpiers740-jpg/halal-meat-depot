@@ -5,6 +5,8 @@
 // `keywords` lists each post's targets with Semrush intent/volume/KD; the build check verifies
 // every one appears in the post.
 import { GUIDE_POSTS } from './posts-guides.js'
+import { BLOG_POSTS } from './posts-blog.js'
+import { POST_IMAGES } from './post-images.js'
 
 export const POSTS = [
   {
@@ -364,7 +366,9 @@ export const POSTS = [
   },
   // Recipe and "which cut" guides (blog plan posts 1–9, 11–16) live in posts-guides.js.
   ...GUIDE_POSTS,
-]
+  // Recipe, technique and buying guides added 2026-10-16 (posts-blog-*.js).
+  ...BLOG_POSTS,
+].map((p) => ({ ...p, images: POST_IMAGES[p.slug] || [] }))
 
 export const postBySlug = (slug) => POSTS.find((x) => x.slug === slug)
 

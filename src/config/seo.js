@@ -1,3 +1,4 @@
+import { BLOG_KEYWORDS } from './posts-blog-keywords.js'
 // Focus keywords and keyword URLs (owner rule, 2026-10-13): every indexable page has a
 // UNIQUE focus keyword that appears in its SEO title, meta description and slug.
 // Keywords come from the owner's Semrush exports (docs/seo-strategy-report.md). Where the
@@ -144,6 +145,8 @@ export const POST_SEO = {
   'gravy-beef-vs-chuck': 'gravy beef vs chuck',
   'best-beef-for-stir-fry': 'best beef for stir fry',
   'best-temperature-to-smoke-beef-brisket': 'best temperature to smoke beef brisket',
+  // Posts 21–100 (2026-10-16): focus keywords live with their supporting keywords.
+  ...Object.fromEntries(Object.entries(BLOG_KEYWORDS).map(([slug, k]) => [slug, k.focus])),
 }
 
 // Default focus keyword for a product with no keyword data: its own name.

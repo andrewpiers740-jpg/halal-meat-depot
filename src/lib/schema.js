@@ -3,7 +3,7 @@
 // Emails are deliberately NOT included (spam-scraper hygiene); phone is.
 import { SITE, CATEGORIES, PRODUCTS, FAQS } from '../config/site.js'
 import { DELIVERY_ZONES, effectiveRanges } from '../config/delivery.js'
-import { productImageSeo, imageObject } from './imageSeo.js'
+import { productImageSeo, postImageSeo, imageObject } from './imageSeo.js'
 import { PRODUCT_KEYWORDS } from '../config/product-keywords.js'
 
 const logo = () => `${SITE.url}/images/logo.svg`
@@ -144,7 +144,9 @@ export function articleSchema(post) {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
-    image: `${SITE.url}/images/og-v2.webp`,
+    image: post.images?.length
+      ? post.images.map((img, i) => imageObject(`${SITE.url}/images/blog/${post.slug}-${img.n}-${img.w}.webp`, postImageSeo(post, img, i), { width: img.w, height: img.h, creditText: img.creator, license: img.licenseUrl, acquireLicensePage: img.source }))
+      : `${SITE.url}/images/og-v2.webp`,
     datePublished: post.date,
     dateModified: post.updated || post.date,
     author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/` },
