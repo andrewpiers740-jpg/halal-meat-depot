@@ -13,14 +13,20 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Meat Delivery Sydney & Australia | HMD
 - **Meta description:** Halal meat delivery from Sydney, Australia-wide: beef, lamb, goat, chicken, camel and more, certified by Halal Control Australia. Order online, depot prices.
 - **Focus keyword:** halal meat (Commercial, KD 25, vol 2,900)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - what halal meat (Informational, KD 28, vol 1,600)
+  - halal meat what is (Informational, KD 24, vol 1,300)
 
 ### Wagyu steak
 - **Link:** https://halalmeatdepot.com.au/wagyu-steak/
 - **SEO title:** Premium Wagyu Steak | Halal Wagyu Beef MB5+ & MB9+ | HMD
 - **Meta description:** Wagyu steak and halal Wagyu beef at marble score 5+ and 9+: tomahawk, scotch fillet, eye fillet, rump and brisket, from $61.98. Delivered Australia-wide.
 - **Focus keyword:** wagyu steak (Commercial, KD 19, vol 2,400)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - wagyu beef sydney (Navigational, KD 17, vol 320)
+  - wagyu sydney (Navigational, KD 13, vol 320)
+  - wagyu beef delivery (Commercial, KD 17, vol 170)
+  - wagyu beef online delivery (Navigational, KD 15, vol 90)
 
 ### Shop
 - **Link:** https://halalmeatdepot.com.au/halal-meat-shop/
@@ -34,35 +40,48 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Meat Wholesale Sydney | Restaurant Supplier
 - **Meta description:** Halal meat wholesale from Sydney for restaurants, takeaways, caterers and butchers Australia-wide. Trade cartons or a weekly account. HCA certified.
 - **Focus keyword:** halal meat wholesale (Commercial, KD 9, vol 90)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - halal wholesale (Commercial, KD 10, vol 110)
+  - wholesale beef near me (Transactional, KD 25, vol 90)
 
 ### Whole lamb (aqeeqah & Qurbani)
 - **Link:** https://halalmeatdepot.com.au/whole-lamb-aqeeqah-qurbani/
 - **SEO title:** Fresh Whole Lamb & Goat for Aqeeqah and Qurbani | HMD
 - **Meta description:** Whole lamb or goat for Aqeeqah and Qurbani — whole and half carcasses, certified halal by Halal Control Australia and delivered Australia-wide.
 - **Focus keyword:** whole lamb (Commercial, KD 6, vol 390)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - cost of whole lamb (Informational, KD 5, vol 210)
+  - whole lamb on a spit (Informational, KD 5, vol 110)
+  - whole lamb spit (Informational, KD 5, vol 110)
+  - rotisserie whole lamb (Informational, KD 6, vol 110)
 
 ### Delivery
 - **Link:** https://halalmeatdepot.com.au/halal-meat-delivery/
 - **SEO title:** Fresh Halal Meat Delivery Policy | Australia-Wide | HMD
 - **Meta description:** Halal meat delivery Australia-wide from Greenacre: free over $500 in 2–5 days, or Priority Delivery from $30 priced by distance.
 - **Focus keyword:** halal meat delivery (Informational, KD 9, vol 170)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - steaks to deliver (Informational, KD 16, vol 90)
+  - beef brisket delivery (Commercial, KD 9, vol 110)
 
 ### Halal certification
 - **Link:** https://halalmeatdepot.com.au/halal-certified-meat/
 - **SEO title:** Halal Certified Meat — Halal Control Australia | HMD
 - **Meta description:** All our halal certified meat is certified by Halal Control Australia. See what halal certification covers and how meat is regulated in Australia.
 - **Focus keyword:** halal certified meat (Informational, KD 7, vol 90)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - what is halal meat (Informational, KD 23, vol 1,600)
+  - halal meat certification (Informational, KD 16, vol 260)
+  - check halal food (Informational, KD 27, vol 880)
+  - what does halal meat mean (Informational, KD 25, vol 720)
 
 ### About
 - **Link:** https://halalmeatdepot.com.au/about/
 - **SEO title:** About Halal Meat Depot | Fresh Halal Meat Since 2021
 - **Meta description:** About Halal Meat Depot: a Greenacre, Sydney halal meat supplier established in 2021, certified by Halal Control Australia, delivering Australia-wide.
 - **Focus keyword:** about (not in keyword files — page name used)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - the halal butcher (Informational, KD 14, vol 590)
 
 ### Contact
 - **Link:** https://halalmeatdepot.com.au/contact/
@@ -76,7 +95,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Halal Meat Delivery & Ordering FAQ: Simple Answers | HMD
 - **Meta description:** FAQ: answers about halal certification, Australia-wide delivery, the minimum order, paying by PayID, bank transfer or crypto, accounts and wholesale.
 - **Focus keyword:** faq (not in keyword files — page name used)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - what is a halal meat (Informational, KD 26, vol 590)
 
 ### Blog
 - **Link:** https://halalmeatdepot.com.au/blog/
@@ -113,7 +133,12 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Beef Online | Sydney & Australia-Wide
 - **Meta description:** Buy halal beef online — 90 products from $21.98. Certified by Halal Control Australia, delivered Australia-wide. Order online today.
 - **Focus keyword:** halal beef (Commercial, KD 12, vol 210)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - halal beef steak (Commercial, KD 8, vol 590)
+  - beef cuts (Informational, KD 29, vol 1,600)
+  - beef wholesale (Commercial, KD 13, vol 140)
+  - beef bulk (Commercial, KD 10, vol 90)
+  - wholesale beef (Commercial, KD 27, vol 170)
 
 ### Beef › Whole, Half & Quarter Carcass
 - **Link:** https://halalmeatdepot.com.au/shop/halal-beef/#whole-half-and-quarter-carcass
@@ -160,7 +185,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Lamb Online | Sydney & Australia-Wide
 - **Meta description:** Buy halal lamb online: whole & half carcass, racks, cutlets & chops, legs and more. 32 products from $25.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** lamb (Informational + Transactional, KD 19, vol 12,100)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - lamb meat (Informational, KD 13, vol 1,000)
+  - lamb for roast (Informational, KD 18, vol 1,600)
+  - lamb racks (Informational, KD 24, vol 480)
+  - lamb for casserole (Informational, KD 12, vol 260)
 
 ### Lamb › Whole & Half Carcass
 - **Link:** https://halalmeatdepot.com.au/shop/lamb/#whole-and-half-carcass
@@ -195,7 +224,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Goat Meat For Sale | Sydney & Australia-Wide
 - **Meta description:** Halal Goat Meat For Sale: whole goat carcass, legs & shoulders, racks, loin & rump and more. 14 products from $36.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** goat meat for sale (Transactional, KD 8, vol 40)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - where to buy goat meat near me (Transactional, KD 8, vol 170)
+  - goat australia (Informational, KD 25, vol 140)
+  - recipes goat meat (Informational, KD 19, vol 140)
+  - goat for food (Informational, KD 7, vol 210)
 
 ### Goat › Whole Goat Carcass
 - **Link:** https://halalmeatdepot.com.au/shop/goat-meat-for-sale/#whole-goat-carcass
@@ -218,7 +251,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Chicken Online | Sydney & Australia-Wide
 - **Meta description:** Buy halal chicken online: whole chickens, breast & tenderloins, thighs & marylands and more. 25 products from $22.45, HCA certified, delivered Australia-wide.
 - **Focus keyword:** halal chicken (Commercial, KD 15, vol 1,300)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - fresh poultry (Navigational, KD 13, vol 880)
+  - chicken meat (Informational, KD 16, vol 480)
+  - chicken frame (Informational, KD 6, vol 590)
+  - chicken neck (Informational, KD 11, vol 590)
 
 ### Chicken › Whole Chickens
 - **Link:** https://halalmeatdepot.com.au/shop/halal-chicken/#whole-chickens
@@ -249,7 +286,13 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Camel Meat Australia | Sydney & Australia-Wide
 - **Meta description:** Halal Camel Meat Australia: camel steaks, camel tomahawk, diced camel and more. 10 products from $30.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** camel meat australia (Informational + Commercial, KD 8, vol 50)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - camel meat sydney (Commercial, KD 8, vol 30)
+  - buy camel meat australia (Transactional, KD 9, vol 20)
+  - camel meat dishes (Informational, KD 6, vol 30)
+  - camel halal meat (Informational, KD 9, vol 20)
+  - camel meat australia price (Transactional, KD 8, vol 20)
+  - camel meat butcher (Navigational, KD 8, vol 20)
 
 ### Camel › Camel Steaks
 - **Link:** https://halalmeatdepot.com.au/shop/camel-meat-australia/#camel-steaks
@@ -276,7 +319,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Duck Meat Online | Sydney & Australia-Wide
 - **Meta description:** Buy halal duck meat online: whole ducks, duck breast, duck legs and more. 8 products from $17.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** duck meat (Commercial, KD 11, vol 880)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - is duck red meat (Informational, KD 23, vol 390)
+  - duck maryland (Informational, KD 6, vol 320)
+  - duck leg (Informational, KD 10, vol 390)
+  - duck oven (Informational, KD 12, vol 210)
 
 ### Duck › Whole Ducks
 - **Link:** https://halalmeatdepot.com.au/shop/duck-meat/#whole-ducks
@@ -307,7 +354,12 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Kangaroo Meat For Sale | Sydney & Australia-Wide
 - **Meta description:** Halal Kangaroo Meat For Sale: kangaroo fillet & steaks and more. 2 products from $36.98, HCA certified, delivered Australia-wide. Order online today.
 - **Focus keyword:** kangaroo meat for sale (Transactional, KD 9, vol 110)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - kangaroo meat butcher (Commercial, KD 9, vol 210)
+  - kangaroo meat recipes (Informational, KD 11, vol 480)
+  - recipes for kangaroo steak (Informational, KD 9, vol 480)
+  - kangaroo steak sydney (Commercial, KD 26, vol 210)
+  - kangaroo dishes (Informational, KD 10, vol 480)
 
 ### Kangaroo › Kangaroo Fillet & Steaks
 - **Link:** https://halalmeatdepot.com.au/shop/kangaroo-meat-for-sale/#kangaroo-fillet-and-steaks
@@ -318,7 +370,12 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Buffalo Meat Online | Halal Meat Depot
 - **Meta description:** Buy halal buffalo meat online: buffalo steaks, buffalo tomahawk, buffalo ribs and more. 9 products from $32.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** buffalo meat (Informational + Commercial, KD 8, vol 590)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - buffalo beef (Informational, KD 19, vol 320)
+  - buffalo steaks near me (Transactional, KD 5, vol 30)
+  - where to buy buffalo steaks (Transactional, KD 6, vol 20)
+  - buffalo steak price (Transactional, KD 3, vol 10)
+  - buffalo meat for sale near me (Transactional, KD 5, vol 20)
 
 ### Water Buffalo › Buffalo Steaks
 - **Link:** https://halalmeatdepot.com.au/shop/buffalo-meat/#buffalo-steaks
@@ -349,7 +406,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Buy Fresh Halal Beef Organ Meat Online | Halal Meat Depot
 - **Meta description:** Buy halal beef organ meat online: beef offal, chicken offal, bones & broth and more. 11 products from $16.98, HCA certified, delivered Australia-wide.
 - **Focus keyword:** beef organ meat (Commercial, KD 16, vol 90)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - beef offal (Informational, KD 10, vol 320)
+  - soup bones (Informational, KD 9, vol 390)
+  - beef marrow bone broth (Informational, KD 17, vol 390)
+  - tendon beef (Informational, KD 14, vol 260)
 
 ### Offal › Beef Offal
 - **Link:** https://halalmeatdepot.com.au/shop/offal-beef-organ-meat/#beef-offal
@@ -368,7 +429,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Meat Boxes & Bulk Halal Meat Cartons | HMD
 - **Meta description:** Meat Boxes And Bulk Halal Meat Cartons — 11 products from $160.00. Certified by Halal Control Australia, delivered Australia-wide.
 - **Focus keyword:** meat boxes (Commercial, KD 21, vol 720)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - steak bulk (Commercial, KD 6, vol 110)
+  - bulk beef purchase (Transactional, KD 12, vol 70)
+  - beef mince bulk buy (Transactional, KD 4, vol 90)
+  - wholesale beef mince (Commercial, KD 5, vol 90)
 
 ### Wholesale Cartons › Cryovac Primals
 - **Link:** https://halalmeatdepot.com.au/shop/bulk-meat-boxes/#cryovac-primals
@@ -506,7 +571,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - what's the best cut of beef (Commercial, KD 17, vol 90)
   - what's best cut of steak (Commercial, KD 17, vol 70)
   - what's the best steak (Commercial, KD 22, vol 70)
-  - beef bourguignon julia child's recipe (Informational, KD 27, vol 110)
+  - marion's beef stir fry (Informational, KD 17, vol 90)
+  - 程福记鲜牛馆火锅烧烤 cheng's beef hotpot glen waverley (Informational, KD 26, vol 390)
 
 ### Dry-Aged Cattleman's Cutlet
 - **Link:** https://halalmeatdepot.com.au/product/dry-aged-cattleman-s-cutlet/
@@ -572,9 +638,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - eye fillet steak recipes (Informational, KD 11, vol 320)
   - beef eye fillet steak recipe (Informational, KD 14, vol 210)
-  - recipe for eye fillet (Informational, KD 16, vol 720)
-  - eye fillet beef recipes (Informational, KD 28, vol 590)
+  - beef eye fillet recipe (Informational, KD 21, vol 720)
   - cooking eye fillet steak (Informational, KD 22, vol 140)
+  - how to cook eye fillet (Informational, KD 15, vol 480)
 
 ### Angus Beef Scotch Fillet Steaks MB3-4+
 - **Link:** https://halalmeatdepot.com.au/product/black-angus-beef-ribeye-steaks-mb3-4/
@@ -609,10 +675,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** angus beef rump steaks mb3-4 (not in keyword files — page name used)
 - **Supporting keywords:** 
   - beef rump steak slow cooker recipes (Informational, KD 26, vol 260)
-  - what are rump steaks (Informational, KD 15, vol 260)
   - angus beef steak (Informational, KD 17, vol 170)
   - rump steak cut (Informational, KD 7, vol 170)
   - how long to cook beef rump steak (Informational, KD 27, vol 320)
+  - cooking beef rump steak (Informational, KD 21, vol 260)
 
 ### Angus Beef Porterhouse Portion MB3-4+
 - **Link:** https://halalmeatdepot.com.au/product/angus-beef-porterhouse-portion-mb3-4/
@@ -632,11 +698,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Whole Beef Rump (Black Angus Beef Rump Whole MB3-4+), approx. 7kg whole rump, $185.43. A whole Black Angus rump (MB3–4+) for steakhouses and kebab kitchens.
 - **Focus keyword:** whole beef rump (Commercial, KD 4, vol 210)
 - **Supporting keywords:** 
-  - angus beef (Informational, KD 18, vol 1,600)
   - what is angus beef (Informational, KD 22, vol 260)
   - slow cooker beef rump steak (Informational, KD 23, vol 260)
   - beef rump roast recipe (Informational, KD 25, vol 260)
   - what is beef rump (Informational, KD 15, vol 260)
+  - angus beef meat (Informational, KD 9, vol 210)
 
 ### Angus Beef Butt Eye Fillet MB3-4+
 - **Link:** https://halalmeatdepot.com.au/product/angus-beef-butt-eye-fillet-mb3-4/
@@ -644,8 +710,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Angus Beef Butt Eye Fillet MB3-4+, 2 pieces, approx. 2.8kg, $214.17. The thick butt end of the Angus eye fillet (MB3–4+).
 - **Focus keyword:** angus beef butt eye fillet mb3-4 (not in keyword files — page name used)
 - **Supporting keywords:** 
-  - recipes for eye fillet of beef (Informational, KD 27, vol 590)
-  - how to cook eye fillet (Informational, KD 15, vol 480)
+  - eye fillet beef recipes (Informational, KD 28, vol 590)
+  - eye fillet recipe (Informational, KD 17, vol 390)
   - roast eye fillet (Informational, KD 7, vol 390)
   - whole eye fillet (Informational, KD 8, vol 390)
   - beef eye fillet roast recipe (Informational, KD 11, vol 260)
@@ -656,11 +722,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Angus Beef Tri Tip MB2+, 2 pieces, approx. 2.2kg, $42.88. Angus tri tip (MB2+), the triangular bottom-sirloin cut for grilling and smoking.
 - **Focus keyword:** angus beef tri tip mb2 (not in keyword files — page name used)
 - **Supporting keywords:** 
-  - certified angus beef for sale (Transactional, KD 17, vol 70)
   - angus beef wholesale (Commercial, KD 4, vol 50)
   - beef tri tip steak (Informational, KD 28, vol 880)
   - tri tip of beef (Informational, KD 29, vol 110)
   - what is tri tip beef (Informational, KD 29, vol 90)
+  - angus beef (Informational, KD 18, vol 1,600)
 
 ### Angus Standing Rib Roast MB3-4+
 - **Link:** https://halalmeatdepot.com.au/product/angus-standing-rib-roast-mb3-4/
@@ -668,7 +734,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Angus Standing Rib Roast MB3-4+, 3-rib roast, approx. 4kg, $263.96. A three-rib Angus standing rib roast (MB3–4+) for celebrations.
 - **Focus keyword:** angus standing rib roast mb3-4 (not in keyword files — page name used)
 - **Supporting keywords:** 
-  - buy angus beef sausage online (Transactional, KD 0, vol 70)
+  - certified angus beef for sale (Transactional, KD 17, vol 70)
   - black angus steak (Commercial, KD 11, vol 260)
   - angus steak (Commercial, KD 25, vol 210)
   - black angus beef (Commercial, KD 21, vol 210)
@@ -677,18 +743,18 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef rib eye rib roast (Informational, KD 14, vol 1,000)
 
 ### Wagyu Tomahawk MB9+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-tomahawk-mb9/
-- **SEO title:** Premium Halal Wagyu Tomahawk MB9+ | Halal Meat Depot
-- **Meta description:** Wagyu Tomahawk MB9+, 1 steak, approx. 2.2kg, $333.28. Marble score 9+ Wagyu tomahawk — one of the most heavily marbled steaks available.
-- **Focus keyword:** wagyu tomahawk mb9 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/wagyu-beef-tomahawk-steak-mb9/
+- **SEO title:** Premium Halal Wagyu Beef Tomahawk Steak | Halal Meat Depot
+- **Meta description:** Wagyu Beef Tomahawk Steak (Wagyu Tomahawk MB9+), 1 steak, approx. 2.2kg, $333.28. Certified halal by Halal Control Australia. Delivered Australia-wide.
+- **Focus keyword:** wagyu beef tomahawk steak (Informational, KD 8, vol 110)
 - **Supporting keywords:** 
   - sliced wagyu beef (Transactional, KD 6, vol 110)
   - buying wagyu beef online (Transactional, KD 14, vol 90)
   - where can you buy wagyu beef (Transactional, KD 19, vol 70)
-  - where do you buy wagyu beef (Transactional, KD 15, vol 50)
   - wagyu beef ribeye (Commercial, KD 16, vol 110)
   - wagyu beef mince (Commercial, KD 6, vol 90)
-  - wagyu beef tomahawk steak (Informational, KD 8, vol 110)
+  - wagyu beef sydney wholesale (Navigational, KD 24, vol 90)
+  - beef tomahawk (Informational, KD 23, vol 390)
 
 ### Wagyu Tomahawk MB5+
 - **Link:** https://halalmeatdepot.com.au/product/wagyu-tomahawk-mb5/
@@ -696,7 +762,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Wagyu Tomahawk MB5+, 2 steaks, approx. 3.6kg, $313.16. Marble score 5+ Wagyu tomahawks with the long rib bone.
 - **Focus keyword:** wagyu tomahawk mb5 (not in keyword files — page name used)
 - **Supporting keywords:** 
-  - beef tomahawk (Informational, KD 23, vol 390)
+  - where do you buy wagyu beef (Transactional, KD 15, vol 50)
   - beef tomahawk steak (Informational, KD 13, vol 320)
   - what is the tomahawk steak (Informational, KD 12, vol 140)
   - wagyu beef recipe (Informational, KD 17, vol 140)
@@ -743,10 +809,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - what cut is the porterhouse steak (Informational, KD 14, vol 110)
 
 ### Wagyu Porterhouse Steaks MB9+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-porterhouse-steaks-mb9/
-- **SEO title:** Premium Halal Wagyu Porterhouse Steaks MB9+ | HMD
-- **Meta description:** Wagyu Porterhouse Steaks MB9+, 2kg pack, $378.98. MB9+ Wagyu porterhouse — the top of the marbling scale. Certified halal by Halal Control Australia.
-- **Focus keyword:** wagyu porterhouse steaks mb9 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/wagyu-porterhouse-steak-mb9/
+- **SEO title:** Premium Halal Wagyu Porterhouse Steak | Halal Meat Depot
+- **Meta description:** Wagyu Porterhouse Steak (Wagyu Porterhouse Steaks MB9+), 2kg pack, $378.98. MB9+ Wagyu porterhouse — the top of the marbling scale.
+- **Focus keyword:** wagyu porterhouse steak (Informational, KD 5, vol 170)
 - **Supporting keywords:** 
   - cook a porterhouse steak (Informational, KD 15, vol 210)
   - what cuts are in a porterhouse steak (Informational, KD 15, vol 110)
@@ -773,8 +839,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** wagyu eye fillet (Informational + Commercial, KD 7, vol 260)
 - **Supporting keywords:** 
   - steak eye fillet (Informational, KD 8, vol 210)
+  - recipes for eye fillet of beef (Informational, KD 27, vol 590)
   - how to cook an eye fillet steak (Informational, KD 22, vol 110)
-  - eye fillet recipe (Informational, KD 17, vol 390)
   - cooking beef eye fillet steak (Informational, KD 9, vol 90)
   - rib eye fillet steak (Informational, KD 12, vol 90)
 
@@ -791,40 +857,40 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - roast beef eye fillet recipe (Informational, KD 6, vol 210)
 
 ### Wagyu Rump Steaks MB5+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-rump-steaks-mb5/
-- **SEO title:** Premium Halal Wagyu Rump Steaks MB5+ | Halal Meat Depot
-- **Meta description:** Wagyu Rump Steaks MB5+, 2kg pack, $112.98. MB5+ Wagyu rump steaks — Wagyu flavour at a friendlier price. Certified halal by Halal Control Australia.
-- **Focus keyword:** wagyu rump steaks mb5 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/wagyu-beef-rump-steak-mb5/
+- **SEO title:** Premium Halal Wagyu Beef Rump Steak | Wagyu Rump Steaks MB5+
+- **Meta description:** Wagyu Beef Rump Steak (Wagyu Rump Steaks MB5+), 2kg pack, $112.98. MB5+ Wagyu rump steaks — Wagyu flavour at a friendlier price.
+- **Focus keyword:** wagyu beef rump steak (Informational, KD 6, vol 390)
 - **Supporting keywords:** 
-  - wagyu beef rump (Informational, KD 6, vol 90)
-  - cooking beef rump steak (Informational, KD 21, vol 260)
   - eye of rump steak (Informational, KD 9, vol 110)
   - beef stew with rump steak (Informational, KD 25, vol 70)
-  - wagyu beef hanger steak (Informational, KD 7, vol 70)
-
-### Wagyu Rump Steaks MB9+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-rump-steaks-mb9/
-- **SEO title:** Premium Halal Wagyu Rump Steaks MB9+ | Halal Meat Depot
-- **Meta description:** Wagyu Rump Steaks MB9+, 2kg pack, $150.98. MB9+ Wagyu rump steaks. Certified halal by Halal Control Australia.
-- **Focus keyword:** wagyu rump steaks mb9 (not in keyword files — page name used)
-- **Supporting keywords:** 
   - wagyu beef sirloin steak (Informational, KD 3, vol 70)
   - roast rump beef (Informational, KD 21, vol 260)
   - roast beef rump roast recipe (Informational, KD 23, vol 210)
-  - beef rump slow cooker recipes (Informational, KD 26, vol 140)
-  - how to cook beef rump (Informational, KD 22, vol 140)
 
-### Wagyu Rump Whole MB5+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-rump-whole-mb5/
-- **SEO title:** Premium Halal Wagyu Rump Whole MB5+ | Halal Meat Depot
-- **Meta description:** Wagyu Rump Whole MB5+, approx. 7kg whole rump, $363.93. A whole MB5+ Wagyu rump for restaurants portioning their own steaks.
-- **Focus keyword:** wagyu rump whole mb5 (not in keyword files — page name used)
+### Wagyu Rump Steaks MB9+
+- **Link:** https://halalmeatdepot.com.au/product/rump-steak-wagyu-mb9/
+- **SEO title:** Premium Halal Rump Steak Wagyu | Wagyu Rump Steaks MB9+
+- **Meta description:** Rump Steak Wagyu (Wagyu Rump Steaks MB9+), 2kg pack, $150.98. MB9+ Wagyu rump steaks. Certified halal by Halal Control Australia.
+- **Focus keyword:** rump steak wagyu (Informational, KD 7, vol 390)
 - **Supporting keywords:** 
   - beef rump roast recipes (Informational, KD 17, vol 210)
-  - how to cook rump beef (Informational, KD 28, vol 140)
+  - beef rump slow cooker recipes (Informational, KD 26, vol 140)
+  - how to cook beef rump (Informational, KD 22, vol 140)
   - rump cuts of meat (Informational, KD 17, vol 110)
   - beef rump roast slow cooker recipe (Informational, KD 28, vol 110)
+
+### Wagyu Rump Whole MB5+
+- **Link:** https://halalmeatdepot.com.au/product/wagyu-beef-rump-whole-mb5/
+- **SEO title:** Premium Halal Wagyu Beef Rump | Wagyu Rump Whole MB5+
+- **Meta description:** Wagyu Beef Rump (Wagyu Rump Whole MB5+), approx. 7kg whole rump, $363.93. A whole MB5+ Wagyu rump for restaurants portioning their own steaks.
+- **Focus keyword:** wagyu beef rump (Informational, KD 6, vol 90)
+- **Supporting keywords:** 
+  - how to cook a beef rump roast (Informational, KD 13, vol 170)
+  - how to cook rump beef (Informational, KD 28, vol 140)
   - rump cut beef (Informational, KD 14, vol 110)
+  - roast beef rump roast (Informational, KD 15, vol 90)
+  - rump roast beef slow cooker (Informational, KD 25, vol 90)
 
 ### Wagyu Oyster Blade Steaks MB9+
 - **Link:** https://halalmeatdepot.com.au/product/wagyu-oyster-blade-steaks-mb9/
@@ -836,17 +902,17 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef oyster blade roast (Informational, KD 7, vol 140)
   - oyster blade beef recipe (Informational, KD 9, vol 140)
   - oyster blade cut beef (Informational, KD 14, vol 110)
-  - recipes using blade steak (Informational, KD 9, vol 140)
+  - beef blade roast recipe (Informational, KD 17, vol 480)
 
 ### Wagyu Whole Oyster Blade MB9+
-- **Link:** https://halalmeatdepot.com.au/product/wagyu-whole-oyster-blade-mb9/
-- **SEO title:** Premium Halal Wagyu Whole Oyster Blade MB9+ | HMD
-- **Meta description:** Wagyu Whole Oyster Blade MB9+, approx. 3.5kg whole piece, $314.96. A whole MB9+ Wagyu oyster blade for cutting flat-iron steaks.
-- **Focus keyword:** wagyu whole oyster blade mb9 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/wagyu-beef-oyster-blade-mb9/
+- **SEO title:** Premium Halal Wagyu Beef Oyster Blade | Halal Meat Depot
+- **Meta description:** Wagyu Beef Oyster Blade (Wagyu Whole Oyster Blade MB9+), approx. 3.5kg whole piece, $314.96. A whole MB9+ Wagyu oyster blade for cutting flat-iron steaks.
+- **Focus keyword:** wagyu beef oyster blade (Informational, KD 5, vol 90)
 - **Supporting keywords:** 
   - beef oyster blade recipe (Informational, KD 8, vol 90)
   - oyster blade beef cut (Informational, KD 13, vol 70)
-  - beef blade roast recipe (Informational, KD 17, vol 480)
+  - how to cook roast blade beef (Informational, KD 15, vol 390)
   - how to cook blade beef (Informational, KD 9, vol 320)
   - blade beef slow cooker (Informational, KD 14, vol 260)
 
@@ -860,7 +926,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef blade steak roast (Informational, KD 7, vol 110)
   - beef blade steak recipe slow cooker (Informational, KD 12, vol 90)
   - beef top blade steak recipes (Informational, KD 28, vol 880)
-  - wagyu beef rump steak (Informational, KD 6, vol 390)
+  - wagyu sirloin steak (Informational, KD 6, vol 260)
 
 ### Wagyu Blade Steaks MB9+
 - **Link:** https://halalmeatdepot.com.au/product/wagyu-blade-steaks-mb9/
@@ -869,10 +935,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** wagyu blade steaks mb9 (not in keyword files — page name used)
 - **Supporting keywords:** 
   - beef blade steak recipe (Informational, KD 26, vol 320)
-  - rump steak wagyu (Informational, KD 7, vol 390)
-  - wagyu sirloin steak (Informational, KD 6, vol 260)
-  - wagyu porterhouse steak (Informational, KD 5, vol 170)
   - cooking wagyu beef steak (Informational, KD 20, vol 140)
+  - recipes using blade steak (Informational, KD 9, vol 140)
+  - cooking beef blade steak (Informational, KD 13, vol 90)
+  - wagyu beef hanger steak (Informational, KD 7, vol 70)
 
 ### Wagyu Chuck Steak MB5+
 - **Link:** https://halalmeatdepot.com.au/product/wagyu-chuck-steak-mb5/
@@ -979,23 +1045,23 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - eye fillet roast (Informational, KD 8, vol 1,000)
 
 ### Beef Eye Fillet Whole MB4+
-- **Link:** https://halalmeatdepot.com.au/product/beef-eye-fillet-whole-mb4/
-- **SEO title:** Fresh Halal Beef Eye Fillet Whole MB4+ | Halal Meat Depot
-- **Meta description:** Beef Eye Fillet Whole MB4+, approx. 2kg whole piece, $160.98. A whole MB4+ beef eye fillet with extra marbling.
-- **Focus keyword:** beef eye fillet whole mb4 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/eye-fillet-beef-whole-mb4/
+- **SEO title:** Fresh Halal Eye Fillet Beef | Beef Eye Fillet Whole MB4+
+- **Meta description:** Eye Fillet Beef (Beef Eye Fillet Whole MB4+), approx. 2kg whole piece, $160.98. A whole MB4+ beef eye fillet with extra marbling.
+- **Focus keyword:** eye fillet beef (Informational, KD 11, vol 140)
 - **Supporting keywords:** 
   - rib eye beef price (Transactional, KD 6, vol 90)
   - eye fillet vs ribeye (Commercial, KD 8, vol 110)
   - eye fillet vs sirloin (Commercial, KD 6, vol 50)
   - rib eye vs scotch fillet (Commercial, KD 10, vol 320)
   - rib eye steak versus sirloin (Commercial, KD 12, vol 210)
-  - beef eye fillet recipe (Informational, KD 21, vol 720)
+  - recipe for eye fillet (Informational, KD 16, vol 720)
 
 ### Beef Porterhouse Portion
-- **Link:** https://halalmeatdepot.com.au/product/beef-porterhouse-portion/
-- **SEO title:** Fresh Halal Beef Porterhouse Portion | Halal Meat Depot
-- **Meta description:** Beef Porterhouse Portion, approx. 3kg portion, $101.97. A beef porterhouse (striploin) portion for cutting your own steaks.
-- **Focus keyword:** beef porterhouse portion (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/porterhouse-beef-portion/
+- **SEO title:** Fresh Halal Porterhouse Beef | Beef Porterhouse Portion
+- **Meta description:** Porterhouse Beef (Beef Porterhouse Portion), approx. 3kg portion, $101.97. A beef porterhouse (striploin) portion for cutting your own steaks.
+- **Focus keyword:** porterhouse beef (Informational, KD 14, vol 260)
 - **Supporting keywords:** 
   - porterhouse steak (Transactional, KD 26, vol 9,900)
   - porterhouse steak price (Transactional, KD 8, vol 170)
@@ -1006,10 +1072,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - how to cook a porterhouse (Informational, KD 21, vol 1,300)
 
 ### Beef Porterhouse Portion MB4+
-- **Link:** https://halalmeatdepot.com.au/product/beef-porterhouse-portion-mb4/
-- **SEO title:** Fresh Halal Beef Porterhouse Portion MB4+ | Halal Meat Depot
-- **Meta description:** Beef Porterhouse Portion MB4+, approx. 3kg portion, $197.97. An MB4+ beef porterhouse portion for premium steaks.
-- **Focus keyword:** beef porterhouse portion mb4 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/beef-porterhouse-roast-mb4/
+- **SEO title:** Fresh Halal Beef Porterhouse Roast | Halal Meat Depot
+- **Meta description:** Beef Porterhouse Roast (Beef Porterhouse Portion MB4+), approx. 3kg portion, $197.97. An MB4+ beef porterhouse portion for premium steaks.
+- **Focus keyword:** beef porterhouse roast (Informational, KD 7, vol 210)
 - **Supporting keywords:** 
   - best way to cook porterhouse steak (Commercial, KD 25, vol 390)
   - porterhouse steak vs ribeye (Commercial, KD 19, vol 170)
@@ -1019,10 +1085,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef porterhouse steak (Informational, KD 17, vol 720)
 
 ### Beef Scotch Fillet Portion MB4+
-- **Link:** https://halalmeatdepot.com.au/product/beef-scotch-fillet-portion-mb4/
-- **SEO title:** Fresh Halal Beef Scotch Fillet Portion MB4+ | HMD
-- **Meta description:** Beef Scotch Fillet Portion MB4+, approx. 2.5kg portion, $188.73. An MB4+ scotch fillet (cube roll) portion. Certified halal by Halal Control Australia.
-- **Focus keyword:** beef scotch fillet portion mb4 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/beef-scotch-fillet-roast-mb4/
+- **SEO title:** Fresh Halal Beef Scotch Fillet Roast | Halal Meat Depot
+- **Meta description:** Beef Scotch Fillet Roast (Beef Scotch Fillet Portion MB4+), approx. 2.5kg portion, $188.73. An MB4+ scotch fillet (cube roll) portion.
+- **Focus keyword:** beef scotch fillet roast (Informational, KD 8, vol 390)
 - **Supporting keywords:** 
   - porterhouse vs scotch fillet (Commercial, KD 8, vol 1,000)
   - eye fillet vs scotch fillet (Commercial, KD 7, vol 480)
@@ -1036,7 +1102,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Link:** https://halalmeatdepot.com.au/product/beef-rump-portion/
 - **SEO title:** Fresh Halal Beef Rump Portion | Halal Meat Depot
 - **Meta description:** Beef Rump Portion, approx. 3.5kg portion, $82.21. A beef rump portion for steaks, skewers and roasting. Certified halal by Halal Control Australia.
-- **Focus keyword:** beef rump portion (not in keyword files — page name used)
+- **Focus keyword:** beef rump (Informational, KD 22, vol 2,400)
 - **Supporting keywords:** 
   - rump vs sirloin (Commercial, KD 12, vol 260)
   - rump vs porterhouse (Commercial, KD 8, vol 210)
@@ -1044,7 +1110,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - porterhouse vs rump steak (Commercial, KD 14, vol 50)
   - rump or porterhouse (Commercial, KD 6, vol 50)
   - scotch fillet vs rump (Commercial, KD 9, vol 110)
-  - beef rump (Informational, KD 22, vol 2,400)
+  - beef rump roast (Informational, KD 18, vol 880)
 
 ### Beef Rump Cap
 - **Link:** https://halalmeatdepot.com.au/product/beef-rump-cap/
@@ -1059,28 +1125,28 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef rump cap roast (Informational, KD 16, vol 90)
 
 ### Beef Rump Cap MB4+
-- **Link:** https://halalmeatdepot.com.au/product/beef-rump-cap-mb4/
-- **SEO title:** Fresh Halal Beef Rump Cap MB4+ | Halal Meat Depot
-- **Meta description:** Beef Rump Cap MB4+, approx. 2.2kg (2 pieces), $76.98. Marbled MB4+ beef rump cap for churrasco and roasting. Certified halal by Halal Control Australia.
-- **Focus keyword:** beef rump cap mb4 (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/rump-cap-beef-mb4/
+- **SEO title:** Fresh Halal Rump Cap Beef | Beef Rump Cap MB4+
+- **Meta description:** Rump Cap Beef (Beef Rump Cap MB4+), approx. 2.2kg (2 pieces), $76.98. Marbled MB4+ beef rump cap for churrasco and roasting.
+- **Focus keyword:** rump cap beef (Informational, KD 7, vol 50)
 - **Supporting keywords:** 
   - rump vs eye fillet (Commercial, KD 6, vol 90)
   - rump cap beef cut (Informational, KD 15, vol 90)
-  - beef rump roast (Informational, KD 18, vol 880)
   - what is rump steak (Informational, KD 17, vol 320)
   - beef rump steak slow cooker (Informational, KD 26, vol 260)
+  - what are rump steaks (Informational, KD 15, vol 260)
 
 ### Beef Topside Whole
 - **Link:** https://halalmeatdepot.com.au/product/beef-topside-whole/
 - **SEO title:** Fresh Halal Beef Topside Whole | Halal Meat Depot
 - **Meta description:** Beef Topside Whole, approx. 6kg whole piece, $95.94. Lean whole beef topside for roasts, schnitzel, shawarma and thin slicing.
-- **Focus keyword:** beef topside whole (not in keyword files — page name used)
+- **Focus keyword:** beef topside (Informational, KD 18, vol 880)
 - **Supporting keywords:** 
   - topside beef steak (Informational, KD 6, vol 590)
   - topside roast (Informational, KD 17, vol 2,400)
-  - beef topside (Informational, KD 18, vol 880)
   - roast topside beef (Informational, KD 19, vol 880)
   - recipes with topside steak (Informational, KD 17, vol 210)
+  - slow cook topside of beef (Informational, KD 17, vol 210)
 
 ### Beef Bolar Blade Roast
 - **Link:** https://halalmeatdepot.com.au/product/beef-bolar-blade-roast/
@@ -1140,6 +1206,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - what is beef hanger steak (Informational, KD 24, vol 210)
   - what is hanger beef (Informational, KD 22, vol 170)
   - hanger beef recipes (Informational, KD 20, vol 90)
+  - beef hanger tender (Informational, KD 27, vol 70)
 
 ### Beef Chuck Tail Flap
 - **Link:** https://halalmeatdepot.com.au/product/beef-chuck-tail-flap/
@@ -1154,10 +1221,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - chuck steak beef (Informational, KD 17, vol 3,600)
 
 ### Beef Spider Steaks
-- **Link:** https://halalmeatdepot.com.au/product/beef-spider-steaks/
-- **SEO title:** Fresh Halal Beef Spider Steaks | Halal Meat Depot
-- **Meta description:** Beef Spider Steaks, 2kg pack, $48.98. Spider steaks — a rare, web-marbled cut from the hip. Certified halal by Halal Control Australia.
-- **Focus keyword:** beef spider steaks (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/beef-spider-steak/
+- **SEO title:** Fresh Halal Beef Spider Steak | Beef Spider Steaks
+- **Meta description:** Beef Spider Steak (Beef Spider Steaks), 2kg pack, $48.98. Spider steaks — a rare, web-marbled cut from the hip.
+- **Focus keyword:** beef spider steak (Informational, KD 8, vol 110)
 - **Supporting keywords:** none
 
 ### Beef Minute Steaks
@@ -1169,6 +1236,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - what are beef minute steaks (Informational, KD 16, vol 110)
   - what is beef minute steak (Informational, KD 8, vol 110)
   - recipes using minute steak (Informational, KD 27, vol 260)
+  - minute steak meals (Informational, KD 24, vol 320)
 
 ### Beef Porterhouse Minute Steaks
 - **Link:** https://halalmeatdepot.com.au/product/beef-porterhouse-minute-steaks/
@@ -1365,8 +1433,11 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Beef Mince with Liver, Heart & Kidney (30%), 5kg pack, $79.95. Nose-to-tail beef mince with 30% liver, heart and kidney.
 - **Focus keyword:** beef mince with liver, heart & kidney 30 (not in keyword files — page name used)
 - **Supporting keywords:** 
+  - beef liver where to buy (Transactional, KD 6, vol 50)
   - how to cook beef liver (Informational, KD 24, vol 210)
   - beef heart recipe (Informational, KD 28, vol 90)
+  - beef kidney (Informational, KD 9, vol 210)
+  - beef liver dishes (Informational, KD 19, vol 260)
 
 ### Diced Beef
 - **Link:** https://halalmeatdepot.com.au/product/buy-diced-beef-online/
@@ -1623,6 +1694,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - forequarter lamb chops (Informational, KD 9, vol 320)
   - slow cooker lamb forequarter chops (Informational, KD 14, vol 140)
+  - lamb forequarter (Informational, KD 17, vol 390)
 
 ### Lamb Shanks
 - **Link:** https://halalmeatdepot.com.au/product/lamb-shanks/
@@ -1716,6 +1788,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - what to have with lamb kofta (Informational, KD 27, vol 260)
   - greek lamb kofta (Informational, KD 12, vol 70)
+  - what to serve lamb koftas with (Informational, KD 25, vol 260)
+  - lamb kofta meatballs (Informational, KD 9, vol 170)
+  - lamb kofta sauce (Informational, KD 17, vol 110)
 
 ### Lamb & Rosemary Sausages
 - **Link:** https://halalmeatdepot.com.au/product/halal-lamb-sausages-rosemary/
@@ -1922,6 +1997,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - chicken recipes with chicken tenderloins (Informational, KD 19, vol 260)
   - what are chicken tenderloins (Informational, KD 23, vol 260)
   - air fryer chicken tenderloins (Informational, KD 25, vol 260)
+  - chicken tenderloin wraps (Informational, KD 11, vol 210)
 
 ### Chicken Thigh Fillets
 - **Link:** https://halalmeatdepot.com.au/product/chicken-thigh-price-fillets/
@@ -1950,7 +2026,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Buy Chicken Maryland Online (Chicken Maryland), 5kg pack, $49.95. Chicken maryland — thigh and drumstick together.
 - **Focus keyword:** buy chicken maryland online (Transactional, KD 3, vol 70)
 - **Supporting keywords:** 
-  - maryland chicken (Informational, KD 29, vol 1,900)
+  - marylands chicken (Navigational, KD 15, vol 210)
   - what is chicken maryland (Informational, KD 27, vol 590)
   - what are chicken marylands (Informational, KD 29, vol 320)
   - maryland chicken roast (Informational, KD 8, vol 260)
@@ -1975,14 +2051,14 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - chicken wings near me (Transactional, KD 28, vol 1,900)
   - sticky chicken wings (Informational, KD 21, vol 720)
-  - honey soy chicken wings (Informational, KD 16, vol 2,400)
 
 ### Chicken Mini Drumettes
 - **Link:** https://halalmeatdepot.com.au/product/chicken-mini-drumettes/
 - **SEO title:** Fresh Halal Chicken Mini Drumettes | Halal Meat Depot
 - **Meta description:** Chicken Mini Drumettes, 5kg pack, $42.45. Mini chicken drumettes for wings bars and platters. Certified halal by Halal Control Australia.
 - **Focus keyword:** chicken mini drumettes (not in keyword files — page name used)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - chicken drumettes (Informational, KD 10, vol 720)
 
 ### Crumbed Chicken Schnitzel
 - **Link:** https://halalmeatdepot.com.au/product/crumbed-chicken-schnitzel/
@@ -1992,6 +2068,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - crumbed chicken (Informational, KD 25, vol 2,400)
   - crumbed chicken breast (Informational, KD 24, vol 320)
+  - crumbed chicken tenders (Informational, KD 19, vol 590)
 
 ### Crumbed Chicken Tenderloins
 - **Link:** https://halalmeatdepot.com.au/product/crumbed-chicken-tenderloins/
@@ -2001,6 +2078,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - chicken tenderloins recipe (Informational, KD 22, vol 1,900)
   - crumbed chicken recipe (Informational, KD 28, vol 720)
+  - chicken tenderloins grill (Informational, KD 26, vol 390)
+  - chicken tenderloins on the grill (Informational, KD 27, vol 390)
+  - grilling chicken tenderloin (Informational, KD 28, vol 390)
 
 ### Chicken Cocktail Kebabs
 - **Link:** https://halalmeatdepot.com.au/product/chicken-cocktail-kebabs/
@@ -2010,11 +2090,12 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** none
 
 ### Honey Soy Marinated Chicken Wings
-- **Link:** https://halalmeatdepot.com.au/product/honey-soy-marinated-chicken-wings/
-- **SEO title:** Fresh Halal Honey Soy Marinated Chicken Wings | HMD
-- **Meta description:** Honey Soy Marinated Chicken Wings, 3kg pack, $46.47. Chicken wings in a sweet honey soy marinade. Certified halal by Halal Control Australia.
-- **Focus keyword:** honey soy marinated chicken wings (not in keyword files — page name used)
-- **Supporting keywords:** none
+- **Link:** https://halalmeatdepot.com.au/product/honey-soy-chicken-wings-marinated/
+- **SEO title:** Fresh Halal Honey Soy Chicken Wings | Halal Meat Depot
+- **Meta description:** Honey Soy Chicken Wings (Honey Soy Marinated Chicken Wings), 3kg pack, $46.47. Chicken wings in a sweet honey soy marinade.
+- **Focus keyword:** honey soy chicken wings (Informational, KD 16, vol 2,400)
+- **Supporting keywords:** 
+  - chicken legs honey soy (Informational, KD 22, vol 720)
 
 ### Chimichurri Marinated Chicken Wings
 - **Link:** https://halalmeatdepot.com.au/product/chimichurri-marinated-chicken-wings/
@@ -2071,15 +2152,15 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **SEO title:** Fresh Halal Chicken Breast Fillet Carton | Halal Meat Depot
 - **Meta description:** Chicken Breast Fillet Carton, 10kg carton, $115.00. A 10kg carton of skinless chicken breast fillets for takeaways and caterers.
 - **Focus keyword:** chicken breast fillet carton (not in keyword files — page name used)
-- **Supporting keywords:** none
+- **Supporting keywords:** 
+  - chicken breast crumbed (Informational, KD 19, vol 260)
 
 ### Chicken Thigh Fillet Carton
 - **Link:** https://halalmeatdepot.com.au/product/chicken-thigh-fillet-carton/
 - **SEO title:** Fresh Halal Chicken Thigh Fillet Carton | Halal Meat Depot
 - **Meta description:** Chicken Thigh Fillet Carton, 10kg carton, $130.00. A 10kg carton of boneless chicken thigh fillets for shawarma, shish and grills.
-- **Focus keyword:** chicken thigh fillet carton (not in keyword files — page name used)
+- **Focus keyword:** chicken thigh fillet (Informational, KD 10, vol 1,000)
 - **Supporting keywords:** 
-  - chicken thigh fillet (Informational, KD 10, vol 1,000)
   - chicken thigh (Informational, KD 28, vol 6,600)
   - slow cooker recipes using chicken thighs (Informational, KD 25, vol 1,600)
   - chicken thigh cutlets (Informational, KD 21, vol 1,000)
@@ -2093,6 +2174,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - chicken drumstick recipes slow cooker (Informational, KD 22, vol 1,000)
   - air fryer chicken drumstick recipes (Informational, KD 28, vol 480)
+  - chicken drumstick dishes (Informational, KD 20, vol 1,000)
+  - chicken drumstick meals (Informational, KD 22, vol 1,000)
+  - chicken drumsticks marinade (Informational, KD 28, vol 390)
 
 ### Chicken Wing Carton
 - **Link:** https://halalmeatdepot.com.au/product/chicken-wing-carton/
@@ -2230,6 +2314,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - buy duck liver (Transactional, KD 6, vol 20)
   - buy duck liver near me (Transactional, KD 7, vol 20)
   - minced duck liver (Commercial, KD 4, vol 0)
+  - duck liver dishes (Informational, KD 15, vol 70)
+  - duck liver paté (Informational, KD 10, vol 30)
 
 ### Rendered Duck Fat
 - **Link:** https://halalmeatdepot.com.au/product/rendered-duck-fat/
@@ -2240,6 +2326,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - roast potatoes in duck fat (Informational, KD 27, vol 1,000)
   - duck fat potatoes recipe (Informational, KD 21, vol 590)
   - potato with duck fat (Informational, KD 17, vol 210)
+  - duck fat roasted potatoes (Informational, KD 25, vol 210)
 
 ### Duck Bones Carton
 - **Link:** https://halalmeatdepot.com.au/product/duck-bones-carton/
@@ -2331,6 +2418,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - buffalo mince meat (Informational, KD 3, vol 0)
   - what is buffalo mince (Informational, KD 1, vol 0)
   - buffalo mince vs beef mince (Informational, KD 19, vol 20)
+  - buffalo mince nsw (Informational, KD 0, vol 0)
 
 ### Buffalo Osso Buco
 - **Link:** https://halalmeatdepot.com.au/product/buffalo-osso-buco/
@@ -2351,7 +2439,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - where to buy beef cheek meat (Transactional, KD 6, vol 70)
   - where to buy beef cheeks (Transactional, KD 7, vol 70)
   - beef cheek meat for sale (Transactional, KD 7, vol 20)
-  - beef cheeks slow cooker (Informational, KD 17, vol 1,300)
+  - beef cheeks (Informational, KD 20, vol 6,600)
 
 ### Beef Liver
 - **Link:** https://halalmeatdepot.com.au/product/beef-liver-meat/
@@ -2386,6 +2474,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** beef tendon (Informational, KD 17, vol 1,900)
 - **Supporting keywords:** 
   - where can you buy beef tendon (Transactional, KD 8, vol 90)
+  - large beef tendons (Commercial, KD 6, vol 70)
   - what is beef tendon (Informational, KD 23, vol 70)
 
 ### Beef Oxtail
@@ -2476,7 +2565,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Link:** https://halalmeatdepot.com.au/product/beef-striploin-cryovac-carton/
 - **SEO title:** Fresh Halal Beef Striploin Cryovac Carton | Halal Meat Depot
 - **Meta description:** Beef Striploin Cryovac Carton, approx. 20kg carton, $560.00. A carton of cryovac beef striploins (about 20kg) for steakhouses and restaurants.
-- **Focus keyword:** beef striploin cryovac carton (not in keyword files — page name used)
+- **Focus keyword:** beef striploin (Informational, KD 11, vol 720)
 - **Supporting keywords:** none
 
 ### Beef Brisket Cryovac Carton
@@ -2497,7 +2586,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Link:** https://halalmeatdepot.com.au/product/beef-mince-carton/
 - **SEO title:** Fresh Halal Beef Mince Carton | Halal Meat Depot
 - **Meta description:** Beef Mince Carton, 20kg carton, $290.00. A 20kg carton of beef mince for burger bars, kofta grills and takeaways.
-- **Focus keyword:** beef mince carton (not in keyword files — page name used)
+- **Focus keyword:** beef mince (Informational, KD 23, vol 4,400)
 - **Supporting keywords:** none
 
 ### Lamb Curry Pieces Carton
@@ -2508,10 +2597,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** none
 
 ### Diced Beef Carton
-- **Link:** https://halalmeatdepot.com.au/product/diced-beef-carton/
-- **SEO title:** Fresh Halal Diced Beef Carton | Halal Meat Depot
-- **Meta description:** Diced Beef Carton, 20kg carton, $380.00. A 20kg carton of boneless diced beef for curry houses, stews and catering.
-- **Focus keyword:** diced beef carton (not in keyword files — page name used)
+- **Link:** https://halalmeatdepot.com.au/product/beef-diced-carton/
+- **SEO title:** Fresh Halal Beef Diced | Diced Beef Carton
+- **Meta description:** Beef Diced (Diced Beef Carton), 20kg carton, $380.00. A 20kg carton of boneless diced beef for curry houses, stews and catering.
+- **Focus keyword:** beef diced (Informational, KD 12, vol 140)
 - **Supporting keywords:** none
 
 ### Lamb Shoulder Carton
@@ -2552,9 +2641,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - est halal check (Informational, KD 8, vol 1,000)
   - est halal (Informational, KD 7, vol 1,000)
-  - est halal checker (Informational, KD 14, vol 720)
   - halal meat close to me (Informational, KD 15, vol 3,600)
-  - halal meat (Commercial, KD 25, vol 2,900)
   - halal butcher (Commercial, KD 17, vol 1,900)
   - halal meat near me (Transactional, KD 7, vol 3,600)
   - halal butcher near me (Transactional, KD 17, vol 5,400)
@@ -2567,11 +2654,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - eye fillet (Informational, KD 9, vol 8,100)
   - scotch fillet steak (Informational, KD 9, vol 6,600)
-  - what is the sirloin steak (Informational, KD 13, vol 590)
   - how to cook scotch fillet (Informational, KD 12, vol 1,000)
   - halal steak (Commercial, KD 8, vol 720)
   - sirloin vs scotch fillet (Commercial, KD 9, vol 590)
-  - buy beef brisket (Transactional, KD 11, vol 260)
   - beef eye fillet price (Transactional, KD 5, vol 50)
 
 ### Goat Meat for Curry: Bone-in, Boneless and Whole Goat Cuts Explained
@@ -2581,12 +2666,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** goat meat (Informational, KD 14, vol 1,900)
 - **Supporting keywords:** 
   - goat meat or lamb meat (Informational, KD 20, vol 140)
-  - which is better goat leg or shoulder (Informational, KD 12, vol 20)
   - goat meat recipes (Informational, KD 22, vol 170)
   - diced goat meat recipes (Informational, KD 6, vol 20)
-  - diced goat (Commercial, KD 4, vol 20)
   - goat leg vs shoulder (Commercial, KD 13, vol 20)
-  - goat meat for sale (Transactional, KD 8, vol 40)
   - goat price (Transactional, KD 14, vol 140)
 
 ### Cooking Camel Meat, Water Buffalo and Kangaroo: A Beginner's Guide
@@ -2595,13 +2677,10 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Cooking camel meat, water buffalo and kangaroo: lean, flavourful and easy to get wrong. How to keep each one tender, with the right cut for every dish.
 - **Focus keyword:** camel meat (Informational, KD 10, vol 720)
 - **Supporting keywords:** 
-  - camel burger (Informational, KD 13, vol 590)
   - is kangaroo halal (Informational, KD 13, vol 720)
   - kangaroo recipes (Informational, KD 11, vol 720)
   - kangaroo steak recipe (Informational, KD 10, vol 590)
-  - kangaroo steak (Commercial, KD 15, vol 2,900)
   - buffalo meat australia (Commercial, KD 5, vol 140)
-  - kangaroo meat for sale (Transactional, KD 9, vol 110)
   - buy kangaroo meat (Transactional, KD 17, vol 110)
 
 ### Lamb Cuts Australia: Halal Cutlets, Legs, Shanks and Curry Pieces
@@ -2610,8 +2689,7 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Lamb cuts Australia guide: halal cuts from frenched cutlets to whole carcasses, and which lamb cut to buy for grilling, roasting, curries and events.
 - **Focus keyword:** lamb cuts australia (Informational, KD 7, vol 110)
 - **Supporting keywords:** 
-  - slow roast lamb slow cooker (Informational, KD 12, vol 2,900)
-  - lamb casserole recipe (Informational, KD 13, vol 1,300)
+  - lamb casserole (Informational, KD 18, vol 1,600)
   - lamb forequarter chops recipe (Informational, KD 11, vol 1,300)
   - slow cooked lamb shanks slow cooker (Informational, KD 11, vol 880)
   - halal lamb (Commercial, KD 10, vol 90)
@@ -2641,11 +2719,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - slow cooker beef cheeks (Informational, KD 8, vol 880)
   - beef cheeks crock pot (Informational, KD 14, vol 880)
-  - beef cheeks recipe slow cooker (Informational, KD 8, vol 720)
   - beef cheeks in the slow cooker (Informational, KD 8, vol 720)
   - best beef cheek recipe (Commercial, KD 24, vol 140)
   - beef cheeks butcher (Commercial, KD 10, vol 110)
-  - buy beef cheeks (Transactional, KD 12, vol 170)
   - beef cheeks price (Transactional, KD 6, vol 110)
 
 ### Lamb Casserole Recipe with Forequarter Chops and Diced Lamb
@@ -2654,11 +2730,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** A halal lamb casserole recipe using forequarter chops or diced lamb shoulder, with oven and slow cooker timings, variations and tips for buying the right cut.
 - **Focus keyword:** lamb casserole recipe (Informational, KD 13, vol 1,300)
 - **Supporting keywords:** 
-  - lamb forequarter chops recipe (Informational, KD 11, vol 1,300)
   - lamb casserole dishes (Informational, KD 12, vol 1,300)
   - forequarter chops (Informational, KD 11, vol 880)
   - diced lamb dishes (Informational, KD 14, vol 590)
-  - diced lamb (Commercial, KD 11, vol 590)
   - diced lamb shoulder (Commercial, KD 7, vol 90)
   - buy diced lamb online (Transactional, KD 6, vol 70)
   - lamb chops near me (Transactional, KD 9, vol 320)
@@ -2684,11 +2758,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Focus keyword:** chicken maryland recipes (Informational, KD 11, vol 2,400)
 - **Supporting keywords:** 
   - chicken maryland recipe (Informational, KD 10, vol 1,300)
-  - maryland fillet (Informational, KD 9, vol 720)
   - honey soy chicken drumsticks (Informational, KD 9, vol 1,000)
   - best chicken maryland recipes (Commercial, KD 18, vol 110)
   - chicken legs (Commercial, KD 36, vol 1,900)
-  - buy chicken maryland online (Transactional, KD 3, vol 70)
   - chicken thighs (Transactional, KD 31, vol 3,600)
 
 ### Sirloin vs Porterhouse vs Rump: What's the Difference?
@@ -2699,11 +2771,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Supporting keywords:** 
   - beef rump recipes (Informational, KD 12, vol 880)
   - rump eye steak (Informational, KD 9, vol 590)
-  - beef rump steak recipes (Informational, KD 12, vol 260)
   - sirloin vs rump (Informational, KD 12, vol 260)
   - rump versus sirloin (Commercial, KD 9, vol 260)
   - whole beef sirloin (Transactional, KD 6, vol 110)
-  - rump beef (Transactional, KD 17, vol 390)
 
 ### 30 Minute Beef Mince Recipes for Busy Weeknights
 - **Link:** https://halalmeatdepot.com.au/blog/30-minute-beef-mince-recipes/
@@ -2714,8 +2784,6 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef mince ideas (Informational, KD 14, vol 720)
   - dish with mince (Informational, KD 12, vol 1,900)
   - pasta bake mince beef (Informational, KD 13, vol 1,300)
-  - protein in beef mince (Informational, KD 13, vol 590)
-  - premium beef mince (Commercial, KD 6, vol 320)
   - minced beef online (Commercial, KD 6, vol 70)
   - mince price (Transactional, KD 12, vol 170)
   - beef mince price (Transactional, KD 10, vol 210)
@@ -2744,10 +2812,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - beef oyster blade (Informational, KD 14, vol 1,300)
   - beef oyster blade steak (Informational, KD 12, vol 720)
   - beef oyster blade recipes (Informational, KD 11, vol 720)
-  - flat iron beef recipes (Informational, KD 14, vol 110)
   - best beef cuts for steak (Commercial, KD 17, vol 320)
   - best quality steak cuts (Commercial, KD 24, vol 1,300)
-  - flat iron steak beef (Transactional, KD 15, vol 2,400)
   - beef steak price (Transactional, KD 8, vol 140)
 
 ### Slow Cooked Lamb Shanks: Slow Cooker and Pressure Cooker
@@ -2756,7 +2822,6 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** Slow cooked lamb shanks three ways: a slow cooker recipe, a fast pressure cooker method and a massaman curry, with timings and tips for buying lamb shanks.
 - **Focus keyword:** slow cooked lamb shanks (Informational, KD 39, vol 5,400)
 - **Supporting keywords:** 
-  - slow cooked lamb shanks slow cooker (Informational, KD 11, vol 880)
   - cooking lamb shanks in pressure cooker (Informational, KD 11, vol 590)
   - massaman lamb shanks (Informational, KD 13, vol 880)
   - lamb shank massaman curry (Informational, KD 12, vol 720)
@@ -2774,11 +2839,9 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - topside beef (Informational, KD 12, vol 1,300)
   - roast beef ribeye (Informational, KD 13, vol 1,000)
   - rolled roast beef (Informational, KD 8, vol 720)
-  - roast beef thermometer (Informational, KD 16, vol 320)
   - what is the best beef cut for roasting (Commercial, KD 14, vol 140)
   - what cut of beef roast is best (Commercial, KD 15, vol 110)
   - where to buy roast beef (Transactional, KD 9, vol 70)
-  - buy roast beef online (Transactional, KD 6, vol 170)
 
 ### Best Bones for Bone Broth: Soup, Marrow and Knuckle Bones
 - **Link:** https://halalmeatdepot.com.au/blog/best-bones-for-bone-broth/
@@ -2786,8 +2849,8 @@ Subcategories are sections of their category page (linked with #anchors), not se
 - **Meta description:** The best bones for bone broth, how to roast and simmer them, how long to cook beef and chicken broth, and how to store it, with a simple halal recipe.
 - **Focus keyword:** best bones for bone broth (Commercial, KD 20, vol 590)
 - **Supporting keywords:** 
+  - bones for bone broth (Informational, KD 17, vol 2,900)
   - beef soup bones (Informational, KD 15, vol 720)
-  - marrow bones (Informational, KD 10, vol 720)
   - how to make beef bone broth (Informational, KD 27, vol 170)
   - chicken vs beef bone broth (Commercial, KD 15, vol 70)
   - buy beef bones online (Transactional, KD 5, vol 70)
@@ -2801,7 +2864,6 @@ Subcategories are sections of their category page (linked with #anchors), not se
   - what is gravy beef (Informational, KD 10, vol 720)
   - beef chuck steak (Informational, KD 13, vol 720)
   - chuck in beef (Informational, KD 12, vol 590)
-  - beef chuck meat (Informational, KD 13, vol 1,000)
   - gravy beef vs chuck steak (Commercial, KD 16, vol 90)
   - chuck steak price (Transactional, KD 6, vol 110)
   - price of beef chuck (Transactional, KD 5, vol 70)
