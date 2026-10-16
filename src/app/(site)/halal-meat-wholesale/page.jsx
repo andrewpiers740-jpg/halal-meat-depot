@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import WebForm from '@/components/WebForm'
@@ -98,6 +99,11 @@ export default function WholesalePage() {
           </div>
         </div>
       </section>
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/halal-meat-wholesale/" />
+        </div>
+      </div>
     </>
   )
 }

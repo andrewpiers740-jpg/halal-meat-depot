@@ -19,9 +19,7 @@ export const POSTS = [
     keywords: [
       { kw: 'est halal check', intent: 'I', vol: 1000, kd: 8 },
       { kw: 'est halal', intent: 'I', vol: 1000, kd: 7 },
-      { kw: 'est halal checker', intent: 'I', vol: 720, kd: 14 },
       { kw: 'halal meat close to me', intent: 'I', vol: 3600, kd: 15 },
-      { kw: 'halal meat', intent: 'C', vol: 2900, kd: 25 },
       { kw: 'halal butcher', intent: 'C', vol: 1900, kd: 17 },
       { kw: 'halal meat near me', intent: 'T', vol: 3600, kd: 7 },
       { kw: 'halal butcher near me', intent: 'T', vol: 5400, kd: 17 },
@@ -88,11 +86,9 @@ export const POSTS = [
     keywords: [
       { kw: 'eye fillet', intent: 'I', vol: 8100, kd: 9 },
       { kw: 'scotch fillet steak', intent: 'I', vol: 6600, kd: 9 },
-      { kw: 'what is the sirloin steak', intent: 'I', vol: 590, kd: 13 },
       { kw: 'how to cook scotch fillet', intent: 'I', vol: 1000, kd: 12 },
       { kw: 'halal steak', intent: 'C', vol: 720, kd: 8 },
       { kw: 'sirloin vs scotch fillet', intent: 'C', vol: 590, kd: 9 },
-      { kw: 'buy beef brisket', intent: 'T', vol: 260, kd: 11 },
       { kw: 'beef eye fillet price', intent: 'T', vol: 50, kd: 5 },
     ],
     excerpt:
@@ -147,12 +143,9 @@ export const POSTS = [
     kw: 'goat meat',
     keywords: [
       { kw: 'goat meat or lamb meat', intent: 'I', vol: 140, kd: 20 },
-      { kw: 'which is better goat leg or shoulder', intent: 'I', vol: 20, kd: 12 },
       { kw: 'goat meat recipes', intent: 'I', vol: 170, kd: 22 },
       { kw: 'diced goat meat recipes', intent: 'I', vol: 20, kd: 6 },
-      { kw: 'diced goat', intent: 'C', vol: 20, kd: 4 },
       { kw: 'goat leg vs shoulder', intent: 'C', vol: 20, kd: 13 },
-      { kw: 'goat meat for sale', intent: 'T', vol: 40, kd: 8 },
       { kw: 'goat price', intent: 'T', vol: 140, kd: 14 },
     ],
     excerpt:
@@ -227,13 +220,10 @@ export const POSTS = [
     updated: '2026-10-13',
     kw: 'camel meat',
     keywords: [
-      { kw: 'camel burger', intent: 'I', vol: 590, kd: 13 },
       { kw: 'is kangaroo halal', intent: 'I', vol: 720, kd: 13 },
       { kw: 'kangaroo recipes', intent: 'I', vol: 720, kd: 11 },
       { kw: 'kangaroo steak recipe', intent: 'I', vol: 590, kd: 10 },
-      { kw: 'kangaroo steak', intent: 'C', vol: 2900, kd: 15 },
       { kw: 'buffalo meat australia', intent: 'C', vol: 140, kd: 5 },
-      { kw: 'kangaroo meat for sale', intent: 'T', vol: 110, kd: 9 },
       { kw: 'buy kangaroo meat', intent: 'T', vol: 110, kd: 17 },
     ],
     excerpt:
@@ -298,8 +288,7 @@ export const POSTS = [
     updated: '2026-10-13',
     kw: 'lamb cuts australia',
     keywords: [
-      { kw: 'slow roast lamb slow cooker', intent: 'I', vol: 2900, kd: 12 },
-      { kw: 'lamb casserole recipe', intent: 'I', vol: 1300, kd: 13 },
+      { kw: 'lamb casserole', intent: 'I', vol: 1600, kd: 18 },
       { kw: 'lamb forequarter chops recipe', intent: 'I', vol: 1300, kd: 11 },
       { kw: 'slow cooked lamb shanks slow cooker', intent: 'I', vol: 880, kd: 11 },
       { kw: 'halal lamb', intent: 'C', vol: 90, kd: 10 },

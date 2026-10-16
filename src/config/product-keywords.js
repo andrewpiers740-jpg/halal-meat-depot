@@ -42,6 +42,7 @@ export const PRODUCT_KEYWORDS = {
   'whole-chickens-size-15': [
   ],
   'chicken-mini-drumettes': [
+    {"kw":"chicken drumettes","intent":"I","semrush":"Informational","vol":720,"kd":10,"src":"kd0-29"},
   ],
   'chicken-cocktail-kebabs': [
   ],
@@ -158,10 +159,18 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"chicken frames near me","intent":"T","semrush":"Transactional","vol":70,"kd":9,"src":"pass"},
     {"kw":"chicken frames for sale","intent":"T","semrush":"Transactional","vol":20,"kd":6,"src":"pass"},
   ],
+  'beef-cattleman-s-cutlet': [
+    {"kw":"what's the best cut of beef","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":17,"src":"pass"},
+    {"kw":"what's best cut of steak","intent":"C","semrush":"Commercial","vol":70,"kd":17,"src":"pass"},
+    {"kw":"what's the best steak","intent":"C","semrush":"Commercial","vol":70,"kd":22,"src":"pass"},
+    {"kw":"marion's beef stir fry","intent":"I","semrush":"Informational","vol":90,"kd":17,"src":"kd0-29"},
+    {"kw":"程福记鲜牛馆火锅烧烤 cheng's beef hotpot glen waverley","intent":"I","semrush":"Informational","vol":390,"kd":26,"src":"kd0-29"},
+  ],
   'beef-hanger-steak': [
     {"kw":"what is beef hanger steak","intent":"I","semrush":"Informational","vol":210,"kd":24,"src":"kd0-29"},
     {"kw":"what is hanger beef","intent":"I","semrush":"Informational","vol":170,"kd":22,"src":"kd0-29"},
     {"kw":"hanger beef recipes","intent":"I","semrush":"Informational","vol":90,"kd":20,"src":"kd0-29"},
+    {"kw":"beef hanger tender","intent":"I","semrush":"Informational","vol":70,"kd":27,"src":"kd0-29"},
   ],
   'lamb-loin-chops': [
     {"kw":"lamb loin chops oven","intent":"I","semrush":"Informational","vol":260,"kd":26,"src":"kd0-29"},
@@ -173,11 +182,13 @@ export const PRODUCT_KEYWORDS = {
   'lamb-kofta': [
     {"kw":"what to have with lamb kofta","intent":"I","semrush":"Informational","vol":260,"kd":27,"src":"kd0-29"},
     {"kw":"greek lamb kofta","intent":"I","semrush":"Informational","vol":70,"kd":12,"src":"kd0-29"},
+    {"kw":"what to serve lamb koftas with","intent":"I","semrush":"Informational","vol":260,"kd":25,"src":"kd0-29"},
+    {"kw":"lamb kofta meatballs","intent":"I","semrush":"Informational","vol":170,"kd":9,"src":"kd0-29"},
+    {"kw":"lamb kofta sauce","intent":"I","semrush":"Informational","vol":110,"kd":17,"src":"kd0-29"},
   ],
   'chicken-wings': [
     {"kw":"chicken wings near me","intent":"T","semrush":"Transactional","vol":1900,"kd":28,"src":"kd0-29"},
     {"kw":"sticky chicken wings","intent":"I","semrush":"Informational","vol":720,"kd":21,"src":"kd0-29"},
-    {"kw":"honey soy chicken wings","intent":"I","semrush":"Informational","vol":2400,"kd":16,"src":"kd0-29"},
   ],
   'chicken-wing-carton': [
     {"kw":"recipes using chicken wings","intent":"I","semrush":"Informational","vol":2400,"kd":29,"src":"kd0-29"},
@@ -185,20 +196,16 @@ export const PRODUCT_KEYWORDS = {
   'whole-beef': [
     {"kw":"whole beef loin","intent":"T","semrush":"Informational, Transactional","vol":90,"kd":12,"src":"pass"},
   ],
-  'beef-cattleman-s-cutlet': [
-    {"kw":"what's the best cut of beef","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":17,"src":"pass"},
-    {"kw":"what's best cut of steak","intent":"C","semrush":"Commercial","vol":70,"kd":17,"src":"pass"},
-    {"kw":"what's the best steak","intent":"C","semrush":"Commercial","vol":70,"kd":22,"src":"pass"},
-    {"kw":"beef bourguignon julia child's recipe","intent":"I","semrush":"Informational","vol":110,"kd":27,"src":"kd0-29"},
-  ],
   'beef-minute-steaks': [
     {"kw":"what are beef minute steaks","intent":"I","semrush":"Informational","vol":110,"kd":16,"src":"kd0-29"},
     {"kw":"what is beef minute steak","intent":"I","semrush":"Informational","vol":110,"kd":8,"src":"kd0-29"},
     {"kw":"recipes using minute steak","intent":"I","semrush":"Informational","vol":260,"kd":27,"src":"kd0-29"},
+    {"kw":"minute steak meals","intent":"I","semrush":"Informational","vol":320,"kd":24,"src":"kd0-29"},
   ],
   'crumbed-chicken-schnitzel': [
     {"kw":"crumbed chicken","intent":"I","semrush":"Informational","vol":2400,"kd":25,"src":"kd0-29"},
     {"kw":"crumbed chicken breast","intent":"I","semrush":"Informational","vol":320,"kd":24,"src":"kd0-29"},
+    {"kw":"crumbed chicken tenders","intent":"I","semrush":"Informational","vol":590,"kd":19,"src":"kd0-29"},
   ],
   'chimichurri-marinated-chicken-wings': [
   ],
@@ -208,11 +215,14 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"buy duck liver","intent":"T","semrush":"Transactional","vol":20,"kd":6,"src":"pass"},
     {"kw":"buy duck liver near me","intent":"T","semrush":"Transactional","vol":20,"kd":7,"src":"pass"},
     {"kw":"minced duck liver","intent":"C","semrush":"Informational, Commercial","vol":0,"kd":4,"src":"kd0-29"},
+    {"kw":"duck liver dishes","intent":"I","semrush":"Informational","vol":70,"kd":15,"src":"kd0-29"},
+    {"kw":"duck liver paté","intent":"I","semrush":"Informational","vol":30,"kd":10,"src":"kd0-29"},
   ],
   'rendered-duck-fat': [
     {"kw":"roast potatoes in duck fat","intent":"I","semrush":"Informational","vol":1000,"kd":27,"src":"kd0-29"},
     {"kw":"duck fat potatoes recipe","intent":"I","semrush":"Informational","vol":590,"kd":21,"src":"kd0-29"},
     {"kw":"potato with duck fat","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
+    {"kw":"duck fat roasted potatoes","intent":"I","semrush":"Informational","vol":210,"kd":25,"src":"kd0-29"},
   ],
   'lamb-leg-bone-in': [
     {"kw":"lamb leg","intent":"I","semrush":"Informational","vol":2400,"kd":19,"src":"kd0-29"},
@@ -231,6 +241,7 @@ export const PRODUCT_KEYWORDS = {
   'milk-fed-lamb-leg-bone-in': [
   ],
   'honey-soy-marinated-chicken-wings': [
+    {"kw":"chicken legs honey soy","intent":"I","semrush":"Informational","vol":720,"kd":22,"src":"kd0-29"},
   ],
   'duck-mince': [
     {"kw":"buy duck mince","intent":"T","semrush":"Transactional","vol":0,"kd":2,"src":"kd0-29"},
@@ -240,6 +251,7 @@ export const PRODUCT_KEYWORDS = {
   'milk-fed-lamb-forequarter': [
     {"kw":"forequarter lamb chops","intent":"I","semrush":"Informational","vol":320,"kd":9,"src":"kd0-29"},
     {"kw":"slow cooker lamb forequarter chops","intent":"I","semrush":"Informational","vol":140,"kd":14,"src":"kd0-29"},
+    {"kw":"lamb forequarter","intent":"I","semrush":"Informational","vol":390,"kd":17,"src":"kd0-29"},
   ],
   'lamb-cocktail-kebabs': [
     {"kw":"lamb kebab near me","intent":"T","semrush":"Transactional","vol":170,"kd":27,"src":"kd0-29"},
@@ -257,6 +269,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"tenderloins vs chicken breast","intent":"I","semrush":"Informational","vol":260,"kd":27,"src":"kd0-29"},
   ],
   'chicken-breast-fillet-carton': [
+    {"kw":"chicken breast crumbed","intent":"I","semrush":"Informational","vol":260,"kd":19,"src":"kd0-29"},
   ],
   'beef-oxtail': [
     {"kw":"oxtails near me","intent":"T","semrush":"Transactional","vol":260,"kd":9,"src":"pass"},
@@ -277,9 +290,11 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"buffalo mince meat","intent":"I","semrush":"Informational","vol":0,"kd":3,"src":"kd0-29"},
     {"kw":"what is buffalo mince","intent":"I","semrush":"Informational","vol":0,"kd":1,"src":"kd0-29"},
     {"kw":"buffalo mince vs beef mince","intent":"I","semrush":"Informational","vol":20,"kd":19,"src":"kd0-29"},
+    {"kw":"buffalo mince nsw","intent":"I","semrush":"Informational","vol":0,"kd":0,"src":"kd0-29"},
   ],
   'beef-tendon': [
     {"kw":"where can you buy beef tendon","intent":"T","semrush":"Transactional","vol":90,"kd":8,"src":"pass"},
+    {"kw":"large beef tendons","intent":"C","semrush":"Commercial","vol":70,"kd":6,"src":"kd0-29"},
     {"kw":"what is beef tendon","intent":"I","semrush":"Informational","vol":70,"kd":23,"src":"kd0-29"},
   ],
   'chicken-feet': [
@@ -346,6 +361,9 @@ export const PRODUCT_KEYWORDS = {
   'chicken-drumstick-carton': [
     {"kw":"chicken drumstick recipes slow cooker","intent":"I","semrush":"Informational","vol":1000,"kd":22,"src":"kd0-29"},
     {"kw":"air fryer chicken drumstick recipes","intent":"I","semrush":"Informational","vol":480,"kd":28,"src":"kd0-29"},
+    {"kw":"chicken drumstick dishes","intent":"I","semrush":"Informational","vol":1000,"kd":20,"src":"kd0-29"},
+    {"kw":"chicken drumstick meals","intent":"I","semrush":"Informational","vol":1000,"kd":22,"src":"kd0-29"},
+    {"kw":"chicken drumsticks marinade","intent":"I","semrush":"Informational","vol":390,"kd":28,"src":"kd0-29"},
   ],
   'duck-breast-fillets': [
     {"kw":"duck breast near me","intent":"T","semrush":"Transactional","vol":260,"kd":10,"src":"pass"},
@@ -369,7 +387,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"chicken thigh cutlet recipes","intent":"I","semrush":"Informational","vol":1000,"kd":20,"src":"kd0-29"},
   ],
   'chicken-thigh-fillet-carton': [
-    {"kw":"chicken thigh fillet","intent":"I","semrush":"Informational","vol":1000,"kd":10,"src":"pass"},
     {"kw":"chicken thigh","intent":"I","semrush":"Informational","vol":6600,"kd":28,"src":"kd0-29"},
     {"kw":"slow cooker recipes using chicken thighs","intent":"I","semrush":"Informational","vol":1600,"kd":25,"src":"kd0-29"},
     {"kw":"chicken thigh cutlets","intent":"I","semrush":"Informational","vol":1000,"kd":21,"src":"kd0-29"},
@@ -379,6 +396,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"chicken recipes with chicken tenderloins","intent":"I","semrush":"Informational","vol":260,"kd":19,"src":"kd0-29"},
     {"kw":"what are chicken tenderloins","intent":"I","semrush":"Informational","vol":260,"kd":23,"src":"kd0-29"},
     {"kw":"air fryer chicken tenderloins","intent":"I","semrush":"Informational","vol":260,"kd":25,"src":"kd0-29"},
+    {"kw":"chicken tenderloin wraps","intent":"I","semrush":"Informational","vol":210,"kd":11,"src":"kd0-29"},
   ],
   'chicken-thigh-fillets': [
     {"kw":"thigh fillet","intent":"I","semrush":"Informational","vol":720,"kd":15,"src":"pass"},
@@ -423,6 +441,9 @@ export const PRODUCT_KEYWORDS = {
   'crumbed-chicken-tenderloins': [
     {"kw":"chicken tenderloins recipe","intent":"I","semrush":"Informational","vol":1900,"kd":22,"src":"kd0-29"},
     {"kw":"crumbed chicken recipe","intent":"I","semrush":"Informational","vol":720,"kd":28,"src":"kd0-29"},
+    {"kw":"chicken tenderloins grill","intent":"I","semrush":"Informational","vol":390,"kd":26,"src":"kd0-29"},
+    {"kw":"chicken tenderloins on the grill","intent":"I","semrush":"Informational","vol":390,"kd":27,"src":"kd0-29"},
+    {"kw":"grilling chicken tenderloin","intent":"I","semrush":"Informational","vol":390,"kd":28,"src":"kd0-29"},
   ],
   'beef-liver': [
     {"kw":"beef liver recipes","intent":"I","semrush":"Informational","vol":480,"kd":20,"src":"kd0-29"},
@@ -462,8 +483,11 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"what are flank steaks","intent":"I","semrush":"Informational","vol":390,"kd":28,"src":"kd0-29"},
   ],
   'beef-mince-with-liver-heart-and-kidney-30': [
+    {"kw":"beef liver where to buy","intent":"T","semrush":"Transactional","vol":50,"kd":6,"src":"kd0-29"},
     {"kw":"how to cook beef liver","intent":"I","semrush":"Informational","vol":210,"kd":24,"src":"kd0-29"},
     {"kw":"beef heart recipe","intent":"I","semrush":"Informational","vol":90,"kd":28,"src":"kd0-29"},
+    {"kw":"beef kidney","intent":"I","semrush":"Informational","vol":210,"kd":9,"src":"kd0-29"},
+    {"kw":"beef liver dishes","intent":"I","semrush":"Informational","vol":260,"kd":19,"src":"kd0-29"},
   ],
   'goat-leg-bone-in': [
     {"kw":"goat leg vs shoulder meat","intent":"C","semrush":"Informational, Commercial","vol":10,"kd":17,"src":"kd0-29"},
@@ -522,6 +546,22 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"beef marrow bones with meat","intent":"I","semrush":"Informational","vol":320,"kd":6,"src":"kd0-29"},
     {"kw":"beef broth with bone marrow","intent":"I","semrush":"Informational","vol":390,"kd":26,"src":"kd0-29"},
   ],
+  'angus-standing-rib-roast-mb3-4': [
+    {"kw":"certified angus beef for sale","intent":"T","semrush":"Transactional","vol":70,"kd":17,"src":"pass"},
+    {"kw":"black angus steak","intent":"C","semrush":"Informational, Commercial","vol":260,"kd":11,"src":"pass"},
+    {"kw":"angus steak","intent":"C","semrush":"Commercial","vol":210,"kd":25,"src":"pass"},
+    {"kw":"black angus beef","intent":"C","semrush":"Commercial","vol":210,"kd":21,"src":"pass"},
+    {"kw":"angus beef sausages","intent":"C","semrush":"Commercial","vol":170,"kd":6,"src":"pass"},
+    {"kw":"angus beef ribeye steak","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":15,"src":"pass"},
+    {"kw":"beef rib eye rib roast","intent":"I","semrush":"Informational","vol":1000,"kd":14,"src":"pass"},
+  ],
+  'dry-aged-cattleman-s-cutlet': [
+    {"kw":"what is dry aged beef","intent":"I","semrush":"Informational","vol":140,"kd":28,"src":"kd0-29"},
+    {"kw":"how to cook dry aged beef","intent":"I","semrush":"Informational","vol":90,"kd":9,"src":"kd0-29"},
+    {"kw":"aged beef","intent":"I","semrush":"Informational","vol":590,"kd":15,"src":"pass"},
+    {"kw":"what is aged beef","intent":"I","semrush":"Informational","vol":140,"kd":16,"src":"kd0-29"},
+    {"kw":"what's the best cut of steak","intent":"I","semrush":"Informational","vol":90,"kd":24,"src":"kd0-29"},
+  ],
   'beef-asado-ribs': [
     {"kw":"asado ribs vs beef ribs","intent":"C","semrush":"Commercial","vol":0,"kd":12,"src":"kd0-29"},
     {"kw":"asado beef ribs","intent":"I","semrush":"Informational","vol":390,"kd":9,"src":"kd0-29"},
@@ -535,22 +575,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"diced beef slow cooker","intent":"I","semrush":"Informational","vol":170,"kd":29,"src":"kd0-29"},
     {"kw":"beef diced steak","intent":"I","semrush":"Informational","vol":70,"kd":8,"src":"kd0-29"},
     {"kw":"what to cook with diced beef","intent":"I","semrush":"Informational","vol":70,"kd":18,"src":"kd0-29"},
-  ],
-  'dry-aged-cattleman-s-cutlet': [
-    {"kw":"what is dry aged beef","intent":"I","semrush":"Informational","vol":140,"kd":28,"src":"kd0-29"},
-    {"kw":"how to cook dry aged beef","intent":"I","semrush":"Informational","vol":90,"kd":9,"src":"kd0-29"},
-    {"kw":"aged beef","intent":"I","semrush":"Informational","vol":590,"kd":15,"src":"pass"},
-    {"kw":"what is aged beef","intent":"I","semrush":"Informational","vol":140,"kd":16,"src":"kd0-29"},
-    {"kw":"what's the best cut of steak","intent":"I","semrush":"Informational","vol":90,"kd":24,"src":"kd0-29"},
-  ],
-  'angus-standing-rib-roast-mb3-4': [
-    {"kw":"buy angus beef sausage online","intent":"T","semrush":"Transactional","vol":70,"kd":0,"src":"pass"},
-    {"kw":"black angus steak","intent":"C","semrush":"Informational, Commercial","vol":260,"kd":11,"src":"pass"},
-    {"kw":"angus steak","intent":"C","semrush":"Commercial","vol":210,"kd":25,"src":"pass"},
-    {"kw":"black angus beef","intent":"C","semrush":"Commercial","vol":210,"kd":21,"src":"pass"},
-    {"kw":"angus beef sausages","intent":"C","semrush":"Commercial","vol":170,"kd":6,"src":"pass"},
-    {"kw":"angus beef ribeye steak","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":15,"src":"pass"},
-    {"kw":"beef rib eye rib roast","intent":"I","semrush":"Informational","vol":1000,"kd":14,"src":"pass"},
   ],
   'extra-lean-beef-mince': [
     {"kw":"extra lean beef","intent":"T","semrush":"Transactional","vol":260,"kd":14,"src":"pass"},
@@ -568,6 +592,13 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"slow cook neck of lamb","intent":"I","semrush":"Informational","vol":170,"kd":9,"src":"kd0-29"},
     {"kw":"lamb neck fillet","intent":"I","semrush":"Informational","vol":170,"kd":7,"src":"kd0-29"},
   ],
+  'angus-beef-tri-tip-mb2': [
+    {"kw":"angus beef wholesale","intent":"C","semrush":"Commercial","vol":50,"kd":4,"src":"pass"},
+    {"kw":"beef tri tip steak","intent":"I","semrush":"Informational","vol":880,"kd":28,"src":"kd0-29"},
+    {"kw":"tri tip of beef","intent":"I","semrush":"Informational","vol":110,"kd":29,"src":"kd0-29"},
+    {"kw":"what is tri tip beef","intent":"I","semrush":"Informational","vol":90,"kd":29,"src":"kd0-29"},
+    {"kw":"angus beef","intent":"I","semrush":"Informational","vol":1600,"kd":18,"src":"kd0-29"},
+  ],
   'beef-tongue': [
     {"kw":"ox tongue","intent":"T","semrush":"Informational, Transactional","vol":1300,"kd":14,"src":"pass"},
     {"kw":"beef cow tongue","intent":"T","semrush":"Informational, Transactional","vol":170,"kd":19,"src":"pass"},
@@ -583,13 +614,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"lamb mince","intent":"I","semrush":"Informational","vol":2400,"kd":12,"src":"pass"},
     {"kw":"lamb mince meat","intent":"I","semrush":"Informational","vol":880,"kd":11,"src":"pass"},
     {"kw":"what to cook with lamb mince","intent":"I","semrush":"Informational","vol":170,"kd":21,"src":"kd0-29"},
-  ],
-  'angus-beef-tri-tip-mb2': [
-    {"kw":"certified angus beef for sale","intent":"T","semrush":"Transactional","vol":70,"kd":17,"src":"pass"},
-    {"kw":"angus beef wholesale","intent":"C","semrush":"Commercial","vol":50,"kd":4,"src":"pass"},
-    {"kw":"beef tri tip steak","intent":"I","semrush":"Informational","vol":880,"kd":28,"src":"kd0-29"},
-    {"kw":"tri tip of beef","intent":"I","semrush":"Informational","vol":110,"kd":29,"src":"kd0-29"},
-    {"kw":"what is tri tip beef","intent":"I","semrush":"Informational","vol":90,"kd":29,"src":"kd0-29"},
   ],
   'beef-herb-and-garlic-sausages': [
     {"kw":"beef sausages","intent":"C","semrush":"Informational, Commercial","vol":880,"kd":20,"src":"pass"},
@@ -608,7 +632,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"beef strip slow cooker recipes","intent":"I","semrush":"Informational","vol":70,"kd":29,"src":"kd0-29"},
   ],
   'chicken-maryland': [
-    {"kw":"maryland chicken","intent":"I","semrush":"Informational","vol":1900,"kd":29,"src":"kd0-29"},
+    {"kw":"marylands chicken","intent":"N","semrush":"Informational, Navigational","vol":210,"kd":15,"src":"pass"},
     {"kw":"what is chicken maryland","intent":"I","semrush":"Informational","vol":590,"kd":27,"src":"kd0-29"},
     {"kw":"what are chicken marylands","intent":"I","semrush":"Informational","vol":320,"kd":29,"src":"kd0-29"},
     {"kw":"maryland chicken roast","intent":"I","semrush":"Informational","vol":260,"kd":8,"src":"kd0-29"},
@@ -658,13 +682,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"beef blade steak slow cooker","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
     {"kw":"what is beef blade steak","intent":"I","semrush":"Informational","vol":170,"kd":17,"src":"kd0-29"},
   ],
-  'beef-stir-fry-strips': [
-    {"kw":"best beef cut for stir fry","intent":"C","semrush":"Commercial","vol":210,"kd":20,"src":"pass"},
-    {"kw":"best part of beef for stir fry","intent":"C","semrush":"Commercial","vol":210,"kd":20,"src":"pass"},
-    {"kw":"best beef to stir fry","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":26,"src":"kd0-29"},
-    {"kw":"what cut is stir fry beef","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":28,"src":"kd0-29"},
-    {"kw":"beef steak stir fry recipes","intent":"I","semrush":"Informational","vol":90,"kd":29,"src":"kd0-29"},
-  ],
   'goat-shoulder-boned-and-rolled': [
     {"kw":"goat shoulder near me","intent":"T","semrush":"Transactional","vol":20,"kd":8,"src":"pass"},
     {"kw":"goat shoulder price","intent":"T","semrush":"Transactional","vol":0,"kd":4,"src":"kd0-29"},
@@ -686,6 +703,13 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"slow roast goat shoulder","intent":"I","semrush":"Informational","vol":20,"kd":14,"src":"kd0-29"},
     {"kw":"bone in goat shoulder","intent":"I","semrush":"Informational","vol":10,"kd":5,"src":"kd0-29"},
   ],
+  'beef-stir-fry-strips': [
+    {"kw":"best beef cut for stir fry","intent":"C","semrush":"Commercial","vol":210,"kd":20,"src":"pass"},
+    {"kw":"best part of beef for stir fry","intent":"C","semrush":"Commercial","vol":210,"kd":20,"src":"pass"},
+    {"kw":"best beef to stir fry","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":26,"src":"kd0-29"},
+    {"kw":"what cut is stir fry beef","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":28,"src":"kd0-29"},
+    {"kw":"beef steak stir fry recipes","intent":"I","semrush":"Informational","vol":90,"kd":29,"src":"kd0-29"},
+  ],
   'beef-bolar-blade-roast': [
     {"kw":"beef bolar blade roast slow cooker","intent":"I","semrush":"Informational","vol":320,"kd":13,"src":"kd0-29"},
     {"kw":"what is beef bolar blade roast","intent":"I","semrush":"Informational","vol":90,"kd":6,"src":"kd0-29"},
@@ -701,15 +725,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"wagyu beef for sale","intent":"T","semrush":"Transactional","vol":140,"kd":15,"src":"pass"},
     {"kw":"wagyu beef online","intent":"C","semrush":"Commercial","vol":210,"kd":13,"src":"pass"},
     {"kw":"wagyu ribeye steak","intent":"I","semrush":"Informational","vol":480,"kd":17,"src":"kd0-29"},
-  ],
-  'beef-scotch-fillet-portion-mb4': [
-    {"kw":"porterhouse vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":1000,"kd":8,"src":"pass"},
-    {"kw":"eye fillet vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":480,"kd":7,"src":"pass"},
-    {"kw":"ribeye vs scotch fillet","intent":"C","semrush":"Commercial","vol":390,"kd":20,"src":"pass"},
-    {"kw":"scotch fillet vs sirloin","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":9,"src":"pass"},
-    {"kw":"rump vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":12,"src":"pass"},
-    {"kw":"porterhouse steak vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":11,"src":"pass"},
-    {"kw":"how to cook scotch fillet steak","intent":"I","semrush":"Informational","vol":880,"kd":8,"src":"pass"},
   ],
   'wagyu-yakiniku-mb5': [
     {"kw":"price for wagyu beef","intent":"T","semrush":"Transactional","vol":140,"kd":8,"src":"pass"},
@@ -738,12 +753,46 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"wagyu premium beef","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":16,"src":"pass"},
     {"kw":"how to cook wagyu beef steak","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
   ],
+  'beef-scotch-fillet-portion-mb4': [
+    {"kw":"porterhouse vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":1000,"kd":8,"src":"pass"},
+    {"kw":"eye fillet vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":480,"kd":7,"src":"pass"},
+    {"kw":"ribeye vs scotch fillet","intent":"C","semrush":"Commercial","vol":390,"kd":20,"src":"pass"},
+    {"kw":"scotch fillet vs sirloin","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":9,"src":"pass"},
+    {"kw":"rump vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":12,"src":"pass"},
+    {"kw":"porterhouse steak vs scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":11,"src":"pass"},
+    {"kw":"how to cook scotch fillet steak","intent":"I","semrush":"Informational","vol":880,"kd":8,"src":"pass"},
+  ],
   'beef-topside-whole': [
     {"kw":"topside beef steak","intent":"I","semrush":"Informational","vol":590,"kd":6,"src":"pass"},
     {"kw":"topside roast","intent":"I","semrush":"Informational","vol":2400,"kd":17,"src":"kd0-29"},
-    {"kw":"beef topside","intent":"I","semrush":"Informational","vol":880,"kd":18,"src":"kd0-29"},
     {"kw":"roast topside beef","intent":"I","semrush":"Informational","vol":880,"kd":19,"src":"kd0-29"},
     {"kw":"recipes with topside steak","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
+    {"kw":"slow cook topside of beef","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
+  ],
+  'wagyu-minute-steaks-mb5-with-pepper-seasoning': [
+    {"kw":"purchase wagyu beef","intent":"T","semrush":"Transactional","vol":140,"kd":17,"src":"pass"},
+    {"kw":"wagyu beef strip steak","intent":"C","semrush":"Commercial","vol":90,"kd":9,"src":"pass"},
+    {"kw":"wagyu beef butcher","intent":"C","semrush":"Commercial","vol":320,"kd":14,"src":"pass"},
+    {"kw":"order wagyu beef","intent":"C","semrush":"Commercial","vol":140,"kd":17,"src":"pass"},
+    {"kw":"premium wagyu beef","intent":"C","semrush":"Informational, Commercial","vol":140,"kd":12,"src":"pass"},
+    {"kw":"wagyu beef wholesale","intent":"C","semrush":"Commercial","vol":140,"kd":17,"src":"pass"},
+    {"kw":"beef minute steak","intent":"I","semrush":"Informational","vol":320,"kd":28,"src":"kd0-29"},
+  ],
+  'wagyu-tomahawk-mb9': [
+    {"kw":"sliced wagyu beef","intent":"T","semrush":"Informational, Transactional","vol":110,"kd":6,"src":"pass"},
+    {"kw":"buying wagyu beef online","intent":"T","semrush":"Transactional","vol":90,"kd":14,"src":"pass"},
+    {"kw":"where can you buy wagyu beef","intent":"T","semrush":"Transactional","vol":70,"kd":19,"src":"pass"},
+    {"kw":"wagyu beef ribeye","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":16,"src":"pass"},
+    {"kw":"wagyu beef mince","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":6,"src":"pass"},
+    {"kw":"wagyu beef sydney wholesale","intent":"N","semrush":"Navigational","vol":90,"kd":24,"src":"pass"},
+    {"kw":"beef tomahawk","intent":"I","semrush":"Informational","vol":390,"kd":23,"src":"kd0-29"},
+  ],
+  'wagyu-tomahawk-mb5': [
+    {"kw":"where do you buy wagyu beef","intent":"T","semrush":"Transactional","vol":50,"kd":15,"src":"pass"},
+    {"kw":"beef tomahawk steak","intent":"I","semrush":"Informational","vol":320,"kd":13,"src":"kd0-29"},
+    {"kw":"what is the tomahawk steak","intent":"I","semrush":"Informational","vol":140,"kd":12,"src":"kd0-29"},
+    {"kw":"wagyu beef recipe","intent":"I","semrush":"Informational","vol":140,"kd":17,"src":"kd0-29"},
+    {"kw":"what cut is tomahawk steak","intent":"I","semrush":"Informational","vol":110,"kd":8,"src":"kd0-29"},
   ],
   'beef-rump-steaks': [
     {"kw":"rump steak cost","intent":"C","semrush":"Informational, Commercial","vol":170,"kd":7,"src":"pass"},
@@ -761,7 +810,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"porterhouse vs rump steak","intent":"C","semrush":"Commercial","vol":50,"kd":14,"src":"pass"},
     {"kw":"rump or porterhouse","intent":"C","semrush":"Informational, Commercial","vol":50,"kd":6,"src":"pass"},
     {"kw":"scotch fillet vs rump","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":9,"src":"pass"},
-    {"kw":"beef rump","intent":"I","semrush":"Informational","vol":2400,"kd":22,"src":"kd0-29"},
+    {"kw":"beef rump roast","intent":"I","semrush":"Informational","vol":880,"kd":18,"src":"kd0-29"},
   ],
   'beef-scotch-fillet-steaks': [
     {"kw":"beef ribeye price","intent":"T","semrush":"Transactional","vol":140,"kd":5,"src":"pass"},
@@ -771,31 +820,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"rib eye v eye fillet","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":6,"src":"pass"},
     {"kw":"eye fillet or scotch fillet","intent":"C","semrush":"Informational, Commercial","vol":50,"kd":6,"src":"pass"},
     {"kw":"rib eye of beef","intent":"I","semrush":"Informational","vol":3600,"kd":12,"src":"pass"},
-  ],
-  'wagyu-minute-steaks-mb5-with-pepper-seasoning': [
-    {"kw":"purchase wagyu beef","intent":"T","semrush":"Transactional","vol":140,"kd":17,"src":"pass"},
-    {"kw":"wagyu beef strip steak","intent":"C","semrush":"Commercial","vol":90,"kd":9,"src":"pass"},
-    {"kw":"wagyu beef butcher","intent":"C","semrush":"Commercial","vol":320,"kd":14,"src":"pass"},
-    {"kw":"order wagyu beef","intent":"C","semrush":"Commercial","vol":140,"kd":17,"src":"pass"},
-    {"kw":"premium wagyu beef","intent":"C","semrush":"Informational, Commercial","vol":140,"kd":12,"src":"pass"},
-    {"kw":"wagyu beef wholesale","intent":"C","semrush":"Commercial","vol":140,"kd":17,"src":"pass"},
-    {"kw":"beef minute steak","intent":"I","semrush":"Informational","vol":320,"kd":28,"src":"kd0-29"},
-  ],
-  'wagyu-tomahawk-mb9': [
-    {"kw":"sliced wagyu beef","intent":"T","semrush":"Informational, Transactional","vol":110,"kd":6,"src":"pass"},
-    {"kw":"buying wagyu beef online","intent":"T","semrush":"Transactional","vol":90,"kd":14,"src":"pass"},
-    {"kw":"where can you buy wagyu beef","intent":"T","semrush":"Transactional","vol":70,"kd":19,"src":"pass"},
-    {"kw":"where do you buy wagyu beef","intent":"T","semrush":"Transactional","vol":50,"kd":15,"src":"pass"},
-    {"kw":"wagyu beef ribeye","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":16,"src":"pass"},
-    {"kw":"wagyu beef mince","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":6,"src":"pass"},
-    {"kw":"wagyu beef tomahawk steak","intent":"I","semrush":"Informational","vol":110,"kd":8,"src":"kd0-29"},
-  ],
-  'wagyu-tomahawk-mb5': [
-    {"kw":"beef tomahawk","intent":"I","semrush":"Informational","vol":390,"kd":23,"src":"kd0-29"},
-    {"kw":"beef tomahawk steak","intent":"I","semrush":"Informational","vol":320,"kd":13,"src":"kd0-29"},
-    {"kw":"what is the tomahawk steak","intent":"I","semrush":"Informational","vol":140,"kd":12,"src":"kd0-29"},
-    {"kw":"wagyu beef recipe","intent":"I","semrush":"Informational","vol":140,"kd":17,"src":"kd0-29"},
-    {"kw":"what cut is tomahawk steak","intent":"I","semrush":"Informational","vol":110,"kd":8,"src":"kd0-29"},
   ],
   'beef-rump-cap': [
     {"kw":"beef cap meat","intent":"C","semrush":"Commercial","vol":70,"kd":7,"src":"pass"},
@@ -807,9 +831,9 @@ export const PRODUCT_KEYWORDS = {
   'beef-rump-cap-mb4': [
     {"kw":"rump vs eye fillet","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":6,"src":"pass"},
     {"kw":"rump cap beef cut","intent":"I","semrush":"Informational","vol":90,"kd":15,"src":"kd0-29"},
-    {"kw":"beef rump roast","intent":"I","semrush":"Informational","vol":880,"kd":18,"src":"kd0-29"},
     {"kw":"what is rump steak","intent":"I","semrush":"Informational","vol":320,"kd":17,"src":"kd0-29"},
     {"kw":"beef rump steak slow cooker","intent":"I","semrush":"Informational","vol":260,"kd":26,"src":"kd0-29"},
+    {"kw":"what are rump steaks","intent":"I","semrush":"Informational","vol":260,"kd":15,"src":"kd0-29"},
   ],
   'beef-cheeks': [
     {"kw":"beef cheeks near me","intent":"T","semrush":"Transactional","vol":210,"kd":12,"src":"pass"},
@@ -818,7 +842,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"where to buy beef cheek meat","intent":"T","semrush":"Transactional","vol":70,"kd":6,"src":"pass"},
     {"kw":"where to buy beef cheeks","intent":"T","semrush":"Transactional","vol":70,"kd":7,"src":"pass"},
     {"kw":"beef cheek meat for sale","intent":"T","semrush":"Transactional","vol":20,"kd":7,"src":"pass"},
-    {"kw":"beef cheeks slow cooker","intent":"I","semrush":"Informational","vol":1300,"kd":17,"src":"kd0-29"},
+    {"kw":"beef cheeks","intent":"I","semrush":"Informational","vol":6600,"kd":20,"src":"kd0-29"},
   ],
   'beef-porterhouse-portion': [
     {"kw":"porterhouse steak","intent":"T","semrush":"Informational, Transactional","vol":9900,"kd":26,"src":"kd0-29"},
@@ -861,13 +885,6 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"beef sirloin steak price","intent":"T","semrush":"Transactional","vol":70,"kd":3,"src":"pass"},
     {"kw":"porterhouse steak recipes","intent":"I","semrush":"Informational","vol":880,"kd":18,"src":"kd0-29"},
   ],
-  'beef-chuck-tail-flap': [
-    {"kw":"beef flap meat","intent":"T","semrush":"Informational, Transactional","vol":260,"kd":28,"src":"kd0-29"},
-    {"kw":"price chuck steak","intent":"T","semrush":"Transactional","vol":50,"kd":4,"src":"pass"},
-    {"kw":"beef tail meat","intent":"C","semrush":"Commercial","vol":90,"kd":6,"src":"pass"},
-    {"kw":"beef chuck cost","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":2,"src":"pass"},
-    {"kw":"chuck steak beef","intent":"I","semrush":"Informational","vol":3600,"kd":17,"src":"kd0-29"},
-  ],
   'angus-beef-scotch-fillet-steaks-mb3-4': [
     {"kw":"beef scotch steak","intent":"C","semrush":"Informational, Commercial","vol":110,"kd":6,"src":"pass"},
     {"kw":"scotch beef","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":7,"src":"pass"},
@@ -876,6 +893,13 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"is scotch fillet same as ribeye","intent":"C","semrush":"Informational, Commercial","vol":90,"kd":10,"src":"pass"},
     {"kw":"rib fillet vs scotch fillet","intent":"C","semrush":"Commercial","vol":90,"kd":6,"src":"pass"},
     {"kw":"beef scotch fillet steak recipes","intent":"I","semrush":"Informational","vol":590,"kd":14,"src":"pass"},
+  ],
+  'beef-chuck-tail-flap': [
+    {"kw":"beef flap meat","intent":"T","semrush":"Informational, Transactional","vol":260,"kd":28,"src":"kd0-29"},
+    {"kw":"price chuck steak","intent":"T","semrush":"Transactional","vol":50,"kd":4,"src":"pass"},
+    {"kw":"beef tail meat","intent":"C","semrush":"Commercial","vol":90,"kd":6,"src":"pass"},
+    {"kw":"beef chuck cost","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":2,"src":"pass"},
+    {"kw":"chuck steak beef","intent":"I","semrush":"Informational","vol":3600,"kd":17,"src":"kd0-29"},
   ],
   'beef-eye-fillet-whole': [
     {"kw":"rib fillet vs eye fillet","intent":"C","semrush":"Commercial","vol":260,"kd":7,"src":"pass"},
@@ -892,14 +916,7 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"eye fillet vs sirloin","intent":"C","semrush":"Commercial","vol":50,"kd":6,"src":"pass"},
     {"kw":"rib eye vs scotch fillet","intent":"C","semrush":"Commercial","vol":320,"kd":10,"src":"pass"},
     {"kw":"rib eye steak versus sirloin","intent":"C","semrush":"Informational, Commercial","vol":210,"kd":12,"src":"pass"},
-    {"kw":"beef eye fillet recipe","intent":"I","semrush":"Informational","vol":720,"kd":21,"src":"kd0-29"},
-  ],
-  'beef-eye-fillet-steaks': [
-    {"kw":"buy beef fillet online","intent":"T","semrush":"Transactional","vol":50,"kd":6,"src":"pass"},
-    {"kw":"beef tenderloin cost","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":19,"src":"pass"},
-    {"kw":"beef fillet steak","intent":"I","semrush":"Informational","vol":1000,"kd":11,"src":"pass"},
-    {"kw":"how to cook eye fillet steak","intent":"I","semrush":"Informational","vol":390,"kd":17,"src":"kd0-29"},
-    {"kw":"beef eye fillet steak","intent":"I","semrush":"Informational","vol":320,"kd":8,"src":"kd0-29"},
+    {"kw":"recipe for eye fillet","intent":"I","semrush":"Informational","vol":720,"kd":16,"src":"kd0-29"},
   ],
   'wagyu-texan-chilli-sausages': [
     {"kw":"buy mince beef sausage online","intent":"T","semrush":"Transactional","vol":70,"kd":5,"src":"pass"},
@@ -910,24 +927,24 @@ export const PRODUCT_KEYWORDS = {
   ],
   'angus-beef-rump-steaks-mb3-4': [
     {"kw":"beef rump steak slow cooker recipes","intent":"I","semrush":"Informational","vol":260,"kd":26,"src":"kd0-29"},
-    {"kw":"what are rump steaks","intent":"I","semrush":"Informational","vol":260,"kd":15,"src":"kd0-29"},
     {"kw":"angus beef steak","intent":"I","semrush":"Informational","vol":170,"kd":17,"src":"kd0-29"},
     {"kw":"rump steak cut","intent":"I","semrush":"Informational","vol":170,"kd":7,"src":"kd0-29"},
     {"kw":"how long to cook beef rump steak","intent":"I","semrush":"Informational","vol":320,"kd":27,"src":"kd0-29"},
+    {"kw":"cooking beef rump steak","intent":"I","semrush":"Informational","vol":260,"kd":21,"src":"kd0-29"},
   ],
   'black-angus-beef-rump-whole-mb3-4': [
-    {"kw":"angus beef","intent":"I","semrush":"Informational","vol":1600,"kd":18,"src":"kd0-29"},
     {"kw":"what is angus beef","intent":"I","semrush":"Informational","vol":260,"kd":22,"src":"kd0-29"},
     {"kw":"slow cooker beef rump steak","intent":"I","semrush":"Informational","vol":260,"kd":23,"src":"kd0-29"},
     {"kw":"beef rump roast recipe","intent":"I","semrush":"Informational","vol":260,"kd":25,"src":"kd0-29"},
     {"kw":"what is beef rump","intent":"I","semrush":"Informational","vol":260,"kd":15,"src":"kd0-29"},
+    {"kw":"angus beef meat","intent":"I","semrush":"Informational","vol":210,"kd":9,"src":"kd0-29"},
   ],
-  'beef-chuck-tender': [
-    {"kw":"beef chuck meat recipes","intent":"I","semrush":"Informational","vol":2900,"kd":27,"src":"kd0-29"},
-    {"kw":"beef chuck recipes","intent":"I","semrush":"Informational","vol":1900,"kd":23,"src":"kd0-29"},
-    {"kw":"chuck steak slow cooker","intent":"I","semrush":"Informational","vol":1600,"kd":21,"src":"kd0-29"},
-    {"kw":"beef chuck steak recipes","intent":"I","semrush":"Informational","vol":720,"kd":18,"src":"kd0-29"},
-    {"kw":"what is beef chuck","intent":"I","semrush":"Informational","vol":590,"kd":19,"src":"kd0-29"},
+  'beef-eye-fillet-steaks': [
+    {"kw":"buy beef fillet online","intent":"T","semrush":"Transactional","vol":50,"kd":6,"src":"pass"},
+    {"kw":"beef tenderloin cost","intent":"C","semrush":"Informational, Commercial","vol":70,"kd":19,"src":"pass"},
+    {"kw":"beef fillet steak","intent":"I","semrush":"Informational","vol":1000,"kd":11,"src":"pass"},
+    {"kw":"how to cook eye fillet steak","intent":"I","semrush":"Informational","vol":390,"kd":17,"src":"kd0-29"},
+    {"kw":"beef eye fillet steak","intent":"I","semrush":"Informational","vol":320,"kd":8,"src":"kd0-29"},
   ],
   'angus-beef-porterhouse-steaks-mb3-4': [
     {"kw":"porterhouse steak recipe","intent":"I","semrush":"Informational","vol":590,"kd":18,"src":"kd0-29"},
@@ -943,30 +960,37 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"cuts of beef porterhouse","intent":"I","semrush":"Informational","vol":260,"kd":17,"src":"kd0-29"},
     {"kw":"porterhouse cut","intent":"I","semrush":"Informational","vol":260,"kd":13,"src":"kd0-29"},
   ],
+  'beef-chuck-tender': [
+    {"kw":"beef chuck meat recipes","intent":"I","semrush":"Informational","vol":2900,"kd":27,"src":"kd0-29"},
+    {"kw":"beef chuck recipes","intent":"I","semrush":"Informational","vol":1900,"kd":23,"src":"kd0-29"},
+    {"kw":"chuck steak slow cooker","intent":"I","semrush":"Informational","vol":1600,"kd":21,"src":"kd0-29"},
+    {"kw":"beef chuck steak recipes","intent":"I","semrush":"Informational","vol":720,"kd":18,"src":"kd0-29"},
+    {"kw":"what is beef chuck","intent":"I","semrush":"Informational","vol":590,"kd":19,"src":"kd0-29"},
+  ],
   'wagyu-blade-steaks-mb5': [
     {"kw":"beef blade steak","intent":"I","semrush":"Informational","vol":1600,"kd":21,"src":"kd0-29"},
     {"kw":"beef blade steak roast","intent":"I","semrush":"Informational","vol":110,"kd":7,"src":"kd0-29"},
     {"kw":"beef blade steak recipe slow cooker","intent":"I","semrush":"Informational","vol":90,"kd":12,"src":"kd0-29"},
     {"kw":"beef top blade steak recipes","intent":"I","semrush":"Informational","vol":880,"kd":28,"src":"kd0-29"},
-    {"kw":"wagyu beef rump steak","intent":"I","semrush":"Informational","vol":390,"kd":6,"src":"kd0-29"},
+    {"kw":"wagyu sirloin steak","intent":"I","semrush":"Informational","vol":260,"kd":6,"src":"kd0-29"},
   ],
   'wagyu-blade-steaks-mb9': [
     {"kw":"beef blade steak recipe","intent":"I","semrush":"Informational","vol":320,"kd":26,"src":"kd0-29"},
-    {"kw":"rump steak wagyu","intent":"I","semrush":"Informational","vol":390,"kd":7,"src":"kd0-29"},
-    {"kw":"wagyu sirloin steak","intent":"I","semrush":"Informational","vol":260,"kd":6,"src":"kd0-29"},
-    {"kw":"wagyu porterhouse steak","intent":"I","semrush":"Informational","vol":170,"kd":5,"src":"kd0-29"},
     {"kw":"cooking wagyu beef steak","intent":"I","semrush":"Informational","vol":140,"kd":20,"src":"kd0-29"},
+    {"kw":"recipes using blade steak","intent":"I","semrush":"Informational","vol":140,"kd":9,"src":"kd0-29"},
+    {"kw":"cooking beef blade steak","intent":"I","semrush":"Informational","vol":90,"kd":13,"src":"kd0-29"},
+    {"kw":"wagyu beef hanger steak","intent":"I","semrush":"Informational","vol":70,"kd":7,"src":"kd0-29"},
   ],
   'angus-beef-eye-fillet-steaks-mb3-4': [
     {"kw":"eye fillet steak recipes","intent":"I","semrush":"Informational","vol":320,"kd":11,"src":"kd0-29"},
     {"kw":"beef eye fillet steak recipe","intent":"I","semrush":"Informational","vol":210,"kd":14,"src":"kd0-29"},
-    {"kw":"recipe for eye fillet","intent":"I","semrush":"Informational","vol":720,"kd":16,"src":"kd0-29"},
-    {"kw":"eye fillet beef recipes","intent":"I","semrush":"Informational","vol":590,"kd":28,"src":"kd0-29"},
+    {"kw":"beef eye fillet recipe","intent":"I","semrush":"Informational","vol":720,"kd":21,"src":"kd0-29"},
     {"kw":"cooking eye fillet steak","intent":"I","semrush":"Informational","vol":140,"kd":22,"src":"kd0-29"},
+    {"kw":"how to cook eye fillet","intent":"I","semrush":"Informational","vol":480,"kd":15,"src":"kd0-29"},
   ],
   'angus-beef-butt-eye-fillet-mb3-4': [
-    {"kw":"recipes for eye fillet of beef","intent":"I","semrush":"Informational","vol":590,"kd":27,"src":"kd0-29"},
-    {"kw":"how to cook eye fillet","intent":"I","semrush":"Informational","vol":480,"kd":15,"src":"kd0-29"},
+    {"kw":"eye fillet beef recipes","intent":"I","semrush":"Informational","vol":590,"kd":28,"src":"kd0-29"},
+    {"kw":"eye fillet recipe","intent":"I","semrush":"Informational","vol":390,"kd":17,"src":"kd0-29"},
     {"kw":"roast eye fillet","intent":"I","semrush":"Informational","vol":390,"kd":7,"src":"kd0-29"},
     {"kw":"whole eye fillet","intent":"I","semrush":"Informational","vol":390,"kd":8,"src":"kd0-29"},
     {"kw":"beef eye fillet roast recipe","intent":"I","semrush":"Informational","vol":260,"kd":11,"src":"kd0-29"},
@@ -976,12 +1000,12 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"beef oyster blade roast","intent":"I","semrush":"Informational","vol":140,"kd":7,"src":"kd0-29"},
     {"kw":"oyster blade beef recipe","intent":"I","semrush":"Informational","vol":140,"kd":9,"src":"kd0-29"},
     {"kw":"oyster blade cut beef","intent":"I","semrush":"Informational","vol":110,"kd":14,"src":"kd0-29"},
-    {"kw":"recipes using blade steak","intent":"I","semrush":"Informational","vol":140,"kd":9,"src":"kd0-29"},
+    {"kw":"beef blade roast recipe","intent":"I","semrush":"Informational","vol":480,"kd":17,"src":"kd0-29"},
   ],
   'wagyu-whole-oyster-blade-mb9': [
     {"kw":"beef oyster blade recipe","intent":"I","semrush":"Informational","vol":90,"kd":8,"src":"kd0-29"},
     {"kw":"oyster blade beef cut","intent":"I","semrush":"Informational","vol":70,"kd":13,"src":"kd0-29"},
-    {"kw":"beef blade roast recipe","intent":"I","semrush":"Informational","vol":480,"kd":17,"src":"kd0-29"},
+    {"kw":"how to cook roast blade beef","intent":"I","semrush":"Informational","vol":390,"kd":15,"src":"kd0-29"},
     {"kw":"how to cook blade beef","intent":"I","semrush":"Informational","vol":320,"kd":9,"src":"kd0-29"},
     {"kw":"blade beef slow cooker","intent":"I","semrush":"Informational","vol":260,"kd":14,"src":"kd0-29"},
   ],
@@ -1000,25 +1024,25 @@ export const PRODUCT_KEYWORDS = {
     {"kw":"slow cooked beef topside roast in oven","intent":"I","semrush":"Informational","vol":170,"kd":26,"src":"kd0-29"},
   ],
   'wagyu-rump-steaks-mb5': [
-    {"kw":"wagyu beef rump","intent":"I","semrush":"Informational","vol":90,"kd":6,"src":"kd0-29"},
-    {"kw":"cooking beef rump steak","intent":"I","semrush":"Informational","vol":260,"kd":21,"src":"kd0-29"},
     {"kw":"eye of rump steak","intent":"I","semrush":"Informational","vol":110,"kd":9,"src":"kd0-29"},
     {"kw":"beef stew with rump steak","intent":"I","semrush":"Informational","vol":70,"kd":25,"src":"kd0-29"},
-    {"kw":"wagyu beef hanger steak","intent":"I","semrush":"Informational","vol":70,"kd":7,"src":"kd0-29"},
-  ],
-  'wagyu-rump-steaks-mb9': [
     {"kw":"wagyu beef sirloin steak","intent":"I","semrush":"Informational","vol":70,"kd":3,"src":"kd0-29"},
     {"kw":"roast rump beef","intent":"I","semrush":"Informational","vol":260,"kd":21,"src":"kd0-29"},
     {"kw":"roast beef rump roast recipe","intent":"I","semrush":"Informational","vol":210,"kd":23,"src":"kd0-29"},
+  ],
+  'wagyu-rump-steaks-mb9': [
+    {"kw":"beef rump roast recipes","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
     {"kw":"beef rump slow cooker recipes","intent":"I","semrush":"Informational","vol":140,"kd":26,"src":"kd0-29"},
     {"kw":"how to cook beef rump","intent":"I","semrush":"Informational","vol":140,"kd":22,"src":"kd0-29"},
-  ],
-  'wagyu-rump-whole-mb5': [
-    {"kw":"beef rump roast recipes","intent":"I","semrush":"Informational","vol":210,"kd":17,"src":"kd0-29"},
-    {"kw":"how to cook rump beef","intent":"I","semrush":"Informational","vol":140,"kd":28,"src":"kd0-29"},
     {"kw":"rump cuts of meat","intent":"I","semrush":"Informational","vol":110,"kd":17,"src":"kd0-29"},
     {"kw":"beef rump roast slow cooker recipe","intent":"I","semrush":"Informational","vol":110,"kd":28,"src":"kd0-29"},
+  ],
+  'wagyu-rump-whole-mb5': [
+    {"kw":"how to cook a beef rump roast","intent":"I","semrush":"Informational","vol":170,"kd":13,"src":"kd0-29"},
+    {"kw":"how to cook rump beef","intent":"I","semrush":"Informational","vol":140,"kd":28,"src":"kd0-29"},
     {"kw":"rump cut beef","intent":"I","semrush":"Informational","vol":110,"kd":14,"src":"kd0-29"},
+    {"kw":"roast beef rump roast","intent":"I","semrush":"Informational","vol":90,"kd":15,"src":"kd0-29"},
+    {"kw":"rump roast beef slow cooker","intent":"I","semrush":"Informational","vol":90,"kd":25,"src":"kd0-29"},
   ],
   'wagyu-porterhouse-steaks-mb5': [
     {"kw":"steak cuts porterhouse","intent":"I","semrush":"Informational","vol":260,"kd":19,"src":"kd0-29"},
@@ -1043,8 +1067,8 @@ export const PRODUCT_KEYWORDS = {
   ],
   'wagyu-eye-fillet-steaks-mb5': [
     {"kw":"steak eye fillet","intent":"I","semrush":"Informational","vol":210,"kd":8,"src":"kd0-29"},
+    {"kw":"recipes for eye fillet of beef","intent":"I","semrush":"Informational","vol":590,"kd":27,"src":"kd0-29"},
     {"kw":"how to cook an eye fillet steak","intent":"I","semrush":"Informational","vol":110,"kd":22,"src":"kd0-29"},
-    {"kw":"eye fillet recipe","intent":"I","semrush":"Informational","vol":390,"kd":17,"src":"kd0-29"},
     {"kw":"cooking beef eye fillet steak","intent":"I","semrush":"Informational","vol":90,"kd":9,"src":"kd0-29"},
     {"kw":"rib eye fillet steak","intent":"I","semrush":"Informational","vol":90,"kd":12,"src":"kd0-29"},
   ],

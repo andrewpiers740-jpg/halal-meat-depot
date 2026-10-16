@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -134,6 +135,7 @@ export default async function CategoryPage({ params }) {
               </section>
             )
           )}
+          <KeywordNotes category={c.slug} />
           <section className="card" style={{ marginBottom: 24 }} aria-labelledby="cat-faq-title">
             <h2 id="cat-faq-title">{c.slug === 'wholesale-cartons' ? 'Meat boxes and bulk halal meat cartons' : cap(phrase(c))}: common questions</h2>
             {faqs.map((f) => (

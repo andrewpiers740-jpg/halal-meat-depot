@@ -112,7 +112,7 @@ export const BLOG_POSTS_4 = [
       ['h2', `Leftover roast beef ideas`],
       ['p', `A good roast almost always leaves something for the next day. Thinly sliced cold roast beef makes excellent sandwiches with mustard and rocket, a quick beef salad, or a topping for rice bowls. Diced leftovers can go into fried rice, a cottage pie or a quick curry. Store leftovers in a sealed container in the fridge and use them within three days, or freeze slices with a little gravy for up to two months.`],
       ['h2', `Finding a butcher for your roast`],
-      ['p', `If you have been looking for a wagyu butcher near me for a special roast, Wagyu topside and rump make spectacularly rich roasts. Our [Wagyu topside roast](/product/wagyu-topside-roast-mb9/) and [whole Wagyu rump](/product/wagyu-rump-whole-mb5/) are delivered chilled across Australia. Every cut in our [halal beef range](/shop/halal-beef/) is certified halal by Halal Control Australia and delivered from Greenacre, Sydney.`],
+      ['p', `If you have been looking for a wagyu butcher near me for a special roast, Wagyu topside and rump make spectacularly rich roasts. Our [Wagyu topside roast](/product/wagyu-topside-roast-mb9/) and [whole Wagyu rump](/product/wagyu-beef-rump-whole-mb5/) are delivered chilled across Australia. Every cut in our [halal beef range](/shop/halal-beef/) is certified halal by Halal Control Australia and delivered from Greenacre, Sydney.`],
     ],
   },
   {

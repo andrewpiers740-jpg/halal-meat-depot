@@ -83,7 +83,8 @@ export function productContent(p) {
   const f = p.focus
   const kws = PRODUCT_KEYWORDS[p.imageSlug] || []
   const T = kws.filter((k) => k.intent === 'T')
-  const C = kws.filter((k) => k.intent === 'C')
+  // Navigational (owner, 2026-10-16) reads like commercial copy: generic place/service phrases.
+  const C = kws.filter((k) => k.intent === 'C' || k.intent === 'N')
   const I = kws.filter((k) => k.intent === 'I')
   const seen = {}
   const x = f.replace(/^buy /, '').replace(/ online$/, '').replace(/ price$/, '').replace(/ for sale$/, '')

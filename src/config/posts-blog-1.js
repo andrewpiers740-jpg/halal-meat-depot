@@ -111,7 +111,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `Why is my massaman beef still tough?`],
       ['p', `It simply needs more time. Tough beef in a braise means the connective tissue has not finished breaking down. Keep simmering gently and test every 20 minutes; chuck usually needs at least two hours, and cheeks can take three.`],
       ['h2', `Buying beef for curry: price and value`],
-      ['p', `Slow-cooking cuts are among the best-value meat you can buy, which makes curry a smart way to feed a crowd. The beef meat price in Australia moves with the season and the cut, so compare the price per kilo on each product page before you order. Chuck and gravy beef are usually the most economical; cheeks cost more but reward you with a remarkable texture. For big gatherings, our [diced beef carton](/product/diced-beef-carton/) is ready to cook straight from the pack.`],
+      ['p', `Slow-cooking cuts are among the best-value meat you can buy, which makes curry a smart way to feed a crowd. The beef meat price in Australia moves with the season and the cut, so compare the price per kilo on each product page before you order. Chuck and gravy beef are usually the most economical; cheeks cost more but reward you with a remarkable texture. For big gatherings, our [diced beef carton](/product/beef-diced-carton/) is ready to cook straight from the pack.`],
       ['p', `All our beef is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. Browse the full [halal beef range](/shop/halal-beef/), or try the [beef rendang recipe](/blog/beef-rendang-recipe/) next if you enjoy a rich, slow-cooked curry.`],
     ],
   },
@@ -433,7 +433,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `How do I stop the spices burning?`],
       ['p', `Add a splash of water with the ground spices and keep stirring over medium heat. The water lets them cook through gently; when it evaporates and the oil separates from the paste, the spices are ready for the tomatoes. If they ever smell acrid, start again, because burnt spices make the whole curry bitter.`],
       ['h2', `Halal beef for curry, delivered`],
-      ['p', `You will find chuck, gravy beef, shin, cheeks and diced beef in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia, with free delivery on orders over $500. Cooking for a crowd? Our [diced beef carton](/product/diced-beef-carton/) is made for catering.`],
+      ['p', `You will find chuck, gravy beef, shin, cheeks and diced beef in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia, with free delivery on orders over $500. Cooking for a crowd? Our [diced beef carton](/product/beef-diced-carton/) is made for catering.`],
     ],
   },
   {

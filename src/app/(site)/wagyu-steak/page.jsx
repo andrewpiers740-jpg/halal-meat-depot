@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import JsonLd from '@/components/JsonLd'
@@ -96,6 +97,11 @@ export default function WagyuPage() {
               Looking for Angus or everyday cuts? Browse all <Link href="/shop/halal-beef/">halal beef</Link>.
             </p>
           </section>
+        </div>
+      </div>
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/wagyu-steak/" />
         </div>
       </div>
     </>

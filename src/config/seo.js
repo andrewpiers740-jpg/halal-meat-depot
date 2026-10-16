@@ -75,6 +75,28 @@ export const PRODUCT_SEO = {
   // Owner fallback rule (2026-10-13): exact file keywords with KD 0–29 for products that had none.
   'lamb-leg-bone-in': { focus: 'leg of lamb for sale', intent: 'T', vol: 90, kd: 10, slug: 'leg-of-lamb-for-sale-bone-in' },
   'buffalo-t-bone-steak': { focus: 'buffalo t bone steak', intent: 'C', vol: 10, kd: 4 },
+  // Owner request 2026-10-16: products that had no file focus get an exact file keyword (KD 0-29) that is
+  // the product's own name or a close variant. Mostly Informational, so ownerOk lets them past the T/C rule
+  // (no Transactional/Commercial/Navigational exact phrase in the files names these cuts).
+  'wagyu-whole-oyster-blade-mb9': { focus: 'wagyu beef oyster blade', intent: 'I', vol: 90, kd: 5, ownerOk: true, slug: 'wagyu-beef-oyster-blade-mb9' },
+  'beef-eye-fillet-whole-mb4': { focus: 'eye fillet beef', intent: 'I', vol: 140, kd: 11, ownerOk: true, slug: 'eye-fillet-beef-whole-mb4' },
+  'beef-porterhouse-portion': { focus: 'porterhouse beef', intent: 'I', vol: 260, kd: 14, ownerOk: true, slug: 'porterhouse-beef-portion' },
+  'beef-porterhouse-portion-mb4': { focus: 'beef porterhouse roast', intent: 'I', vol: 210, kd: 7, ownerOk: true, slug: 'beef-porterhouse-roast-mb4' },
+  'beef-scotch-fillet-portion-mb4': { focus: 'beef scotch fillet roast', intent: 'I', vol: 390, kd: 8, ownerOk: true, slug: 'beef-scotch-fillet-roast-mb4' },
+  'beef-rump-portion': { focus: 'beef rump', intent: 'I', vol: 2400, kd: 22, ownerOk: true },
+  'beef-rump-cap-mb4': { focus: 'rump cap beef', intent: 'I', vol: 50, kd: 7, ownerOk: true, slug: 'rump-cap-beef-mb4' },
+  'beef-topside-whole': { focus: 'beef topside', intent: 'I', vol: 880, kd: 18, ownerOk: true },
+  'beef-spider-steaks': { focus: 'beef spider steak', intent: 'I', vol: 110, kd: 8, ownerOk: true, slug: 'beef-spider-steak' },
+  'honey-soy-marinated-chicken-wings': { focus: 'honey soy chicken wings', intent: 'I', vol: 2400, kd: 16, ownerOk: true, slug: 'honey-soy-chicken-wings-marinated' },
+  'chicken-thigh-fillet-carton': { focus: 'chicken thigh fillet', intent: 'I', vol: 1000, kd: 10, ownerOk: true },
+  'beef-striploin-cryovac-carton': { focus: 'beef striploin', intent: 'I', vol: 720, kd: 11, ownerOk: true },
+  'beef-mince-carton': { focus: 'beef mince', intent: 'I', vol: 4400, kd: 23, ownerOk: true },
+  'diced-beef-carton': { focus: 'beef diced', intent: 'I', vol: 140, kd: 12, ownerOk: true, slug: 'beef-diced-carton' },
+  'wagyu-tomahawk-mb9': { focus: 'wagyu beef tomahawk steak', intent: 'I', vol: 110, kd: 8, ownerOk: true, slug: 'wagyu-beef-tomahawk-steak-mb9' },
+  'wagyu-porterhouse-steaks-mb9': { focus: 'wagyu porterhouse steak', intent: 'I', vol: 170, kd: 5, ownerOk: true, slug: 'wagyu-porterhouse-steak-mb9' },
+  'wagyu-rump-steaks-mb5': { focus: 'wagyu beef rump steak', intent: 'I', vol: 390, kd: 6, ownerOk: true, slug: 'wagyu-beef-rump-steak-mb5' },
+  'wagyu-rump-steaks-mb9': { focus: 'rump steak wagyu', intent: 'I', vol: 390, kd: 7, ownerOk: true, slug: 'rump-steak-wagyu-mb9' },
+  'wagyu-rump-whole-mb5': { focus: 'wagyu beef rump', intent: 'I', vol: 90, kd: 6, ownerOk: true, slug: 'wagyu-beef-rump-whole-mb5' },
 }
 
 // Categories — keyed by category id (products reference the id; only the URL changes).

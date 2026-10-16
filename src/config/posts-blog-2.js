@@ -81,7 +81,7 @@ export const BLOG_POSTS_2 = [
       ]],
       ['p', `When a recipe calls for bavette cut beef, any of these will work. In our range, [flank steak](/product/flank-steak-beef/) is the closest match for the French bavette de flanchet, and [chuck tail flap](/product/beef-chuck-tail-flap/) behaves very much like the well-marbled sirloin flap: loose, juicy and great on the barbecue.`],
       ['h2', `Wagyu beef bavette`],
-      ['p', `Wagyu beef bavette is prized by chefs because Wagyu's marbling makes an already juicy cut even richer. It is not something we list at the moment, but if you want the Wagyu experience in a fast-cooking steak, our [Wagyu rump](/product/wagyu-rump-steaks-mb5/) and [Wagyu oyster blade](/product/wagyu-oyster-blade-steaks-mb9/) steaks give a similar, deeply marbled result. See our [Wagyu steak](/wagyu-steak/) page for the full range and marble scores.`],
+      ['p', `Wagyu beef bavette is prized by chefs because Wagyu's marbling makes an already juicy cut even richer. It is not something we list at the moment, but if you want the Wagyu experience in a fast-cooking steak, our [Wagyu rump](/product/wagyu-beef-rump-steak-mb5/) and [Wagyu oyster blade](/product/wagyu-oyster-blade-steaks-mb9/) steaks give a similar, deeply marbled result. See our [Wagyu steak](/wagyu-steak/) page for the full range and marble scores.`],
       ['h2', `How to cook bavette`],
       ['p', `Bavette loves high heat and a short cooking time:`],
       ['ul', [
@@ -584,7 +584,7 @@ export const BLOG_POSTS_2 = [
         `[Eye fillet](/product/beef-eye-fillet-steaks/): the classic. Very tender, with an even, round shape that slices beautifully.`,
         `[Sirloin porterhouse](/product/sirloin-steak-beef-porterhouse/): a little firmer with more flavour.`,
         `[Rump](/product/rump-beef-steaks/): good value, flavourful; choose a thick, even piece.`,
-        `[Wagyu eye fillet](/product/wagyu-eye-fillet-steaks-mb5/) or [Wagyu rump](/product/wagyu-rump-steaks-mb5/): for the most luxurious result.`,
+        `[Wagyu eye fillet](/product/wagyu-eye-fillet-steaks-mb5/) or [Wagyu rump](/product/wagyu-beef-rump-steak-mb5/): for the most luxurious result.`,
       ]],
       ['h3', `Wagyu beef tataki`],
       ['p', `Wagyu beef tataki is a restaurant favourite because Wagyu's marbling melts slightly during searing and gives each slice a rich, buttery texture. With very high marble scores, slice even thinner and serve smaller portions, as it is very rich. Our [Wagyu steak](/wagyu-steak/) page explains marble scores and cuts.`],

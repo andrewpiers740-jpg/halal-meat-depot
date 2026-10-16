@@ -21,11 +21,12 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith('.csv'))) for (const l
 const HERE = new URL('.', import.meta.url)
 const pass = new Set(readFileSync(new URL('pass.txt', HERE), 'utf8').split(/\r?\n/).filter(Boolean))
 const mapped = JSON.parse(readFileSync(new URL('mapped.json', HERE), 'utf8')).map(([kw, target]) => ({ kw, target }))
-const intentOf = (s) => (/Transactional/.test(s) ? 'T' : /Commercial/.test(s) ? 'C' : 'I')
+// Navigational counts as its own intent (owner, 2026-10-16); T/C still win when Semrush lists several.
+const intentOf = (s) => (/Transactional/.test(s) ? 'T' : /Commercial/.test(s) ? 'C' : /Navigational/.test(s) ? 'N' : 'I')
 const BAD = /\b(coles|woolworths|woolies|aldi|iga|costco|harris|melbourne|perth|brisbane|adelaide|gold coast|hobart|darwin|canberra|geelong|newcastle|wollongong|bendigo|ballarat|toowoomba|organic|grass|free range|free-range|msa|zabiha|pork|bacon|ham|dog|dogs|cat|puppy|pet|pets|jamie|recipetin|nz|uk|usa|america|american|walmart|kfc|mcdonalds|nando|nandos|subway|wine|beer|vegan|vegetarian|calories|calorie|nutrition|protein|carbs|jerky|link|links|qin|lanzhou|pho|noodle|noodles|sexcam|images|image|png|clipart|drawing|meaning|definition|translate|tamil|hindi|urdu|chinese|vietnamese|korean|japanese|spanish|french|italian|là|phần|nào|en|y|de|whats|filet|filets|beefs|cows|cattle|farm|farms|eat|eats|diet|health|healthy|benefits|raw|dangerous|safe|pregnant|baby|cut chart|diagram|tattoo|shirt|meme|game|toy|coupon|vs pork|roo burgers?|nutritional|proteins|suvee|frozen|freeze|dried|naked|turken|transylvanian|alabama|campbell's|campbells|mr|hump|feral|wild|hunting|hunt|lyrics|song|restaurant|restaurants|cafe|menu|takeaway|delivered|uber|doordash|kmart|bunnings|amazon|ebay|gumtree|nutrient|vitamin|fish|carp|goose|foie|kobe|woolworth|penthouse|poterhouse|porthouse|dislocated|broken|gelpro|supplement|supplements|capsules|cauliflower|luv|love'em|stuffed|puff|balls|mexican|frites|world|ranked|kinds|nicest|expensive|cheap|cheapest|tenderize|sides|gluten|panko|smart|em|thin|tallow|patties|rissoles|pie|pies|confit|parfait|pate|tomato|pan|leaner|shop|good|full lamb|grassfed|cell|nahla|master|strips of steak|chicken and thigh|bone marrow bone|marrow bone marrow|blackdog|primal|desiccated|nutrients|corned|cook's|chief|comfy|eater|how dry aged|how to aged|chuck of meat|what's gravy beef|dish)\b|^(lean steaks|beef cutlets?|beef neck.*|steak and bbq|steak wagyu beef|ribeye wagyu steak|cow tongue beef|best of the bone beef liver|sausage meat|sausage near me|beef and gravy slow cooker recipe|oyster steak beef|blade beef|beef blade meat|steak rump cut|rump meat cut|rump eye steak|porterhouse steak is what cut|what is in a porterhouse steak|tomahawk steak what cut|wagyu beef and kobe beef|ox tail|beef ox tongue|comfy duck legs|thor's hammer beef|jack's creek beef|wagyu beef flank steak|australia wagyu beef|australia wagyu beef price|australian wagyu beef|australian wagyu beef online|australian wagyu beef price|what's chuck beef|butcher's cut steak|chief beef liver|beef eater bug bbq|cow liver|butcher liver|what's a porterhouse steak|best steak for bbq|best steak for bbq australia|best bbq rub for beef brisket|bbq beef steak|good steak for bbq|where to buy beef liver|beef liver near me|buy beef liver|wagyu beef steak|short rib of beef price|is veal beef|beef vs veal|veal versus beef|do chicken necks have bones|best lamb sausage rolls|lamb sausage roll recipe)$|chicken \w+ chicken|buffalo (chicken|wings|wing|sauce)|^chicken thighs? chicken|chicken feet chicken|beef feet/
 const TYPO = /\b(\w+) \1\b|\ba (eye|asado|oyster|egg)\b/
 const GRAM = /^(what (is|are)|how to|best |buy |where (to|can i) buy|[a-z' ]+ (recipe|recipes|price|near me|for sale|online|slow cooker|bbq|oven|roast|curry|stew|cost|supplier|wholesale|butcher|steak|steaks|chops|mince|fillet|fillets|ribs|shanks|shank|leg|legs|shoulder|wings|thigh|thighs|breast|breasts|drumsticks|drumstick|livers|liver|bones|tail|cheeks|cheek|tongue|tendon|sausages|kebabs|kebab|kofta|carcass|meat|cutlets|cutlet|rack|racks|loin|rump|brisket|cut|cuts|feet|necks|neck|frames|fat|backstrap|chipolatas|patties|burgers|schnitzel|tenderloins|maryland|duck|goat|lamb|beef|chicken|camel|kangaroo|buffalo|veal|mutton|wagyu|tomahawk|t bone|ribeye|rib eye|porterhouse|sirloin|topside|silverside|osso buco|oxtail|marrow|tallow|skewers)$)/
-const ok = (k) => k && !BAD.test(k) && !TYPO.test(k) && GRAM.test(k) && k.split(' ').length <= 7
+const ok = (k) => k && !REJECT.has(k) && !BRANDS.test(k) && !BAD.test(k) && !TYPO.test(k) && GRAM.test(k) && k.split(' ').length <= 7
 const { PRODUCTS, POSTS } = await import(R + 'site.js')
 const { CATEGORY_SEO, PAGE_SEO, POST_SEO, PRODUCT_SEO } = await import(R + 'seo.js')
 // Reserved: category/page/post focus keywords. Post keywords are re-picked later, so not reserved here.
@@ -40,7 +41,15 @@ const takenFocus = new Set()
 for (const p of PRODUCTS) { const s = PRODUCT_SEO[p.imageSlug]; if (s && !BUY[p.imageSlug]) takenFocus.add(s.focus.toLowerCase()) }
 for (const v of Object.values(BUY)) takenFocus.add(v)
 const info = (k) => raw.get(k)
-const candFor = (p) => {
+// loose = owner request 2026-10-16: second pass for products still under 5 (see below).
+// Brands, businesses, people and places (owner rule: no brands) — blocked in every pass (reviewed 2026-10-16).
+const BRANDS = /\b(maleny|blackmore|margaret river|robbins island|sher|native angus|donna hay|arby's|arbys|my muscle chef|muscle chef|sheftalies|fat duck|two fat ducks|macros|recipetin|jamie oliver|gordon ramsay|nigella|julia|child.s)\b/
+// Off-topic words the loose pass must never pick (reviewed by hand).
+const LOOSE_BAD = /\b(calories|calorie|nutrition|nutritional|protein|capsules?|supplements?|tablets|powder|dogs?|treats|jerky|bacon|tallow|bouillon|cubes?|thermometer|shredder|location|meaning|called|tamil|hindi|greek|chinese|recipetin|jamie|oliver|gordon|ramsay|nigella|donna|hay|muscle|chef|frame|house|plans|wire|bill|barbers?|richmond|human|humans|maleny|blackmore|margaret|river|robbins|island|sher|native|patte|fat ducks|two|stroganoff|ravioli|bowl)\b/
+// Specific phrases rejected on review (2026-10-16): they describe something we don't sell.
+const REJECT = new Set(['buy angus beef sausage online', 'lamb and rosemary sausage rolls', 'crumbed chicken and', 'tendon beef ball', 'beef heel muscle'])
+const okLoose = (k) => k && !BRANDS.test(k) && !BAD.test(k) && !TYPO.test(k) && !LOOSE_BAD.test(k) && !REJECT.has(k) && k.split(' ').length <= 6
+const candFor = (p, loose = false) => {
   const core = toks(p.name).filter((t) => !STOP.has(t))
   const wag = /wagyu/i.test(p.name), ang = /angus/i.test(p.name)
   const specOk = (k) => (SPEC[p.cat] || []).some((s) => k.includes(s))
@@ -52,7 +61,8 @@ const candFor = (p) => {
   const list = []
   for (const k of own) list.push({ kw: k, score: 10 + Math.log10(info(k).vol + 1), full: core.every((t) => toks(k).includes(t)) })
   for (const [k, r] of raw) {
-    if (r.kd === null || r.kd > 29 || !ok(k) || !specOk(k) || own.includes(k) || wrongSpecies(k)) continue
+    if (r.kd === null || r.kd > 29 || !(loose ? okLoose(k) : ok(k)) || !specOk(k) || own.includes(k) || wrongSpecies(k)) continue
+    if (loose && intentOf(r.semrush) === 'N') continue
     if (/wagyu/.test(k) && !wag) continue
     if (/angus/.test(k) && !ang) continue
     const kt = toks(k); const hit = core.filter((t) => kt.includes(t)).length
@@ -93,13 +103,33 @@ for (const { p, c } of order) {
   for (const x of pick) used.add(x.kw)
   support[p.imageSlug] = pick.map((x) => { const r = info(x.kw); return { kw: x.kw, intent: intentOf(r.semrush), semrush: r.semrush, vol: r.vol, kd: r.kd, src: pass.has(x.kw) ? 'pass' : 'kd0-29' } })
 }
+// 3) Owner request 2026-10-16: products still under 5 supporting keywords get more exact file keywords
+//    (KD 0–29) that name the cut, even when the phrase is outside the strict wording list. Navigational
+//    phrases are skipped in this pass: in these files they are other businesses' names.
+let looseAdded = 0
+for (const p of [...PRODUCTS].sort((a, b) => support[a.imageSlug].length - support[b.imageSlug].length)) {
+  const have = support[p.imageSlug]
+  if (have.length >= 5) continue
+  const sig = (k) => toks(k).filter((t) => !['recipe', 'recipes', 'for', 'with', 'in', 'the', 'a', 'of', 'to', 'how', 'cook', 'using', 'dish', 'dishes', 'best', 'way'].includes(t)).sort().join(' ')
+  const seen = new Set([sig(p.focus), ...have.map((k) => sig(k.kw))])
+  for (const x of candFor(p, true)) {
+    if (have.length >= 5) break
+    if (used.has(x.kw)) continue
+    const g = sig(x.kw)
+    if (seen.has(g)) continue
+    seen.add(g); used.add(x.kw); looseAdded++
+    const r = info(x.kw)
+    have.push({ kw: x.kw, intent: intentOf(r.semrush), semrush: r.semrush, vol: r.vol, kd: r.kd, src: 'kd0-29' })
+  }
+}
+console.log('loose pass added', looseAdded)
 const all = Object.values(support).flat()
 const share = (t) => ((all.filter((k) => k.intent === t).length / all.length) * 100).toFixed(1)
 const counts = Object.values(support).map((l) => l.length)
 console.log('focus changes', Object.keys(focusChange).length, '| kept product name', fallbackNone.length)
-console.log('supporting total', all.length, `mix T ${share('T')}% C ${share('C')}% I ${share('I')}%`, '| <5:', counts.filter((n) => n < 5).length, '| 0:', counts.filter((n) => !n).length)
+console.log('supporting total', all.length, `mix T ${share('T')}% C ${share('C')}% N ${share('N')}% I ${share('I')}%`, '| <5:', counts.filter((n) => n < 5).length, '| 0:', counts.filter((n) => !n).length)
 // ── write src/config/product-keywords.js ──
-const RANK = { T: 0, C: 1, I: 2 }
+const RANK = { T: 0, C: 1, N: 2, I: 3 }
 let out = `// Supporting keywords per product (keyed by ORIGINAL slug) — regenerated 2026-10-13 from the owner's
 // Semrush keyword files. Owner rule: every keyword is an EXACT phrase from those files (never modified).
 // Source: 'pass' = owner criteria list; 'kd0-29' = owner fallback rule — where a product lacks keywords,

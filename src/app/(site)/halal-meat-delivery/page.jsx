@@ -2,6 +2,7 @@ import LegalPage from '@/components/LegalPage'
 import { SITE } from '@/config/site'
 import { ZONES_BY_DISTANCE, PRIORITY_FROM } from '@/config/delivery'
 import { pageMeta } from '@/lib/meta'
+import { PAGE_KEYWORDS } from '@/config/support-keywords'
 
 export const metadata = pageMeta({
   title: 'Fresh Halal Meat Delivery Policy | Australia-Wide | HMD',
@@ -47,6 +48,8 @@ export default function ShippingPage() {
         ['h2', 'Questions'],
         ['p', `Email {{email}}, message us on WhatsApp on ${SITE.phone}, use our [contact form](/contact/), or see the [FAQ](/faq/).`],
         ['p', `${SITE.name} is a business name of ${SITE.legalName} (ABN ${SITE.abn}). Read more [about Halal Meat Depot](/about/), our [terms of sale](/terms/) and our [privacy policy](/privacy/).`],
+        ['h2', PAGE_KEYWORDS['/halal-meat-delivery/'].title],
+        ...PAGE_KEYWORDS['/halal-meat-delivery/'].copy.map((t) => ['p', t]),
       ]}
     />
   )

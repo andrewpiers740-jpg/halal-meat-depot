@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Icon from '@/components/Icon'
@@ -127,6 +128,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/about/" />
+        </div>
+      </div>
     </>
   )
 }

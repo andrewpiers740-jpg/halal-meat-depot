@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import PostThumb from '@/components/PostThumb'
 import Link from 'next/link'
 import Icon from '@/components/Icon'
@@ -380,6 +381,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/" />
+        </div>
+      </div>
       {/* 10 — Wholesale CTA */}
       <section className="section section--dark" aria-labelledby="trade-title">
         <div className="container split" style={{ alignItems: 'center' }}>

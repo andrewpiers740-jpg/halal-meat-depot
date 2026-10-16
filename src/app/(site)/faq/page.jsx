@@ -1,3 +1,4 @@
+import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import JsonLd from '@/components/JsonLd'
@@ -47,6 +48,11 @@ export default function FaqPage() {
           </p>
         </div>
       </section>
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/faq/" />
+        </div>
+      </div>
     </>
   )
 }

@@ -5,6 +5,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs'
 import { resolve, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
+import { CATEGORY_KEYWORDS, PAGE_KEYWORDS } from '../src/config/support-keywords.js'
 import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, powerWordCount, POWER_WORDS } from '../src/config/site.js'
 import { TOOLS } from '../src/lib/tools.js'
 import { STATIC_PAGES } from '../src/lib/sitemaps.js'
@@ -104,7 +105,7 @@ const FOCUS = new Map([
   for (const p of PRODUCTS) {
     check(p.short && p.desc && PRODUCT_ABOUT[p.imageSlug], 'F10', `${p.slug}: missing short description, description or about copy`)
     const s = PRODUCT_SEO[p.imageSlug]
-    check(!s?.intent || s.ownerOk || /T|C/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
+    check(!s?.intent || s.ownerOk || /T|C|N/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
   }
   for (const [id, s] of Object.entries(CATEGORY_SEO)) check(/T|C/.test(s.intent || ''), 'F12', `category ${id}: primary keyword "${s.focus}" is not Transactional/Commercial`)
   const all = Object.values(PRODUCT_KEYWORDS).flat()
@@ -113,6 +114,15 @@ const FOCUS = new Map([
   // T/C/I mix and the 5-keyword floor are targets the files can't always meet — reported, never padded.
   const thin = PRODUCTS.filter((p) => (PRODUCT_KEYWORDS[p.imageSlug] || []).length < 5).length
   console.log(`note: product keyword mix ${(share('T') * 100).toFixed(0)}/${(share('C') * 100).toFixed(0)}/${(share('I') * 100).toFixed(0)} T/C/I (target 45/45/10); ${thin} products have <5 supporting keywords because the files have no more relevant ones`)
+  // Every focus and supporting keyword is used by one page only (products, categories, pages, posts).
+  {
+    const seen = new Map()
+    const note = (kw, where) => { const k = kw.toLowerCase(); if (seen.has(k) && seen.get(k) !== where) fail('F15', `keyword "${kw}" used on ${seen.get(k)} and ${where}`); else seen.set(k, where) }
+    for (const p of PRODUCTS) { note(p.focus, `/product/${p.slug}/`); for (const k of PRODUCT_KEYWORDS[p.imageSlug] || []) note(k.kw, `/product/${p.slug}/`) }
+    for (const c of CATEGORIES) { note(c.focus, c.path); for (const k of CATEGORY_KEYWORDS[c.slug]?.keywords || []) note(k.kw, c.path) }
+    for (const [path, f] of Object.entries(PAGE_SEO)) { note(f, path); for (const k of PAGE_KEYWORDS[path]?.keywords || []) note(k.kw, path) }
+    for (const post of POSTS) { const where = `/blog/${post.slug}/`; note(POST_SEO[post.slug], where); for (const k of post.keywords || []) note(k.kw, where) }
+  }
   const text = (b) => b.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
   for (const post of POSTS) {
     const t = text(post.body)
@@ -180,6 +190,13 @@ for (const path of pages) {
       // Owner rules (2026-10-13): focus keyword in the H1; product descriptions lead with it.
       const heads = (lvl, html) => [...html.matchAll(new RegExp(`<h${lvl}[^>]*>([\\s\\S]*?)</h${lvl}>`, 'g'))].map((m) => decode(m[1].replace(/<[^>]+>/g, ' ')))
       check(heads(1, body).some((x) => containsExact(x, focus)), 'F9', `${path}: H1 missing focus "${focus}"`)
+      // Owner request 2026-10-16: category/page supporting keywords (src/config/support-keywords.js) appear verbatim.
+      {
+        const cat = CATEGORIES.find((c) => c.path === path)
+        const entry = cat ? CATEGORY_KEYWORDS[cat.slug] : PAGE_KEYWORDS[path]
+        const pageText = decode(body.replace(/<[^>]+>/g, ' '))
+        for (const k of entry?.keywords || []) check(containsExact(pageText, k.kw), 'F14', `${path}: supporting keyword "${k.kw}" not used`)
+      }
       if (path.startsWith('/product/')) {
         const p = PRODUCTS.find((x) => `/product/${x.slug}/` === path)
         const kws = (PRODUCT_KEYWORDS[p.imageSlug] || []).map((k) => k.kw)
