@@ -1,0 +1,121 @@
+// New v4 posts, batch N11: diced beef recipe, beef stir fry recipes, beef ribs recipe. (`add` = extension sections, appended after the body.)
+const qa = (title, items) => [['h2', title], ...items.flatMap(([q, a]) => [['h3', q], ['p', a]])]
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_COPY_NEW_11 = {
+  'diced-beef-recipe': {
+    title: 'Diced Beef Recipe: Easy Stews, Curries and Pies',
+    seoTitle: 'Diced Beef Recipe: Easy Stews, Curries and Pies',
+    excerpt: 'A diced beef recipe for easy stews, curries and pies: the best chuck cuts, a crockpot method, pulled beef chuck roast and where to buy diced beef online.',
+    body: [
+      ['p', 'This diced beef recipe is a master method for the most useful cut in the kitchen. Diced beef, cut into cubes from chuck or shin, becomes tender in a stew, rich in a curry and silky in a pie, and it is cheap, filling and freezer-friendly. Learn one method and you can make dozens of dinners. This guide gives you the base recipe, three variations and the buying tips you need.'],
+      ['h2', 'Choosing and buying diced beef'],
+      ['p', 'For slow-cooked dishes, choose diced chuck or shin, which have the connective tissue to turn tender. You can [buy diced beef online](/product/buy-diced-beef-online/) already cut into even cubes, which saves time and ensures consistent cooking. Restaurants and caterers buy [wholesale beef](/product/wholesale-beef-diced-carton/) in 20kg cartons, ready for the pot. If you prefer to cut your own, buy a chuck piece: [beef chuck](/product/beef-chuck-tail-flap/) tail flap, or [beef chuck rolls](/product/beef-chuck-tail-flap/) for large quantities. Compare the [chuck steak price](/product/chuck-steak-price-beef-tender/), the [beef chuck steak price](/product/beef-chuck-meat-steak/), the [beef chuck price](/product/beef-chuck-meat-steak/), the [beef chuck roast price](/product/chuck-steak-price-beef-tender/) and the [beef chuck cost](/product/beef-chuck-meat-steak/) on the product pages: chuck is one of the cheapest cuts per kilo. The [beef chuck flap](/product/beef-chuck-tail-flap/) is well marbled and tender. If you cannot find chuck, a [substitute for beef chuck](/blog/chuck-steak-gravy-beef-vs/) such as gravy beef or blade works in any of these recipes.'],
+      ['h2', 'The master method'],
+      ['ul', [
+        'Pat 1kg of diced beef dry and toss with seasoned flour.',
+        'Brown in batches in hot oil until deeply golden. Do not crowd the pan.',
+        'Soften an onion, carrot and celery in the same pot. Add garlic and a spoonful of tomato paste.',
+        'Return the beef, add 3 cups of stock, bay leaves and thyme, and bring to a gentle simmer.',
+        'Cover and cook for 2.5 hours on the stove or in a 150°C oven, until fork-tender.',
+        'Season, thicken if needed and serve.',
+      ]],
+      ['h2', 'Variation 1: crockpot beef chuck'],
+      ['p', 'Crockpot beef chuck is the easiest of all. Brown the beef and onions, place in the crockpot with the stock and vegetables, and cook on low for 8 hours. The meat should be falling apart. The [best way to cook beef chuck](/blog/curry-massaman-thai-beef/) in a slow cooker is to keep the lid on, and use just enough liquid to come two-thirds up the meat. Our massaman curry guide shows the idea in a Thai-style sauce.'],
+      ['h2', 'Variation 2: pulled beef chuck roast'],
+      ['p', 'Pulled beef chuck roast uses a whole piece rather than cubes. Rub with spices, brown, then slow cook with tomato and stock for 8 to 9 hours. Shred with two forks and stir through the juices. Serve in rolls, tacos or over rice. Diced beef can be cooked the same way if you cut the pieces large, and shredded after cooking.'],
+      ['h2', 'Variation 3: beef pie filling'],
+      ['p', 'Cook the master recipe with less liquid so the gravy is thick, cool it completely, and spoon into a pastry case. Cover with puff pastry, brush with egg and bake at 200°C for 30 minutes. Diced beef makes the best pie filling, because the chunks stay intact and the gravy is rich.'],
+      ...qa('Diced beef questions', [
+        ['How big should the cubes be?', 'About 3 to 4cm. Smaller pieces cook faster but can dry out. Larger pieces stay juicier.'],
+        ['Can I cook diced beef quickly?', 'Not tender cuts like chuck. A pressure cooker takes 40 to 45 minutes. For fast stir-fries, use sirloin or rump strips instead.'],
+        ['Can I freeze it raw?', 'Yes, in flat bags for up to three months. Thaw in the fridge overnight.'],
+      ]),
+    ],
+    add: sec('More diced beef dinners and planning', [
+      'Diced beef is the base of a week of meals. A single large batch of stew can become a pie on Monday, a curry on Tuesday and a pasta sauce on Wednesday, by changing the seasoning and the sides. Use a spice mix for curry, a splash of vinegar for a European stew, or soy sauce and star anise for a Chinese-style braise. The same pot, the same meat and a few pantry staples give you endless variety.',
+      'For a Hungarian-style goulash, add paprika, caraway, capsicum and tomato. For a Moroccan tagine, add cinnamon, cumin, apricots and chickpeas. For a Thai massaman, add coconut milk, potato and peanuts. For a classic French-style daube without wine, use stock, balsamic vinegar, orange zest and herbs. Each uses the same diced beef and the same long, gentle cooking time.',
+      'Shop smart: buy the biggest pack you can store, divide it into meal-sized portions, and freeze flat. Label bags with the weight and date. A 500g bag feeds two, a 1kg bag feeds four to six. Thaw overnight in the fridge. If you cook for a large family, a carton of diced beef saves money and time, and it is a staple for events and gatherings.',
+      'Check for doneness by tasting. The beef should be soft enough to cut with a spoon. If it is still firm, keep cooking. Check the liquid level every hour or so, and top up with hot stock if the pot looks dry. A splash of vinegar or lemon at the end brightens the flavour, and fresh herbs add colour. Taste and adjust the salt just before serving.',
+      'Sides matter. Serve diced beef dishes with mashed potato, rice, couscous, noodles or crusty bread. Add a fresh salad, steamed greens or pickles to balance the richness. For a curry, serve with raita and flatbread. For a pie, serve with peas and mash. For a stew, serve with dumplings. A good side makes a simple meal feel complete.',
+      'All our beef is certified halal by Halal Control Australia and delivered chilled across Sydney and Australia-wide. Browse the full [halal beef](/shop/halal-beef/) range, and use the notes at checkout to ask for particular cuts or sizes. Cool leftovers within an hour, refrigerate for up to four days, and reheat until steaming hot. Raw beef should be stored on the bottom shelf of the fridge, away from other foods.',
+    ]),
+  },
+
+  'beef-stir-fry-recipes': {
+    title: 'Beef Stir Fry Recipes: Quick and Easy Weeknight Dinners',
+    seoTitle: 'Beef Stir Fry Recipes: Quick and Easy Dinners',
+    excerpt: 'Beef stir fry recipes for quick weeknight dinners: the best cuts, marinated beef stir fry, Wagyu upgrades and a method for tender strips every time.',
+    body: [
+      ['p', 'Beef stir fry recipes are a lifesaver on busy weeknights. Thin strips of tender beef, crisp vegetables and a glossy sauce come together in a hot wok in under 15 minutes, and every family has a favourite version. The secret to a great stir-fry is choosing the right cut, slicing it properly and cooking over fierce heat in small batches. This guide covers the cuts, the method and three recipes, all halal and alcohol-free.'],
+      ['h2', 'The best cuts for beef stir fry'],
+      ['p', 'You need a cut that is tender enough to cook in two minutes. Our [best cut for beef stir fry](/product/best-cut-for-beef-stir-fry-strips/) packs are ready-sliced across the grain. If you slice your own, the [best cut of meat for beef stir fry](/product/best-cut-for-beef-stir-fry-strips/) is rump, sirloin or flank. [Beef flank](/product/flank-steak-beef/) and [beef flank meat](/product/flank-steak-beef/) have plenty of flavour and need thin slicing against the grain. A [rump medallion](/product/rump-medallion-beef-portion/) is a tender portion that slices neatly, and a [whole beef rump](/product/whole-beef-rump-black-angus-mb3-4/) is economical for a large family. [Sirloin tip strips](/product/best-cut-for-beef-stir-fry-strips/) and [lean beef strips](/product/best-cut-for-beef-stir-fry-strips/) are good options too. Shoppers who want to [buy organic beef stir fry online](/product/best-cut-for-beef-stir-fry-strips/) are usually after clean, trimmed strips, which are certified halal by Halal Control Australia.'],
+      ['p', 'For a luxury stir-fry, try a [Wagyu rump steak](/product/wagyu-rump-steak-beef-mb5/), also sold as [rump steak Wagyu](/product/wagyu-rump-steak-beef-mb5/), sliced thinly, or ready-cut [Wagyu beef slices](/product/beef-karubi-wagyu-yakiniku-mb5/). A wagyu rump cap is another richly marbled cut that works when sliced thin. A specialist [Wagyu beef butcher](/product/wagyu-beef-butcher-rump-whole-mb5/) will sell whole rumps for slicing at home.'],
+      ['h2', 'The method for tender stir-fry beef'],
+      ['ul', [
+        'Slice the beef 3mm thick, against the grain. Partly freezing it for 30 minutes makes slicing easier.',
+        'Marinate in a tablespoon of soy sauce, a teaspoon of cornflour and a teaspoon of oil for 20 minutes.',
+        'Heat the wok until smoking. Add oil, then the beef in a single layer. Cook for 60 seconds a side, and remove.',
+        'Stir-fry the vegetables for 2 to 3 minutes.',
+        'Return the beef, add the sauce and toss for 30 seconds until glossy.',
+      ]],
+      ['h2', 'Recipe: marinated beef stir fry with broccoli'],
+      ['p', 'A marinated beef stir fry is the easiest to get right. Marinate 400g of beef strips in soy sauce, ginger, garlic, cornflour and a pinch of sugar for 30 minutes. Cook the beef as above, then stir-fry broccoli florets, carrot and capsicum with garlic. Add a sauce of soy, a spoonful of brown sugar, a splash of stock and cornflour, and toss everything together. Serve over rice with sesame seeds.'],
+      ['h2', 'Recipe: black pepper beef'],
+      ['p', 'Cook the beef strips with a generous amount of cracked black pepper, then add sliced onion and capsicum. Make a sauce from soy, a little sugar, a spoon of stock and a drop of vinegar. The result is aromatic, peppery and savoury. Serve with steamed rice and greens.'],
+      ['h2', 'Recipe: honey garlic beef'],
+      ['p', 'Mix soy sauce, honey, garlic, ginger and a splash of rice vinegar. Cook the beef, add snow peas and spring onion, pour in the sauce and cook until sticky. Garnish with sesame seeds. Children love it, and it comes together in 12 minutes.'],
+      ...qa('Stir fry questions', [
+        ['Why is my stir-fry beef tough?', 'The beef was sliced with the grain, overcooked or the pan was too cool. Slice against the grain, use high heat and cook in batches.'],
+        ['Can I use mince?', 'Yes, for a quick dish. Brown it hard and add a thick sauce.'],
+        ['Can I prepare it ahead?', 'Slice and marinate the beef in the morning, chop vegetables and mix the sauce. At dinner time, cooking takes 10 minutes.'],
+      ]),
+    ],
+    add: sec('Stir-fry planning, sauces and vegetables', [
+      'Keep a few sauces ready in jars. A basic stir-fry sauce is three parts soy sauce, one part brown sugar, one part rice vinegar, a splash of sesame oil and some grated garlic and ginger. Shake it well and keep it in the fridge for a week. A black bean sauce, an oyster-free hoisin-style sauce and a sweet chilli sauce give you three more flavours with no extra effort. Always check labels for alcohol.',
+      'Choose vegetables for colour and texture. Broccoli, snow peas, capsicum, carrot, baby corn, bok choy, mushrooms, cabbage and bean sprouts are all good. Cut them in even sizes, so they cook at the same rate. Add hard vegetables first and soft ones last. For a quick dinner, a bag of mixed stir-fry vegetables works well. Cook them until just tender and still bright in colour.',
+      'Wok technique matters. Heat the wok until it smokes, then add oil. Cook in small batches, so the temperature stays high and the food sears instead of steams. Keep the ingredients moving, and use a long-handled spatula. If you do not have a wok, a large, heavy frying pan works well. The goal is speed and heat, not long cooking.',
+      'Serve stir-fries with steamed rice, noodles or cauliflower rice. Rice should be cooked first and kept warm, so everything is ready together. Add a squeeze of lime, a scatter of coriander or spring onion, and some sesame seeds. A simple soup or a plate of cucumber slices makes a pleasant side. Leftover stir-fry keeps for two days in the fridge.',
+      'A stir-fry night is a good way to use odds and ends from the fridge. A half capsicum, a handful of beans, a few mushrooms or the last of the cabbage can all go in. This reduces waste and keeps dinner interesting. Keep a few protein options on hand, and you can have a fresh meal on the table within minutes.',
+      'For a crowd, cook in several batches and combine at the end. Keep the cooked beef warm in a low oven, and add the sauce at the last minute. A large wok or two frying pans speeds things up. You can feed eight people from a single kilo of beef strips if you add plenty of vegetables and noodles. All our beef is certified halal, and our full range is on the [halal beef](/shop/halal-beef/) page.',
+    ]),
+  },
+
+  'beef-ribs-recipe': {
+    title: 'Beef Ribs Recipe: Oven and BBQ Methods for Tender Ribs',
+    seoTitle: 'Beef Ribs Recipe: Easy Oven and BBQ Methods',
+    excerpt: 'A beef ribs recipe for tender ribs in the oven, slow cooker or BBQ: asado ribs, short ribs, the best way to cook beef ribs and where to buy halal ribs.',
+    body: [
+      ['p', 'This beef ribs recipe shows you how to turn a tough, bony cut into tender, sticky ribs with meat that falls from the bone. Whether you cook them in the oven, the slow cooker or on the barbecue, the secret is the same: low heat, plenty of time and a good glaze. We cover the different types of rib, three methods, rubs and sauces, and where to buy.'],
+      ['h2', 'Types of beef ribs'],
+      ['p', 'Beef ribs come in several forms. Short ribs are cut from the lower rib and have thick, meaty bones. Our [beef ribs](/product/beef-ribs-asado-cut/), cut asado-style across the bone, are thinner and cook faster, and they are sold as [beef short ribs slow cooker](/product/beef-ribs-asado-cut/) and [beef short ribs crock pot](/product/beef-ribs-asado-cut/) cuts by many cooks. [Boneless beef short ribs](/product/beef-ribs-near-me-buy-short/) are easy to portion and shred, and the [beef short ribs cost](/product/beef-ribs-near-me-buy-short/) is lower per kilo than steak. Searching for [beef short ribs near me](/product/beef-ribs-near-me-buy-short/) or a [beef short ribs butcher](/product/beef-ribs-near-me-buy-short/)? We deliver chilled across Sydney and Australia-wide. For a showpiece, a [cattleman cutlet](/product/cattleman-cutlet-beef-s/) is a bone-in rib eye, and a [dry aged beef ribeye](/product/dry-aged-beef-ribeye-cattleman-s-cutlet/) has a nutty depth. The [eye fillet price](/product/eye-fillet-price-beef-whole-mb4/) is shown for comparison. The rib family also includes [beef ribs short ribs](/blog/beef-short-ribs-slow-cooker/): see our slow cooker beef ribs guide.'],
+      ['h2', 'The best way to cook beef ribs'],
+      ['p', 'The [best way to cook beef ribs](/blog/beef-short-ribs-slow-cooker/) is low and slow: the connective tissue needs 3 hours or more to dissolve. Brown the ribs, cook covered in a flavourful liquid, then finish uncovered with a glaze. This gives tender, juicy meat with a sticky, caramelised surface.'],
+      ['h2', 'Oven method'],
+      ['ul', [
+        'Rub 1.5kg of ribs with salt, pepper, smoked paprika, garlic powder and brown sugar.',
+        'Place in a roasting tin, add a cup of stock, and cover tightly with foil.',
+        'Bake at 150°C for 3 to 3.5 hours until the meat is tender and pulling from the bones.',
+        'Remove the foil, brush with barbecue sauce and roast at 220°C for 15 minutes until sticky.',
+        'Rest for ten minutes and serve.',
+      ]],
+      ['h2', 'Barbecue method'],
+      ['p', 'On the barbecue, set up for indirect heat at 130°C. Cook the ribs for 3 to 4 hours, turning occasionally, then wrap in foil with a little liquid for the last hour. Unwrap and glaze over direct heat for the final minutes. Add wood chips for a smoky flavour. For a slow cook beef ribs bbq approach, a smoker or kettle with a lid works best, holding a steady temperature.'],
+      ['h2', 'Asado ribs slow cooked'],
+      ['p', 'Asado ribs slow cooked are a favourite, thin cut across the bones and braised until tender. Brown them, cook with onions, garlic and stock for 2.5 hours at 150°C, then reduce the sauce. They are excellent with chimichurri, grilled corn and potatoes. This is a quick route to ribs compared with whole short ribs, which take longer.'],
+      ...qa('Beef rib questions', [
+        ['How many ribs per person?', 'About 500g of bone-in ribs per adult, since the bones are heavy.'],
+        ['Do I remove the membrane?', 'On pork ribs yes; on beef ribs, trim any loose membrane, but it is less important in long cooking.'],
+        ['Can I freeze cooked ribs?', 'Yes, in their sauce, for up to three months.'],
+      ]),
+    ],
+    add: sec('Rubs, sauces and sides for beef ribs', [
+      'A good rub makes a good rib. A classic barbecue rub combines brown sugar, smoked paprika, garlic powder, onion powder, salt, black pepper and a pinch of cayenne. For a Korean-style rib, marinate in soy sauce, pear, garlic, ginger and sesame oil. For an Argentine-style rib, use coarse salt and serve with chimichurri. Apply the rub the night before for the deepest flavour, and wrap the ribs in cling film in the fridge.',
+      'Sauces glaze the ribs at the end. A simple barbecue sauce is tomato sauce, vinegar, brown sugar, Worcestershire-style sauce, mustard and smoked paprika, simmered for ten minutes. For heat, add chilli or hot sauce. For sweetness, add honey or maple syrup. For tang, add a spoon of tamarind or mustard. Brush on in the last 15 minutes of cooking, in two or three layers, so it builds a sticky lacquer without burning.',
+      'Sides balance the richness. Creamy coleslaw, corn on the cob, baked beans, potato salad, garlic bread and a crisp green salad are the classics. Pickles and quick-pickled onions add acidity. For a Latin feast, serve with rice, black beans and fried plantain. For a Korean meal, serve with steamed rice, pickled vegetables and lettuce wraps. A big pile of ribs in the middle of the table is a feast.',
+      'Timing is flexible. Ribs benefit from resting, so cook them early and keep them warm wrapped in foil in a low oven or insulated cooler. They hold well for an hour or two. For a party, cook the ribs the day before, refrigerate, and reheat covered in a 160°C oven for 30 minutes, then glaze and finish under the grill. This frees you to enjoy the party.',
+      'Choose ribs with plenty of meat on the bone, an even thickness and a good fat covering. Trim any excess fat. Keep them cold until you cook, and use within two days of purchase, or freeze. Thaw in the fridge overnight. Raw ribs should be stored on the bottom shelf, away from cooked foods. Wash your hands and boards after handling raw meat, and cook to tender, not just safe.',
+      'All our beef is certified halal by Halal Control Australia and delivered chilled to your door. Browse the full [halal beef](/shop/halal-beef/) range for ribs, steaks and roasts. Cooked ribs keep for four days in the fridge, and the meat can be pulled from the bones for tacos, pies and sandwiches. If you are planning an event, order a few days ahead and tell us how you want the ribs cut.',
+    ]),
+  },
+}

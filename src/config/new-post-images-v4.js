@@ -810,5 +810,455 @@ export const NEW_POST_IMAGES = {
    "alt": "Beef Rump Portion, certified halal and delivered by Halal Meat Depot",
    "own": true
   }
+ ],
+ "veal-meat": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Veal Osso Buco, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Osso Buco, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Diced Beef, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Eye Fillet Steaks MB5+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "beef-chuck-recipes": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tender, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tail Flap, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Steak, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Chuck Steak MB5+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "beef-chuck-steak-crock-pot": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Chuck Steak MB5+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Steak, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tender, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tail Flap, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "diced-beef-recipe": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Diced Beef, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Diced Beef Carton, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tender, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Chuck Tail Flap, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "beef-stir-fry-recipes": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Stir-Fry Strips, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Black Angus Beef Rump Whole MB3-4+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Rump Portion, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Rump Whole MB5+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "beef-ribs-recipe": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Asado Ribs, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Cattleman's Cutlet, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Eye Fillet Whole MB4+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Dry-Aged Cattleman's Cutlet, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "smoked-beef-short-ribs": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Asado Ribs, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Dry-Aged Fiorentina Steak, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Eye Fillet Steaks, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Angus Beef Butt Eye Fillet MB3-4+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "kangaroo-meat-recipes": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Kangaroo Loin Fillet, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Kangaroo Rump Steaks, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Buffalo Asado Ribs, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Buffalo Tomahawk, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "goat-meat-recipes": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Goat Leg Butterflied, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Goat Frenched Rack, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Goat Leg Bone-in, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Goat Full Plate Ribs, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "is-kangaroo-meat-halal": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Kangaroo Loin Fillet, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Kangaroo Rump Steaks, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Diced Buffalo Boneless, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Buffalo Porterhouse Steaks, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "what-is-halal-chicken": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Necks, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Wings, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Honey Soy Marinated Chicken Wings, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Livers, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "what-is-halal-beef": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Hindquarter, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Porterhouse Steaks MB5+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Wagyu Porterhouse Steaks MB9+, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Beef Point End Brisket, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "chicken-schnitzel-air-fryer": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Crumbed Chicken Schnitzel, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Breast Fillet Carton, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Breast Skin-On, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Crumbed Chicken Tenderloins, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "what-to-serve-with-chicken-schnitzel": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Crumbed Chicken Schnitzel, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Breast Skin-On, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Crumbed Chicken Tenderloins, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Breast Fillet Carton, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
+ ],
+ "butterflied-chicken": [
+  {
+   "n": 1,
+   "w": 1024,
+   "h": 768,
+   "alt": "Whole Chickens Size 15, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 2,
+   "w": 1024,
+   "h": 768,
+   "alt": "House Blend Marinated Split Chicken, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 3,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Maryland, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  },
+  {
+   "n": 4,
+   "w": 1024,
+   "h": 768,
+   "alt": "Chicken Feet, certified halal and delivered by Halal Meat Depot",
+   "own": true
+  }
  ]
 }

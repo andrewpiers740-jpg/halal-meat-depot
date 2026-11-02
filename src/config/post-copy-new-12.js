@@ -1,0 +1,120 @@
+// New v4 posts, batch N12: smoked beef short ribs, kangaroo meat recipes, goat meat recipes.
+const qa = (title, items) => [['h2', title], ...items.flatMap(([q, a]) => [['h3', q], ['p', a]])]
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_COPY_NEW_12 = {
+  'smoked-beef-short-ribs': {
+    title: 'Smoked Beef Short Ribs: An Easy Smoker Guide',
+    seoTitle: 'Smoked Beef Short Ribs: Easy Smoker Guide',
+    excerpt: 'Smoked beef short ribs with a peppery bark and melting meat: the smoker method, temperatures, wrapping, a crockpot backup and where to buy halal ribs.',
+    body: [
+      ['p', 'Smoked beef short ribs are the showstopper of the barbecue world: huge, meaty bones with a dark, peppery bark and meat so tender it pulls apart with a nudge. They take time, but not much skill, and the reward is a plate that people remember. This guide covers choosing the ribs, preparing and smoking them, wrapping, resting and serving. It also includes a crockpot and oven method for when you do not have a smoker.'],
+      ['h2', 'Choosing beef short ribs'],
+      ['p', 'The best ribs for smoking are thick, meaty short ribs with a good layer of fat. Our [beef ribs](/product/beef-ribs-asado-cut/) cut asado-style across the bone are thinner and cook faster, while [boneless beef short ribs](/product/beef-ribs-near-me-buy-short/) are easy to cut into portions. Searching for [beef short ribs near me](/product/beef-ribs-near-me-buy-short/) or a [beef short ribs butcher](/product/beef-ribs-near-me-buy-short/)? We deliver chilled across Sydney and Australia-wide. The [beef short ribs cost](/product/beef-ribs-near-me-buy-short/) is shown per pack and per kilo, and it is lower than prime steak. For a special occasion, you can add a [beef eye fillet](/product/beef-eye-fillet-steaks/) or a whole [eye fillet](/product/angus-beef-butt-eye-fillet-mb3-4/) to the menu, and if you search for [dry aged beef near me](/product/dry-aged-beef-near-me-fiorentina-steak/), our dry-aged Fiorentina is a beautiful centrepiece. For a slower family version, see our [beef ribs short ribs](/blog/beef-short-ribs-slow-cooker/) recipe, which covers the oven and slow cooker.'],
+      ['h2', 'Preparing the ribs'],
+      ['p', 'Trim excess surface fat to about 5mm, and remove any loose silverskin. Pat the ribs dry. Apply a thin coat of mustard or oil to help the rub stick, then season generously with coarse salt and coarse black pepper in equal parts, the Texas style. Add garlic powder and paprika if you like. Let the ribs sit for an hour at room temperature or overnight in the fridge, uncovered, which helps the bark form.'],
+      ['h2', 'Smoking temperatures and timing'],
+      ['ul', [
+        'Heat the smoker to 120 to 130°C, using oak, hickory or mesquite wood.',
+        'Place the ribs bone-side down and smoke for 4 hours, spritzing with water or stock every hour if the surface looks dry.',
+        'When the bark is dark and set, around 75°C internal, wrap tightly in butcher paper or foil with a splash of stock.',
+        'Continue cooking until the meat reaches 93 to 96°C and a probe slides in like butter, about 3 to 4 more hours.',
+        'Rest wrapped in a towel inside an insulated box for at least an hour.',
+      ]],
+      ['p', 'Total time is typically 8 to 10 hours, depending on the size of the ribs and the consistency of the smoker. Do not rush it: temperature, not time, is the guide. The ribs are ready when the probe goes in with almost no resistance, and the bones twist easily.'],
+      ['h2', 'Slow cooker beef ribs and crock pot methods'],
+      ['p', 'No smoker? A slow cooker works well for a similar tender result. Our [beef short ribs slow cooker](/product/beef-ribs-asado-cut/) and [beef short ribs crock pot](/product/beef-ribs-asado-cut/) cuts are the asado ribs. For slow cooker beef ribs, rub the ribs with the spice mix, brown them in a hot pan, and place in the cooker with half a cup of stock and a tablespoon of smoked paprika. Cook on low for 8 to 9 hours. Beef ribs in the crockpot turn out soft and juicy, and you can crisp them under a hot grill for 5 minutes with barbecue sauce. For the best way to cook beef ribs without a smoker, use the oven at 150°C, covered, for 3.5 hours, then uncover and glaze. See our guide to the [best way to cook beef ribs](/blog/beef-short-ribs-slow-cooker/) for the full method.'],
+      ...qa('Smoked rib questions', [
+        ['What is the stall?', 'Around 70 to 75°C, the temperature stops rising for hours as moisture evaporates. Wrapping in paper pushes through it. Be patient and do not increase the heat.'],
+        ['Butcher paper or foil?', 'Butcher paper lets the ribs breathe and keeps the bark firmer. Foil traps more steam and speeds cooking but softens the bark.'],
+        ['How many ribs per person?', 'Plan on one large rib or about 500g of bone-in weight per adult.'],
+      ]),
+    ],
+    add: sec('Rubs, sides and planning a smoke day', [
+      'The classic Texas rub is simply coarse salt and coarse black pepper, which lets the beef and smoke shine. Many cooks add garlic powder, onion powder and a little paprika. Others like a sweeter rub, with brown sugar, which gives a darker, stickier bark. Be careful with sugar over long cooks, because it can burn. Apply the rub in a thin, even layer, patting it in rather than rubbing, so it adheres well.',
+      'Wood choice affects flavour. Oak is mild and balanced, hickory is stronger and slightly sweet, mesquite is intense and earthy, and cherry or apple woods give a sweeter, fruitier smoke and a rich red colour. For beef, oak or hickory is traditional. Use seasoned, dry wood, and avoid thick white smoke; a thin, blue smoke gives the cleanest flavour. A water pan in the smoker keeps the temperature stable and the ribs moist.',
+      'Sides for smoked ribs include coleslaw, potato salad, baked beans, cornbread, pickles, sliced onion and white bread. A simple green salad with a sharp dressing cuts through the richness. Offer a few sauces on the side: a tangy vinegar sauce, a sweet barbecue sauce and a hot sauce. Good smoked beef needs little sauce, but guests enjoy choosing.',
+      'Plan your smoke day carefully. Start early, around 6am for an evening meal. Light the smoker, stabilise the temperature, and put the ribs on by 7am. Check every hour, spritz when needed, and wrap mid-afternoon. Keep spare fuel, a reliable thermometer and a cooler for resting. Prepare the sides the day before, and set the table while the ribs rest. A calm cook makes better barbecue.',
+      'Leftover smoked ribs are a treat. Pull the meat from the bones and use it in tacos, sandwiches, fried rice, chilli or a baked potato topping. Store in an airtight container for up to four days in the fridge, or freeze for three months. Reheat gently, covered, with a splash of stock, until steaming hot. Never reheat more than once, and cool leftovers within an hour.',
+      'Safety first: keep raw meat in the fridge until it goes on the smoker, use clean boards and utensils for raw and cooked meat, and check the internal temperature with a probe. Smoked ribs are cooked to far above the safe minimum, but good habits matter. All our beef is certified halal by Halal Control Australia and delivered chilled; browse the full [halal beef](/shop/halal-beef/) range.',
+    ]),
+  },
+
+  'kangaroo-meat-recipes': {
+    title: 'Kangaroo Meat Recipes: Simple, Lean Kangaroo Dinners',
+    seoTitle: 'Kangaroo Meat Recipes: Simple, Lean Dinners',
+    excerpt: 'Kangaroo meat recipes for simple, lean dinners: steaks, burgers and stir-fries, plus kangaroo meat halal questions, where to buy and bulk options.',
+    body: [
+      ['p', 'Kangaroo meat recipes are some of the quickest and leanest dinners you can cook. Kangaroo is a rich, deeply flavoured red meat with almost no fat, which means it cooks in minutes, absorbs marinades well and needs careful handling to stay tender. This guide covers the best cuts, three simple recipes, how to cook it without drying it out, and the question many readers ask: is kangaroo meat halal?'],
+      ['h2', 'Is kangaroo meat halal?'],
+      ['p', 'Is kangaroo meat halal is one of the most common questions we receive. The answer depends on the scholarly opinion you follow: some authorities consider kangaroo permissible when slaughtered according to Islamic requirements, while others disagree, because it is not a traditional livestock animal and some schools differ on its classification. Because of this, we ask customers to follow their own scholar. Our kangaroo is certified halal by Halal Control Australia. The question of kangaroo meat halal status is covered fully in our guide, [is kangaroo meat halal](/blog/is-kangaroo-meat-halal/), and we recommend reading it before you buy. If you are unsure, consult a scholar you trust.'],
+      ['h2', 'Buying kangaroo meat'],
+      ['p', 'If you want to [buy kangaroo meat](/product/buy-kangaroo-meat-loin-fillet/), our online shop lists [kangaroo meat for sale](/product/kangaroo-meat-for-sale-steak-rump/) as frozen rump steaks, delivered across Sydney and Australia-wide. Many shoppers search for frozen kangaroo meat, and ours is sold frozen, which keeps it in excellent condition. Searching for a kangaroo meat butcher near me or a [kangaroo meat butcher](/shop/kangaroo-meat-near-me/)? We are an online halal butcher in Greenacre, with the full range on our [kangaroo meat near me](/shop/kangaroo-meat-near-me/) page, and [kangaroo meat sydney](/shop/kangaroo-meat-near-me/) orders are delivered fast with Priority Delivery. Wondering where to buy kangaroo meat near me? [Where to buy kangaroo meat near me](/product/buy-kangaroo-meat-loin-fillet/) is answered by our delivery map. Restaurants ask about a kangaroo meat wholesale price, and our [kangaroo meat wholesale price](/product/buy-kangaroo-meat-loin-fillet/) enquiries are handled through trade accounts; [bulk kangaroo meat](/product/buy-kangaroo-meat-loin-fillet/) orders are welcome.'],
+      ['h2', 'Other lean meats to try'],
+      ['p', 'If you enjoy lean game meats, try water buffalo. Our [buffalo tomahawk steak](/product/buffalo-tomahawk-steak/) is a showpiece, and the ribs asado, sold as [ribs asado](/product/ribs-asado-buffalo/), are thin-cut and flavoursome. See our guide on buffalo meat for more.'],
+      ['h2', 'Recipe 1: pan-seared kangaroo steak'],
+      ['ul', [
+        'Thaw the steaks in the fridge. Pat dry, rub with oil, salt and pepper.',
+        'Heat a heavy pan until very hot. Sear the steaks for 2 minutes a side.',
+        'Add a knob of butter, garlic and thyme, and baste for 30 seconds.',
+        'Rest for 5 minutes, slice across the grain and serve.',
+      ]],
+      ['p', 'Aim for rare to medium-rare, 52 to 56°C. Kangaroo dries out quickly if overcooked, so a thermometer is a good friend.'],
+      ['h2', 'Recipe 2: kangaroo burger'],
+      ['p', 'A kangaroo burger uses ground kangaroo, which is very lean, so add moisture: mix 500g of mince with a grated onion, an egg, breadcrumbs, a tablespoon of oil and some herbs. Shape into patties and cook for 3 to 4 minutes a side. Serve in a bun with beetroot, lettuce and tomato.'],
+      ['h2', 'Recipe 3: kangaroo stir-fry'],
+      ['p', 'Slice the kangaroo thinly across the grain, marinate in soy, garlic, ginger and honey for 20 minutes, and cook in a very hot wok for 60 seconds. Add vegetables and sauce. Serve with rice. The meat stays tender because it cooks so briefly.'],
+      ...qa('Kangaroo questions', [
+        ['Why is my kangaroo tough?', 'It was overcooked or sliced with the grain. Cook quickly and slice across the grain.'],
+        ['What does kangaroo taste like?', 'Rich, slightly gamey and earthy, similar to venison but milder. Marinades with citrus and herbs balance it.'],
+        ['How should I store it?', 'Keep frozen until needed, thaw in the fridge, and cook within a day or two.'],
+      ]),
+    ],
+    add: sec('Cooking tips, marinades and serving ideas for kangaroo', [
+      'Kangaroo is the leanest red meat commonly sold, with very little marbling, so the golden rule is not to overcook it. Medium-rare is the sweet spot. Pull the meat from the heat a few degrees early, and rest it for as long as it cooked. Slice thinly across the grain, and serve at once. Cooked past medium, it turns dry and tough, however good the cut.',
+      'Marinades help. A simple mix of olive oil, garlic, lemon juice and herbs adds moisture and brightens the flavour. For an Australian twist, add native flavours such as lemon myrtle, wattleseed or pepperberry. For a Mediterranean flavour, add rosemary and oregano. For an Asian flavour, use soy, ginger and honey. Marinate for 30 minutes to 4 hours, and pat dry before searing for the best crust.',
+      'Pair kangaroo with sweet, fruity or earthy flavours. Beetroot, roasted pumpkin, berries, balsamic reduction, red cabbage and caramelised onion all suit it. A berry sauce made from blueberries, stock and a little vinegar is a classic. Serve with mash, roasted vegetables or a fresh salad. A creamy mushroom sauce also works well.',
+      'Kangaroo works in slow-cooked dishes if you add fat and moisture. Use tail or larger cuts in a stew with bacon-free smoky flavour from paprika, tomato and stock, and cook gently for 2 to 3 hours. Add root vegetables and herbs. The meat becomes soft and rich, and the sauce picks up its deep flavour. Slow cooking is a useful method for tougher cuts.',
+      'Prepare ahead: thaw in the fridge overnight, season, and rest at room temperature for 20 minutes before cooking. Have your pan hot, your sides ready and your plates warm. Cooking takes a few minutes, so everything else should be prepared first. Wash hands, boards and knives after handling raw meat, and keep it separate from salad ingredients.',
+      'Kangaroo is an affordable, lean and sustainable-feeling protein for many cooks, and it deserves a place on Australian tables. With the right technique, it is delicious. Browse our full range of lean game meats, all sold frozen, and certified by Halal Control Australia. Remember that halal status of kangaroo is a matter of scholarly opinion, so follow the guidance of your own scholar.',
+    ]),
+  },
+
+  'goat-meat-recipes': {
+    title: 'Goat Meat Recipes: Easy Curries, Roasts and Stews',
+    seoTitle: 'Goat Meat Recipes: Easy Curries, Roasts and Stews',
+    excerpt: 'Goat meat recipes for easy curries, roasts and stews: how to cook goat, goat meat vs lamb meat, where to buy halal goat meat near me and what to serve.',
+    body: [
+      ['p', 'Goat meat recipes are among the most flavourful you can cook. Goat is lean, aromatic and full of character, and it is the traditional meat for curries, biryanis, stews and roasts across the Middle East, South Asia, Africa and the Caribbean. This guide gives three easy recipes, tips on cooking goat so it stays tender, and everything you need to know about buying halal goat meat in Australia.'],
+      ['h2', 'What is goat meat like?'],
+      ['p', 'Goat meat is leaner than lamb, with a slightly sweeter, earthier flavour. Because it has little fat, it needs moisture and gentle cooking. Bone-in cuts are richer, and larger cuts such as the leg and shoulder suit roasts, while smaller bone-in pieces are best for curry. Our guide to [goat meat vs lamb meat](/blog/goat-meat-vs-lamb-meat/) compares the two in detail. People also search for lamb vs goat meat, [lamb vs goat meat](/product/halal-goat-meat-full-plate-ribs/), lamb meat or goat meat, lamb or goat meat, goat meat lamb and mutton vs goat meat; the short answer is that goat is leaner and more intensely flavoured, while lamb is milder and fattier. See also the [goat meat lamb](/product/goat-price-half-carcass/) options on our shop pages.'],
+      ['h2', 'Where to buy goat meat'],
+      ['p', 'If you are asking where to buy goat meat near me, [where to buy goat meat near me](/product/where-to-buy-goat-meat-near-me-shoulder-butterflied/) is answered by our online shop. You can [buy goat meat near me](/product/buy-goat-meat-near-me-leg-butterflied/) by ordering online, find [goat meat for sale](/product/goat-meat-for-sale-frenched-rack/) in rack, loin, leg and shoulder, and search for [fresh goat meat near me](/product/fresh-goat-meat-near-me-mini-leg-boned-rolled/) in a boned and rolled shoulder. Our [goat leg](/product/goat-leg-bone-in/) is a roast for a crowd, and our [halal goat meat](/product/halal-goat-meat-full-plate-ribs/) full plate ribs are rich and sticky. Whole carcasses are listed under [goat meat](/product/goat-prices-whole-carcass/) prices, and the [goat meat near me](/shop/goat-meat-near-me/) page lists every cut. And for readers asking [where can i buy goat meat near me](/blog/goat-curry-meat-cuts-guide/), our goat curry cuts guide explains which cut to choose.'],
+      ['h2', 'Recipe 1: easy goat curry'],
+      ['ul', [
+        'Marinate 1kg of bone-in goat pieces in yoghurt, ginger, garlic, turmeric and chilli for 2 hours or overnight.',
+        'Fry two sliced onions in oil until deep golden, about 12 minutes. Add cumin, coriander and garam masala.',
+        'Add the goat and brown for 8 minutes. Add tomatoes and a cup of water.',
+        'Cover and simmer for 2 to 2.5 hours (or 45 minutes in a pressure cooker) until tender.',
+        'Finish with coriander and lemon, and serve with rice or flatbread.',
+      ]],
+      ['h2', 'Recipe 2: slow-roasted goat leg'],
+      ['p', 'Rub a 2.5kg goat leg with garlic, rosemary, oil, lemon and salt. Place on a bed of onions in a roasting tin, add a cup of stock, cover tightly with foil and roast at 160°C for 4 hours. Uncover for the last 30 minutes. Rest and serve in thick slices with the pan juices. The meat should be fork-tender and fall from the bone.'],
+      ['h2', 'Recipe 3: goat and vegetable stew'],
+      ['p', 'Brown 1kg of diced goat, then add onion, garlic, carrots, potatoes, tomatoes and stock. Add thyme, bay leaves and a pinch of allspice. Simmer gently for 2 hours. Serve with crusty bread. This Caribbean-inspired stew is warming and simple.'],
+      ...qa('Goat cooking questions', [
+        ['How do I make goat tender?', 'Marinate in yoghurt or lemon juice, cook low and slow, and keep it moist. A pressure cooker cuts the time dramatically.'],
+        ['Does goat taste gamey?', 'It has a stronger flavour than lamb, but not unpleasant. Fresh goat with the fat trimmed tastes clean and sweet.'],
+        ['How much do I need?', 'About 350g of bone-in goat per adult for a curry.'],
+      ]),
+    ],
+    add: sec('Goat cooking tips, flavours and meal planning', [
+      'Goat is lean and full of connective tissue, so it benefits from a slow, moist cook. Browning adds flavour, and a covered pot keeps the meat from drying out. If you are cooking a large cut such as a leg, check the liquid level every hour, and top up with hot stock if needed. Cook until the meat pulls easily from the bone. A thermometer is useful for roasts: 70°C for medium and 90°C for pull-apart.',
+      'Spices are goat\'s best friend. Cumin, coriander, turmeric, cinnamon, cardamom, cloves, black pepper, chilli, ginger and garlic form the backbone of most goat dishes. Fresh herbs such as mint, coriander and parsley lift the finished dish. A squeeze of lemon or a spoon of yoghurt adds acidity and balances the richness. Toasting whole spices before grinding them gives a deeper, more aromatic result.',
+      'Different cultures have signature goat dishes. In South Asia, goat curry and biryani are festive staples. In the Middle East, mandi and mansaf use goat or lamb with rice and yoghurt. In the Caribbean, curry goat is a favourite. In West Africa, goat pepper soup is a warming broth. In Mexico, birria is a slow-cooked, chilli-rich stew, often served in tacos. Each of these is easily made halal and alcohol-free.',
+      'For events such as Eid, Aqeeqah or weddings, goat is a traditional choice. A whole or half goat carcass can be cut to your instructions, and our butchers can prepare curry pieces, roasts or a mix. Order several days ahead for large orders, and tell us how many people you are feeding. A single goat feeds 20 to 30 people as part of a feast with rice and sides.',
+      'Sides to serve with goat include basmati or saffron rice, flatbreads, roasted vegetables, a fresh salad of tomato and cucumber, raita or yoghurt sauce, and pickles. A plate of fresh herbs and sliced onion with lemon wedges adds crunch and freshness. Pair with a fruit-based dessert or a milky sweet, and a pot of spiced tea. A feast of goat is meant to be shared.',
+      'Store raw goat on the bottom shelf of the fridge and cook within two days, or freeze on the day of delivery. Thaw in the fridge overnight. Cooked goat keeps for four days and freezes well in its sauce for three months. Wash hands and boards after handling raw meat, and cool leftovers within an hour. All our goat is certified halal by Halal Control Australia and delivered chilled across Sydney and Australia-wide.',
+    ]),
+  },
+}

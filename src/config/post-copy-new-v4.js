@@ -9,6 +9,11 @@ import { POST_COPY_NEW_6 } from './post-copy-new-6.js'
 import { POST_COPY_NEW_7 } from './post-copy-new-7.js'
 import { POST_COPY_NEW_8 } from './post-copy-new-8.js'
 import { POST_COPY_NEW_9 } from './post-copy-new-9.js'
+import { POST_COPY_NEW_10 } from './post-copy-new-10.js'
+import { POST_COPY_NEW_11 } from './post-copy-new-11.js'
+import { POST_COPY_NEW_12 } from './post-copy-new-12.js'
+import { POST_COPY_NEW_13 } from './post-copy-new-13.js'
+import { POST_COPY_NEW_14 } from './post-copy-new-14.js'
 
 export const POST_COPY_NEW_V4 = {
   ...POST_COPY_NEW_1,
@@ -20,4 +25,9 @@ export const POST_COPY_NEW_V4 = {
   ...POST_COPY_NEW_7,
   ...POST_COPY_NEW_8,
   ...POST_COPY_NEW_9,
+  ...POST_COPY_NEW_10,
+  ...POST_COPY_NEW_11,
+  ...POST_COPY_NEW_12,
+  ...POST_COPY_NEW_13,
+  ...POST_COPY_NEW_14,
 }

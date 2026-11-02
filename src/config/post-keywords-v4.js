@@ -2547,7 +2547,6 @@ export const POST_KEYWORDS_V4 = {
       { kw: 'boneless halal chicken', intent: 'C', vol: 20, kd: 3, link: '/product/boneless-halal-chicken-house-blend-marinated-split/', product: true },
       { kw: 'buy chicken maryland online', intent: 'T', vol: 70, kd: 3, link: '/product/buy-chicken-maryland-online/', product: true },
       { kw: 'chicken feet near me', intent: 'T', vol: 320, kd: 13, link: '/product/chicken-feet-near-me/', product: true },
-      { kw: 'bare bird butterflied chicken', intent: 'I+T', vol: 20, kd: 1 },
       { kw: 'halal chicken whole', intent: 'I+C', vol: 30, kd: 1, link: '/product/chicken-for-sale-whole-size-15/' },
       { kw: 'buy halal chicken near me', intent: 'T', vol: 20, kd: 7, link: '/product/buffalo-chicken-truffle-marinated-split/' },
       { kw: 'buy halal chicken online', intent: 'T', vol: 20, kd: 6, link: '/product/chicken-feet-near-me/' },

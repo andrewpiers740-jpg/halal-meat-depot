@@ -665,5 +665,95 @@ export const POST_INDEX = [
   "title": "Beef Tri Tip Steak: How to Cook It Perfectly",
   "excerpt": "Beef tri tip steak explained: what tri-tip is, the best rub, reverse-sear and grill methods, how it compares with sirloin and flank, and where to buy.",
   "kw": "beef tri tip steak"
+ },
+ {
+  "slug": "veal-meat",
+  "title": "Veal Meat: What It Is and the Best Ways to Cook It",
+  "excerpt": "Veal meat explained: what veal is, how it tastes, the best cuts and recipes for osso buco, schnitzel and braises, and where to buy halal veal meat online.",
+  "kw": "veal meat"
+ },
+ {
+  "slug": "beef-chuck-recipes",
+  "title": "Beef Chuck Recipes: Easy Slow-Cooked Dinners",
+  "excerpt": "Beef chuck recipes for easy slow-cooked dinners: stew, curry, pot roast and pulled beef, plus chuck prices, the best cuts and a substitute for beef chuck.",
+  "kw": "beef chuck recipes"
+ },
+ {
+  "slug": "beef-chuck-steak-crock-pot",
+  "title": "Beef Chuck Steak Crock Pot: Simple, Tender Slow Cooking",
+  "excerpt": "Beef chuck steak crock pot recipe: simple, tender slow cooking with onion gravy, how long to cook it, and tips on chuck rolls, prices and substitutes.",
+  "kw": "beef chuck steak crock pot"
+ },
+ {
+  "slug": "diced-beef-recipe",
+  "title": "Diced Beef Recipe: Easy Stews, Curries and Pies",
+  "excerpt": "A diced beef recipe for easy stews, curries and pies: the best chuck cuts, a crockpot method, pulled beef chuck roast and where to buy diced beef online.",
+  "kw": "diced beef recipe"
+ },
+ {
+  "slug": "beef-stir-fry-recipes",
+  "title": "Beef Stir Fry Recipes: Quick and Easy Weeknight Dinners",
+  "excerpt": "Beef stir fry recipes for quick weeknight dinners: the best cuts, marinated beef stir fry, Wagyu upgrades and a method for tender strips every time.",
+  "kw": "beef stir fry recipes"
+ },
+ {
+  "slug": "beef-ribs-recipe",
+  "title": "Beef Ribs Recipe: Oven and BBQ Methods for Tender Ribs",
+  "excerpt": "A beef ribs recipe for tender ribs in the oven, slow cooker or BBQ: asado ribs, short ribs, the best way to cook beef ribs and where to buy halal ribs.",
+  "kw": "beef ribs recipe"
+ },
+ {
+  "slug": "smoked-beef-short-ribs",
+  "title": "Smoked Beef Short Ribs: An Easy Smoker Guide",
+  "excerpt": "Smoked beef short ribs with a peppery bark and melting meat: the smoker method, temperatures, wrapping, a crockpot backup and where to buy halal ribs.",
+  "kw": "smoked beef short ribs"
+ },
+ {
+  "slug": "kangaroo-meat-recipes",
+  "title": "Kangaroo Meat Recipes: Simple, Lean Kangaroo Dinners",
+  "excerpt": "Kangaroo meat recipes for simple, lean dinners: steaks, burgers and stir-fries, plus kangaroo meat halal questions, where to buy and bulk options.",
+  "kw": "kangaroo meat recipes"
+ },
+ {
+  "slug": "goat-meat-recipes",
+  "title": "Goat Meat Recipes: Easy Curries, Roasts and Stews",
+  "excerpt": "Goat meat recipes for easy curries, roasts and stews: how to cook goat, goat meat vs lamb meat, where to buy halal goat meat near me and what to serve.",
+  "kw": "goat meat recipes"
+ },
+ {
+  "slug": "chicken-schnitzel-air-fryer",
+  "title": "Chicken Schnitzel Air Fryer: Quick, Crispy and Easy",
+  "excerpt": "Chicken schnitzel air fryer recipe: golden, crispy crumbed chicken in 15 minutes with little oil, plus the best halal chicken breast and bulk buying options.",
+  "kw": "chicken schnitzel air fryer"
+ },
+ {
+  "slug": "what-to-serve-with-chicken-schnitzel",
+  "title": "What to Serve With Chicken Schnitzel: 15 Easy Sides",
+  "excerpt": "What to serve with chicken schnitzel: 15 easy sides, sauces and salads, plus homemade and oven baked chicken schnitzel recipes and bulk chicken options.",
+  "kw": "what to serve with chicken schnitzel"
+ },
+ {
+  "slug": "butterflied-chicken",
+  "title": "Butterflied Chicken: Easy Oven, BBQ and Air Fryer Recipes",
+  "excerpt": "Butterflied chicken cooks faster and crispier: oven, barbecue and air fryer methods, roasting times, marinades and where to buy halal whole chickens online.",
+  "kw": "butterflied chicken"
+ },
+ {
+  "slug": "is-kangaroo-meat-halal",
+  "title": "Is Kangaroo Meat Halal? A Complete Guide",
+  "excerpt": "Is kangaroo meat halal? A balanced guide to the scholarly views, what certification involves, how kangaroo tastes and cooks, and where to buy it online.",
+  "kw": "is kangaroo meat halal"
+ },
+ {
+  "slug": "what-is-halal-chicken",
+  "title": "What Is Halal Chicken? A Simple Guide to Buying It",
+  "excerpt": "What is halal chicken? A simple guide to how it is certified, what to look for when you buy, and how to order halal chicken in bulk, fresh and delivered.",
+  "kw": "what is halal chicken"
+ },
+ {
+  "slug": "what-is-halal-beef",
+  "title": "What Is Halal Beef? A Complete Buyer's Guide",
+  "excerpt": "What is halal beef? A complete buyer's guide to certification, cuts, Wagyu grades, bulk and wholesale buying, and how to order halal beef online in Australia.",
+  "kw": "what is halal beef"
  }
 ]
