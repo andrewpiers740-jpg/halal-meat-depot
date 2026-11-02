@@ -11,9 +11,9 @@ export function GET() {
   const body = [
     block('*'),
     '',
-    // Content Signals preference kept as a comment: as a directive line Lighthouse marks the whole
-    // robots.txt invalid ("Unknown directive"), which cost 8 SEO points on every page.
-    '# Content-Signal: search=yes, ai-input=yes, ai-train=no',
+    // Content Signals (owner OK 2026-11-02). Lighthouse 13.x accepts it (SEO 100); Lighthouse 12.8 and older mark
+    // robots.txt "Unknown directive" (SEO 92). Revert to a comment if a checker you rely on penalises it.
+    'Content-Signal: search=yes, ai-input=yes, ai-train=no',
     '',
     '# AI crawlers — welcome to index product and content pages',
     ...AI_BOTS.flatMap((ua) => [block(ua), '']),
