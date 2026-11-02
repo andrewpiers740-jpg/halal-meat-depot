@@ -1,0 +1,132 @@
+// New v4 posts, batch N16: beef roast Kerala, beef rib eye rib roast, lamb osso buco.
+const qa = (title, items) => [['h2', title], ...items.flatMap(([q, a]) => [['h3', q], ['p', a]])]
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_COPY_NEW_16 = {
+  'beef-roast-kerala': {
+    title: 'Beef Roast Kerala Style: A Simple Spiced Beef Fry',
+    seoTitle: 'Beef Roast Kerala Style: Simple Spiced Beef Fry',
+    excerpt: 'Beef roast Kerala style, the dry-fried, coconut and black pepper beef: an easy spiced recipe, the best cuts, oyster blade and chuck, and buying tips.',
+    body: [
+      ['p', 'Beef roast Kerala style, known locally as beef ularthiyathu, is a dry-fried dish of tender beef, coconut slivers, curry leaves and black pepper. It is not a roast in the Western sense but a slow-cooked, spice-coated fry, with a dark, glossy finish and a deep, peppery heat. It is served with parottas, rice or appam, and it is one of the great dishes of South India. This guide gives a simple, reliable recipe, the best cuts and the technique.'],
+      ['h2', 'Choosing the beef'],
+      ['p', 'The best cuts for Kerala beef roast are those with some fat and connective tissue, which become tender in slow cooking. Beef chuck is ideal. Our [beef chuck meat](/product/beef-chuck-meat-steak/) is well marbled and affordable; compare the [chuck steak price](/product/chuck-steak-price-beef-tender/), the [beef chuck steak price](/product/beef-chuck-meat-steak/), the [beef chuck price](/product/beef-chuck-meat-steak/) and the [beef chuck roast price](/product/chuck-steak-price-beef-tender/) on the product pages. The [best way to cook beef chuck](/blog/curry-massaman-thai-beef/) is slowly, with the lid on, as in this recipe. You can also use an oyster blade roast, a tender shoulder cut that braises well, or brisket. If you want pre-cut pieces, you can [buy diced beef online](/product/buy-diced-beef-online/), and caterers and restaurants can order [wholesale beef](/product/wholesale-beef-diced-carton/) cartons of diced beef. Whichever you choose, ask for pieces about 3cm square.'],
+      ['p', 'Not every beef dish needs slow cooking. For a traditional Western roast, check our guide to the best beef roast cuts. The range includes beef roast cuts such as topside, which suit the oven; see [beef roast cuts](/product/roast-beef-topside-whole/) for a whole topside. Searching for a [beef roast near me](/product/beef-roast-near-me-porterhouse-portion/)? We deliver porterhouse roasting portions across Sydney. Restaurants ask about [roast beef wholesale](/product/roast-beef-topside-whole/), and families ask for the [best beef roast to buy](/product/roast-beef-topside-whole/); our whole topside is the answer for both. And if you want a classic rib roast, read our guide to a beef rib eye rib roast. See the whole [halal beef](/shop/halal-beef/) range.'],
+      ['h2', 'Ingredients (serves four)'],
+      ['ul', [
+        '800g beef chuck, cut into 3cm cubes',
+        '2 onions, sliced; 6 cloves garlic; a thumb of ginger',
+        '2 teaspoons coriander powder, 1 teaspoon chilli powder, 1 teaspoon turmeric, 1 teaspoon garam masala, 2 teaspoons black pepper',
+        '3 green chillies, a sprig of curry leaves',
+        '1/2 cup coconut slivers (or thick coconut flakes)',
+        '2 tablespoons coconut oil, salt, a squeeze of lime',
+      ]],
+      ['h2', 'Method'],
+      ['ul', [
+        'Marinate the beef with turmeric, chilli powder, coriander powder, salt and half the ginger and garlic for 30 minutes.',
+        'Pressure cook with half a cup of water for 25 minutes, or simmer covered for 1.5 hours, until almost tender, with little liquid left.',
+        'Heat coconut oil in a heavy pan. Fry the coconut slivers until golden, remove and set aside.',
+        'Fry the onions with curry leaves, remaining ginger, garlic and green chillies until deep golden, about 12 minutes.',
+        'Add the cooked beef, black pepper and garam masala and stir-fry over medium heat for 15 minutes, until the beef is dark, dry and coated in the spice paste.',
+        'Fold in the coconut, finish with lime juice and serve hot.',
+      ]],
+      ['p', 'Patience at the frying stage gives the characteristic dark colour and concentrated flavour. Stir regularly to prevent sticking, adding a splash of water if needed. The finished dish should be almost dry, with the spices clinging to each piece.'],
+      ...qa('Kerala beef roast questions', [
+        ['What is the difference between beef roast and beef curry?', 'Roast is a dry-fry with little sauce and a dark, spicy coating. Curry has a gravy.'],
+        ['Is coconut oil essential?', 'It gives authentic flavour, but any vegetable oil works.'],
+        ['How hot is it?', 'Moderately. Reduce the chilli for children and add more black pepper for warmth.'],
+      ]),
+    ],
+    add: sec('Serving Kerala beef roast, variations and planning', [
+      'Serve beef roast with parotta, a layered flatbread, or with steamed rice, appam or puttu. A simple onion and tomato salad with lime and a cooling yoghurt raita balance the spice. Garnish with fresh curry leaves, coriander and extra coconut slivers. The dish keeps well, so it is excellent for gatherings, Eid meals and family celebrations. Make it ahead and reheat gently in a pan with a splash of water.',
+      'Variations are popular. Add sliced potatoes in the pressure-cooking stage to make a substantial dish. Use more fennel seeds and cloves for aroma, or add a spoon of tamarind for a sour note. Some cooks add tomato to the onion masala for extra moisture. A version with sliced shallots instead of onions is traditional in some Kerala homes. Each cook has a family recipe, and tasting different versions is part of the pleasure.',
+      'Technique tips: cut the beef uniformly so that it cooks evenly, and cook it until it is just tender before frying, since over-cooked meat will fall apart. Use a heavy-based pan or a kadai so that the masala browns without burning. Add the whole spices to hot oil to bloom them. Keep stirring during the final fry. A good ularthiyathu takes patience, but each stage is simple.',
+      'For a Western-style roast on the same menu, the oven does the work. A whole beef topside, seasoned and roasted at 180°C for about 20 minutes per 500g plus 20 minutes, makes a different centrepiece. Rest it for 20 minutes before carving. Serve with roast vegetables and gravy. A table with both a spiced beef roast and a carved joint pleases everyone.',
+      'Storage and safety: keep raw beef cold and use within three days, or freeze. Cool the cooked dish within an hour and refrigerate for up to four days. Freeze in portions for three months. Reheat until steaming hot. Wash hands and boards after handling raw beef. Whole spices and coconut should be stored in airtight containers away from heat.',
+      'All our beef is certified halal by Halal Control Australia and delivered chilled across Sydney and Australia-wide. Browse our beef range, and use the notes at checkout if you need the meat cut to a particular size. Our team is happy to help you choose the right cut for Kerala beef roast and every dish you love.',
+    ]),
+  },
+
+  'beef-rib-eye-rib-roast': {
+    title: 'Beef Rib Eye Rib Roast: The Complete Roasting Guide',
+    seoTitle: 'Beef Rib Eye Rib Roast: Complete Roasting Guide',
+    excerpt: 'Beef rib eye rib roast guide: how to choose, season and roast a standing rib roast, scotch fillet comparisons, tomahawk steaks and Wagyu ribeye options.',
+    body: [
+      ['p', 'A beef rib eye rib roast is the king of the roasting table: a thick, bone-in joint with a rich crust and a juicy, pink centre. It is the roast for Christmas, Eid feasts, birthdays and any occasion that deserves a showpiece. It is also easier than it looks. This guide explains the cuts, how to season and roast it, how to carve it, and how it compares with scotch fillet, porterhouse and tomahawk.'],
+      ['h2', 'Rib eye, scotch fillet and rib roast: the names'],
+      ['p', 'In Australia, scotch fillet is the boneless rib eye, and a rib roast is the same muscle left on the bone. Cut into steaks, the bone-in version is called a ribeye or cattleman cutlet; sold whole, it is a standing rib roast. The flavour is rich and juicy, with generous marbling. If you are buying steak, the [scotch fillet](/product/scotch-fillet-ribeye-steaks/) steaks are the boneless version, and a [whole scotch fillet](/product/whole-scotch-fillet-beef-roast-mb4/) can be roasted as a boneless joint. Search terms such as scotch fillet steak and beef scotch fillet refer to the same cut. For a comparison, see our guides on [eye fillet vs scotch fillet](/blog/eye-fillet-vs-scotch-fillet-porterhouse/), and the related questions of rib eye vs eye fillet: [rib eye vs eye fillet](/product/beef-eye-fillet-steaks/) is a question of marbling versus tenderness.'],
+      ['p', 'Other steak comparisons worth knowing: [porterhouse vs scotch fillet](/product/scotch-fillet-ribeye-steaks/), where porterhouse is leaner and firmer; [scotch fillet vs porterhouse](/product/whole-scotch-fillet-beef-roast-mb4/), the same question reversed, and [sirloin vs scotch fillet](/product/scotch-fillet-ribeye-steaks/), where scotch is juicier. The question of [scotch fillet vs eye fillet](/product/cattleman-cutlet-beef-s/) usually ends with scotch for flavour. For a luxury choice, a [Wagyu scotch fillet](/product/cattleman-cutlet-beef-s/) cut on the bone is a cattleman cutlet, and a [Wagyu ribeye](/product/wagyu-ribeye-cattleman-s-cutlet-mb5/) in MB5+ is an indulgent steak.'],
+      ['h2', 'Buying a rib roast and tomahawk steaks'],
+      ['p', 'For a roast, ask for a two- or three-bone piece, which feeds four to six. Our Angus standing rib roast is a classic. For steak lovers who want something dramatic, [buy tomahawk steak](/product/buy-tomahawk-steak-wagyu-mb5/) in Wagyu, or search for a [tomahawk steak near me](/product/tomahawk-steak-near-me-wagyu-beef-mb9/) and you will find our MB9+ tomahawk. A tomahawk is a rib eye with a long frenched bone, ideal for sharing. All are certified halal by Halal Control Australia and delivered chilled. Browse the full [halal beef](/shop/halal-beef/) range.'],
+      ['h2', 'How to roast a standing rib roast'],
+      ['ul', [
+        'Take the roast out of the fridge 1.5 to 2 hours before cooking. Pat dry.',
+        'Rub generously with salt, black pepper, crushed garlic and olive oil. For a herb crust, add rosemary and thyme.',
+        'Preheat the oven to 230°C. Place the roast, bone-side down, in a roasting tin.',
+        'Roast for 20 minutes to build a crust, then reduce to 160°C.',
+        'Continue roasting until the thickest part reaches 50°C for rare, 54°C for medium-rare or 58°C for medium. Allow about 15 minutes per 500g after the first 20 minutes.',
+        'Rest for 30 minutes, loosely covered. The temperature will rise 5°C.',
+        'Carve the meat from the bones in one piece, then slice across the grain.',
+      ]],
+      ['p', 'Use a probe thermometer for accuracy; it is the only reliable guide. Resting is as important as cooking: the juices redistribute, and the meat is tender and moist.'],
+      ...qa('Rib roast questions', [
+        ['How big should the roast be?', 'Allow one bone for every two people, or about 400g bone-in per adult.'],
+        ['Should I cover it with foil?', 'Only while resting. Covering during roasting steams the crust.'],
+        ['What sauce suits it?', 'Gravy from the pan juices, horseradish cream, béarnaise or a simple mustard.'],
+      ]),
+    ],
+    add: sec('Sides, gravy and carving for the perfect roast dinner', [
+      'A rib roast calls for classic sides. Roast potatoes cooked in beef dripping or oil, Yorkshire puddings, honey-roasted carrots, steamed green beans, creamed spinach and cauliflower cheese all suit the occasion. A bright salad cuts the richness. Prepare the vegetables while the roast rests, and use the extra oven time to crisp potatoes at a higher temperature. Timing is the secret of a successful roast dinner.',
+      'Gravy is simple. After removing the roast, pour off most of the fat, leaving about two tablespoons in the tin. Place the tin on the stove, stir in two tablespoons of flour, and cook for a minute. Add two cups of beef stock gradually, whisking, and simmer for five minutes. Season, strain and serve hot. A spoonful of mustard or a splash of balsamic vinegar adds depth, and no wine is necessary.',
+      'Carving: stand the roast on a board, cut along the bones to remove the meat in one piece, then slice across the grain in slices about 1cm thick. Serve each slice with a piece of the crust. The bones, roasted with the meat, are a treat for the cook, and make a rich stock for soup. Carve at the table for drama, or in the kitchen for ease.',
+      'Alternatives: a boneless rib eye roast cooks more evenly and carves more easily, though the bone adds flavour. A whole scotch fillet roasts in about 45 to 60 minutes at 200°C to medium-rare. A tomahawk can be cooked using the reverse-sear method: roast at 120°C to 50°C, then sear hard on both sides. Each suits a different occasion and budget.',
+      'Leftover rib roast is a luxury. Slice it thinly for sandwiches with horseradish and rocket, fry it into hash, or add it to a salad of watercress and beetroot. Cold roast beef keeps for three days in the fridge. Reheat slices gently in gravy, so they stay tender. Simmer the bones for stock. Nothing from a good roast need be wasted.',
+      'Storage and safety: keep the raw roast in the coldest part of the fridge, and use within three days of delivery, or freeze. Thaw in the fridge for 24 to 48 hours. Cook to your preferred temperature, rest, and refrigerate leftovers within an hour. Wash hands and boards after handling raw meat. Order large roasts a few days ahead for events.',
+    ]),
+  },
+
+  'lamb-osso-buco': {
+    title: 'Lamb Osso Buco: Easy Slow-Cooked Lamb Shanks',
+    seoTitle: 'Lamb Osso Buco: Easy Slow-Cooked Lamb Shanks',
+    excerpt: 'Lamb osso buco, slow-cooked shanks in tomato and stock without wine: an easy recipe, lamb neck stew and slow cooker options, and where to buy halal lamb.',
+    body: [
+      ['p', 'Lamb osso buco takes the Italian classic and gives it a rich, hearty twist: thick cross-cut slices of lamb shank, with the marrow in the bone, braised until the meat falls away in a sauce of tomato, stock and herbs. It is warming, impressive and easy, and it is made without wine so it is completely halal. This guide gives the recipe, the best cuts, and ideas for lamb neck stews and other slow cooks.'],
+      ['h2', 'What is lamb osso buco?'],
+      ['p', 'Osso buco is Italian for bone with a hole. Traditionally it is made from veal shin, but lamb shanks and lamb shin slices work beautifully, with a stronger flavour. Our [premium halal meat](/product/premium-halal-meat-lamb-osso-buco/) lamb osso buco is cut across the shank into thick rounds, each with a ring of bone and marrow. The meat is lean but full of connective tissue, which turns to gelatine when cooked slowly. You can also use [grass fed lamb](/product/grass-fed-lamb-shanks/) shanks whole, and buy [bulk lamb shanks](/product/grass-fed-lamb-shanks/) for a crowd. Searching for [halal lamb shanks near me](/product/grass-fed-lamb-shanks/)? We deliver chilled across Sydney and Australia-wide.'],
+      ['h2', 'Ingredients (serves four)'],
+      ['ul', [
+        '4 lamb osso buco slices (about 1.2kg)',
+        '2 tablespoons seasoned flour',
+        '2 tablespoons olive oil',
+        '1 onion, 1 carrot, 1 celery stick, finely diced',
+        '3 cloves garlic and 2 tablespoons tomato paste',
+        '1 can (400g) crushed tomatoes and 1 cup lamb or beef stock',
+        '1 bay leaf, 2 sprigs rosemary, strips of lemon zest',
+        'Chopped parsley and lemon zest to serve',
+      ]],
+      ['h2', 'Method'],
+      ['ul', [
+        'Dust the lamb in seasoned flour. Brown in hot oil for 3 minutes each side. Remove.',
+        'Soften the onion, carrot and celery for 6 minutes. Add garlic and tomato paste and cook for 2 minutes.',
+        'Add the tomatoes, stock, bay, rosemary and lemon zest and bring to a simmer.',
+        'Return the lamb, standing it upright, cover and cook at 150°C for 2.5 hours (or 7 hours in a slow cooker on low), until the meat is tender.',
+        'Uncover and reduce the sauce if needed. Serve with parsley and fresh lemon zest.',
+      ]],
+      ['h2', 'Lamb neck: stew, slow cooker and chops'],
+      ['p', 'Lamb neck is another cut that slow cooking transforms. A lamb neck slow cooker stew uses bone-in neck pieces, vegetables and stock, cooked on low for eight hours. For a lamb neck stew, add potatoes, carrots and herbs, and cook gently for 2.5 hours on the stove. Our [halal lamb meat](/product/halal-lamb-meat-neck/) neck is cut to order, and if you ask where can i buy lamb neck, the answer is [where can i buy lamb neck](/product/halal-lamb-meat-neck/) on our shop. Shoppers searching for [lamb neck chops near me](/product/halal-lamb-meat-neck/) get the same product, delivered chilled. The cut goes by several names: see our notes on [lamb neck fillets](/blog/halal-mutton-chops-marinade/), [lamb neck buy](/blog/halal-mutton-chops-marinade/) and [lamb neck cut](/blog/halal-mutton-chops-marinade/) in our mutton chop guide, and the [lamb neck chops price](/blog/diced-lamb-casserole-recipe/) in our casserole guide. For a starter or snack, our cocktail skewers are ideal if you are searching for a [lamb kebab near me](/product/lamb-kebab-near-me-cocktail/). Browse the full [lambs for sale](/shop/lambs-for-sale/) range.'],
+      ...qa('Lamb osso buco questions', [
+        ['Do I need wine?', 'No. Stock, tomato and lemon provide depth and acidity. Do not use cooking wine.'],
+        ['Can I use whole lamb shanks?', 'Yes. They need 3 hours at 150°C, covered.'],
+        ['What should I serve with it?', 'Creamy polenta, mashed potato, couscous or rice, with a green vegetable.'],
+      ]),
+    ],
+    add: sec('Gremolata, sides and planning a lamb osso buco dinner', [
+      'Gremolata is the classic finish: finely chopped parsley, grated lemon zest and a small clove of garlic. Sprinkle it over the hot osso buco just before serving, and it adds a bright, fresh lift to the rich meat. Some cooks add orange zest or a pinch of chilli. Make it at the last minute, so that the parsley stays vibrant and the garlic does not become harsh.',
+      'The best sides for osso buco soak up the sauce. Creamy polenta is traditional, as is saffron risotto. Mashed potato, buttery noodles, couscous or crusty bread work too. Serve with a simple green vegetable such as beans or broccolini, and a salad of bitter leaves. A spoon is useful for the marrow, which many consider the best bite. Serve in warm, wide bowls.',
+      'Timing is generous. Brown the lamb and build the sauce in the morning, then leave to cook while you do other things. A low oven or slow cooker needs no attention. Prepare the sides in the last hour. Osso buco improves if made the day before, so for entertaining, cook it ahead, refrigerate it and reheat gently, covered, in a 160°C oven for 40 minutes.',
+      'Variations: add a strip of orange peel and a cinnamon stick for a Moroccan flavour, or cumin, coriander and a spoon of harissa for a spicy dish. Add white beans or chickpeas for a heartier stew. Use lamb stock for richness. A spoon of tomato paste cooked until dark builds umami. The method stays the same, and each variation gives a new dinner.',
+      'Leftovers are wonderful. Shred the meat off the bones, mix it with the sauce, and toss through pasta. Fold into a pie or use as a filling for flatbreads. Refrigerate for up to three days, or freeze for three months. Reheat until steaming hot. The bones and marrow make a rich stock when simmered with water and vegetables.',
+      'All our lamb is certified halal by Halal Control Australia and delivered chilled across Sydney and Australia-wide. Order several days ahead for events, and tell us how you want the meat cut. Wash your hands and boards after handling raw lamb, keep it cold, and cook it until tender. Enjoy a dish that is simple, comforting and special.',
+    ]),
+  },
+}

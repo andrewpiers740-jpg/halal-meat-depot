@@ -1,0 +1,151 @@
+// New v4 posts, batch N19 (last): can Muslims eat camel meat, bulk beef, wholesale chicken, wholesale lamb.
+const qa = (title, items) => [['h2', title], ...items.flatMap(([q, a]) => [['h3', q], ['p', a]])]
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_COPY_NEW_19 = {
+  'can-muslims-eat-camel-meat': {
+    title: 'Can Muslims Eat Camel Meat? A Simple Halal Guide',
+    seoTitle: 'Can Muslims Eat Camel Meat? A Simple Halal Guide',
+    excerpt: 'Can Muslims eat camel meat? A simple halal guide to scholarly views, taste, smell, cooking and where to buy halal camel meat online in Australia.',
+    body: [
+      ['p', 'Can Muslims eat camel meat? Yes. Camel is a permitted animal in Islam, and camel meat is eaten across the Muslim world, from Arabia and North Africa to the Horn of Africa and South Asia. This guide explains the basis for the ruling, a related discussion about ablution that some scholars raise, what camel meat tastes like, and how to cook and buy it. As always, if you have a specific question, ask a scholar you trust.'],
+      ['h2', 'What do scholars say?'],
+      ['p', 'The Qur\'an and Sunnah describe camels as animals used for food and transport, and the four main schools of Islamic jurisprudence agree that camel meat is permissible when the animal is slaughtered according to Islamic requirements. Camels were eaten in the time of the Prophet (peace be upon him), and camel meat is a traditional food for gatherings and feasts. There is no disagreement among the major schools that camel meat is halal.'],
+      ['p', 'A separate discussion exists in one school, the Hanbali school, where some scholars hold that eating camel meat breaks wudu (ritual ablution), based on a particular hadith. Other schools do not hold this view. This is a question about ablution after eating, not about whether camel meat is permitted. If it matters to you, ask a scholar of your school for guidance. Our camel meat is certified halal by Halal Control Australia, and the certificate is published on our certification page.'],
+      ['h2', 'Eating camel meat: taste and smell'],
+      ['p', 'Eating camel meat for the first time, many people ask: does camel meat taste good? Most find the flavour mild, slightly sweet and similar to lean beef, with a fine texture. It is not strong or gamey when it is fresh, well trimmed and cooked properly. Another common question is: does camel meat smell? Fresh camel meat has a clean, mild smell, like beef. A strong or sour odour suggests poor quality or storage, so buy from a trusted supplier and keep it frozen until needed. Marinating with herbs and spices also helps.'],
+      ['h2', 'Where to buy halal camel meat'],
+      ['p', 'We sell a full range of camel, sold frozen and delivered across Sydney and Australia-wide. You can order [camel meat online](/product/camel-meat-online-osso-buco/) with the rest of your shopping, starting with osso buco, neck discs and diced meat. Search for a [camel steak near me](/product/camel-steak-near-me-porterhouse/) and you find our porterhouse steaks. A [camel tomahawk steak](/product/camel-tomahawk-steak/) is a showpiece for a feast, and [camel mince](/product/camel-mince/) is perfect for burgers and kofta. The [camel meat australia](/product/camel-rump-steak/) rump steak is a favourite, and the [camel meat halal](/product/camel-meat-halal-porterhouse-bone/) porterhouse on the bone is rich and tender. Browse the whole [camel meat near me](/shop/camel-meat-near-me/) page. Customers also search for ground camel meat: [ground camel meat](/product/camel-steak-near-me-porterhouse/) leads to our steaks and mince; and for halal camel meat, halal camel meat australia and halal camel meat near me: see [halal camel meat](/product/camel-steak-near-me-porterhouse/), [halal camel meat australia](/product/camel-steak-near-me-porterhouse/) and [halal camel meat near me](/product/camel-steak-near-me-porterhouse/). For Sydney delivery, [halal camel meat sydney](/product/camel-meat-halal-porterhouse-bone/) orders can go by Priority Delivery.'],
+      ['h2', 'How to cook camel meat'],
+      ['ul', [
+        'Steaks: season, sear in a hot pan for 2 to 3 minutes per side to medium-rare, rest and slice.',
+        'Mince: mix with onion, herbs, spices and a spoon of oil; cook burgers and kofta to 75°C.',
+        'Diced and neck discs: brown, then braise in a spiced tomato sauce for 2.5 to 3 hours.',
+        'Osso buco: braise slowly with stock and vegetables until the meat falls from the bone.',
+      ]],
+      ...qa('Camel meat questions', [
+        ['Is camel meat healthy?', 'It is lean, but we make no health claims. Speak to a dietitian about your diet.'],
+        ['Is it expensive?', 'Prices vary by cut and are shown per pack and per kilo on each page.'],
+        ['How should I store it?', 'Keep frozen, thaw in the fridge and cook within two days.'],
+      ]),
+    ],
+    add: sec('Serving camel meat for family and community occasions', [
+      'Camel meat has a special place at gatherings, weddings, Eid and community feasts. A large pot of camel stew or a tray of camel rice is a sign of hospitality in many cultures. When you cook for guests, plan on 300 to 400g of bone-in meat per person, and serve with rice, bread and salads. Prepare the meat the day before, since slow-cooked dishes taste better after resting.',
+      'Spices and aromatics suit camel well. Cardamom, cinnamon, cumin, coriander, turmeric, black pepper, garlic, ginger and onions are the base of many traditional recipes. Dried limes, saffron, dates and nuts appear in festive dishes. Fresh herbs such as coriander, parsley and mint finish the plate. Balance the lean meat with a little ghee, butter or oil.',
+      'For a quick meal, camel burgers are a good start. For a traditional meal, try a slow-cooked camel stew with potatoes and tomatoes. For a barbecue, marinate camel steaks or kebabs in yoghurt, lemon and spices. For a celebration, roast a camel leg or serve a tomahawk. Each dish shows a different side of the meat.',
+      'Safety and storage remain the same as for any meat. Keep camel meat frozen until needed, thaw in the fridge, cook thoroughly (mince to 75°C), and refrigerate leftovers within an hour. Wash your hands and boards after handling raw meat. Cooked dishes keep for three days in the fridge and three months in the freezer.',
+      'If you are cooking camel for the first time, start small. Buy a pack of mince or steaks, try a simple recipe, and see what your family thinks. Once you are comfortable, move on to slow-cooked dishes. Our team is happy to suggest cuts and recipes, and to answer questions about cooking and delivery.',
+      'Everything we sell is certified halal by Halal Control Australia and delivered chilled or frozen across Sydney and Australia-wide. Mix camel with other meats in one order to reach the $250 minimum. We are proud to offer a range that serves many communities, and we hope this guide helps you enjoy camel meat with confidence.',
+    ]),
+  },
+
+  'bulk-beef': {
+    title: 'Bulk Beef: The Complete Guide to Buying Beef in Bulk',
+    seoTitle: 'Bulk Beef: The Complete Guide to Buying in Bulk',
+    excerpt: 'Bulk beef explained: halves, quarters and cartons, wholesale prices per kg, storage and trade options, with halal beef delivered Australia-wide.',
+    body: [
+      ['p', 'Bulk beef is the smartest way to feed a large family, stock a restaurant or fill a freezer. Buying in bulk lowers the price per kilo, gives you a range of cuts, and saves trips to the shops. This guide explains the options, from a whole cow to cartons of single cuts, how to plan, how to store beef, and how to buy bulk beef online from a halal supplier.'],
+      ['h2', 'Ways of buying bulk beef'],
+      ['p', 'There are several ways to buy in bulk. At one end, you can buy a whole animal: [buy a whole cow](/product/buy-a-whole-cow-beef/) and have it cut into steaks, roasts, mince and bones. Or [buy half a cow](/product/buy-half-a-cow-beef/) for a smaller household. A hindquarter or forequarter is a middle option. For a more targeted purchase, a [bulk beef purchase](/product/bulk-beef-purchase-hindquarter/) of a hindquarter gives you the best steaks and roasts. Restaurants often choose cartons of a single cut, such as a [beef strip loin](/product/beef-strip-loin-striploin-cryovac-carton/) in a cryovac carton, which suits steakhouses. Mince, diced beef and brisket also come in 20kg cartons. Our [meat packs](/shop/meat-packs/) page lists them all.'],
+      ['h2', 'Where to buy bulk beef'],
+      ['p', 'Many shoppers ask how to buy bulk beef near me, buy bulk beef online, bulk beef sales near me and buying bulk beef near me. We are an online halal butcher, so we deliver everywhere. You can buy bulk beef online and have it delivered across Sydney and Australia-wide. If you are searching for bulk beef sales near me, or buy bulk beef near me, our online shop is the answer, with Priority Delivery in Sydney. Businesses ask about buy beef wholesale and beef wholesale price per kg, and our trade accounts offer a regular price sheet. For a restaurant looking for Wagyu beef Sydney wholesale, we supply MB5+ and MB9+ primals. See the full range on our wholesale page.'],
+      ['h2', 'Planning a bulk purchase'],
+      ['ul', [
+        'Freezer space: a freezer holds about 35 to 40kg of meat per 100 litres.',
+        'Household size: a family of four typically eats 1 to 1.5kg of beef a week.',
+        'Cuts: decide how much mince, diced, steaks, roasts and bones you want.',
+        'Packaging: ask for vacuum or tight packs, in meal-sized portions.',
+        'Labels: label each pack with the cut, weight and date.',
+      ]],
+      ['p', 'Tell us how you want your beef cut: steak thickness, roast size, mince fat level and pack sizes. Order a few days ahead for large orders so we can schedule your pack. Add instructions in the order notes at checkout.'],
+      ['h2', 'Storing bulk beef'],
+      ['p', 'Freeze beef at -18°C or colder. Mince and diced beef keep for four months; steaks and roasts for six to twelve months, if well wrapped. Flatten mince in bags to freeze and thaw quickly. Wrap steaks individually. Thaw in the fridge, never on the bench. Rotate stock, using the oldest first. Keep a list on the freezer door.'],
+      ...qa('Bulk beef questions', [
+        ['Is bulk beef cheaper?', 'Usually yes per kilo, especially for whole animals and cartons. Check the price per kilo and what is included.'],
+        ['What if I do not have a big freezer?', 'Buy a quarter or a few cartons, or split an order with family.'],
+        ['Is the beef halal?', 'All our beef is certified halal by Halal Control Australia.'],
+      ]),
+    ],
+    add: sec('Bulk beef for families, events and businesses', [
+      'For a family, bulk beef changes the way you shop. Instead of weekly trips, you place one large order every month or two, and stock the freezer. Each week, you take out what you need. This saves money, reduces waste and removes the daily question of what to buy. A planned freezer makes weeknight cooking easier, because the ingredients are already at hand.',
+      'For events such as Eid, weddings, Aqeeqah and community functions, bulk beef feeds many people at once. Choose cuts that suit large pots: diced beef for curries, brisket for slow cooks, mince for kofta and burgers. Order several days ahead, and tell us the number of guests. We can suggest quantities and cut the beef to suit your recipes.',
+      'For restaurants, cafés and takeaways, cartons offer consistent quality and predictable cost. Choose primals such as rump, striploin and brisket, and portion them in-house, or choose diced and mince for curries and kebabs. Trade accounts give a regular price sheet and delivery day. Our wholesale page has the details and a form to apply.',
+      'Compare prices carefully. A whole animal has a mix of cuts, so the average price reflects both premium and economy cuts. A carton of a single cut has a clear price per kilo. Weigh your needs, and buy the form that suits them. If you are unsure, start with a quarter or a few cartons, and scale up when you know your family\'s habits.',
+      'Safety matters when handling large quantities. Keep beef cold during transport, put it straight into the freezer, and do not refreeze thawed meat. Clean your freezer regularly, and keep a thermometer inside. Use clean boards and knives when portioning, and wash your hands often. Label everything. These habits protect your investment.',
+      'We deliver bulk beef chilled or frozen across Sydney and Australia-wide. The minimum order is $250 across the whole cart, and delivery is free over $500. Payment is by PayID, bank transfer or crypto, which takes 10% off the meat total. Browse the full [halal beef](/shop/halal-beef/) range, and ask us for advice on the best way to buy in bulk.',
+    ]),
+  },
+
+  'wholesale-chicken': {
+    title: 'Wholesale Chicken: Easy Guide to Buying Halal Chicken by the Carton',
+    seoTitle: 'Wholesale Chicken: Easy Guide to Buying by the Carton',
+    excerpt: 'Wholesale chicken explained: buying halal chicken by the carton, with wings, breast and drumsticks, bulk prices and trade accounts, delivered Australia-wide.',
+    body: [
+      ['p', 'Wholesale chicken is the backbone of restaurants, takeaways, caterers and busy families. Buying by the carton lowers the cost per kilo, gives you a reliable supply and saves time. This guide explains how wholesale chicken works, the cartons available, how to compare prices, how to store bulk chicken, and how to open a trade account with a halal supplier.'],
+      ['h2', 'What is wholesale chicken?'],
+      ['p', 'Wholesale chicken is chicken sold in large quantities, usually in cartons of 10kg or more, at a lower price per kilo than retail packs. It is packed for commercial kitchens, but families can buy it too, especially if they have a freezer. At Halal Meat Depot, our cartons are packed in manageable bags, so you can use a bag at a time. All of our chicken is certified halal by Halal Control Australia.'],
+      ['h2', 'Chicken cartons and cuts'],
+      ['p', 'Our cartons include breast fillets, thigh fillets, drumsticks and wings. Search for [chicken wholesale near me](/product/chicken-wholesale-near-me-thigh-fillet-carton/) and you find our thigh fillet carton. [Bulk chicken](/product/bulk-chicken-drumstick-carton/) drumsticks are popular for takeaways and families. [Bulk chicken wings](/product/bulk-chicken-wings-carton/) are the favourite for parties and wing shops. [Bulk chicken breast](/product/bulk-chicken-breast-fillet-carton/) is the staple for schnitzels, grills and salads. Customers also search for bulk chicken online and bulk chicken sale: you can order bulk chicken online, and we list our cartons in the wholesale section. Check bulk wholesale chicken prices on each page, with the price per carton and per kilo.'],
+      ['h2', 'Where to buy wholesale chicken'],
+      ['p', 'Many buyers ask: where can i buy wholesale chicken, or where to buy wholesale chicken? Our online shop is one answer, and our trade accounts are another. You can buy wholesale chicken online and have it delivered chilled across Sydney and Australia-wide. If you need cheap wholesale chicken, compare prices per kilo and consider thighs and drumsticks, which are the best value. Customers searching for cheap wholesale chicken near me will find that our delivery means distance does not matter. Our [meat packs](/shop/meat-packs/) page lists the cartons, and for halal retail cuts, see our [halal chicken](/shop/halal-chicken-near-me/) range.'],
+      ['h2', 'Bulk chicken skewers and value-added options'],
+      ['p', 'Caterers often ask about bulk chicken skewers. We sell chicken cocktail kebabs, and trade customers can ask about larger quantities for events. Marinated wings and split chickens are also available. Ready-crumbed schnitzels and tenders are popular with cafés. If you need a particular product, ask us about trade options.'],
+      ['h2', 'How to compare wholesale chicken'],
+      ['ul', [
+        'Price per kilo, not per carton.',
+        'Certification: the certifier and the certificate expiry date.',
+        'Packing: bags inside the carton, for easy portioning.',
+        'Delivery: chilled, with a reliable schedule.',
+        'Minimums: what order size is needed.',
+      ]],
+      ...qa('Wholesale chicken questions', [
+        ['What is the minimum order?', 'Our minimum order is $250 across the cart, and delivery is free over $500.'],
+        ['Is the chicken fresh?', 'Our chicken is sold fresh and packed chilled.'],
+        ['Can I open a trade account?', 'Yes. See our wholesale page for the form.'],
+      ]),
+    ],
+    add: sec('Storing and using bulk chicken', [
+      'Bulk chicken needs good handling. Keep cartons in the coldest part of the fridge, at 5°C or below, and use within two days, or freeze on the day of delivery. Divide the bags into meal-sized portions, label them with the date, and freeze flat. Frozen chicken keeps for six to nine months at -18°C. Thaw in the fridge, never on the bench, and cook within a day of thawing.',
+      'Use a first-in, first-out system, so older stock is used first. Keep a stock list and check temperatures daily in a commercial kitchen. Store raw chicken on the bottom shelf, below ready-to-eat foods, to prevent drips. Use separate boards, knives and containers for raw chicken, and wash your hands and surfaces after handling it. Cook chicken to 75°C throughout.',
+      'For a restaurant, plan your menu around your cartons: breast for schnitzels and grills, thighs for curries and kebabs, drumsticks and wings for fried and baked dishes. Marinate in advance, portion in the morning, and cook to order. A good supply chain, with regular deliveries, keeps stock fresh and food costs under control. Our trade accounts offer a set delivery day.',
+      'For a family, a carton of thigh or drumsticks can feed you for months. Divide it into marinated portions, such as honey soy, lemon and herb, or tandoori, and freeze them. On busy nights, thaw a bag in the morning, and dinner is half done. This approach saves money and time, and keeps variety on the table. Pair with rice, vegetables and salad.',
+      'Think about events. A carton of wings feeds a party of 30. A carton of drumsticks serves 40 as part of a barbecue. Breast fillets can be sliced into schnitzels for a school fete or sports club. Cook ahead and keep warm, or reheat. We can help you plan quantities, so you buy enough without waste.',
+      'All our chicken is certified halal by Halal Control Australia and delivered across Sydney and Australia-wide. Open a trade account for a regular price sheet, or order cartons online with the rest of your shopping. Pay by PayID, bank transfer or crypto (10% off the meat total). Ask us for help choosing the right cartons for your business or family.',
+    ]),
+  },
+
+  'wholesale-lamb': {
+    title: 'Wholesale Lamb: Cartons, Whole Lambs and Catering Packs Made Simple',
+    seoTitle: 'Wholesale Lamb: Easy Cartons and Whole Lamb Guide',
+    excerpt: 'Wholesale lamb made simple: cartons of shoulder, legs and curry pieces, whole lambs and catering packs, wholesale prices in Sydney, and trade accounts.',
+    body: [
+      ['p', 'Wholesale lamb is a smart buy for restaurants, caterers, butchers and big families. Cartons of shoulder, leg and curry pieces, whole lambs and catering packs deliver quality meat at a lower price per kilo, and ensure supply for events. This guide explains the options, how to compare wholesale lamb prices, how to store bulk lamb and how to buy from a halal supplier in Sydney and across Australia.'],
+      ['h2', 'Wholesale lamb options'],
+      ['p', 'For restaurants, we supply cartons of shoulders and legs. Our [lamb wholesale](/product/lamb-wholesale-shoulder-carton/) shoulder carton is 20kg of whole shoulders, our lowest price per kilo on shoulder, and suits shawarma, slow roasts and mandi. [Bulk lamb](/product/bulk-meat-packs-lamb-curry-pieces-carton/) curry pieces come in a 20kg carton, cut to a consistent size for curry houses. For legs, our cryovac carton is ideal: see [bulk lamb for sale](/product/whole-lamb-leg-price-cryovac-carton/), the [bulk lamb pack](/product/whole-lamb-leg-price-cryovac-carton/) and the [wholesale lamb meat prices](/product/whole-lamb-leg-price-cryovac-carton/) on the product page. Customers searching for [wholesale lamb sydney](/product/lamb-wholesale-shoulder-carton/) will find our Sydney Priority Delivery. For a wholesale cut such as neck, see [wholesale lamb meat](/product/halal-lamb-meat-neck/) and [bulk lamb meat](/product/halal-lamb-meat-neck/). Bulk lamb shanks are available: [bulk lamb shanks](/product/grass-fed-lamb-shanks/) are ideal for braising, and customers also ask about wholesale lamb shanks for restaurants.'],
+      ['h2', 'Whole lambs and catering packs'],
+      ['p', 'For Eid, Aqeeqah, weddings and community events, a whole lamb is the traditional choice. Our [whole lamb meat for sale](/product/whole-lamb-meat-for-sale-catering-pack/) catering pack contains two carcasses, cut to your instructions. A single animal is listed as [whole lamb for sale](/product/whole-lamb-for-sale-half-carcass/) in half carcasses. Tell us how you want it cut: curry pieces, roasts, mansaf pieces or a mix. Order a few days ahead for large events. For smaller households, half-leg packs are available: if you search for [lamb meat near me](/product/lamb-meat-near-me-half-leg-bone/), you find our half legs on the bone. Browse the full [lambs for sale](/shop/lambs-for-sale/) range, and the [meat packs](/shop/meat-packs/) page for cartons.'],
+      ['h2', 'Comparing wholesale lamb prices'],
+      ['ul', [
+        'Compare per kilo, not per carton or per animal.',
+        'Check what is included: bone-in or boneless, trimmed or untrimmed.',
+        'Check the certificate: the certifier and expiry date.',
+        'Check delivery: chilled, timed and reliable.',
+        'Check the minimum order and payment terms.',
+      ]],
+      ['p', 'Our pack and per-kilo prices are shown on every product page. Trade accounts offer a regular price sheet.'],
+      ...qa('Wholesale lamb questions', [
+        ['What is the best carton for shawarma?', 'Whole shoulders, which carry fat and flavour for slow cooking and spit roasting.'],
+        ['How much lamb for a function?', 'Allow about 250g of cooked lamb per person, or 400g of bone-in lamb.'],
+        ['Is the lamb halal?', 'All our lamb is certified halal by Halal Control Australia.'],
+      ]),
+    ],
+    add: sec('Buying, storing and cooking bulk lamb', [
+      'Plan wholesale lamb orders around your menu and your storage. A 20kg carton needs a large fridge or freezer. If you cannot use it within a few days, divide it into portions and freeze. Lamb keeps for six to nine months at -18°C if well wrapped. Label with the cut, weight and date, and rotate stock. Thaw in the fridge, and cook within two days.',
+      'Cooking lamb in bulk calls for good technique. For shawarma and spit roasts, marinate shoulders overnight in yoghurt, lemon and spices, and cook slowly. For curries, brown curry pieces in batches, and simmer until tender. For roasts, use a thermometer; 58°C for medium, 70°C for well done. For braises, cover the meat and cook at 150°C for 3 hours. Rest before carving or serving.',
+      'For restaurants, consistent portion sizes control costs. Trim and portion in-house or ask us to cut to your specification. Keep a record of yields so you can price dishes accurately. Seasonal specials, such as slow-roasted shoulder or lamb shank, make good use of cartons. A good supplier relationship makes planning easier.',
+      'For family events, a whole lamb is a joyful centrepiece. Decide the cuts in advance, and ask for the bones to be cut for stock. Plan your cooking space: a spit, an oven or several pots. Arrange help on the day, and have clean boards, knives and thermometers ready. A whole lamb feeds 30 to 40 people as part of a feast.',
+      'Safety first. Keep raw lamb cold, separate from other foods, and cook to a safe temperature; mince-style products to 75°C and whole cuts to your preference. Cool cooked lamb within an hour, and refrigerate for three days. Wash hands, boards and knives after handling raw meat. Use clean containers for transport.',
+      'We deliver wholesale lamb chilled across Sydney and Australia-wide, with Priority Delivery in Sydney. The minimum order is $250 across the cart, and delivery is free over $500. Payment is by PayID, bank transfer or crypto, which takes 10% off the meat total. Open a trade account on our wholesale page, or contact us for advice on the right cartons for your needs.',
+    ]),
+  },
+}

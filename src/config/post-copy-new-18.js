@@ -1,0 +1,116 @@
+// New v4 posts, batch N18: cooking buffalo meat, buffalo vs beef, camel meat.
+const qa = (title, items) => [['h2', title], ...items.flatMap(([q, a]) => [['h3', q], ['p', a]])]
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_COPY_NEW_18 = {
+  'cooking-buffalo-meat': {
+    title: 'Cooking Buffalo Meat: Simple Steaks, Mince and Slow Cooks',
+    seoTitle: 'Cooking Buffalo Meat: Simple Steaks and Slow Cooks',
+    excerpt: 'Cooking buffalo meat made simple: how to cook steaks, mince and slow-cooked cuts, whether people eat buffalo meat, and where to buy it in Australia.',
+    body: [
+      ['p', 'Cooking buffalo meat is easy once you understand one thing: it is leaner than beef. A lean meat cooks faster, dries out sooner and rewards a careful hand. This guide shows how to cook buffalo steaks, mince and slow-cooked cuts, answers common questions such as do people eat buffalo meat and is buffalo meat available in Australia, and explains where to buy it.'],
+      ['h2', 'Do people eat buffalo meat? Is it available in Australia?'],
+      ['p', 'Do people eat buffalo meat? Yes, widely. Water buffalo meat is eaten in Asia, the Middle East, Italy and many other regions, and it has been part of the Australian food scene for years. Is buffalo meat available in Australia? Yes: water buffalo are farmed in northern Australia, and buffalo meat is sold online and in specialist butchers. We stock a full range, sold frozen and delivered across Sydney and Australia-wide. It tastes like a lean, slightly sweet beef.'],
+      ['h2', 'Buying buffalo'],
+      ['p', 'The [buffalo meat](/product/buffalo-meat-for-sale-near-me-osso-buco/) range includes steaks, mince, ribs, diced meat and osso buco. See the [buffalo meat near me](/shop/buffalo-meat-near-me/) page for all cuts, and the [buffalo meat australia](/product/buffalo-meat-australia-steak-rib-eye/) rib eye steak for a premium cut. Customers searching for [buffalo steak near me](/product/buffalo-steak-price-porterhouse/) or the general [buffalo steak](/shop/buffalo-meat-near-me/) term find our porterhouse and scotch fillet. You can check the [buffalo steak price](/product/buffalo-steak-price-porterhouse/) and the [cost of buffalo meat](/product/buffalo-steak-price-porterhouse/) on each page. There are [buffalo steaks for sale](/product/buffalo-steaks-for-sale-scotch-fillet/) in scotch fillet, a [buffalo t bone steak](/product/buffalo-t-bone-steak/) for sharing, and [minced buffalo meat](/product/minced-buffalo-meat-mince/) for burgers. People ask for fresh buffalo meat and fresh buffalo meat near me; ours is sold frozen, and the [fresh buffalo meat](/product/buffalo-steak-price-porterhouse/) and [fresh buffalo meat near me](/product/buffalo-steak-price-porterhouse/) results lead to the same pack.'],
+      ['h2', 'How to cook buffalo steaks'],
+      ['ul', [
+        'Thaw in the fridge overnight. Pat dry and bring to room temperature for 20 minutes.',
+        'Season with salt and pepper and rub with a little oil.',
+        'Heat a heavy pan until smoking. Sear for 2 to 3 minutes per side, depending on thickness.',
+        'Baste with butter, garlic and thyme for the last minute.',
+        'The centre should reach 54 to 57°C for medium-rare. Do not go past medium.',
+        'Rest for 5 minutes, then slice across the grain.',
+      ]],
+      ['h2', 'How to cook buffalo mince'],
+      ['p', 'Buffalo mince is lean, so add moisture. For burgers, mix with grated onion, an egg and a spoon of oil. For bolognese, brown in batches, then simmer in tomato for 30 minutes. For meatballs, add breadcrumbs soaked in milk. Cook mince through to 75°C. Because it has less fat than beef mince, avoid overcooking.'],
+      ['h2', 'Slow cooking buffalo'],
+      ['p', 'For osso buco, ribs and diced meat, use a moist method. Brown the meat, then braise with onions, tomatoes and stock at 150°C for 2.5 to 3 hours, or on low in a slow cooker for 8 hours. The connective tissue melts, and the meat becomes tender and rich. Season generously, and finish with herbs and lemon.'],
+      ['h2', 'Disadvantages of eating buffalo meat'],
+      ['p', 'People sometimes ask about the disadvantages of eating buffalo meat. Practically, there are a few: it is leaner than beef, so it dries out if overcooked; it can cost more than everyday beef cuts; and it is less widely available, which is why we sell it online. Nutritionally, buffalo is a red meat, and general advice about moderation in red meat applies. We make no health claims, so speak to your doctor or a dietitian about your own diet.'],
+      ...qa('Cooking buffalo questions', [
+        ['Is buffalo meat tough?', 'Only if overcooked or cooked with the wrong method. Steaks should be quick and medium-rare; tougher cuts need slow cooking.'],
+        ['Can I substitute buffalo for beef?', 'Yes, in most recipes, but reduce the cooking time for lean cuts.'],
+        ['Can I cook it from frozen?', 'Thaw it first in the fridge for even cooking.'],
+      ]),
+    ],
+    add: sec('Marinades, sauces and meal ideas for buffalo', [
+      'Buffalo takes to marinades beautifully, because lean meat absorbs flavour. A simple mix of olive oil, garlic, lemon juice and rosemary suits steaks. For a spicy flavour, use cumin, paprika, chilli and lime. For an Asian style, use soy sauce, ginger, garlic and honey. Marinate for 30 minutes to 4 hours, and wipe off excess before searing. Avoid long acid marinades, which can toughen the surface.',
+      'Sauces complement the lean meat. A mushroom sauce, a peppercorn sauce, a chimichurri or a red onion jam all work well. Pan sauces made from the cooking juices, stock and a splash of balsamic vinegar are quick and flavoursome. A spoon of yoghurt or tzatziki cools spiced buffalo. Serve sauces on the side so everyone can choose.',
+      'Meal ideas include buffalo burgers with beetroot and rocket, buffalo steak with roast vegetables, buffalo ragu with pappardelle, buffalo chilli with beans, buffalo curry with rice, and buffalo osso buco with polenta. Asado ribs can be braised and finished on the barbecue. A buffalo tomahawk is a showpiece for a special dinner. With such variety, buffalo can suit every night of the week.',
+      'Cooking tips: use a thermometer, rest the meat, and slice across the grain. Do not press steaks while cooking. Use a heavy pan or a hot grill for a good sear. For roasts, cook to 54°C and rest for 20 minutes. For slow cooking, cover tightly and keep the temperature low. If the meat seems dry, add stock and cook longer.',
+      'Storage: keep frozen until needed, thaw in the fridge on a tray, and cook within two days. Do not refreeze thawed raw meat. Cooked dishes keep for three days in the fridge and three months in the freezer. Wash your hands and boards after handling raw meat. Cook mince to 75°C.',
+      'All our buffalo is certified halal by Halal Control Australia. We can recommend cuts and quantities for your event or family. Browse the range, add to your cart, and enjoy a lean, mild and flavoursome meat, delivered to your door.',
+    ]),
+  },
+
+  'difference-between-buffalo-meat-and-beef': {
+    title: 'Difference Between Buffalo Meat and Beef: Complete Comparison',
+    seoTitle: 'Difference Between Buffalo Meat and Beef: Easy Guide',
+    excerpt: 'The difference between buffalo meat and beef: taste, texture, fat, cooking, price and availability, plus is buffalo meat good for you and where to buy it.',
+    body: [
+      ['p', 'The difference between buffalo meat and beef is smaller than many people expect, but it matters in the kitchen. Both come from bovines, both are red meats and both can be cooked in the same ways. Buffalo is leaner, slightly sweeter and a little darker, and it needs more care in cooking. This guide compares them in detail, so you can choose with confidence and cook each at its best.'],
+      ['h2', 'Appearance, taste and texture'],
+      ['p', 'Buffalo meat is deep red and has less visible marbling than beef. The taste is clean and slightly sweet, without the intensity some beef has, and without gaminess. The texture is fine and tender when cooked correctly, though leaner cuts can be firm if overcooked. Beef, with its marbling, is juicier and more forgiving. If you are wondering is buffalo meat good, the answer for most cooks is yes: it is a pleasant, mild red meat. Is buffalo meat edible? Of course: it is a commonly eaten meat across the world.'],
+      ['h2', 'Is buffalo meat good for you?'],
+      ['p', 'Is buffalo meat good for you? Buffalo is a lean red meat and a source of protein and iron, but we do not make health claims about any product. Nutritional values vary by cut and by animal, and advice about red meat in general applies. If you have a specific health question, speak to your doctor or a dietitian. What we can say is that buffalo is lean, which many cooks appreciate, and that it should be cooked with care to stay tender.'],
+      ['h2', 'Cooking buffalo compared with beef'],
+      ['p', 'Because buffalo has less fat, it cooks faster and dries out sooner. Steaks should be cooked to medium-rare and rested; beef steaks can go to medium or beyond with less risk. Mince needs added moisture. Slow-cooked cuts need liquid and time, just like beef. In most recipes you can swap buffalo for beef, reducing the time slightly. Use a thermometer, and rest the meat well.'],
+      ['h2', 'Buying buffalo'],
+      ['p', 'If you want to try buffalo, we stock a full range. Search for [buffalo meat for sale near me](/product/buffalo-meat-for-sale-near-me-osso-buco/) and you find our osso buco, or look at [buffalo meat for sale](/product/buffalo-meat-for-sale-diced-boneless/) in diced boneless form. A [buffalo tomahawk steak](/product/buffalo-tomahawk-steak/) is a showstopper. The [buffalo meat](/product/buffalo-meat-for-sale-near-me-osso-buco/) range is listed on the [buffalo meat near me](/shop/buffalo-meat-near-me/) page, and the [buffalo meat australia](/product/buffalo-meat-australia-steak-rib-eye/) rib eye is a favourite. For steaks, [buffalo steak near me](/product/buffalo-steak-price-porterhouse/) searches lead to our porterhouse, and the general [buffalo steak](/shop/buffalo-meat-near-me/) page lists them all. The [cost of buffalo meat](/product/buffalo-steak-price-porterhouse/) is shown per pack and per kilo. People search for fresh buffalo meat: [fresh buffalo meat](/product/buffalo-steak-price-porterhouse/) and [fresh buffalo meat near me](/product/buffalo-steak-price-porterhouse/) lead to the same range, which we sell frozen. Many ask about frozen buffalo meat, and ours is sold that way for quality.'],
+      ['h2', 'Side-by-side comparison'],
+      ['ul', [
+        'Fat: buffalo is leaner; beef has more marbling.',
+        'Flavour: buffalo is mild and slightly sweet; beef is richer.',
+        'Cooking: buffalo cooks faster and needs more care; beef is more forgiving.',
+        'Price: buffalo is often a little higher; beef covers all budgets.',
+        'Availability: beef is everywhere; buffalo is more specialised.',
+      ]],
+      ...qa('Buffalo vs beef questions', [
+        ['Can I use buffalo in a beef recipe?', 'Yes, one for one, with slightly shorter cooking.'],
+        ['Is buffalo meat halal?', 'Water buffalo is a bovine, so it is in the same category as cattle when slaughtered correctly. Ours is certified halal by Halal Control Australia.'],
+        ['Does buffalo taste like beef?', 'Very similar, but leaner and slightly sweeter.'],
+      ]),
+    ],
+    add: sec('Choosing between buffalo and beef for each dish', [
+      'For a steak night, choose beef if you love marbling and juiciness, such as a scotch fillet or Wagyu, and buffalo if you prefer a leaner steak with a clean flavour. Cook buffalo steaks to medium-rare and rest them. For burgers, beef mince gives a juicier patty, while buffalo mince makes a lighter one; adding grated onion and oil helps. For slow cooks, both work equally well.',
+      'For curries and stews, buffalo is a good option, because slow cooking in a flavourful sauce keeps the lean meat moist. Many South Asian and Southeast Asian dishes traditionally use buffalo. Diced buffalo cooks for 2 to 2.5 hours, much like beef chuck. Add vegetables, spices and liquid, and the result is rich and tender.',
+      'For roasts, beef cuts such as rib and topside are more common, but buffalo roasts can be excellent if cooked carefully. Cook to 54°C, rest well and slice thinly. A marinade or a herb crust adds moisture and flavour. Serve with gravy or a sauce, since the lean meat benefits from extra moisture.',
+      'If cost matters, check price per kilo for each. Beef has the widest range, from budget mince to premium steaks. Buffalo prices depend on the cut, and are shown on each product page. Mixed orders of buffalo and beef are a good way to compare, and our minimum order of $250 applies across your whole cart.',
+      'Some families like to rotate meats for variety. Beef on Monday, buffalo on Wednesday, lamb on Friday. It keeps meals interesting, and exposes children to different flavours. Our range makes this easy: beef, lamb, goat, chicken, camel, duck, kangaroo and buffalo, all certified halal by Halal Control Australia, delivered chilled or frozen to your door.',
+      'Whichever you choose, handle the meat safely: keep it cold, thaw it in the fridge, cook it properly and wash your hands and boards after handling raw meat. Store cooked dishes in the fridge for three days. We are always happy to answer questions and suggest cuts for your occasion. Browse the full range, and enjoy trying something new.',
+    ]),
+  },
+
+  'camel-meat': {
+    title: 'Camel Meat: A Complete Guide to Cuts, Taste and Cooking',
+    seoTitle: 'Camel Meat: A Complete Guide to Cuts and Cooking',
+    excerpt: 'Camel meat explained: taste, cuts, cooking, halal status, does camel meat have cholesterol, and where to buy halal camel meat in Australia online.',
+    body: [
+      ['p', 'Camel meat is lean, mild and increasingly popular with adventurous cooks and with communities for whom it is a traditional food. It tastes like a leaner, slightly sweeter beef, with a fine texture, and it suits steaks, curries and slow cooks. This guide explains what camel meat is like, the cuts available, how to cook it, the halal position, and where to buy it in Australia.'],
+      ['h2', 'Is camel meat good to eat?'],
+      ['p', 'Is camel meat good to eat? Many people find it surprisingly pleasant. The flavour is mild, slightly sweet and a little earthy, similar to lean beef, and tender cuts are soft and juicy when cooked correctly. It is lean, so it needs care to avoid drying out. Camel is a staple in the Middle East, North Africa and East Africa, where it features in dishes such as stews, rice dishes and grilled skewers. In Australia, camels are plentiful in the outback, and camel meat is sold online and in specialist shops.'],
+      ['h2', 'Buying camel meat'],
+      ['p', 'We sell a full range of camel, frozen and certified halal. Customers search for camel meat near me, and our [camel meat near me](/shop/camel-meat-near-me/) page lists every cut. To buy camel meat, order [buy camel meat](/product/buy-camel-meat-neck-disc-bone/) neck discs for stews, or look at [australia camel meat](/product/australia-camel-meat-diced-boneless/) diced boneless for curries. The [camel meat australia](/product/camel-rump-steak/) rump steak is a great steak. A [camel ribeye steak](/product/camel-ribeye-steak-scotch-fillet/) comes from the scotch fillet, and [ground camel meat](/product/camel-steak-near-me-porterhouse/) searches lead to our mince and steaks. Shoppers who want [halal camel meat](/product/camel-steak-near-me-porterhouse/), [halal camel meat australia](/product/camel-steak-near-me-porterhouse/) or [halal camel meat near me](/product/camel-steak-near-me-porterhouse/) will find our porterhouse steaks, certified by Halal Control Australia. For Sydney customers, [halal camel meat sydney](/product/camel-meat-halal-porterhouse-bone/) orders go by Priority Delivery. And the [camel meat halal](/product/camel-meat-halal-porterhouse-bone/) porterhouse on the bone is a showpiece, as is the answer to [is camel meat good to eat](/product/camel-meat-halal-porterhouse-bone/).'],
+      ['h2', 'Is camel meat halal?'],
+      ['p', 'Camel is a permitted animal in Islam, and it is eaten across the Muslim world; the major schools of thought agree that camel meat is halal when slaughtered correctly. There is a minority view in one school that eating camel meat requires renewing ablution (wudu), which is a separate question from whether it is permitted. Our camel is certified halal by Halal Control Australia. If you have questions about the ablution ruling, ask a scholar of your school.'],
+      ['h2', 'Does camel meat have cholesterol?'],
+      ['p', 'Does camel meat have cholesterol? Like all animal meat, camel meat contains cholesterol; the amount varies with the cut and the animal. Cholesterol in camel meat is often reported to be lower than in some other red meats because camel is lean, but we do not make nutritional claims, as values vary. Please check any nutritional information provided and speak to a doctor or dietitian about your own needs.'],
+      ['h2', 'Cooking camel meat'],
+      ['p', 'Cooking camel meat follows the rules for lean red meat. Steaks: sear in a hot pan for 2 to 3 minutes a side to medium-rare and rest. Mince: add moisture and cook through to 75°C. Diced and osso buco: braise slowly in a flavourful sauce for 2.5 to 3 hours, or in a slow cooker for 8. Season boldly with cumin, coriander, garlic and chilli.'],
+      ...qa('Camel meat questions', [
+        ['Is camel meat tough?', 'Not when cooked right. Quick-cook cuts must not be overcooked; tougher cuts need slow, moist cooking.'],
+        ['What does camel taste like?', 'Like lean, mild beef with a slightly sweet, earthy note.'],
+        ['How should I store it?', 'Keep frozen; thaw in the fridge and cook within two days.'],
+      ]),
+    ],
+    add: sec('Camel dishes, flavours and serving ideas', [
+      'Camel features in many traditional dishes. In Somalia, camel is stewed with spices and served with rice or flatbread. In Saudi Arabia, camel meat is cooked in kabsa and mandi. In North Africa, camel tagine uses cinnamon, cumin, apricots and onions. In the Gulf, camel burgers and kebabs are popular. In Australia, camel burgers, sausages and steaks are increasingly common. You can adapt any lamb or beef recipe to camel.',
+      'For a simple weeknight dinner, grill camel steaks with garlic and rosemary, and serve with a fresh salad and roasted potatoes. For a feast, braise diced camel in a spiced tomato sauce with chickpeas and serve with couscous. For the barbecue, marinate camel kebab pieces in yoghurt, lemon and cumin, and grill them quickly. For a family meal, use camel mince in kofta, burgers or pasta sauce.',
+      'Because camel is lean, fat or moisture helps. Add a splash of olive oil to the pan, a pat of butter when basting, a spoon of yoghurt in marinades, or a handful of vegetables in stews. Bone-in cuts such as neck discs and osso buco have more flavour and collagen, and are especially good in slow cooks. Always rest steaks after cooking.',
+      'Camel pairs well with warm spices, citrus, dates, apricots, nuts and fresh herbs. Cardamom, cinnamon, cumin, coriander, turmeric and saffron are traditional. Sweet accompaniments such as dates or apricots balance the lean meat. Rice dishes, flatbreads and salads are classic sides. A cup of mint tea or a glass of lemon and mint cordial is a refreshing end to a camel feast.',
+      'Storage and safety: keep camel meat frozen until you need it. Thaw in the fridge overnight, on a tray. Cook within two days of thawing. Cook mince to 75°C and braised dishes until fork-tender. Cool leftovers within an hour and refrigerate for up to three days. Wash your hands and boards after handling raw meat, and keep it separate from ready-to-eat foods.',
+      'Order from us with confidence: all our camel meat is certified halal by Halal Control Australia, sold frozen and delivered across Sydney and Australia-wide. Browse the camel category, mix with other meats to reach your minimum order, and ask us if you need help choosing cuts or quantities for your event. We are proud to offer a range that serves many communities.',
+    ]),
+  },
+}

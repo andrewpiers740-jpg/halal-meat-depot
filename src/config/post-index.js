@@ -739,6 +739,54 @@ export const POST_INDEX = [
   "kw": "butterflied chicken"
  },
  {
+  "slug": "chicken-drumstick-recipes",
+  "title": "Chicken Drumstick Recipes: Easy Oven and Slow Cooker Ideas",
+  "excerpt": "Chicken drumstick recipes for the oven, slow cooker and air fryer: honey soy, barbecue and curry flavours, plus Marylands and bulk halal chicken options.",
+  "kw": "chicken drumstick recipes"
+ },
+ {
+  "slug": "beef-liver-recipes",
+  "title": "Beef Liver Recipes: Simple Ways to Cook Liver Well",
+  "excerpt": "Beef liver recipes that taste good: soak, slice and cook liver with onions, in a pâté or in mince, plus where to buy halal beef liver in Australia.",
+  "kw": "beef liver recipes"
+ },
+ {
+  "slug": "beef-cheek-tacos",
+  "title": "Beef Cheek Tacos: Slow-Cooked, Tender and Easy",
+  "excerpt": "Beef cheek tacos with melt-in-the-mouth meat: a slow cooker recipe, toppings, salsa, where to buy beef cheeks and what to use as a beef cheek substitute.",
+  "kw": "beef cheek tacos"
+ },
+ {
+  "slug": "beef-roast-kerala",
+  "title": "Beef Roast Kerala Style: A Simple Spiced Beef Fry",
+  "excerpt": "Beef roast Kerala style, the dry-fried, coconut and black pepper beef: an easy spiced recipe, the best cuts, oyster blade and chuck, and buying tips.",
+  "kw": "beef roast kerala"
+ },
+ {
+  "slug": "beef-rib-eye-rib-roast",
+  "title": "Beef Rib Eye Rib Roast: The Complete Roasting Guide",
+  "excerpt": "Beef rib eye rib roast guide: how to choose, season and roast a standing rib roast, scotch fillet comparisons, tomahawk steaks and Wagyu ribeye options.",
+  "kw": "beef rib eye rib roast"
+ },
+ {
+  "slug": "lamb-osso-buco",
+  "title": "Lamb Osso Buco: Easy Slow-Cooked Lamb Shanks",
+  "excerpt": "Lamb osso buco, slow-cooked shanks in tomato and stock without wine: an easy recipe, lamb neck stew and slow cooker options, and where to buy halal lamb.",
+  "kw": "lamb osso buco"
+ },
+ {
+  "slug": "is-duck-meat-red-meat",
+  "title": "Is Duck Meat Red Meat? A Simple Guide to Duck",
+  "excerpt": "Is duck meat red meat? A simple guide to what duck is, how it tastes and cooks, the best cuts, a marinade, and where to buy halal duck meat online.",
+  "kw": "is duck meat red meat"
+ },
+ {
+  "slug": "difference-between-goat-meat-and-mutton",
+  "title": "Difference Between Goat Meat and Mutton: Complete Guide",
+  "excerpt": "The difference between goat meat and mutton explained: animal, taste, texture, cooking methods, price and where to buy halal goat and mutton online.",
+  "kw": "difference between goat meat and mutton"
+ },
+ {
   "slug": "is-kangaroo-meat-halal",
   "title": "Is Kangaroo Meat Halal? A Complete Guide",
   "excerpt": "Is kangaroo meat halal? A balanced guide to the scholarly views, what certification involves, how kangaroo tastes and cooks, and where to buy it online.",
@@ -755,5 +803,53 @@ export const POST_INDEX = [
   "title": "What Is Halal Beef? A Complete Buyer's Guide",
   "excerpt": "What is halal beef? A complete buyer's guide to certification, cuts, Wagyu grades, bulk and wholesale buying, and how to order halal beef online in Australia.",
   "kw": "what is halal beef"
+ },
+ {
+  "slug": "buffalo-meat",
+  "title": "Buffalo Meat: A Complete Guide to Taste, Cuts and Cooking",
+  "excerpt": "Buffalo meat explained: what water buffalo meat tastes like, the best cuts, how to cook it, can you eat water buffalo meat, and where to buy it online.",
+  "kw": "buffalo meat"
+ },
+ {
+  "slug": "cooking-buffalo-meat",
+  "title": "Cooking Buffalo Meat: Simple Steaks, Mince and Slow Cooks",
+  "excerpt": "Cooking buffalo meat made simple: how to cook steaks, mince and slow-cooked cuts, whether people eat buffalo meat, and where to buy it in Australia.",
+  "kw": "cooking buffalo meat"
+ },
+ {
+  "slug": "difference-between-buffalo-meat-and-beef",
+  "title": "Difference Between Buffalo Meat and Beef: Complete Comparison",
+  "excerpt": "The difference between buffalo meat and beef: taste, texture, fat, cooking, price and availability, plus is buffalo meat good for you and where to buy it.",
+  "kw": "difference between buffalo meat and beef"
+ },
+ {
+  "slug": "camel-meat",
+  "title": "Camel Meat: A Complete Guide to Cuts, Taste and Cooking",
+  "excerpt": "Camel meat explained: taste, cuts, cooking, halal status, does camel meat have cholesterol, and where to buy halal camel meat in Australia online.",
+  "kw": "camel meat"
+ },
+ {
+  "slug": "can-muslims-eat-camel-meat",
+  "title": "Can Muslims Eat Camel Meat? A Simple Halal Guide",
+  "excerpt": "Can Muslims eat camel meat? A simple halal guide to scholarly views, taste, smell, cooking and where to buy halal camel meat online in Australia.",
+  "kw": "can muslims eat camel meat"
+ },
+ {
+  "slug": "bulk-beef",
+  "title": "Bulk Beef: The Complete Guide to Buying Beef in Bulk",
+  "excerpt": "Bulk beef explained: halves, quarters and cartons, wholesale prices per kg, storage and trade options, with halal beef delivered Australia-wide.",
+  "kw": "bulk beef"
+ },
+ {
+  "slug": "wholesale-chicken",
+  "title": "Wholesale Chicken: Easy Guide to Buying Halal Chicken by the Carton",
+  "excerpt": "Wholesale chicken explained: buying halal chicken by the carton, with wings, breast and drumsticks, bulk prices and trade accounts, delivered Australia-wide.",
+  "kw": "wholesale chicken"
+ },
+ {
+  "slug": "wholesale-lamb",
+  "title": "Wholesale Lamb: Cartons, Whole Lambs and Catering Packs Made Simple",
+  "excerpt": "Wholesale lamb made simple: cartons of shoulder, legs and curry pieces, whole lambs and catering packs, wholesale prices in Sydney, and trade accounts.",
+  "kw": "wholesale lamb"
  }
 ]
