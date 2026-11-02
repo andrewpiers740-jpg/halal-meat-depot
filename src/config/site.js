@@ -361,7 +361,7 @@ export function currentPath(path) {
 
 // Every permanent redirect (applied in next.config.mjs).
 // Blog posts retired 2026-10-27 (no qualifying keyword): 301 to the blog index
-const RETIRED_POSTS = ['slow-cooked-lamb-shanks','beef-curry-recipe','rogan-josh-with-beef','beef-pasta-bake','fried-rice-and-beef','marinated-lamb-chops','how-do-you-cook-lamb-cutlets','lamb-shank-soup','diced-lamb-recipes','slow-cooked-lamb-chops','lamb-neck-recipes','how-to-cook-lamb-ribs-in-oven','lamb-chop-casserole','slow-cooked-goat-recipes','recipe-for-goat-leg','chicken-thigh-slow-cooker-meals']
+const RETIRED_POSTS = ['slow-cooked-lamb-shanks','beef-curry-recipe','rogan-josh-with-beef','beef-pasta-bake','fried-rice-and-beef','marinated-lamb-chops','how-do-you-cook-lamb-cutlets','lamb-shank-soup','diced-lamb-recipes','slow-cooked-lamb-chops','how-to-cook-lamb-ribs-in-oven','lamb-chop-casserole','slow-cooked-goat-recipes','recipe-for-goat-leg','chicken-thigh-slow-cooker-meals']
 
 export const REDIRECTS = [
   ...Object.entries(MOVES).map(([source, destination]) => ({ source, destination })),

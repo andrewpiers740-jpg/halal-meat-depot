@@ -575,5 +575,59 @@ export const POST_INDEX = [
   "title": "Beef Noodles: Quick Stir-Fried Noodle Recipes",
   "excerpt": "Beef noodles in 20 minutes: stir-fried noodle recipes with tender strips of steak, the best cuts for the wok, black bean sauce and Wagyu upgrades.",
   "kw": "beef noodles"
+ },
+ {
+  "slug": "curry-sausages-recipe",
+  "title": "Curry Sausages Recipe: The Easy Aussie Classic",
+  "excerpt": "A curry sausages recipe for the easy Aussie classic: thick halal beef sausages in a mild, sweet curry sauce with apple and sultanas, plus serving ideas.",
+  "kw": "curry sausages recipe"
+ },
+ {
+  "slug": "beef-sausage-rolls",
+  "title": "Beef Sausage Rolls: Simple Homemade Sausage Rolls",
+  "excerpt": "Beef sausage rolls made at home: a simple recipe with seasoned halal mince and flaky pastry, plus sausage meat, bulk sausages and freezer tips.",
+  "kw": "beef sausage rolls"
+ },
+ {
+  "slug": "slow-cooked-lamb-shoulder",
+  "title": "Slow Cooked Lamb Shoulder: Tender Slow Cooker and Oven Methods",
+  "excerpt": "Slow cooked lamb shoulder that falls off the bone: oven and slow cooker methods, lamb shoulder vs leg, costs, buying tips and wholesale options.",
+  "kw": "slow cooked lamb shoulder"
+ },
+ {
+  "slug": "greek-lamb-shoulder",
+  "title": "Greek Lamb Shoulder: An Easy Slow-Roasted Recipe",
+  "excerpt": "Greek lamb shoulder, slow roasted with lemon, oregano and garlic until it falls off the bone, with lemon potatoes, tzatziki and tips for buying halal lamb.",
+  "kw": "greek lamb shoulder"
+ },
+ {
+  "slug": "butterflied-lamb-leg",
+  "title": "Butterflied Lamb Leg: Easy Roasting and BBQ Guide",
+  "excerpt": "Butterflied lamb leg cooks fast and evenly: how to marinate, roast or barbecue it, how long it takes, and the best halal lamb legs to buy.",
+  "kw": "butterflied lamb leg"
+ },
+ {
+  "slug": "lamb-leg-steak",
+  "title": "Lamb Leg Steak: Quick, Tender Pan and Grill Recipes",
+  "excerpt": "Lamb leg steak cooks in ten minutes: pan-fry and grill methods, marinades, serving ideas and where to buy halal lamb steaks and lamb legs.",
+  "kw": "lamb leg steak"
+ },
+ {
+  "slug": "lamb-neck-recipes",
+  "title": "Lamb Neck Recipes: Slow-Cooked, Tender and Easy",
+  "excerpt": "Lamb neck recipes for tender, slow-cooked dinners: braised chops, a rich stew, curry and a slow cooker method, plus where to buy halal lamb neck.",
+  "kw": "lamb neck recipes"
+ },
+ {
+  "slug": "lamb-backstrap-recipes",
+  "title": "Lamb Backstrap Recipes: Quick, Tender Dinners",
+  "excerpt": "Lamb backstrap recipes for quick, tender dinners: pan-seared, marinated and barbecued backstrap, how to cook it medium-rare and where to buy it online.",
+  "kw": "lamb backstrap recipes"
+ },
+ {
+  "slug": "beef-cheek-ragu",
+  "title": "Beef Cheek Ragu: A Rich, Easy Slow-Cooked Pasta Sauce",
+  "excerpt": "Beef cheek ragu is a rich, slow-cooked pasta sauce that shreds into silky strands. Our alcohol-free recipe, cuts to use, and where to buy beef cheeks.",
+  "kw": "beef cheek ragu"
  }
 ]
