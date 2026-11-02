@@ -54,7 +54,7 @@ const HERO_SLIDES = [
     caption: 'Halal meat: steaks and whole chickens',
     description: 'Raw halal meat — thick-cut steaks and whole chickens — from Halal Meat Depot in Greenacre, Sydney.',
   },
-].map((s) => ({ ...s, src: `/images/hero/${s.name}-v2-${s.widths.at(-1)}.avif`, srcSet: s.widths.map((w) => `/images/hero/${s.name}-v2-${w}.avif ${w}w`).join(', ') }))
+].map((s) => ({ ...s, src: `/images/hero/${s.name}-v3-${s.widths.at(-1)}.avif`, srcSet: s.widths.map((w) => `/images/hero/${s.name}-v3-${w}.avif ${w}w`).join(', ') }))
 
 export default function HomePage() {
   const featured = PRODUCTS.filter((p) => p.featured).slice(0, 8)

@@ -143,11 +143,11 @@ console.log('brand assets: apple-icon.png, og-v2.webp (logos + favicon are SVG)'
 }
 
 // 1c — homepage hero slides (AVIF, owner rule 2026-10-13): assets/hero/hero-<n>.<ext> →
-// public/images/hero/hero-<n>-v2-<width>.avif at 640 / 768 / 1080 px (never upscaled).
+// public/images/hero/hero-<n>-v3-<width>.avif at 640 / 768 / 1080 px (never upscaled).
 // Every slide is capped at 1080px, the narrowest source: if a later slide were wider, Chrome
 // would count it as a new, larger LCP image when the slider reaches it (GTmetrix LCP 7.1s,
-// 2026-10-15). Quality 45 keeps the full-width slides small; the dark scrim hides artefacts.
-// "-v2" because /images/ is cached for a year (immutable). HERO_SLIDES in page.jsx lists the widths.
+// 2026-10-15). Quality 45 (33 for the 640/768px mobile sizes, owner OK 2026-11-02) keeps the full-width slides small; the dark scrim hides artefacts.
+// "-v3" (was v2) because /images/ is cached for a year (immutable). HERO_SLIDES in page.jsx lists the widths.
 {
   const heroDir = out('assets/hero')
   const heroes = existsSync(heroDir) ? readdirSync(heroDir).filter((f) => /^hero-\d+\.(jpe?g|png|webp|avif)$/i.test(f)) : []
@@ -155,8 +155,8 @@ console.log('brand assets: apple-icon.png, og-v2.webp (logos + favicon are SVG)'
     const { width: srcW } = await sharp(resolve(heroDir, f)).metadata()
     const widths = [...new Set([640, 768, 1080].map((w) => Math.min(w, srcW)))]
     for (const w of widths) {
-      const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: w }).avif({ quality: 45 }).toBuffer()
-      await writeRetry(`public/images/hero/${basename(f, extname(f))}-v2-${w}.avif`, buf)
+      const buf = await sharp(resolve(heroDir, f)).rotate().resize({ width: w }).avif({ quality: w <= 768 ? 33 : 45 }).toBuffer()
+      await writeRetry(`public/images/hero/${basename(f, extname(f))}-v3-${w}.avif`, buf)
     }
     console.log(`hero ${f}: ${widths.join(', ')}px AVIF`)
   }
