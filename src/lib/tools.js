@@ -71,7 +71,7 @@ export async function runTool(name, args = {}) {
     case 'get_policies':
       return policies()
     case 'get_wholesale_info':
-      return { tiers: WHOLESALE_TIERS, apply: `${SITE.url}/halal-meat-wholesale/`, cartons: `${SITE.url}/shop/bulk-meat-boxes/` }
+      return { tiers: WHOLESALE_TIERS, apply: `${SITE.url}/halal-meat-manufacturers-wholesale/`, cartons: `${SITE.url}/shop/meat-packs/` }
     case 'create_order_draft': {
       const lines = (Array.isArray(args.items) ? args.items : []).map((i) => ({ slug: String(i.slug), qty: Number(i.quantity) }))
       const totals = computeTotals(lines, { paymentMethod: args.payment_method, speed: args.delivery_speed, postcode: args.postcode })

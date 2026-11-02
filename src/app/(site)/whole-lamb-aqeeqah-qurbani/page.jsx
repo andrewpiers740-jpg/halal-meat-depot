@@ -61,7 +61,7 @@ export default function AqeeqahQurbaniPage() {
             <a href={waChatLink()} className="btn btn--accent" target="_blank" rel="noopener noreferrer">
               Arrange your order on WhatsApp <Icon name="arrow" />
             </a>
-            <Link href="/shop/lamb/#whole-and-half-carcass" className="btn btn--ghost">
+            <Link href="/shop/lambs-for-sale/#whole-and-half-carcass" className="btn btn--ghost">
               Browse lamb
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function AqeeqahQurbaniPage() {
             friends and those in need.
           </p>
           <p>
-            Every carcass we supply is certified halal by {SITE.certifier} — see our <Link href="/halal-certified-meat/">halal certificate</Link>.
+            Every carcass we supply is certified halal by {SITE.certifier} — see our <Link href="/halal-food-australia-certified-meat/">halal certificate</Link>.
             For rulings on your own Aqeeqah or Qurbani, please follow the guidance of your local imam or scholar.
           </p>
         </div>
@@ -107,8 +107,8 @@ export default function AqeeqahQurbaniPage() {
             </div>
           ))}
           <p>
-            Buying for a larger gathering? See our <Link href="/shop/bulk-meat-boxes/">bulk halal meat cartons</Link> or{' '}
-            <Link href="/halal-meat-wholesale/">wholesale supply</Link>.
+            Buying for a larger gathering? See our <Link href="/shop/meat-packs/">bulk halal meat cartons</Link> or{' '}
+            <Link href="/halal-meat-manufacturers-wholesale/">wholesale supply</Link>.
           </p>
         </div>
       </section>

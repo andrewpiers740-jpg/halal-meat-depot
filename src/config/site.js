@@ -240,18 +240,18 @@ export const COMPLIANCE = {
     'hand-slaughtered', 'hand slaughtered', 'non-stunned', 'zabiha certified', 'hand zabiha',
     'HCAA', 'AFIC', 'ANIC', 'Halal Certification Authority Australia', 'Australian Federation of Islamic Councils',
     'Imams Council', 'NSW Halal Board', 'NSW Halal Authority', 'NSW-FA-49210', 'AU884',
-    'web3forms', 'organic', 'grass-fed', 'MSA graded',
+    'web3forms', 'MSA graded',
     'free pickup', 'pick up for free', 'pickup from our', // delivery only — no pickup (owner, 2026-10-09)
   ],
 }
 
 export const NAV = [
-  { href: '/halal-meat-shop/', label: 'Shop' },
-  { href: '/halal-meat-wholesale/', label: 'Wholesale' },
-  { href: '/halal-certified-meat/', label: 'Halal Certification' },
-  { href: '/about/', label: 'About' },
+  { href: '/halal-meat-shop-near-me/', label: 'Shop' },
+  { href: '/halal-meat-manufacturers-wholesale/', label: 'Wholesale' },
+  { href: '/halal-food-australia-certified-meat/', label: 'Halal Certification' },
+  { href: '/about-halal-butcher/', label: 'About' },
   { href: '/blog/', label: 'Blog' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/contact-halal-butcher-near-me/', label: 'Contact' },
 ]
 
 // Product pages that were removed from the catalogue → where their old URLs now go
@@ -259,28 +259,28 @@ export const NAV = [
 export const RETIRED_PRODUCTS = {
   'camel-curry-pieces-bone-in': '/shop/camel/',
   'camel-hump': '/shop/camel/',
-  'camel-striploin-steaks': '/product/camel-porterhouse-steaks/',
-  'camel-ribs-and-shoulder': '/product/camel-neck-disc-bone-in/',
-  'camel-stir-fry-strips': '/product/diced-camel-boneless/',
-  'camel-shoulder-boneless': '/product/diced-camel-boneless/',
-  'buffalo-striploin-steaks': '/product/buffalo-porterhouse-steaks/',
-  'buffalo-striploin-whole': '/product/buffalo-porterhouse-steaks/',
+  'camel-striploin-steaks': '/product/camel-steak-near-me-porterhouse/',
+  'camel-ribs-and-shoulder': '/product/buy-camel-meat-neck-disc-bone/',
+  'camel-stir-fry-strips': '/product/australia-camel-meat-diced-boneless/',
+  'camel-shoulder-boneless': '/product/australia-camel-meat-diced-boneless/',
+  'buffalo-striploin-steaks': '/product/buffalo-steak-price-porterhouse/',
+  'buffalo-striploin-whole': '/product/buffalo-steak-price-porterhouse/',
   'buffalo-rump-steaks': '/shop/water-buffalo/',
   'buffalo-curry-cut-bone-in': '/shop/water-buffalo/',
-  'buffalo-short-ribs': '/product/buffalo-asado-ribs/',
-  'buffalo-stir-fry-strips': '/product/diced-buffalo-boneless/',
+  'buffalo-short-ribs': '/product/ribs-asado-buffalo/',
+  'buffalo-stir-fry-strips': '/product/buffalo-meat-for-sale-diced-boneless/',
   'whole-pekin-ducks': '/product/whole-duck-size-20-23/',
   'whole-pekin-duck-single': '/product/whole-duck-size-20-23/',
   'duck-halves': '/product/whole-duck-size-20-23/',
-  'duck-breast-fillets-skin-on': '/product/duck-breast-fillets/',
-  'duck-breast-fillets-bulk-pack': '/product/duck-breast-fillets/',
-  'duck-maryland': '/product/duck-legs/',
-  'duck-leg-meat-boneless': '/product/duck-legs/',
+  'duck-breast-fillets-skin-on': '/product/duck-breast-near-me-fillets/',
+  'duck-breast-fillets-bulk-pack': '/product/duck-breast-near-me-fillets/',
+  'duck-maryland': '/product/duck-meat-near-me-legs/',
+  'duck-leg-meat-boneless': '/product/duck-meat-near-me-legs/',
   'duck-wings': '/shop/duck/',
-  'duck-giblets': '/product/duck-livers/',
+  'duck-giblets': '/product/buy-duck-liver/',
   'kangaroo-fillet': '/shop/kangaroo/',
-  'kangaroo-steaks': '/product/kangaroo-loin-fillet/',
-  'kangaroo-loin-medallions': '/product/kangaroo-loin-fillet/',
+  'kangaroo-steaks': '/product/buy-kangaroo-meat-loin-fillet/',
+  'kangaroo-loin-medallions': '/product/buy-kangaroo-meat-loin-fillet/',
   'diced-kangaroo': '/shop/kangaroo/',
   'kangaroo-stir-fry-strips': '/shop/kangaroo/',
   'beef-rump-whole': '/shop/beef/',
@@ -299,19 +299,19 @@ export const RETIRED_PRODUCTS = {
   'wagyu-topside-mb8-9': '/shop/beef/',
   'beef-shin-boneless': '/shop/beef/',
   'beef-marrow-bones-cut': '/shop/beef/',
-  'lamb-leg-boneless': '/shop/lamb/',
-  'lamb-shoulder-bone-in': '/shop/lamb/',
-  'lamb-curry-pieces': '/shop/lamb/',
-  'lamb-chump-chops': '/shop/lamb/',
-  'lamb-forequarter-whole': '/shop/lamb/',
-  'lamb-hindquarter-whole': '/shop/lamb/',
-  'lamb-neck-chops': '/shop/lamb/',
-  'lamb-easy-carve-leg': '/shop/lamb/',
-  'lamb-shoulder-boneless-rolled': '/shop/lamb/',
-  'lamb-shanks-frenched': '/shop/lamb/',
-  'lamb-mansaf-pieces': '/shop/lamb/',
-  'lamb-biryani-cut-leg-and-shoulder': '/shop/lamb/',
-  'lamb-kofta-mince': '/shop/lamb/',
+  'lamb-leg-boneless': '/shop/lambs-for-sale/',
+  'lamb-shoulder-bone-in': '/shop/lambs-for-sale/',
+  'lamb-curry-pieces': '/shop/lambs-for-sale/',
+  'lamb-chump-chops': '/shop/lambs-for-sale/',
+  'lamb-forequarter-whole': '/shop/lambs-for-sale/',
+  'lamb-hindquarter-whole': '/shop/lambs-for-sale/',
+  'lamb-neck-chops': '/shop/lambs-for-sale/',
+  'lamb-easy-carve-leg': '/shop/lambs-for-sale/',
+  'lamb-shoulder-boneless-rolled': '/shop/lambs-for-sale/',
+  'lamb-shanks-frenched': '/shop/lambs-for-sale/',
+  'lamb-mansaf-pieces': '/shop/lambs-for-sale/',
+  'lamb-biryani-cut-leg-and-shoulder': '/shop/lambs-for-sale/',
+  'lamb-kofta-mince': '/shop/lambs-for-sale/',
   'goat-curry-cut-bone-in': '/shop/goat/',
   'diced-goat-boneless': '/shop/goat/',
   'goat-shoulder-bone-in': '/shop/goat/',
@@ -348,7 +348,7 @@ export function currentPath(path) {
   if (MOVES[path]) return MOVES[path]
   const shop = path.match(/^\/shop\/([^/]+)\/(#.*)?$/)
   if (shop) {
-    const c = ALL_CATEGORIES.find((x) => x.slug === shop[1] || x.urlSlug === shop[1])
+    const c = ALL_CATEGORIES.find((x) => x.slug === shop[1] || x.urlSlug === shop[1] || x.prevUrlSlugs?.includes(shop[1]))
     if (c) return c.path + (shop[2] || '')
   }
   const prod = path.match(/^\/product\/([^/]+)\/$/)
@@ -360,10 +360,15 @@ export function currentPath(path) {
 }
 
 // Every permanent redirect (applied in next.config.mjs).
+// Blog posts retired 2026-10-27 (no qualifying keyword): 301 to the blog index
+const RETIRED_POSTS = ['slow-cooked-lamb-shanks','beef-curry-recipe','rogan-josh-with-beef','beef-pasta-bake','fried-rice-and-beef','marinated-lamb-chops','how-do-you-cook-lamb-cutlets','lamb-shank-soup','diced-lamb-recipes','slow-cooked-lamb-chops','lamb-neck-recipes','how-to-cook-lamb-ribs-in-oven','lamb-chop-casserole','slow-cooked-goat-recipes','recipe-for-goat-leg','chicken-thigh-slow-cooker-meals']
+
 export const REDIRECTS = [
   ...Object.entries(MOVES).map(([source, destination]) => ({ source, destination })),
   ...ALL_CATEGORIES.filter((c) => c.urlSlug !== c.slug).map((c) => ({ source: `/shop/${c.slug}/`, destination: c.path })),
+  ...ALL_CATEGORIES.flatMap((c) => (c.prevUrlSlugs || []).filter((s) => s !== c.slug).map((s) => ({ source: `/shop/${s}/`, destination: c.path }))),
   ...ALL_PRODUCTS.filter((p) => p.oldSlug).map((p) => ({ source: `/product/${p.oldSlug}/`, destination: `/product/${p.slug}/` })),
   ...ALL_PRODUCTS.flatMap((p) => (p.prevSlugs || []).map((s) => ({ source: `/product/${s}/`, destination: `/product/${p.slug}/` }))),
+  ...RETIRED_POSTS.map((slug) => ({ source: `/blog/${slug}/`, destination: '/blog/' })),
   ...Object.entries(RETIRED_PRODUCTS).map(([slug, dest]) => ({ source: `/product/${slug}/`, destination: currentPath(dest) })),
 ]

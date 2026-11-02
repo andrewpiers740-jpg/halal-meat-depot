@@ -875,10 +875,11 @@ for (const c of CATEGORIES) {
   c.focus = CATEGORY_SEO[c.slug]?.focus || c.slug
   c.urlSlug = CATEGORY_SEO[c.slug]?.urlSlug || c.slug
   c.path = `/shop/${c.urlSlug}/`
+  c.prevUrlSlugs = CATEGORY_SEO[c.slug]?.prevUrlSlugs || []
 }
 
 export const productBySlug = (slug) => PRODUCTS.find((x) => x.slug === slug || x.oldSlug === slug || x.prevSlugs.includes(slug))
 // Accepts the category id (product.cat) or its URL slug.
 export const categoryBySlug = (slug) => CATEGORIES.find((c) => c.slug === slug || c.urlSlug === slug)
-export const categoryPath = (id) => categoryBySlug(id)?.path || '/halal-meat-shop/'
+export const categoryPath = (id) => categoryBySlug(id)?.path || '/halal-meat-shop-near-me/'
 export const productsInCategory = (slug) => PRODUCTS.filter((x) => x.cat === slug)

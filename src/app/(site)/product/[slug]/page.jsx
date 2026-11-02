@@ -10,8 +10,10 @@ import Regulators from '@/components/Regulators'
 import { hasRealPhoto } from '@/lib/photos'
 import { productImageSeo } from '@/lib/imageSeo'
 import { productContent } from '@/lib/productContent'
+import { productGuide } from '@/lib/productGuide'
+import RichText from '@/components/RichText'
 import { SITE, PRODUCTS, productBySlug, categoryBySlug, containsExact, powerWordCount, postBySlug } from '@/config/site'
-import { productSchema } from '@/lib/schema'
+import { productSchema, faqSchema } from '@/lib/schema'
 import { PRIORITY_FROM } from '@/config/delivery'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
@@ -45,7 +47,7 @@ const GUIDE_BY_PRODUCT = {
   ...Object.fromEntries(["premium-beef-mince","extra-lean-beef-mince","beef-mince-carton","beef-mince-with-15-liver","beef-mince-with-liver-heart-and-kidney-30"].map((s) => [s, '30-minute-beef-mince-recipes'])),
   ...Object.fromEntries(["beef-bolar-blade-roast"].map((s) => [s, 'beef-bolar-blade-roast-recipe'])),
   ...Object.fromEntries(["flat-iron-steak-beef-oyster-blade","wagyu-oyster-blade-steaks-mb9","wagyu-whole-oyster-blade-mb9","wagyu-blade-steaks-mb5","wagyu-blade-steaks-mb9"].map((s) => [s, 'beef-oyster-blade-steak-recipe'])),
-  ...Object.fromEntries(["lamb-shanks","goat-foreshanks","lamb-osso-buco"].map((s) => [s, 'slow-cooked-lamb-shanks'])),
+  ...Object.fromEntries(["lamb-shanks","goat-foreshanks","lamb-osso-buco"].map((s) => [s, 'lamb-cuts-australia-guide'])),
   ...Object.fromEntries(["buy-roast-beef-online-joint","beef-topside-whole","angus-standing-rib-roast-mb3-4","wagyu-topside-roast-mb9","wagyu-rump-whole-mb5","wagyu-girello-mb5-eye-round"].map((s) => [s, 'best-beef-cut-for-roasting'])),
   ...Object.fromEntries(["beef-bones-for-soup","beef-marrow-bones","beef-tendon","chicken-frames","duck-bones-carton"].map((s) => [s, 'best-bones-for-bone-broth'])),
   ...Object.fromEntries(["gravy-beef","beef-chuck-meat-steak","beef-chuck-tender","beef-shin-hammer","buy-diced-beef-online","diced-beef-carton","beef-osso-buco","wagyu-chuck-steak-mb5","beef-oxtail"].map((s) => [s, 'gravy-beef-vs-chuck'])),
@@ -92,19 +94,23 @@ export default async function ProductPage({ params }) {
   // Offsets 1, -1, 4: neighbouring products no longer share most of their related cards (near-duplicate
   // pages, audit 2026-10-13); each offset is a bijection, so every product still gets 3 inbound links.
   const related = [...new Set([1, -1, 4].map((d) => siblings[(at + d + siblings.length) % siblings.length]))].filter((x) => x && x.slug !== p.slug).slice(0, 3)
-  const guides = [...new Set([GUIDE_BY_PRODUCT[p.slug], GUIDE_BY_CAT[p.cat] || 'halal-meat-australia-certification'])].map(postBySlug).filter(Boolean)
+  // GUIDE_BY_PRODUCT is keyed by the product's earlier URL slug, which now lives in oldSlug / prevSlugs.
+  const guideFor = [p.slug, p.oldSlug, p.imageSlug, ...p.prevSlugs].map((s) => GUIDE_BY_PRODUCT[s]).find(Boolean)
+  const guides = [...new Set([guideFor, GUIDE_BY_CAT[p.cat] || 'halal-meat-australia-certification'])].map(postBySlug).filter(Boolean)
   const enquire = waLink(`I have a question about ${p.name} (${p.unit}).`)
   const img = productImageSeo(p)
   const copy = productContent(p)
+  const more = productGuide(p)
 
   return (
     <>
       <JsonLd data={productSchema(p)} />
+      <JsonLd data={faqSchema(more.faqs)} />
       <div className="section" style={{ paddingTop: 28 }}>
         <div className="container">
           <Breadcrumbs
             crumbs={[
-              { name: 'Shop', path: '/halal-meat-shop/' },
+              { name: 'Shop', path: '/halal-meat-shop-near-me/' },
               { name: cat.name, path: `${cat.path}` },
               { name: p.name, path: `/product/${p.slug}/` },
             ]}
@@ -141,7 +147,7 @@ export default async function ProductPage({ params }) {
                   <br />
                   <span style={{ fontSize: '0.9rem' }}>
                     Certificate No. {SITE.certificate.number} —{' '}
-                    <Link href="/halal-certified-meat/#certificate">view certificate</Link>.
+                    <Link href="/halal-food-australia-certified-meat/#certificate">view certificate</Link>.
                   </span>
                 </div>
               </div>
@@ -151,7 +157,7 @@ export default async function ProductPage({ params }) {
                 </li>
                 <li>
                   <Icon name="clock" /> Priority Delivery from ${PRIORITY_FROM} — within 24 hours in Sydney,{' '}
-                  <Link href="/halal-meat-delivery/#priority">priced by distance</Link>
+                  <Link href="/meat-box-delivery/#priority">priced by distance</Link>
                 </li>
                 <li>
                   <Icon name="chilled" /> Packed {/frozen/i.test(`${p.unit} ${p.name}`) ? 'frozen' : 'chilled'} and dispatched once payment clears
@@ -179,11 +185,24 @@ export default async function ProductPage({ params }) {
               </p>
               <h3>{copy.tradeHeading}</h3>
               <p>
-                {copy.trade.join(' ')} See <Link href="/halal-meat-wholesale/">halal meat wholesale</Link> for trade accounts.
+                {copy.trade.join(' ')} See <Link href="/halal-meat-manufacturers-wholesale/">halal meat wholesale</Link> for trade accounts.
               </p>
               <h3>{copy.cookHeading}</h3>
               <p>{copy.cook}</p>
               {copy.cookNotes.length > 0 && <p>{copy.cookNotes.join(' ')}</p>}
+              <h3>{more.guideHeading}</h3>
+              <RichText blocks={more.guide.map((t) => ['p', t])} />
+              <h3>{more.storeHeading}</h3>
+              <p>{more.store}</p>
+              <h3>{more.packHeading}</h3>
+              <RichText blocks={more.pack.map((t) => ['p', t])} />
+              <h3>{p.name}: common questions</h3>
+              {more.faqs.map((f) => (
+                <div key={f.q}>
+                  <h4>{f.q}</h4>
+                  <p>{f.a}</p>
+                </div>
+              ))}
               <p>
                 More in our {guides.length > 1 ? 'guides' : 'guide'}:{' '}
                 {guides.map((g, i) => (
@@ -213,7 +232,7 @@ export default async function ProductPage({ params }) {
                 <a className="btn btn--wa btn--sm" href={enquire} target="_blank" rel="noopener noreferrer">
                   Ask on WhatsApp
                 </a>
-                <Link className="btn btn--ghost btn--sm" href="/contact/">
+                <Link className="btn btn--ghost btn--sm" href="/contact-halal-butcher-near-me/">
                   Contact form
                 </Link>
               </div>
@@ -233,7 +252,7 @@ export default async function ProductPage({ params }) {
                 ))}
               </div>
               <p style={{ marginTop: 20 }}>
-                <Link href={`${cat.path}`}>See all {cat.name.toLowerCase()} products</Link> · <Link href="/halal-meat-wholesale/">Wholesale accounts</Link>
+                <Link href={`${cat.path}`}>See all {cat.name.toLowerCase()} products</Link> · <Link href="/halal-meat-manufacturers-wholesale/">Wholesale accounts</Link>
               </p>
             </section>
           )}

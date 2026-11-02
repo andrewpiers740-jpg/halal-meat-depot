@@ -85,12 +85,6 @@ export const POST_INDEX = [
   "kw": "beef oyster blade steak recipe"
  },
  {
-  "slug": "slow-cooked-lamb-shanks",
-  "title": "Slow Cooked Lamb Shanks: Slow Cooker and Pressure Cooker",
-  "excerpt": "Slow cooked lamb shanks three ways: a slow cooker recipe, a fast pressure cooker method and a massaman curry, with timings and tips for buying lamb shanks.",
-  "kw": "slow cooked lamb shanks"
- },
- {
   "slug": "best-beef-cut-for-roasting",
   "title": "What Is the Best Beef Cut for Roasting? Topside, Rib and More",
   "excerpt": "The best beef cut for roasting depends on budget and style: compare rib, fillet, topside, rump and blade, with roasting temperatures and buying tips.",
@@ -139,12 +133,6 @@ export const POST_INDEX = [
   "kw": "beef rendang recipe"
  },
  {
-  "slug": "beef-curry-recipe",
-  "title": "Beef Curry Recipe: An Easy, Tender Everyday Curry",
-  "excerpt": "A simple beef curry recipe for tender results every time: the right cut, the spice base, stovetop and slow cooker timings, and how to fix a flat sauce.",
-  "kw": "beef curry recipe"
- },
- {
   "slug": "beef-korma",
   "title": "Beef Korma: A Mild, Creamy Curry Recipe for the Whole Family",
   "excerpt": "A mild, creamy beef korma with yoghurt, cashews and gentle spices, plus slow cooker timings and the best halal cuts for melt-in-the-mouth beef.",
@@ -167,12 +155,6 @@ export const POST_INDEX = [
   "title": "Beef Biryani: A Layered Rice Recipe With Tender Spiced Beef",
   "excerpt": "A step-by-step beef biryani: spiced, tender beef layered with fragrant basmati and slow-steamed (dum), plus the best halal cuts and timings.",
   "kw": "beef biryani"
- },
- {
-  "slug": "rogan-josh-with-beef",
-  "title": "Rogan Josh With Beef: A Kashmiri-Style Curry Recipe",
-  "excerpt": "How to make rogan josh with beef: Kashmiri chilli, fennel, ginger and yoghurt, slow-simmered until tender, plus the best halal cuts and slow cooker timings.",
-  "kw": "rogan josh with beef"
  },
  {
   "slug": "beef-skirt",
@@ -313,12 +295,6 @@ export const POST_INDEX = [
   "kw": "roast beef cooking time"
  },
  {
-  "slug": "beef-pasta-bake",
-  "title": "Beef Pasta Bake: An Easy, Cheesy Family Dinner",
-  "excerpt": "An easy beef pasta bake for the whole family: a rich beef mince and tomato sauce, short pasta and a golden cheese topping, with make-ahead and freezing tips.",
-  "kw": "beef pasta bake"
- },
- {
   "slug": "japanese-beef-curry",
   "title": "Japanese Beef Curry: A Rich, Mild Curry Rice Recipe",
   "excerpt": "A Japanese beef curry recipe made from scratch: a mild, thick, slightly sweet roux, tender beef, potato and carrot, served over short-grain rice.",
@@ -347,12 +323,6 @@ export const POST_INDEX = [
   "title": "Beef and Lemongrass: Vietnamese Stir-Fry and Grilled Beef",
   "excerpt": "Beef and lemongrass, Vietnamese style: a fragrant stir-fry, grilled lemongrass beef for noodle bowls, the best halal cuts and how to prepare lemongrass.",
   "kw": "beef and lemongrass"
- },
- {
-  "slug": "fried-rice-and-beef",
-  "title": "Fried Rice and Beef: Quick Wok Recipes With Mince or Steak",
-  "excerpt": "Fried rice and beef done right: beef mince fried rice, a steak version, the day-old rice secret, wok tips and how to make fried rice minced beef taste great.",
-  "kw": "fried rice and beef"
  },
  {
   "slug": "asian-beef-mince-recipes",
@@ -385,40 +355,10 @@ export const POST_INDEX = [
   "kw": "lamb chops in air fryer"
  },
  {
-  "slug": "marinated-lamb-chops",
-  "title": "Marinated Lamb Chops: Five Marinades and How to Cook Them",
-  "excerpt": "Marinated lamb chops five ways, how long to marinate, a lamb loin chops recipe for the grill, and how cooking lamb chops in slow cooker gives tender results.",
-  "kw": "marinated lamb chops"
- },
- {
-  "slug": "how-do-you-cook-lamb-cutlets",
-  "title": "How Do You Cook Lamb Cutlets? Pan, Grill and Oven Methods",
-  "excerpt": "How do you cook lamb cutlets perfectly? Pan, grill, crumbed and oven methods, cooking times for pink cutlets, a lamb cutlets recipe and serving ideas.",
-  "kw": "how do you cook lamb cutlets"
- },
- {
   "slug": "lamb-cooking-temperature",
   "title": "Lamb Cooking Temperature: Doneness Chart for Every Cut",
   "excerpt": "The right lamb cooking temperature for every cut and doneness: internal temperatures, roast lamb meat temperature, oven settings and resting times.",
   "kw": "lamb cooking temperature"
- },
- {
-  "slug": "lamb-shank-soup",
-  "title": "Lamb Shank Soup: A Hearty Winter Recipe With Vegetables",
-  "excerpt": "A hearty lamb shank soup recipe with barley, lentils and vegetables, stovetop and slow cooker lamb shanks methods, plus tips for a rich, clear broth.",
-  "kw": "lamb shank soup"
- },
- {
-  "slug": "diced-lamb-recipes",
-  "title": "Diced Lamb Recipes: Curries, Tagines, Stews and Skewers",
-  "excerpt": "Seven diced lamb recipes: curry, Moroccan tagine, Irish-style stew, biryani, skewers, a Greek kleftiko-style bake and a quick stir-fry.",
-  "kw": "diced lamb recipes"
- },
- {
-  "slug": "slow-cooked-lamb-chops",
-  "title": "Slow Cooked Lamb Chops: Tender, Saucy and Easy",
-  "excerpt": "Slow cooked lamb chops in a rich onion and tomato gravy: which chops to use, a lamb chops slow cooked recipe, oven and slow cooker timings and serving ideas.",
-  "kw": "slow cooked lamb chops"
  },
  {
   "slug": "leg-of-lamb-cooking-time",
@@ -439,18 +379,6 @@ export const POST_INDEX = [
   "kw": "lamb kofta wraps"
  },
  {
-  "slug": "lamb-neck-recipes",
-  "title": "Lamb Neck Recipes: Slow-Cooked Dishes Full of Flavour",
-  "excerpt": "Five lamb neck recipes: Moroccan tagine, Irish stew, Indian curry, slow-braised neck with lentils and a recipe for neck of lamb roasted until it falls apart.",
-  "kw": "lamb neck recipes"
- },
- {
-  "slug": "how-to-cook-lamb-ribs-in-oven",
-  "title": "How to Cook Lamb Ribs in Oven: Sticky, Tender and Crisp",
-  "excerpt": "How to cook lamb ribs in oven so they are tender inside and crisp outside: a two-stage lamb ribs recipe oven method, spice rubs, glazes and serving ideas.",
-  "kw": "how to cook lamb ribs in oven"
- },
- {
   "slug": "lamb-spit-roast-guide",
   "title": "Lamb Spit Roast Guide: How to Cook a Lamb on a Spit",
   "excerpt": "A complete lamb spit roast guide: choosing and preparing the lamb, securing lamb on a spit, charcoal and timing, seasoning, carving and feeding a crowd.",
@@ -461,12 +389,6 @@ export const POST_INDEX = [
   "title": "Quarter Lamb Buying Guide: What You Get and Is It Worth It?",
   "excerpt": "A quarter lamb buying guide: what a quarter, half or lamb whole includes, the butcher lamb cuts of meat you get, freezer space, value and how to order.",
   "kw": "quarter lamb"
- },
- {
-  "slug": "lamb-chop-casserole",
-  "title": "Lamb Chop Casserole: An Easy, Hearty Family Recipe",
-  "excerpt": "A hearty lamb chop casserole with vegetables in a rich gravy: oven and slow cooker lamb chops casserole methods, the best chops to use and serving ideas.",
-  "kw": "lamb chop casserole"
  },
  {
   "slug": "marinade-for-mutton-chops",
@@ -485,18 +407,6 @@ export const POST_INDEX = [
   "title": "Goat Meat vs Lamb Meat: Taste, Texture and How to Cook Each",
   "excerpt": "Goat meat vs lamb meat compared: flavour, fat, texture, which cuts to buy, goat shoulder vs leg meat, and how to cook each for curries, roasts and grills.",
   "kw": "goat meat vs lamb meat"
- },
- {
-  "slug": "slow-cooked-goat-recipes",
-  "title": "Slow Cooked Goat Recipes: Ribs, Shanks, Shoulder and Curry",
-  "excerpt": "Five slow cooked goat recipes: Caribbean curry goat, slow cooked goat ribs, slow cooked goat shanks, slow cooked goat shoulder and a Middle Eastern stew.",
-  "kw": "slow cooked goat recipes"
- },
- {
-  "slug": "recipe-for-goat-leg",
-  "title": "Recipe for Goat Leg: Roasted, Slow-Cooked and Curried",
-  "excerpt": "A recipe for goat leg three ways: spiced slow roast, Greek-style roast with potatoes and curry, plus goat leg or shoulder for curry and goat roasting tips.",
-  "kw": "recipe for goat leg"
  },
  {
   "slug": "what-does-goat-taste-like",
@@ -569,12 +479,6 @@ export const POST_INDEX = [
   "title": "Chicken Wing Meals: Baked, Smoked and Sticky Wing Recipes",
   "excerpt": "Chicken wing meals for every night: chicken wings baked with baking powder, smoking chicken wings in a smoker, five sauces and easy sides.",
   "kw": "chicken wing meals"
- },
- {
-  "slug": "chicken-thigh-slow-cooker-meals",
-  "title": "Chicken Thigh Slow Cooker Meals: Six Easy Dinners",
-  "excerpt": "Six chicken thigh slow cooker meals: butter chicken, honey garlic, Moroccan, creamy mushroom, chicken cacciatore and teriyaki-style thigh fillets.",
-  "kw": "chicken thigh slow cooker meals"
  },
  {
   "slug": "creamy-tuscan-chicken",

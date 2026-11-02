@@ -1,0 +1,138 @@
+import KeywordNotes from '@/components/KeywordNotes'
+import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import Icon from '@/components/Icon'
+import Email from '@/components/Email'
+import JsonLd from '@/components/JsonLd'
+import { SITE, CATEGORIES, PRODUCTS } from '@/config/site'
+import { organizationSchema, speakableSchema } from '@/lib/schema'
+import { pageMeta } from '@/lib/meta'
+
+export const metadata = pageMeta({
+  title: 'Halal Butcher in Greenacre | Fresh Halal Meat Since 2021',
+  description: 'Halal butcher in Greenacre, Sydney since 2021: Halal Meat Depot is certified by Halal Control Australia and delivers halal meat Australia-wide.',
+  path: '/about-halal-butcher/',
+})
+
+export default function AboutPage() {
+  const org = organizationSchema()
+  return (
+    <>
+      <JsonLd
+        data={[
+          { '@context': 'https://schema.org', '@type': 'AboutPage', url: `${SITE.url}/about-halal-butcher/`, name: 'About Halal Meat Depot', mainEntity: org },
+          speakableSchema('/about-halal-butcher/', ['.about-intro']),
+        ]}
+      />
+      <div className="page-head">
+        <div className="container">
+          <Breadcrumbs crumbs={[{ name: 'About', path: '/about-halal-butcher/' }]} />
+          <h1>About Halal Meat Depot, your online halal butcher</h1>
+          <p className="lead about-intro">{SITE.brandStatement}</p>
+        </div>
+      </div>
+
+      <section className="section" aria-labelledby="story-title">
+        <div className="container split">
+          <div className="prose">
+            <span className="eyebrow">Our story</span>
+            <h2 id="story-title">A halal meat depot, not a corner butcher</h2>
+            <p>
+              Halal Meat Depot started in {SITE.founded} in Greenacre, in Sydney&apos;s south-west, with a simple idea: make certified halal meat
+              easy to buy in the quantities families, restaurants and community groups actually need — and make it available beyond the
+              local area.
+            </p>
+            <p>
+              Instead of small retail portions, we sell practical bulk packs, whole and half carcasses and trade cartons, priced per pack
+              with the price per kilo shown on every product. A household can stock the freezer for a month in one order; a restaurant can
+              order its weekly curry cut and chicken fillet together; a family can order a whole lamb or goat for an Aqeeqah or a wedding
+              and have it cut exactly how they want.
+            </p>
+            <h2>One certifier across the whole range</h2>
+            <p>
+              Every product we sell is certified halal by {SITE.certifier}. We use one certifier for everything so there is never any doubt
+              about who stands behind the halal status of your meat. Read more on our{' '}
+              <Link href="/halal-food-australia-certified-meat/">halal certification page</Link>.
+            </p>
+            <h2>Meats that are hard to find in one place</h2>
+            <p>
+              Alongside everyday <Link href="/shop/halal-beef/">beef</Link>, <Link href="/shop/lambs-for-sale/">lamb</Link>, <Link href="/shop/goat-meat-near-me/">goat</Link> and{' '}
+              <Link href="/shop/halal-chicken-near-me/">chicken</Link>, we stock <Link href="/shop/camel-meat-near-me/">camel</Link>, <Link href="/shop/duck-meat/">duck</Link>,{' '}
+              <Link href="/shop/kangaroo-meat-near-me/">kangaroo</Link> and <Link href="/shop/buffalo-meat-near-me/">water buffalo</Link> — all certified halal, all in the
+              same order. Our range currently covers {PRODUCTS.length} products across {CATEGORIES.length} categories.
+            </p>
+            <h2>Who we supply</h2>
+            <p>
+              Families and households buying in bulk; restaurants, takeaways and kebab shops; caterers and event organisers; and community
+              groups ordering for Eid, weddings and Aqeeqah. Trade customers can order <Link href="/shop/meat-packs/">wholesale cartons</Link>{' '}
+              online or open a <Link href="/halal-meat-manufacturers-wholesale/">weekly account</Link>.
+            </p>
+            <h2>Delivery Australia-wide</h2>
+            <p>
+              We deliver Australia-wide from our depot at {SITE.addressLine}. Orders are packed chilled and dispatched once payment clears,
+              and we confirm your delivery date with you directly. Delivery is free on orders over ${SITE.freeShipOver}; otherwise it is a flat $
+              {SITE.flatShip}. Full details are on our <Link href="/meat-box-delivery/">delivery policy</Link> page.
+            </p>
+            <h2>Straightforward payment</h2>
+            <p>
+              We accept PayID, bank transfer and cryptocurrency, with {SITE.cryptoDiscountPct}% off your meat total when you pay in crypto. No
+              payment is taken on the website: after you order, we email the payment details for your chosen method, and your order is
+              confirmed once payment is received.
+            </p>
+            <h2>The business behind Halal Meat Depot</h2>
+            <p>
+              {SITE.name} is a registered business name operated by <strong>{SITE.legalName}</strong> (ABN {SITE.abn}), from{' '}
+              {SITE.addressLine}. Orders, wholesale accounts and invoices are issued by {SITE.legalName} trading as {SITE.name}. For
+              any enquiry, email <Email /> or <Link href="/contact-halal-butcher-near-me/">contact us</Link>.
+            </p>
+          </div>
+          <div className="stack">
+            <div className="card card--dark">
+              <h2 style={{ fontSize: '1.2rem' }}>Milestones</h2>
+              <ol className="check-list" style={{ listStyle: 'none' }}>
+                <li>
+                  <Icon name="store" /> <span><strong>{SITE.founded}</strong> — Halal Meat Depot established in Greenacre, Sydney</span>
+                </li>
+                <li>
+                  <Icon name="truck" /> <span><strong>Today</strong> — delivering certified halal meat Australia-wide</span>
+                </li>
+              </ol>
+            </div>
+            <div className="card card--tint">
+              <h2 style={{ fontSize: '1.2rem' }}>What sets us apart</h2>
+              <ul className="check-list">
+                <li><Icon name="shield" /> Every product certified by {SITE.certifier}</li>
+                <li><Icon name="box" /> Bulk packs, carcasses and cartons at depot prices</li>
+                <li><Icon name="scale" /> Price per kilo shown on every product</li>
+                <li><Icon name="utensils" /> Carcasses cut to your instructions</li>
+                <li><Icon name="percent" /> {SITE.cryptoDiscountPct}% off with crypto</li>
+              </ul>
+            </div>
+            <div className="card">
+              <h2 style={{ fontSize: '1.2rem' }}>Business details</h2>
+              <p className="muted">
+                {SITE.name} is a business name of <strong>{SITE.legalName}</strong>.
+              </p>
+              <p className="muted">{SITE.addressLine}</p>
+              <p className="muted" style={{ marginBottom: 0 }}>
+                ABN{' '}
+                <a href={SITE.abnUrl} target="_blank" rel="noopener noreferrer">
+                  {SITE.abn}
+                </a>
+                <br />
+                <Email />
+                <br />
+                <Link href="/contact-halal-butcher-near-me/">Contact us</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="section">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <KeywordNotes path="/about-halal-butcher/" />
+        </div>
+      </div>
+    </>
+  )
+}

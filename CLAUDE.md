@@ -4,7 +4,8 @@ Next.js 16 (App Router, JavaScript) ecommerce site for a Greenacre, Sydney halal
 
 ## Non-negotiable: halal certification claims
 - The ONLY certifier is **Halal Control Australia**. Never name any other certifier (HCAA, AFIC, ANIC, "NSW Halal Board/Authority", etc.).
-- Never claim "hand-slaughtered", "hand Zabiha", "non-stunned", "Zabiha certified", "organic", "grass-fed" or "MSA graded" for our products — the owner has not confirmed them.
+- Never claim "hand-slaughtered", "hand Zabiha", "non-stunned", "Zabiha certified" or "MSA graded" for our products — the owner has not confirmed them.
+- Owner-confirmed claims (2026-11-02): grass fed, lean, organic, cheap, free range and frozen may be used in keywords and copy. Chicken is sold fresh; "frozen" keywords go only on products sold frozen (camel, buffalo, kangaroo rump, beef liver/tongue/oxtail, chicken feet, marrow/soup bones, chicken frames) and on cook-from-frozen or storage topics.
 - Never invent licence numbers, certificate numbers, reviews, awards, statistics or milestones. Licence numbers will be supplied later.
 - The real halal certificate (owner-supplied) is `assets/halal-certificate.jpg`; its number and expiry live in `SITE.certificate`. Update both when it is renewed.
 - Authority: Australian Consumer Law (misleading claims). These terms are in `COMPLIANCE.bannedTerms` and the crosscheck fails the build if they appear.

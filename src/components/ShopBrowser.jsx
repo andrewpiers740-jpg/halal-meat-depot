@@ -99,7 +99,7 @@ export default function ShopBrowser({ categories, products }) {
           <h2>Categories</h2>
           <ul className="shop-cats">
             <li>
-              <a href="/halal-meat-shop/" className={!cat ? 'is-active' : ''} aria-current={!cat ? 'true' : undefined} onClick={pick('')}>
+              <a href="/halal-meat-shop-near-me/" className={!cat ? 'is-active' : ''} aria-current={!cat ? 'true' : undefined} onClick={pick('')}>
                 All products <span>{products.length}</span>
               </a>
             </li>

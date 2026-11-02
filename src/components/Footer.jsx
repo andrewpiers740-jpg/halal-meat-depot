@@ -38,7 +38,7 @@ export default function Footer() {
             <h2>Shop</h2>
             <ul>
               <li>
-                <Link href="/halal-meat-shop/">All products</Link>
+                <Link href="/halal-meat-shop-near-me/">All products</Link>
               </li>
               {CATEGORIES.map((c) => (
                 <li key={c.slug}>
@@ -50,21 +50,21 @@ export default function Footer() {
           <nav aria-label="Company">
             <h2>Company</h2>
             <ul>
-              <li><Link href="/about/">About us</Link></li>
-              <li><Link href="/halal-certified-meat/">Halal certification</Link></li>
-              <li><Link href="/halal-meat-wholesale/">Wholesale accounts</Link></li>
+              <li><Link href="/about-halal-butcher/">About us</Link></li>
+              <li><Link href="/halal-food-australia-certified-meat/">Halal certification</Link></li>
+              <li><Link href="/halal-meat-manufacturers-wholesale/">Wholesale accounts</Link></li>
               <li><Link href="/whole-lamb-aqeeqah-qurbani/">Aqeeqah &amp; Qurbani</Link></li>
               <li><Link href="/wagyu-steak/">Wagyu steak</Link></li>
               <li><Link href="/blog/">Blog</Link></li>
-              <li><Link href="/faq/">FAQ</Link></li>
-              <li><Link href="/contact/">Contact</Link></li>
+              <li><Link href="/faq-check-halal-food/">FAQ</Link></li>
+              <li><Link href="/contact-halal-butcher-near-me/">Contact</Link></li>
               <li><Link href="/account/">My account</Link></li>
             </ul>
           </nav>
           <nav aria-label="Policies">
             <h2>Policies</h2>
             <ul>
-              <li><Link href="/halal-meat-delivery/">Delivery policy</Link></li>
+              <li><Link href="/meat-box-delivery/">Delivery policy</Link></li>
               <li><Link href="/refund/">Refund &amp; returns policy</Link></li>
               <li><Link href="/terms/">Terms of sale</Link></li>
               <li><Link href="/privacy/">Privacy policy</Link></li>

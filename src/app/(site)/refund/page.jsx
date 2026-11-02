@@ -38,7 +38,7 @@ export default function RefundPage() {
         ]],
         ['h2', 'How to report a problem'],
         ['ul', [
-          'Contact us within 48 hours of delivery — email {{email}}, WhatsApp ' + SITE.phone + ', or use our [contact form](/contact/).',
+          'Contact us within 48 hours of delivery — email {{email}}, WhatsApp ' + SITE.phone + ', or use our [contact form](/contact-halal-butcher-near-me/).',
           'Include your order number (it starts with HMD-) and a short description of the problem.',
           'Send clear photos of the product, its packaging and label, and the delivery carton.',
           'Keep the product refrigerated or frozen and do not use it until we have replied — we may ask for more photos.',
@@ -53,7 +53,7 @@ export default function RefundPage() {
         ['h2', 'Cancelling an order'],
         ['p', 'You can cancel an order at no cost any time before it has been packed for dispatch — just message us with your order number. If you have already paid, we refund you in full. Once an order has been packed or dispatched, it can no longer be cancelled.'],
         ['h2', 'Deliveries that could not be completed'],
-        ['p', 'If we could not deliver because the address was incorrect, or nobody was available and no safe place was given, please see our [delivery policy](/halal-meat-delivery/). We will always try to contact you first.'],
+        ['p', 'If we could not deliver because the address was incorrect, or nobody was available and no safe place was given, please see our [delivery policy](/meat-box-delivery/). We will always try to contact you first.'],
         ['h2', 'How refunds are paid'],
         ['ul', [
           'PayID and bank transfer payments are refunded to the account they came from.',
@@ -64,7 +64,7 @@ export default function RefundPage() {
         ['p', 'The same policy applies to wholesale cartons. For weekly accounts, any different terms we agree with you in writing also apply.'],
         ['h2', 'Contact us'],
         ['p', `${SITE.legalName} trading as ${SITE.name} · ${SITE.addressLine} · ABN ${SITE.abn}`],
-        ['p', `Email {{email}} · WhatsApp or phone ${SITE.phone} · [Contact form](/contact/)`],
+        ['p', `Email {{email}} · WhatsApp or phone ${SITE.phone} · [Contact form](/contact-halal-butcher-near-me/)`],
       ]}
     />
   )

@@ -29,7 +29,7 @@ export default function ThankYouOrderPage() {
             received, and we will confirm your delivery date with you.
           </p>
           <div className="btn-row">
-            <Link href="/halal-meat-shop/" className="btn btn--primary">
+            <Link href="/halal-meat-shop-near-me/" className="btn btn--primary">
               Continue shopping
             </Link>
             <Link href="/account/" className="btn btn--ghost">

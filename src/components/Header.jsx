@@ -50,7 +50,7 @@ export default function Header({ siteName, nav, categories }) {
         <nav className="main-nav" aria-label="Primary">
           <ul>
             {nav.map((n) =>
-              n.href === '/halal-meat-shop/' ? (
+              n.href === '/halal-meat-shop-near-me/' ? (
                 <li
                   key={n.href}
                   className={`has-mega${shopOpen ? ' is-open' : ''}${suppress ? ' is-suppressed' : ''}`}
@@ -92,7 +92,7 @@ export default function Header({ siteName, nav, categories }) {
                         </div>
                       ))}
                     </div>
-                    <Link href="/halal-meat-shop/" className="mega-all">
+                    <Link href="/halal-meat-shop-near-me/" className="mega-all">
                       View all halal meat <Icon name="arrow" />
                     </Link>
                   </div>
@@ -147,7 +147,7 @@ export default function Header({ siteName, nav, categories }) {
               </li>
             ))}
             <li>
-              <Link href="/faq/">FAQ</Link>
+              <Link href="/faq-check-halal-food/">FAQ</Link>
             </li>
           </ul>
           <ul className="cats" aria-label="Shop by category">

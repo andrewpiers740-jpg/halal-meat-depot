@@ -5,7 +5,7 @@
 ## Facts
 
 - Legal entity: AUSBD HALAL FOODS PTY LTD (ABN 27 093 995 629), 43 Banksia Rd, Greenacre NSW 2190
-- Halal certification: Halal Control Australia, certificate No. HSS 027843, valid until 2 April 2027 — https://halalmeatdepot.com.au/halal-certified-meat/
+- Halal certification: Halal Control Australia, certificate No. HSS 027843, valid until 2 April 2027 — https://halalmeatdepot.com.au/halal-food-australia-certified-meat/
 - Delivery only (no pickup), Australia-wide. Minimum order $250; free delivery over $500, otherwise $25.
 - Payment: PayID, bank transfer or crypto (10% off the meat total with crypto). Phone/WhatsApp 0489 989 442.
 - Returns: no change-of-mind returns on fresh meat; problems reported within 48 hours are replaced or refunded — https://halalmeatdepot.com.au/refund/
@@ -16,7 +16,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Whole Beef
 
-- URL: https://halalmeatdepot.com.au/product/whole-beef/
+- URL: https://halalmeatdepot.com.au/product/buy-a-whole-cow-beef/
 - Pack: approx. 260kg carcass (hook weight) — $3377.40 (about $12.99/kg)
 - A whole beef carcass cut to your instructions — the lowest per-kilo price on beef we offer.
 - A whole beef carcass is every cut from one animal in a single order: both forequarters for curries, mince and brisket, and both hindquarters for the steaks and roasts. Butchers, community kitchens and extended families use a whole beef to fill freezers for months at a time.
@@ -24,7 +24,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Half Beef
 
-- URL: https://halalmeatdepot.com.au/product/half-beef/
+- URL: https://halalmeatdepot.com.au/product/buy-half-a-cow-beef/
 - Pack: approx. 130kg side (hook weight) — $1818.70 (about $13.99/kg)
 - A half beef (one side) cut to your instructions for restaurants, butchers and big families.
 - A half beef is one side of the carcass, split down the spine, so you receive one of every primal — chuck, rib, brisket, loin, rump and leg. It is the usual choice for a family sharing an order or a restaurant that wants a balanced mix of premium and everyday cuts.
@@ -32,7 +32,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Hindquarter
 
-- URL: https://halalmeatdepot.com.au/product/beef-hindquarter/
+- URL: https://halalmeatdepot.com.au/product/bulk-beef-purchase-hindquarter/
 - Pack: approx. 60kg quarter (hook weight) — $899.40 (about $14.99/kg)
 - A beef hindquarter — the rump, loin and leg, home of the premium steaks.
 - The hindquarter is the back section of the side, from the loin to the leg. It carries the striploin, eye fillet, rump and the silverside and topside, which is why it holds most of the grilling steaks and lean roasts on the animal.
@@ -40,7 +40,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Forequarter
 
-- URL: https://halalmeatdepot.com.au/product/beef-forequarter/
+- URL: https://halalmeatdepot.com.au/product/buy-bulk-beef-online-forequarter/
 - Pack: approx. 60kg quarter (hook weight) — $839.40 (about $13.99/kg)
 - A beef forequarter — chuck, blade, brisket and rib for slow cooking, mince and curries.
 - The forequarter is the front section of the side: chuck, blade, rib, brisket and shin. These are hard-working muscles with more connective tissue and flavour, making the forequarter the natural choice for curries, mince, stews and slow-cooked brisket.
@@ -48,7 +48,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Whole Rear Half
 
-- URL: https://halalmeatdepot.com.au/product/beef-whole-rear-half/
+- URL: https://halalmeatdepot.com.au/product/buy-a-half-of-cow-beef-whole-rear/
 - Pack: approx. 120kg (both hindquarters, hook weight) — $1738.80 (about $14.49/kg)
 - Both beef hindquarters together — every premium loin and leg cut from one animal.
 - The rear half joins both hindquarters from the same animal, giving two of each premium cut — two striploins, two eye fillets, two rumps and both legs. Steakhouses buy it to keep their loin and fillet supply consistent from week to week.
@@ -56,7 +56,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Tomahawk Steaks
 
-- URL: https://halalmeatdepot.com.au/product/beef-tomahawk-steaks/
+- URL: https://halalmeatdepot.com.au/product/tomahawk-steak-price-beef/
 - Pack: 2 steaks, approx. 2.4kg — $93.60 (about $39.00/kg)
 - Thick-cut tomahawk rib eye steaks with the long rib bone — a showpiece for the grill.
 - A tomahawk is a rib eye steak cut with the full rib bone left long and frenched clean. The eye of the rib is generously marbled, and the long bone makes it the steak people photograph before they eat it.
@@ -72,7 +72,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Porterhouse Steaks
 
-- URL: https://halalmeatdepot.com.au/product/sirloin-steak-beef-porterhouse/
+- URL: https://halalmeatdepot.com.au/product/porterhouse-steak-price-sirloin-beef/
 - Pack: 2kg pack — $71.98 (about $35.99/kg)
 - Classic porterhouse steaks with a fat cap for flavour.
 - Porterhouse is the Australian name for the sirloin steak cut from the striploin, the muscle that runs along the back. It has a fine grain, a firm, satisfying bite and a strip of fat along one edge that adds flavour as it renders.
@@ -88,7 +88,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef T-Bone Steaks
 
-- URL: https://halalmeatdepot.com.au/product/beef-steak-t-bone/
+- URL: https://halalmeatdepot.com.au/product/t-bone-steak-beef/
 - Pack: 2kg pack — $71.98 (about $35.99/kg)
 - T-bone steaks — sirloin and tenderloin on one bone.
 - A T-bone is cut across the short loin so a T-shaped bone separates two muscles: the porterhouse on one side and a smaller piece of eye fillet on the other. You get the bite of a sirloin and the tenderness of a fillet in one steak.
@@ -96,7 +96,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Rump Steaks
 
-- URL: https://halalmeatdepot.com.au/product/rump-beef-steaks/
+- URL: https://halalmeatdepot.com.au/product/beef-rump-steaks/
 - Pack: 2kg pack — $57.98 (about $28.99/kg)
 - Flavourful rump steaks for grilling, kebabs and steak sandwiches.
 - Rump steaks are cut from the hip, where several muscles meet, so a rump carries more beefy flavour and a little more chew than loin steaks. It is the steak of choice for kebab grills and steak sandwiches because it holds its texture when sliced.
@@ -104,7 +104,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Cattleman's Cutlet
 
-- URL: https://halalmeatdepot.com.au/product/beef-cattleman-s-cutlet/
+- URL: https://halalmeatdepot.com.au/product/cattleman-cutlet-beef-s/
 - Pack: 2 cutlets, approx. 3.2kg — $196.77 (about $61.49/kg)
 - Thick bone-in rib cutlets — a striking steak for sharing.
 - A cattleman's cutlet is a thick, bone-in rib eye — the same muscle as scotch fillet, left on a shortened rib bone. The bone shields the meat during cooking and adds flavour, which suits slow-then-hot cooking methods.
@@ -112,7 +112,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Dry-Aged Cattleman's Cutlet
 
-- URL: https://halalmeatdepot.com.au/product/dry-aged-cattleman-s-cutlet/
+- URL: https://halalmeatdepot.com.au/product/dry-aged-beef-ribeye-cattleman-s-cutlet/
 - Pack: 2 cutlets, approx. 3kg — $212.97 (about $70.99/kg)
 - Dry-aged bone-in rib cutlets with a deeper, nutty flavour.
 - These bone-in rib cutlets are dry-aged: hung uncovered under controlled refrigeration so moisture evaporates and natural enzymes tenderise the meat. The result is a denser texture and a savoury, nutty depth that fresh steak does not have.
@@ -120,7 +120,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Fiorentina Steak
 
-- URL: https://halalmeatdepot.com.au/product/beef-fiorentina-steak/
+- URL: https://halalmeatdepot.com.au/product/beef-steak-t-bone-fiorentina/
 - Pack: 2 steaks, approx. 2.4kg — $115.18 (about $47.99/kg)
 - Thick-cut Florentine-style T-bone for sharing.
 - Fiorentina is the Tuscan way of cutting the short loin: a very thick T-bone with both the sirloin and the fillet attached. It is cut to be cooked whole over coals and carved at the table for two or more people.
@@ -128,7 +128,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Dry-Aged Fiorentina Steak
 
-- URL: https://halalmeatdepot.com.au/product/dry-aged-fiorentina-steak/
+- URL: https://halalmeatdepot.com.au/product/dry-aged-beef-near-me-fiorentina-steak/
 - Pack: 2 steaks, approx. 2.4kg — $129.58 (about $53.99/kg)
 - Dry-aged Florentine-style T-bone with intense flavour.
 - A dry-aged Fiorentina combines the thick Tuscan T-bone cut with time in a dry-ageing room. Ageing concentrates the beef flavour and firms the texture, so the sirloin and fillet sides both develop a deeper, richer taste.
@@ -144,7 +144,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Dry-Aged New York Strip Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/dry-aged-beef-online-new-york-strip/
+- URL: https://halalmeatdepot.com.au/product/dry-aged-steak-near-me-beef-online-new-york-strip/
 - Pack: 2kg pack — $90.98 (about $45.49/kg)
 - Dry-aged bone-in New York strip for steak lovers.
 - This bone-in New York strip has been dry-aged before cutting, which removes moisture and lets natural enzymes work on the muscle. Expect a firmer bite, a darker crust when seared and a concentrated, slightly nutty beef flavour.
@@ -152,7 +152,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Beef Eye Fillet Steaks MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/angus-beef-eye-fillet-steaks-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/angus-steak-beef-eye-fillet-mb3-4/
 - Pack: 2kg pack — $169.98 (about $84.99/kg)
 - Marble score 3–4+ Angus eye fillet steaks.
 - These eye fillet steaks come from Angus cattle graded at marble score 3 to 4 plus, so they carry visibly more intramuscular fat than a standard fillet. That marbling adds richness to the leanest, most tender muscle on the animal. Because they are richer than a standard fillet, they need very little: salt, a hot pan and a knob of butter basted over in the last minute. Serve them as tall medallions at medium-rare with a mushroom or red-pepper sauce for a dinner-party main.
@@ -160,7 +160,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Beef Scotch Fillet Steaks MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/black-angus-beef-ribeye-steaks-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/beef-steak-ribeye-black-angus-mb3-4/
 - Pack: 2kg pack — $152.98 (about $76.49/kg)
 - Marble score 3–4+ Angus scotch fillet steaks.
 - Angus scotch fillet at marble score 3 to 4 plus has a dense web of fat through the eye of the rib. It is the richest everyday steak we sell, holding moisture on a hot grill and delivering a deep, beefy flavour.
@@ -168,7 +168,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Beef Porterhouse Steaks MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/angus-beef-porterhouse-steaks-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/black-angus-steak-beef-porterhouse-mb3-4/
 - Pack: 2kg pack — $103.98 (about $51.99/kg)
 - Marble score 3–4+ Angus porterhouse steaks.
 - An Angus porterhouse at marble score 3 to 4 plus keeps the firm grain of the striploin but with extra marbling through the muscle. It suits diners who want a steak with bite that is still juicy at medium. Cook it like a classic porterhouse: render the fat strip on its edge first, then sear hard and pull it at medium-rare to medium. Slice it across the grain for steak sandwiches, or serve it whole with chips, a peppercorn sauce and a crisp green salad.
@@ -176,7 +176,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Beef Rump Steaks MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/angus-beef-rump-steaks-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/rump-steak-price-angus-beef-mb3-4/
 - Pack: 2kg pack — $57.98 (about $28.99/kg)
 - Marble score 3–4+ Angus rump steaks — great value with real marbling.
 - Rump from marble score 3 to 4 plus Angus brings marbling to a cut that is usually lean. It keeps the full flavour rump is known for while eating noticeably softer and juicier, which makes it strong value per kilo. Rump suits marinades better than any loin steak, so try it with garlic, lemon and oregano, or a yoghurt and spice rub for kebabs. Cut against the grain into thin strips, it also makes a rich, beefy stir-fry for a fraction of the cost of fillet.
@@ -184,7 +184,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Beef Porterhouse Portion MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/angus-beef-porterhouse-portion-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/porterhouse-steak-angus-beef-portion-mb3-4/
 - Pack: approx. 2.5kg portion — $122.48 (about $48.99/kg)
 - A marble score 3–4+ Angus porterhouse portion for restaurants.
 - This is a section of Angus striploin at marble score 3 to 4 plus, left whole so kitchens can cut steaks to their own thickness. Portioning in-house gives restaurants control over plate weights and keeps the trim for skewers. Cut it into 300g steaks for a classic à la carte plate, or into thinner 200g steaks for lunch specials. The whole piece can also be roasted as a marbled sirloin roast and sliced for carveries and functions.
@@ -216,7 +216,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Angus Standing Rib Roast MB3-4+
 
-- URL: https://halalmeatdepot.com.au/product/angus-standing-rib-roast-mb3-4/
+- URL: https://halalmeatdepot.com.au/product/beef-rib-short-ribs-angus-standing-roast-mb3-4/
 - Pack: 3-rib roast, approx. 4kg — $263.96 (about $65.99/kg)
 - A three-rib Angus standing rib roast (MB3–4+) for celebrations.
 - A standing rib roast is the rib section left on the bone, cut here with three ribs from marble score 3 to 4 plus Angus. Roasting it upright on its bones keeps the meat moist and makes for an impressive carving joint.
@@ -224,7 +224,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Tomahawk MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-tomahawk-steak-mb9/
+- URL: https://halalmeatdepot.com.au/product/tomahawk-steak-near-me-wagyu-beef-mb9/
 - Pack: 1 steak, approx. 2.2kg — $333.28 (about $151.49/kg)
 - Marble score 9+ Wagyu tomahawk — one of the most heavily marbled steaks available.
 - At marble score 9 plus, this Wagyu tomahawk sits at the top of the marbling scale, with fine fat threaded through the whole eye of the rib. A single steak is rich enough to be sliced and shared among several people.
@@ -232,7 +232,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Tomahawk MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-tomahawk-mb5/
+- URL: https://halalmeatdepot.com.au/product/buy-tomahawk-steak-wagyu-mb5/
 - Pack: 2 steaks, approx. 3.6kg — $313.16 (about $86.99/kg)
 - Marble score 5+ Wagyu tomahawks with the long rib bone.
 - These Wagyu tomahawks are graded marble score 5 plus — far more marbled than standard beef, but still with a recognisable steak texture. The long frenched bone makes them a centrepiece for events and premium restaurant menus.
@@ -240,7 +240,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Fiorentina MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-fiorentina-mb5/
+- URL: https://halalmeatdepot.com.au/product/wagyu-beef-near-me-fiorentina-mb5/
 - Pack: 2 steaks, approx. 2.4kg — $218.38 (about $90.99/kg)
 - MB5+ Wagyu Fiorentina — a thick Wagyu T-bone for sharing.
 - This is a thick Fiorentina cut — sirloin and fillet on the T-bone — from marble score 5 plus Wagyu. Wagyu marbling softens the sirloin side and adds richness to the fillet, so the whole steak eats luxuriously.
@@ -248,7 +248,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Cattleman's Cutlet MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-cattleman-s-cutlet-mb5/
+- URL: https://halalmeatdepot.com.au/product/wagyu-ribeye-cattleman-s-cutlet-mb5/
 - Pack: 2 cutlets, approx. 2.8kg — $291.17 (about $103.99/kg)
 - MB5+ Wagyu bone-in rib cutlets.
 - A Wagyu cattleman's cutlet is a bone-in rib eye from marble score 5 plus cattle. The rib section is naturally the most marbled part of the animal, and with Wagyu genetics the meat becomes buttery and rich.
@@ -264,7 +264,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Porterhouse Steaks MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-porterhouse-steak-mb9/
+- URL: https://halalmeatdepot.com.au/product/wagyu-butcher-near-me-porterhouse-steak-mb9/
 - Pack: 2kg pack — $378.98 (about $189.49/kg)
 - MB9+ Wagyu porterhouse — the top of the marbling scale.
 - These are striploin steaks from marble score 9 plus Wagyu, the highest band we stock. The fat is so finely distributed that the meat looks almost pink-white, and it melts as it cooks.
@@ -288,7 +288,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Eye Fillet Steaks MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-eye-fillet-steaks-mb9/
+- URL: https://halalmeatdepot.com.au/product/buy-wagyu-beef-online-eye-fillet-steaks-mb9/
 - Pack: 2kg pack — $378.98 (about $189.49/kg)
 - MB9+ Wagyu eye fillet steaks for fine dining.
 - Marble score 9 plus Wagyu eye fillet is the most tender muscle from the most heavily marbled cattle we supply. It is a fine-dining cut, best served in small, carefully cooked portions. At this marbling, 100 to 150g per person is a generous serve. Cook them gently and briefly — a quick sear and a short rest — and serve with simple sides so the beef stays the centre of attention.
@@ -296,7 +296,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Rump Steaks MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-rump-steak-mb5/
+- URL: https://halalmeatdepot.com.au/product/wagyu-rump-steak-beef-mb5/
 - Pack: 2kg pack — $112.98 (about $56.49/kg)
 - MB5+ Wagyu rump steaks — Wagyu flavour at a friendlier price.
 - Wagyu rump steaks come from the hip of marble score 5 plus cattle. Rump has more flavour than the loin, and the marbling adds juiciness — the combination gives Wagyu eating quality at a lower price per kilo than loin cuts. Cook them to medium-rare and slice across the grain to show off the marbling. They make a striking steak salad or steak frites, and the rich flavour stands up well to chimichurri or garlic butter.
@@ -304,7 +304,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Rump Steaks MB9+
 
-- URL: https://halalmeatdepot.com.au/product/rump-steak-wagyu-mb9/
+- URL: https://halalmeatdepot.com.au/product/butcher-wagyu-beef-rump-steak-mb9/
 - Pack: 2kg pack — $150.98 (about $75.49/kg)
 - MB9+ Wagyu rump steaks.
 - At marble score 9 plus, these rump steaks are so well marbled that they eat like a loin steak while keeping rump's fuller flavour. They suit restaurants wanting a premium steak at a sharper price point. With this much marbling, keep portions modest and the cooking brief: a very hot pan, a minute or two a side and a proper rest. Serve sliced, so everyone at the table gets a taste of the richest rump steak we sell.
@@ -312,7 +312,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Rump Whole MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-rump-whole-mb5/
+- URL: https://halalmeatdepot.com.au/product/wagyu-beef-butcher-rump-whole-mb5/
 - Pack: approx. 7kg whole rump — $363.93 (about $51.99/kg)
 - A whole MB5+ Wagyu rump for restaurants portioning their own steaks.
 - A whole Wagyu rump from marble score 5 plus cattle includes the cap, centre and eye. Restaurants portion it into several styles of steak and turn the trim into Wagyu kebabs, burgers and mince.
@@ -320,7 +320,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Oyster Blade Steaks MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-oyster-blade-steaks-mb9/
+- URL: https://halalmeatdepot.com.au/product/wagyu-near-me-oyster-blade-steaks-mb9/
 - Pack: 2kg pack — $183.98 (about $91.99/kg)
 - MB9+ Wagyu oyster blade steaks.
 - Oyster blade comes from the shoulder blade; split along its central sinew, it gives the cut known as flat iron. From marble score 9 plus Wagyu, these oyster blade steaks are intensely marbled and surprisingly tender for a shoulder cut.
@@ -328,7 +328,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Whole Oyster Blade MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-oyster-blade-mb9/
+- URL: https://halalmeatdepot.com.au/product/whole-oyster-blade-wagyu-beef-mb9/
 - Pack: approx. 3.5kg whole piece — $314.96 (about $89.99/kg)
 - A whole MB9+ Wagyu oyster blade for cutting flat-iron steaks.
 - This is the whole oyster blade muscle from marble score 9 plus Wagyu, left uncut. Kitchens split it into flat-iron steaks, slice it thin for barbecue or slow-roast it whole for a rich, sliceable joint.
@@ -336,7 +336,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Blade Steaks MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-blade-steaks-mb5/
+- URL: https://halalmeatdepot.com.au/product/blade-steak-wagyu-mb5/
 - Pack: 2kg pack — $61.98 (about $30.99/kg)
 - MB5+ Wagyu blade steaks for grilling and braising.
 - Blade steaks are cut from the shoulder, a working muscle with plenty of flavour. With marble score 5 plus Wagyu marbling, they grill well when sliced thin and become silky when braised. They are a good-value way into Wagyu: grill them whole to medium-rare and slice thinly against the grain, or dice them for a rich beef curry that cooks faster and stays juicier than ordinary chuck.
@@ -344,7 +344,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Blade Steaks MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-blade-steaks-mb9/
+- URL: https://halalmeatdepot.com.au/product/beef-blade-steak-wagyu-mb9/
 - Pack: 2kg pack — $78.98 (about $39.49/kg)
 - MB9+ Wagyu blade steaks.
 - These marble score 9 plus Wagyu blade steaks carry extreme marbling for a shoulder cut. They are a favourite for Korean barbecue, where thin slices cook in seconds and the fat crisps on the grill. Slice them 3–5mm thick for the barbecue plate or hot pot, where they cook in moments. For a whole steak, keep the heat high and the time short, because this much marbling softens quickly.
@@ -352,7 +352,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Chuck Steak MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-chuck-steak-mb5/
+- URL: https://halalmeatdepot.com.au/product/beef-chuck-steak-wagyu-mb5/
 - Pack: 2kg pack — $101.98 (about $50.99/kg)
 - MB5+ Wagyu chuck steak for braising and slow cooking.
 - Chuck comes from the neck and shoulder and is full of connective tissue that melts during slow cooking. Wagyu chuck at marble score 5 plus adds marbling on top, giving braises and pies an especially rich, tender result.
@@ -360,7 +360,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Yakiniku MB5+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-yakiniku-mb5/
+- URL: https://halalmeatdepot.com.au/product/beef-karubi-wagyu-yakiniku-mb5/
 - Pack: 2kg pack — $226.98 (about $113.49/kg)
 - Thin-sliced MB5+ Wagyu for yakiniku and table grilling.
 - Yakiniku is Japanese-style grilled meat, cooked piece by piece at the table. These slices of marble score 5 plus Wagyu are cut thin and even so they cook in moments on a hot plate or grill.
@@ -376,7 +376,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Minute Steaks MB5+ with Pepper Seasoning
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-minute-steaks-mb5-with-pepper-seasoning/
+- URL: https://halalmeatdepot.com.au/product/price-of-a-steak-wagyu-minute-mb5-pepper-seasoning/
 - Pack: 2kg pack — $63.98 (about $31.99/kg)
 - Thin MB5+ Wagyu minute steaks, pepper-seasoned and ready to cook.
 - These are thin marble score 5 plus Wagyu steaks, already seasoned with pepper so they can go straight into the pan. Cut for speed, they suit busy cafes and takeaway counters serving Wagyu steak rolls.
@@ -384,7 +384,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Girello MB5+ (Eye Round)
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-girello-mb5-eye-round/
+- URL: https://halalmeatdepot.com.au/product/beef-round-eye-of-round-wagyu-girello-mb5/
 - Pack: approx. 3kg piece — $83.97 (about $27.99/kg)
 - MB5+ Wagyu girello (eye round) for roasting and thin slicing.
 - Girello, or eye round, is a long, even muscle from the rear leg. Normally very lean, at marble score 5 plus Wagyu it has enough marbling to roast well, and its uniform shape gives neat, consistent slices.
@@ -400,7 +400,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Brisket MB9+
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-brisket-mb9/
+- URL: https://halalmeatdepot.com.au/product/buy-wagyu-beef-brisket-online-mb9/
 - Pack: approx. 9.5kg whole brisket — $341.91 (about $35.99/kg)
 - A whole MB9+ Wagyu brisket for smoking and braising.
 - A whole Wagyu brisket includes both the lean flat and the fattier point. At marble score 9 plus, the marbling runs through the flat as well, which is why Wagyu brisket stays moist through very long smokes.
@@ -408,7 +408,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Eye Fillet Whole
 
-- URL: https://halalmeatdepot.com.au/product/whole-beef-fillet/
+- URL: https://halalmeatdepot.com.au/product/buy-beef-fillet-online-whole/
 - Pack: approx. 2kg whole piece — $109.98 (about $54.99/kg)
 - A whole beef eye fillet — trim and portion your own steaks.
 - This is the complete eye fillet — head, centre and tail — left whole and untrimmed. Buying the whole fillet lets you cut medallions, chateaubriand and a centre roast yourself, at a lower price per kilo than pre-cut steaks.
@@ -416,7 +416,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Eye Fillet Whole MB4+
 
-- URL: https://halalmeatdepot.com.au/product/eye-fillet-beef-whole-mb4/
+- URL: https://halalmeatdepot.com.au/product/eye-fillet-price-beef-whole-mb4/
 - Pack: approx. 2kg whole piece — $160.98 (about $80.49/kg)
 - A whole MB4+ beef eye fillet with extra marbling.
 - A whole eye fillet graded MB4 plus carries extra marbling through the most tender muscle on the animal. Kitchens trim it into thick medallions or roast it whole for special occasions.
@@ -424,7 +424,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Porterhouse Portion
 
-- URL: https://halalmeatdepot.com.au/product/porterhouse-beef-portion/
+- URL: https://halalmeatdepot.com.au/product/beef-roast-near-me-porterhouse-portion/
 - Pack: approx. 3kg portion — $101.97 (about $33.99/kg)
 - A beef porterhouse (striploin) portion for cutting your own steaks.
 - A porterhouse portion is a section of whole striploin, the muscle porterhouse steaks are cut from. Restaurants and families buy it this way to cut steaks to the thickness they want and pay less per kilo. A typical portion yields several thick steaks plus trim for stir-fries or skewers. Leave the fat cap on while you cut, trim it to about 5mm on each steak, and freeze any steaks you will not cook within a few days.
@@ -432,7 +432,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Porterhouse Portion MB4+
 
-- URL: https://halalmeatdepot.com.au/product/beef-porterhouse-roast-mb4/
+- URL: https://halalmeatdepot.com.au/product/buy-beef-roasts-online-porterhouse-mb4/
 - Pack: approx. 3kg portion — $197.97 (about $65.99/kg)
 - An MB4+ beef porterhouse portion for premium steaks.
 - This striploin portion is graded MB4 plus, so it carries more marbling than our standard porterhouse portion. Cut it into thick premium steaks or roast it whole as a sirloin roast. The extra marbling makes it worth cutting thicker — 3 to 4cm — and cooking reverse-sear style: gently in a low oven, then seared hard. Roasted whole, it slices into rosy, marbled rounds for a special occasion.
@@ -440,7 +440,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Scotch Fillet Portion MB4+
 
-- URL: https://halalmeatdepot.com.au/product/beef-scotch-fillet-roast-mb4/
+- URL: https://halalmeatdepot.com.au/product/whole-scotch-fillet-beef-roast-mb4/
 - Pack: approx. 2.5kg portion — $188.73 (about $75.49/kg)
 - An MB4+ scotch fillet (cube roll) portion.
 - A scotch fillet portion is a section of the boneless rib, also called the cube roll. At MB4 plus marbling it makes rich, thick steaks or a roast beef that stays juicy when carved.
@@ -448,7 +448,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Rump Portion
 
-- URL: https://halalmeatdepot.com.au/product/beef-rump-portion/
+- URL: https://halalmeatdepot.com.au/product/rump-medallion-beef-portion/
 - Pack: approx. 3.5kg portion — $82.21 (about $23.49/kg)
 - A beef rump portion for steaks, skewers and roasting.
 - A rump portion is a section of the whole rump, containing more than one muscle. Separating it gives you steaks, a small roast and lean pieces for skewers — the reason kebab kitchens buy rump this way.
@@ -472,7 +472,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Topside Whole
 
-- URL: https://halalmeatdepot.com.au/product/beef-topside-whole/
+- URL: https://halalmeatdepot.com.au/product/roast-beef-topside-whole/
 - Pack: approx. 6kg whole piece — $95.94 (about $15.99/kg)
 - Lean whole beef topside for roasts, schnitzel, shawarma and thin slicing.
 - Topside is a large, lean muscle from the inside of the rear leg. Because it is lean and fine-grained, it slices thinly and cleanly — ideal for shawarma, schnitzel, roast beef and minute steaks.
@@ -480,7 +480,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Bolar Blade Roast
 
-- URL: https://halalmeatdepot.com.au/product/beef-bolar-blade-roast/
+- URL: https://halalmeatdepot.com.au/product/beef-roast-bolar-blade/
 - Pack: approx. 3kg piece — $50.97 (about $16.99/kg)
 - Beef bolar blade for pot roasts and slow cooking.
 - Bolar blade is cut from the shoulder, in front of the blade bone. It has a ribbon of connective tissue that softens during slow cooking, so a bolar blade roast becomes moist and tender as a pot roast.
@@ -536,7 +536,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Minute Steaks
 
-- URL: https://halalmeatdepot.com.au/product/beef-minute-steaks/
+- URL: https://halalmeatdepot.com.au/product/steak-150g-beef-minute/
 - Pack: 2kg pack — $46.98 (about $23.49/kg)
 - Thin-sliced beef minute steaks for sandwiches, schnitzel and quick meals.
 - Minute steaks are thin slices cut from lean leg muscle, sized to cook in about a minute a side. They are the base for quick steak sandwiches, schnitzels and stir-fries on busy weeknights.
@@ -544,7 +544,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Porterhouse Minute Steaks
 
-- URL: https://halalmeatdepot.com.au/product/beef-porterhouse-minute-steaks/
+- URL: https://halalmeatdepot.com.au/product/buy-porterhouse-steak-near-me-beef-minute/
 - Pack: 2kg pack — $74.98 (about $37.49/kg)
 - Thin porterhouse minute steaks for fast, tender cooking.
 - These are porterhouse — striploin — steaks sliced thin for fast cooking. You get the tenderness of a loin steak in a format that cooks in moments, which suits cafes, takeaways and lunch menus.
@@ -552,7 +552,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Asado Ribs
 
-- URL: https://halalmeatdepot.com.au/product/beef-asado-cut-ribs/
+- URL: https://halalmeatdepot.com.au/product/beef-ribs-asado-cut/
 - Pack: 2kg pack — $73.98 (about $36.99/kg)
 - Thin cross-cut beef asado ribs for hot, fast grilling.
 - Asado ribs are short ribs cut across the bones into thin strips, the style used for Argentine asado and Korean galbi. Thin cutting means the meat cooks quickly over high heat while staying attached to small pieces of bone.
@@ -568,7 +568,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Chuck Tender
 
-- URL: https://halalmeatdepot.com.au/product/beef-chuck-tender/
+- URL: https://halalmeatdepot.com.au/product/chuck-steak-price-beef-tender/
 - Pack: approx. 3.2kg (2 pieces) — $62.37 (about $19.49/kg)
 - Beef chuck tender for pot roasts and shredding.
 - The chuck tender is a cone-shaped muscle from the shoulder that looks like a fillet but behaves like a braising cut. Cooked slowly, it holds together for slicing or pulls apart for shredded beef.
@@ -584,7 +584,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Osso Buco
 
-- URL: https://halalmeatdepot.com.au/product/beef-osso-buco/
+- URL: https://halalmeatdepot.com.au/product/osso-buco-near-me-beef/
 - Pack: 3kg pack — $47.97 (about $15.99/kg)
 - Cross-cut beef shin with marrow bone for osso buco and paya-style broths.
 - Beef osso buco is the shin cut across the bone into thick discs, each with a ring of marrow in the centre. Braised slowly, the meat turns tender and the marrow enriches the sauce.
@@ -608,7 +608,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Packer Cut Beef Brisket (Navel End)
 
-- URL: https://halalmeatdepot.com.au/product/packer-cut-beef-brisket-navel-end/
+- URL: https://halalmeatdepot.com.au/product/beef-brisket-near-me-packer-cut-navel-end/
 - Pack: approx. 4kg — $67.96 (about $16.99/kg)
 - Packer-cut beef brisket from the navel end.
 - This packer-cut section comes from the navel end of the brisket, which carries more fat between the muscles. That extra fat keeps it juicy during long smoking and slow braising.
@@ -616,7 +616,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Point End Brisket
 
-- URL: https://halalmeatdepot.com.au/product/beef-point-end-brisket/
+- URL: https://halalmeatdepot.com.au/product/beef-brisket-price-point-end/
 - Pack: approx. 4kg — $77.96 (about $19.49/kg)
 - The point end of the brisket — marbled and ideal for burnt ends.
 - The point is the thicker, fattier half of the brisket that sits on top of the flat. Its marbling makes it the preferred cut for burnt ends and for braises where you want rich, tender meat.
@@ -624,7 +624,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Short Ribs
 
-- URL: https://halalmeatdepot.com.au/product/buy-beef-short-ribs/
+- URL: https://halalmeatdepot.com.au/product/beef-ribs-near-me-buy-short/
 - Pack: approx. 4kg — $131.96 (about $32.99/kg)
 - Meaty beef short ribs for braising, smoking and Korean-style grilling.
 - Short ribs are cut from the lower rib cage, with thick layers of meat and fat over the bones. They suit long braises and low-and-slow smoking, and the bone adds flavour to the sauce.
@@ -632,7 +632,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Conical Muscle
 
-- URL: https://halalmeatdepot.com.au/product/beef-conical-muscle/
+- URL: https://halalmeatdepot.com.au/product/best-cuts-of-beef-conical-muscle/
 - Pack: approx. 4kg — $77.96 (about $19.49/kg)
 - Beef conical muscle — a lean shin cut for long, gentle cooking.
 - The conical muscle is a lean, cone-shaped piece from the shin. It holds its shape through long simmering, so it suits curries and stews where you want neat, intact pieces of beef.
@@ -656,7 +656,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Mince with 15% Liver
 
-- URL: https://halalmeatdepot.com.au/product/beef-mince-with-15-liver/
+- URL: https://halalmeatdepot.com.au/product/beef-liver-mince-15/
 - Pack: 5kg pack — $64.95 (about $12.99/kg)
 - Beef mince blended with 15% beef liver for extra iron and depth.
 - This beef mince has 15 percent beef liver ground through it. The liver adds a deeper, savoury flavour and extra iron while still cooking and tasting much like regular mince.
@@ -664,7 +664,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Mince with Liver, Heart & Kidney (30%)
 
-- URL: https://halalmeatdepot.com.au/product/beef-mince-with-liver-heart-and-kidney-30/
+- URL: https://halalmeatdepot.com.au/product/minced-meat-beef-mince-liver-heart-kidney-30/
 - Pack: 5kg pack — $79.95 (about $15.99/kg)
 - Nose-to-tail beef mince with 30% liver, heart and kidney.
 - This nose-to-tail beef mince blends 30 percent liver, heart and kidney through regular mince. It is a simple way to bring organ meat into everyday meals like bolognese, kofta and keema.
@@ -680,7 +680,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Stir-Fry Strips
 
-- URL: https://halalmeatdepot.com.au/product/beef-stir-fry-strips/
+- URL: https://halalmeatdepot.com.au/product/best-cut-for-beef-stir-fry-strips/
 - Pack: 5kg pack — $107.45 (about $21.49/kg)
 - Beef strips cut across the grain for stir-fries, fajitas and shawarma.
 - Beef stir-fry strips are cut across the grain into thin, even lengths. Cutting against the grain shortens the muscle fibres, which keeps the strips tender after fast, hot cooking.
@@ -696,7 +696,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Chuck & Brisket Burgers
 
-- URL: https://halalmeatdepot.com.au/product/beef-patties-chuck-and-brisket/
+- URL: https://halalmeatdepot.com.au/product/beef-burger-near-me-patties-chuck-brisket/
 - Pack: 2kg pack (approx. 16 burgers) — $40.98 (about $20.49/kg)
 - Beef burgers made from chuck and brisket.
 - Our burgers blend chuck and brisket, two flavourful forequarter cuts with natural marbling. The mix gives a juicy, beefy patty that holds together on the grill.
@@ -704,7 +704,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Veal Osso Buco
 
-- URL: https://halalmeatdepot.com.au/product/veal-osso-buco/
+- URL: https://halalmeatdepot.com.au/product/buy-veal-online-osso-buco/
 - Pack: 2kg pack — $29.98 (about $14.99/kg)
 - Cross-cut veal shank for osso buco.
 - Veal osso buco is the shank of young cattle cut across the bone, each piece with a marrow centre. Veal is paler and milder than beef, and the shank becomes delicate and tender when braised.
@@ -712,7 +712,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef BBQ Chipolatas
 
-- URL: https://halalmeatdepot.com.au/product/beef-bbq-chipolatas/
+- URL: https://halalmeatdepot.com.au/product/halal-sausages-beef-bbq-chipolatas/
 - Pack: 2kg pack — $21.98 (about $10.99/kg)
 - Thin beef chipolatas for barbecues and breakfasts.
 - Chipolatas are thin, short sausages made in narrow casings. Their size means they cook quickly and evenly, which makes them handy for breakfasts, kids' plates and barbecue platters.
@@ -720,7 +720,7 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Beef Herb & Garlic Sausages
 
-- URL: https://halalmeatdepot.com.au/product/beef-herb-and-garlic-sausages/
+- URL: https://halalmeatdepot.com.au/product/beef-sausages-herb-garlic/
 - Pack: 2kg pack — $31.98 (about $15.99/kg)
 - Beef sausages with herbs and garlic.
 - These beef sausages are seasoned with herbs and garlic for a savoury, aromatic flavour. They are a full-size barbecue sausage that suits grills, sausage rolls and breakfast plates.
@@ -728,19 +728,19 @@ Halal beef for butchers, restaurants, caterers and families — from whole, half
 
 ### Wagyu Texan Chilli Sausages
 
-- URL: https://halalmeatdepot.com.au/product/wagyu-beef-sausages-texan-chilli/
+- URL: https://halalmeatdepot.com.au/product/sausage-near-me-wagyu-beef-texan-chilli/
 - Pack: 2kg pack — $36.98 (about $18.49/kg)
 - Wagyu beef sausages with a Texan-style chilli kick.
 - These sausages are made with Wagyu beef and seasoned with Texan-style chilli. Wagyu fat keeps them juicy, while the chilli brings warmth rather than overwhelming heat.
 - Cooking: Rich Wagyu sausages with gentle heat. Grill slowly for a smoky finish.
 
-## Lamb — https://halalmeatdepot.com.au/shop/lamb/
+## Lamb — https://halalmeatdepot.com.au/shop/lambs-for-sale/
 
 Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton, racks, cutlets and chops, legs, shoulders, shanks, neck, ribs, diced, mince, kebabs, kofta and sausages — certified halal by Halal Control Australia.
 
 ### Whole Lamb Carcass
 
-- URL: https://halalmeatdepot.com.au/product/whole-lamb-carcass/
+- URL: https://halalmeatdepot.com.au/product/whole-lamb-price-carcass/
 - Pack: approx. 20kg carcass — $330.00 (about $16.50/kg)
 - A whole lamb carcass, cut to your instructions — ideal for family events and gatherings.
 - A whole lamb carcass includes both legs, both shoulders, the racks and loins, the breast, neck and shanks. Ordered whole, it is the most economical way to feed a large gathering and the traditional choice for family celebrations.
@@ -748,7 +748,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Half Lamb Carcass
 
-- URL: https://halalmeatdepot.com.au/product/half-lamb-carcass/
+- URL: https://halalmeatdepot.com.au/product/whole-lamb-for-sale-half-carcass/
 - Pack: approx. 10kg half carcass — $170.00 (about $17.00/kg)
 - Half a lamb carcass, cut to your instructions — a full mix of roasts, chops and curry cuts.
 - A half lamb is one side of the carcass, split along the spine. It gives one of each main cut — leg, shoulder, rack, loin, shanks and breast — which suits a household stocking the freezer.
@@ -772,7 +772,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Rack Frenched
 
-- URL: https://halalmeatdepot.com.au/product/lamb-rack-frenched/
+- URL: https://halalmeatdepot.com.au/product/lamb-cutlets-near-me-rack-frenched/
 - Pack: 2kg pack — $74.98 (about $37.49/kg)
 - Whole frenched lamb racks for roasting or cutting into cutlets.
 - A frenched lamb rack is the rib section left whole, with the bones cleaned for presentation. Roasted as a rack, it stays juicier than individual cutlets and carves into portions at the table.
@@ -780,7 +780,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Loin Chops
 
-- URL: https://halalmeatdepot.com.au/product/lamb-loin-chops/
+- URL: https://halalmeatdepot.com.au/product/lamb-chops-near-me-loin/
 - Pack: 2kg pack — $57.98 (about $28.99/kg)
 - Lamb loin chops — tender and perfect for the barbecue.
 - Loin chops are cut from the lamb's back, between the ribs and the leg, and include a T-shaped bone with loin on one side and a little fillet on the other. They are tender and quick to cook.
@@ -788,7 +788,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Forequarter Chops
 
-- URL: https://halalmeatdepot.com.au/product/lamb-forequarter-chops/
+- URL: https://halalmeatdepot.com.au/product/lamb-shoulder-cut-forequarter-chops/
 - Pack: 3kg pack — $50.97 (about $16.99/kg)
 - Lamb forequarter chops — flavourful and budget-friendly.
 - Forequarter chops are cut from the shoulder, so each one contains several small muscles with fat and connective tissue between them. That structure gives more flavour than loin chops at a lower price.
@@ -804,7 +804,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Rolled Loin
 
-- URL: https://halalmeatdepot.com.au/product/lamb-rolled-loin/
+- URL: https://halalmeatdepot.com.au/product/lamb-loin-rolled/
 - Pack: 2kg pack — $65.98 (about $32.99/kg)
 - Boneless rolled lamb loin for roasting.
 - A rolled lamb loin is the boneless loin rolled and tied into an even cylinder. The even shape means it roasts consistently from end to end and carves into round, uniform slices.
@@ -812,7 +812,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Rump
 
-- URL: https://halalmeatdepot.com.au/product/lamb-rump/
+- URL: https://halalmeatdepot.com.au/product/buy-lamb-rump-steak-online/
 - Pack: approx. 2.2kg (4 rumps) — $58.28 (about $26.49/kg)
 - Lamb rumps with cap on — a tender mini roast.
 - The lamb rump, sometimes called the chump, sits where the loin meets the leg. Each rump is a small, tender roast with a fat cap that crisps when seared.
@@ -820,7 +820,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Leg Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/leg-of-lamb-for-sale-bone-in/
+- URL: https://halalmeatdepot.com.au/product/leg-of-lamb-price-sale-bone/
 - Pack: approx. 3kg whole leg — $53.97 (about $17.99/kg)
 - Whole bone-in leg of lamb for roasting, raan and slow cooking.
 - A bone-in leg of lamb is the whole hind leg, from the hip to the shank. Roasting on the bone keeps the meat moist, and the leg is the traditional cut for raan and festive roasts.
@@ -828,7 +828,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Half Lamb Leg Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/half-lamb-leg-bone-in/
+- URL: https://halalmeatdepot.com.au/product/lamb-meat-near-me-half-leg-bone/
 - Pack: 2 half legs, approx. 3kg — $58.47 (about $19.49/kg)
 - Half legs of lamb (shank or butt end) for smaller roasts.
 - Half lamb legs are a full leg cut into the shank end and the butt end. Each half is a manageable roast for a smaller household and cooks more quickly than a whole leg.
@@ -836,7 +836,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Leg Boned and Rolled
 
-- URL: https://halalmeatdepot.com.au/product/lamb-leg-boned-and-rolled/
+- URL: https://halalmeatdepot.com.au/product/legs-of-lamb-boned-rolled/
 - Pack: 2 legs, approx. 3.3kg — $77.52 (about $23.49/kg)
 - Boneless lamb legs, rolled and netted for even roasting.
 - These lamb legs have had the bone removed and are rolled and netted back into shape. Without the bone they cook evenly and carve straight through into clean slices. Roast it at around 180°C and rest it before slicing. You can open the roll and add garlic, herbs or a rice stuffing before tying it again, and a boned leg fits a slow cooker more easily than one on the bone.
@@ -844,7 +844,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Leg Butterflied
 
-- URL: https://halalmeatdepot.com.au/product/lamb-leg-butterflied/
+- URL: https://halalmeatdepot.com.au/product/lamb-price-leg-butterflied/
 - Pack: approx. 2.2kg (2 legs) — $49.48 (about $22.49/kg)
 - Boneless lamb leg opened flat for marinating and grilling.
 - A butterflied leg is boned and opened out flat, so its thickness is more even. It absorbs marinades quickly and cooks much faster than a bone-in leg on a barbecue or under the grill. Marinate it for a few hours in yoghurt, garlic and spices, cook it over medium-high heat, turning once, then rest it and slice across the grain. The thicker and thinner sections give a mix of pink and well-done slices for a crowd.
@@ -852,7 +852,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Leg Steaks
 
-- URL: https://halalmeatdepot.com.au/product/lamb-leg-steaks/
+- URL: https://halalmeatdepot.com.au/product/lamb-specials-leg-steaks/
 - Pack: 2kg pack — $46.98 (about $23.49/kg)
 - Lamb leg steaks for quick grilling and pan-frying.
 - Lamb leg steaks are slices cut across the leg, each with a small round of bone or boneless depending on the cut. They are lean, quick to cook and good value for weeknight grills.
@@ -860,7 +860,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Milk-Fed Lamb Leg Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/milk-fed-lamb-leg-bone-in/
+- URL: https://halalmeatdepot.com.au/product/halal-lamb-leg-near-me-milk-fed-bone/
 - Pack: approx. 2.1kg — $49.33 (about $23.49/kg)
 - Bone-in leg from milk-fed lamb — delicate and tender.
 - Milk-fed lamb comes from younger lambs, so the meat is paler, finer-grained and milder than standard lamb. This bone-in leg suits diners who prefer a delicate lamb flavour. Because the meat is so tender it needs only simple seasoning such as garlic, rosemary and lemon, and a shorter roast; cook it to slightly pink and rest it well. The bone adds flavour to the pan juices for gravy.
@@ -868,7 +868,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Shoulder Boned & Rolled
 
-- URL: https://halalmeatdepot.com.au/product/lamb-shoulder-boned-and-rolled/
+- URL: https://halalmeatdepot.com.au/product/buy-lamb-shoulder-boned-rolled/
 - Pack: 2 shoulders, approx. 3.6kg — $84.56 (about $23.49/kg)
 - Boneless lamb shoulder, rolled and netted, for slow roasting and shawarma.
 - The lamb shoulder is a hard-working cut with plenty of marbling, boned and rolled here for easy slow roasting. It is the cut that falls apart after hours in the oven and the one used for homemade shawarma. Roast it low and slow, covered, with onions and stock until it pulls apart, or slice it thinly for shawarma wraps. Leftovers reheat well because the fat keeps the meat moist.
@@ -876,7 +876,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Shoulder Butterflied
 
-- URL: https://halalmeatdepot.com.au/product/lamb-shoulder-butterflied/
+- URL: https://halalmeatdepot.com.au/product/lamb-shoulder-price-butterflied/
 - Pack: 2 shoulders, approx. 3.4kg — $76.47 (about $22.49/kg)
 - Butterflied lamb shoulder for the barbecue.
 - A butterflied lamb shoulder is boned and opened flat. Shoulder has more fat than leg, so it stays succulent on the barbecue and takes strong marinades well. Cook it over indirect heat on a covered barbecue, then finish over the coals for a charred crust, or roast it in a hot oven after a long spice marinade. Carve across the grain into thick slices.
@@ -884,7 +884,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Milk-Fed Lamb Forequarter
 
-- URL: https://halalmeatdepot.com.au/product/milk-fed-lamb-forequarter/
+- URL: https://halalmeatdepot.com.au/product/halal-lamb-shoulder-milk-fed-forequarter/
 - Pack: 2 pieces, approx. 3.4kg — $79.87 (about $23.49/kg)
 - Milk-fed lamb forequarter for slow roasting.
 - This forequarter comes from milk-fed lamb, giving the shoulder and neck meat a milder taste and softer texture. It is best roasted low and slow until it can be pulled from the bone.
@@ -892,7 +892,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Shanks
 
-- URL: https://halalmeatdepot.com.au/product/lamb-shanks/
+- URL: https://halalmeatdepot.com.au/product/grass-fed-lamb-shanks/
 - Pack: 3kg pack — $55.47 (about $18.49/kg)
 - Lamb shanks for slow braising.
 - Lamb shanks are the lower leg, wrapped in sinew that breaks down into a rich, gelatinous sauce when braised. One shank is a generous single serve.
@@ -900,7 +900,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Neck
 
-- URL: https://halalmeatdepot.com.au/product/lamb-neck/
+- URL: https://halalmeatdepot.com.au/product/halal-lamb-meat-neck/
 - Pack: 3kg pack — $35.97 (about $11.99/kg)
 - Lamb neck for curries, stews and slow braises.
 - Lamb neck is a well-marbled, collagen-rich cut that many cooks consider the most flavourful part of the lamb. It needs slow cooking, after which the meat becomes soft and rich.
@@ -908,7 +908,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Osso Buco
 
-- URL: https://halalmeatdepot.com.au/product/lamb-osso-buco/
+- URL: https://halalmeatdepot.com.au/product/premium-halal-meat-lamb-osso-buco/
 - Pack: 2kg pack — $42.98 (about $21.49/kg)
 - Cross-cut lamb shank for osso buco and stews.
 - Lamb osso buco is the shank cut across the bone into rounds, each with marrow in the middle. Smaller than beef osso buco, it braises in about two hours.
@@ -916,7 +916,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Riblets
 
-- URL: https://halalmeatdepot.com.au/product/lamb-riblets/
+- URL: https://halalmeatdepot.com.au/product/halal-lamb-ribs-riblets/
 - Pack: approx. 2.6kg — $55.87 (about $21.49/kg)
 - Individual lamb riblets for sticky, slow-cooked ribs.
 - Lamb riblets are individual ribs cut from the breast. They carry a good amount of fat, which renders during slow cooking and leaves them sticky and tender. Bake or simmer them low and slow first, then finish under the grill or on the barbecue with a sticky glaze. They make good finger food for gatherings, and a pressure cooker shortens the first stage.
@@ -924,7 +924,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Full Plate Ribs
 
-- URL: https://halalmeatdepot.com.au/product/lamb-full-plate-ribs/
+- URL: https://halalmeatdepot.com.au/product/lamb-flap-cut-full-plate-ribs/
 - Pack: approx. 2.6kg — $48.07 (about $18.49/kg)
 - Full plates of lamb ribs for smoking and roasting.
 - Full plate lamb ribs are the whole rib section from the breast, left in one piece. They are made for smoking and slow roasting, then cutting into individual ribs to serve. Keeping the rack whole protects the meat while it smokes or roasts: season both sides, cook low until the meat pulls back from the bones, then rest it and cut between the bones. One plate makes a centrepiece for a small group.
@@ -932,7 +932,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Diced Lamb Boneless
 
-- URL: https://halalmeatdepot.com.au/product/diced-lamb-boneless/
+- URL: https://halalmeatdepot.com.au/product/buy-diced-lamb-online-boneless/
 - Pack: 5kg pack — $127.45 (about $25.49/kg)
 - Boneless diced lamb for kebabs, curries and stews.
 - Our boneless diced lamb is trimmed and cut into even cubes. It works for skewers when marinated, and for curries and stews where you want lamb without bones.
@@ -940,7 +940,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Mince
 
-- URL: https://halalmeatdepot.com.au/product/ground-lamb-meat-mince/
+- URL: https://halalmeatdepot.com.au/product/buy-minced-lamb-online-ground-meat-mince/
 - Pack: 5kg pack — $79.95 (about $15.99/kg)
 - Lamb mince for kofta, kibbeh, keema and meatballs.
 - Lamb mince is ground lamb with natural fat for flavour and moisture. It is the traditional base for kofta, kibbeh, keema and Middle Eastern meatballs.
@@ -948,7 +948,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Cocktail Kebabs
 
-- URL: https://halalmeatdepot.com.au/product/lamb-cocktail-kebabs/
+- URL: https://halalmeatdepot.com.au/product/lamb-kebab-near-me-cocktail/
 - Pack: 2kg pack — $52.98 (about $26.49/kg)
 - Bite-size lamb kebabs for parties and grills.
 - Lamb cocktail kebabs are bite-size lamb cubes threaded onto short skewers. They are made for catering platters, parties and grills where guests eat with their hands.
@@ -956,7 +956,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Ham
 
-- URL: https://halalmeatdepot.com.au/product/lamb-ham/
+- URL: https://halalmeatdepot.com.au/product/lamb-ham-australia/
 - Pack: approx. 2kg — $55.98 (about $27.99/kg)
 - Cured lamb ham for slicing.
 - Lamb ham is a cured lamb leg prepared for slicing. It offers a halal alternative to traditional cured meats on platters and in sandwiches. Slice it thinly and serve it cold with pickles, cheese and bread, or warm the slices briefly in a pan for breakfast. Keep it wrapped and chilled once opened so the slices do not dry out.
@@ -964,7 +964,7 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Kofta
 
-- URL: https://halalmeatdepot.com.au/product/lamb-kofta/
+- URL: https://halalmeatdepot.com.au/product/halal-lamb-kofta/
 - Pack: 2kg pack (approx. 24 kofta) — $44.98 (about $22.49/kg)
 - Seasoned lamb kofta, ready to grill.
 - Our lamb kofta is seasoned lamb mince shaped and ready to cook. Each pack makes about 24 kofta, enough for a family barbecue or a small catering order.
@@ -988,19 +988,19 @@ Halal lamb by the carcass or the wholesale pack: whole and half lamb and mutton,
 
 ### Lamb Lemon & Oregano Sausages
 
-- URL: https://halalmeatdepot.com.au/product/lamb-lemon-and-oregano-sausages/
+- URL: https://halalmeatdepot.com.au/product/lamb-sausages-lemon-oregano/
 - Pack: 2kg pack — $33.98 (about $16.99/kg)
 - Lamb sausages with lemon and oregano.
 - Lemon and oregano give these lamb sausages a bright, Mediterranean flavour. They are made for the barbecue and pair well with pita, salads and dips.
 - Cooking: A Mediterranean-style sausage that suits the grill and pita wraps.
 
-## Goat — https://halalmeatdepot.com.au/shop/goat-meat-for-sale/
+## Goat — https://halalmeatdepot.com.au/shop/goat-meat-near-me/
 
 Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carcasses, legs and shoulders, frenched racks, loin and rump, ribs, foreshanks and bone-in diced goat in wholesale packs — certified halal by Halal Control Australia.
 
 ### Whole Goat Carcass
 
-- URL: https://halalmeatdepot.com.au/product/whole-goat-carcass/
+- URL: https://halalmeatdepot.com.au/product/goat-prices-whole-carcass/
 - Pack: approx. 12kg carcass — $210.00 (about $17.50/kg)
 - A whole young goat carcass, cut to your instructions for curries, roasts and events.
 - A whole goat carcass gives you every cut from one young goat: legs, shoulders, racks, loin, ribs and shanks. It is the most economical way to buy goat for large gatherings and festive cooking.
@@ -1008,7 +1008,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Half Goat Carcass
 
-- URL: https://halalmeatdepot.com.au/product/half-goat-carcass/
+- URL: https://halalmeatdepot.com.au/product/goat-price-half-carcass/
 - Pack: approx. 6kg half carcass — $111.00 (about $18.50/kg)
 - Half a goat carcass, cut to your instructions — a good size for a family or small gathering.
 - A half goat is one side of the carcass, with one leg, one shoulder and half of the ribs, loin and neck. It is a practical size for a family or a small gathering.
@@ -1024,7 +1024,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Leg Butterflied
 
-- URL: https://halalmeatdepot.com.au/product/goat-leg-butterflied/
+- URL: https://halalmeatdepot.com.au/product/buy-goat-meat-near-me-leg-butterflied/
 - Pack: 2 legs, approx. 2kg — $46.98 (about $23.49/kg)
 - Butterflied goat leg for grilling and quick roasting.
 - Butterflied goat legs are boned and opened flat for even cooking. They absorb marinades quickly and suit grilling and fast roasting.
@@ -1032,7 +1032,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Mini Leg Boned and Rolled
 
-- URL: https://halalmeatdepot.com.au/product/goat-mini-leg-boned-and-rolled/
+- URL: https://halalmeatdepot.com.au/product/fresh-goat-meat-near-me-mini-leg-boned-rolled/
 - Pack: 2 legs, approx. 3.8kg — $93.06 (about $24.49/kg)
 - Boneless rolled goat legs for even roasting.
 - These smaller goat legs are boned, rolled and netted into neat roasts. Removing the bone makes them easier to carve into even slices. The smaller size suits a dinner for three or four: roast it at 180°C until just pink in the centre for neat slices, or braise it in a covered pot with spices if you prefer it well done and tender. Leg is the leaner choice of the goat roasts.
@@ -1040,7 +1040,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Shoulder Boned and Rolled
 
-- URL: https://halalmeatdepot.com.au/product/goat-shoulder-boned-and-rolled/
+- URL: https://halalmeatdepot.com.au/product/goat-meat-shop-near-me-shoulder-boned-rolled/
 - Pack: approx. 2.2kg — $63.78 (about $28.99/kg)
 - Boneless rolled goat shoulder for slow roasting.
 - A boned and rolled goat shoulder is the shoulder meat tied into an even roast. Shoulder has more marbling than leg, so it stays tender through slow roasting. Unlike the leaner leg, shoulder is happiest cooked low and slow: braise it for three hours with onions, garlic and warm spices, or roast it covered at 160°C until it pulls apart. It is the goat roast to choose for shredding into rice dishes or wraps.
@@ -1048,7 +1048,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Shoulder Butterflied
 
-- URL: https://halalmeatdepot.com.au/product/goat-shoulder-butterflied/
+- URL: https://halalmeatdepot.com.au/product/where-to-buy-goat-meat-near-me-shoulder-butterflied/
 - Pack: approx. 2kg — $46.98 (about $23.49/kg)
 - Butterflied goat shoulder for the grill or oven.
 - A butterflied goat shoulder is boned and opened out flat. The flat shape cooks evenly on a grill or in the oven and soaks up marinades. Marinate it overnight in yoghurt, garlic and spices, then grill or roast it hot for crisp edges and a juicy centre, about 50–60 minutes at 200°C. Because it lies flat, it is the quickest way to roast a whole goat shoulder for a family gathering.
@@ -1056,7 +1056,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Shoulder Square Cut
 
-- URL: https://halalmeatdepot.com.au/product/goat-shoulder-square-cut/
+- URL: https://halalmeatdepot.com.au/product/price-goats-shoulder-square-cut/
 - Pack: approx. 2.5kg — $61.22 (about $24.49/kg)
 - Square-cut goat shoulder for mandi and slow roasting.
 - The square-cut goat shoulder is the bone-in shoulder trimmed into a neat block. It is the traditional cut for mandi and other slow-roasted rice dishes. Keeping the bone in adds flavour and helps the meat stay moist through hours of slow cooking. Rub it with spices, wrap it in foil and roast it low for three to four hours until it falls from the bone, then serve it over fragrant rice with the cooking juices.
@@ -1064,7 +1064,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Frenched Rack
 
-- URL: https://halalmeatdepot.com.au/product/goat-frenched-rack/
+- URL: https://halalmeatdepot.com.au/product/goat-meat-for-sale-frenched-rack/
 - Pack: 4 racks, approx. 2.6kg — $105.27 (about $40.49/kg)
 - Frenched goat racks for elegant roasting.
 - A frenched goat rack is the rib section with the bones cleaned for presentation. Goat racks are smaller and leaner than lamb racks, so they roast quickly. Marinate the rack with garlic, cumin and lemon, roast it in a hot oven to slightly pink, then rest it before cutting between the bones into cutlets. The cleaned bones make neat handles for serving at a dinner table.
@@ -1072,7 +1072,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Rolled Loin
 
-- URL: https://halalmeatdepot.com.au/product/goat-rolled-loin/
+- URL: https://halalmeatdepot.com.au/product/goats-meat-rolled-loin/
 - Pack: 4 loins, approx. 2.6kg — $85.77 (about $32.99/kg)
 - Boneless rolled goat loin.
 - A rolled goat loin is the boneless loin rolled and tied. It is one of the most tender cuts on the goat and is best cooked quickly to medium. Sear the roll on all sides in a hot pan, finish it in the oven, rest it, then remove the string and slice it into rounds. Because the loin carries little fat, a herb crust or a basting of olive oil keeps it moist.
@@ -1080,7 +1080,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Rump
 
-- URL: https://halalmeatdepot.com.au/product/goat-rump/
+- URL: https://halalmeatdepot.com.au/product/meat-goat-for-sale-rump/
 - Pack: 4 rumps, approx. 2.6kg — $63.67 (about $24.49/kg)
 - Goat rump — a tender mini roast or steak cut.
 - The goat rump sits where the loin meets the leg. It is a small, tender piece that works as a mini roast or can be sliced into steaks.
@@ -1088,7 +1088,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Diced Goat Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/diced-goat-bone-in/
+- URL: https://halalmeatdepot.com.au/product/diced-goat-meat-near-me-bone/
 - Pack: 5kg pack — $89.95 (about $17.99/kg)
 - Bone-in diced goat for curries, biryani, karahi and mandi.
 - Bone-in diced goat is cut through the bone into curry-sized pieces. The bone releases flavour and gelatine into the sauce, which is why it is preferred for curries, biryani and karahi.
@@ -1096,7 +1096,7 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Full Plate Ribs
 
-- URL: https://halalmeatdepot.com.au/product/goat-full-plate-ribs/
+- URL: https://halalmeatdepot.com.au/product/halal-goat-meat-full-plate-ribs/
 - Pack: approx. 2.4kg — $40.78 (about $16.99/kg)
 - Full plates of goat ribs for slow grilling and braising.
 - Full plate goat ribs are the whole rib section left in one piece. Goat ribs carry less fat than lamb ribs and benefit from braising before a final grill.
@@ -1104,19 +1104,19 @@ Halal goat meat for curries, biryani, mandi and roasts: whole and half goat carc
 
 ### Goat Foreshanks
 
-- URL: https://halalmeatdepot.com.au/product/goat-foreshanks/
+- URL: https://halalmeatdepot.com.au/product/halal-goat-meat-near-me-foreshanks/
 - Pack: 2kg pack — $36.98 (about $18.49/kg)
 - Goat foreshanks for slow-cooked stews and soups.
 - Goat foreshanks are the lower front legs, rich in connective tissue. Slow simmering turns that tissue into a sticky, flavourful broth.
 - Cooking: Collagen-rich shanks that turn soft and sticky after two hours of simmering.
 
-## Chicken — https://halalmeatdepot.com.au/shop/halal-chicken/
+## Chicken — https://halalmeatdepot.com.au/shop/halal-chicken-near-me/
 
 Halal chicken in wholesale packs and commercial cartons: whole birds, breast and tenderloins, thighs and marylands, drumsticks and wings, crumbed and marinated chicken — certified halal by Halal Control Australia.
 
 ### Whole Chickens Size 15
 
-- URL: https://halalmeatdepot.com.au/product/whole-chickens-size-15/
+- URL: https://halalmeatdepot.com.au/product/chicken-for-sale-whole-size-15/
 - Pack: 6 birds, approx. 9kg — $67.41 (about $7.49/kg)
 - Six whole chickens (about 1.5kg each) for roasting and charcoal chicken.
 - Size 15 means each bird weighs about 1.5kg. A six-bird pack suits charcoal chicken shops, big families and anyone roasting several chickens at once.
@@ -1124,7 +1124,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Breast Fillets
 
-- URL: https://halalmeatdepot.com.au/product/chicken-breast-fillets/
+- URL: https://halalmeatdepot.com.au/product/chicken-breast-price-fillets/
 - Pack: 5kg pack — $62.45 (about $12.49/kg)
 - Skinless chicken breast fillets for grilling, schnitzel and wraps.
 - Chicken breast fillets are skinless and boneless, cut from the breast. They are the leanest part of the chicken and the most versatile, used for grilling, schnitzel, wraps and curries.
@@ -1132,7 +1132,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Breast Skin-On
 
-- URL: https://halalmeatdepot.com.au/product/chicken-breast-skin-on/
+- URL: https://halalmeatdepot.com.au/product/halal-chicken-breast-skin/
 - Pack: 5kg pack — $69.95 (about $13.99/kg)
 - Skin-on chicken breast fillets for crispy pan-roasting.
 - Skin-on chicken breast keeps the skin attached, which protects the meat during cooking and crisps into a golden crust. It gives a juicier result than skinless breast when pan-roasted.
@@ -1156,7 +1156,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Thigh Chops
 
-- URL: https://halalmeatdepot.com.au/product/chicken-thigh-chops/
+- URL: https://halalmeatdepot.com.au/product/halal-chicken-cut-thigh-chops/
 - Pack: 5kg pack — $59.95 (about $11.99/kg)
 - Bone-in chicken thigh chops for roasting and grilling.
 - Chicken thigh chops are bone-in thighs, sometimes called thigh cutlets. The bone adds flavour and keeps the meat juicy when roasted or grilled.
@@ -1180,7 +1180,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Wings
 
-- URL: https://halalmeatdepot.com.au/product/chicken-wings/
+- URL: https://halalmeatdepot.com.au/product/halal-chicken-wings/
 - Pack: 5kg pack — $22.45 (about $4.49/kg)
 - Whole chicken wings for frying, baking and grilling.
 - Whole chicken wings include the drumette, the wingette and the tip. They have a high ratio of skin to meat, which is what makes them crisp up so well.
@@ -1188,7 +1188,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Mini Drumettes
 
-- URL: https://halalmeatdepot.com.au/product/chicken-mini-drumettes/
+- URL: https://halalmeatdepot.com.au/product/chicken-drumettes-mini/
 - Pack: 5kg pack — $42.45 (about $8.49/kg)
 - Mini chicken drumettes for wings bars and platters.
 - Drumettes are the meaty first section of the chicken wing, shaped like small drumsticks. These mini drumettes are sized for wing bars, platters and finger food.
@@ -1196,7 +1196,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Crumbed Chicken Schnitzel
 
-- URL: https://halalmeatdepot.com.au/product/crumbed-chicken-schnitzel/
+- URL: https://halalmeatdepot.com.au/product/chicken-schnitzel-near-me-crumbed/
 - Pack: 3kg pack — $61.47 (about $20.49/kg)
 - Crumbed chicken schnitzel with parsley, ready to cook.
 - Our crumbed chicken schnitzels are coated in a parsley crumb and ready to cook straight from the pack. They suit busy households and food businesses that want consistent schnitzels without the prep.
@@ -1204,7 +1204,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Crumbed Chicken Tenderloins
 
-- URL: https://halalmeatdepot.com.au/product/crumbed-chicken-tenderloins/
+- URL: https://halalmeatdepot.com.au/product/halal-chicken-tenders-crumbed-tenderloins/
 - Pack: 3kg pack — $61.47 (about $20.49/kg)
 - Crumbed chicken tenderloins for kids' meals and platters.
 - These are chicken tenderloins coated in crumb and ready to cook. Small, even pieces cook quickly and evenly, which makes them a favourite for kids' meals and platters.
@@ -1212,7 +1212,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Cocktail Kebabs
 
-- URL: https://halalmeatdepot.com.au/product/chicken-cocktail-kebabs/
+- URL: https://halalmeatdepot.com.au/product/chicken-kebab-near-me-cocktail/
 - Pack: 2kg pack — $42.98 (about $21.49/kg)
 - Bite-size chicken kebabs for parties and catering.
 - Chicken cocktail kebabs are bite-size pieces of chicken on short skewers. They are portioned for parties, catering trays and quick grills.
@@ -1220,7 +1220,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Honey Soy Marinated Chicken Wings
 
-- URL: https://halalmeatdepot.com.au/product/honey-soy-chicken-wings-marinated/
+- URL: https://halalmeatdepot.com.au/product/certified-halal-chicken-honey-soy-wings-marinated/
 - Pack: 3kg pack — $46.47 (about $15.49/kg)
 - Chicken wings in a sweet honey soy marinade.
 - These chicken wings come already coated in a sweet honey soy marinade. The sugars in the glaze caramelise in the oven to give sticky, glossy wings. Because honey burns quickly, roast them at 190°C and turn them halfway, watching closely in the last ten minutes. Kids love them with steamed rice and cucumber, and they make an easy party platter scattered with sesame seeds and spring onion.
@@ -1244,7 +1244,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Portuguese Marinated Split Chicken
 
-- URL: https://halalmeatdepot.com.au/product/portuguese-marinated-split-chicken/
+- URL: https://halalmeatdepot.com.au/product/piri-piri-chicken-near-me-portuguese-marinated-split/
 - Pack: 6 birds, approx. 6kg — $83.94 (about $13.99/kg)
 - Split whole chickens in a Portuguese-style marinade.
 - These whole chickens are split open and marinated in a Portuguese-style blend. Splitting the bird flattens it, so it grills evenly and cooks faster than a whole roast chicken.
@@ -1252,7 +1252,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Lime & Pepper Marinated Split Chicken
 
-- URL: https://halalmeatdepot.com.au/product/lime-and-pepper-marinated-split-chicken/
+- URL: https://halalmeatdepot.com.au/product/bbq-halal-chicken-lime-pepper-marinated-split/
 - Pack: 6 birds, approx. 6kg — $83.94 (about $13.99/kg)
 - Split chickens marinated in lime and cracked pepper.
 - These split chickens are marinated with lime and cracked pepper for a zesty, peppery flavour. They suit charcoal grills, ovens and family barbecues. The citrus and pepper suit charcoal flavour, so cook it over medium coals with the lid down, turning once, until the juices run clear and the thickest part reaches 75°C. A squeeze of fresh lime at the table brightens it, and it pairs well with rice, slaw or grilled vegetables.
@@ -1260,7 +1260,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### House Blend Marinated Split Chicken
 
-- URL: https://halalmeatdepot.com.au/product/house-blend-marinated-split-chicken/
+- URL: https://halalmeatdepot.com.au/product/boneless-halal-chicken-house-blend-marinated-split/
 - Pack: 6 birds, approx. 6kg — $89.94 (about $14.99/kg)
 - Split chickens in a savoury house-blend marinade.
 - These split chickens are coated in our savoury house-blend marinade. They are prepared ready to cook, saving time for families and food businesses. Cook it skin side down on a covered barbecue or hot grill first, then turn it and finish over gentler heat until the thickest part reaches 75°C. In the oven, roast at 200°C for about 45–55 minutes. Serve with chips, garlic sauce and pickles for a takeaway-style dinner at home.
@@ -1268,7 +1268,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Smokey Heat Marinated Split Chicken
 
-- URL: https://halalmeatdepot.com.au/product/smokey-heat-marinated-split-chicken/
+- URL: https://halalmeatdepot.com.au/product/smoky-chicken-near-me-smokey-heat-marinated-split/
 - Pack: 6 birds, approx. 6kg — $89.94 (about $14.99/kg)
 - Split chickens in a smoky, spicy marinade.
 - These split chickens carry a smoky, spicy marinade that develops a charred crust over the grill. They are made for people who like their chicken with a bit of heat. Start it skin-side down over medium heat, then turn it and finish with the lid closed until the thickest part is cooked through. Serve it with cooling sides such as a yoghurt sauce or salad to balance the heat.
@@ -1276,7 +1276,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Truffle Buffalo Marinated Split Chicken
 
-- URL: https://halalmeatdepot.com.au/product/truffle-buffalo-marinated-split-chicken/
+- URL: https://halalmeatdepot.com.au/product/buffalo-chicken-truffle-marinated-split/
 - Pack: 6 birds, approx. 6kg — $89.94 (about $14.99/kg)
 - Split chickens in a truffle and buffalo-style marinade.
 - These split chickens combine a truffle note with buffalo-style spice. The marinade gives a rich, savoury flavour once roasted golden. Roast it in the oven so the marinade caramelises without scorching, and rest it for a few minutes before cutting. Simple sides such as chips, roast potatoes or a green salad let the flavour stand out.
@@ -1284,7 +1284,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Breast Fillet Carton
 
-- URL: https://halalmeatdepot.com.au/product/chicken-breast-fillet-carton/
+- URL: https://halalmeatdepot.com.au/product/bulk-chicken-breast-fillet-carton/
 - Pack: 10kg carton — $115.00 (about $11.50/kg)
 - A 10kg carton of skinless chicken breast fillets for takeaways and caterers.
 - This carton holds 10kg of skinless chicken breast fillets, bagged inside for easier handling. It is priced for kitchens that cook breast fillet every day.
@@ -1292,7 +1292,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Thigh Fillet Carton
 
-- URL: https://halalmeatdepot.com.au/product/chicken-thigh-fillet-carton/
+- URL: https://halalmeatdepot.com.au/product/chicken-wholesale-near-me-thigh-fillet-carton/
 - Pack: 10kg carton — $130.00 (about $13.00/kg)
 - A 10kg carton of boneless chicken thigh fillets for shawarma, shish and grills.
 - This 10kg carton of boneless thigh fillets is the bulk format kebab and shawarma kitchens use. Bagging inside the carton makes marinating in batches easier.
@@ -1300,7 +1300,7 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Drumstick Carton
 
-- URL: https://halalmeatdepot.com.au/product/chicken-drumstick-carton/
+- URL: https://halalmeatdepot.com.au/product/bulk-chicken-drumstick-carton/
 - Pack: 15kg carton — $75.00 (about $5.00/kg)
 - A 15kg carton of chicken drumsticks for takeaways, caterers and large families.
 - This 15kg carton of chicken drumsticks gives our lowest price per kilo on drumsticks. It suits takeaways, caterers and large families who freeze in portions.
@@ -1308,19 +1308,19 @@ Halal chicken in wholesale packs and commercial cartons: whole birds, breast and
 
 ### Chicken Wing Carton
 
-- URL: https://halalmeatdepot.com.au/product/chicken-wing-carton/
+- URL: https://halalmeatdepot.com.au/product/bulk-chicken-wings-carton/
 - Pack: 15kg carton — $72.00 (about $4.80/kg)
 - A 15kg carton of whole chicken wings for wing bars, takeaways and events.
 - This 15kg carton of whole chicken wings is sized for wing bars, takeaways and events. Wings can be cooked whole or split into wingettes and drumettes.
 - Cooking: Carton pricing for kitchens that go through wings every day. Split into wingettes and drumettes or cook whole.
 
-## Camel — https://halalmeatdepot.com.au/shop/camel-meat-australia/
+## Camel — https://halalmeatdepot.com.au/shop/camel-meat-near-me/
 
 Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali and North African cooking. Choose portioned porterhouse, scotch fillet, eye fillet and rump steaks, a showpiece camel tomahawk, diced camel and mince, or bone-in neck and osso buco for slow cooking — all frozen and certified halal by Halal Control Australia.
 
 ### Camel Porterhouse Steaks
 
-- URL: https://halalmeatdepot.com.au/product/camel-porterhouse-steaks/
+- URL: https://halalmeatdepot.com.au/product/camel-steak-near-me-porterhouse/
 - Pack: case of 4 (2 x 300g steaks, frozen) — $113.98 (about $47.49/kg)
 - Two boneless camel porterhouse steaks — lean, tender and portioned for the grill.
 - Camel porterhouse is cut from the striploin along the camel's back. Camel meat is naturally very lean with a mild, slightly sweet flavour, and these boneless steaks are portioned at about 300g each.
@@ -1328,7 +1328,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Porterhouse on the Bone
 
-- URL: https://halalmeatdepot.com.au/product/camel-porterhouse-on-the-bone/
+- URL: https://halalmeatdepot.com.au/product/camel-meat-halal-porterhouse-bone/
 - Pack: case of 4 (2 x 300g steaks, frozen) — $113.98 (about $47.49/kg)
 - Two bone-in camel porterhouse steaks — the bone adds flavour and protects the lean meat.
 - These camel porterhouse steaks are cut with the bone left on. Camel is so lean that the bone makes a real difference, slowing the cooking near it and helping the steak stay juicy. Bring the steak to room temperature, sear it in a very hot pan or over coals, and cook it no further than medium so it stays tender. Rest it for a few minutes and carve the meat away from the bone before slicing across the grain.
@@ -1336,7 +1336,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Scotch Fillet Steaks
 
-- URL: https://halalmeatdepot.com.au/product/camel-scotch-fillet-steaks/
+- URL: https://halalmeatdepot.com.au/product/camel-ribeye-steak-scotch-fillet/
 - Pack: case of 4 (2 x 300g steaks, frozen) — $113.98 (about $47.49/kg)
 - Two camel scotch fillet steaks — the most marbled of the camel steaks.
 - Camel scotch fillet comes from the rib section, the most marbled area on a camel. That small amount of extra fat makes it the most forgiving camel steak for first-time cooks.
@@ -1344,7 +1344,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Eye Fillet Steaks
 
-- URL: https://halalmeatdepot.com.au/product/camel-eye-fillet-steaks/
+- URL: https://halalmeatdepot.com.au/product/camel-steak-australia-eye-fillet/
 - Pack: case of 5 (2 x 200g steaks, frozen) — $132.98 (about $66.49/kg)
 - Two camel eye fillet steaks — the tenderest cut on the camel.
 - Camel eye fillet is the tenderloin, the most tender cut on the animal. The steaks are portioned at about 200g, a good single serve for lean, quick-cooking red meat.
@@ -1352,7 +1352,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Rump Steaks
 
-- URL: https://halalmeatdepot.com.au/product/camel-rump-steaks/
+- URL: https://halalmeatdepot.com.au/product/camel-rump-steak/
 - Pack: case of 4 (2 x 250g steaks, frozen) — $56.98 (about $28.49/kg)
 - Two camel rump steaks — firm, flavourful and great value.
 - Camel rump comes from the hip and has the firmest texture and fullest flavour of the camel steaks. It takes marinades well and is good value for grilling and slicing.
@@ -1368,7 +1368,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Diced Camel Boneless
 
-- URL: https://halalmeatdepot.com.au/product/diced-camel-boneless/
+- URL: https://halalmeatdepot.com.au/product/australia-camel-meat-diced-boneless/
 - Pack: 2kg pack, frozen — $37.98 (about $18.99/kg)
 - Boneless diced camel for stews, curries, kabsa and suqaar.
 - Boneless diced camel is lean meat trimmed and cut into cubes. It is used across Middle Eastern, Somali and Gulf cooking in stews, kabsa and suqaar. Brown the cubes in batches, then simmer them slowly with onion, tomato and spices until tender; the lean meat suits long, gentle cooking more than fast frying. For suqaar, cut the cubes smaller and stir-fry them quickly with peppers and onion.
@@ -1384,7 +1384,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Neck Disc Bone-in
 
-- URL: https://halalmeatdepot.com.au/product/camel-neck-disc-bone-in/
+- URL: https://halalmeatdepot.com.au/product/buy-camel-meat-neck-disc-bone/
 - Pack: 2kg pack, frozen — $32.98 (about $16.49/kg)
 - Bone-in camel neck discs for slow-cooked stews, soups and mandi.
 - Camel neck discs are cross-cut slices of neck on the bone. The neck is rich in collagen and suits slow-cooked stews, soups and mandi, where it turns soft and sticky.
@@ -1392,7 +1392,7 @@ Halal camel meat is lean, rich in iron and a staple of Middle Eastern, Somali an
 
 ### Camel Osso Buco
 
-- URL: https://halalmeatdepot.com.au/product/camel-osso-buco/
+- URL: https://halalmeatdepot.com.au/product/camel-meat-online-osso-buco/
 - Pack: case of 2 (1kg pack, frozen) — $37.98 (about $18.99/kg)
 - Cross-cut camel shin with marrow bone for slow braises and soups.
 - Camel osso buco is the shin cut across the bone, each piece with marrow in the centre. Slow braising softens the meat and releases the marrow into the sauce.
@@ -1412,7 +1412,7 @@ Halal duck for roasting, braising and special occasions. Order whole ducks inclu
 
 ### Whole Wimmera Gold Duck Corn-Fed
 
-- URL: https://halalmeatdepot.com.au/product/whole-wimmera-gold-duck-corn-fed/
+- URL: https://halalmeatdepot.com.au/product/duck-for-sale-whole-wimmera-gold-corn-fed/
 - Pack: 1 bird, approx. 2.2kg — $34.08 (about $15.49/kg)
 - A whole corn-fed Wimmera Gold duck with golden skin and rich, full flavour.
 - Wimmera Gold ducks are raised on a corn-based diet, which gives the skin a golden colour and the meat a rich flavour. It is a premium bird for special-occasion roasts.
@@ -1420,7 +1420,7 @@ Halal duck for roasting, braising and special occasions. Order whole ducks inclu
 
 ### Duck Breast Fillets
 
-- URL: https://halalmeatdepot.com.au/product/duck-breast-fillets/
+- URL: https://halalmeatdepot.com.au/product/duck-breast-near-me-fillets/
 - Pack: case of 2 (4 breasts, approx. 1.2kg) — $79.18 (about $32.99/kg)
 - Four skin-on duck breast fillets — score, render and serve pink.
 - Duck breast fillets are boneless with the skin and fat layer left on. Unlike chicken, duck breast is a red meat that is best served pink, with the fat rendered to crisp skin.
@@ -1428,7 +1428,7 @@ Halal duck for roasting, braising and special occasions. Order whole ducks inclu
 
 ### Duck Legs
 
-- URL: https://halalmeatdepot.com.au/product/duck-legs/
+- URL: https://halalmeatdepot.com.au/product/duck-meat-near-me-legs/
 - Pack: case of 2 (1kg pack) — $44.98 (about $22.49/kg)
 - Duck legs (thigh and drumstick) for confit, braising and roasting.
 - Duck legs are the thigh and drumstick together. The meat is darker and richer than breast, with connective tissue that makes it ideal for confit and slow braising.
@@ -1444,7 +1444,7 @@ Halal duck for roasting, braising and special occasions. Order whole ducks inclu
 
 ### Duck Livers
 
-- URL: https://halalmeatdepot.com.au/product/duck-livers/
+- URL: https://halalmeatdepot.com.au/product/buy-duck-liver/
 - Pack: 2kg pack — $17.98 (about $8.99/kg)
 - Duck livers for pâté, pan-frying and traditional dishes.
 - Duck livers are larger and richer than chicken livers, with a smooth, creamy texture. They are traditionally used for pâté and terrines or quickly pan-fried.
@@ -1460,19 +1460,19 @@ Halal duck for roasting, braising and special occasions. Order whole ducks inclu
 
 ### Duck Bones Carton
 
-- URL: https://halalmeatdepot.com.au/product/duck-bones-carton/
+- URL: https://halalmeatdepot.com.au/product/duck-bone-carton/
 - Pack: 15kg carton — $82.35 (about $5.49/kg)
 - A 15kg carton of duck bones for stock, broth and soup.
 - This 15kg carton of duck bones is for making stock in bulk. Roasted duck bones give a rich, savoury stock used in soups, sauces and noodle broths.
 - Cooking: Roast the bones until browned, then simmer for four to six hours for a rich, clear duck stock. Ideal for restaurants making stock in bulk.
 
-## Kangaroo — https://halalmeatdepot.com.au/shop/kangaroo-meat-for-sale/
+## Kangaroo — https://halalmeatdepot.com.au/shop/kangaroo-meat-near-me/
 
 Kangaroo is one of the leanest red meats available — high in protein and iron, low in fat. Our halal kangaroo range covers loin fillet and rump steaks in wholesale packs, certified halal by Halal Control Australia.
 
 ### Kangaroo Loin Fillet
 
-- URL: https://halalmeatdepot.com.au/product/kangaroo-loin-fillet/
+- URL: https://halalmeatdepot.com.au/product/buy-kangaroo-meat-loin-fillet/
 - Pack: 2kg pack — $36.98 (about $18.49/kg)
 - Kangaroo loin fillet — a very lean, tender red meat.
 - Kangaroo loin fillet is the long, lean muscle along the kangaroo's back. Kangaroo is one of the leanest red meats available, with a rich, slightly gamey flavour. Sear it hot and fast in a pan or on the barbecue, rest it, and slice across the grain; overcooking makes it dry. A light oil-based marinade helps because the meat carries so little fat.
@@ -1480,19 +1480,19 @@ Kangaroo is one of the leanest red meats available — high in protein and iron,
 
 ### Kangaroo Rump Steaks
 
-- URL: https://halalmeatdepot.com.au/product/kangaroo-steak-rump/
+- URL: https://halalmeatdepot.com.au/product/kangaroo-meat-for-sale-steak-rump/
 - Pack: 2kg pack, frozen — $36.98 (about $18.49/kg)
 - Lean kangaroo rump steaks for the grill.
 - Kangaroo rump steaks come from the hindquarter and are sold frozen. They are very lean, so they are best cooked quickly to medium-rare and sliced thinly. Thaw them in the fridge overnight, pat them dry and cook them in a very hot pan for a short time on each side. They suit stir-fries, steak sandwiches and warm salads.
 - Cooking: Thaw overnight in the fridge, grill over high heat to medium-rare and slice thinly.
 
-## Water Buffalo — https://halalmeatdepot.com.au/shop/buffalo-meat/
+## Water Buffalo — https://halalmeatdepot.com.au/shop/buffalo-meat-near-me/
 
 Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits both quick grilling and long braising. Shop porterhouse, scotch fillet, rib eye and T-bone steaks, a buffalo tomahawk, thin-cut asado ribs, diced buffalo, mince and osso buco — all frozen and certified halal by Halal Control Australia.
 
 ### Buffalo Porterhouse Steaks
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-porterhouse-steaks/
+- URL: https://halalmeatdepot.com.au/product/buffalo-steak-price-porterhouse/
 - Pack: case of 5 (2 x 200g steaks, frozen) — $124.98 (about $62.49/kg)
 - Two water buffalo porterhouse steaks — lean, tender and slightly sweet.
 - Water buffalo porterhouse is cut from the striploin. Buffalo meat is darker and leaner than beef with a subtle sweetness, and these steaks are portioned at about 200g.
@@ -1500,7 +1500,7 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Buffalo Scotch Fillet Steaks
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-scotch-fillet-steaks/
+- URL: https://halalmeatdepot.com.au/product/buffalo-steaks-for-sale-scotch-fillet/
 - Pack: case of 4 (2 x 300g steaks, frozen) — $121.18 (about $50.49/kg)
 - Two water buffalo scotch fillet steaks — the juiciest buffalo steak for the grill.
 - Buffalo scotch fillet is the ribeye of the water buffalo, the most marbled section. It is the juiciest buffalo steak and the easiest to cook well.
@@ -1508,7 +1508,7 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Buffalo Rib Eye Steak
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-steak-rib-eye/
+- URL: https://halalmeatdepot.com.au/product/buffalo-meat-australia-steak-rib-eye/
 - Pack: case of 3 (1 steak, approx. 700g, frozen) — $179.53 (about $85.49/kg)
 - A thick bone-in water buffalo rib eye — a steak to share.
 - This is a thick, bone-in buffalo rib eye of around 700g. The bone and the extra thickness make it ideal for slow-then-hot cooking and sharing.
@@ -1532,7 +1532,7 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Buffalo Asado Ribs
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-asado-ribs/
+- URL: https://halalmeatdepot.com.au/product/ribs-asado-buffalo/
 - Pack: case of 2 (1kg pack, 1.2cm cut, frozen) — $75.98 (about $37.99/kg)
 - Thin-cut (1.2cm) water buffalo asado ribs for fast, hot grilling.
 - Buffalo asado ribs are short ribs cut thinly across the bones, 1.2cm thick. The thin cut lets them cook in minutes over hot coals, in the style of Argentine asado.
@@ -1540,7 +1540,7 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Diced Buffalo Boneless
 
-- URL: https://halalmeatdepot.com.au/product/diced-buffalo-boneless/
+- URL: https://halalmeatdepot.com.au/product/buffalo-meat-for-sale-diced-boneless/
 - Pack: 2kg pack, frozen — $43.98 (about $21.99/kg)
 - Boneless diced water buffalo for stews, curries, nihari and rendang.
 - Boneless diced water buffalo is lean meat cut into cubes for slow cooking. It suits nihari, rendang, curries and stews, where it becomes tender after a long braise.
@@ -1548,7 +1548,7 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Buffalo Mince
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-mince/
+- URL: https://halalmeatdepot.com.au/product/minced-buffalo-meat-mince/
 - Pack: 2kg pack, frozen — $32.98 (about $16.49/kg)
 - Lean water buffalo mince for burgers, kofta and sauces.
 - Buffalo mince is ground from lean water buffalo, giving a mince that is leaner than most beef mince. It can replace beef mince in any recipe.
@@ -1556,13 +1556,13 @@ Water buffalo is a lean red meat with a clean, slightly sweet flavour that suits
 
 ### Buffalo Osso Buco
 
-- URL: https://halalmeatdepot.com.au/product/buffalo-osso-buco/
+- URL: https://halalmeatdepot.com.au/product/buffalo-meat-for-sale-near-me-osso-buco/
 - Pack: case of 2 (1kg pack, frozen) — $40.98 (about $20.49/kg)
 - Cross-cut buffalo shin with marrow for braising.
 - Buffalo osso buco is the shin cut across the bone with marrow in the centre. Braising releases the marrow into the sauce and turns the meat soft.
 - Cooking: Brown, then braise slowly in tomato, stock and spices for two and a half hours until the meat is soft and the marrow has melted into the sauce.
 
-## Offal — https://halalmeatdepot.com.au/shop/offal-beef-organ-meat/
+## Offal — https://halalmeatdepot.com.au/shop/buy-beef-offals-online/
 
 Halal offal and bones for traditional cooking, broths and slow braises: beef cheeks, liver, tongue, tendon and oxtail, chicken livers, necks and feet, and marrow, soup and chicken frame bones — certified halal by Halal Control Australia.
 
@@ -1608,7 +1608,7 @@ Halal offal and bones for traditional cooking, broths and slow braises: beef che
 
 ### Chicken Livers
 
-- URL: https://halalmeatdepot.com.au/product/chicken-livers/
+- URL: https://halalmeatdepot.com.au/product/organic-chicken-liver/
 - Pack: 2kg pack — $16.98 (about $8.49/kg)
 - Chicken livers for pâté, pan-frying and curries.
 - Chicken livers are small, mild-flavoured organ meat with a smooth, creamy texture when cooked just pink. They are used in pâté, curries and quick pan-fried dishes.
@@ -1624,7 +1624,7 @@ Halal offal and bones for traditional cooking, broths and slow braises: beef che
 
 ### Chicken Feet
 
-- URL: https://halalmeatdepot.com.au/product/chicken-feet/
+- URL: https://halalmeatdepot.com.au/product/chicken-feet-near-me/
 - Pack: 5kg pack, frozen — $32.45 (about $6.49/kg)
 - Chicken feet for collagen-rich broth and dim sum.
 - Chicken feet are mostly skin, tendon and cartilage, which is why they release so much collagen into stock. They are a classic ingredient in dim sum and in gelatinous broths.
@@ -1654,13 +1654,13 @@ Halal offal and bones for traditional cooking, broths and slow braises: beef che
 - Chicken frames are the carcasses left after the breast and legs are removed. They are the most economical way to make chicken stock and broth in volume.
 - Cooking: Simmer with onion and herbs for two to three hours for a clear stock.
 
-## Wholesale Cartons — https://halalmeatdepot.com.au/shop/bulk-meat-boxes/
+## Wholesale Cartons — https://halalmeatdepot.com.au/shop/meat-packs/
 
 Wholesale halal meat cartons for restaurants, takeaways, caterers and community events. Cryovac beef primals, 20kg lamb and goat curry-cut cartons and 20kg beef mince are priced per carton for trade buyers. For weekly volume pricing, open a wholesale account.
 
 ### Beef Rump Cryovac Carton
 
-- URL: https://halalmeatdepot.com.au/product/beef-rump-cryovac-carton/
+- URL: https://halalmeatdepot.com.au/product/bulk-rump-steak-beef-cryovac-carton/
 - Pack: approx. 20kg carton — $480.00 (about $24.00/kg)
 - A carton of cryovac beef rump primals (about 20kg) for steakhouses and grill restaurants.
 - This carton holds whole beef rumps vacuum-sealed in cryovac, about 20kg in total. Cryovac packaging keeps primals in good condition so kitchens can portion steaks and skewers as needed. Each rump can be broken into its natural muscles — eye, cap, centre and knuckle — giving premium steaks, a roasting cap and trim for kebabs from a single primal. Keep unopened cryovac in the coldest part of the coolroom and portion only what you need.
@@ -1668,7 +1668,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Beef Striploin Cryovac Carton
 
-- URL: https://halalmeatdepot.com.au/product/beef-striploin-cryovac-carton/
+- URL: https://halalmeatdepot.com.au/product/beef-strip-loin-striploin-cryovac-carton/
 - Pack: approx. 20kg carton — $560.00 (about $28.00/kg)
 - A carton of cryovac beef striploins (about 20kg) for steakhouses and restaurants.
 - This carton holds whole striploins in cryovac, about 20kg in total. Restaurants cut their own porterhouse steaks from the striploin to control thickness and plate cost. A whole striploin gives uniform porterhouse steaks with very little waste, which keeps plate costs predictable on a steak menu. Trim the fat cap to an even layer and the chain muscle for staff meals or stir-fry before cutting.
@@ -1676,7 +1676,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Beef Brisket Cryovac Carton
 
-- URL: https://halalmeatdepot.com.au/product/beef-brisket-cryovac-carton/
+- URL: https://halalmeatdepot.com.au/product/brisket-prices-beef-cryovac-carton/
 - Pack: approx. 25kg carton — $362.50 (about $14.50/kg)
 - A carton of cryovac beef briskets (about 25kg) for smokehouses, nihari kitchens and caterers.
 - This carton holds whole briskets in cryovac, about 25kg in total. It is the bulk format smokehouses, nihari kitchens and caterers use to keep brisket on hand. Whole briskets in cryovac can be smoked as full packers, split into point and flat for different dishes, or diced for curries and nihari. Buying by the carton gives the lowest price per kilo for kitchens that cook brisket every week.
@@ -1684,7 +1684,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Lamb Leg Cryovac Carton
 
-- URL: https://halalmeatdepot.com.au/product/lamb-leg-cryovac-carton/
+- URL: https://halalmeatdepot.com.au/product/whole-lamb-leg-price-cryovac-carton/
 - Pack: approx. 20kg carton — $330.00 (about $16.50/kg)
 - A carton of cryovac bone-in lamb legs (about 20kg) for restaurants and caterers.
 - This carton holds bone-in lamb legs in cryovac, about 20kg in total. Kitchens roast them whole or break them down into diced lamb and curry cuts.
@@ -1692,7 +1692,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Beef Mince Carton
 
-- URL: https://halalmeatdepot.com.au/product/beef-mince-carton/
+- URL: https://halalmeatdepot.com.au/product/buy-beef-mince-carton/
 - Pack: 20kg carton — $290.00 (about $14.50/kg)
 - A 20kg carton of beef mince for burger bars, kofta grills and takeaways.
 - This 20kg carton of beef mince is packed in smaller bags inside the carton, so kitchens open only what they need. It is our lowest price per kilo on beef mince.
@@ -1700,7 +1700,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Lamb Curry Pieces Carton
 
-- URL: https://halalmeatdepot.com.au/product/lamb-curry-pieces-carton/
+- URL: https://halalmeatdepot.com.au/product/bulk-meat-packs-lamb-curry-pieces-carton/
 - Pack: 20kg carton — $250.00 (about $12.50/kg)
 - A 20kg carton of bone-in lamb curry pieces for restaurants and caterers.
 - This 20kg carton contains bone-in lamb cut into curry-sized pieces. Consistent sizing means every portion cooks evenly in large restaurant batches. The bone-in pieces give body to gravies, so simmer them gently until the meat comes away from the bone. They suit biryani, karahi and rogan josh, and the inner packing lets a kitchen thaw one batch at a time.
@@ -1708,7 +1708,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Diced Beef Carton
 
-- URL: https://halalmeatdepot.com.au/product/beef-diced-carton/
+- URL: https://halalmeatdepot.com.au/product/wholesale-beef-diced-carton/
 - Pack: 20kg carton — $380.00 (about $19.00/kg)
 - A 20kg carton of boneless diced beef for curry houses, stews and catering.
 - This 20kg carton of boneless diced beef is bagged inside for easier handling and freezing. It suits curry houses, caterers and stew-heavy menus. Boneless cubes brown quickly and take on spice well, so they suit beef curry, stroganoff, pies and stir-fried dishes as well as stews. Split the inner bags into daily portions before freezing so only what is needed is thawed.
@@ -1716,7 +1716,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Lamb Shoulder Carton
 
-- URL: https://halalmeatdepot.com.au/product/lamb-shoulder-carton/
+- URL: https://halalmeatdepot.com.au/product/lamb-wholesale-shoulder-carton/
 - Pack: 20kg carton — $290.00 (about $14.50/kg)
 - A 20kg carton of bone-in lamb shoulders for shawarma, slow roasting and mandi.
 - This 20kg carton holds whole bone-in lamb shoulders. Shoulder is the cut for lamb shawarma, slow roasts and mandi, bought here at carton pricing. Whole shoulders can be slow-roasted for mandi and platters, boned and sliced for shawarma, or cut down into chops and curry pieces in a kitchen with a bandsaw. Roasting them low and covered for several hours gives meat that pulls easily from the bone.
@@ -1724,7 +1724,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Goat Curry Cut Catering Pack
 
-- URL: https://halalmeatdepot.com.au/product/goat-curry-cut-catering-pack/
+- URL: https://halalmeatdepot.com.au/product/goat-curry-near-me-cut-catering-pack/
 - Pack: 20kg carton — $310.00 (about $15.50/kg)
 - A 20kg catering pack of bone-in goat curry cut for weddings, events and community functions.
 - This 20kg catering pack is bone-in goat cut to a consistent curry size. It is sized for weddings, community functions and large events. Bone-in pieces add body to the sauce, so long simmering in a large pot gives the best result. Thaw large packs in the fridge well ahead, and brown the meat in batches before simmering so it colours evenly.
@@ -1732,7 +1732,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Whole Lamb Catering Pack
 
-- URL: https://halalmeatdepot.com.au/product/whole-lamb-catering-pack/
+- URL: https://halalmeatdepot.com.au/product/whole-lamb-meat-for-sale-catering-pack/
 - Pack: 2 carcasses, approx. 40kg — $620.00 (about $15.50/kg)
 - Two whole lambs for weddings, Eid and community events, cut to your instructions.
 - This catering pack is two whole lambs, about 40kg in total, cut to your instructions. It suits weddings, Eid gatherings and community events feeding large numbers.
@@ -1740,7 +1740,7 @@ Wholesale halal meat cartons for restaurants, takeaways, caterers and community 
 
 ### Chicken Curry Cut Catering Pack
 
-- URL: https://halalmeatdepot.com.au/product/chicken-curry-cut-catering-pack/
+- URL: https://halalmeatdepot.com.au/product/chicken-curry-near-me-cut-catering-pack/
 - Pack: 20kg carton — $160.00 (about $8.00/kg)
 - A 20kg catering pack of skinless bone-in chicken curry cut for large functions.
 - This 20kg pack is skinless, bone-in chicken cut to a consistent curry size. Even pieces mean large pots of curry cook evenly and portion neatly. Chicken cooks faster than red meat, so when several curries are cooked for one event it can go into the pot later than goat or lamb. Keep it chilled until cooking and cook it in batches for even results.

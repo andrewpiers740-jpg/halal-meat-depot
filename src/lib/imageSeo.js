@@ -23,7 +23,7 @@ export function productImageSeo(p) {
 }
 
 export function categoryImageSeo(c) {
-  const subject = c.slug === 'wholesale-cartons' ? 'Meat boxes and bulk halal meat cartons' : cap(halal(c.focus))
+  const subject = c.slug === 'wholesale-cartons' ? 'Halal meat packs and bulk meat boxes' : /^buy\b/.test(c.focus) ? cap(c.focus) : cap(halal(c.focus))
   return {
     alt: `${subject} from ${SITE.name}, Greenacre, Sydney`,
     title: subject,

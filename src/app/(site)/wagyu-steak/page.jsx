@@ -62,7 +62,7 @@ export default function WagyuPage() {
       />
       <div className="page-head">
         <div className="container">
-          <Breadcrumbs crumbs={[{ name: 'Shop', path: '/halal-meat-shop/' }, { name: 'Beef', path: '/shop/halal-beef/' }, { name: 'Wagyu steak', path: '/wagyu-steak/' }]} />
+          <Breadcrumbs crumbs={[{ name: 'Shop', path: '/halal-meat-shop-near-me/' }, { name: 'Beef', path: '/shop/halal-beef/' }, { name: 'Wagyu steak', path: '/wagyu-steak/' }]} />
           <h1>Wagyu steak: halal Wagyu beef MB5+ and MB9+</h1>
           <p className="lead">
             Wagyu steak from {SITE.name} comes in two marble grades, MB5+ and MB9+, across {WAGYU.length} cuts — from tomahawks and

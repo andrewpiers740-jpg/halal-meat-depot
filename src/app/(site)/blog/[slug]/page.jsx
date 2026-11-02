@@ -62,7 +62,7 @@ export default async function BlogPost({ params }) {
             <div className="card card--dark">
               <h2 style={{ fontSize: '1.2rem' }}>Shop certified halal meat</h2>
               <p>Every product certified by {SITE.certifier}. Delivered Australia-wide.</p>
-              <Link href="/halal-meat-shop/" className="btn btn--accent">
+              <Link href="/halal-meat-shop-near-me/" className="btn btn--accent">
                 Browse the shop
               </Link>
             </div>

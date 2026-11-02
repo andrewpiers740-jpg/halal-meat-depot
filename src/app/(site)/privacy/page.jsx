@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         ['h2', 'Cookies and local storage'],
         ['p', 'Your cart is stored in your own browser. If you sign in, we set one essential cookie to keep you signed in. We do not use advertising or tracking cookies.'],
         ['h2', 'Access and correction'],
-        ['p', 'You can view and update your account details on the [My account](/account/) page, or ask us to access, correct or delete your information by emailing {{email}} or through our [contact form](/contact/).'],
+        ['p', 'You can view and update your account details on the [My account](/account/) page, or ask us to access, correct or delete your information by emailing {{email}} or through our [contact form](/contact-halal-butcher-near-me/).'],
         ['h2', 'Complaints'],
         ['p', 'If you have a privacy concern, email {{email}} first and we will respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner (OAIC).'],
       ]}

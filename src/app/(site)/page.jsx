@@ -92,10 +92,10 @@ export default function HomePage() {
             </h1>
             <p className="brand-statement">{SITE.brandStatement}</p>
             <div className="btn-row" style={{ marginTop: 24 }}>
-              <Link href="/halal-meat-shop/" className="btn btn--accent">
+              <Link href="/halal-meat-shop-near-me/" className="btn btn--accent">
                 Shop all halal meat <Icon name="arrow" />
               </Link>
-              <Link href="/halal-meat-wholesale/" className="btn btn--light">
+              <Link href="/halal-meat-manufacturers-wholesale/" className="btn btn--light">
                 Wholesale accounts
               </Link>
             </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="center" style={{ marginTop: 32 }}>
-            <Link href="/halal-meat-shop/" className="btn btn--primary">
+            <Link href="/halal-meat-shop-near-me/" className="btn btn--primary">
               View all {PRODUCTS.length} products <Icon name="arrow" />
             </Link>
           </div>
@@ -213,11 +213,11 @@ export default function HomePage() {
               Australia-wide.
             </p>
             <p>
-              Every product we sell — from <Link href="/shop/halal-beef/">halal beef</Link> and <Link href="/shop/lamb/">lamb</Link> to{' '}
-              <Link href="/shop/goat-meat-for-sale/">goat</Link>, <Link href="/shop/halal-chicken/">chicken</Link>, <Link href="/shop/camel-meat-australia/">camel</Link>,{' '}
-              <Link href="/shop/duck-meat/">duck</Link>, <Link href="/shop/kangaroo-meat-for-sale/">kangaroo</Link> and{' '}
-              <Link href="/shop/buffalo-meat/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
-              range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-certified-meat/">halal certification page</Link>.
+              Every product we sell — from <Link href="/shop/halal-beef/">halal beef</Link> and <Link href="/shop/lambs-for-sale/">lamb</Link> to{' '}
+              <Link href="/shop/goat-meat-near-me/">goat</Link>, <Link href="/shop/halal-chicken-near-me/">chicken</Link>, <Link href="/shop/camel-meat-near-me/">camel</Link>,{' '}
+              <Link href="/shop/duck-meat/">duck</Link>, <Link href="/shop/kangaroo-meat-near-me/">kangaroo</Link> and{' '}
+              <Link href="/shop/buffalo-meat-near-me/">water buffalo</Link> — is certified halal by {SITE.certifier}. We use one certifier across the whole
+              range, so you always know exactly who stands behind the halal status of your meat. Read more on our <Link href="/halal-food-australia-certified-meat/">halal certification page</Link>.
             </p>
             <h3>What makes us different</h3>
             <p>
@@ -236,8 +236,8 @@ export default function HomePage() {
               {SITE.cryptoDiscountPct}% off your meat total automatically. Fresh, unprocessed meat is GST-free in Australia.
             </p>
             <p>
-              Restaurants and caterers can order <Link href="/shop/bulk-meat-boxes/">wholesale cartons</Link> online or{' '}
-              <Link href="/halal-meat-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
+              Restaurants and caterers can order <Link href="/shop/meat-packs/">wholesale cartons</Link> online or{' '}
+              <Link href="/halal-meat-manufacturers-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
               <Link href="/blog/cooking-camel-meat-buffalo-kangaroo/">guide to cooking lean meats</Link>.
             </p>
           </div>
@@ -337,7 +337,7 @@ export default function HomePage() {
             <span className="eyebrow">Questions</span>
             <h2 id="faq-title">Halal Meat Depot FAQ</h2>
             <p>
-              Quick answers about certification, delivery and ordering. See the <Link href="/faq/">full FAQ</Link> for more.
+              Quick answers about certification, delivery and ordering. See the <Link href="/faq-check-halal-food/">full FAQ</Link> for more.
             </p>
           </div>
           <div className="faq">
@@ -398,10 +398,10 @@ export default function HomePage() {
             </p>
           </div>
           <div className="btn-row">
-            <Link href="/halal-meat-wholesale/" className="btn btn--accent">
+            <Link href="/halal-meat-manufacturers-wholesale/" className="btn btn--accent">
               Apply for a wholesale account
             </Link>
-            <Link href="/shop/bulk-meat-boxes/" className="btn btn--light">
+            <Link href="/shop/meat-packs/" className="btn btn--light">
               Browse trade cartons
             </Link>
           </div>

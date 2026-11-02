@@ -104,6 +104,7 @@ export function productSchema(p) {
     // Keyword data: the product's focus keyword plus its supporting keywords (src/config/product-keywords.js).
     keywords: [p.focus, ...(PRODUCT_KEYWORDS[p.imageSlug] || []).map((k) => k.kw)].join(', '),
     category: cat?.name,
+    weight: { '@type': 'QuantitativeValue', value: p.kg, unitCode: 'KGM' },
     brand: { '@type': 'Brand', name: SITE.name },
     offers: {
       '@type': 'Offer',
@@ -132,7 +133,7 @@ export function offerCatalogSchema() {
     '@context': 'https://schema.org',
     '@type': 'OfferCatalog',
     name: `${SITE.name} — halal meat range`,
-    url: `${SITE.url}/halal-meat-shop/`,
+    url: `${SITE.url}/halal-meat-shop-near-me/`,
     numberOfItems: PRODUCTS.length,
     itemListElement: CATEGORIES.map((c) => ({ '@type': 'OfferCatalog', name: c.name, url: `${SITE.url}${c.path}` })),
   }

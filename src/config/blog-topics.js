@@ -9,12 +9,12 @@ export const TOPICS = [
   {
     title: 'Slow cooking and braising',
     intro: 'The cheaper, hard-working cuts that turn meltingly tender with time — with slow cooker, oven and pressure cooker methods.',
-    slugs: ['slow-cooked-beef-cheeks', 'slow-cooked-lamb-shanks', 'lamb-casserole-recipe', 'slow-roast-lamb-slow-cooker', 'beef-bolar-blade-roast-recipe', 'gravy-beef-vs-chuck', 'best-bones-for-bone-broth', 'braised-beef', 'beef-shank', 'pulled-beef-recipe', 'slow-cooker-beef-ribs', 'mongolian-beef-slow-cooker', 'chicken-thigh-slow-cooker-meals'],
+    slugs: ['slow-cooked-beef-cheeks', 'lamb-casserole-recipe', 'slow-roast-lamb-slow-cooker', 'beef-bolar-blade-roast-recipe', 'gravy-beef-vs-chuck', 'best-bones-for-bone-broth', 'braised-beef', 'beef-shank', 'pulled-beef-recipe', 'slow-cooker-beef-ribs', 'mongolian-beef-slow-cooker'],
   },
   {
     title: 'Quick weeknight dinners',
     intro: 'Fast, family-friendly recipes for busy nights, most on the table in about 30 minutes.',
-    slugs: ['30-minute-beef-mince-recipes', 'best-beef-for-stir-fry', 'chicken-maryland-recipes', 'asian-beef-mince-recipes', 'beef-pasta-bake', 'pasta-with-beef-steak', 'fried-rice-and-beef', 'beef-donburi-recipe', 'rainbow-beef', 'beef-and-black-bean', 'shaking-beef', 'beef-and-lemongrass', 'beef-fajitas', 'beef-schnitzel', 'beef-croquettes', 'creamy-tuscan-chicken'],
+    slugs: ['30-minute-beef-mince-recipes', 'best-beef-for-stir-fry', 'chicken-maryland-recipes', 'asian-beef-mince-recipes', 'pasta-with-beef-steak', 'beef-donburi-recipe', 'rainbow-beef', 'beef-and-black-bean', 'shaking-beef', 'beef-and-lemongrass', 'beef-fajitas', 'beef-schnitzel', 'beef-croquettes', 'creamy-tuscan-chicken'],
   },
   {
     title: 'Barbecue and smoking',
@@ -24,12 +24,12 @@ export const TOPICS = [
   {
     title: 'Curries from around the world',
     intro: 'Slow-simmered beef and lamb curries, from Thai massaman and Malaysian rendang to Goan vindaloo and Kashmiri rogan josh.',
-    slugs: ['beef-curry-recipe', 'beef-massaman-curry', 'beef-rendang-recipe', 'beef-korma', 'beef-vindaloo', 'beef-madras', 'beef-biryani', 'rogan-josh-with-beef', 'japanese-beef-curry', 'thai-beef-salad'],
+    slugs: ['beef-massaman-curry', 'beef-rendang-recipe', 'beef-korma', 'beef-vindaloo', 'beef-madras', 'beef-biryani', 'japanese-beef-curry', 'thai-beef-salad'],
   },
   {
     title: 'Lamb recipes and cooking times',
     intro: 'Roasting times, chops and cutlets, slow-cooked necks and shanks, and everyday lamb mince meals.',
-    slugs: ['leg-of-lamb-cooking-time', 'rack-of-lamb-cooking-time', 'lamb-cooking-temperature', 'how-do-you-cook-lamb-cutlets', 'lamb-chops-in-air-fryer', 'marinated-lamb-chops', 'slow-cooked-lamb-chops', 'lamb-chop-casserole', 'lamb-neck-recipes', 'how-to-cook-lamb-ribs-in-oven', 'lamb-shank-soup', 'diced-lamb-recipes', 'lamb-mince-recipes', 'lamb-kofta-wraps', 'quarter-lamb-buying-guide'],
+    slugs: ['leg-of-lamb-cooking-time', 'rack-of-lamb-cooking-time', 'lamb-cooking-temperature', 'lamb-chops-in-air-fryer', 'lamb-mince-recipes', 'lamb-kofta-wraps', 'quarter-lamb-buying-guide'],
   },
   {
     title: 'Chicken and duck',
@@ -39,7 +39,7 @@ export const TOPICS = [
   {
     title: 'Lamb, goat and other meats',
     intro: 'Cut guides for lamb and goat, and how to cook less common meats such as camel, water buffalo and kangaroo.',
-    slugs: ['lamb-cuts-australia-guide', 'goat-meat-curry-cuts-guide', 'cooking-camel-meat-buffalo-kangaroo', 'goat-meat-vs-lamb-meat', 'what-does-goat-taste-like', 'slow-cooked-goat-recipes', 'recipe-for-goat-leg', 'goat-shank', 'marinade-for-mutton-chops', 'mutton-stew-slow-cooker', 'kangaroo-fillet', 'camel-burgers'],
+    slugs: ['lamb-cuts-australia-guide', 'goat-meat-curry-cuts-guide', 'cooking-camel-meat-buffalo-kangaroo', 'goat-meat-vs-lamb-meat', 'what-does-goat-taste-like', 'goat-shank', 'marinade-for-mutton-chops', 'mutton-stew-slow-cooker', 'kangaroo-fillet', 'camel-burgers'],
   },
   {
     title: 'Buying halal meat',

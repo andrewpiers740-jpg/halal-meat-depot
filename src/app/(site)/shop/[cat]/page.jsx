@@ -22,9 +22,10 @@ export function generateStaticParams() {
 
 const cap = (s) => s.replace(/\b\w/g, (m) => m.toUpperCase())
 // Focus keyword (src/config/seo.js), with "halal" in front when it isn't already there.
-const phrase = (c) => (c.slug === 'wholesale-cartons' ? 'meat boxes and bulk halal meat cartons' : (/halal/.test(c.focus) ? c.focus : `halal ${c.focus}`).replace(/\baustralia\b/, 'Australia'))
+// Keyword map v4 (2026-11-02): "buy … online" focus keywords lead as-is, without a "halal" prefix.
+const phrase = (c) => (c.slug === 'wholesale-cartons' ? 'halal meat packs' : (/halal|^buy\b/.test(c.focus) ? c.focus : `halal ${c.focus}`).replace(/\baustralia\b/, 'Australia'))
 // Focus keywords like "goat meat for sale" already say "buy", so they lead as-is.
-const saysBuy = (c) => /for sale|australia/i.test(c.focus)
+const saysBuy = (c) => /for sale|australia|near me|^buy\b|\bonline\b/i.test(c.focus)
 
 // Meta description: focus keyword first, then range, price anchor and delivery (110–158 chars).
 function describe(c, items) {
@@ -37,7 +38,7 @@ function describe(c, items) {
 
 function titleFor(c) {
   // Owner rule (2026-10-13): 1–2 SEO power words in every title ("Fresh" never splits the focus keyword).
-  if (c.slug === 'wholesale-cartons') return 'Fresh Meat Boxes & Bulk Halal Meat Cartons | HMD'
+  if (c.slug === 'wholesale-cartons') return 'Fresh Halal Meat Packs & Bulk Meat Boxes | HMD'
   const head = saysBuy(c) ? `Fresh ${cap(phrase(c))}` : `Buy Fresh ${cap(phrase(c))} Online`
   return [`${head} | Sydney & Australia-Wide`, `${head} | Delivered Australia-Wide`, `${head} | Halal Meat Depot`, head].find((t) => t.length <= 60)
 }
@@ -95,8 +96,8 @@ export default async function CategoryPage({ params }) {
       <div className="page-head">
         <div className="container cat-head">
           <div>
-            <Breadcrumbs crumbs={[{ name: 'Shop', path: '/halal-meat-shop/' }, { name: c.name, path: `${c.path}` }]} />
-            <h1>{c.slug === 'wholesale-cartons' ? 'Bulk halal meat cartons and meat boxes' : saysBuy(c) ? cap(phrase(c)) : `Buy ${phrase(c)} online`}</h1>
+            <Breadcrumbs crumbs={[{ name: 'Shop', path: '/halal-meat-shop-near-me/' }, { name: c.name, path: `${c.path}` }]} />
+            <h1>{c.slug === 'wholesale-cartons' ? 'Halal meat packs: bulk cartons and meat boxes' : saysBuy(c) ? cap(phrase(c)) : `Buy ${phrase(c)} online`}</h1>
             <p className="lead">{c.intro}</p>
           </div>
           <figure className="cat-head-figure">
@@ -137,13 +138,13 @@ export default async function CategoryPage({ params }) {
           )}
           <KeywordNotes category={c.slug} />
           <section className="card" style={{ marginBottom: 24 }} aria-labelledby="cat-faq-title">
-            <h2 id="cat-faq-title">{c.slug === 'wholesale-cartons' ? 'Meat boxes and bulk halal meat cartons' : cap(phrase(c))}: common questions</h2>
+            <h2 id="cat-faq-title">{cap(phrase(c))}: common questions</h2>
             {faqs.map((f) => (
               <div key={f.q} style={{ marginTop: 16 }}>
                 <h3 style={{ fontSize: '1.05rem', marginBottom: 6 }}>{f.q}</h3>
                 <p className="muted" style={{ marginBottom: 0 }}>
                   {f.a.replace(' See our delivery policy for details.', ' ')}
-                  {f.a.includes('delivery policy') && <Link href="/halal-meat-delivery/">See our delivery policy</Link>}
+                  {f.a.includes('delivery policy') && <Link href="/meat-box-delivery/">See our delivery policy</Link>}
                   {f.a.includes('delivery policy') && '.'}
                 </p>
               </div>
@@ -156,9 +157,9 @@ export default async function CategoryPage({ params }) {
             <div className="card card--tint">
               <h2>Ordering {c.name.toLowerCase()} from Halal Meat Depot</h2>
               <p className="muted" style={{ marginBottom: 0 }}>
-                All {c.name.toLowerCase()} is certified halal by {SITE.certifier} — see our <Link href="/halal-certified-meat/">certification page</Link>.
+                All {c.name.toLowerCase()} is certified halal by {SITE.certifier} — see our <Link href="/halal-food-australia-certified-meat/">certification page</Link>.
                 Minimum order ${SITE.minOrder}, free delivery over ${SITE.freeShipOver}, {SITE.cryptoDiscountPct}% off with crypto. Buying for a
-                restaurant? <Link href="/halal-meat-wholesale/">Open a wholesale account</Link>.
+                restaurant? <Link href="/halal-meat-manufacturers-wholesale/">Open a wholesale account</Link>.
               </p>
             </div>
             <div className="card">
@@ -170,10 +171,10 @@ export default async function CategoryPage({ params }) {
                   </li>
                 ))}
                 <li>
-                  <Link href="/faq/">Delivery, payment and ordering FAQ</Link>
+                  <Link href="/faq-check-halal-food/">Delivery, payment and ordering FAQ</Link>
                 </li>
                 <li>
-                  <Link href="/halal-meat-delivery/">Delivery details</Link>
+                  <Link href="/meat-box-delivery/">Delivery details</Link>
                 </li>
               </ul>
             </div>

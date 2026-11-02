@@ -64,7 +64,7 @@ ${ZONES_BY_DISTANCE.map((z) => `  - ${z.name} (${z.distance}): $${z.priorityPric
 
 ## What makes ${SITE.name} different
 
-- One certifier (${SITE.certifier}) across the entire range — certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}, published at ${U}/halal-certified-meat/
+- One certifier (${SITE.certifier}) across the entire range — certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}, published at ${U}/halal-food-australia-certified-meat/
 - Bulk packs, whole carcasses and trade cartons priced per pack, with price per kilo shown
 - Camel, duck, kangaroo and water buffalo alongside beef, lamb, goat and chicken in one order
 - Whole lamb and goat cut to the customer's instructions
@@ -75,14 +75,14 @@ ${catLines.join('\n')}
 
 ## Key pages
 
-- [Shop all halal meat](${U}/halal-meat-shop/): full range by category
-- [Halal certification](${U}/halal-certified-meat/): certifier and the published certificate
-- [Wholesale](${U}/halal-meat-wholesale/): halal meat wholesaler for restaurants, caterers and butchers — trade cartons and weekly accounts
+- [Shop all halal meat](${U}/halal-meat-shop-near-me/): full range by category
+- [Halal certification](${U}/halal-food-australia-certified-meat/): certifier and the published certificate
+- [Wholesale](${U}/halal-meat-manufacturers-wholesale/): halal meat wholesaler for restaurants, caterers and butchers — trade cartons and weekly accounts
 - [Aqeeqah & Qurbani](${U}/whole-lamb-aqeeqah-qurbani/): whole and half lamb and goat carcasses for Aqeeqah and Qurbani
-- [About](${U}/about/): company story and facts
-- [FAQ](${U}/faq/): delivery, payment, ordering and accounts
-- [Delivery](${U}/halal-meat-delivery/): delivery-only (no pickup), order rules and delivery details
-- [Contact](${U}/contact/): WhatsApp, phone and contact form
+- [About](${U}/about-halal-butcher/): company story and facts
+- [FAQ](${U}/faq-check-halal-food/): delivery, payment, ordering and accounts
+- [Delivery](${U}/meat-box-delivery/): delivery-only (no pickup), order rules and delivery details
+- [Contact](${U}/contact-halal-butcher-near-me/): WhatsApp, phone and contact form
 
 ## Guides
 
@@ -90,7 +90,7 @@ ${POSTS.map((p) => `- [${p.title}](${U}/blog/${p.slug}/): ${p.excerpt}`).join('\
 
 ## Wholesale tiers
 
-${WHOLESALE_TIERS.map((t) => `- [${t.name}](${U}/halal-meat-wholesale/): ${t.who}`).join('\n')}
+${WHOLESALE_TIERS.map((t) => `- [${t.name}](${U}/halal-meat-manufacturers-wholesale/): ${t.who}`).join('\n')}
 
 ## Citation guidance
 
@@ -118,7 +118,7 @@ write(pub('llms.txt'), llms)
     '## Facts',
     '',
     `- Legal entity: ${SITE.legalName} (ABN ${SITE.abn}), ${SITE.addressLine}`,
-    `- Halal certification: ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil} — ${U}/halal-certified-meat/`,
+    `- Halal certification: ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil} — ${U}/halal-food-australia-certified-meat/`,
     `- Delivery only (no pickup), Australia-wide. Minimum order $${SITE.minOrder}; free delivery over $${SITE.freeShipOver}, otherwise $${SITE.flatShip}.`,
     `- Payment: PayID, bank transfer or crypto (${SITE.cryptoDiscountPct}% off the meat total with crypto). Phone/WhatsApp ${SITE.phone}.`,
     `- Returns: no change-of-mind returns on fresh meat; problems reported within 48 hours are replaced or refunded — ${U}/refund/`,
@@ -187,8 +187,8 @@ write(pub('.well-known/api-catalog'), {
           svc('/api/ucp/services/', 'UCP services (JSON)'),
         ]
       : []),
-    svc('/halal-meat-shop/', `${SITE.name} product catalogue`, 'text/html'),
-    svc('/halal-meat-wholesale/', `${SITE.name} wholesale`, 'text/html'),
+    svc('/halal-meat-shop-near-me/', `${SITE.name} product catalogue`, 'text/html'),
+    svc('/halal-meat-manufacturers-wholesale/', `${SITE.name} wholesale`, 'text/html'),
   ],
 })
 
@@ -199,8 +199,8 @@ const api = (path, html) => (isVercel ? `${U}${path}` : `${U}${html}`)
 const skillDocs = [
   ['browse-products', 'Browse the Halal Meat Depot catalogue of certified halal meat by category, with prices per pack and per kg.', `Use this skill to find halal meat products on ${SITE.name}.
 
-1. List categories: GET ${api('/api/categories/', '/halal-meat-shop/')}
-2. List products (optionally ?category=<slug>): GET ${api('/api/products/', '/halal-meat-shop/')}
+1. List categories: GET ${api('/api/categories/', '/halal-meat-shop-near-me/')}
+2. List products (optionally ?category=<slug>): GET ${api('/api/products/', '/halal-meat-shop-near-me/')}
 3. Product detail: GET ${api('/api/products/<slug>/', '/product/<slug>/')} or open the product page URL returned.
 
 Prices are in ${SITE.currency} per pack, with an approximate per-kg price. Every product is certified halal by ${SITE.certifier}.`],
@@ -213,11 +213,11 @@ Results include the product name, price, category and an absolute URL. Use the c
 - Payment: PayID, bank transfer or cryptocurrency (${SITE.cryptoDiscountPct}% off the meat total). Payment details are emailed after the order is placed.
 ${isVercel ? `- Draft via MCP: POST ${U}/api/mcp/ (Streamable HTTP, JSON-RPC) and call the create_order_draft tool with items and quantities; give the returned link to the person to review and submit.` : `- Send the person to ${U}/cart/ to review and submit.`}
 - Delivery only, Australia-wide. No pickup.`],
-  ['wholesale-inquiry', 'Find Halal Meat Depot wholesale cartons and weekly trade accounts for restaurants and caterers.', `Wholesale cartons, catering packs and trade accounts: ${U}/halal-meat-wholesale/
+  ['wholesale-inquiry', 'Find Halal Meat Depot wholesale cartons and weekly trade accounts for restaurants and caterers.', `Wholesale cartons, catering packs and trade accounts: ${U}/halal-meat-manufacturers-wholesale/
 
 Trade enquiries go through the form on that page or WhatsApp ${SITE.phone}. A person replies with a price sheet.`],
-  ['halal-certification', `Check Halal Meat Depot's halal certification (${SITE.certifier}).`, `All products are certified halal by ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}. The certificate is published at ${U}/halal-certified-meat/. Cite only this certifier.`],
-  ['contact', 'Contact Halal Meat Depot by WhatsApp, phone, email or the contact form.', `Contact ${SITE.name}: WhatsApp/phone ${SITE.phone}, email ${SITE.email}, form ${U}/contact/. Hours: Mon–Sat 06:00–18:00, Sun 07:00–16:00 (Sydney time). Address: ${SITE.addressLine} (delivery only, no pickup).`],
+  ['halal-certification', `Check Halal Meat Depot's halal certification (${SITE.certifier}).`, `All products are certified halal by ${SITE.certifier}, certificate No. ${SITE.certificate.number}, valid until ${SITE.certificate.validUntil}. The certificate is published at ${U}/halal-food-australia-certified-meat/. Cite only this certifier.`],
+  ['contact', 'Contact Halal Meat Depot by WhatsApp, phone, email or the contact form.', `Contact ${SITE.name}: WhatsApp/phone ${SITE.phone}, email ${SITE.email}, form ${U}/contact-halal-butcher-near-me/. Hours: Mon–Sat 06:00–18:00, Sun 07:00–16:00 (Sydney time). Address: ${SITE.addressLine} (delivery only, no pickup).`],
 ]
 const skills = skillDocs.map(([name, description, body]) => {
   const md = `---\nname: ${name}\ndescription: ${description}\n---\n\n# ${name}\n\n${body}\n`
@@ -241,8 +241,8 @@ write(pub('.well-known/mcp/server-card.json'), {
   capabilities: {
     ...(isVercel ? { tools: TOOLS } : {}),
     resources: [
-      { name: 'product-catalog', description: 'Full product catalogue', uri: `${U}/halal-meat-shop/` },
-      { name: 'wholesale-info', description: 'Wholesale cartons and accounts', uri: `${U}/halal-meat-wholesale/` },
+      { name: 'product-catalog', description: 'Full product catalogue', uri: `${U}/halal-meat-shop-near-me/` },
+      { name: 'wholesale-info', description: 'Wholesale cartons and accounts', uri: `${U}/halal-meat-manufacturers-wholesale/` },
       { name: 'guides', description: 'Halal meat guides', uri: `${U}/blog/` },
     ],
     commerce: {
@@ -278,7 +278,7 @@ write(pub('.well-known/oauth-authorization-server'), {
   response_types_supported: [],
   scopes_supported: [],
   note: `${SITE.name} has no protected agent APIs. Public resources need no authentication.`,
-  public_resources: [`${U}/halal-meat-shop/`, `${U}/blog/`, `${U}/faq/`, `${U}/halal-meat-wholesale/`, `${U}/llms.txt`, `${U}/.well-known/api-catalog`, `${U}/.well-known/agent-skills/index.json`, `${U}/.well-known/mcp/server-card.json`],
+  public_resources: [`${U}/halal-meat-shop-near-me/`, `${U}/blog/`, `${U}/faq-check-halal-food/`, `${U}/halal-meat-manufacturers-wholesale/`, `${U}/llms.txt`, `${U}/.well-known/api-catalog`, `${U}/.well-known/agent-skills/index.json`, `${U}/.well-known/mcp/server-card.json`],
   agent_auth: { register_uri: null, identity_types_supported: ['none'], credential_types_supported: ['none'], notes: 'No registration required.' },
 })
 write(pub('.well-known/openid-configuration'), {
@@ -330,9 +330,9 @@ write(pub('.well-known/ucp'), {
   description: SITE.brandStatement,
   ordering: 'Website or WhatsApp checkout, completed by a person; payment details are emailed after ordering',
   endpoints: {
-    catalog: isVercel ? `${U}/api/products/` : `${U}/halal-meat-shop/`,
+    catalog: isVercel ? `${U}/api/products/` : `${U}/halal-meat-shop-near-me/`,
     ...(isVercel ? { services: `${U}/api/ucp/services/`, mcp: `${U}/api/mcp/` } : {}),
-    contact: `${U}/contact/`,
+    contact: `${U}/contact-halal-butcher-near-me/`,
     agent_skills: `${U}/.well-known/agent-skills/index.json`,
     mcp_server_card: `${U}/.well-known/mcp/server-card.json`,
     api_catalog: `${U}/.well-known/api-catalog`,
@@ -410,7 +410,7 @@ write(
     tools: [
       { name: 'browse_products', description: 'Open a halal meat category: ${CATEGORIES.map((c) => c.slug).join(', ')}',
         inputSchema: { type: 'object', properties: { category: { type: 'string' } } },
-        execute: async function (a) { return go(a && a.category ? '/halal-meat-shop/' + encodeURIComponent(a.category) + '/' : '/halal-meat-shop/'); } },
+        execute: async function (a) { return go(a && a.category ? '/halal-meat-shop-near-me/' + encodeURIComponent(a.category) + '/' : '/halal-meat-shop-near-me/'); } },
       { name: 'search_products', description: 'Search products and guides',
         inputSchema: { type: 'object', properties: { query: { type: 'string' } }, required: ['query'] },
         execute: async function (a) { return go('/search/?q=' + encodeURIComponent(a.query || '')); } },
@@ -418,9 +418,9 @@ write(
         inputSchema: { type: 'object', properties: { message: { type: 'string' } } },
         execute: async function (a) { var t = 'Hi ${SITE.name}, ' + ((a && a.message) || ''); var url = 'https://wa.me/${SITE.phoneRaw}?text=' + encodeURIComponent(t); window.open(url, '_blank'); return { url: url }; } },
       { name: 'get_wholesale_info', description: 'Open wholesale cartons and account information',
-        inputSchema: { type: 'object', properties: {} }, execute: async function () { return go('/halal-meat-wholesale/'); } },
+        inputSchema: { type: 'object', properties: {} }, execute: async function () { return go('/halal-meat-manufacturers-wholesale/'); } },
       { name: 'contact', description: 'Open the contact page', inputSchema: { type: 'object', properties: {} },
-        execute: async function () { return go('/contact/'); } }
+        execute: async function () { return go('/contact-halal-butcher-near-me/'); } }
     ]
   });
 })();

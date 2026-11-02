@@ -6,7 +6,7 @@ import { resolve, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import { CATEGORY_KEYWORDS, PAGE_KEYWORDS } from '../src/config/support-keywords.js'
-import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, powerWordCount, POWER_WORDS } from '../src/config/site.js'
+import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, exactWords, powerWordCount, POWER_WORDS } from '../src/config/site.js'
 import { TOOLS } from '../src/lib/tools.js'
 import { STATIC_PAGES } from '../src/lib/sitemaps.js'
 import { PRODUCT_KEYWORDS } from '../src/config/product-keywords.js'
@@ -81,7 +81,7 @@ const FOCUS = new Map([
 {
   const seen = new Map()
   for (const [path, f] of FOCUS) {
-    const key = focusWords(f).join(' ')
+    const key = exactWords(f)
     if (seen.has(key)) fail('F5', `focus keyword "${f}" used by ${seen.get(key)} and ${path}`)
     seen.set(key, path)
   }
@@ -107,21 +107,22 @@ const FOCUS = new Map([
     const s = PRODUCT_SEO[p.imageSlug]
     check(!s?.intent || s.ownerOk || /T|C|N/.test(s.intent), 'F12', `${p.slug}: primary keyword "${p.focus}" is not Transactional/Commercial (${s?.intent})`)
   }
-  for (const [id, s] of Object.entries(CATEGORY_SEO)) check(/T|C/.test(s.intent || ''), 'F12', `category ${id}: primary keyword "${s.focus}" is not Transactional/Commercial`)
+  for (const [id, s] of Object.entries(CATEGORY_SEO)) check(s.ownerOk || /T|C/.test(s.intent || ''), 'F12', `category ${id}: primary keyword "${s.focus}" is not Transactional/Commercial`)
   const all = Object.values(PRODUCT_KEYWORDS).flat()
   const share = (i) => all.filter((k) => k.intent === i).length / all.length
   // Owner rule (2026-10-13): supporting keywords are EXACT phrases from the keyword files, so the 45/45/10
   // T/C/I mix and the 5-keyword floor are targets the files can't always meet — reported, never padded.
   const thin = PRODUCTS.filter((p) => (PRODUCT_KEYWORDS[p.imageSlug] || []).length < 5).length
   console.log(`note: product keyword mix ${(share('T') * 100).toFixed(0)}/${(share('C') * 100).toFixed(0)}/${(share('I') * 100).toFixed(0)} T/C/I (target 45/45/10); ${thin} products have <5 supporting keywords because the files have no more relevant ones`)
-  // Every focus and supporting keyword is used by one page only (products, categories, pages, posts).
+  // Owner, 2026-11-02: a supporting keyword may support several pages, but no page uses another page's FOCUS
+  // keyword as its own focus (F5) and no keyword is listed twice on the same page.
   {
     const seen = new Map()
-    const note = (kw, where) => { const k = kw.toLowerCase(); if (seen.has(k) && seen.get(k) !== where) fail('F15', `keyword "${kw}" used on ${seen.get(k)} and ${where}`); else seen.set(k, where) }
-    for (const p of PRODUCTS) { note(p.focus, `/product/${p.slug}/`); for (const k of PRODUCT_KEYWORDS[p.imageSlug] || []) note(k.kw, `/product/${p.slug}/`) }
-    for (const c of CATEGORIES) { note(c.focus, c.path); for (const k of CATEGORY_KEYWORDS[c.slug]?.keywords || []) note(k.kw, c.path) }
-    for (const [path, f] of Object.entries(PAGE_SEO)) { note(f, path); for (const k of PAGE_KEYWORDS[path]?.keywords || []) note(k.kw, path) }
-    for (const post of POSTS) { const where = `/blog/${post.slug}/`; note(POST_SEO[post.slug], where); for (const k of post.keywords || []) note(k.kw, where) }
+    const note = (kw, where) => { const k = kw.toLowerCase() + ' @ ' + where; if (seen.has(k)) fail('F15', `keyword "${kw}" listed twice on ${where}`); else seen.set(k, where) }
+    for (const p of PRODUCTS) { for (const k of PRODUCT_KEYWORDS[p.imageSlug] || []) note(k.kw, `/product/${p.slug}/`) }
+    for (const c of CATEGORIES) { for (const k of CATEGORY_KEYWORDS[c.slug]?.keywords || []) note(k.kw, c.path) }
+    for (const [path, f] of Object.entries(PAGE_SEO)) { for (const k of PAGE_KEYWORDS[path]?.keywords || []) note(k.kw, path) }
+    for (const post of POSTS) { const where = `/blog/${post.slug}/`; for (const k of post.keywords || []) note(k.kw, where) }
   }
   const text = (b) => b.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
   for (const post of POSTS) {
@@ -138,6 +139,8 @@ const NOINDEX = ['/cart/', '/checkout/', '/account/', '/search/', '/thank-you-or
 const pages = [...pageUrls.map(toPath), ...NOINDEX]
 const internalLinks = new Set()
 const banned = COMPLIANCE.bannedTerms.map((t) => t.toLowerCase())
+// Whole-word match, so short certifier acronyms (ANIC, AFIC) don't match inside ordinary words ("organic").
+const bannedIn = (text, t) => new RegExp(`(^|[^a-z0-9])${t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z0-9]|$)`).test(text)
 const titles = new Map()
 const descs = new Map()
 let allHtml = ''
@@ -169,7 +172,8 @@ for (const path of pages) {
     else {
       check(containsExact(decode(title), focus), 'F2', `${path}: focus "${focus}" missing from title "${decode(title)}"`)
       check(containsExact(d, focus), 'F3', `${path}: focus "${focus}" missing from meta description`)
-      if (path !== '/') check(containsExact(path.split('/').filter(Boolean).pop(), focus.replace(/'/g, ' ').replace(/&/g, 'and')), 'F4', `${path}: focus "${focus}" missing from slug`)
+      // /blog/ stays /blog/ (owner, 2026-11-02): every post URL sits under it.
+      if (path !== '/' && path !== '/blog/') check(containsExact(path.split('/').filter(Boolean).pop(), focus.replace(/'/g, ' ').replace(/&/g, 'and')), 'F4', `${path}: focus "${focus}" missing from slug`)
       // Owner rule (2026-10-13): 1–2 SEO power words in every title.
       const pw = powerWordCount(decode(title))
       check(pw >= 1 && pw <= 2, 'F13', `${path}: ${pw} power words in title "${decode(title)}" (need 1–2 of: ${POWER_WORDS.join(', ')})`)
@@ -204,6 +208,7 @@ for (const path of pages) {
         const text = decode(desc.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim()
         const words = text.split(' ')
         check(containsExact(words.slice(0, Math.ceil(words.length * 0.2)).join(' '), focus), 'F10', `${path}: focus "${focus}" not in the first 20% of the description`)
+        check(words.length >= 400, 'F16', `${path}: product description ${words.length} words (need 400+)`)
         check(kws.length <= 10, 'F10', `${path}: ${kws.length} supporting keywords (max 10)`)
         const pageText = decode(body.replace(/<[^>]+>/g, ' '))
         for (const k of kws) check(containsExact(pageText, k), 'F10', `${path}: supporting keyword "${k}" not used`)
@@ -264,7 +269,7 @@ for (const path of pages) {
   for (const m of body.matchAll(/href="(\/[^"#]*)"/g)) if (!m[1].startsWith('/_next') && !m[1].startsWith('/api/')) internalLinks.add(m[1].split('?')[0])
   // compliance
   const lower = body.replace(/<[^>]+>/g, ' ').toLowerCase() + ' ' + blocks.join(' ').toLowerCase()
-  for (const t of banned) if (lower.includes(t)) fail('B7', `${path}: banned term "${t}"`)
+  for (const t of banned) if (bannedIn(lower, t)) fail('B7', `${path}: banned term "${t}"`)
 }
 
 // ── broken internal links ─────────────────────────────────────────────────
@@ -282,7 +287,7 @@ for (const f of agentFiles) {
   check(r.status === 200, 'B6', `${f} returned ${r.status}`)
   agentText[f] = r.text
   check(!/\[(DOMAIN|NUMBER|EMAIL|Brand)\]/.test(r.text), '32', `${f}: unreplaced placeholder`)
-  for (const t of banned) if (r.text.toLowerCase().includes(t)) fail('B7', `${f}: banned term "${t}"`)
+  for (const t of banned) if (bannedIn(r.text.toLowerCase(), t)) fail('B7', `${f}: banned term "${t}"`)
 }
 check(agentText['/auth.md'].startsWith('# Auth.md'), '20', 'auth.md must start with "# Auth.md"')
 check(agentText['/auth.md'].includes('"agent_auth"'), '20', 'auth.md missing agent_auth block')
@@ -328,7 +333,7 @@ const declared = (card.capabilities.tools || []).map((t) => t.name).sort().join(
 check(live && live === declared, 'B8', `server-card tools (${declared}) ≠ live tools/list (${live})`)
 const draft = await mcp('tools/call', { name: 'create_order_draft', arguments: { items: [{ slug: PRODUCTS[0].slug, quantity: 3 }], payment_method: 'crypto' } })
 check(Boolean(draft.result?.content?.[0]?.text?.includes('cartUrl')), 'B8', 'create_order_draft failed')
-for (const t of TOOLS) for (const b of banned) if (t.description.toLowerCase().includes(b)) fail('B7', `MCP tool ${t.name} description has "${b}"`)
+for (const t of TOOLS) for (const b of banned) if (bannedIn(t.description.toLowerCase(), b)) fail('B7', `MCP tool ${t.name} description has "${b}"`)
 const catalog = JSON.parse(agentText['/.well-known/api-catalog'])
 for (const entry of catalog.linkset) {
   const path = toPath(entry.anchor)

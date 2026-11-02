@@ -7,7 +7,7 @@ export default function CategoryChips({ current }) {
     <nav aria-label="Categories">
       <ul className="chips">
         <li>
-          <Link href="/halal-meat-shop/" aria-current={!current ? 'page' : undefined}>
+          <Link href="/halal-meat-shop-near-me/" aria-current={!current ? 'page' : undefined}>
             All products
           </Link>
         </li>

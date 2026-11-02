@@ -75,7 +75,7 @@ export default function SearchView() {
       {q.trim() && !products.length && !posts.length && (
         <div className="card card--tint">
           <p style={{ margin: 0 }}>
-            Nothing matched. Try a shorter word, or <Link href="/halal-meat-shop/">browse the full range</Link>.
+            Nothing matched. Try a shorter word, or <Link href="/halal-meat-shop-near-me/">browse the full range</Link>.
           </p>
         </div>
       )}

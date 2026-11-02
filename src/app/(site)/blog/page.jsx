@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import PostThumb from '@/components/PostThumb'
+import KeywordNotes from '@/components/KeywordNotes'
 import { POSTS } from '@/config/site'
 import { pageMeta } from '@/lib/meta'
 import { TOPICS } from '@/config/blog-topics'
 
 export const metadata = pageMeta({
-  title: 'Easy Halal Meat Guides & Cooking Tips | HMD Blog',
-  description: 'Our blog: halal steak and roast guides, slow-cooking recipes for beef cheeks, lamb shanks and casseroles, brisket smoking tips and how to buy halal meat.',
+  title: 'Beef Meals & Easy Halal Recipes | HMD Blog',
+  description: 'Beef meals, lamb and chicken recipes, steak guides and slow-cooking tips from Halal Meat Depot, plus how to choose and buy certified halal meat.',
   path: '/blog/',
 })
 
@@ -46,7 +47,7 @@ export default function BlogIndex() {
       <div className="page-head">
         <div className="container">
           <Breadcrumbs crumbs={[{ name: 'Blog', path: '/blog/' }]} />
-          <h1>Halal meat blog: guides and cooking tips</h1>
+          <h1>Beef meals, recipes and halal meat guides</h1>
           <p className="lead">Practical guides to choosing cuts, cooking every kind of halal meat, and buying certified halal meat with confidence.</p>
         </div>
       </div>
@@ -59,10 +60,11 @@ export default function BlogIndex() {
           </p>
           <p>
             Every recipe is halal — no pork and no alcohol — and every guide links straight to the cuts it uses, so you can go from reading to
-            ordering in a click. All our meat is certified halal by Halal Control Australia and delivered chilled Australia-wide. New to buying
+            ordering in a click. All our meat is certified halal by Halal Control Australia and delivered Australia-wide. New to buying
             meat online? Start with our <Link href="/blog/guide-to-halal-beef-cuts/">guide to halal beef cuts</Link>, browse the{' '}
-            <Link href="/halal-meat-shop/">halal meat shop</Link>, or read the <Link href="/faq/">FAQ</Link> for delivery and payment details.
+            <Link href="/halal-meat-shop-near-me/">halal meat shop</Link>, or read the <Link href="/faq-check-halal-food/">FAQ</Link> for delivery and payment details.
           </p>
+          <KeywordNotes path="/blog/" />
           <nav aria-label="Blog topics">
             <p style={{ marginBottom: 0 }}>
               <strong>Jump to a topic:</strong>{' '}
