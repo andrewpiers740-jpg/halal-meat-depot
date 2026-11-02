@@ -517,3 +517,8 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .post-card .post-thumb a { display: block; height: 100%; }
 .post-card .post-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .post-card .post-thumb-credit { position: absolute; right: 0; bottom: 0; max-width: 100%; padding: 2px 8px; font-size: 0.68rem; line-height: 1.4; color: #fff; background: rgba(0, 0, 0, 0.62); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.more-products { margin-top: 20px }
+.more-products > summary { cursor: pointer; list-style: none; display: inline-flex }
+.more-products > summary::-webkit-details-marker { display: none }
+.more-products[open] > summary { margin-bottom: 20px }

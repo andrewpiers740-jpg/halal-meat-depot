@@ -7,7 +7,7 @@ import CardCart from './CardCart'
 // Shop page browser: left sidebar (categories, subcategories, price range) filtering a
 // product grid in place. Receives a light product index as props so the full catalogue
 // module never ships to the browser. Filters mirror to the URL (?cat=&sub=&min=&max=).
-const PAGE = 24
+const PAGE = 12
 const money = (n) => `$${Number(n).toLocaleString('en-AU', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 const RANGES = [
   { label: 'Under $50', min: 0, max: 50 },

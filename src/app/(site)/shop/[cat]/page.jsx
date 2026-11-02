@@ -14,6 +14,7 @@ import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
 
 export const dynamicParams = false
+const FIRST_CARDS = 9
 const WAGYU_SUB = 'Wagyu MB5+ & MB9+'
 
 export function generateStaticParams() {
@@ -78,6 +79,9 @@ export default async function CategoryPage({ params }) {
   if (!c) notFound()
   const items = productsInCategory(c.slug)
   const groups = c.subcategories.map((sub) => ({ sub, items: items.filter((p) => p.sub === sub) })).filter((g) => g.items.length)
+  // Only the first FIRST_CARDS cards render open; the rest sit in a closed <details> (still crawlable, no layout cost until opened).
+  let budget = FIRST_CARDS
+  for (const g of groups) { g.open = g.sub === WAGYU_SUB ? 0 : Math.min(g.items.length, Math.max(budget, 3)); budget = Math.max(0, budget - g.open) }
   const related = POSTS.filter((p) => p.body.some((b) => typeof b[1] === 'string' && b[1].includes(`${c.path}`))).slice(0, 2)
   const faqs = categoryFaqs(c, items, groups)
   const img = categoryImageSeo(c)
@@ -129,10 +133,20 @@ export default async function CategoryPage({ params }) {
               <section key={g.sub} id={subSlug(g.sub)} aria-labelledby={`sub-${i}`} className="sub-section" style={{ marginBottom: 48 }}>
                 <h2 id={`sub-${i}`}>{g.sub}</h2>
                 <div className="product-grid">
-                  {g.items.map((p, j) => (
+                  {g.items.slice(0, g.open).map((p, j) => (
                     <ProductCard key={p.slug} product={p} priority={i === 0 && j < 2} />
                   ))}
                 </div>
+                {g.items.length > g.open && (
+                  <details className="more-products">
+                    <summary className="btn btn--ghost">Show {g.items.length - g.open} more {g.sub.toLowerCase()}</summary>
+                    <div className="product-grid">
+                      {g.items.slice(g.open).map((p) => (
+                        <ProductCard key={p.slug} product={p} />
+                      ))}
+                    </div>
+                  </details>
+                )}
               </section>
             )
           )}

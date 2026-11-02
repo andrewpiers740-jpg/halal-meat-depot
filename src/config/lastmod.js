@@ -849,44 +849,44 @@ export const LASTMOD = {
   "date": "2026-11-02T13:28:27.760Z"
  },
  "/shop/halal-beef/": {
-  "hash": "44bdfdddb2206e31",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "3dced98888996329",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/lambs-for-sale/": {
-  "hash": "fce932a8d30dd80b",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "7f0db28ee9d3f953",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/goat-meat-near-me/": {
-  "hash": "fdfe90fd91517f45",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "34ee9a2a181296ef",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/halal-chicken-near-me/": {
-  "hash": "58a7a14f9b64307f",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "f38c42135fa5c5b9",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/camel-meat-near-me/": {
-  "hash": "5d24df5306d7647c",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "9fb1582df1a8fb35",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/duck-meat/": {
-  "hash": "d6573348edb80bf3",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "7cce40ba8bec1093",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/kangaroo-meat-near-me/": {
-  "hash": "4139366f7298beca",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "281ce0dbeba7e071",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/buffalo-meat-near-me/": {
-  "hash": "46bb5d48cdeffa8f",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "336c06141eb610c3",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/buy-beef-offals-online/": {
-  "hash": "fd2cc171dd3116b8",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "c40e53d2320c8668",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/shop/meat-packs/": {
-  "hash": "c7abd0e77d7bc0f8",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "9b7acd1ae8d4e567",
+  "date": "2026-11-02T20:39:54.432Z"
  },
  "/": {
   "hash": "bb3de085b2f92eb9",
