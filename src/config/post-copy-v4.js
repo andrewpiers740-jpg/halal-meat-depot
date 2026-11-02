@@ -26,9 +26,11 @@ import { POST_EXTRA_V4_C } from './post-extra-v4-c.js'
 import { POST_EXTRA_V4_D } from './post-extra-v4-d.js'
 import { POST_EXTRA_V4_E } from './post-extra-v4-e.js'
 import { POST_EXTRA_V4_F } from './post-extra-v4-f.js'
+import { POST_EXTRA_V4_G } from './post-extra-v4-g.js'
+import { POST_EXTRA_V4_H } from './post-extra-v4-h.js'
 
 // Every extension block for a post is appended in order (A, B, C ...).
-const EXTRAS = [POST_EXTRA_V4_A, POST_EXTRA_V4_B, POST_EXTRA_V4_C, POST_EXTRA_V4_D, POST_EXTRA_V4_E, POST_EXTRA_V4_F]
+const EXTRAS = [POST_EXTRA_V4_A, POST_EXTRA_V4_B, POST_EXTRA_V4_C, POST_EXTRA_V4_D, POST_EXTRA_V4_E, POST_EXTRA_V4_F, POST_EXTRA_V4_G, POST_EXTRA_V4_H]
 
 const ALL = {
   ...POST_COPY_V4_1,

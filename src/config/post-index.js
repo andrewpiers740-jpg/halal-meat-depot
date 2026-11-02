@@ -521,5 +521,59 @@ export const POST_INDEX = [
   "title": "Rice and Minced Meat Recipe: Simple One-Pan Dinners",
   "excerpt": "A rice and minced meat recipe for easy one-pan dinners: savoury mince rice, stuffed vegetables and spiced rice bowls, using fresh halal beef mince.",
   "kw": "rice and minced meat recipe"
+ },
+ {
+  "slug": "beef-mince-pasta-bake",
+  "title": "Beef Mince Pasta Bake: An Easy Family Favourite",
+  "excerpt": "A beef mince pasta bake that feeds the family: a rich tomato mince sauce, tender pasta and golden cheese, plus make-ahead and freezer tips.",
+  "kw": "beef mince pasta bake"
+ },
+ {
+  "slug": "nachos-beef-mince-recipe",
+  "title": "Nachos Beef Mince Recipe: Quick Loaded Nachos at Home",
+  "excerpt": "A nachos beef mince recipe for loaded nachos at home: spiced mince, melted cheese, fresh toppings and tips for a crisp tray every time.",
+  "kw": "nachos beef mince recipe"
+ },
+ {
+  "slug": "savoury-minced-beef",
+  "title": "Savoury Minced Beef: The Classic Easy Savoury Mince",
+  "excerpt": "Savoury minced beef, the classic Australian family dinner: a simple recipe with onion, carrot and peas, serving ideas, and how to buy halal beef mince.",
+  "kw": "savoury minced beef"
+ },
+ {
+  "slug": "korean-beef-mince",
+  "title": "Korean Beef Mince: A Quick, Simple Rice Bowl",
+  "excerpt": "Korean beef mince in 15 minutes: sweet-savoury mince over rice with a crisp vegetable side, plus the best halal mince, bulk buying and pasta twists.",
+  "kw": "korean beef mince"
+ },
+ {
+  "slug": "curried-beef-mince-recipes",
+  "title": "Curried Beef Mince Recipes: Easy Mince Curries",
+  "excerpt": "Curried beef mince recipes for busy nights: keema, a creamy mild mince curry and a spicy dry fry, plus can you cook mince frozen and bulk buying tips.",
+  "kw": "curried beef mince recipes"
+ },
+ {
+  "slug": "healthy-mince-recipes",
+  "title": "Healthy Mince Recipes: Lean, Simple Weeknight Meals",
+  "excerpt": "Healthy mince recipes for weeknights: lean beef mince meals packed with vegetables, smart swaps, ideas for mince and where to buy halal lean mince.",
+  "kw": "healthy mince recipes"
+ },
+ {
+  "slug": "beef-rissoles",
+  "title": "Beef Rissoles: Easy, Tender Rissoles Every Time",
+  "excerpt": "Beef rissoles that stay tender and juicy: a classic pan-fried recipe, gravy, variations, burgers vs rissoles and where to buy halal mince and patties.",
+  "kw": "beef rissoles"
+ },
+ {
+  "slug": "beef-pie-recipe",
+  "title": "Beef Pie Recipe: A Simple Homemade Meat Pie",
+  "excerpt": "A beef pie recipe for a simple homemade meat pie: slow-cooked beef chuck filling, flaky pastry, pastry tips and bulk buying for pie makers.",
+  "kw": "beef pie recipe"
+ },
+ {
+  "slug": "beef-noodles",
+  "title": "Beef Noodles: Quick Stir-Fried Noodle Recipes",
+  "excerpt": "Beef noodles in 20 minutes: stir-fried noodle recipes with tender strips of steak, the best cuts for the wok, black bean sauce and Wagyu upgrades.",
+  "kw": "beef noodles"
  }
 ]
