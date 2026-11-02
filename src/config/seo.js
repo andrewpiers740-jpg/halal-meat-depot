@@ -1,5 +1,5 @@
 import { BLOG_KEYWORDS } from './posts-blog-keywords.js'
-import { POST_V4, POST_MOVES_V4 } from './post-v4.js'
+import { POST_V4_INDEX as POST_V4, POST_MOVES_V4 } from './post-v4-index.js'
 // Focus keywords and keyword URLs (owner rule, 2026-10-13): every indexable page has a
 // UNIQUE focus keyword that appears in its SEO title, meta description and slug.
 // Keywords come from the owner's Semrush exports (docs/seo-strategy-report.md). Where the

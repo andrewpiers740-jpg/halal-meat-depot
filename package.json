@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "dev": "node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs && next dev -p 3000",
-    "prebuild": "node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs",
+    "prebuild": "node scripts/gen-post-v4-index.mjs && node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs",
     "build": "next build && node scripts/postbuild-js.mjs",
     "start": "next start",
     "images": "node scripts/images.mjs",

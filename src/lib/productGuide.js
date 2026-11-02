@@ -1,7 +1,7 @@
 import { SITE } from '../config/site.js'
 import { PRIORITY_FROM } from '../config/delivery.js'
 import { money } from './order.js'
-import { POST_MOVES_V4 } from '../config/post-v4.js'
+import { POST_MOVES_V4 } from '../config/post-v4-index.js'
 
 // Longer product copy (owner, 2026-11-02: every product description 400+ words). Everything here is built from
 // the product's own data (name, pack, weight, price, chilled or frozen) and general, true cooking and food-safety
