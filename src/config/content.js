@@ -361,7 +361,8 @@ export const POSTS = [
   ...BLOG_POSTS,
 // Photos were added to every post on 2026-10-16, so posts dated earlier count as updated then.
 // Keyword map v4 (2026-11-02) is applied per post (post-v4.js); photos stay filed under the original slug (imageSlug).
-].map(applyPostV4).map((p) => ({ ...p, images: POST_IMAGES[p.imageSlug] || [], updated: p.v4 ? '2026-11-02' : POST_IMAGES[p.imageSlug] && (p.updated || p.date) < '2026-10-16' ? '2026-10-16' : p.updated }))
+// Owner (2026-11-02): blog posts use the site's own product images, not licensed photos (new-post-images-v4.js, filed under the final slug).
+].map(applyPostV4).map((p) => ({ ...p, imageSlug: NEW_POST_IMAGES[p.slug] ? p.slug : p.imageSlug, images: NEW_POST_IMAGES[p.slug] || POST_IMAGES[p.imageSlug] || [], updated: p.v4 ? '2026-11-02' : p.updated }))
 
 // The 58 new v4 posts (2026-11-02) use the site's own product images, so they are added after the photo mapping.
 POSTS.push(...buildNewPostsV4(NEW_POST_IMAGES))

@@ -17,7 +17,7 @@ if (fs.existsSync(outFile)) existing = (await import(pathToFileURL(outFile).href
 const byLink = (l) => PRODUCTS.find((p) => `/product/${p.slug}/` === l)
 
 for (const v of Object.values(POST_KEYWORDS_V4)) {
-  if (!v.isNew || (only && !only.has(v.slug))) continue
+  if (only && !only.has(v.slug)) continue
   // product-primary links first, then any other product links; up to 4 distinct products
   const primary = v.keywords.filter((k) => k.product).map((k) => byLink(k.link))
   const others = v.keywords.filter((k) => !k.product && k.link).map((k) => byLink(k.link))
