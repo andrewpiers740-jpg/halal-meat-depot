@@ -9,7 +9,7 @@ const nextConfig = {
   // Product/category images are served as WebP (owner rule); hero slides are pre-built AVIF.
   // Widths trimmed to what the layouts use (sources are at most 1600px wide): shorter srcsets keep
   // category pages (60+ cards) lighter, and the fallback src is 1600w instead of 3840w.
-  images: isStatic ? { unoptimized: true } : { formats: ['image/webp'], deviceSizes: [640, 750, 828, 1080, 1200, 1600], imageSizes: [96, 256, 384] },
+  images: isStatic ? { unoptimized: true } : { formats: ['image/webp'], qualities: [60, 75], deviceSizes: [640, 750, 828, 1080, 1200, 1600], imageSizes: [96, 256, 384] },
   poweredByHeader: false,
   // Note: experimental.inlineCss was tried (2026-10-13) and reverted — Next 16 embeds the stylesheet
   // three times per page (style tag + RSC payload), adding ~27 KB compressed to category pages, more

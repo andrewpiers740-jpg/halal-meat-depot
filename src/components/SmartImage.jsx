@@ -15,6 +15,7 @@ export default function SmartImage({ src, alt, title, width, height, fill, sizes
         {...(fill ? { fill: true } : { width, height })}
         sizes={sizes}
         priority={priority}
+        quality={priority ? 75 : 60}
         className={className}
       />
     )
