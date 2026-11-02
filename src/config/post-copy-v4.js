@@ -10,12 +10,17 @@ import { POST_COPY_V4_4 } from './post-copy-v4-4.js'
 import { POST_COPY_V4_5 } from './post-copy-v4-5.js'
 import { POST_COPY_V4_6 } from './post-copy-v4-6.js'
 import { POST_COPY_V4_7 } from './post-copy-v4-7.js'
+import { POST_COPY_V4_8 } from './post-copy-v4-8.js'
+import { POST_COPY_V4_9 } from './post-copy-v4-9.js'
+import { POST_COPY_V4_10 } from './post-copy-v4-10.js'
+import { POST_COPY_V4_11 } from './post-copy-v4-11.js'
 import { POST_EXTRA_V4_A } from './post-extra-v4-a.js'
 import { POST_EXTRA_V4_B } from './post-extra-v4-b.js'
 import { POST_EXTRA_V4_C } from './post-extra-v4-c.js'
+import { POST_EXTRA_V4_D } from './post-extra-v4-d.js'
 
 const EXTRA = { ...POST_EXTRA_V4_A, ...POST_EXTRA_V4_B }
-const TIPS = POST_EXTRA_V4_C
+const TIPS = { ...POST_EXTRA_V4_C, ...POST_EXTRA_V4_D }
 
 const ALL = {
   ...POST_COPY_V4_1,
@@ -25,6 +30,10 @@ const ALL = {
   ...POST_COPY_V4_5,
   ...POST_COPY_V4_6,
   ...POST_COPY_V4_7,
+  ...POST_COPY_V4_11,
+  ...POST_COPY_V4_10,
+  ...POST_COPY_V4_9,
+  ...POST_COPY_V4_8,
 }
 
 // Each post: its hand-written sections, then a Q&A section that completes the 1,500 words.

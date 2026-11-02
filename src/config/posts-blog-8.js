@@ -113,7 +113,7 @@ export const BLOG_POSTS_8 = [
         `Sesame: mix sesame seeds into panko for a nutty crunch.`,
       ]],
       ['h2', `Serving ideas`],
-      ['p', `Serve crumbed chicken with chips and salad, mashed potato and peas, or in a burger with lettuce and mayonnaise. Top it with tomato sauce and cheese for a parmigiana, or serve it with Japanese curry for katsu curry; see our [Japanese beef curry](/blog/japanese-beef-curry/) recipe for the sauce. For a beef version, read our [beef schnitzel](/blog/beef-schnitzel-near-me/) guide.`],
+      ['p', `Serve crumbed chicken with chips and salad, mashed potato and peas, or in a burger with lettuce and mayonnaise. Top it with tomato sauce and cheese for a parmigiana, or serve it with Japanese curry for katsu curry; see our [Japanese beef curry](/blog/japanese-curry-dishes-beef/) recipe for the sauce. For a beef version, read our [beef schnitzel](/blog/beef-schnitzel-near-me/) guide.`],
       ['h2', `A chicken butcher who cuts to order`],
       ['p', `A good chicken butcher can butterfly breasts, trim tenderloins and portion thigh fillets for you, saving time at home. We cut and pack chicken fresh in Greenacre, Sydney, and every product is certified halal by Halal Control Australia.`],
       ['h2', `Where do you buy chicken that is fresh and halal?`],

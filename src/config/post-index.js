@@ -253,124 +253,124 @@ export const POST_INDEX = [
   "kw": "beef brisket spice rub"
  },
  {
-  "slug": "how-to-tenderise-beef-steak",
-  "title": "How to Tenderise Beef Steak: 7 Methods That Work",
-  "excerpt": "How to tenderise beef steak at home: pounding, salting, marinades, baking soda for stir-fry, slicing and cooking methods, plus which cuts need it.",
-  "kw": "how to tenderise beef steak"
+  "slug": "meat-tenderiser-tenderise-beef-steak",
+  "title": "Meat Tenderiser Guide: How to Tenderise Beef Steak (7 Methods)",
+  "excerpt": "Meat tenderiser guide: seven methods to tenderise beef steak, from pounding and dry brining to baking soda, plus the best cuts for tender results.",
+  "kw": "meat tenderiser"
  },
  {
-  "slug": "medium-rare-beef-steak-temperature",
-  "title": "Medium Rare Beef Steak Temperature and Cooking Times",
-  "excerpt": "The medium rare beef steak temperature (55 to 57°C), when to pull the steak off, cooking times by thickness and cut, and how to cook it perfectly every time.",
-  "kw": "medium rare beef steak temperature"
+  "slug": "meat-thermometer-steak-medium-rare-beef-temperature",
+  "title": "Meat Thermometer Steak Guide: Medium Rare Beef Temperature and Cooking Times",
+  "excerpt": "Meat thermometer steak guide to hit medium rare every time: target temperatures, when to pull the steak, cooking times and the best halal steaks.",
+  "kw": "meat thermometer steak"
  },
  {
-  "slug": "beef-steak-side-dishes",
-  "title": "Beef Steak Side Dishes: 15 Ideas for Every Season",
-  "excerpt": "Beef steak side dishes for every night and every season: potatoes, salads, vegetables, sauces and grains that turn a simple steak into a complete meal.",
-  "kw": "beef steak side dishes"
+  "slug": "best-sides-to-have-with-steak-beef-dishes",
+  "title": "The Best Sides to Have With Steak: 15 Beef Dishes for Every Season",
+  "excerpt": "The best sides to have with steak: 15 potato, salad, vegetable and grain ideas for every season, plus sauces and the halal steaks to serve them with.",
+  "kw": "best sides to have with steak"
  },
  {
-  "slug": "pasta-with-beef-steak",
-  "title": "Pasta With Beef Steak: Five Easy Recipes",
-  "excerpt": "Five recipes for pasta with beef steak, from creamy garlic steak fettuccine to a quick tomato and chilli penne, plus which steak to buy and how to cook it.",
-  "kw": "pasta with beef steak"
+  "slug": "mushroom-and-steak-pasta-beef",
+  "title": "Mushroom and Steak Pasta: Five Easy Beef Steak Pasta Recipes",
+  "excerpt": "Mushroom and steak pasta and four more easy beef steak pasta recipes: the best cuts, how to sear and slice the steak, and quick weeknight sauces.",
+  "kw": "mushroom and steak pasta"
  },
  {
-  "slug": "how-to-prepare-a-porterhouse",
-  "title": "How to Prepare a Porterhouse Steak for the Pan or Grill",
-  "excerpt": "How to prepare a porterhouse steak: trimming and seasoning, how long to cook porterhouse for each doneness, pan and barbecue methods, and resting tips.",
-  "kw": "how to prepare a porterhouse"
+  "slug": "is-porterhouse-the-best-steak-prepare",
+  "title": "Is Porterhouse the Best Steak? How to Prepare It for the Pan or Grill",
+  "excerpt": "Is porterhouse the best steak? How it compares with T-bone, rump, ribeye and scotch, how to prepare, cook and rest it, and where to buy it.",
+  "kw": "is porterhouse the best steak"
  },
  {
-  "slug": "beef-donburi-recipe",
-  "title": "Beef Donburi Recipe: Japanese Beef and Onion Rice Bowl",
-  "excerpt": "A beef donburi recipe for a quick Japanese rice bowl: thinly sliced beef simmered with onion in a sweet soy broth, an alcohol-free sauce and toppings.",
-  "kw": "beef donburi recipe"
+  "slug": "gyudon-beef-donburi-recipe",
+  "title": "Gyudon Beef: Japanese Beef Donburi Recipe With Onion and Rice",
+  "excerpt": "Gyudon beef is the Japanese beef and onion rice bowl. Our easy donburi recipe covers the best cuts, how to slice them, dashi, Wagyu and variations.",
+  "kw": "gyudon beef"
  },
  {
-  "slug": "roast-beef-cooking-time",
-  "title": "Roast Beef Cooking Time: Charts for Every Cut and Doneness",
-  "excerpt": "Roast beef cooking time charts by weight and doneness, internal temperatures, plus how to slow cook a beef chuck roast and get perfect slices every time.",
-  "kw": "roast beef cooking time"
+  "slug": "meat-thermometer-for-roast-beef-cooking-time",
+  "title": "Meat Thermometer for Roast Beef: Cooking Time Charts for Every Cut",
+  "excerpt": "Use a meat thermometer for roast beef to get perfect results: cooking time charts for every cut and doneness, resting, carving and gravy.",
+  "kw": "meat thermometer for roast beef"
  },
  {
-  "slug": "japanese-beef-curry",
-  "title": "Japanese Beef Curry: A Rich, Mild Curry Rice Recipe",
-  "excerpt": "A Japanese beef curry recipe made from scratch: a mild, thick, slightly sweet roux, tender beef, potato and carrot, served over short-grain rice.",
-  "kw": "japanese beef curry"
+  "slug": "japanese-curry-dishes-beef",
+  "title": "Japanese Curry Dishes: A Rich, Mild Japanese Beef Curry Rice Recipe",
+  "excerpt": "Japanese curry dishes at home: a rich, mild beef curry rice recipe, the best chuck cuts, serving ideas, toppings and when to splurge on Wagyu.",
+  "kw": "japanese curry dishes"
  },
  {
   "slug": "mongolian-beef-slow-cooker",
   "title": "Mongolian Beef Slow Cooker Recipe: Sticky and Tender",
-  "excerpt": "A Mongolian beef slow cooker recipe: tender beef in a sticky soy, garlic and ginger sauce, with crock pot timings and a quick stovetop method.",
-  "kw": "mongolian beef slow cooker"
+  "excerpt": "Mongolian beef slow cooker recipe: sticky, tender beef in a sweet soy and garlic sauce, with the best flank cuts, timings and stovetop version.",
+  "kw": "mongolian beef"
  },
  {
-  "slug": "beef-meat-patties-recipe",
-  "title": "Beef Meat Patties Recipe: Juicy Burgers Every Time",
-  "excerpt": "A beef meat patties recipe for juicy burgers: the right mince and fat ratio, shaping, seasoning, grilling times, and the best halal cuts to grind your own.",
-  "kw": "beef meat patties recipe"
+  "slug": "burger-patties-beef-meat-recipe",
+  "title": "Burger Patties: A Beef Meat Patties Recipe for Juicy Burgers Every Time",
+  "excerpt": "Burger patties made with beef mince: a juicy recipe, smashed and thick-style, seasoning, building the burger, freezing, and Wagyu and bulk options.",
+  "kw": "burger patties"
  },
  {
-  "slug": "beef-croquettes",
-  "title": "Beef Croquettes: A Crisp, Creamy Recipe From Leftovers",
-  "excerpt": "How to make beef croquettes: a creamy potato or béchamel filling with slow-cooked beef, crumbed and fried golden, plus the best halal cuts to use.",
-  "kw": "beef croquettes"
+  "slug": "japanese-croquette-beef",
+  "title": "Japanese Croquette With Beef: A Crisp, Creamy Recipe",
+  "excerpt": "Japanese croquette with beef: a crisp, creamy potato and mince recipe, the best mince to use, how to crumb and fry, and how to freeze them.",
+  "kw": "japanese croquette"
  },
  {
-  "slug": "beef-and-lemongrass",
-  "title": "Beef and Lemongrass: Vietnamese Stir-Fry and Grilled Beef",
-  "excerpt": "Beef and lemongrass, Vietnamese style: a fragrant stir-fry, grilled lemongrass beef for noodle bowls, the best halal cuts and how to prepare lemongrass.",
-  "kw": "beef and lemongrass"
+  "slug": "lemongrass-vietnamese-beef",
+  "title": "Lemongrass Vietnamese Beef: Stir-Fry and Grilled Beef",
+  "excerpt": "Lemongrass Vietnamese beef two ways: a quick stir-fry and a grilled marinade, with the best cuts, slicing tips and halal beef delivered Australia-wide.",
+  "kw": "lemongrass vietnamese"
  },
  {
-  "slug": "asian-beef-mince-recipes",
-  "title": "Asian Beef Mince Recipes: Six Quick Weeknight Dinners",
-  "excerpt": "Six Asian beef mince recipes for busy nights: Thai larb, Korean beef bowls, san choy bow, keema, dan dan noodles and Chinese mince with green beans.",
-  "kw": "asian beef mince recipes"
+  "slug": "chowmein-asian-beef-mince-recipes",
+  "title": "Chowmein and Asian Beef Mince Recipes: Six Quick Weeknight Dinners",
+  "excerpt": "Chowmein and five more Asian beef mince recipes for busy weeknights: the best mince, quick sauces, bulk buying and freezer tips.",
+  "kw": "chowmein"
  },
  {
-  "slug": "lamb-souvlaki",
-  "title": "Lamb Souvlaki: A Greek Recipe for Skewers and Wraps",
-  "excerpt": "A Greek lamb souvlaki recipe: lemon, garlic and oregano marinade, the best halal lamb cuts, grilling tips, homemade tzatziki and the perfect wrap.",
-  "kw": "lamb souvlaki"
+  "slug": "greek-bbq-lamb-souvlaki",
+  "title": "Greek BBQ: Lamb Souvlaki Recipe for Skewers and Wraps",
+  "excerpt": "Greek BBQ at home: our lamb souvlaki recipe for skewers and wraps, with the best halal lamb cuts, a lemon and oregano marinade and tzatziki.",
+  "kw": "greek bbq"
  },
  {
-  "slug": "lamb-mince-recipes",
-  "title": "Lamb Mince Recipes: Eight Easy Meals for Every Night",
-  "excerpt": "Eight lamb mince recipes and meal ideas: koftas, shepherd's pie, kibbeh bake, keema, lamb burgers, moussaka, stuffed vegetables and lamb flatbread.",
-  "kw": "lamb mince recipes"
+  "slug": "lamb-food-mince-recipes",
+  "title": "Lamb Food Made Easy: Eight Lamb Mince Recipes for Every Night",
+  "excerpt": "Lamb food that is quick and easy: eight lamb mince recipes, from kofta to pies, plus how to buy lamb mince and other halal cuts online.",
+  "kw": "lamb food"
  },
  {
-  "slug": "lamb-skewers",
-  "title": "Lamb Skewers: Marinades, Cuts and Perfect Grilling",
-  "excerpt": "A recipe for lamb skewers that stay juicy: the best halal cuts, four marinades, threading lamb on a skewer, grilling times and what to serve alongside.",
-  "kw": "lamb skewers"
+  "slug": "lamb-skewers-near-me",
+  "title": "Lamb Skewers Near Me? Marinades, Cuts and Perfect Grilling at Home",
+  "excerpt": "Lamb skewers near me? Make them at home: the best cuts, five marinades, grilling times and where to order halal lamb for skewers online.",
+  "kw": "lamb skewers near me"
  },
  {
-  "slug": "lamb-chops-in-air-fryer",
-  "title": "Lamb Chops in Air Fryer: Times, Temperatures and Tips",
-  "excerpt": "How to cook lamb chops in air fryer: times for loin chops, cutlets and forequarter chops, the right temperature, seasoning ideas and tips for a golden crust.",
-  "kw": "lamb chops in air fryer"
+  "slug": "cook-frozen-lamb-chops-in-air-fryer",
+  "title": "Cook Frozen Lamb Chops in Air Fryer: Times, Temperatures and Tips",
+  "excerpt": "Cook frozen lamb chops in air fryer baskets safely: times, temperatures, seasoning, and the best halal lamb chops, cutlets and neck chops to buy.",
+  "kw": "cook frozen lamb chops in air fryer"
  },
  {
-  "slug": "lamb-cooking-temperature",
-  "title": "Lamb Cooking Temperature: Doneness Chart for Every Cut",
-  "excerpt": "The right lamb cooking temperature for every cut and doneness: internal temperatures, roast lamb meat temperature, oven settings and resting times.",
-  "kw": "lamb cooking temperature"
+  "slug": "meat-thermometer-for-lamb-cooking-temperature",
+  "title": "Meat Thermometer for Lamb: Lamb Cooking Temperature Doneness Chart",
+  "excerpt": "Use a meat thermometer for lamb to cook every cut perfectly: doneness chart for chops, legs and shoulders, resting times and buying tips.",
+  "kw": "meat thermometer for lamb"
  },
  {
-  "slug": "leg-of-lamb-cooking-time",
-  "title": "Leg of Lamb Cooking Time: Roasting Charts and Slow-Roast Guide",
-  "excerpt": "Leg of lamb cooking time charts for bone-in, boneless and butterflied legs, a classic lamb leg roast method, and how to slow roast a lamb leg until tender.",
-  "kw": "leg of lamb cooking time"
+  "slug": "best-cut-of-lamb-for-roasting-leg-cooking-time",
+  "title": "Best Cut of Lamb for Roasting: Leg of Lamb Cooking Time and Slow-Roast Guide",
+  "excerpt": "The best cut of lamb for roasting is the leg. Leg of lamb cooking time charts for every doneness, slow-roast methods and buying tips.",
+  "kw": "best cut of lamb for roasting"
  },
  {
   "slug": "rack-of-lamb-cooking-time",
   "title": "Rack of Lamb Cooking Time: A Foolproof Rack of Lamb Recipe",
-  "excerpt": "Rack of lamb cooking time for every doneness, a herb-crusted rack of lamb recipe, searing and roasting tips, and how to carve a lamb rack into cutlets.",
-  "kw": "rack of lamb cooking time"
+  "excerpt": "Rack of lamb cooking time and a foolproof recipe: frenched cutlets, temperatures, resting, crumbed cutlets and where to buy halal lamb racks.",
+  "kw": "rack of lamb"
  },
  {
   "slug": "lamb-kofta-wraps",

@@ -225,7 +225,7 @@ export const BLOG_POSTS_7 = [
         `Root vegetables: try the same method with parsnips, sweet potato and carrots.`,
       ]],
       ['h2', `Serving duck fat roast potatoes`],
-      ['p', `Duck fat potatoes are perfect with a [roast duck](/blog/oven-duck/), roast beef, roast lamb or roast chicken. They also make a great side for steak; see our [beef steak side dishes](/blog/beef-steak-side-dishes/) guide.`],
+      ['p', `Duck fat potatoes are perfect with a [roast duck](/blog/oven-duck/), roast beef, roast lamb or roast chicken. They also make a great side for steak; see our [beef steak side dishes](/blog/best-sides-to-have-with-steak-beef-dishes/) guide.`],
       ['h2', `Duck whole: getting duck fat from a roast`],
       ['p', `When you roast a duck whole, it releases a generous amount of fat into the roasting tin. Pour it off into a clean jar, let it cool and refrigerate it. Strained duck fat keeps for months in the fridge and can be used for roasting potatoes, frying eggs or cooking vegetables. Our [whole duck](/product/whole-duck-size-20-23/) and [Wimmera Gold corn-fed duck](/product/duck-for-sale-whole-wimmera-gold-corn-fed/) are excellent for roasting.`],
       ['h2', `What about duck foie gras?`],
@@ -475,7 +475,7 @@ export const BLOG_POSTS_7 = [
       ['h2', `Cooking camel steaks and other cuts`],
       ['p', `Camel steaks, such as porterhouse, scotch fillet and rump, cook like lean beef steaks: sear them over high heat and serve them medium-rare to medium, then rest them well. Diced camel and camel osso buco are best slow cooked in curries and stews, where they become tender after two to three hours. Because camel is lean, marinating in yoghurt, olive oil, garlic and spices helps keep it moist.`],
       ['h2', `Buy halal camel meat online`],
-      ['p', `Camel mince, steaks and more are in our [camel range](/shop/camel-meat-near-me/), delivered chilled from Greenacre, Sydney. For more camel recipes, see our [cooking camel meat, buffalo and kangaroo](/blog/kangaroo-meat-cooking-camel-buffalo/) guide and our [beef meat patties recipe](/blog/beef-meat-patties-recipe/).`],
+      ['p', `Camel mince, steaks and more are in our [camel range](/shop/camel-meat-near-me/), delivered chilled from Greenacre, Sydney. For more camel recipes, see our [cooking camel meat, buffalo and kangaroo](/blog/kangaroo-meat-cooking-camel-buffalo/) guide and our [beef meat patties recipe](/blog/burger-patties-beef-meat-recipe/).`],
     ],
   },
 ]

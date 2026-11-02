@@ -47,7 +47,7 @@ export const BLOG_POSTS_4 = [
       ['h2', `Variations`],
       ['ul', [
         `Spicy: add a little chilli oil or shichimi pepper.`,
-        `Curry beef bowl: stir a spoon of Japanese curry roux into the broth (see our [Japanese beef curry](/blog/japanese-beef-curry/) recipe).`,
+        `Curry beef bowl: stir a spoon of Japanese curry roux into the broth (see our [Japanese beef curry](/blog/japanese-curry-dishes-beef/) recipe).`,
         `Cheese gyudon: melt a slice of cheese over the hot beef, as some Japanese chains do.`,
         `With greens: add spinach or shredded cabbage to the pan in the last minute.`,
         `Chicken version (oyakodon-style): use thinly sliced chicken thigh and finish with beaten egg.`,
@@ -62,7 +62,7 @@ export const BLOG_POSTS_4 = [
       ['h3', `Is beef donburi healthy?`],
       ['p', `It is a balanced meal of protein and carbohydrate. Add a side of steamed greens or a cucumber salad, use leaner beef and reduce the sugar if you want a lighter version.`],
       ['h2', `Roast beef buy guide for leftovers`],
-      ['p', `Leftover roast beef makes an excellent quick donburi: slice it thinly and warm it in the simmering broth for just 30 seconds. If you plan a roast beef buy for Sunday dinner, a [roast beef joint](/product/buy-roast-beef-online-joint/) or [topside](/product/roast-beef-topside-whole/) will give you plenty of leftovers for rice bowls during the week. Our [roast beef cooking time](/blog/roast-beef-cooking-time/) guide covers the roast itself.`],
+      ['p', `Leftover roast beef makes an excellent quick donburi: slice it thinly and warm it in the simmering broth for just 30 seconds. If you plan a roast beef buy for Sunday dinner, a [roast beef joint](/product/buy-roast-beef-online-joint/) or [topside](/product/roast-beef-topside-whole/) will give you plenty of leftovers for rice bowls during the week. Our [roast beef cooking time](/blog/meat-thermometer-for-roast-beef-cooking-time/) guide covers the roast itself.`],
       ['h2', `Buy halal beef for donburi`],
       ['p', `Wagyu yakiniku, scotch fillet, rump and stir-fry strips are all in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia, with free delivery on orders over $500.`],
     ],
