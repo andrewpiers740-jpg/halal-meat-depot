@@ -629,5 +629,41 @@ export const POST_INDEX = [
   "title": "Beef Cheek Ragu: A Rich, Easy Slow-Cooked Pasta Sauce",
   "excerpt": "Beef cheek ragu is a rich, slow-cooked pasta sauce that shreds into silky strands. Our alcohol-free recipe, cuts to use, and where to buy beef cheeks.",
   "kw": "beef cheek ragu"
+ },
+ {
+  "slug": "osso-buco-slow-cooker",
+  "title": "Osso Buco Slow Cooker: Tender Italian-Style Shanks",
+  "excerpt": "Osso buco slow cooker recipe: thick-cut shanks braised in tomato and stock without wine until they fall off the bone, plus where to buy halal osso buco.",
+  "kw": "osso buco slow cooker"
+ },
+ {
+  "slug": "oxtail-soup",
+  "title": "Oxtail Soup: A Simple, Rich Slow-Cooked Soup",
+  "excerpt": "Oxtail soup that is rich, silky and warming: a simple slow-cooked recipe, where to buy oxtail in Sydney, a slow cooker method and serving ideas.",
+  "kw": "oxtail soup"
+ },
+ {
+  "slug": "slow-cooker-oxtail",
+  "title": "Slow Cooker Oxtail: Easy, Fall-Apart Oxtail Stew",
+  "excerpt": "Slow cooker oxtail stew that falls off the bone: an easy recipe in a crockpot, where to buy oxtail, oxtail ragu and what to serve with it.",
+  "kw": "slow cooker oxtail"
+ },
+ {
+  "slug": "beef-tongue-lengua-recipe",
+  "title": "Beef Tongue Lengua Recipe: Tender Tongue Tacos at Home",
+  "excerpt": "A beef tongue lengua recipe for tender tacos: how to simmer, peel and slice halal beef tongue, plus where to buy it and what to serve it with.",
+  "kw": "beef tongue lengua recipe"
+ },
+ {
+  "slug": "beef-tendon-recipe",
+  "title": "Beef Tendon Recipe: How to Cook Tender Tendon",
+  "excerpt": "A beef tendon recipe for silky, melting tendon: slow cooker and stovetop methods, a Cantonese braise, where to buy beef tendon and how to serve it.",
+  "kw": "beef tendon recipe"
+ },
+ {
+  "slug": "beef-tri-tip-steak",
+  "title": "Beef Tri Tip Steak: How to Cook It Perfectly",
+  "excerpt": "Beef tri tip steak explained: what tri-tip is, the best rub, reverse-sear and grill methods, how it compares with sirloin and flank, and where to buy.",
+  "kw": "beef tri tip steak"
  }
 ]

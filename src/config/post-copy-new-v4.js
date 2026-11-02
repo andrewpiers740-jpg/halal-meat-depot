@@ -7,6 +7,8 @@ import { POST_COPY_NEW_4 } from './post-copy-new-4.js'
 import { POST_COPY_NEW_5 } from './post-copy-new-5.js'
 import { POST_COPY_NEW_6 } from './post-copy-new-6.js'
 import { POST_COPY_NEW_7 } from './post-copy-new-7.js'
+import { POST_COPY_NEW_8 } from './post-copy-new-8.js'
+import { POST_COPY_NEW_9 } from './post-copy-new-9.js'
 
 export const POST_COPY_NEW_V4 = {
   ...POST_COPY_NEW_1,
@@ -16,4 +18,6 @@ export const POST_COPY_NEW_V4 = {
   ...POST_COPY_NEW_5,
   ...POST_COPY_NEW_6,
   ...POST_COPY_NEW_7,
+  ...POST_COPY_NEW_8,
+  ...POST_COPY_NEW_9,
 }
