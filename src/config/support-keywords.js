@@ -65,7 +65,7 @@ export const CATEGORY_KEYWORDS = {
     title: 'Kangaroo fillet and steak',
     copy: [
       `As a kangaroo meat butcher in Greenacre, we send kangaroo meat Sydney orders out frozen, and we deliver to the rest of Australia too. Kangaroo steak Sydney customers order most often are rump steaks and fillets, which are best seared quickly and served rare to medium-rare.`,
-      `Looking for halal kangaroo meat? Our [camel, buffalo and kangaroo guide](/blog/kangaroo-meat-cooking-camel-buffalo/) covers buying and cooking it. Is kangaroo meat good for weight loss? Kangaroo is one of the leanest red meats you can buy, but no single food causes weight loss, so check with a dietitian about your own diet. For recipes, see our [kangaroo fillet guide](/blog/kangaroo-fillet/).`,
+      `Looking for halal kangaroo meat? Our [camel, buffalo and kangaroo guide](/blog/kangaroo-meat-cooking-camel-buffalo/) covers buying and cooking it. Is kangaroo meat good for weight loss? Kangaroo is one of the leanest red meats you can buy, but no single food causes weight loss, so check with a dietitian about your own diet. For recipes, see our [kangaroo fillet guide](/blog/kangaroo-steak-fillet/).`,
     ],
   },
   'water-buffalo': {

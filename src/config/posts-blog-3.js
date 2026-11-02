@@ -439,7 +439,7 @@ export const BLOG_POSTS_3 = [
       ['p', `A good side dish for beef steak usually does one of three things. It can contrast with the steak: crisp, fresh, acidic salads cut through richness. It can complement it: creamy potatoes and buttery mushrooms echo the steak's savoury depth. Or it can add something new: grains, pulses and roasted vegetables bring different textures and flavours. Aim for one starchy side and one fresh or vegetable side for a balanced plate.`],
       ['h2', `Potato sides`],
       ['h3', `1. Crispy roast potatoes`],
-      ['p', `Par-boil peeled, chunked potatoes for 8 minutes, drain, shake to rough up the edges and roast in hot oil at 220°C for 45 minutes, turning once. For extra crunch, try our [duck fat potatoes](/blog/duck-fat-potatoes/).`],
+      ['p', `Par-boil peeled, chunked potatoes for 8 minutes, drain, shake to rough up the edges and roast in hot oil at 220°C for 45 minutes, turning once. For extra crunch, try our [duck fat potatoes](/blog/roast-potatoes-in-duck-fat/).`],
       ['h3', `2. Creamy mashed potato`],
       ['p', `Boil floury potatoes until tender, mash with warm milk and plenty of butter, and season well. Stir through roasted garlic or chopped chives for a twist.`],
       ['h3', `3. Hand-cut chips`],

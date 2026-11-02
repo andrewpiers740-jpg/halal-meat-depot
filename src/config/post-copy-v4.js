@@ -14,6 +14,11 @@ import { POST_COPY_V4_8 } from './post-copy-v4-8.js'
 import { POST_COPY_V4_9 } from './post-copy-v4-9.js'
 import { POST_COPY_V4_10 } from './post-copy-v4-10.js'
 import { POST_COPY_V4_11 } from './post-copy-v4-11.js'
+import { POST_COPY_V4_12 } from './post-copy-v4-12.js'
+import { POST_COPY_V4_13 } from './post-copy-v4-13.js'
+import { POST_COPY_V4_14 } from './post-copy-v4-14.js'
+import { POST_COPY_V4_15 } from './post-copy-v4-15.js'
+import { POST_COPY_V4_16 } from './post-copy-v4-16.js'
 import { POST_EXTRA_V4_A } from './post-extra-v4-a.js'
 import { POST_EXTRA_V4_B } from './post-extra-v4-b.js'
 import { POST_EXTRA_V4_C } from './post-extra-v4-c.js'
@@ -30,6 +35,11 @@ const ALL = {
   ...POST_COPY_V4_5,
   ...POST_COPY_V4_6,
   ...POST_COPY_V4_7,
+  ...POST_COPY_V4_16,
+  ...POST_COPY_V4_15,
+  ...POST_COPY_V4_14,
+  ...POST_COPY_V4_13,
+  ...POST_COPY_V4_12,
   ...POST_COPY_V4_11,
   ...POST_COPY_V4_10,
   ...POST_COPY_V4_9,

@@ -374,134 +374,134 @@ export const POST_INDEX = [
  },
  {
   "slug": "lamb-kofta-wraps",
-  "title": "Lamb Kofta Wraps: Recipe, Sauces and What to Serve",
-  "excerpt": "How to make lamb kofta wraps with spiced, grilled koftas, garlic yoghurt and salad, plus what to serve with lamb koftas for an easy dinner or party spread.",
-  "kw": "lamb kofta wraps"
+  "title": "Kofta Wraps: Lamb Kofta Recipe, Sauces and What to Serve",
+  "excerpt": "Kofta wraps made with lamb mince: an easy recipe, sauces, what to serve, and how to buy halal lamb kofta and mince online, delivered Australia-wide.",
+  "kw": "kofta"
  },
  {
-  "slug": "lamb-spit-roast-guide",
-  "title": "Lamb Spit Roast Guide: How to Cook a Lamb on a Spit",
-  "excerpt": "A complete lamb spit roast guide: choosing and preparing the lamb, securing lamb on a spit, charcoal and timing, seasoning, carving and feeding a crowd.",
-  "kw": "lamb spit"
+  "slug": "rotisserie-for-lamb-spit-roast-guide",
+  "title": "Rotisserie for Lamb: How to Spit Roast a Whole Lamb",
+  "excerpt": "Rotisserie for lamb: how to spit roast a whole lamb, temperatures and timings, preparing the carcass, and where to buy halal lamb for big events.",
+  "kw": "rotisserie for lamb"
  },
  {
-  "slug": "quarter-lamb-buying-guide",
-  "title": "Quarter Lamb Buying Guide: What You Get and Is It Worth It?",
-  "excerpt": "A quarter lamb buying guide: what a quarter, half or lamb whole includes, the butcher lamb cuts of meat you get, freezer space, value and how to order.",
-  "kw": "quarter lamb"
+  "slug": "lamb-quarters-buying-guide",
+  "title": "Lamb Quarters Buying Guide: What You Get and Is It Worth It?",
+  "excerpt": "Lamb quarters buying guide: what a quarter lamb includes, how much meat you get, how it compares with wholesale lamb, and how to order halal lamb.",
+  "kw": "lamb quarters"
  },
  {
-  "slug": "marinade-for-mutton-chops",
-  "title": "Marinade for Mutton Chops: Baked, Slow-Cooked and Neck Chops",
-  "excerpt": "A marinade for mutton chops that tenderises and flavours: yoghurt and spice, baked mutton chops, a mutton chops slow cooker method and neck chops.",
-  "kw": "marinade for mutton chops"
+  "slug": "halal-mutton-chops-marinade",
+  "title": "Halal Mutton Chops: Marinade for Baked, Slow-Cooked and Neck Chops",
+  "excerpt": "Halal mutton chops made tender: marinades for baked, slow-cooked and neck chops, plus how to choose lamb neck and where to buy it online.",
+  "kw": "halal mutton chops"
  },
  {
-  "slug": "mutton-stew-slow-cooker",
-  "title": "Mutton Stew Slow Cooker Recipe: Rich, Tender and Easy",
-  "excerpt": "A mutton stew slow cooker recipe: mutton neck stew with vegetables, slow cooked mutton chops, using mutton neck fillet, plus goat diced alternatives.",
-  "kw": "mutton stew slow cooker"
+  "slug": "mutton-stew-near-me-slow-cooker",
+  "title": "Mutton Stew Near Me? A Rich, Tender Slow Cooker Recipe",
+  "excerpt": "Mutton stew near me? Make it at home in the slow cooker: a rich, tender recipe, the best cuts, shoulder vs leg and halal goat and mutton to order.",
+  "kw": "mutton stew near me"
  },
  {
   "slug": "goat-meat-vs-lamb-meat",
   "title": "Goat Meat vs Lamb Meat: Taste, Texture and How to Cook Each",
-  "excerpt": "Goat meat vs lamb meat compared: flavour, fat, texture, which cuts to buy, goat shoulder vs leg meat, and how to cook each for curries, roasts and grills.",
+  "excerpt": "Goat meat vs lamb meat compared: taste, texture, fat, cooking methods and price, plus where to buy halal lamb and goat online, delivered Australia-wide.",
   "kw": "goat meat vs lamb meat"
  },
  {
-  "slug": "what-does-goat-taste-like",
-  "title": "What Does Goat Taste Like? A Guide to Goat Meat for Beginners",
-  "excerpt": "What does goat taste like? How goat compares with lamb or beef, the name of goat meat, the best cuts for beginners and simple dishes to try first.",
-  "kw": "what does goat taste like"
+  "slug": "goat-flesh-does-taste-like",
+  "title": "Goat Flesh: What Does Goat Taste Like? A Guide for Beginners",
+  "excerpt": "Goat flesh explained: what goat tastes like, how it compares with lamb and mutton, the best cuts for beginners and where to buy goat meat near me.",
+  "kw": "goat flesh"
  },
  {
-  "slug": "goat-shank",
-  "title": "Goat Shank: How to Cook Goat Shanks Until They Fall Apart",
-  "excerpt": "How to cook a goat shank until tender: a rich goat shank curry, a tomato and herb braise, slow cooking goat tips and the best sides to serve with shanks.",
-  "kw": "goat shank"
+  "slug": "goat-shank-meat",
+  "title": "Goat Shank Meat: How to Cook Goat Shanks Until They Fall Apart",
+  "excerpt": "Goat shank meat cooked low and slow until it falls apart: the method, flavours, timings and where to buy halal goat foreshanks online.",
+  "kw": "goat shank meat"
  },
  {
-  "slug": "duck-fat-potatoes",
-  "title": "Duck Fat Potatoes: The Crispiest Roast Potatoes Ever",
-  "excerpt": "How to make duck fat potatoes: the best potatoes, par-boiling, roughing up and roasting in duck fat for roast potatoes that are crisp outside, fluffy inside.",
-  "kw": "duck fat potatoes"
+  "slug": "roast-potatoes-in-duck-fat",
+  "title": "Roast Potatoes in Duck Fat: The Crispiest Roast Potatoes Ever",
+  "excerpt": "Roast potatoes in duck fat come out golden and crisp. Our recipe, the best potatoes, and where to buy duck meat online for the fat and the roast.",
+  "kw": "roast potatoes in duck fat"
  },
  {
-  "slug": "oven-duck",
-  "title": "Oven Duck: How to Roast a Whole Duck With Crispy Skin",
-  "excerpt": "Oven duck made easy: preparing and roasting a whole duck for crispy skin, cooking duck breast, a halal duck and orange sauce, and how much a duck serves.",
-  "kw": "oven duck"
+  "slug": "duck-whole-oven",
+  "title": "Duck Whole: How to Roast a Whole Duck in the Oven With Crispy Skin",
+  "excerpt": "Duck whole roasted in the oven with crispy skin: preparation, timings, resting and sauces, plus where to buy duck breast, legs, liver and mince online.",
+  "kw": "duck whole"
  },
  {
-  "slug": "duck-liver-pate",
-  "title": "Duck Liver Pate: A Smooth, Alcohol-Free Recipe",
-  "excerpt": "A duck liver pate recipe without alcohol: preparing duck liver, a silky duck parfait, serving ideas and the best way to cook duck legs.",
-  "kw": "duck liver pate"
+  "slug": "duck-liver-pate-vs-foie-gras",
+  "title": "Duck Liver Pate vs Foie Gras: A Smooth, Alcohol-Free Pâté Recipe",
+  "excerpt": "Duck liver pate vs foie gras: how they differ, plus an easy, smooth, alcohol-free duck liver pâté recipe and where to buy duck livers and duck meat online.",
+  "kw": "duck liver pate vs foie gras"
  },
  {
-  "slug": "kangaroo-fillet",
-  "title": "Kangaroo Fillet: How to Cook Kangaroo Meat Perfectly",
-  "excerpt": "How do you cook kangaroo meat so it stays tender? Kangaroo fillet basics, searing and resting, three kangaroo fillet recipes, marinades and serving ideas.",
-  "kw": "kangaroo fillet"
+  "slug": "kangaroo-steak-fillet",
+  "title": "Kangaroo Steak: How to Cook Kangaroo Fillet and Meat Perfectly",
+  "excerpt": "Kangaroo steak and fillet cooked perfectly: tenderness, searing, marinades, burgers and the barbecue, plus where to buy kangaroo meat online.",
+  "kw": "kangaroo steak"
  },
  {
-  "slug": "camel-burgers",
-  "title": "Camel Burgers: How to Make a Juicy Camel Meat Burger",
-  "excerpt": "How to make camel burgers that stay juicy: what camel tastes like, choosing camel mince, seasoning and binding, grilling tips and the best toppings.",
-  "kw": "camel burgers"
+  "slug": "burger-camel",
+  "title": "Burger Camel: How to Make a Juicy Camel Meat Burger",
+  "excerpt": "Burger camel recipe: how to make a juicy camel meat burger with lean mince, plus where to buy halal camel meat and camel steaks online in Australia.",
+  "kw": "burger camel"
  },
  {
-  "slug": "chicken-liver-pate",
-  "title": "Chicken Liver Pate: A Smooth, Easy Recipe Without Alcohol",
-  "excerpt": "A smooth chicken liver pate without alcohol: how do you prepare chicken livers, cooking them just right, blending a silky chicken pate and serving ideas.",
-  "kw": "chicken liver pate"
+  "slug": "best-recipe-chicken-liver-pate",
+  "title": "Best Recipe Chicken Liver Pate: Smooth, Easy and Alcohol-Free",
+  "excerpt": "Our best recipe chicken liver pate is smooth, rich and alcohol-free, plus chicken liver vs beef liver and where to buy halal livers and chicken online.",
+  "kw": "best recipe chicken liver pate"
  },
  {
-  "slug": "how-to-crumb-chicken",
-  "title": "How to Crumb Chicken: Crispy Schnitzels and Tenders at Home",
-  "excerpt": "How to crumb chicken for a crisp, golden coating that stays on: the three-step method, the best breadcrumbs, and frying, baking and air fryer times.",
-  "kw": "how to crumb chicken"
+  "slug": "best-way-to-crumb-chicken",
+  "title": "The Best Way to Crumb Chicken: Crispy Schnitzels and Tenders at Home",
+  "excerpt": "The best way to crumb chicken for crispy schnitzels and tenders: the three-step method, oven and air fryer cooking, and where to buy halal chicken in bulk.",
+  "kw": "best way to crumb chicken"
  },
  {
-  "slug": "chicken-tenders-recipes",
-  "title": "Chicken Tenders Recipes: Crispy, Grilled and Saucy",
-  "excerpt": "Six chicken tenders recipes: crispy crumbed tenders, honey garlic, grilled lemon herb, buffalo, satay skewers and a creamy tenders pasta, ready in 30 minutes.",
-  "kw": "chicken tenders recipes"
+  "slug": "salt-and-vinegar-chicken-tenders-recipes",
+  "title": "Salt and Vinegar Chicken Tenders Recipes: Crispy, Grilled and Saucy",
+  "excerpt": "Salt and vinegar chicken tenders and more recipes: crispy, grilled and saucy tenders, plus where to buy halal chicken tenders, fresh and delivered.",
+  "kw": "salt and vinegar chicken tenders"
  },
  {
-  "slug": "chicken-drumsticks-air-fryer",
-  "title": "Chicken Drumsticks Air Fryer Guide: Crispy and Juicy",
-  "excerpt": "Chicken drumsticks air fryer times and temperatures, seasoning ideas, crispy skin tips and an air fryer fried chicken drumsticks recipe with a crunchy crust.",
-  "kw": "chicken drumsticks air fryer"
+  "slug": "chicken-drumsticks-air-fryer-cooking-time",
+  "title": "Chicken Drumsticks Air Fryer Cooking Time: Crispy and Juicy Guide",
+  "excerpt": "Chicken drumsticks air fryer cooking time: exact temperatures and minutes for crispy skin and juicy meat, plus honey soy drumsticks and bulk buying.",
+  "kw": "chicken drumsticks air fryer cooking time"
  },
  {
-  "slug": "chicken-wing-meals",
-  "title": "Chicken Wing Meals: Baked, Smoked and Sticky Wing Recipes",
-  "excerpt": "Chicken wing meals for every night: chicken wings baked with baking powder, smoking chicken wings in a smoker, five sauces and easy sides.",
-  "kw": "chicken wing meals"
+  "slug": "chicken-wing-dings-meals",
+  "title": "Chicken Wing Dings: Baked, Smoked and Sticky Wing Meals",
+  "excerpt": "Chicken wing dings and more wing meals: baked, smoked and sticky recipes, plus where to buy halal chicken wings in bulk and wholesale.",
+  "kw": "chicken wing dings"
  },
  {
-  "slug": "creamy-tuscan-chicken",
-  "title": "Creamy Tuscan Chicken: A One-Pan Dinner in 30 Minutes",
-  "excerpt": "A one-pan creamy Tuscan chicken with sun-dried tomatoes, spinach and parmesan, plus leftovers as a creamy chicken sandwich or crepe filling.",
-  "kw": "creamy tuscan chicken"
+  "slug": "best-chicken-dish-recipes-creamy-tuscan",
+  "title": "Best Chicken Dish Recipes: Creamy Tuscan Chicken in 30 Minutes",
+  "excerpt": "Best chicken dish recipes start with creamy Tuscan chicken, a one-pan dinner in 30 minutes, plus the best halal chicken breast, thigh and bulk options.",
+  "kw": "best chicken dish recipes"
  },
  {
-  "slug": "chicken-breast-with-filling",
-  "title": "Chicken Breast With Filling: Stuffed Chicken Ideas and Tips",
-  "excerpt": "How to make chicken breast with filling: cutting a pocket, six stuffed chicken breast fillings, baking times and a vol au vent filling for leftovers.",
-  "kw": "chicken breast with filling"
+  "slug": "get-stuffed-chicken-breast-filling",
+  "title": "Get Stuffed Chicken Breast: Chicken Breast With Filling Ideas and Tips",
+  "excerpt": "Get stuffed chicken breast on the table: filling ideas, how to cut the pocket, bake without drying, and where to buy halal chicken breast in bulk.",
+  "kw": "get stuffed chicken"
  },
  {
-  "slug": "chicken-sandwich-filling",
-  "title": "Chicken Sandwich Filling: Ten Easy Ideas for Lunch",
-  "excerpt": "Ten chicken sandwich filling ideas: classic chicken mayo, coronation, pesto, Caesar, tandoori and more, plus a chicken sandwich filling recipe.",
-  "kw": "chicken sandwich filling"
+  "slug": "chicken-sandwiches-sandwich-filling",
+  "title": "Chicken Sandwiches: Ten Easy Sandwich Filling Ideas for Lunch",
+  "excerpt": "Chicken sandwiches made easy: ten sandwich filling ideas for lunch, from creamy mayo to spiced and crumbed, plus where to buy halal chicken in bulk.",
+  "kw": "chicken sandwiches"
  },
  {
-  "slug": "marinate-tandoori-chicken",
-  "title": "Marinate Tandoori Chicken: The Two-Step Method and Recipe",
-  "excerpt": "How to marinate tandoori chicken in two stages, cook it in the oven or on the grill, marinade chicken for roasting and make soy-marinated chicken.",
-  "kw": "marinate tandoori chicken"
+  "slug": "tandoori-chicken-food-marinate",
+  "title": "Tandoori Chicken Food: How to Marinate Tandoori Chicken in Two Steps",
+  "excerpt": "Tandoori chicken food made at home: the two-step marinade, oven and barbecue cooking, and where to buy halal chicken legs, thighs and whole birds in bulk.",
+  "kw": "tandoori chicken food"
  }
 ]
