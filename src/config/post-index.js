@@ -503,5 +503,23 @@ export const POST_INDEX = [
   "title": "Tandoori Chicken Food: How to Marinate Tandoori Chicken in Two Steps",
   "excerpt": "Tandoori chicken food made at home: the two-step marinade, oven and barbecue cooking, and where to buy halal chicken legs, thighs and whole birds in bulk.",
   "kw": "tandoori chicken food"
+ },
+ {
+  "slug": "mince-recipes",
+  "title": "Mince Recipes: 25 Easy Dinners for Every Night of the Week",
+  "excerpt": "Mince recipes for every night: 25 easy dinner ideas using halal beef mince, from tacos and pasta to curries and pies, plus how to buy and store mince.",
+  "kw": "mince recipes"
+ },
+ {
+  "slug": "minced-meat-taco-recipe",
+  "title": "Minced Meat Taco Recipe: Easy Beef Tacos for Busy Nights",
+  "excerpt": "A minced meat taco recipe ready in 20 minutes: seasoned beef mince, toppings, taco shells and sauces, using fresh halal mince delivered Australia-wide.",
+  "kw": "minced meat taco recipe"
+ },
+ {
+  "slug": "rice-and-minced-meat-recipe",
+  "title": "Rice and Minced Meat Recipe: Simple One-Pan Dinners",
+  "excerpt": "A rice and minced meat recipe for easy one-pan dinners: savoury mince rice, stuffed vegetables and spiced rice bowls, using fresh halal beef mince.",
+  "kw": "rice and minced meat recipe"
  }
 ]

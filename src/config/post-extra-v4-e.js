@@ -1,0 +1,38 @@
+// Longer extension sections for the new v4 posts (batch E), keyed by the new post's key. Appended after the main body.
+const sec = (title, paras) => [['h2', title], ...paras.map((p) => (Array.isArray(p) ? ['ul', p] : ['p', p]))]
+
+export const POST_EXTRA_V4_E = {
+  'mince-recipes': sec('Flavour guides: one pack of mince, five cuisines', [
+    'The same 500g of mince can taste completely different with a handful of spices. Keep a few small jars together and you can switch cuisines in a minute. These starting points work for almost every mince recipe above.',
+    [
+      'Italian: oregano, basil, fennel seed, garlic, tomato paste and a pinch of chilli flakes. Finish with parsley and grated parmesan.',
+      'Mexican: cumin, smoked paprika, chilli powder, oregano and a squeeze of lime. Add black beans or corn and top with coriander.',
+      'Indian: cumin seed, coriander, turmeric, garam masala, fresh ginger and green chilli. Add peas or potato, and finish with lemon.',
+      'Middle Eastern: allspice, cinnamon, cumin, mint and parsley. Add pine nuts and serve with rice, flatbread and yoghurt.',
+      'Asian: soy sauce, ginger, garlic, sesame oil and spring onion. A pinch of sugar balances the salt, and a squeeze of lime brightens it.',
+    ],
+    'Season in stages. Salt the onions first, add dry spices to the hot fat to bloom them for 30 seconds, and add wet seasonings such as soy sauce or tomato paste once the mince has browned. Taste before serving, because mince absorbs seasoning as it sits. A pinch of sugar, a splash of vinegar, or a squeeze of lemon at the end balances flavours that taste flat.',
+    'Fresh herbs and crunchy toppings lift any mince dinner. Keep a bunch of parsley, coriander or mint in a glass of water in the fridge, and use sliced spring onion, toasted nuts, pickled onions, grated cheese or a spoonful of yoghurt to add texture and freshness at the table. Small touches turn a plain weeknight mince into something people ask for again.',
+    'Finally, think about leftovers. Mince dishes make excellent lunches: stuff leftover taco filling into a wrap, spoon bolognese over a baked potato, press curried mince into a toasted sandwich, or roll cold meatballs into a sub. Planning for leftovers means you cook once and eat well twice, which saves money and time every week.',
+  ]),
+  'minced-meat-taco-recipe': sec('Quick fresh salsa and guacamole', [
+    'Good tacos need good toppings, and both of these take less than five minutes. Make them while the meat simmers, and you will have a table that looks and tastes like a restaurant.',
+    'For the salsa, dice two ripe tomatoes, half a red onion and a small chilli, and stir in a handful of chopped coriander, the juice of a lime, and a pinch of salt. Let it sit for ten minutes so the flavours blend. Keep it chunky for scooping, or pulse it briefly in a food processor for a smoother sauce.',
+    'For the guacamole, mash two ripe avocados with the juice of half a lime, a pinch of salt, a spoonful of finely chopped onion and a little coriander. Leave it a little chunky. Press cling film directly on the surface if you are making it ahead, which stops it browning. A spoonful of diced tomato adds freshness.',
+    'A cooling sour cream or yoghurt sauce balances the spice. Whisk a half cup of sour cream or thick yoghurt with lime juice, a crushed garlic clove and a pinch of salt, and thin it with a splash of water so it drizzles. If you like heat, add a spoonful of chipotle paste or hot sauce to the mix.',
+    'Pickled red onions are the secret topping of many taco shops. Slice a red onion thinly, pour over half a cup of hot water mixed with half a cup of white vinegar, a teaspoon of sugar and a teaspoon of salt, and leave for 20 minutes. They turn bright pink and add a tangy crunch that cuts through the richness of the meat.',
+    'Finally, plan the table so everything is ready together. Warm the shells, heat the filling, and put the toppings in bowls with spoons. Children enjoy building their own tacos, and adults can pile on the chilli. A tray of tacos, a bowl of rice and a salad is a complete dinner for six in about 25 minutes, and the leftovers make an excellent lunch the following day.',
+    'Taco shells break easily, so warm them in the oven on a tray at 160°C for five minutes, and fill them just before serving. If they crack, no problem: the filling tastes the same in a bowl with the shell crumbled over the top. Store unused shells in a dry cupboard, and keep opened packets sealed.',
+    'If you are cooking for a crowd, double the filling and keep it warm in a covered pan on low heat. Add a little water if it dries out. For an outdoor event, a slow cooker set on warm holds the meat for hours, and guests can serve themselves from a buffet-style table with the toppings in separate bowls.',
+  ]),
+  'rice-and-minced-meat-recipe': sec('More rice and minced meat dishes to try', [
+    'Once you know the method, you can make rice and mince in dozens of ways. These four are worth adding to your regular rotation, and each uses the same pack of mince and cup of rice.',
+    'Spiced tomato rice with mince is a South Asian favourite. Fry onion, ginger, garlic and green chilli, add the mince, then cumin, coriander, turmeric and garam masala. Stir in a cup of chopped tomato, then the rinsed rice and two cups of water. Cover and cook for 15 minutes. Serve with yoghurt and a squeeze of lemon, and scatter fresh coriander over the top.',
+    'Greek-style stuffed vine leaves or cabbage rolls use mince and rice together as the filling. Mix raw mince with half-cooked rice, grated onion, parsley, dill, lemon juice and olive oil. Roll the mixture in blanched cabbage or vine leaves, pack them tightly into a pot, cover with stock and a plate to hold them down, and simmer gently for 45 minutes. Serve with lemon and yoghurt.',
+    'Chinese-style claypot rice with mince layers fried mince, mushrooms and soy-seasoned rice in a heavy pot. Cook the rice until almost done, then place the seasoned mince on top, cover and finish over low heat so a golden crust forms on the bottom. Serve with spring onion and a drizzle of sesame oil. A fried egg on top is a nice touch.',
+    'A speedy mince and rice stir-fry works when you have leftover cooked rice. Brown the mince with garlic, add chopped vegetables, push everything aside and scramble an egg in the pan, then add the rice and a splash of soy sauce. It takes 12 minutes and uses whatever vegetables are in the fridge, which makes it ideal at the end of the week.',
+    'Whichever you choose, think about the balance of the plate. Rice and mince is filling, so add something fresh and crisp: a cucumber salad, steamed greens, a squeeze of lime, or a spoonful of pickles. A little acidity cuts the richness and makes the whole dish taste brighter. Fresh herbs added at the end add colour and fragrance without extra effort.',
+    'For tips on rice, always rinse it well to remove surface starch, measure by volume, and let it rest covered for ten minutes before fluffing. Do not lift the lid while it steams. If the rice is still hard when the liquid has gone, add a splash of hot water, cover and steam for another five minutes. Soft, fluffy rice makes a mince dish feel complete.',
+    'Finally, think about portion sizes and storage. One cup of dry rice makes about three cups cooked, enough for four people alongside 500g of mince. If you are cooking for the freezer, undercook the rice slightly so it does not turn mushy when reheated, and cool it quickly spread out on a tray before packing it into containers.',
+  ]),
+}

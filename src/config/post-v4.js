@@ -18,6 +18,27 @@ export const POST_MOVES_V4 = Object.fromEntries(
     .map(([old, v]) => [`/blog/${old}/`, `/blog/${v.slug}/`]),
 )
 
+// New posts (isNew): built whole from their keyword data and hand-written copy (post-copy-new-*.js).
+export function buildNewPostsV4(images) {
+  return Object.values(POST_V4)
+    .filter((v) => v.isNew && v.body)
+    .map((v) => ({
+      slug: v.slug,
+      imageSlug: v.slug,
+      title: v.title,
+      seoTitle: v.seoTitle,
+      excerpt: v.excerpt,
+      date: '2026-11-02',
+      updated: '2026-11-02',
+      kw: v.kw,
+      keywords: v.keywords.map(({ kw, intent, vol, kd }) => ({ kw, intent, vol, kd })),
+      images: images[v.slug] || [],
+      v4: true,
+      isNew: true,
+      body: [...v.body, ...(v.add || [])],
+    }))
+}
+
 // Apply v4 to a post object (existing posts only; new posts are written in full in posts-v4-*.js).
 export function applyPostV4(p) {
   const v = POST_V4[p.slug]

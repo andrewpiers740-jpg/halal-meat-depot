@@ -24,7 +24,7 @@ export default function PostThumb({ post }) {
           decoding="async"
         />
       </Link>
-      <span className="post-thumb-credit">{seo.credit}</span>
+      {seo.credit && <span className="post-thumb-credit">{seo.credit}</span>}
     </div>
   )
 }

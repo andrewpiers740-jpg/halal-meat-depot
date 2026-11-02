@@ -19,13 +19,16 @@ import { POST_COPY_V4_13 } from './post-copy-v4-13.js'
 import { POST_COPY_V4_14 } from './post-copy-v4-14.js'
 import { POST_COPY_V4_15 } from './post-copy-v4-15.js'
 import { POST_COPY_V4_16 } from './post-copy-v4-16.js'
+import { POST_COPY_NEW_V4 } from './post-copy-new-v4.js'
 import { POST_EXTRA_V4_A } from './post-extra-v4-a.js'
 import { POST_EXTRA_V4_B } from './post-extra-v4-b.js'
 import { POST_EXTRA_V4_C } from './post-extra-v4-c.js'
 import { POST_EXTRA_V4_D } from './post-extra-v4-d.js'
+import { POST_EXTRA_V4_E } from './post-extra-v4-e.js'
+import { POST_EXTRA_V4_F } from './post-extra-v4-f.js'
 
-const EXTRA = { ...POST_EXTRA_V4_A, ...POST_EXTRA_V4_B }
-const TIPS = { ...POST_EXTRA_V4_C, ...POST_EXTRA_V4_D }
+// Every extension block for a post is appended in order (A, B, C ...).
+const EXTRAS = [POST_EXTRA_V4_A, POST_EXTRA_V4_B, POST_EXTRA_V4_C, POST_EXTRA_V4_D, POST_EXTRA_V4_E, POST_EXTRA_V4_F]
 
 const ALL = {
   ...POST_COPY_V4_1,
@@ -36,6 +39,7 @@ const ALL = {
   ...POST_COPY_V4_6,
   ...POST_COPY_V4_7,
   ...POST_COPY_V4_16,
+  ...POST_COPY_NEW_V4,
   ...POST_COPY_V4_15,
   ...POST_COPY_V4_14,
   ...POST_COPY_V4_13,
@@ -47,4 +51,4 @@ const ALL = {
 }
 
 // Each post: its hand-written sections, then a Q&A section that completes the 1,500 words.
-export const POST_COPY_V4 = Object.fromEntries(Object.entries(ALL).map(([k, v]) => [k, { ...v, add: [...v.add, ...(EXTRA[k] || []), ...(TIPS[k] || [])] }]))
+export const POST_COPY_V4 = Object.fromEntries(Object.entries(ALL).map(([k, v]) => [k, { ...v, add: [...(v.add || []), ...EXTRAS.flatMap((x) => x[k] || [])] }]))

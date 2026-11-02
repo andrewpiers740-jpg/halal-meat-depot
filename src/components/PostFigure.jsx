@@ -23,6 +23,7 @@ export default function PostFigure({ post, img, index }) {
       />
       <figcaption className="img-caption">
         {seo.caption}.{' '}
+        {!img.own && (
         <span className="credit">
           Photo:{' '}
           {img.source ? (
@@ -41,6 +42,7 @@ export default function PostFigure({ post, img, index }) {
             img.license
           )}
         </span>
+        )}
       </figcaption>
     </figure>
   )

@@ -42,12 +42,13 @@ export function imageObject(url, seo, extra = {}) {
 export function postImageSeo(post, img, i) {
   const subject = post.kw.charAt(0).toUpperCase() + post.kw.slice(1)
   const caption = `${subject}: ${img.alt}`
-  const credit = `Photo: ${img.creator || 'unknown'}, ${img.license}`
+  // img.own = one of the site's own product images (no third-party credit)
+  const credit = img.own ? '' : `Photo: ${img.creator || 'unknown'}, ${img.license}`
   return {
     alt: caption,
     title: `${subject} (photo ${i + 1} of ${post.images?.length || 4})`,
     caption,
     credit,
-    description: `${caption}. Illustrative photo for the ${SITE.name} guide "${post.title}". ${credit}.`,
+    description: img.own ? `${caption}. Image for the ${SITE.name} guide "${post.title}".` : `${caption}. Illustrative photo for the ${SITE.name} guide "${post.title}". ${credit}.`,
   }
 }
