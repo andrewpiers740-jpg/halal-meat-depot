@@ -10,8 +10,8 @@ export default function PostFigure({ post, img, index }) {
   return (
     <figure className="post-figure">
       <img
-        src={postImageSrc(post.slug, img, img.w)}
-        srcSet={`${postImageSrc(post.slug, img, 640)} 640w, ${postImageSrc(post.slug, img, 768)} 768w, ${postImageSrc(post.slug, img, img.w)} ${img.w}w`}
+        src={postImageSrc(post.imageSlug || post.slug, img, img.w)}
+        srcSet={`${postImageSrc(post.imageSlug || post.slug, img, 640)} 640w, ${postImageSrc(post.imageSlug || post.slug, img, 768)} 768w, ${postImageSrc(post.imageSlug || post.slug, img, img.w)} ${img.w}w`}
         sizes="(max-width: 900px) calc(100vw - 32px), 720px"
         width={img.w}
         height={img.h}

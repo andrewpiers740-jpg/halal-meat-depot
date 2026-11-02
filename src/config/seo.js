@@ -1,4 +1,5 @@
 import { BLOG_KEYWORDS } from './posts-blog-keywords.js'
+import { POST_V4, POST_MOVES_V4 } from './post-v4.js'
 // Focus keywords and keyword URLs (owner rule, 2026-10-13): every indexable page has a
 // UNIQUE focus keyword that appears in its SEO title, meta description and slug.
 // Keywords come from the owner's Semrush exports (docs/seo-strategy-report.md). Where the
@@ -240,8 +241,8 @@ export const CATEGORY_SEO = {
   'wholesale-cartons': { focus: 'meat packs', urlSlug: 'meat-packs', intent: 'T', vol: 720, kd: 15, prevUrlSlugs: ['bulk-meat-boxes'] },
 }
 
-// Static pages that moved to keyword URLs.
-export const PAGE_MOVES = {
+// Static pages that moved to keyword URLs (blog posts moved by keyword map v4 are added below).
+const PAGE_MOVES_BASE = {
   // Keyword map v4 (owner, 2026-11-02): pages moved to their new primary keyword.
   '/halal-meat-shop/': '/halal-meat-shop-near-me/',
   '/halal-meat-wholesale/': '/halal-meat-manufacturers-wholesale/',
@@ -260,6 +261,12 @@ export const PAGE_MOVES = {
   '/blog/goat-curry-cuts-guide/': '/blog/goat-meat-curry-cuts-guide/',
   '/blog/cooking-camel-buffalo-kangaroo/': '/blog/cooking-camel-meat-buffalo-kangaroo/',
   '/blog/lamb-cuts-guide/': '/blog/lamb-cuts-australia-guide/',
+}
+
+// Earlier moves that point at a post v4 moved again go straight to the final URL (no redirect chains).
+export const PAGE_MOVES = {
+  ...Object.fromEntries(Object.entries(PAGE_MOVES_BASE).map(([a, b]) => [a, POST_MOVES_V4[b] || b])),
+  ...POST_MOVES_V4,
 }
 
 // Focus keywords for static pages (the homepage has no slug, so only title + meta apply).
@@ -303,6 +310,11 @@ export const POST_SEO = {
   'best-temperature-to-smoke-beef-brisket': 'best temperature to smoke beef brisket',
   // Posts 21–100 (2026-10-16): focus keywords live with their supporting keywords.
   ...Object.fromEntries(Object.entries(BLOG_KEYWORDS).map(([slug, k]) => [slug, k.focus])),
+}
+// Keyword map v4: each post with v4 copy takes its new slug and focus keyword.
+for (const [old, v] of Object.entries(POST_V4)) {
+  delete POST_SEO[old]
+  POST_SEO[v.slug] = v.kw
 }
 
 // Default focus keyword for a product with no keyword data: its own name.

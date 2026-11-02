@@ -10,6 +10,8 @@ import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, cont
 import { TOOLS } from '../src/lib/tools.js'
 import { STATIC_PAGES } from '../src/lib/sitemaps.js'
 import { PRODUCT_KEYWORDS } from '../src/config/product-keywords.js'
+import { POST_V4 } from '../src/config/post-v4.js'
+const POST_V4_BY_SLUG = Object.fromEntries(Object.values(POST_V4).map((v) => [v.slug, v]))
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const PORT = 3100
@@ -127,11 +129,21 @@ const FOCUS = new Map([
   const text = (b) => b.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
   for (const post of POSTS) {
     const t = text(post.body)
-    check(t.split(/\s+/).length >= 1000, 'F11', `${post.slug}: ${t.split(/\s+/).length} words (need 1,000+)`)
+    // Keyword map v4 (owner, 2026-11-02): 1,500+ words, Informational at most 30%, every linked keyword links to its page.
+    const minWords = post.v4 ? 1500 : 1000
+    check(t.split(/\s+/).length >= minWords, 'F11', `${post.slug}: ${t.split(/\s+/).length} words (need ${minWords}+)`)
     const kw = post.keywords || []
     for (const k of kw) check(containsExact(t, k.kw), 'F11', `${post.slug}: keyword "${k.kw}" not used`)
     const n = (i) => kw.filter((k) => k.intent === i).length / (kw.length || 1)
-    check(kw.length >= 4 && Math.abs(n('I') - 0.5) <= 0.1 && Math.abs(n('C') - 0.25) <= 0.1 && Math.abs(n('T') - 0.25) <= 0.1, 'F11', `${post.slug}: keyword mix not 50/25/25 informational/commercial/transactional`)
+    if (post.v4) {
+      const info = kw.filter((k) => !/T|C/.test(k.intent)).length / (kw.length || 1)
+      check(kw.length >= 10 && kw.length <= 15 && info <= 0.3 + 1e-9, 'F11', `${post.slug}: v4 needs 10–15 keywords, at most 30% Informational (${kw.length}, ${Math.round(info * 100)}%)`)
+      const raw = post.body.map((x) => (Array.isArray(x[1]) ? x[1].join(' ') : x[1])).join(' ')
+      const links = [...raw.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((m) => [m[1], m[2]])
+      for (const k of POST_V4_BY_SLUG[post.slug]?.keywords || []) {
+        if (k.link) check(links.some(([a, h]) => h === k.link && containsExact(a, k.kw)), 'F11', `${post.slug}: "${k.kw}" is not linked to ${k.link}`)
+      }
+    } else check(kw.length >= 4 && Math.abs(n('I') - 0.5) <= 0.1 && Math.abs(n('C') - 0.25) <= 0.1 && Math.abs(n('T') - 0.25) <= 0.1, 'F11', `${post.slug}: keyword mix not 50/25/25 informational/commercial/transactional`)
   }
 }
 // ── crawl every indexable page + the noindex pages ─────────────────────────

@@ -1,6 +1,7 @@
 import { SITE } from '../config/site.js'
 import { PRIORITY_FROM } from '../config/delivery.js'
 import { money } from './order.js'
+import { POST_MOVES_V4 } from '../config/post-v4.js'
 
 // Longer product copy (owner, 2026-11-02: every product description 400+ words). Everything here is built from
 // the product's own data (name, pack, weight, price, chilled or frozen) and general, true cooking and food-safety
@@ -32,7 +33,7 @@ const lean = (p) => ['camel', 'kangaroo', 'water-buffalo'].includes(p.cat)
 const wagyu = (p) => /wagyu/i.test(p.name)
 // The guide each kind of cut links to, by species (beef guides only on beef).
 const SPECIES_GUIDE = { lamb: ['lamb cuts guide', 'lamb-cuts-australia-guide'], goat: ['goat cuts guide', 'goat-meat-curry-cuts-guide'], camel: ['camel, buffalo and kangaroo guide', 'cooking-camel-meat-buffalo-kangaroo'], kangaroo: ['camel, buffalo and kangaroo guide', 'cooking-camel-meat-buffalo-kangaroo'], 'water-buffalo': ['camel, buffalo and kangaroo guide', 'cooking-camel-meat-buffalo-kangaroo'] }
-const link = (p, beefText, beefSlug) => { const [t, s] = p.cat === 'beef' || p.cat === 'offal' || p.cat === 'wholesale-cartons' ? [beefText, beefSlug] : SPECIES_GUIDE[p.cat] || [beefText, beefSlug]; return `[${t}](/blog/${s}/)` }
+const link = (p, beefText, beefSlug) => { const [t, s] = p.cat === 'beef' || p.cat === 'offal' || p.cat === 'wholesale-cartons' ? [beefText, beefSlug] : SPECIES_GUIDE[p.cat] || [beefText, beefSlug]; return `[${t}](${POST_MOVES_V4[`/blog/${s}/`] || `/blog/${s}/`})` }
 
 function guide(p) {
   const n = p.name.toLowerCase()
@@ -83,7 +84,7 @@ function guide(p) {
         ]
       return [
         `Chicken cuts like this cook quickly. Breast and tenderloins are best pan-fried, grilled or baked at 200°C until just cooked through, so they stay juicy. Thighs, drumsticks, Marylands and wings handle higher heat and longer cooking, which makes them ideal for the barbecue, air fryer, oven or a curry. Crumbed and marinated cuts can go straight into the oven or air fryer.`,
-        `Cook poultry until the centre reaches 75°C and the juices run clear, which is the food-safety guidance from Food Standards Australia New Zealand. Our [chicken recipes](/blog/chicken-maryland-recipes/) have oven, air fryer and curry ideas.`,
+        `Cook poultry until the centre reaches 75°C and the juices run clear, which is the food-safety guidance from Food Standards Australia New Zealand. Our [chicken recipes](/blog/maryland-chicken-recipes/) have oven, air fryer and curry ideas.`,
       ]
     case 'slow':
       return [

@@ -68,7 +68,7 @@ export const GUIDE_POSTS = [
         `Restaurant or catering kitchen: buy whole primals and portion them yourself to control cost and thickness.`,
       ]],
       ['h2', `Buying halal steak from Halal Meat Depot`],
-      ['p', `Every steak we sell is certified halal by Halal Control Australia and packed chilled at our Greenacre, Sydney depot for delivery Australia-wide. Each product page shows both the pack price and the price per kilo, so you can compare the three cuts fairly. Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/guide-to-halal-beef-cuts/) for the rest of the animal.`],
+      ['p', `Every steak we sell is certified halal by Halal Control Australia and packed chilled at our Greenacre, Sydney depot for delivery Australia-wide. Each product page shows both the pack price and the price per kilo, so you can compare the three cuts fairly. Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/best-steak-part-of-beef-guide-halal-cuts/) for the rest of the animal.`],
     ],
   },
   {
@@ -209,7 +209,7 @@ export const GUIDE_POSTS = [
       ['h2', `How to buy lamb for casseroles`],
       ['p', `Look for forequarter chops with a good amount of marbling and a creamy white fat cover; very lean chops will dry out. For diced lamb, ask for shoulder rather than leg if the dish will cook for more than an hour. Buying in larger packs and freezing in meal-sized bags is the cheapest way to keep casserole meat on hand, and it means a slow-cooked dinner is never more than an overnight thaw away.`],
       ['p', `Instead of searching for lamb chops near me and hoping the butcher has what you need, you can order online and have it delivered. Our [lamb forequarter chops](/product/lamb-shoulder-cut-forequarter-chops/) come in family packs, and if you prefer to buy diced lamb online, our [diced lamb](/product/buy-diced-lamb-online-boneless/) is ready to cook. For curry pieces on the bone, see the [lamb curry pieces carton](/product/bulk-meat-packs-lamb-curry-pieces-carton/), and for whole roasts, the [lamb shoulder](/product/buy-lamb-shoulder-boned-rolled/). Every product is certified halal by Halal Control Australia and delivered chilled Australia-wide.`],
-      ['p', `Browse the full [halal lamb range](/shop/lambs-for-sale/), or read our [lamb cuts guide](/blog/lamb-cuts-australia-guide/) to learn which cut suits every dish.`],
+      ['p', `Browse the full [halal lamb range](/shop/lambs-for-sale/), or read our [lamb cuts guide](/blog/cut-lamb-meat-australia-guide/) to learn which cut suits every dish.`],
     ],
   },
   {
@@ -409,7 +409,7 @@ export const GUIDE_POSTS = [
       ['h2', `Which should you buy?`],
       ['p', `Choose sirloin (porterhouse) for a reliable, tender steak with a clean flavour and neat presentation. Choose rump when flavour matters more than tenderness, when you are feeding a crowd, or when the steak will be sliced, skewered or marinated. Many families keep both in the freezer: sirloin for steak nights and rump for barbecues and kebabs.`],
       ['h2', `Buying halal sirloin and rump`],
-      ['p', `Our [sirloin porterhouse steaks](/product/porterhouse-steak-price-sirloin-beef/) and [rump steaks](/product/beef-rump-steaks/) are certified halal by Halal Control Australia and delivered chilled Australia-wide, so you can order rump beef without a trip to the butcher. Most beef rump steak recipes need only a quick marinade and a hot pan. For kitchens that portion their own, we sell a [beef rump portion](/product/rump-medallion-beef-portion/), the [rump cap](/product/beef-rump-cap/), a [whole Angus rump](/product/whole-beef-rump-black-angus-mb3-4/) and cryovac [striploin by the carton](/product/beef-strip-loin-striploin-cryovac-carton/). Compare every cut in the [halal beef range](/shop/halal-beef/), and see our [scotch fillet vs porterhouse guide](/blog/scotch-fillet-vs-porterhouse-vs-eye-fillet/) for how the loin steaks compare with the rib.`],
+      ['p', `Our [sirloin porterhouse steaks](/product/porterhouse-steak-price-sirloin-beef/) and [rump steaks](/product/beef-rump-steaks/) are certified halal by Halal Control Australia and delivered chilled Australia-wide, so you can order rump beef without a trip to the butcher. Most beef rump steak recipes need only a quick marinade and a hot pan. For kitchens that portion their own, we sell a [beef rump portion](/product/rump-medallion-beef-portion/), the [rump cap](/product/beef-rump-cap/), a [whole Angus rump](/product/whole-beef-rump-black-angus-mb3-4/) and cryovac [striploin by the carton](/product/beef-strip-loin-striploin-cryovac-carton/). Compare every cut in the [halal beef range](/shop/halal-beef/), and see our [scotch fillet vs porterhouse guide](/blog/eye-fillet-vs-scotch-fillet-porterhouse/) for how the loin steaks compare with the rib.`],
     ],
   },
   {
@@ -467,7 +467,7 @@ export const GUIDE_POSTS = [
       ['p', `The fastest weeknight dinner is the one you cooked on the weekend. Brown 2kg of mince in batches on a Sunday with onion and garlic, then split it four ways: one portion becomes bolognese, one becomes keema, one becomes taco filling and one goes into the freezer plain, ready to be turned into rissoles or a cottage pie later. Cool cooked mince quickly, refrigerate it within two hours and use it within three days, or freeze it for up to three months. Reheat it until it is steaming hot all the way through. With a stocked freezer, most of the recipes above take 15 minutes instead of 30, and you will rarely need to reach for takeaway on a busy night.`],
       ['h2', `Buying mince in bulk`],
       ['p', `If you cook mince several times a week, it pays to buy beef mince in bulk and freeze it in meal-sized portions; the beef mince price is listed per pack and per kilo on each product page. The mince price per kilo is lower on larger packs, and a full freezer means fewer last-minute shopping trips. Kitchens and caterers can order our [beef mince carton](/product/buy-beef-mince-carton/) for the best value.`],
-      ['p', `Buying minced beef online also means you know exactly what you are getting: every pack of our mince is certified halal by Halal Control Australia, packed chilled and delivered Australia-wide. Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/guide-to-halal-beef-cuts/) to see where mince fits alongside the rest of the animal.`],
+      ['p', `Buying minced beef online also means you know exactly what you are getting: every pack of our mince is certified halal by Halal Control Australia, packed chilled and delivered Australia-wide. Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/best-steak-part-of-beef-guide-halal-cuts/) to see where mince fits alongside the rest of the animal.`],
     ],
   },
   {
@@ -603,7 +603,7 @@ export const GUIDE_POSTS = [
       ]],
       ['h2', `Buying oyster blade and flat iron`],
       ['p', `When you order flat iron steak beef cuts, check that the central gristle has been removed — that is what makes it a flat iron rather than a slow-cooking cut. Our [flat iron steak](/product/flat-iron-steak-beef-oyster-blade/) is trimmed and ready to cook, certified halal by Halal Control Australia and delivered chilled Australia-wide. The beef steak price is listed per pack and per kilo on each product page, so you can compare it directly with our other steaks.`],
-      ['p', `Browse the full [halal beef range](/shop/halal-beef/) for more steaks, or compare the premium cuts in our [scotch fillet vs porterhouse guide](/blog/scotch-fillet-vs-porterhouse-vs-eye-fillet/).`],
+      ['p', `Browse the full [halal beef range](/shop/halal-beef/) for more steaks, or compare the premium cuts in our [scotch fillet vs porterhouse guide](/blog/eye-fillet-vs-scotch-fillet-porterhouse/).`],
     ],
   },
   {
@@ -639,7 +639,7 @@ export const GUIDE_POSTS = [
       ['h3', `Rolled roast beef`],
       ['p', `A rolled roast beef joint is any boneless cut tied into an even cylinder so it cooks evenly from end to end. Rolling makes carving easy and gives you consistent slices for a crowd. Our [roast beef joint](/product/buy-roast-beef-online-joint/) is prepared this way and ready for the oven.`],
       ['h2', `The best cuts for a pot roast`],
-      ['p', `For a slow, tender pot roast, choose bolar blade, chuck or brisket. These cuts have more connective tissue, which melts in long, moist cooking and gives a rich gravy. Bolar blade slices neatly; chuck and brisket are better pulled or carved thickly. Our [bolar blade roast recipe](/blog/beef-bolar-blade-roast-recipe/) walks you through the method step by step.`],
+      ['p', `For a slow, tender pot roast, choose bolar blade, chuck or brisket. These cuts have more connective tissue, which melts in long, moist cooking and gives a rich gravy. Bolar blade slices neatly; chuck and brisket are better pulled or carved thickly. Our [bolar blade roast recipe](/blog/best-beef-for-crock-pot-bolar-blade-roast-recipe/) walks you through the method step by step.`],
       ['h2', `What cut of beef roast is best for your budget?`],
       ['p', `What cut of beef roast is best also depends on cost per serve. Ranked roughly from most to least expensive per kilo:`],
       ['ul', [
@@ -669,7 +669,7 @@ export const GUIDE_POSTS = [
       ['p', `While the roast rests, make a quick gravy in the roasting tin: pour off most of the fat, stir a tablespoon of flour into the browned juices, then whisk in 500ml of beef stock and simmer until smooth and glossy. Classic sides are roast potatoes, Yorkshire puddings, honey-glazed carrots and green beans; for a lighter spread, serve thin slices of cold roast beef with horseradish, pickles and a crisp salad.`],
       ['h2', `Where to buy roast beef`],
       ['p', `If you are wondering where to buy roast beef cuts that are certified halal, you can order every joint in this guide from us online. If you prefer to buy roast beef online, our [whole topside](/product/roast-beef-topside-whole/) can be roasted whole for a crowd or cut into smaller joints and frozen. For a richer roast, the [Wagyu topside roast MB9+](/product/wagyu-topside-roast-mb9/) brings serious marbling to a lean cut. Everything is certified halal by Halal Control Australia and delivered chilled Australia-wide.`],
-      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/guide-to-halal-beef-cuts/) to see where each roasting joint comes from.`],
+      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/best-steak-part-of-beef-guide-halal-cuts/) to see where each roasting joint comes from.`],
     ],
   },
   {
@@ -741,7 +741,7 @@ export const GUIDE_POSTS = [
       ['p', `Bone broth keeps for four to five days in the fridge and up to six months in the freezer. Freeze it in 500ml containers for soups and in ice-cube trays for adding to sauces. Use it as the base for soups, stews, rice and lentil dishes, gravies and braises, or simply sip it hot from a mug with a pinch of salt.`],
       ['h2', `Buying bones for broth`],
       ['p', `Bones are among the cheapest things a butcher sells, and buying them in bulk makes a big batch of broth very economical. You can buy beef bones online from us and have them delivered with the rest of your order; the beef marrow bones price and soup bones price are listed per pack and per kilo on each product page. For extra body and flavour, add a piece of [oxtail](/product/beef-oxtail/), [beef shin](/product/beef-shin-hammer/) or [beef tendon](/product/beef-tendon/). Every product is certified halal by Halal Control Australia and delivered chilled Australia-wide.`],
-      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our guide to [gravy beef vs chuck](/blog/gravy-beef-vs-chuck/) for the best cuts to add to soups and stews.`],
+      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our guide to [gravy beef vs chuck](/blog/chuck-steak-gravy-beef-vs/) for the best cuts to add to soups and stews.`],
     ],
   },
   {
@@ -805,7 +805,7 @@ export const GUIDE_POSTS = [
         `Make it a day ahead: slow-cooked beef tastes better after a night in the fridge, and the fat is easy to lift off.`,
       ]],
       ['h2', `Buying gravy beef and chuck`],
-      ['p', `Every cut in this guide is certified halal by Halal Control Australia and delivered chilled Australia-wide. Buying larger packs and freezing them in meal-sized portions is the cheapest way to keep stewing beef on hand. Browse the full [halal beef range](/shop/halal-beef/), see our recipe for [slow cooked beef cheeks](/blog/slow-cooked-beef-cheeks/), or read the [guide to halal beef cuts](/blog/guide-to-halal-beef-cuts/).`],
+      ['p', `Every cut in this guide is certified halal by Halal Control Australia and delivered chilled Australia-wide. Buying larger packs and freezing them in meal-sized portions is the cheapest way to keep stewing beef on hand. Browse the full [halal beef range](/shop/halal-beef/), see our recipe for [slow cooked beef cheeks](/blog/slow-cooked-beef-cheeks/), or read the [guide to halal beef cuts](/blog/best-steak-part-of-beef-guide-halal-cuts/).`],
     ],
   },
   {
@@ -882,7 +882,7 @@ export const GUIDE_POSTS = [
       ]],
       ['h2', `Buying stir-fry beef`],
       ['p', `Buying whole rump or flank and slicing it yourself is the cheapest way to get high-quality stir-fry beef; slicing a whole piece takes five minutes once it is half-frozen. If you would rather save time, buy stir fry beef online and the strips arrive ready for the wok. Beef prices per kilo are shown on each product page, so you can compare pre-sliced strips with whole steaks.`],
-      ['p', `Every product is certified halal by Halal Control Australia and delivered chilled Australia-wide. Browse the full [halal beef range](/shop/halal-beef/), or read our [sirloin vs porterhouse vs rump guide](/blog/sirloin-vs-porterhouse-vs-rump/) to compare the steaks that make the best stir-fries.`],
+      ['p', `Every product is certified halal by Halal Control Australia and delivered chilled Australia-wide. Browse the full [halal beef range](/shop/halal-beef/), or read our [sirloin vs porterhouse vs rump guide](/blog/striploin-vs-sirloin-porterhouse-rump/) to compare the steaks that make the best stir-fries.`],
     ],
   },
   {
@@ -945,7 +945,7 @@ export const GUIDE_POSTS = [
       ['p', `Brisket is the classic, but it is not the only good choice. The best beef to smoke is any cut with plenty of fat and connective tissue: [beef short ribs](/product/beef-ribs-near-me-buy-short/) and [asado ribs](/product/beef-ribs-asado-cut/) are crowd-pleasers, chuck makes excellent smoked pulled beef, and a well-marbled rump cap cooks in a fraction of the time. For a luxurious cook, [Wagyu brisket MB9+](/product/buy-wagyu-beef-brisket-online-mb9/) has so much marbling that it stays moist even if your fire runs hot.`],
       ['h2', `Where to buy beef brisket`],
       ['p', `If you are looking for halal beef brisket for smoking, start with a whole packer of 5–8kg with a thick, flexible flat and a good fat cap. If you are wondering where to buy beef brisket that is certified halal and sized for smoking, you can order beef brisket online from us and have it delivered chilled anywhere in Australia. Every brisket we sell is certified halal by Halal Control Australia. Restaurants and barbecue caterers can buy [brisket by the cryovac carton](/product/brisket-prices-beef-cryovac-carton/) for the best price per kilo.`],
-      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/guide-to-halal-beef-cuts/) to see where brisket sits on the animal.`],
+      ['p', `Browse the full [halal beef range](/shop/halal-beef/), or read our [guide to halal beef cuts](/blog/best-steak-part-of-beef-guide-halal-cuts/) to see where brisket sits on the animal.`],
     ],
   },
 ]

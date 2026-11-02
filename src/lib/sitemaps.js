@@ -12,7 +12,7 @@ export function sitemapEntries(id) {
   const lm = (path) => LASTMOD[path]?.date || now
   if (id === 1) return PRODUCTS.map((p) => ({ loc: `${SITE.url}/product/${p.slug}/`, lastmod: lm(`/product/${p.slug}/`), images: p.images.map((i) => `${SITE.url}/images/products/${i}`) }))
   if (id === 2) return CATEGORIES.map((c) => ({ loc: `${SITE.url}${c.path}`, lastmod: lm(c.path) }))
-  if (id === 3) return POSTS.map((p) => ({ loc: `${SITE.url}/blog/${p.slug}/`, lastmod: new Date(p.updated || p.date).toISOString(), images: p.images.map((i) => `${SITE.url}/images/blog/${p.slug}-${i.n}-${i.w}.webp`) }))
+  if (id === 3) return POSTS.map((p) => ({ loc: `${SITE.url}/blog/${p.slug}/`, lastmod: new Date(p.updated || p.date).toISOString(), images: p.images.map((i) => `${SITE.url}/images/blog/${p.imageSlug || p.slug}-${i.n}-${i.w}.webp`) }))
   return STATIC_PAGES.map((path) => ({ loc: `${SITE.url}${path}`, lastmod: lm(path) }))
 }
 

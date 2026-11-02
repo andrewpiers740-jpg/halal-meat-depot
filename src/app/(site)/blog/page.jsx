@@ -61,7 +61,7 @@ export default function BlogIndex() {
           <p>
             Every recipe is halal — no pork and no alcohol — and every guide links straight to the cuts it uses, so you can go from reading to
             ordering in a click. All our meat is certified halal by Halal Control Australia and delivered Australia-wide. New to buying
-            meat online? Start with our <Link href="/blog/guide-to-halal-beef-cuts/">guide to halal beef cuts</Link>, browse the{' '}
+            meat online? Start with our <Link href="/blog/best-steak-part-of-beef-guide-halal-cuts/">guide to halal beef cuts</Link>, browse the{' '}
             <Link href="/halal-meat-shop-near-me/">halal meat shop</Link>, or read the <Link href="/faq-check-halal-food/">FAQ</Link> for delivery and payment details.
           </p>
           <KeywordNotes path="/blog/" />

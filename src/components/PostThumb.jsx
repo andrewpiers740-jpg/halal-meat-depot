@@ -13,8 +13,8 @@ export default function PostThumb({ post }) {
     <div className="post-thumb">
       <Link href={`/blog/${post.slug}/`} tabIndex={-1} aria-hidden="true">
         <img
-          src={postImageSrc(post.slug, img, 640)}
-          srcSet={`${postImageSrc(post.slug, img, 640)} 640w, ${postImageSrc(post.slug, img, 768)} 768w`}
+          src={postImageSrc(post.imageSlug || post.slug, img, 640)}
+          srcSet={`${postImageSrc(post.imageSlug || post.slug, img, 640)} 640w, ${postImageSrc(post.imageSlug || post.slug, img, 768)} 768w`}
           sizes="(max-width: 700px) calc(100vw - 32px), 380px"
           width={640}
           height={Math.round((640 * img.h) / img.w)}

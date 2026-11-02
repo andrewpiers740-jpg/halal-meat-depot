@@ -57,7 +57,7 @@ export default function HalalCertificationPage() {
             <Regulators title="Who regulates the meat we sell" />
             <p>
               If a specific requirement matters to you, we recommend reading {SITE.certifier}&apos;s published standard or asking us before you order.
-              Our guide <Link href="/blog/halal-meat-australia-certification/">What halal certification means when you buy meat in Australia</Link>{' '}
+              Our guide <Link href="/blog/halal-meat-supplier-australia-certification/">What halal certification means when you buy meat in Australia</Link>{' '}
               explains more.
             </p>
           </div>

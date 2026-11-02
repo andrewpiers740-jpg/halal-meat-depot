@@ -60,7 +60,7 @@ export const BLOG_POSTS_1 = [
       ['p', `Serve the salad with steamed jasmine rice or sticky rice. If you are cooking ahead, keep the beef, vegetables and dressing separate, and toss them together just before serving so the herbs stay bright. Leftover sliced beef keeps for up to two days in a sealed container in the fridge, and it makes an excellent filling for rice paper rolls or a quick fried rice.`],
       ['h2', `Thai beef salad near you, made at home`],
       ['p', `A restaurant version costs about as much as a whole steak, and making it at home lets you choose the cut and how pink it is. The beef meat price varies a lot between cuts, so compare the price per kilo on each product page: rump and flank give the best value for this dish, while porterhouse is the treat option. You will find every steak cut in our [halal beef range](/shop/halal-beef/), all certified halal by Halal Control Australia and delivered chilled Australia-wide.`],
-      ['p', `Orders are delivered from our depot in Greenacre, Sydney, with free delivery on orders over $500. If you enjoy this recipe, try our guide to the [best beef for stir fry](/blog/best-beef-for-stir-fry/) or the [satay beef](/blog/satay-beef/) recipe next.`],
+      ['p', `Orders are delivered from our depot in Greenacre, Sydney, with free delivery on orders over $500. If you enjoy this recipe, try our guide to the [best beef for stir fry](/blog/best-beef-for-stir-fry/) or the [satay beef](/blog/satay-near-me-beef/) recipe next.`],
     ],
   },
   {
@@ -112,7 +112,7 @@ export const BLOG_POSTS_1 = [
       ['p', `It simply needs more time. Tough beef in a braise means the connective tissue has not finished breaking down. Keep simmering gently and test every 20 minutes; chuck usually needs at least two hours, and cheeks can take three.`],
       ['h2', `Buying beef for curry: price and value`],
       ['p', `Slow-cooking cuts are among the best-value meat you can buy, which makes curry a smart way to feed a crowd. The beef meat price in Australia moves with the season and the cut, so compare the price per kilo on each product page before you order. Chuck and gravy beef are usually the most economical; cheeks cost more but reward you with a remarkable texture. For big gatherings, our [diced beef carton](/product/wholesale-beef-diced-carton/) is ready to cook straight from the pack.`],
-      ['p', `All our beef is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. Browse the full [halal beef range](/shop/halal-beef/), or try the [beef rendang recipe](/blog/beef-rendang-recipe/) next if you enjoy a rich, slow-cooked curry.`],
+      ['p', `All our beef is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. Browse the full [halal beef range](/shop/halal-beef/), or try the [beef rendang recipe](/blog/beef-rendang-malaysian-recipe/) next if you enjoy a rich, slow-cooked curry.`],
     ],
   },
   {
@@ -174,7 +174,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `Can I make rendang without kerisik?`],
       ['p', `You can, and many Indonesian cooks do, but the sauce will be thinner and less nutty. If you skip it, reduce the curry a little further so it still coats the beef.`],
       ['h2', `Where to buy beef for rendang`],
-      ['p', `If you have been searching for beef steak near me for a curry night, remember that the cheaper braising cuts are the right buy here, not premium steaks. You will find chuck, gravy beef, cheeks, brisket and [diced beef](/product/buy-diced-beef-online/) in our [halal beef range](/shop/halal-beef/), all certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. For another slow-simmered favourite, try our [beef massaman curry](/blog/beef-massaman-curry/).`],
+      ['p', `If you have been searching for beef steak near me for a curry night, remember that the cheaper braising cuts are the right buy here, not premium steaks. You will find chuck, gravy beef, cheeks, brisket and [diced beef](/product/buy-diced-beef-online/) in our [halal beef range](/shop/halal-beef/), all certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. For another slow-simmered favourite, try our [beef massaman curry](/blog/curry-massaman-thai-beef/).`],
     ],
   },
   {
@@ -239,7 +239,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `Which rice goes best with korma?`],
       ['p', `Fragrant basmati is the natural partner. For a special occasion, cook it with a few cardamom pods, a cinnamon stick and a pinch of saffron so the rice echoes the spices in the sauce without overpowering it.`],
       ['h2', `Not a curry night?`],
-      ['p', `If tonight calls for something quicker and you have been searching beef burger near me, our [beef patties](/product/beef-burger-near-me-patties-chuck-brisket/) made from chuck and brisket cook in under 10 minutes. And for curry nights, you will find chuck, gravy beef, cheeks and diced beef in our [halal beef range](/shop/halal-beef/). Everything is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. For a spicier dish, try our [beef vindaloo](/blog/beef-vindaloo/) next.`],
+      ['p', `If tonight calls for something quicker and you have been searching beef burger near me, our [beef patties](/product/beef-burger-near-me-patties-chuck-brisket/) made from chuck and brisket cook in under 10 minutes. And for curry nights, you will find chuck, gravy beef, cheeks and diced beef in our [halal beef range](/shop/halal-beef/). Everything is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. For a spicier dish, try our [beef vindaloo](/blog/curry-vindaloo-beef/) next.`],
     ],
   },
   {
@@ -305,7 +305,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `Can I freeze the vindaloo paste?`],
       ['p', `Yes. Make a double batch of paste and freeze half in an ice cube tray. Once frozen, store the cubes in a sealed bag for up to three months and use them straight from the freezer next time.`],
       ['h2', `Buy halal beef for curry`],
-      ['p', `Chuck, gravy beef, shin, cheeks and diced beef are all in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, Australia-wide, with free delivery on orders over $500. For more curry ideas, read our [beef madras](/blog/beef-madras/) and [beef korma](/blog/beef-korma/) recipes.`],
+      ['p', `Chuck, gravy beef, shin, cheeks and diced beef are all in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, Australia-wide, with free delivery on orders over $500. For more curry ideas, read our [beef madras](/blog/madras-curry-sauce-beef/) and [beef korma](/blog/beef-shahi-korma/) recipes.`],
     ],
   },
   {
@@ -352,7 +352,7 @@ export const BLOG_POSTS_1 = [
         `A simple dal for a vegetarian side`,
       ]],
       ['h2', `Takeaway cravings, home-cooked`],
-      ['p', `Searches like beef rendang near me and "madras near me" show how often a curry craving strikes. Making it at home with good beef gives you a bigger, better pot for the price of one takeaway meal, and leftovers freeze for up to three months. If rendang is what you are after, try our [beef rendang recipe](/blog/beef-rendang-recipe/).`],
+      ['p', `Searches like beef rendang near me and "madras near me" show how often a curry craving strikes. Making it at home with good beef gives you a bigger, better pot for the price of one takeaway meal, and leftovers freeze for up to three months. If rendang is what you are after, try our [beef rendang recipe](/blog/beef-rendang-malaysian-recipe/).`],
       ['h2', `Beef madras questions`],
       ['h3', `How hot is a madras curry?`],
       ['p', `On most curry-house menus, madras is hot: hotter than a jalfrezi or rogan josh, milder than a vindaloo or phaal. At home you can make it as gentle or as fiery as you like by adjusting the chilli powder.`],
@@ -418,7 +418,7 @@ export const BLOG_POSTS_1 = [
       ['h2', `Serving biryani`],
       ['p', `Serve with a cooling raita, a simple onion and cucumber salad, and perhaps a boiled egg on top. Biryani keeps in the fridge for three days. Reheat it gently, covered, with a sprinkle of water so the rice steams rather than dries out.`],
       ['h2', `Cooking for a crowd`],
-      ['p', `Biryani scales up well, which makes it a favourite for celebrations. If the occasion calls for something else too, you may have been searching beef rendang malay near me for a second dish; our [beef rendang recipe](/blog/beef-rendang-recipe/) can be made a day ahead and pairs well with a biryani spread. For larger events, our [bulk meat boxes](/shop/meat-packs/) and [catering packs](/product/goat-curry-near-me-cut-catering-pack/) are priced for quantity.`],
+      ['p', `Biryani scales up well, which makes it a favourite for celebrations. If the occasion calls for something else too, you may have been searching beef rendang malay near me for a second dish; our [beef rendang recipe](/blog/beef-rendang-malaysian-recipe/) can be made a day ahead and pairs well with a biryani spread. For larger events, our [bulk meat boxes](/shop/meat-packs/) and [catering packs](/product/goat-curry-near-me-cut-catering-pack/) are priced for quantity.`],
       ['h2', `Beef biryani questions`],
       ['h3', `Why is my biryani rice mushy?`],
       ['p', `The rice was cooked too long before layering, or the meat masala was too wet. Par-boil the rice only until it is about 70% cooked, and make sure the beef sauce is thick before you layer. The rice will finish cooking in the steam.`],
@@ -435,7 +435,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `How do I seal the pot for dum?`],
       ['p', `Cover the pot tightly with foil and press the lid down on top. Traditional cooks seal the lid with a rope of dough, which works brilliantly and looks dramatic when you break it open at the table.`],
       ['h2', `Buy halal beef for biryani`],
-      ['p', `Chuck, gravy beef, osso buco and diced beef are all available in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, Australia-wide. Prefer lamb or goat biryani? See our guides to diced lamb recipes and [goat meat curry cuts](/blog/goat-meat-curry-cuts-guide/).`],
+      ['p', `Chuck, gravy beef, osso buco and diced beef are all available in our [halal beef range](/shop/halal-beef/). Every cut is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, Australia-wide. Prefer lamb or goat biryani? See our guides to diced lamb recipes and [goat meat curry cuts](/blog/goat-curry-meat-cuts-guide/).`],
     ],
   },
   {
@@ -466,10 +466,10 @@ export const BLOG_POSTS_1 = [
       ['p', `This is the single most important thing to know about skirt. Its fibres run across the width of the strip, so cut the long strip into pieces about 15 cm long first, then turn each piece and slice it thinly across those fibres. Sliced with the grain, the same steak eats like rope; sliced against it, it is genuinely tender.`],
       ['h2', `Marinades that suit skirt`],
       ['ul', [
-        `Lime, garlic, cumin and chilli for fajitas and tacos (see our [beef fajitas](/blog/beef-fajitas/) recipe)`,
+        `Lime, garlic, cumin and chilli for fajitas and tacos (see our [beef fajitas](/blog/skirt-steak-beef-fajitas/) recipe)`,
         `Soy, garlic, sesame oil and brown sugar for Korean-style grilled beef`,
         `Olive oil, parsley, oregano, garlic and lemon juice for chimichurri`,
-        `Fish sauce, lime and palm sugar for a [Thai beef salad](/blog/thai-beef-salad/)`,
+        `Fish sauce, lime and palm sugar for a [Thai beef salad](/blog/thai-beef-salad-near-me/)`,
       ]],
       ['p', `Thin cuts take on flavour fast, so 30 minutes to 4 hours of marinating is plenty. Very acidic marinades left overnight can make the surface mushy.`],
       ['h2', `Halal beef meat for fast grilling`],
@@ -492,7 +492,7 @@ export const BLOG_POSTS_1 = [
       ['h3', `Can I cook skirt from frozen?`],
       ['p', `It is best thawed first. Skirt is thin, so it thaws overnight in the fridge. Pat it completely dry before cooking, because surface moisture prevents the deep crust that makes this cut so good.`],
       ['h2', `Buy halal beef online`],
-      ['p', `Every cut in our [halal beef range](/shop/halal-beef/) is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. Compare cuts and prices per kilo online, and read our [beef onglet steak](/blog/beef-onglet-steak/) and [beef bavette](/blog/beef-bavette/) guides for more on these flavour-packed butcher's cuts.`],
+      ['p', `Every cut in our [halal beef range](/shop/halal-beef/) is certified halal by Halal Control Australia and delivered chilled from Greenacre, Sydney, to anywhere in Australia. Compare cuts and prices per kilo online, and read our [beef onglet steak](/blog/onglet-beef-cut-steak/) and [beef bavette](/blog/bavette-flank-steak-beef/) guides for more on these flavour-packed butcher's cuts.`],
     ],
   },
 ]

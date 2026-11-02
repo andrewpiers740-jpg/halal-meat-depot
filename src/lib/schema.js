@@ -146,7 +146,7 @@ export function articleSchema(post) {
     headline: post.title,
     description: post.excerpt,
     image: post.images?.length
-      ? post.images.map((img, i) => imageObject(`${SITE.url}/images/blog/${post.slug}-${img.n}-${img.w}.webp`, postImageSeo(post, img, i), { width: img.w, height: img.h, creditText: img.creator, license: img.licenseUrl, acquireLicensePage: img.source }))
+      ? post.images.map((img, i) => imageObject(`${SITE.url}/images/blog/${post.imageSlug || post.slug}-${img.n}-${img.w}.webp`, postImageSeo(post, img, i), { width: img.w, height: img.h, creditText: img.creator, license: img.licenseUrl, acquireLicensePage: img.source }))
       : `${SITE.url}/images/og-v2.webp`,
     datePublished: post.date,
     dateModified: post.updated || post.date,

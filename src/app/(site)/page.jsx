@@ -238,7 +238,7 @@ export default function HomePage() {
             <p>
               Restaurants and caterers can order <Link href="/shop/meat-packs/">wholesale cartons</Link> online or{' '}
               <Link href="/halal-meat-manufacturers-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
-              <Link href="/blog/cooking-camel-meat-buffalo-kangaroo/">guide to cooking lean meats</Link>.
+              <Link href="/blog/kangaroo-meat-cooking-camel-buffalo/">guide to cooking lean meats</Link>.
             </p>
           </div>
           <div className="stack">

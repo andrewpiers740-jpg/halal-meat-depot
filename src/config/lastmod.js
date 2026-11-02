@@ -889,12 +889,12 @@ export const LASTMOD = {
   "date": "2026-11-02T13:37:56.545Z"
  },
  "/": {
-  "hash": "e9b11b269ba2f9d8",
-  "date": "2026-11-02T13:28:27.760Z"
+  "hash": "bb3de085b2f92eb9",
+  "date": "2026-11-02T16:28:08.324Z"
  },
  "/halal-meat-shop-near-me/": {
-  "hash": "c9776bd96de9f5dc",
-  "date": "2026-11-02T13:28:27.760Z"
+  "hash": "e425863ceea6b2b0",
+  "date": "2026-11-02T16:28:08.324Z"
  },
  "/wagyu-steak/": {
   "hash": "10c919cacb17600e",
@@ -909,8 +909,8 @@ export const LASTMOD = {
   "date": "2026-11-02T13:28:27.760Z"
  },
  "/halal-food-australia-certified-meat/": {
-  "hash": "c92bafd8888412db",
-  "date": "2026-11-02T13:37:56.545Z"
+  "hash": "c4455ba4356dc626",
+  "date": "2026-11-02T16:28:08.324Z"
  },
  "/about-halal-butcher/": {
   "hash": "790dc363c7572f59",
@@ -925,8 +925,8 @@ export const LASTMOD = {
   "date": "2026-11-02T13:28:27.760Z"
  },
  "/blog/": {
-  "hash": "24b6bc45f7fa709d",
-  "date": "2026-11-02T13:28:27.760Z"
+  "hash": "c6c698196b6c0694",
+  "date": "2026-11-02T16:28:08.324Z"
  },
  "/meat-box-delivery/": {
   "hash": "90c98a40b3b7dd3e",

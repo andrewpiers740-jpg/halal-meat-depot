@@ -12,7 +12,7 @@ export const CATEGORY_KEYWORDS = {
     title: 'How to buy halal beef online',
     copy: [
       `Every cut on this page is cut to order at our Greenacre depot. You can buy beef mince online in 2kg packs or 20kg cartons, buy beef steak from everyday rump to Wagyu, and buy beef sausages online as herb-and-garlic links, Wagyu Texan chilli and BBQ chipolatas. Want something for a weeknight wok? You can buy stir fry beef online already sliced into strips.`,
-      `Wondering which is the best roast beef to buy? Topside and rump are lean and easy to carve, while a standing rib roast is the showpiece. You can buy roast beef as a whole topside, a rolled joint or a bone-in rib. If you've been searching where to buy beef brisket, we sell whole packers, point-end and navel-end cuts, which suit low-and-slow smoking. Our [roasting guide](/blog/best-beef-cut-for-roasting/) and [brisket guide](/blog/best-temperature-to-smoke-beef-brisket/) explain the cuts.`,
+      `Wondering which is the best roast beef to buy? Topside and rump are lean and easy to carve, while a standing rib roast is the showpiece. You can buy roast beef as a whole topside, a rolled joint or a bone-in rib. If you've been searching where to buy beef brisket, we sell whole packers, point-end and navel-end cuts, which suit low-and-slow smoking. Our [roasting guide](/blog/best-beef-cut-for-roasting/) and [brisket guide](/blog/brisket-beef-best-temperature-smoke/) explain the cuts.`,
       `Buying beef in bulk saves money for big families and events. A beef mince bulk buy in a 20kg carton is our lowest price per kilo on mince, and our [meat packs](/shop/meat-packs/) cover cartons of steaks, diced beef and primals. Looking for halal beef near me? We deliver from Greenacre across Sydney and to every state, so there's no shop to visit.`,
     ],
   },
@@ -21,7 +21,7 @@ export const CATEGORY_KEYWORDS = {
     title: 'Halal lamb cut to order',
     copy: [
       `All our lamb meat is cut to order in Greenacre and certified halal by Halal Control Australia. Every pack of halal lamb, from cutlets to shanks, carries the same certificate, which is published on our [certification page](/halal-food-australia-certified-meat/).`,
-      `When you buy lamb for a Sunday roast, a bone-in leg of lamb for sale here comes whole or halved. You can also buy lamb roast online as a boned and rolled shoulder, or buy lamb steak online as leg steaks and backstrap for quick grilling. For slow cooking, forequarter chops, neck and diced shoulder turn tender after a long braise. Our [lamb casserole guide](/blog/lamb-casserole-recipe/) shows how.`,
+      `When you buy lamb for a Sunday roast, a bone-in leg of lamb for sale here comes whole or halved. You can also buy lamb roast online as a boned and rolled shoulder, or buy lamb steak online as leg steaks and backstrap for quick grilling. For slow cooking, forequarter chops, neck and diced shoulder turn tender after a long braise. Our [lamb casserole guide](/blog/diced-lamb-casserole-recipe/) shows how.`,
       `Lamb prices Australia-wide move with the season, so we show the pack price and the price per kilo on every product. That makes it easy to compare the price of lamb in Australia from one cut to the next. Searching for halal lamb near me or halal lamb meat near me? We deliver from Greenacre across Sydney and to every state. For whole lambs for Aqeeqah or Qurbani, see [whole lamb](/whole-lamb-aqeeqah-qurbani/).`,
     ],
   },
@@ -29,7 +29,7 @@ export const CATEGORY_KEYWORDS = {
     keywords: [k('lamb vs goat meat', 'C', 23, 260), k('mutton vs goat', 'C', 20, 140), k('goat meat vs mutton', 'I+C', 27, 140), k('where can i buy goat meat near me', 'T', 7, 110), k('whole goat meat for sale', 'T', 6, 20)],
     title: 'Choosing goat meat',
     copy: [
-      `Weighing up lamb vs goat meat? Goat is leaner, with a deeper flavour, and it needs a longer, gentler cook. That's why bone-in curry cut and shoulder are the most popular cuts for curries and stews. Our [goat curry guide](/blog/goat-meat-curry-cuts-guide/) explains which cut suits each dish.`,
+      `Weighing up lamb vs goat meat? Goat is leaner, with a deeper flavour, and it needs a longer, gentler cook. That's why bone-in curry cut and shoulder are the most popular cuts for curries and stews. Our [goat curry guide](/blog/goat-curry-meat-cuts-guide/) explains which cut suits each dish.`,
       `The mutton vs goat question confuses many shoppers, because in parts of South Asia "mutton" means goat. In Australia, mutton is meat from an older sheep. When recipes compare goat meat vs mutton, both suit slow curries, but goat is leaner and needs a little more liquid.`,
       `If you've been asking where can i buy goat meat near me, you can order from us online. We deliver from Greenacre across Sydney and to every state. We also have whole goat meat for sale as a full carcass, cut to your instructions, for Aqeeqah, Qurbani and family events.`,
     ],
@@ -49,7 +49,7 @@ export const CATEGORY_KEYWORDS = {
     copy: [
       `Camel meat Australia-wide is hard to find in shops, so we stock a full range. There's porterhouse, scotch fillet, eye fillet and rump steaks, a camel tomahawk, diced camel, mince, neck and osso buco. All our camel meat for sale is packed frozen and certified halal by Halal Control Australia.`,
       `Each product shows the camel meat price per pack, and the camel meat per kg figure sits beside it, so you can compare the camel meat Australia price across cuts. To buy camel meat Australia-wide, add it to your cart and we'll send it frozen from Greenacre.`,
-      `Searching for camel meat halal near me, or camel meat for sale near me? There's no shop to visit. We deliver to your door across Sydney and to every state. Our [camel, buffalo and kangaroo guide](/blog/cooking-camel-meat-buffalo-kangaroo/) explains how to cook each cut.`,
+      `Searching for camel meat halal near me, or camel meat for sale near me? There's no shop to visit. We deliver to your door across Sydney and to every state. Our [camel, buffalo and kangaroo guide](/blog/kangaroo-meat-cooking-camel-buffalo/) explains how to cook each cut.`,
     ],
   },
   duck: {
@@ -65,7 +65,7 @@ export const CATEGORY_KEYWORDS = {
     title: 'Kangaroo fillet and steak',
     copy: [
       `As a kangaroo meat butcher in Greenacre, we send kangaroo meat Sydney orders out frozen, and we deliver to the rest of Australia too. Kangaroo steak Sydney customers order most often are rump steaks and fillets, which are best seared quickly and served rare to medium-rare.`,
-      `Looking for halal kangaroo meat? Our [camel, buffalo and kangaroo guide](/blog/cooking-camel-meat-buffalo-kangaroo/) covers buying and cooking it. Is kangaroo meat good for weight loss? Kangaroo is one of the leanest red meats you can buy, but no single food causes weight loss, so check with a dietitian about your own diet. For recipes, see our [kangaroo fillet guide](/blog/kangaroo-fillet/).`,
+      `Looking for halal kangaroo meat? Our [camel, buffalo and kangaroo guide](/blog/kangaroo-meat-cooking-camel-buffalo/) covers buying and cooking it. Is kangaroo meat good for weight loss? Kangaroo is one of the leanest red meats you can buy, but no single food causes weight loss, so check with a dietitian about your own diet. For recipes, see our [kangaroo fillet guide](/blog/kangaroo-fillet/).`,
     ],
   },
   'water-buffalo': {
@@ -73,7 +73,7 @@ export const CATEGORY_KEYWORDS = {
     title: 'Water buffalo steaks and mince',
     copy: [
       `Water buffalo meat is sometimes called buffalo beef. It looks and cooks much like beef but is leaner, with a slightly sweeter flavour. Every cut of our buffalo meat is packed frozen and certified halal by Halal Control Australia.`,
-      `Comparing buffalo vs cattle? Buffalo has less marbling, so it cooks faster and dries out if overcooked. The buffalo vs cow difference is easy to taste in a quick-seared steak. Cook a buffalo steak to medium-rare and rest it well. Our [camel, buffalo and kangaroo guide](/blog/cooking-camel-meat-buffalo-kangaroo/) goes into more detail.`,
+      `Comparing buffalo vs cattle? Buffalo has less marbling, so it cooks faster and dries out if overcooked. The buffalo vs cow difference is easy to taste in a quick-seared steak. Cook a buffalo steak to medium-rare and rest it well. Our [camel, buffalo and kangaroo guide](/blog/kangaroo-meat-cooking-camel-buffalo/) goes into more detail.`,
       `For buffalo meat buy online here: porterhouse, scotch fillet, rib eye, T-bone, tomahawk, asado ribs, diced, mince and osso buco, delivered from Greenacre to every state.`,
     ],
   },
@@ -192,7 +192,7 @@ export const PAGE_KEYWORDS = {
     title: 'Popular guides',
     copy: [
       `Looking for recipes that use beef? Our most-read guides cover quick beef mince dinners, slow-cooked braises and the best way to cook Wagyu beef, which is hot and fast, with the fat rendered first.`,
-      `Steak questions come up most. Our comparisons answer eye fillet vs scotch fillet, sirloin vs scotch fillet and striploin vs sirloin (two names for the same cut). They also cover sirloin vs ribeye, rib eye vs scotch fillet and ribeye vs scotch fillet (again, the same cut with different names), and even hanger steak vs outside skirt. Start with [scotch fillet vs porterhouse vs eye fillet](/blog/scotch-fillet-vs-porterhouse-vs-eye-fillet/).`,
+      `Steak questions come up most. Our comparisons answer eye fillet vs scotch fillet, sirloin vs scotch fillet and striploin vs sirloin (two names for the same cut). They also cover sirloin vs ribeye, rib eye vs scotch fillet and ribeye vs scotch fillet (again, the same cut with different names), and even hanger steak vs outside skirt. Start with [scotch fillet vs porterhouse vs eye fillet](/blog/eye-fillet-vs-scotch-fillet-porterhouse/).`,
     ],
   },
 }

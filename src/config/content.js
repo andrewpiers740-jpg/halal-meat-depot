@@ -7,6 +7,7 @@
 import { GUIDE_POSTS } from './posts-guides.js'
 import { BLOG_POSTS } from './posts-blog.js'
 import { POST_IMAGES } from './post-images.js'
+import { applyPostV4 } from './post-v4.js'
 
 export const POSTS = [
   {
@@ -358,9 +359,10 @@ export const POSTS = [
   // Recipe, technique and buying guides added 2026-10-16 (posts-blog-*.js).
   ...BLOG_POSTS,
 // Photos were added to every post on 2026-10-16, so posts dated earlier count as updated then.
-].map((p) => ({ ...p, images: POST_IMAGES[p.slug] || [], updated: POST_IMAGES[p.slug] && (p.updated || p.date) < '2026-10-16' ? '2026-10-16' : p.updated }))
+// Keyword map v4 (2026-11-02) is applied per post (post-v4.js); photos stay filed under the original slug (imageSlug).
+].map(applyPostV4).map((p) => ({ ...p, images: POST_IMAGES[p.imageSlug] || [], updated: p.v4 ? '2026-11-02' : POST_IMAGES[p.imageSlug] && (p.updated || p.date) < '2026-10-16' ? '2026-10-16' : p.updated }))
 
-export const postBySlug = (slug) => POSTS.find((x) => x.slug === slug)
+export const postBySlug = (slug) => POSTS.find((x) => x.slug === slug || x.prevSlug === slug)
 
 // FAQ answers: direct answer first (AEO), 40–60 words where possible.
 export const FAQS = [

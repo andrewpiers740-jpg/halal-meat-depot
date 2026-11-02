@@ -68,7 +68,7 @@ export default function ShopPage() {
           <div className="card card--tint" style={{ marginTop: 48 }}>
             <h2>Need more help choosing?</h2>
             <p className="muted">
-              Read our <Link href="/blog/guide-to-halal-beef-cuts/">guide to halal beef cuts</Link>, see{' '}
+              Read our <Link href="/blog/best-steak-part-of-beef-guide-halal-cuts/">guide to halal beef cuts</Link>, see{' '}
               <Link href="/halal-food-australia-certified-meat/">how our meat is certified and regulated</Link>, check the <Link href="/faq-check-halal-food/">FAQ</Link>, or open a{' '}
               <Link href="/halal-meat-manufacturers-wholesale/">wholesale account</Link> for weekly volume pricing.
             </p>
