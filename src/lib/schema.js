@@ -31,7 +31,6 @@ export function organizationSchema() {
     telephone: SITE.phoneIntl,
     taxID: SITE.abn,
     areaServed: { '@type': 'Country', name: 'Australia' },
-    numberOfItems: PRODUCTS.length,
     priceRange: '$$',
     currenciesAccepted: SITE.currency,
     paymentAccepted: 'PayID, Bank transfer, Cryptocurrency',

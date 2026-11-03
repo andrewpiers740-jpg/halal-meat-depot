@@ -20,10 +20,11 @@ export async function generateMetadata({ params }) {
   const post = postBySlug(slug)
   if (!post) return {}
   const base = post.seoTitle || post.title
-  const t = `${base} | HMD Blog`
+  // The title must differ from the H1 (Semrush "duplicate H1 and title"): shorter suffix when the long one doesn't fit in 60.
+  const t = [`${base} | HMD Blog`, `${base} | HMD`].find((c) => c.length <= 60) || base
   // Share image = the post's first photo (2026-10-16), not the generic site image.
   const img = post.images?.[0]
-  return pageMeta({ title: t.length <= 60 ? t : base, description: post.excerpt, path: `/blog/${post.slug}/`, type: 'article', ...(img ? { image: `${SITE.url}/images/blog/${post.imageSlug || post.slug}-${img.n}-${img.w}.webp`, imageSize: [img.w, img.h] } : {}) })
+  return pageMeta({ title: t, description: post.excerpt, path: `/blog/${post.slug}/`, type: 'article', ...(img ? { image: `${SITE.url}/images/blog/${post.imageSlug || post.slug}-${img.n}-${img.w}.webp`, imageSize: [img.w, img.h] } : {}) })
 }
 
 export default async function BlogPost({ params }) {
