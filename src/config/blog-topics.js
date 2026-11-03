@@ -24,7 +24,7 @@ export const TOPICS = [
   {
     title: 'Curries from around the world',
     intro: 'Slow-simmered beef and lamb curries, from Thai massaman and Malaysian rendang to Goan vindaloo and Kashmiri rogan josh.',
-    slugs: ['beef-massaman-curry', 'beef-rendang-recipe', 'beef-korma', 'beef-vindaloo', 'beef-madras', 'beef-biryani', 'japanese-beef-curry', 'thai-beef-salad'],
+    slugs: ['beef-massaman-curry', 'beef-rendang-recipe', 'beef-korma', 'beef-vindaloo', 'beef-madras', 'beef-biryani', 'japanese-beef-curry', 'thai-beef-salad', 'dish-biryani-beef', 'beef-rendang-malaysian-recipe', 'curry-vindaloo-beef', 'madras-curry-sauce-beef'],
   },
   {
     title: 'Lamb recipes and cooking times',
@@ -52,7 +52,7 @@ export const TOPICS = [
 const STOP = new Set(['and', 'the', 'for', 'with', 'how', 'to', 'a', 'of', 'in', 'do', 'you', 'recipe', 'recipes', 'guide', 'best', 'vs'])
 const words = (p) => new Set(`${p.slug} ${p.kw}`.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !STOP.has(w)))
 // Posts that had a single inbound link (Semrush audit 2026-11-03): surface them first in same-topic related lists.
-const UNDERLINKED = new Set(['bulk-beef', 'curry-sausages-recipe', 'gyudon-beef-donburi-recipe', 'healthy-mince-recipes', 'oxtail-soup'])
+const UNDERLINKED = new Set(['bulk-beef', 'curry-sausages-recipe', 'gyudon-beef-donburi-recipe', 'healthy-mince-recipes', 'oxtail-soup', 'dish-biryani-beef'])
 export function relatedPosts(post, posts, n = 4) {
   const topic = TOPICS.find((t) => t.slugs.includes(post.slug))
   const mine = words(post)
