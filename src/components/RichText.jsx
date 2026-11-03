@@ -35,6 +35,24 @@ function linkify(text) {
   return out
 }
 
+// Semrush/AI-search "paragraphs are too long": split paragraphs over MAX_WORDS at the sentence break nearest the middle.
+const MAX_WORDS = 110
+const words = (t) => t.trim().split(/\s+/).length
+function splitLong(text) {
+  if (words(text) <= MAX_WORDS) return [text]
+  const breaks = []
+  const re = /[.!?] (?=[A-Z])/g
+  let m
+  while ((m = re.exec(text))) {
+    const before = text.slice(0, m.index)
+    if ((before.match(/\[/g) || []).length === (before.match(/\]/g) || []).length) breaks.push(m.index + 1)
+  }
+  if (!breaks.length) return [text]
+  const half = text.length / 2
+  const at = breaks.reduce((a, b) => (Math.abs(b - half) < Math.abs(a - half) ? b : a))
+  return [...splitLong(text.slice(0, at).trim()), ...splitLong(text.slice(at).trim())]
+}
+
 // insert: { [blockIndex]: node } renders extra content (e.g. a photo) before that block.
 export default function RichText({ blocks, insert = {} }) {
   return blocks.map(([type, content, id], i) => (
@@ -42,7 +60,7 @@ export default function RichText({ blocks, insert = {} }) {
       {insert[i]}
       {type === 'h2' && <h2 id={id}>{content}</h2>}
       {type === 'h3' && <h3>{content}</h3>}
-      {type === 'p' && <p>{inline(content)}</p>}
+      {type === 'p' && splitLong(content).map((part, k) => <p key={k}>{inline(part)}</p>)}
       {type === 'table' && (
         <div className="table-wrap">
           <table className="data-table">

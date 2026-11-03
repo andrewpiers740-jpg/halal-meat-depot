@@ -4,17 +4,17 @@ export const TOPICS = [
   {
     title: 'Steaks and roasts: which cut to buy',
     intro: 'Side-by-side comparisons of the premium cuts, so you can choose the right steak or roast for the occasion and the budget.',
-    slugs: ['scotch-fillet-vs-porterhouse-vs-eye-fillet', 'sirloin-vs-porterhouse-vs-rump', 'best-beef-cut-for-roasting', 'beef-oyster-blade-steak-recipe', 'guide-to-halal-beef-cuts', 'how-to-prepare-a-porterhouse', 'medium-rare-beef-steak-temperature', 'how-to-tenderise-beef-steak', 'beef-steak-side-dishes', 'beef-onglet-steak', 'beef-bavette', 'beef-skirt', 'roast-beef-cooking-time', 'tataki-beef'],
+    slugs: ['scotch-fillet-vs-porterhouse-vs-eye-fillet', 'sirloin-vs-porterhouse-vs-rump', 'best-beef-cut-for-roasting', 'beef-oyster-blade-steak-recipe', 'guide-to-halal-beef-cuts', 'how-to-prepare-a-porterhouse', 'medium-rare-beef-steak-temperature', 'how-to-tenderise-beef-steak', 'beef-steak-side-dishes', 'beef-onglet-steak', 'beef-bavette', 'beef-skirt', 'roast-beef-cooking-time', 'tataki-beef', 'bulk-beef'],
   },
   {
     title: 'Slow cooking and braising',
     intro: 'The cheaper, hard-working cuts that turn meltingly tender with time — with slow cooker, oven and pressure cooker methods.',
-    slugs: ['slow-cooked-beef-cheeks', 'lamb-casserole-recipe', 'slow-roast-lamb-slow-cooker', 'beef-bolar-blade-roast-recipe', 'gravy-beef-vs-chuck', 'best-bones-for-bone-broth', 'braised-beef', 'beef-shank', 'pulled-beef-recipe', 'slow-cooker-beef-ribs', 'mongolian-beef-slow-cooker'],
+    slugs: ['slow-cooked-beef-cheeks', 'lamb-casserole-recipe', 'slow-roast-lamb-slow-cooker', 'beef-bolar-blade-roast-recipe', 'gravy-beef-vs-chuck', 'best-bones-for-bone-broth', 'braised-beef', 'beef-shank', 'pulled-beef-recipe', 'slow-cooker-beef-ribs', 'mongolian-beef-slow-cooker', 'oxtail-soup'],
   },
   {
     title: 'Quick weeknight dinners',
     intro: 'Fast, family-friendly recipes for busy nights, most on the table in about 30 minutes.',
-    slugs: ['30-minute-beef-mince-recipes', 'best-beef-for-stir-fry', 'chicken-maryland-recipes', 'asian-beef-mince-recipes', 'pasta-with-beef-steak', 'beef-donburi-recipe', 'rainbow-beef', 'beef-and-black-bean', 'shaking-beef', 'beef-and-lemongrass', 'beef-fajitas', 'beef-schnitzel', 'beef-croquettes', 'creamy-tuscan-chicken'],
+    slugs: ['30-minute-beef-mince-recipes', 'best-beef-for-stir-fry', 'chicken-maryland-recipes', 'asian-beef-mince-recipes', 'pasta-with-beef-steak', 'beef-donburi-recipe', 'rainbow-beef', 'beef-and-black-bean', 'shaking-beef', 'beef-and-lemongrass', 'beef-fajitas', 'beef-schnitzel', 'beef-croquettes', 'creamy-tuscan-chicken', 'gyudon-beef-donburi-recipe', 'healthy-mince-recipes', 'curry-sausages-recipe'],
   },
   {
     title: 'Barbecue and smoking',
@@ -51,10 +51,12 @@ export const TOPICS = [
 // Related posts for a post page: same-topic posts first, ranked by shared words in slug and focus keyword.
 const STOP = new Set(['and', 'the', 'for', 'with', 'how', 'to', 'a', 'of', 'in', 'do', 'you', 'recipe', 'recipes', 'guide', 'best', 'vs'])
 const words = (p) => new Set(`${p.slug} ${p.kw}`.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !STOP.has(w)))
+// Posts that had a single inbound link (Semrush audit 2026-11-03): surface them first in same-topic related lists.
+const UNDERLINKED = new Set(['bulk-beef', 'curry-sausages-recipe', 'gyudon-beef-donburi-recipe', 'healthy-mince-recipes', 'oxtail-soup'])
 export function relatedPosts(post, posts, n = 4) {
   const topic = TOPICS.find((t) => t.slugs.includes(post.slug))
   const mine = words(post)
-  const score = (p) => [...words(p)].filter((w) => mine.has(w)).length * 2 + (topic?.slugs.includes(p.slug) ? 3 : 0)
+  const score = (p) => [...words(p)].filter((w) => mine.has(w)).length * 2 + (topic?.slugs.includes(p.slug) ? (UNDERLINKED.has(p.slug) ? 12 : 3) : 0)
   const self = posts.findIndex((p) => p.slug === post.slug)
   // Ties go to the nearest posts in list order, so every post gets linked from somewhere.
   return posts

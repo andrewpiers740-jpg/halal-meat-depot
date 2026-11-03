@@ -73,22 +73,22 @@ export default function HalalCertificationPage() {
               </div>
             </div>
             <figure className="card" id="certificate" style={{ margin: 0 }}>
-              <a href={SITE.certificate.full} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={SITE.certificate.image}
-                  width={SITE.certificate.width}
-                  height={SITE.certificate.height}
-                  alt={certImg.alt}
-                  title={certImg.title}
-                  loading="lazy"
-                  style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius)' }}
-                />
-              </a>
+              <img
+                src={SITE.certificate.image}
+                width={SITE.certificate.width}
+                height={SITE.certificate.height}
+                alt={certImg.alt}
+                title={certImg.title}
+                loading="lazy"
+                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius)' }}
+              />
               <figcaption className="muted" style={{ fontSize: '0.9rem', marginTop: 10 }}>
-                {certImg.caption}.{' '}
-                <a href={SITE.certificate.full} target="_blank" rel="noopener noreferrer">
-                  View full size
-                </a>
+                {certImg.caption}.
+                {/* Full-size view as an in-page image, not a plain link to the .jpg (Semrush "resource formatted as a page link"). */}
+                <details style={{ marginTop: 8 }}>
+                  <summary style={{ cursor: 'pointer' }}>View full size</summary>
+                  <img src={SITE.certificate.full} alt={certImg.alt} title={certImg.title} loading="lazy" style={{ width: '100%', height: 'auto', display: 'block', marginTop: 8 }} />
+                </details>
               </figcaption>
             </figure>
             <div className="card card--tint">
