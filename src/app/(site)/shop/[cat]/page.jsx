@@ -134,7 +134,7 @@ export default async function CategoryPage({ params }) {
                 <h2 id={`sub-${i}`}>{g.sub}</h2>
                 <div className="product-grid">
                   {g.items.slice(0, g.open).map((p, j) => (
-                    <ProductCard key={p.slug} product={p} priority={i === 0 && j < 2} />
+                    <ProductCard key={p.slug} product={p} />
                   ))}
                 </div>
                 {g.items.length > g.open && (
