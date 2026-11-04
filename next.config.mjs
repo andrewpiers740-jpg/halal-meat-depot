@@ -1,4 +1,5 @@
-import { REDIRECTS, SITE } from './src/config/site.js'
+import { SITE } from './src/config/site.js'
+import { REDIRECTS } from './src/config/redirects.js'
 
 const isStatic = process.env.TARGET === 'static'
 
