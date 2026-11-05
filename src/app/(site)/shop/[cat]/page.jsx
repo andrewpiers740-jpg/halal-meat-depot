@@ -14,7 +14,7 @@ import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
 
 export const dynamicParams = false
-const FIRST_CARDS = 9
+const FIRST_CARDS = 6
 const WAGYU_SUB = 'Wagyu MB5+ & MB9+'
 
 export function generateStaticParams() {
@@ -81,7 +81,7 @@ export default async function CategoryPage({ params }) {
   const groups = c.subcategories.map((sub) => ({ sub, items: items.filter((p) => p.sub === sub) })).filter((g) => g.items.length)
   // Only the first FIRST_CARDS cards render open; the rest sit in a closed <details> (still crawlable, no layout cost until opened).
   let budget = FIRST_CARDS
-  for (const g of groups) { g.open = g.sub === WAGYU_SUB ? 0 : Math.min(g.items.length, Math.max(budget, 3)); budget = Math.max(0, budget - g.open) }
+  for (const g of groups) { g.open = g.sub === WAGYU_SUB ? 0 : Math.min(g.items.length, Math.max(budget, 2)); budget = Math.max(0, budget - g.open) }
   const related = POSTS.filter((p) => p.body.some((b) => typeof b[1] === 'string' && b[1].includes(`${c.path}`))).slice(0, 2)
   const faqs = categoryFaqs(c, items, groups)
   const img = categoryImageSeo(c)
