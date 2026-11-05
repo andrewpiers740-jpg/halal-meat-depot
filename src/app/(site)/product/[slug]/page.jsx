@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Chunk from '@/components/Chunk'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import SmartImage from '@/components/SmartImage'
@@ -239,11 +240,14 @@ export default async function ProductPage({ params }) {
             </aside>
           </div>
 
-          <div className="card" style={{ marginTop: 32 }}>
-            <Regulators cat={p.cat} id="pdp-regulation" />
-          </div>
+          <Chunk>
+            <div className="card" style={{ marginTop: 32 }}>
+              <Regulators cat={p.cat} id="pdp-regulation" />
+            </div>
+          </Chunk>
 
           {related.length > 0 && (
+            <Chunk>
             <section aria-labelledby="related-title" style={{ marginTop: 56 }}>
               <h2 id="related-title">More halal {cat.name.toLowerCase()}</h2>
               <div className="product-grid">
@@ -255,6 +259,7 @@ export default async function ProductPage({ params }) {
                 <Link href={`${cat.path}`}>See all {cat.name.toLowerCase()} products</Link> · <Link href="/halal-meat-manufacturers-wholesale/">Wholesale accounts</Link>
               </p>
             </section>
+            </Chunk>
           )}
         </div>
       </div>

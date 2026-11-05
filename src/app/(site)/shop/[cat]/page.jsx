@@ -1,5 +1,6 @@
 import KeywordNotes from '@/components/KeywordNotes'
 import Link from 'next/link'
+import Chunk from '@/components/Chunk'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CategoryChips from '@/components/CategoryChips'
@@ -130,7 +131,8 @@ export default async function CategoryPage({ params }) {
                 </p>
               </section>
             ) : (
-              <section key={g.sub} id={subSlug(g.sub)} aria-labelledby={`sub-${i}`} className="sub-section" style={{ marginBottom: 48 }}>
+              <Chunk key={g.sub}>
+              <section id={subSlug(g.sub)} aria-labelledby={`sub-${i}`} className="sub-section" style={{ marginBottom: 48 }}>
                 <h2 id={`sub-${i}`}>{g.sub}</h2>
                 <div className="product-grid">
                   {g.items.slice(0, g.open).map((p, j) => (
@@ -148,8 +150,10 @@ export default async function CategoryPage({ params }) {
                   </details>
                 )}
               </section>
+              </Chunk>
             )
           )}
+          <Chunk>
           <KeywordNotes category={c.slug} />
           <section className="card" style={{ marginBottom: 24 }} aria-labelledby="cat-faq-title">
             <h2 id="cat-faq-title">{cap(phrase(c))}: common questions</h2>
@@ -193,6 +197,7 @@ export default async function CategoryPage({ params }) {
               </ul>
             </div>
           </div>
+          </Chunk>
         </div>
       </div>
     </>

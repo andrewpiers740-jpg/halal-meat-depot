@@ -1,3 +1,4 @@
+import Chunk from '@/components/Chunk'
 import KeywordNotes from '@/components/KeywordNotes'
 import PostThumb from '@/components/PostThumb'
 import Link from 'next/link'
@@ -115,6 +116,7 @@ export default function HomePage() {
       </section>
 
       {/* 2 — Trust bar */}
+      <Chunk>
       <section className="section section--tint section--tight" aria-label="Why order from us">
         <div className="container trust">
           <div className="trust-item">
@@ -147,8 +149,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
       {/* 3 — Categories */}
+      <Chunk>
       <section className="section" aria-labelledby="cats-title">
         <div className="container">
           <div className="section-head">
@@ -179,8 +183,10 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+      </Chunk>
 
       {/* 4 — Featured products */}
+      <Chunk>
       <section className="section section--tint" aria-labelledby="featured-title">
         <div className="container">
           <div className="section-head">
@@ -200,8 +206,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
       {/* 5 — Authority section */}
+      <Chunk>
       <section className="section" aria-labelledby="about-title">
         <div className="container split">
           <div className="prose">
@@ -280,8 +288,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
       {/* 6 — Stat strip (real numbers only) */}
+      <Chunk>
       <section className="section section--dark section--tight" aria-label="Halal Meat Depot in numbers">
         <div className="container stats">
           <div className="stat">
@@ -302,8 +312,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
       {/* 7 — How to order */}
+      <Chunk>
       <section className="section section--tint" aria-labelledby="how-title">
         <div className="container">
           <div className="section-head">
@@ -329,8 +341,10 @@ export default function HomePage() {
           </ol>
         </div>
       </section>
+      </Chunk>
 
       {/* 8 — FAQ */}
+      <Chunk>
       <section className="section" aria-labelledby="faq-title">
         <div className="container">
           <div className="section-head">
@@ -352,8 +366,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
       {/* 9 — Blog */}
+      <Chunk>
       <section className="section section--tint" aria-labelledby="blog-title">
         <div className="container">
           <div className="section-head">
@@ -380,13 +396,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
 
+      <Chunk>
       <div className="section">
         <div className="container" style={{ maxWidth: 960 }}>
           <KeywordNotes path="/" />
         </div>
       </div>
+      </Chunk>
       {/* 10 — Wholesale CTA */}
+      <Chunk>
       <section className="section section--dark" aria-labelledby="trade-title">
         <div className="container split" style={{ alignItems: 'center' }}>
           <div>
@@ -407,6 +427,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </Chunk>
     </>
   )
 }
