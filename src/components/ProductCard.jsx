@@ -24,7 +24,7 @@ export default function ProductCard({ product: p, priority = false }) {
       </Link>
       <div className="product-body">
         <span className="product-meta">
-          {cat?.name} · {p.sub}
+          {`${cat?.name} · ${p.sub}`}
         </span>
         <h3 className="product-title">
           <Link href={href}>{p.name}</Link>
@@ -33,7 +33,7 @@ export default function ProductCard({ product: p, priority = false }) {
         <div className="price-row">
           <span className="price">{money(p.price)}</span>
           <span className="unit">{p.unit}</span>
-          <span className="per-kg">≈ {money(p.perKg)}/kg</span>
+          <span className="per-kg">{`≈ ${money(p.perKg)}/kg`}</span>
         </div>
         <CardCart slug={p.slug} name={p.name} />
       </div>
