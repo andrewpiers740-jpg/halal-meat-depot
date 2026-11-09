@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ChatHub from '@/components/ChatHub'
 import CartDelegate from '@/components/CartDelegate'
+import TawkChat from '@/components/TawkChat'
 import { SITE } from '@/config/site'
 import { headerProps } from '@/lib/headerProps'
 
@@ -16,6 +17,7 @@ export default function SiteLayout({ children }) {
       <Footer />
       <ChatHub />
       <CartDelegate />
+      <TawkChat />
     </>
   )
 }

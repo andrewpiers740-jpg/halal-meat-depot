@@ -443,13 +443,15 @@ if (isVercel) {
     '</auth.md>; rel="auth"',
     '</.well-known/openid-configuration>; rel="openid-configuration"',
   ].join(', ')
+  // Tawk.to live chat (owner request 2026-11-09) needs these origins; everything else stays 'self'.
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline'",
-    "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data: blob:",
-    "font-src 'self'",
-    "connect-src 'self'",
+    "script-src 'self' 'unsafe-inline' https://embed.tawk.to https://*.tawk.to https://cdn.jsdelivr.net",
+    "style-src 'self' 'unsafe-inline' https://*.tawk.to https://cdn.jsdelivr.net",
+    "img-src 'self' data: blob: https://*.tawk.to https://*.tawk.link",
+    "font-src 'self' data: https://*.tawk.to",
+    "connect-src 'self' https://*.tawk.to wss://*.tawk.to https://cdn.jsdelivr.net",
+    "frame-src https://*.tawk.to",
     "frame-ancestors 'self'",
     "form-action 'self'",
     "base-uri 'self'",

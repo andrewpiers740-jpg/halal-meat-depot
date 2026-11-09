@@ -1,7 +1,4 @@
 import Link from 'next/link'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import { headerProps } from '@/lib/headerProps'
 
 export const metadata = {
   title: 'Page Not Found | Halal Meat Depot',
@@ -9,10 +6,11 @@ export const metadata = {
   robots: { index: false, follow: true },
 }
 
+// Deliberately no Header/Footer: Next embeds this component in the RSC data of EVERY page, so the full site chrome here
+// added ~12 KB to every page (Semrush low text-to-HTML ratio, 2026-11-09). Links below get visitors back on track.
 export default function NotFound() {
   return (
     <>
-      <Header {...headerProps} />
       <main id="main">
         <div className="section">
           <div className="container" style={{ maxWidth: 720 }}>
@@ -31,7 +29,6 @@ export default function NotFound() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   )
 }
