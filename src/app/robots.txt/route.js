@@ -3,7 +3,7 @@ import { SITE } from '@/config/site'
 export const dynamic = 'force-static'
 
 const AI_BOTS = ['GPTBot', 'ChatGPT-User', 'OAI-SearchBot', 'ClaudeBot', 'Claude-Web', 'PerplexityBot', 'Applebot', 'Amazonbot', 'Bytespider', 'CCBot', 'Google-Extended', 'Meta-ExternalAgent', 'cohere-ai']
-const PRIVATE = ['/admin/', '/api/admin/', '/api/account/', '/cart/', '/checkout/', '/account/', '/search/', '/order/', '/thank-you-contact/', '/thank-you-order/', '/thank-you-wholesale/']
+const PRIVATE = ['/admin/', '/api/admin/', '/api/account/', '/checkout/', '/order/', '/thank-you-contact/', '/thank-you-order/', '/thank-you-wholesale/']
 
 export function GET() {
   const u = SITE.url

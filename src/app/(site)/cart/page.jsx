@@ -6,7 +6,6 @@ export const metadata = pageMeta({
   title: 'Your Cart | Halal Meat Depot',
   description: 'Review your halal meat order, adjust quantities and check out. Minimum order $250, free delivery over $500 and 10% off when you pay with crypto.',
   path: '/cart/',
-  noindex: true,
 })
 
 export default function CartPage() {

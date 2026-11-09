@@ -147,7 +147,8 @@ const FOCUS = new Map([
   }
 }
 // ── crawl every indexable page + the noindex pages ─────────────────────────
-const NOINDEX = ['/cart/', '/checkout/', '/account/', '/search/', '/thank-you-order/', '/thank-you-contact/', '/thank-you-wholesale/', '/order/payment-details/', '/order/confirm-payment/', '/account/reset-password/']
+// /cart/, /account/ and /search/ are indexable by owner request (2026-11-08): checked separately below.
+const NOINDEX = ['/checkout/', '/thank-you-order/', '/thank-you-contact/', '/thank-you-wholesale/', '/order/payment-details/', '/order/confirm-payment/', '/account/reset-password/']
 const pages = [...pageUrls.map(toPath), ...NOINDEX]
 const internalLinks = new Set()
 const banned = COMPLIANCE.bannedTerms.map((t) => t.toLowerCase())
@@ -305,6 +306,11 @@ check(agentText['/auth.md'].startsWith('# Auth.md'), '20', 'auth.md must start w
 check(agentText['/auth.md'].includes('"agent_auth"'), '20', 'auth.md missing agent_auth block')
 const robots = agentText['/robots.txt']
 check(robots.includes('Disallow: /admin/'), 'B10', 'robots.txt does not disallow /admin/')
+for (const p of ['/cart/', '/account/', '/search/']) {
+  check(!robots.includes(`Disallow: ${p}`), '43', `robots.txt blocks ${p} (owner wants it crawlable)`)
+  const r = await get(p)
+  check(r.status === 200 && !/<meta name="robots" content="[^"]*noindex/.test(r.text), '43', `${p} should be indexable (200, no noindex)`)
+}
 check(['GPTBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended'].every((b) => robots.includes(`User-agent: ${b}`)), '18', 'robots.txt missing AI bots')
 check(robots.includes('Sitemap:'), '18', 'robots.txt has no Sitemap line')
 for (const f of agentFiles.filter((f) => f.startsWith('/.well-known/'))) {

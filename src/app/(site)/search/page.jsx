@@ -7,7 +7,6 @@ export const metadata = pageMeta({
   title: 'Search Halal Meat | Halal Meat Depot',
   description: 'Search every halal meat product and guide at Halal Meat Depot — beef, lamb, goat, chicken, camel, duck, kangaroo, buffalo and trade cartons.',
   path: '/search/',
-  noindex: true,
 })
 
 export default function SearchPage() {

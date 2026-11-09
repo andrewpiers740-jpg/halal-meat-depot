@@ -6,7 +6,6 @@ export const metadata = pageMeta({
   title: 'My Account | Halal Meat Depot',
   description: 'Sign in to your optional Halal Meat Depot account to see your orders and save your delivery details, or track a guest order with your order number.',
   path: '/account/',
-  noindex: true,
 })
 
 export default function AccountPage() {
