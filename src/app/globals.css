@@ -204,7 +204,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero-slide.is-active { opacity: 1; transform: scale(1); }
 .hero-slides::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20, 8, 9, 0.88) 0%, rgba(20, 8, 9, 0.62) 50%, rgba(20, 8, 9, 0.25) 100%), linear-gradient(0deg, rgba(20, 8, 9, 0.55), transparent 40%); pointer-events: none; }
 .hero-dots { position: absolute; z-index: 1; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; gap: 8px; }
-.hero-dots span { width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 255, 255, 0.4); transition: background 0.3s, width 0.3s; }
+/* No width transition: animating width is a non-composited animation (Lighthouse/GTmetrix); the active dot just widens. */
+.hero-dots span { width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 255, 255, 0.4); transition: background 0.3s; }
 .hero-dots span.is-active { width: 24px; border-radius: 6px; background: var(--accent); }
 @media (max-width: 899px) { .hero-slides::after { background: rgba(20, 8, 9, 0.72); } }
 @media (prefers-reduced-motion: reduce) { .hero-slide { transform: none; transition: opacity 0.4s ease; } }

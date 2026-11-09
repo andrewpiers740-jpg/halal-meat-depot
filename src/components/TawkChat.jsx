@@ -1,9 +1,13 @@
 'use client'
 import { useEffect } from 'react'
 
-// Tawk.to live chat (owner request 2026-11-09). Loaded AFTER the page has finished loading and the browser is idle,
-// so the third-party widget can't hurt LCP / TBT (Core Web Vitals). Same loader as Tawk's own snippet.
+// Tawk.to live chat (owner request 2026-11-09). The widget is ~265 KB of third-party JavaScript (about 270 ms of main-thread
+// time, 140 KB unused, plus a popup that shifts the layout), so it must not compete with the page for speed. It loads on the
+// visitor's FIRST INTERACTION (scroll, click, key, touch), or 8 seconds after the page has loaded if they just read.
+// Same loader as Tawk's own snippet; the bubble is moved above the WhatsApp button with customStyle.
 const TAWK_SRC = 'https://embed.tawk.to/6aef669d7b17683c37891769/default'
+const FALLBACK_MS = 8000
+const EVENTS = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove']
 
 export default function TawkChat() {
   useEffect(() => {
@@ -13,9 +17,15 @@ export default function TawkChat() {
     window.Tawk_API.customStyle = { visibility: { desktop: { position: 'br', xOffset: 16, yOffset: 88 }, mobile: { position: 'br', xOffset: 16, yOffset: 88 } } }
     window.Tawk_LoadStart = new Date()
     let started = false
-    const load = () => {
+    let timer
+    const cleanup = () => {
+      EVENTS.forEach((e) => window.removeEventListener(e, load))
+      clearTimeout(timer)
+    }
+    function load() {
       if (started) return
       started = true
+      cleanup()
       const s1 = document.createElement('script')
       const s0 = document.getElementsByTagName('script')[0]
       s1.async = true
@@ -24,10 +34,13 @@ export default function TawkChat() {
       s1.setAttribute('crossorigin', '*')
       s0.parentNode.insertBefore(s1, s0)
     }
-    const idle = () => ('requestIdleCallback' in window ? window.requestIdleCallback(load, { timeout: 4000 }) : setTimeout(load, 2500))
-    if (document.readyState === 'complete') idle()
-    else window.addEventListener('load', idle, { once: true })
-    return undefined
+    const arm = () => {
+      EVENTS.forEach((e) => window.addEventListener(e, load, { once: true, passive: true }))
+      timer = setTimeout(load, FALLBACK_MS)
+    }
+    if (document.readyState === 'complete') arm()
+    else window.addEventListener('load', arm, { once: true })
+    return cleanup
   }, [])
   return null
 }
