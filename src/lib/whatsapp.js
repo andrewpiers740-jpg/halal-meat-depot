@@ -19,13 +19,17 @@ const buildAdminText = (body) => [WA_HEADER, '', ...(Array.isArray(body) ? body 
 export const hasWhatsApp = () => Boolean(REPLY.channels.whatsapp)
 
 // customer → business
+// Customer-facing links go through our own /chat/whatsapp/ hand-off (src/app/chat/whatsapp/route.js), which redirects to wa.me.
+// Reason: WhatsApp returns 429 to crawlers, so direct wa.me links were reported as broken (2026-11-09). Admin→customer
+// links (waLinkTo) stay direct wa.me links, as they are not part of any public page.
+const viaSite = (text) => `/chat/whatsapp/?text=${encodeURIComponent(text)}`
 export function waLink(body) {
-  return `https://wa.me/${toWhatsAppNumber(REPLY.channels.whatsapp)}?text=${encodeURIComponent(buildCustomerText(body))}`
+  return viaSite(buildCustomerText(body))
 }
 
 // The general chat link — pre-filled greeting, cursor ready.
 export function waChatLink() {
-  return `https://wa.me/${toWhatsAppNumber(REPLY.channels.whatsapp)}?text=${encodeURIComponent(`Hi ${SITE.name}, `)}`
+  return viaSite(`Hi ${SITE.name}, `)
 }
 
 export function waOrderLink(order) {

@@ -279,10 +279,19 @@ for (const path of pages) {
   // every href must be absolute, root-relative, a fragment or a known scheme (catches href="undefined…")
   const badHrefs = [...body.matchAll(/href="([^"]*)"/g)].map((m) => m[1]).filter((h) => !/^(\/|#|https?:|mailto:|tel:|sms:|data:)/.test(h))
   check(!badHrefs.length, '5', `${path}: malformed href ${[...new Set(badHrefs)].slice(0, 3).join(', ')}`)
-  for (const m of body.matchAll(/href="(\/[^"#]*)"/g)) if (!m[1].startsWith('/_next') && !m[1].startsWith('/api/')) internalLinks.add(m[1].split('?')[0])
+  for (const m of body.matchAll(/href="(\/[^"#]*)"/g)) if (!m[1].startsWith('/_next') && !m[1].startsWith('/api/') && !m[1].startsWith('/chat/')) internalLinks.add(m[1].split('?')[0])
   // compliance
   const lower = body.replace(/<[^>]+>/g, ' ').toLowerCase() + ' ' + blocks.join(' ').toLowerCase()
   for (const t of banned) if (bannedIn(lower, t)) fail('B7', `${path}: banned term "${t}"`)
+}
+
+// ── WhatsApp hand-off (/chat/whatsapp/ is an intentional 302 to wa.me; wa.me itself returns 429 to crawlers) ──
+{
+  const r = await fetch(BASE + '/chat/whatsapp/?text=' + encodeURIComponent('Hi test, '), { redirect: 'manual' })
+  const loc = r.headers.get('location') || ''
+  check(r.status === 302 && /^https:\/\/wa\.me\/\d+\?text=Hi%20test%2C%20$/.test(loc), 'wa', `/chat/whatsapp/ should 302 to wa.me with the text (got ${r.status} ${loc})`)
+  const evil = await fetch(BASE + '/chat/whatsapp/?text=x&to=https://evil.example', { redirect: 'manual' })
+  check(/^https:\/\/wa\.me\/\d+\?text=x$/.test(evil.headers.get('location') || ''), 'wa', '/chat/whatsapp/ must ignore any destination parameter')
 }
 
 // ── broken internal links ─────────────────────────────────────────────────
