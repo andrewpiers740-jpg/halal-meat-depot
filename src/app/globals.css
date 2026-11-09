@@ -381,6 +381,7 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .footer-bottom { border-top: 1px solid #3b2526; margin-top: 40px; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.85rem; color: #bda8a5; }
 
 /* ── Chat hub (floating WhatsApp) ───────────────────────────────────────── */
+/* WhatsApp sits in the corner; the Tawk.to bubble is raised above it (TawkChat.jsx, customStyle yOffset) */
 .chat-fab { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 20px 0 16px; border-radius: var(--radius-pill); background: var(--wa); color: #fff; font-weight: 700; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
 .chat-fab:hover { background: #086332; color: #fff; }
 .chat-fab .icon { width: 26px; height: 26px; }

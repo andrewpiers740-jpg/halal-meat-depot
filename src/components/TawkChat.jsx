@@ -9,6 +9,8 @@ export default function TawkChat() {
   useEffect(() => {
     if (document.querySelector(`script[src="${TAWK_SRC}"]`)) return undefined
     window.Tawk_API = window.Tawk_API || {}
+    // Owner request 2026-11-09: WhatsApp button takes the bottom-right corner, the chat bubble sits just above it.
+    window.Tawk_API.customStyle = { visibility: { desktop: { position: 'br', xOffset: 16, yOffset: 88 }, mobile: { position: 'br', xOffset: 16, yOffset: 88 } } }
     window.Tawk_LoadStart = new Date()
     let started = false
     const load = () => {
