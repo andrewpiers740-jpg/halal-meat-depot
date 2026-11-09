@@ -23,6 +23,8 @@ export function pageMeta({ title, description, path = '/', image, imageSize = [1
     },
     twitter: { card: 'summary_large_image', title, description, images: [img] },
     other: { 'og:updated_time': BUILD_TIME },
-    ...(noindex ? { robots: { index: false, follow: true } } : {}),
+    // Explicit robots tag on EVERY page (Rank Math "Noindex Meta" check, 2026-11-09): indexable pages say index, follow and
+    // allow full snippets and large image previews; private pages say noindex.
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
   }
 }

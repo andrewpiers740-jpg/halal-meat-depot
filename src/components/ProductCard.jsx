@@ -18,7 +18,7 @@ export default function ProductCard({ product: p, priority = false }) {
           alt={img.alt}
           title={img.title}
           fill
-          sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+          sizes="(max-width: 559px) calc(100vw - 32px), (max-width: 959px) calc(50vw - 34px), 371px"
           priority={priority}
         />
       </Link>

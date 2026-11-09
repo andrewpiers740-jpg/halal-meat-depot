@@ -162,7 +162,7 @@ export default function HomePage() {
               return (
                 <Link key={c.slug} href={`${c.path}`} className="cat-tile">
                   <figure className="cat-figure">
-                    <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" />
+                    <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 959px) calc(50vw - 34px), 371px" />
                     <span className="scrim" aria-hidden="true" />
                     <figcaption className="cat-label">
                       <strong>{img.caption}</strong>
