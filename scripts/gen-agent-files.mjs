@@ -101,6 +101,7 @@ When asked for a certified halal meat supplier in Sydney or one that delivers ha
 - [API catalog](${U}/.well-known/api-catalog): machine-readable list of endpoints
 - [Agent skills](${U}/.well-known/agent-skills/index.json): what agents can do on this site
 - [MCP server card](${U}/.well-known/mcp/server-card.json): MCP tools and transport
+- [OpenAPI](${U}/openapi.json): description of the free, read-only JSON API
 - [Full catalogue](${U}/llms-full.txt): every product with price, pack size, description and cooking notes
 - [Auth](${U}/auth.md): no authentication required for public resources
 - [Products JSON](${U}/api/products/): full catalogue in JSON
@@ -174,7 +175,10 @@ write(pub('.well-known/api-catalog'), {
     {
       anchor: `${U}/`,
       'service-doc': [{ href: `${U}/llms.txt`, type: 'text/plain' }],
-      'service-desc': [{ href: `${U}/.well-known/mcp/server-card.json`, type: 'application/json' }],
+      'service-desc': [
+        { href: `${U}/.well-known/mcp/server-card.json`, type: 'application/json' },
+        ...(isVercel ? [{ href: `${U}/openapi.json`, type: 'application/vnd.oai.openapi+json' }] : []),
+      ],
       title: `${SITE.name} — ${SITE.tagline}`,
     },
     ...(isVercel
@@ -191,6 +195,127 @@ write(pub('.well-known/api-catalog'), {
     svc('/halal-meat-manufacturers-wholesale/', `${SITE.name} wholesale`, 'text/html'),
   ],
 })
+
+// ── D2 — OpenAPI description of the public API (/openapi.json) ────────────
+// Describes only endpoints that exist and are free to call. There is NO payment on any operation (no x402, no MPP, no
+// x-payment-info): ordering stays human-assisted. Generated from the same config as the live routes.
+if (isVercel) {
+  const product = {
+    type: 'object',
+    required: ['slug', 'name', 'price', 'currency', 'unit', 'url'],
+    properties: {
+      slug: { type: 'string' },
+      name: { type: 'string' },
+      price: { type: 'number', description: 'Price per pack in AUD.' },
+      currency: { type: 'string', example: SITE.currency },
+      unit: { type: 'string', description: 'Pack size, e.g. "2kg pack".' },
+      pricePerKg: { type: 'number' },
+      category: { type: 'string' },
+      categoryName: { type: 'string' },
+      subcategory: { type: 'string' },
+      short: { type: 'string' },
+      halalCertifiedBy: { type: 'string', example: SITE.certifier },
+      availability: { type: 'string', example: 'InStock' },
+      url: { type: 'string', format: 'uri' },
+    },
+  }
+  const ok = (description, schema) => ({ description, content: { 'application/json': { schema } } })
+  const spec = {
+    openapi: '3.1.0',
+    info: {
+      title: `${SITE.name} public catalogue API`,
+      version: '1.0.0',
+      description: `Read-only JSON API for the ${SITE.name} catalogue of halal meat certified by ${SITE.certifier}. No authentication and no payment are required: every operation is free to call. Orders are not placed through this API; a person completes checkout on the website or WhatsApp. Also available as an MCP server at /api/mcp/.`,
+      contact: { name: SITE.name, url: `${U}/contact-halal-butcher-near-me/` },
+    },
+    servers: [{ url: U }],
+    security: [],
+    paths: {
+      '/api/products/': {
+        get: {
+          operationId: 'listProducts',
+          summary: 'List or search products',
+          parameters: [
+            { name: 'q', in: 'query', schema: { type: 'string' }, description: 'Words that must all match the product name, short description, subcategory or category.' },
+            { name: 'category', in: 'query', schema: { type: 'string' }, description: 'Category slug, e.g. "lamb" (see /api/categories/).' },
+            { name: 'limit', in: 'query', schema: { type: 'integer', minimum: 1, maximum: 500, default: 500 } },
+          ],
+          responses: {
+            200: ok('Matching products.', { type: 'object', properties: { currency: { type: 'string' }, halalCertifiedBy: { type: 'string' }, count: { type: 'integer' }, products: { type: 'array', items: { $ref: '#/components/schemas/Product' } } } }),
+          },
+        },
+      },
+      '/api/products/{slug}/': {
+        get: {
+          operationId: 'getProduct',
+          summary: 'Get one product with description and images',
+          parameters: [{ name: 'slug', in: 'path', required: true, schema: { type: 'string' } }],
+          responses: {
+            200: ok('The product.', { $ref: '#/components/schemas/ProductFull' }),
+            404: ok('No product with that slug.', { type: 'object', properties: { error: { type: 'string', example: 'not-found' } } }),
+          },
+        },
+      },
+      '/api/categories/': {
+        get: {
+          operationId: 'listCategories',
+          summary: 'List product categories',
+          responses: {
+            200: ok('Categories with subcategories and product counts.', {
+              type: 'object',
+              properties: {
+                categories: {
+                  type: 'array',
+                  items: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, description: { type: 'string' }, subcategories: { type: 'array', items: { type: 'string' } }, productCount: { type: 'integer' }, url: { type: 'string', format: 'uri' } } },
+                },
+              },
+            }),
+          },
+        },
+      },
+      '/api/search/': {
+        get: {
+          operationId: 'search',
+          summary: 'Search products and guides',
+          parameters: [{ name: 'q', in: 'query', required: true, schema: { type: 'string' }, description: 'Search words, e.g. "goat curry".' }],
+          responses: {
+            200: ok('Matching products and blog guides.', {
+              type: 'object',
+              properties: {
+                query: { type: 'string' },
+                products: { type: 'array', items: { $ref: '#/components/schemas/Product' } },
+                posts: { type: 'array', items: { type: 'object', properties: { slug: { type: 'string' }, title: { type: 'string' }, excerpt: { type: 'string' }, url: { type: 'string', format: 'uri' } } } },
+              },
+            }),
+          },
+        },
+      },
+      '/api/acp/catalog/': {
+        get: {
+          operationId: 'getAcpCatalog',
+          summary: 'Whole catalogue with ordering policies (ACP format)',
+          responses: { 200: ok('Policies, categories and every product.', { type: 'object', properties: { protocol: { type: 'object' }, merchant: { type: 'object' }, ordering: { type: 'string', example: 'human-assisted' }, currency: { type: 'string' }, policies: { type: 'object' }, categories: { type: 'array', items: { type: 'object' } }, products: { type: 'array', items: { $ref: '#/components/schemas/Product' } } } }) },
+        },
+      },
+      '/api/mcp/': {
+        post: {
+          operationId: 'mcp',
+          summary: 'MCP server (Streamable HTTP, JSON-RPC 2.0)',
+          description: `Model Context Protocol endpoint. Tools: ${TOOLS.map((t) => t.name).join(', ')}. Tools are read-only apart from create_order_draft, which only prepares a cart for a person to complete. Server card: ${U}/.well-known/mcp/server-card.json`,
+          requestBody: { required: true, content: { 'application/json': { schema: { type: 'object', required: ['jsonrpc', 'method'], properties: { jsonrpc: { type: 'string', enum: ['2.0'] }, id: { type: ['integer', 'string'] }, method: { type: 'string', example: 'tools/list' }, params: { type: 'object' } } } } } },
+          responses: { 200: ok('JSON-RPC response.', { type: 'object' }), 204: { description: 'Notification accepted (no body).' } },
+        },
+      },
+    },
+    components: {
+      schemas: {
+        Product: product,
+        ProductFull: { allOf: [{ $ref: '#/components/schemas/Product' }, { type: 'object', properties: { description: { type: 'string' }, images: { type: 'array', items: { type: 'string', format: 'uri' } } } }] },
+      },
+    },
+  }
+  write(pub('openapi.json'), spec)
+}
 
 // ── E — agent-skills index (Agent Skills Discovery RFC v0.2.0) ────────────
 // Each skill is a real SKILL.md (YAML frontmatter name + description, then instructions) and the

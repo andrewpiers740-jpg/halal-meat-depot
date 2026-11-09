@@ -302,7 +302,7 @@ for (const link of internalLinks) {
 }
 
 // ── agent files (B6) + placeholders (32) + compliance in agent files ──────
-const agentFiles = ['/llms.txt', '/auth.md', '/robots.txt', '/.well-known/api-catalog', '/.well-known/agent-skills/index.json', '/.well-known/mcp/server-card.json', '/.well-known/oauth-protected-resource', '/.well-known/oauth-authorization-server', '/.well-known/openid-configuration', '/.well-known/acp.json', '/.well-known/ucp', '/.well-known/ard.json', '/.well-known/ai-catalog.json', '/.well-known/poppy.json', '/js/webmcp.js', `/${SITE.indexNowKey}.txt`]
+const agentFiles = ['/llms.txt', '/auth.md', '/robots.txt', '/.well-known/api-catalog', '/.well-known/agent-skills/index.json', '/.well-known/mcp/server-card.json', '/.well-known/oauth-protected-resource', '/.well-known/oauth-authorization-server', '/.well-known/openid-configuration', '/.well-known/acp.json', '/.well-known/ucp', '/.well-known/ard.json', '/.well-known/ai-catalog.json', '/.well-known/poppy.json', '/openapi.json', '/js/webmcp.js', `/${SITE.indexNowKey}.txt`]
 const agentText = {}
 for (const f of agentFiles) {
   const r = await get(f)
