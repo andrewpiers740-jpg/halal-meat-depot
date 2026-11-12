@@ -17,7 +17,6 @@ import { productSchema, faqSchema } from '@/lib/schema'
 import { PRIORITY_FROM } from '@/config/delivery'
 import { pageMeta } from '@/lib/meta'
 import { money } from '@/lib/order'
-import { waLink } from '@/lib/whatsapp'
 
 export const dynamicParams = false
 
@@ -97,7 +96,6 @@ export default async function ProductPage({ params }) {
   // GUIDE_BY_PRODUCT is keyed by the product's earlier URL slug, which now lives in oldSlug / prevSlugs.
   const guideFor = [p.slug, p.oldSlug, p.imageSlug, ...p.prevSlugs].map((s) => GUIDE_BY_PRODUCT[s]).find(Boolean)
   const guides = [...new Set([guideFor, GUIDE_BY_CAT[p.cat] || 'halal-meat-australia-certification'])].map(postBySlug).filter(Boolean)
-  const enquire = waLink(`I have a question about ${p.name} (${p.unit}).`)
   const img = productImageSeo(p)
   const copy = productContent(p)
   const more = productGuide(p)
@@ -229,9 +227,6 @@ export default async function ProductPage({ params }) {
               </h2>
               <p className="muted">Ask about cuts, quantities or event orders before you buy.</p>
               <div className="btn-row">
-                <a className="btn btn--wa btn--sm" href={enquire} target="_blank" rel="noopener noreferrer">
-                  Ask on WhatsApp
-                </a>
                 <Link className="btn btn--ghost btn--sm" href="/contact-halal-butcher-near-me/">
                   Contact form
                 </Link>
