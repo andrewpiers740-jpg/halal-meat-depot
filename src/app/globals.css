@@ -383,6 +383,9 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 
 /* ── Support chat (SupportChat.jsx) ─────────────────────────────────────── */
 /* The only chat control: round button bottom-right, panel above it. The tawk.to bubble is hidden by script. */
+/* tawk.to's own bubble (#min-widget) and preview popup (#chat-bubble) must never show — they appeared over the support button for ~1s
+   on load, before hideWidget() ran. The chat window itself is untouched: the panel's "Live chat" button opens it. */
+#min-widget, #chat-bubble { display: none !important; }
 .sc { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
 .sc-fab { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border: 0; border-radius: var(--radius-pill); background: var(--brand); color: #fff; cursor: pointer; box-shadow: 0 10px 30px rgba(159, 29, 36, 0.4); transition: transform 0.15s ease, background 0.15s ease; }
 .sc-fab:hover { background: var(--brand-dark); transform: scale(1.05); }

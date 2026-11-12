@@ -40,6 +40,7 @@ export default function SupportChat({ siteName, whatsapp, phoneIntl, phoneDispla
     if (document.querySelector(`script[src="${src}"]`)) return undefined
     window.Tawk_API = window.Tawk_API || {}
     window.Tawk_LoadStart = new Date()
+    window.Tawk_API.onBeforeLoad = hide
     window.Tawk_API.onLoad = () => {
       hide()
       setTawkReady(true)
