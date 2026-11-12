@@ -381,12 +381,33 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .footer-brand p { font-size: 0.92rem; color: #cdbbb8; }
 .footer-bottom { border-top: 1px solid #3b2526; margin-top: 40px; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.85rem; color: #bda8a5; }
 
-/* ── Chat hub (floating WhatsApp) ───────────────────────────────────────── */
-/* WhatsApp sits in the corner; the Tawk.to bubble is raised above it (TawkChat.jsx, customStyle yOffset) */
-.chat-fab { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 20px 0 16px; border-radius: var(--radius-pill); background: var(--wa); color: #fff; font-weight: 700; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
-.chat-fab:hover { background: #086332; color: #fff; }
-.chat-fab .icon { width: 26px; height: 26px; }
-@media (max-width: 480px) { .chat-fab span { display: none; } .chat-fab { padding: 0 15px; } }
+/* ── Support chat (SupportChat.jsx) ─────────────────────────────────────── */
+/* The only chat control: round button bottom-right, panel above it. The tawk.to bubble is hidden by script. */
+.sc { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.sc-fab { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border: 0; border-radius: var(--radius-pill); background: var(--brand); color: #fff; cursor: pointer; box-shadow: 0 10px 30px rgba(159, 29, 36, 0.4); transition: transform 0.15s ease, background 0.15s ease; }
+.sc-fab:hover { background: var(--brand-dark); transform: scale(1.05); }
+.sc-panel { width: calc(100vw - 32px); max-width: 384px; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 24px 60px rgba(40, 12, 12, 0.28); }
+.sc-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px; background: var(--brand); color: #fff; }
+.sc-head-title { display: flex; align-items: center; gap: 8px; }
+.sc-name { margin: 0; font-size: 0.9rem; font-weight: 800; }
+.sc-sub { margin: 0; font-size: 0.72rem; color: rgba(255, 255, 255, 0.9); }
+.sc-x { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: -6px -10px -6px 0; border: 0; border-radius: var(--radius-pill); background: transparent; color: #fff; cursor: pointer; }
+.sc-x:hover { background: rgba(255, 255, 255, 0.2); }
+.sc-body { display: flex; flex-direction: column; gap: 12px; padding: 16px; max-height: calc(100vh - 150px); overflow-y: auto; }
+.sc-hello { margin: 0; padding: 12px; border-radius: 12px; background: var(--tint-2); font-size: 0.9rem; color: var(--ink); }
+.sc-topics { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.sc-topic { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-size: 0.9rem; font-weight: 700; text-align: left; cursor: pointer; }
+.sc-topic:hover { border-color: var(--brand); }
+.sc-topic .icon { color: var(--brand-dark); flex: none; }
+.sc-answer { margin: 4px 0 0; padding: 12px; border-radius: 12px; background: var(--tint); font-size: 0.88rem; color: var(--ink); }
+.sc-answer a { font-weight: 700; color: var(--brand-dark); text-decoration: underline; }
+.sc-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+.sc-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-size: 0.9rem; font-weight: 700; text-decoration: none; cursor: pointer; overflow-wrap: anywhere; }
+.sc-btn:hover { border-color: var(--brand); color: var(--ink); }
+.sc-btn--primary { border-color: var(--brand); background: var(--brand); color: #fff; font-weight: 800; }
+.sc-btn--primary:hover { background: var(--brand-dark); color: #fff; }
+.sc-btn .icon { flex: none; }
+.sc-wide { grid-column: 1 / -1; }
 
 /* ── Admin (private, dark shell) ────────────────────────────────────────── */
 .admin { min-height: 100vh; background: #140b0c; color: #eee3e1; }
@@ -440,7 +461,7 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 }
 
 @media print {
-  .site-header, .announce, .site-footer, .chat-fab { display: none !important; }
+  .site-header, .announce, .site-footer, .sc { display: none !important; }
 }
 
 /* ── Shop browser: left sidebar + filtered grid ──────────────────────────── */

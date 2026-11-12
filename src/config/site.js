@@ -90,6 +90,8 @@ export const SITE = {
   delivery: { transitDays: [2, 5], handlingDays: [0, 1] },
   cryptoDiscountPct: 10,
   deliveryArea: 'Australia-wide',
+  // tawk.to live chat. The property ID is public (it is in the embed script), so it lives here, not in an env var.
+  tawk: { propertyId: '6aef669d7b17683c37891769', widgetId: 'default' },
   pickupAvailable: false, // delivery only — the depot address is the business address, not a pickup point
 
   gscCode: 'sGGRSb0Z8dIct0rg_qApLhQTsEuBv0EfbPp8hIErqwM', // Google Search Console (URL-prefix property, HTML tag) — added 2026-10-13
@@ -158,8 +160,30 @@ export const FORMS = {
   destinations: { contact: SITE.email, order: SITE.email, wholesale: SITE.email },
 }
 
+// Floating support chat (src/components/SupportChat.jsx). Contact values come from SITE; the three quick answers
+// restate the shipping, payment and refund policies already published on the site — keep them in step with
+// /meat-box-delivery/, the FAQ and /refund/.
 export const CHAT = {
-  channels: [{ type: 'whatsapp', value: SITE.phoneRaw }],
+  quick: [
+    {
+      icon: 'truck',
+      q: 'Where is my order?',
+      a: `Orders are packed chilled and dispatched once payment clears, and we confirm your delivery date by email or WhatsApp. Standard delivery takes ${SITE.delivery.transitDays[0]}–${SITE.delivery.transitDays[1]} days: free on orders over $${SITE.freeShipOver}, otherwise $${SITE.flatShip}.`,
+      href: '/meat-box-delivery/',
+    },
+    {
+      icon: 'card',
+      q: 'How do I pay?',
+      a: `We accept PayID, bank transfer and cryptocurrency (${SITE.cryptoDiscountPct}% off your meat total). After you order we send the payment details for your chosen method.`,
+      href: '/faq-check-halal-food/',
+    },
+    {
+      icon: 'help',
+      q: 'Returns & refunds',
+      a: 'Report a problem within 48 hours of delivery with your order number and photos. Damaged, spoiled, incorrect or missing items are replaced or refunded. We cannot accept change-of-mind returns on fresh meat.',
+      href: '/refund/',
+    },
+  ],
 }
 
 export const WHOLESALE_TIERS = [

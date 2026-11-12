@@ -1,10 +1,10 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import ChatHub from '@/components/ChatHub'
+import SupportChat from '@/components/SupportChat'
 import CartDelegate from '@/components/CartDelegate'
-import TawkChat from '@/components/TawkChat'
 import { SITE } from '@/config/site'
 import { headerProps } from '@/lib/headerProps'
+import { chatProps } from '@/lib/chatProps'
 
 export default function SiteLayout({ children }) {
   return (
@@ -15,9 +15,8 @@ export default function SiteLayout({ children }) {
       <Header {...headerProps} />
       <main id="main">{children}</main>
       <Footer />
-      <ChatHub />
+      <SupportChat {...chatProps} />
       <CartDelegate />
-      <TawkChat />
     </>
   )
 }
