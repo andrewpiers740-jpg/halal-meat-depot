@@ -285,13 +285,15 @@ for (const path of pages) {
   for (const t of banned) if (bannedIn(lower, t)) fail('B7', `${path}: banned term "${t}"`)
 }
 
-// ── WhatsApp hand-off (/chat/whatsapp/ is an intentional 302 to wa.me; wa.me itself returns 429 to crawlers) ──
+// ── WhatsApp hand-off (/chat/whatsapp/ is a noindex 200 page that hops to wa.me; wa.me returns 429 to crawlers) ──
 {
-  const r = await fetch(BASE + '/chat/whatsapp/?text=' + encodeURIComponent('Hi test, '), { redirect: 'manual' })
-  const loc = r.headers.get('location') || ''
-  check(r.status === 302 && /^https:\/\/wa\.me\/\d+\?text=Hi%20test%2C%20$/.test(loc), 'wa', `/chat/whatsapp/ should 302 to wa.me with the text (got ${r.status} ${loc})`)
-  const evil = await fetch(BASE + '/chat/whatsapp/?text=x&to=https://evil.example', { redirect: 'manual' })
-  check(/^https:\/\/wa\.me\/\d+\?text=x$/.test(evil.headers.get('location') || ''), 'wa', '/chat/whatsapp/ must ignore any destination parameter')
+  const get = async (u) => { const r = await fetch(BASE + u, { redirect: 'manual' }); return { r, body: await r.text() } }
+  const { r, body } = await get('/chat/whatsapp/?text=' + encodeURIComponent('Hi test, '))
+  check(r.status === 200 && /noindex/.test(body) && body.includes('https://wa.me/') && body.includes('text=Hi%20test%2C%20'), 'wa', `/chat/whatsapp/ should be a 200 noindex page pointing at wa.me with the text (got ${r.status})`)
+  const evil = await get('/chat/whatsapp/?text=x&to=https://evil.example')
+  check(!evil.body.includes('evil.example'), 'wa', '/chat/whatsapp/ must ignore any destination parameter')
+  const robots = await (await fetch(BASE + '/robots.txt')).text()
+  check(!/Disallow:\s*\/chat\//.test(robots), 'wa', 'robots.txt must not disallow /chat/ (213 WhatsApp links were reported as blocked)')
 }
 
 // ── broken internal links ─────────────────────────────────────────────────

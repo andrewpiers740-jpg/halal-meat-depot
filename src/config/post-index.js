@@ -782,7 +782,7 @@ export const POST_INDEX = [
  },
  {
   "slug": "difference-between-goat-meat-and-mutton",
-  "title": "Difference Between Goat Meat and Mutton: Complete Guide",
+  "title": "Difference Between Goat Meat and Mutton: A Complete Guide",
   "excerpt": "The difference between goat meat and mutton explained: animal, taste, texture, cooking methods, price and where to buy halal goat and mutton online.",
   "kw": "difference between goat meat and mutton"
  },
