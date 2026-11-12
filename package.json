@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs && next dev -p 3000",
     "prebuild": "node scripts/gen-post-v4-index.mjs && node scripts/lastmod.mjs && node scripts/gen-agent-files.mjs",
-    "build": "next build && node scripts/postbuild-js.mjs",
+    "build": "next build --experimental-build-mode compile && node scripts/postbuild-js.mjs && next build --experimental-build-mode generate",
     "start": "next start",
     "images": "node scripts/images.mjs",
     "crosscheck": "node scripts/crosscheck.mjs"
