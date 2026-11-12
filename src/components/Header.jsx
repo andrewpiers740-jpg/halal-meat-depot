@@ -5,6 +5,12 @@ import { useEffect, useState } from 'react'
 import Icon from './Icon'
 import { useCart } from '@/lib/cart-client'
 
+// Pages whose client code is heavy (forms, account, cart, search — they pull in the product catalogue, ~120 KB of JS) are never
+// prefetched: prefetching injected those chunks into every page after load, which cost main-thread time (TBT) and bandwidth
+// (2026-11-12). They load when the visitor actually opens them. Other links keep the default prefetch.
+const HEAVY_ROUTES = /^\/(account|cart|checkout|search|contact-halal-butcher-near-me|halal-meat-manufacturers-wholesale)\//
+const prefetchFor = (href) => (HEAVY_ROUTES.test(href) ? false : undefined)
+
 // Receives nav data as props so the product catalogue never ships in this client bundle.
 export default function Header({ siteName, nav, categories }) {
   const pathname = usePathname() || '/'
@@ -60,7 +66,7 @@ export default function Header({ siteName, nav, categories }) {
                   }}
                   onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && setShopOpen(false)}
                 >
-                  <Link href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                  <Link href={n.href} prefetch={prefetchFor(n.href)} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                     {n.label}
                   </Link>
                   <button
@@ -99,7 +105,7 @@ export default function Header({ siteName, nav, categories }) {
                 </li>
               ) : (
                 <li key={n.href}>
-                  <Link href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                  <Link href={n.href} prefetch={prefetchFor(n.href)} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                     {n.label}
                   </Link>
                 </li>
@@ -112,10 +118,10 @@ export default function Header({ siteName, nav, categories }) {
           <Link href="/search/" prefetch={false} className="icon-btn" aria-label="Search products">
             <Icon name="search" />
           </Link>
-          <Link href="/account/" className="icon-btn" aria-label="My account">
+          <Link href="/account/" prefetch={false} className="icon-btn" aria-label="My account">
             <Icon name="user" />
           </Link>
-          <Link href="/cart/" className="icon-btn" aria-label={`Cart, ${count} item${count === 1 ? '' : 's'}`}>
+          <Link href="/cart/" prefetch={false} className="icon-btn" aria-label={`Cart, ${count} item${count === 1 ? '' : 's'}`}>
             <Icon name="cart" />
             {count > 0 && (
               <span className="cart-count" aria-hidden="true">
@@ -141,7 +147,7 @@ export default function Header({ siteName, nav, categories }) {
           <ul>
             {nav.map((n) => (
               <li key={n.href}>
-                <Link href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                <Link href={n.href} prefetch={prefetchFor(n.href)} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                   {n.label}
                 </Link>
               </li>

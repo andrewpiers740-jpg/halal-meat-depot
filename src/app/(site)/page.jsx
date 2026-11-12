@@ -95,7 +95,7 @@ export default function HomePage() {
               <Link href="/halal-meat-shop-near-me/" className="btn btn--accent">
                 Shop all halal meat <Icon name="arrow" />
               </Link>
-              <Link href="/halal-meat-manufacturers-wholesale/" className="btn btn--light">
+              <Link href="/halal-meat-manufacturers-wholesale/" prefetch={false} className="btn btn--light">
                 Wholesale accounts
               </Link>
             </div>
@@ -237,7 +237,7 @@ export default function HomePage() {
             </p>
             <p>
               Restaurants and caterers can order <Link href="/shop/meat-packs/">wholesale cartons</Link> online or{' '}
-              <Link href="/halal-meat-manufacturers-wholesale/">apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
+              <Link href="/halal-meat-manufacturers-wholesale/" prefetch={false}>apply for a weekly account</Link>. New to cooking camel or kangaroo? Start with our{' '}
               <Link href="/blog/kangaroo-meat-cooking-camel-buffalo/">guide to cooking lean meats</Link>.
             </p>
           </div>
@@ -398,7 +398,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="btn-row">
-            <Link href="/halal-meat-manufacturers-wholesale/" className="btn btn--accent">
+            <Link href="/halal-meat-manufacturers-wholesale/" prefetch={false} className="btn btn--accent">
               Apply for a wholesale account
             </Link>
             <Link href="/shop/meat-packs/" className="btn btn--light">

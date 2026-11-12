@@ -227,7 +227,7 @@ export default async function ProductPage({ params }) {
               </h2>
               <p className="muted">Ask about cuts, quantities or event orders before you buy.</p>
               <div className="btn-row">
-                <Link className="btn btn--ghost btn--sm" href="/contact-halal-butcher-near-me/">
+                <Link className="btn btn--ghost btn--sm" href="/contact-halal-butcher-near-me/" prefetch={false}>
                   Contact form
                 </Link>
               </div>
