@@ -407,6 +407,12 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .sc-btn--primary { border-color: var(--brand); background: var(--brand); color: #fff; font-weight: 800; }
 .sc-btn--primary:hover { background: var(--brand-dark); color: #fff; }
 .sc-btn .icon { flex: none; }
+/* Online status: green dot at the right end of the Live chat button, blinking (still when reduced motion is requested) */
+.sc-btn--primary { position: relative; }
+.sc-dot { position: absolute; right: 16px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: #2ecc71; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85); animation: sc-blink 1.4s ease-in-out infinite; }
+@keyframes sc-blink { 0%, 100% { opacity: 1; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85), 0 0 0 5px rgba(46, 204, 113, 0.45); } 50% { opacity: 0.35; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85), 0 0 0 0 rgba(46, 204, 113, 0); } }
+@media (prefers-reduced-motion: reduce) { .sc-dot { animation: none; } }
+
 .sc-wide { grid-column: 1 / -1; }
 
 /* ── Admin (private, dark shell) ────────────────────────────────────────── */

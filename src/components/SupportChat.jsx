@@ -138,6 +138,7 @@ export default function SupportChat({ siteName, whatsapp, phoneIntl, phoneDispla
                 <button type="button" onClick={openTawk} className="sc-btn sc-btn--primary sc-wide">
                   <Icon name="chat" size={16} />
                   Live chat
+                  <span className="sc-dot" aria-hidden="true" />
                 </button>
               )}
               <a href={wa} target="_blank" rel="noopener noreferrer" className="sc-btn">
