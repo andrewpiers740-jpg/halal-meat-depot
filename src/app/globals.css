@@ -554,3 +554,14 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .more-products > summary { cursor: pointer; list-style: none; display: inline-flex }
 .more-products > summary::-webkit-details-marker { display: none }
 .more-products[open] > summary { margin-bottom: 20px }
+
+/* Carcass weight chooser */
+.size-picker { border: 0; padding: 0; margin: 0; }
+.size-picker legend { font-weight: 700; margin-bottom: 8px; padding: 0; }
+.size-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.size-opt { position: relative; display: flex; flex-direction: column; min-width: 104px; padding: 8px 12px; border: 2px solid var(--line, #d9d4cc); border-radius: 10px; cursor: pointer; background: #fff; }
+.size-opt input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.size-opt.is-on { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand); }
+.size-opt:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+.size-kg { font-weight: 700; }
+.size-price { color: var(--brand); font-weight: 700; }

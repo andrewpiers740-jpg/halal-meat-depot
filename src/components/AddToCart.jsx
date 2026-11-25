@@ -4,12 +4,12 @@ import Link from 'next/link'
 import QtyStepper from './QtyStepper'
 import { addToCart } from '@/lib/cart-client'
 
-export default function AddToCart({ slug, name, idPrefix = 'q', showViewCart = false }) {
+export default function AddToCart({ slug, lineKey = slug, name, idPrefix = 'q', showViewCart = false }) {
   const [qty, setQty] = useState(1)
   const [added, setAdded] = useState(false)
 
   const onAdd = () => {
-    addToCart(slug, qty)
+    addToCart(lineKey, qty)
     setQty(1)
     setAdded(true)
     setTimeout(() => setAdded(false), 2200)

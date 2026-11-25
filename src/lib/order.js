@@ -1,7 +1,7 @@
 // Shared order logic — imported by the browser (cart, checkout) AND the server
 // (API routes, emails). The server always recomputes totals from PRODUCTS, so
 // a tampered client price can never change what the customer is charged.
-import { SITE, REPLY, PAYMENT_METHODS, productBySlug } from '../config/site.js'
+import { SITE, REPLY, PAYMENT_METHODS, lineProduct } from '../config/site.js'
 import { deliveryZone } from '../config/delivery.js'
 
 export function money(n) {
@@ -27,10 +27,10 @@ export function findMethod(id) {
 export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', speed = 'standard', postcode = '' } = {}) {
   const items = []
   for (const line of lines || []) {
-    const product = productBySlug(line.slug)
+    const product = lineProduct(line.slug)
     const qty = Math.max(1, Math.min(999, Math.floor(Number(line.qty) || 0)))
     if (!product || !qty) continue
-    items.push({ slug: product.slug, name: product.name, unit: product.unit, price: product.price, quantity: qty, lineTotal: round2(product.price * qty) })
+    items.push({ slug: product.slug, baseSlug: product.baseSlug, name: product.name, unit: product.unit, price: product.price, quantity: qty, lineTotal: round2(product.price * qty) })
   }
   const subtotal = round2(items.reduce((s, i) => s + i.lineTotal, 0))
   const method = findMethod(paymentMethod)

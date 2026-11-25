@@ -6,7 +6,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import QtyStepper from './QtyStepper'
 import { useCart, addToCart, getCart, replaceCart } from '@/lib/cart-client'
 import { computeTotals, money } from '@/lib/order'
-import { SITE, productBySlug } from '@/config/site'
+import { SITE, lineProduct } from '@/config/site'
 
 export default function CartView() {
   const { lines, setQty, remove, clear } = useCart()
@@ -20,7 +20,7 @@ export default function CartView() {
     if (!add) return
     add.split(',').forEach((pair) => {
       const [slug, q] = pair.split(':')
-      if (productBySlug(slug)) addToCart(slug, Math.max(1, Math.min(999, Number(q) || 1)))
+      if (lineProduct(slug)) addToCart(slug, Math.max(1, Math.min(999, Number(q) || 1)))
     })
     router.replace('/cart/')
   }, [params, router])
@@ -75,13 +75,13 @@ export default function CartView() {
         )}
         {t.items.map((i) => (
           <div key={i.slug} className="cart-line">
-            <Link href={`/product/${i.slug}/`} className="thumb" tabIndex={-1} aria-hidden="true">
-              <Image src={`/images/products/${productBySlug(i.slug).images[0]}`} alt="" fill sizes="88px" />
+            <Link href={`/product/${i.baseSlug}/`} className="thumb" tabIndex={-1} aria-hidden="true">
+              <Image src={`/images/products/${lineProduct(i.slug).images[0]}`} alt="" fill sizes="88px" />
             </Link>
             <div>
               <div className="line-top">
                 <div>
-                  <Link href={`/product/${i.slug}/`} style={{ fontWeight: 700, color: 'var(--ink)', textDecoration: 'none' }}>
+                  <Link href={`/product/${i.baseSlug}/`} style={{ fontWeight: 700, color: 'var(--ink)', textDecoration: 'none' }}>
                     {i.name}
                   </Link>
                   <div className="muted" style={{ fontSize: '0.88rem' }}>

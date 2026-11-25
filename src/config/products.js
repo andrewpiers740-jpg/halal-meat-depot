@@ -198,6 +198,38 @@ function p(cat, sub, name, packUnit, packKg, perKg, short, desc, extra = {}) {
     badge: extra.badge || null,
     featured: Boolean(extra.featured),
     images: [`${slug}-${IMAGE_VERSION}.webp`],
+    // Carcasses vary by animal: extra.weights lists the approximate weights (kg) offered.
+    // Each size is priced at weight x perKg; the pack weight is the default size.
+    sizes: extra.weights
+      ? extra.weights.map((w) => ({
+          id: `${w}kg`,
+          kg: w,
+          unit: packUnit.replace(/approx\. [\d.]+kg/, `approx. ${w}kg`),
+          price: Math.round(w * perKg * 100) / 100,
+          isDefault: w === packKg,
+        }))
+      : null,
+  }
+}
+
+// A cart line key is "slug" or "slug~sizeId". lineProduct() resolves either to a
+// product-like object (name, unit, kg and price of the chosen size) for carts,
+// server totals and emails. Unknown sizes resolve to nothing.
+export function lineProduct(key) {
+  const [base, sizeId] = String(key || '').split('~')
+  const product = PRODUCTS.find((x) => x.slug === base || x.oldSlug === base || x.prevSlugs.includes(base))
+  if (!product) return null
+  if (!product.sizes) return sizeId ? null : { ...product, baseSlug: product.slug }
+  const size = sizeId ? product.sizes.find((z) => z.id === sizeId) : product.sizes.find((z) => z.isDefault)
+  if (!size) return null
+  return {
+    ...product,
+    slug: `${product.slug}~${size.id}`,
+    baseSlug: product.slug,
+    name: `${product.name} (approx. ${size.kg}kg)`,
+    unit: size.unit,
+    kg: size.kg,
+    price: size.price,
   }
 }
 
@@ -205,10 +237,10 @@ export const PRODUCTS = [
   // ── BEEF ──────────────────────────────────────────────────────────────
   p("beef", "Whole, Half & Quarter Carcass", "Whole Beef", "approx. 260kg carcass (hook weight)", 260, 12.99,
     "A whole beef carcass cut to your instructions — the lowest per-kilo price on beef we offer.",
-    "Ideal for butchers, restaurants and large community events. Tell us how you want it broken down — primals, steaks, mince, diced and bones — in the order notes. Final weight varies by animal.", {badge: "Best Value",featured: true}),
+    "Ideal for butchers, restaurants and large community events. Tell us how you want it broken down — primals, steaks, mince, diced and bones — in the order notes. Final weight varies by animal.", {badge: "Best Value",featured: true, weights: [220, 240, 260, 280, 300]}),
   p("beef", "Whole, Half & Quarter Carcass", "Half Beef", "approx. 130kg side (hook weight)", 130, 13.99,
     "A half beef (one side) cut to your instructions for restaurants, butchers and big families.",
-    "A side gives you the full spread of cuts — roasts, steaks, mince, diced and soup bones. Add your cutting instructions in the order notes; final weight varies by animal.", {badge: "Trade"}),
+    "A side gives you the full spread of cuts — roasts, steaks, mince, diced and soup bones. Add your cutting instructions in the order notes; final weight varies by animal.", {badge: "Trade", weights: [110, 120, 130, 140, 150]}),
   p("beef", "Whole, Half & Quarter Carcass", "Beef Hindquarter", "approx. 60kg quarter (hook weight)", 60, 14.99,
     "A beef hindquarter — the rump, loin and leg, home of the premium steaks.",
     "The hindquarter carries the striploin, eye fillet, rump and topside. Choose steaks, roasts or a mix and tell us in the order notes."),
@@ -477,13 +509,13 @@ export const PRODUCTS = [
   // ── LAMB ──────────────────────────────────────────────────────────────
   p("lamb", "Whole & Half Carcass", "Whole Lamb Carcass", "approx. 20kg carcass", 20, 16.5,
     "A whole lamb carcass, cut to your instructions — ideal for family events and gatherings.",
-    "Order a whole lamb and tell us how you want it cut: curry pieces, roasts, chops, or a mix. Add your cutting instructions in the order notes at checkout.", {badge: "Best Value",featured: true}),
+    "Order a whole lamb and tell us how you want it cut: curry pieces, roasts, chops, or a mix. Add your cutting instructions in the order notes at checkout.", {badge: "Best Value",featured: true, weights: [16, 18, 20, 22, 24]}),
   p("lamb", "Whole & Half Carcass", "Half Lamb Carcass", "approx. 10kg half carcass", 10, 17,
     "Half a lamb carcass, cut to your instructions — a full mix of roasts, chops and curry cuts.",
-    "A practical way to stock the freezer: half a lamb typically yields a leg, a shoulder, chops, shanks and a good quantity of curry pieces. Specify your cuts in the order notes."),
+    "A practical way to stock the freezer: half a lamb typically yields a leg, a shoulder, chops, shanks and a good quantity of curry pieces. Specify your cuts in the order notes.", {weights: [8, 9, 10, 11, 12]}),
   p("lamb", "Whole & Half Carcass", "Whole Mutton Carcass", "approx. 25kg carcass", 25, 11.5,
     "A whole mutton carcass, cut to your instructions — deeper flavour for curries and slow cooking.",
-    "Mutton comes from older sheep and has a stronger, richer flavour than lamb that stands up to long-cooked curries, biryani and haleem. Add your cutting instructions in the order notes.", {badge: "Best Value"}),
+    "Mutton comes from older sheep and has a stronger, richer flavour than lamb that stands up to long-cooked curries, biryani and haleem. Add your cutting instructions in the order notes.", {badge: "Best Value", weights: [20, 22, 25, 28, 30]}),
   p("lamb", "Racks, Cutlets & Chops", "Lamb Cutlets Frenched", "2kg pack", 2, 52.99,
     "Frenched lamb cutlets with the rib bone cleaned.",
     "Two to three minutes a side on a hot grill. Season simply or marinate in yoghurt and spice.", {badge: "Premium"}),
@@ -575,10 +607,10 @@ export const PRODUCTS = [
   // ── GOAT ──────────────────────────────────────────────────────────────
   p("goat", "Whole Goat Carcass", "Whole Goat Carcass", "approx. 12kg carcass", 12, 17.5,
     "A whole young goat carcass, cut to your instructions for curries, roasts and events.",
-    "A whole goat is the most economical way to buy for large gatherings. Tell us your preferred cuts — curry pieces, legs, shoulders, chops — in the order notes.", {badge: "Best Value",featured: true}),
+    "A whole goat is the most economical way to buy for large gatherings. Tell us your preferred cuts — curry pieces, legs, shoulders, chops — in the order notes.", {badge: "Best Value",featured: true, weights: [10, 12, 14, 16, 18]}),
   p("goat", "Whole Goat Carcass", "Half Goat Carcass", "approx. 6kg half carcass", 6, 18.5,
     "Half a goat carcass, cut to your instructions — a good size for a family or small gathering.",
-    "Half a goat gives you a leg, a shoulder, chops and a good quantity of curry pieces. Add your preferred cuts in the order notes."),
+    "Half a goat gives you a leg, a shoulder, chops and a good quantity of curry pieces. Add your preferred cuts in the order notes.", {weights: [5, 6, 7, 8, 9]}),
   p("goat", "Legs & Shoulders", "Goat Leg Bone-in", "approx. 2.5kg whole leg", 2.5, 19.49,
     "Bone-in goat leg for slow roasting and festive dishes.",
     "Marinate overnight in yoghurt and spices, then roast covered at 160°C for three hours."),
@@ -853,7 +885,7 @@ export const PRODUCTS = [
     "Enough bone-in goat for a large function, cut to a consistent curry size. Order a few days ahead for big events so we can schedule your pack.", {badge: "Trade"}),
   p("wholesale-cartons", "Catering Packs", "Whole Lamb Catering Pack", "2 carcasses, approx. 40kg", 40, 15.5,
     "Two whole lambs for weddings, Eid and community events, cut to your instructions.",
-    "Two carcasses cut exactly how your event needs them — curry pieces, mansaf pieces, roasts or a mix. Add cutting instructions in the order notes and order a few days ahead.", {badge: "Trade"}),
+    "Two carcasses cut exactly how your event needs them — curry pieces, mansaf pieces, roasts or a mix. Add cutting instructions in the order notes and order a few days ahead.", {badge: "Trade", weights: [32, 36, 40, 44, 48]}),
   p("wholesale-cartons", "Catering Packs", "Chicken Curry Cut Catering Pack", "20kg carton", 20, 8,
     "A 20kg catering pack of skinless bone-in chicken curry cut for large functions.",
     "Enough chicken curry cut for a big event, cut to a consistent size so every pot cooks evenly.", {badge: "Trade"}),

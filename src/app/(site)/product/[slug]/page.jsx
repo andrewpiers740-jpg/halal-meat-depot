@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import SmartImage from '@/components/SmartImage'
 import ProductCard from '@/components/ProductCard'
 import AddToCart from '@/components/AddToCart'
+import ProductBuy from '@/components/ProductBuy'
 import Icon from '@/components/Icon'
 import JsonLd from '@/components/JsonLd'
 import Regulators from '@/components/Regulators'
@@ -131,13 +132,22 @@ export default async function ProductPage({ params }) {
                 <Link href={`${cat.path}`}>{cat.name}</Link> · {p.sub}
               </span>
               <h1 style={{ fontSize: 'clamp(1.7rem, 3.6vw, 2.5rem)' }}>{copy.h1}</h1>
-              <div className="price-row" style={{ marginTop: 0 }}>
-                <span className="price">{money(p.price)}</span>
-                <span className="unit">{p.unit}</span>
-                <span className="per-kg">≈ {money(p.perKg)} per kg</span>
-              </div>
-              <p style={{ fontSize: '1.05rem' }}>{p.short}</p>
-              <AddToCart slug={p.slug} name={p.name} idPrefix="pdp" showViewCart />
+              {p.sizes ? (
+                <>
+                  <p style={{ fontSize: '1.05rem' }}>{p.short}</p>
+                  <ProductBuy slug={p.slug} name={p.name} perKg={p.perKg} sizes={p.sizes} />
+                </>
+              ) : (
+                <>
+                  <div className="price-row" style={{ marginTop: 0 }}>
+                    <span className="price">{money(p.price)}</span>
+                    <span className="unit">{p.unit}</span>
+                    <span className="per-kg">≈ {money(p.perKg)} per kg</span>
+                  </div>
+                  <p style={{ fontSize: '1.05rem' }}>{p.short}</p>
+                  <AddToCart slug={p.slug} name={p.name} idPrefix="pdp" showViewCart />
+                </>
+              )}
               <div className="cert-box">
                 <Icon name="shield" />
                 <div>

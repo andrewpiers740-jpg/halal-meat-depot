@@ -105,10 +105,15 @@ export function productSchema(p) {
     category: cat?.name,
     weight: { '@type': 'QuantitativeValue', value: p.kg, unitCode: 'KGM' },
     brand: { '@type': 'Brand', name: SITE.name },
-    offers: {
+    offers: p.sizes ? p.sizes.map(offerFor) : offerFor(),
+  }
+
+  function offerFor(size) {
+    return {
       '@type': 'Offer',
+      ...(size ? { name: `${p.name} (approx. ${size.kg}kg)`, sku: `${p.slug}~${size.id}` } : {}),
       url: `${SITE.url}/product/${p.slug}/`,
-      price: p.price.toFixed(2),
+      price: (size ? size.price : p.price).toFixed(2),
       priceCurrency: SITE.currency,
       priceValidUntil,
       availability: 'https://schema.org/InStock',
@@ -123,7 +128,7 @@ export function productSchema(p) {
         returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
         url: `${SITE.url}/refund/`,
       },
-    },
+    }
   }
 }
 

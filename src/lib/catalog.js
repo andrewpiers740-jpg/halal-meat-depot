@@ -26,6 +26,7 @@ export function toPublicProduct(p, { full = false } = {}) {
     availability: 'InStock',
     url: productUrl(p),
   }
+  if (p.sizes) out.sizes = p.sizes.map((s) => ({ id: s.id, key: `${p.slug}~${s.id}`, approxKg: s.kg, unit: s.unit, price: s.price }))
   if (full) {
     out.description = p.desc
     out.images = p.images.map((img) => `${SITE.url}/images/products/${img}`)
