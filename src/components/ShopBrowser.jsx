@@ -3,6 +3,10 @@ import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import CardCart from './CardCart'
+import { sizeRecord } from '@/lib/volume'
+
+// Weight options are rebuilt here from the weights list so the page data stays small.
+const withSizes = (p) => (p.wts ? { ...p, sizes: p.wts.map((w) => sizeRecord(p.perKg, p.defKg, w)) } : p)
 
 // Shop page browser: left sidebar (categories, subcategories, price range) filtering a
 // product grid in place. Receives a light product index as props so the full catalogue
@@ -188,7 +192,9 @@ export default function ShopBrowser({ categories, products }) {
           </div>
         ) : (
           <div className="product-grid">
-            {list.slice(0, shown).map((p, i) => (
+            {list.slice(0, shown).map((p0, i) => {
+              const p = withSizes(p0)
+              return (
               <article key={p.slug} className="product-card">
                 <Link href={`/product/${p.slug}/`} className="product-frame" tabIndex={-1} aria-hidden="true">
                   {p.badge && <span className={`badge badge--${p.badge.replace(/\s+/g, '')}`}>{p.badge}</span>}
@@ -219,7 +225,8 @@ export default function ShopBrowser({ categories, products }) {
                   <CardCart key={p.slug} slug={p.slug} name={p.name} idPrefix="shop" sizes={p.sizes} />
                 </div>
               </article>
-            ))}
+              )
+            })}
           </div>
         )}
 

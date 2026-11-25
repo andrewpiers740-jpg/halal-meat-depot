@@ -578,3 +578,13 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 
 .size-perkg { font-size: 0.72rem; color: var(--muted, #6b6459); }
 .card-sizes .size-opt { flex: 1 1 64px; }
+
+/* Compact weight chips for product tiles (short class names keep category pages light) */
+.cs-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.cs-o { position: relative; display: flex; flex-direction: column; align-items: center; flex: 1 1 64px; min-width: 0; padding: 5px 6px; border: 2px solid var(--line, #d9d4cc); border-radius: 8px; cursor: pointer; background: #fff; }
+.cs-o input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.cs-o:has(input:checked) { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand); }
+.cs-o:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+.cs-k { font-size: 0.82rem; font-weight: 700; }
+.cs-p { font-size: 0.78rem; font-weight: 700; color: var(--brand); }
+.cs-r { font-size: 0.72rem; color: var(--muted, #6b6459); }

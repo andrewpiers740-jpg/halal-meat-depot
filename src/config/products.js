@@ -12,6 +12,7 @@
 // and running `npm run images` replaces it with no code change.
 
 import { PRODUCT_SEO, CATEGORY_SEO, focusFromName } from './seo.js'
+import { retailWeights, sizeRecord, MAX_SIZE_KG } from '../lib/volume.js'
 
 export const IMAGE_VERSION = 'v4'
 export const categoryImage = (slug) => `${slug}-${IMAGE_VERSION}.webp`
@@ -203,29 +204,29 @@ function p(cat, sub, name, packUnit, packKg, perKg, short, desc, extra = {}) {
     // rises (6.5% lower for every doubling of the pack weight, so 100kg of a 20kg carton is about 15% lower
     // per kg). The pack weight is the default size and keeps its listed price; lighter carcasses carry at
     // most +3% per kg.
-    sizes: sizeList(cat, packUnit, packKg, perKg, extra.weights),
+    sizes: sizeList(cat, packUnit, kg, perKg, extra.weights),
   }
 }
 
-export const VOLUME_STEP = 0.065
-export const MAX_SIZE_KG = 100
-
-function sizeList(cat, packUnit, packKg, perKg, weights) {
+function sizeList(cat, packUnit, kg, perKg, weights) {
   let ws = weights
   if (!ws && cat === 'wholesale-cartons') {
     ws = []
-    for (let n = 1; n * packKg <= MAX_SIZE_KG; n++) ws.push(Math.round(n * packKg * 1000) / 1000)
+    for (let n = 1; n * kg <= MAX_SIZE_KG; n++) ws.push(Math.round(n * kg * 1000) / 1000)
   }
+  if (!ws) ws = retailWeights(kg)
   if (!ws || ws.length < 2) return null
   return ws.map((w) => {
-    const factor = Math.min(1.03, 1 - VOLUME_STEP * Math.log2(w / packKg))
-    const price = Math.round(w * perKg * factor * 100) / 100
-    const n = Math.round((w / packKg) * 100) / 100
-    let unit = packUnit.replace(/\d+(\.\d+)?kg/, `${w}kg`)
-    const carc = packUnit.match(/^(\d+) carcasses/)
-    if (carc) unit = `${Math.round(Number(carc[1]) * n)} carcasses, approx. ${w}kg`
-    else if (/carton/.test(packUnit) && n > 1) unit = `${w}kg — ${n} cartons`
-    return { id: `${w}kg`, kg: w, unit, price, perKg: Math.round((price / w) * 100) / 100, isDefault: w === packKg }
+    const rec = sizeRecord(perKg, kg, w)
+    const n = Math.round((w / kg) * 100) / 100
+    let unit = rec.isDefault ? packUnit : `${w}kg order, packed in portions`
+    if (weights || cat === 'wholesale-cartons') {
+      unit = packUnit.replace(/\d+(\.\d+)?kg/, `${w}kg`)
+      const carc = packUnit.match(/^(\d+) carcasses/)
+      if (carc) unit = `${Math.round(Number(carc[1]) * n)} carcasses, approx. ${w}kg`
+      else if (/carton/.test(packUnit) && n > 1) unit = `${w}kg — ${n} cartons`
+    }
+    return { ...rec, unit }
   })
 }
 
@@ -260,13 +261,13 @@ export const PRODUCTS = [
     "A side gives you the full spread of cuts — roasts, steaks, mince, diced and soup bones. Add your cutting instructions in the order notes; final weight varies by animal.", {badge: "Trade", weights: [110, 120, 130, 140, 150]}),
   p("beef", "Whole, Half & Quarter Carcass", "Beef Hindquarter", "approx. 60kg quarter (hook weight)", 60, 14.99,
     "A beef hindquarter — the rump, loin and leg, home of the premium steaks.",
-    "The hindquarter carries the striploin, eye fillet, rump and topside. Choose steaks, roasts or a mix and tell us in the order notes."),
+    "The hindquarter carries the striploin, eye fillet, rump and topside. Choose steaks, roasts or a mix and tell us in the order notes.", {weights: [50, 55, 60, 65, 70]}),
   p("beef", "Whole, Half & Quarter Carcass", "Beef Forequarter", "approx. 60kg quarter (hook weight)", 60, 13.99,
     "A beef forequarter — chuck, blade, brisket and rib for slow cooking, mince and curries.",
-    "The forequarter is the most economical way to buy beef in bulk for curry houses and kebab shops. Have it broken into diced, mince, brisket and bone-in curry cuts."),
+    "The forequarter is the most economical way to buy beef in bulk for curry houses and kebab shops. Have it broken into diced, mince, brisket and bone-in curry cuts.", {weights: [50, 55, 60, 65, 70]}),
   p("beef", "Whole, Half & Quarter Carcass", "Beef Whole Rear Half", "approx. 120kg (both hindquarters, hook weight)", 120, 14.49,
     "Both beef hindquarters together — every premium loin and leg cut from one animal.",
-    "The rear half gives restaurants a steady supply of striploin, eye fillet, rump and topside. Specify your steak thickness and roast sizes in the order notes."),
+    "The rear half gives restaurants a steady supply of striploin, eye fillet, rump and topside. Specify your steak thickness and roast sizes in the order notes.", {weights: [100, 110, 120, 130, 140]}),
   p("beef", "Premium Steaks", "Beef Tomahawk Steaks", "2 steaks, approx. 2.4kg", 2.4, 29,
     "Thick-cut tomahawk rib eye steaks with the long rib bone — a showpiece for the grill.",
     "Each tomahawk weighs around 1.2kg and feeds two to three people. Reverse-sear it: cook gently until 50°C in the centre, then finish over very high heat for the crust.", {badge: "Premium"}),
