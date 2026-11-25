@@ -170,7 +170,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .main-nav .mega ul { display: block; }
 .mega-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px 24px; }
-.main-nav .mega a { display: block; min-height: 0; padding: 4px 0; background: none; border-radius: 0; font-weight: 500; font-size: 0.88rem; color: var(--muted, #5b4b4c); }
+.main-nav .mega a { display: block; min-height: 0; padding: 10px 0; background: none; border-radius: 0; font-weight: 500; font-size: 0.88rem; color: var(--muted, #5b4b4c); }
 .main-nav .mega a:hover { color: var(--brand); background: none; text-decoration: underline; }
 .main-nav .mega .mega-cat { font-weight: 800; font-size: 0.95rem; color: var(--ink); padding-bottom: 6px; margin-bottom: 4px; border-bottom: 2px solid var(--tint-2); }
 .main-nav .mega .mega-all { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; padding-top: 14px; font-weight: 700; color: var(--brand); }

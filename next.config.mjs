@@ -33,7 +33,11 @@ const nextConfig = {
         // RFC 9728 path-inserted lookups (/.well-known/oauth-protected-resource/<page path>) — agents
         // check the metadata for the exact page they are on (isitagentready, 2026-10-16).
         async rewrites() {
-          return [{ source: '/.well-known/oauth-protected-resource/:path+', destination: '/api/oauth-protected-resource/:path+' }]
+          return [
+            { source: '/.well-known/oauth-protected-resource/:path+', destination: '/api/oauth-protected-resource/:path+' },
+            // Search for Agents: Markdown site search for agents (see src/app/api/agent-search/route.js).
+            { source: '/.well-known/search', destination: '/api/agent-search/' },
+          ]
         },
         async headers() {
           return [

@@ -13,7 +13,14 @@ export const metadata = {
     ...(SITE.gscCode ? { google: SITE.gscCode } : {}),
     ...(SITE.bingCode ? { other: { 'msvalidate.01': SITE.bingCode } } : {}),
   },
-  other: { 'IndexNow-key': SITE.indexNowKey },
+  other: {
+    'IndexNow-key': SITE.indexNowKey,
+    // Search for Agents: advertises the Markdown site-search endpoint (src/app/api/agent-search/route.js).
+    'agent:endpoint': `${SITE.url}/.well-known/search?q={query}`,
+    'agent:instructions': 'Search the Halal Meat Depot catalogue and articles. Returns Markdown with product names, prices (AUD) and links.',
+    'agent:method': 'GET',
+    'agent:documentation': `${SITE.url}/llms.txt`,
+  },
   formatDetection: { telephone: false },
 }
 

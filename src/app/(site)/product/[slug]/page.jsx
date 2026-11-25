@@ -129,7 +129,7 @@ export default async function ProductPage({ params }) {
             </figure>
             <div className="stack">
               <span className="product-meta">
-                <Link href={`${cat.path}`}>{cat.name}</Link> · {p.sub}
+                <Link href={`${cat.path}`} prefetch={false}>{cat.name}</Link> · {p.sub}
               </span>
               <h1 style={{ fontSize: 'clamp(1.7rem, 3.6vw, 2.5rem)' }}>{copy.h1}</h1>
               {p.sizes ? (
@@ -257,7 +257,7 @@ export default async function ProductPage({ params }) {
                 ))}
               </div>
               <p style={{ marginTop: 20 }}>
-                <Link href={`${cat.path}`}>See all {cat.name.toLowerCase()} products</Link> · <Link href="/halal-meat-manufacturers-wholesale/">Wholesale accounts</Link>
+                <Link href={`${cat.path}`} prefetch={false}>See all {cat.name.toLowerCase()} products</Link> · <Link href="/halal-meat-manufacturers-wholesale/">Wholesale accounts</Link>
               </p>
             </section>
           )}

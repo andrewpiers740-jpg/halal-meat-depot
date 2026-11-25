@@ -160,7 +160,7 @@ export default function HomePage() {
             {homeCategories.map((c, i) => {
               const img = categoryImageSeo(c)
               return (
-                <Link key={c.slug} href={`${c.path}`} className="cat-tile">
+                <Link key={c.slug} href={`${c.path}`} prefetch={false} className="cat-tile">
                   <figure className="cat-figure">
                     <SmartImage src={`/images/categories/${categoryImage(c.slug)}`} alt={img.alt} title={img.title} fill sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 959px) calc(50vw - 34px), 371px" />
                     <span className="scrim" aria-hidden="true" />

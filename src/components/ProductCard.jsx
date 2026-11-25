@@ -16,7 +16,7 @@ function CardImage({ src, alt, title, priority }) {
     return <SmartImage src={src} alt={alt} title={title} fill sizes={CARD_SIZES} priority={priority} />
   }
   const u = (w) => `/_next/image/?url=${encodeURIComponent(src)}&w=${w}&q=60`
-  return <img src={u(640)} srcSet={`${u(384)} 384w, ${u(640)} 640w, ${u(828)} 828w`} sizes={CARD_SIZES} alt={alt} title={title} loading="lazy" decoding="async" />
+  return <img src={u(640)} srcSet={`${u(384)} 384w, ${u(640)} 640w, ${u(828)} 828w`} sizes={CARD_SIZES} alt={alt} title={title} width="640" height="480" loading="lazy" decoding="async" />
 }
 
 export default function ProductCard({ product: p, priority = false }) {

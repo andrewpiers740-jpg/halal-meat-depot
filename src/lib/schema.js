@@ -119,15 +119,21 @@ export function productSchema(p) {
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: { '@id': `${SITE.url}/#organization` },
-      shippingDetails: shippingDetailsSchema(),
-      // Mirrors the published Refund & Returns Policy: no change-of-mind returns on fresh meat
-      // (faulty/incorrect items are replaced or refunded under the ACL — see /refund/).
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        applicableCountry: 'AU',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
-        url: `${SITE.url}/refund/`,
-      },
+      // Shipping and return terms are identical for every size, so only the default-size offer carries them
+      // (the full shipping block is ~8KB; repeating it for every weight made product pages ~50KB heavier).
+      ...(size && !size.isDefault
+        ? {}
+        : {
+            shippingDetails: shippingDetailsSchema(),
+            // Mirrors the published Refund & Returns Policy: no change-of-mind returns on fresh meat
+            // (faulty/incorrect items are replaced or refunded under the ACL — see /refund/).
+            hasMerchantReturnPolicy: {
+              '@type': 'MerchantReturnPolicy',
+              applicableCountry: 'AU',
+              returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+              url: `${SITE.url}/refund/`,
+            },
+          }),
     }
   }
 }

@@ -8,7 +8,7 @@ import { useCart } from '@/lib/cart-client'
 // Pages whose client code is heavy (forms, account, cart, search — they pull in the product catalogue, ~120 KB of JS) are never
 // prefetched: prefetching injected those chunks into every page after load, which cost main-thread time (TBT) and bandwidth
 // (2026-11-12). They load when the visitor actually opens them. Other links keep the default prefetch.
-const HEAVY_ROUTES = /^\/(account|cart|checkout|search|contact-halal-butcher-near-me|halal-meat-manufacturers-wholesale)\//
+const HEAVY_ROUTES = /^\/(account|cart|checkout|search|contact-halal-butcher-near-me|halal-meat-manufacturers-wholesale|halal-meat-shop-near-me|shop)\//
 const prefetchFor = (href) => (HEAVY_ROUTES.test(href) ? false : undefined)
 
 // Receives nav data as props so the product catalogue never ships in this client bundle.
@@ -83,14 +83,14 @@ export default function Header({ siteName, nav, categories }) {
                     <div className="mega-grid">
                       {categories.map((c) => (
                         <div key={c.slug} className="mega-col">
-                          <Link href={`${c.path}`} className="mega-cat">
+                          <Link href={`${c.path}`} prefetch={false} className="mega-cat">
                             {c.name}
                           </Link>
                           {c.subs.length > 0 && (
                             <ul>
                               {c.subs.map((s) => (
                                 <li key={s.id}>
-                                  <Link href={`${c.path}#${s.id}`}>{s.name}</Link>
+                                  <Link href={`${c.path}#${s.id}`} prefetch={false}>{s.name}</Link>
                                 </li>
                               ))}
                             </ul>
