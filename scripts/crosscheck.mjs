@@ -14,7 +14,7 @@ import { POST_V4 } from '../src/config/post-v4.js'
 const POST_V4_BY_SLUG = Object.fromEntries(Object.values(POST_V4).map((v) => [v.slug, v]))
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const PORT = 3100
+const PORT = Number(process.env.CROSSCHECK_PORT) || 3100 // set CROSSCHECK_PORT when another server already holds 3100
 const BASE = `http://localhost:${PORT}`
 const fails = []
 const warns = []
