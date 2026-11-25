@@ -37,7 +37,7 @@ const products = PRODUCTS.map((p) => ({
   unit: p.unit,
   price: p.price,
   perKg: p.perKg,
-  sizes: p.sizes ? p.sizes.map((s) => ({ id: s.id, kg: s.kg, price: s.price, isDefault: s.isDefault })) : null,
+  sizes: p.sizes ? p.sizes.map((s) => ({ id: s.id, kg: s.kg, price: s.price, perKg: s.perKg, isDefault: s.isDefault })) : null,
   short: p.short,
   badge: p.badge,
   img: `/images/products/${p.images[0]}`,

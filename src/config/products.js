@@ -198,18 +198,35 @@ function p(cat, sub, name, packUnit, packKg, perKg, short, desc, extra = {}) {
     badge: extra.badge || null,
     featured: Boolean(extra.featured),
     images: [`${slug}-${IMAGE_VERSION}.webp`],
-    // Carcasses vary by animal: extra.weights lists the approximate weights (kg) offered.
-    // Each size is priced at weight x perKg; the pack weight is the default size.
-    sizes: extra.weights
-      ? extra.weights.map((w) => ({
-          id: `${w}kg`,
-          kg: w,
-          unit: packUnit.replace(/approx\. [\d.]+kg/, `approx. ${w}kg`),
-          price: Math.round(w * perKg * 100) / 100,
-          isDefault: w === packKg,
-        }))
-      : null,
+    // Weight options. Carcasses vary by animal (extra.weights = approximate kg offered); wholesale
+    // cartons can be bought in multiples up to 100kg. Volume pricing: the per-kg price falls as the weight
+    // rises (6.5% lower for every doubling of the pack weight, so 100kg of a 20kg carton is about 15% lower
+    // per kg). The pack weight is the default size and keeps its listed price; lighter carcasses carry at
+    // most +3% per kg.
+    sizes: sizeList(cat, packUnit, packKg, perKg, extra.weights),
   }
+}
+
+export const VOLUME_STEP = 0.065
+export const MAX_SIZE_KG = 100
+
+function sizeList(cat, packUnit, packKg, perKg, weights) {
+  let ws = weights
+  if (!ws && cat === 'wholesale-cartons') {
+    ws = []
+    for (let n = 1; n * packKg <= MAX_SIZE_KG; n++) ws.push(Math.round(n * packKg * 1000) / 1000)
+  }
+  if (!ws || ws.length < 2) return null
+  return ws.map((w) => {
+    const factor = Math.min(1.03, 1 - VOLUME_STEP * Math.log2(w / packKg))
+    const price = Math.round(w * perKg * factor * 100) / 100
+    const n = Math.round((w / packKg) * 100) / 100
+    let unit = packUnit.replace(/\d+(\.\d+)?kg/, `${w}kg`)
+    const carc = packUnit.match(/^(\d+) carcasses/)
+    if (carc) unit = `${Math.round(Number(carc[1]) * n)} carcasses, approx. ${w}kg`
+    else if (/carton/.test(packUnit) && n > 1) unit = `${w}kg — ${n} cartons`
+    return { id: `${w}kg`, kg: w, unit, price, perKg: Math.round((price / w) * 100) / 100, isDefault: w === packKg }
+  })
 }
 
 // A cart line key is "slug" or "slug~sizeId". lineProduct() resolves either to a
@@ -885,7 +902,7 @@ export const PRODUCTS = [
     "Enough bone-in goat for a large function, cut to a consistent curry size. Order a few days ahead for big events so we can schedule your pack.", {badge: "Trade"}),
   p("wholesale-cartons", "Catering Packs", "Whole Lamb Catering Pack", "2 carcasses, approx. 40kg", 40, 14.5,
     "Two whole lambs for weddings, Eid and community events, cut to your instructions.",
-    "Two carcasses cut exactly how your event needs them — curry pieces, mansaf pieces, roasts or a mix. Add cutting instructions in the order notes and order a few days ahead.", {badge: "Trade", weights: [32, 36, 40, 44, 48]}),
+    "Two carcasses cut exactly how your event needs them — curry pieces, mansaf pieces, roasts or a mix. Add cutting instructions in the order notes and order a few days ahead.", {badge: "Trade", weights: [40, 60, 80, 100]}),
   p("wholesale-cartons", "Catering Packs", "Chicken Curry Cut Catering Pack", "20kg carton", 20, 8,
     "A 20kg catering pack of skinless bone-in chicken curry cut for large functions.",
     "Enough chicken curry cut for a big event, cut to a consistent size so every pot cooks evenly.", {badge: "Trade"}),

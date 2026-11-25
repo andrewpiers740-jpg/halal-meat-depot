@@ -42,7 +42,7 @@ export default function ProductCard({ product: p, priority = false }) {
             <span className="unit">From</span>
             <span className="price">{money(p.sizes[0].price)}</span>
             <span className="unit">{`to ${money(p.sizes[p.sizes.length - 1].price)}`}</span>
-            <span className="per-kg">{`≈ ${money(p.perKg)}/kg`}</span>
+            <span className="per-kg">{`≈ ${money(Math.min(...p.sizes.map((s) => s.perKg)))}–${money(Math.max(...p.sizes.map((s) => s.perKg)))}/kg`}</span>
           </div>
         ) : (
           <div className="price-row">

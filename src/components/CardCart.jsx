@@ -13,13 +13,14 @@ export default function CardCart({ slug, name, idPrefix = 'q', sizes = null }) {
     <>
     {sizes && (
       <fieldset className="card-sizes">
-        <legend>Choose a weight</legend>
+        <legend>Choose a weight — more kg, lower $/kg</legend>
         <div className="size-options">
           {sizes.map((s) => (
             <label key={s.id} className="size-opt">
-              <input type="radio" name={`sz-${idPrefix}-${slug}`} value={`${slug}~${s.id}`} data-size="" defaultChecked={s.isDefault} aria-label={`${name}, approx. ${s.kg}kg, ${cash(s.price)}`} />
+              <input type="radio" name={`sz-${idPrefix}-${slug}`} value={`${slug}~${s.id}`} data-size="" defaultChecked={s.isDefault} aria-label={`${name}, approx. ${s.kg}kg, ${cash(s.price)}, ${cash(s.perKg)} per kg`} />
               <span className="size-kg">{s.kg}kg</span>
               <span className="size-price">{cash(s.price)}</span>
+              <span className="size-perkg">{cash(s.perKg)}/kg</span>
             </label>
           ))}
         </div>
