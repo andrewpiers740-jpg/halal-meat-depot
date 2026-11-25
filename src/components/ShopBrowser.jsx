@@ -202,12 +202,21 @@ export default function ShopBrowser({ categories, products }) {
                     <Link href={`/product/${p.slug}/`}>{p.name}</Link>
                   </h3>
                   <p className="product-short">{p.short}</p>
-                  <div className="price-row">
-                    <span className="price">{money(p.price)}</span>
-                    <span className="unit">{p.unit}</span>
-                    <span className="per-kg">≈ {money(p.perKg)}/kg</span>
-                  </div>
-                  <CardCart key={p.slug} slug={p.slug} name={p.name} idPrefix="shop" />
+                  {p.sizes ? (
+                    <div className="price-row">
+                      <span className="unit">From</span>
+                      <span className="price">{money(p.sizes[0].price)}</span>
+                      <span className="unit">to {money(p.sizes[p.sizes.length - 1].price)}</span>
+                      <span className="per-kg">≈ {money(p.perKg)}/kg</span>
+                    </div>
+                  ) : (
+                    <div className="price-row">
+                      <span className="price">{money(p.price)}</span>
+                      <span className="unit">{p.unit}</span>
+                      <span className="per-kg">≈ {money(p.perKg)}/kg</span>
+                    </div>
+                  )}
+                  <CardCart key={p.slug} slug={p.slug} name={p.name} idPrefix="shop" sizes={p.sizes} />
                 </div>
               </article>
             ))}

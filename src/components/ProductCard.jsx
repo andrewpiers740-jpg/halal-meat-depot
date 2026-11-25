@@ -37,12 +37,21 @@ export default function ProductCard({ product: p, priority = false }) {
           <Link href={href}>{p.name}</Link>
         </h3>
         <p className="product-short">{p.short}</p>
-        <div className="price-row">
-          <span className="price">{money(p.price)}</span>
-          <span className="unit">{p.unit}</span>
-          <span className="per-kg">{`≈ ${money(p.perKg)}/kg`}</span>
-        </div>
-        <CardCart slug={p.slug} name={p.name} />
+        {p.sizes ? (
+          <div className="price-row">
+            <span className="unit">From</span>
+            <span className="price">{money(p.sizes[0].price)}</span>
+            <span className="unit">{`to ${money(p.sizes[p.sizes.length - 1].price)}`}</span>
+            <span className="per-kg">{`≈ ${money(p.perKg)}/kg`}</span>
+          </div>
+        ) : (
+          <div className="price-row">
+            <span className="price">{money(p.price)}</span>
+            <span className="unit">{p.unit}</span>
+            <span className="per-kg">{`≈ ${money(p.perKg)}/kg`}</span>
+          </div>
+        )}
+        <CardCart slug={p.slug} name={p.name} sizes={p.sizes} />
       </div>
     </article>
   )

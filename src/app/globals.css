@@ -565,3 +565,13 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .size-opt:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
 .size-kg { font-weight: 700; }
 .size-price { color: var(--brand); font-weight: 700; }
+
+/* Weight chips on product tiles */
+.card-sizes { border: 0; padding: 0; margin: 8px 0 0; }
+.card-sizes legend { font-size: 0.8rem; font-weight: 700; color: var(--muted, #6b6459); padding: 0; margin-bottom: 4px; }
+.card-sizes .size-options { gap: 6px; }
+.card-sizes .size-opt { min-width: 0; flex: 1 1 56px; padding: 5px 6px; align-items: center; border-radius: 8px; }
+.card-sizes .size-kg { font-size: 0.82rem; }
+.card-sizes .size-price { font-size: 0.78rem; }
+.size-opt:has(input:checked) { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand); }
+.product-card .card-sizes + .add-row { margin-top: 10px; }

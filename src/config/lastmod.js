@@ -21,28 +21,28 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/tomahawk-steak-price-beef/": {
-  "hash": "468254ed228368cc",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "696d893e660f5f23",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/scotch-fillet-ribeye-steaks/": {
-  "hash": "7cc212d63e5324f0",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "fba53df0db1cafb5",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/porterhouse-steak-price-sirloin-beef/": {
-  "hash": "d38efd5b6cb3af7f",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "01964bc3f1f53be8",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-eye-fillet-steaks/": {
-  "hash": "91f93cea9d7b1d4a",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "8340c13aacea03b2",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/t-bone-steak-beef/": {
-  "hash": "363fe69baba6593c",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "f357f8992248eb4b",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-rump-steaks/": {
-  "hash": "9567f0766eb3aab1",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "2cc59a2be6039b31",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/cattleman-cutlet-beef-s/": {
   "hash": "bfa232688ef5f8d1",
@@ -197,8 +197,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/buy-beef-fillet-online-whole/": {
-  "hash": "e2c434aeb1db6818",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "e64a24fbf8ed5f20",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/eye-fillet-price-beef-whole-mb4/": {
   "hash": "d09473db996e2f69",
@@ -217,8 +217,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/rump-medallion-beef-portion/": {
-  "hash": "8a104cd1d8b3d85e",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "8dbbfdec5613c82e",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-rump-cap/": {
   "hash": "830c626e0e8a6388",
@@ -233,20 +233,20 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/beef-roast-bolar-blade/": {
-  "hash": "eb61e4f037a99fb8",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "076e75bdac0a72b2",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/buy-roast-beef-online-joint/": {
   "hash": "ee0848fad2951a0e",
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/flat-iron-steak-beef-oyster-blade/": {
-  "hash": "370acea1222e5ae7",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "74e87e6915883518",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/flank-steak-beef/": {
-  "hash": "786f69943c2b2bb8",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "57e8fb921af423cb",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-hanger-steak/": {
   "hash": "64caed2a3710400f",
@@ -273,16 +273,16 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/beef-chuck-meat-steak/": {
-  "hash": "2e34c0f56bafbf48",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "507cb6c08ebc2853",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/chuck-steak-price-beef-tender/": {
-  "hash": "62eeb10374d1f684",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "20a57d3eba77dff7",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/gravy-beef/": {
-  "hash": "49f1afe06cc384b5",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "5f71d274841d41d1",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/osso-buco-near-me-beef/": {
   "hash": "5378a66cb1d42229",
@@ -301,8 +301,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/beef-brisket-price-point-end/": {
-  "hash": "3114ca5459c15c7d",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "cadcb89d8aa754db",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-ribs-near-me-buy-short/": {
   "hash": "50525adf65455379",
@@ -313,8 +313,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/premium-beef-mince/": {
-  "hash": "a7268a60868e5cda",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "4d25c7c71f452d92",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/extra-lean-beef-mince/": {
   "hash": "042d11ed0bb75cf8",
@@ -329,12 +329,12 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/buy-diced-beef-online/": {
-  "hash": "b84b46b693e9a78f",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "f7773d1d319a9f4d",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/best-cut-for-beef-stir-fry-strips/": {
-  "hash": "c79d3158a123f975",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "e6769b5123d05937",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/beef-kebab-skewers/": {
   "hash": "34873ea566056110",
@@ -361,36 +361,36 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/whole-lamb-price-carcass/": {
-  "hash": "48a6f514b9257517",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "56259450f415ba24",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/whole-lamb-for-sale-half-carcass/": {
-  "hash": "574d19c7324680cd",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "b24e18f4b8a6a794",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/whole-mutton-meat-carcass/": {
   "hash": "3b902d9f9e0b8db4",
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/frenched-lamb-cutlets-price/": {
-  "hash": "7598f7f699d800fb",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "24bd57e33d4a83a3",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-cutlets-near-me-rack-frenched/": {
-  "hash": "278fbac76924239e",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "0707df0f641a0cd1",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-chops-near-me-loin/": {
-  "hash": "2e50499f5b5f81ba",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "09c2b1859ca8ae59",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-shoulder-cut-forequarter-chops/": {
-  "hash": "e9d78fee6052d279",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "8801b064f961dc3f",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-backstrap/": {
-  "hash": "79e5637c996278ed",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "02a4e20955d1c992",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-loin-rolled/": {
   "hash": "69791ca06a27340b",
@@ -401,24 +401,24 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/leg-of-lamb-price-sale-bone/": {
-  "hash": "90db4ce10c6d469d",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "3f69eb4fd26bb223",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-meat-near-me-half-leg-bone/": {
-  "hash": "51c7ece54ad5f6b1",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "e4de98baeaef0731",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/legs-of-lamb-boned-rolled/": {
-  "hash": "fa80016e38ee4037",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "2689833cfdb15bd6",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/lamb-price-leg-butterflied/": {
   "hash": "2785bc1da369a196",
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/lamb-specials-leg-steaks/": {
-  "hash": "6918ba93f0204fc8",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "606224d70ae3f010",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/halal-lamb-leg-near-me-milk-fed-bone/": {
   "hash": "ddeff9394ca0e224",
@@ -437,8 +437,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/grass-fed-lamb-shanks/": {
-  "hash": "618f17531a38031b",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "848200d76e46d9f5",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/halal-lamb-meat-neck/": {
   "hash": "709cb0ebcdbb20d0",
@@ -457,8 +457,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/buy-diced-lamb-online-boneless/": {
-  "hash": "513dd5cd9622bc63",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "3e170d49c8f63376",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/buy-minced-lamb-online-ground-meat-mince/": {
   "hash": "d112497bcd931e3b",
@@ -489,8 +489,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/goat-prices-whole-carcass/": {
-  "hash": "f8cbeec7deecf0b5",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "92fc4b6d8474e048",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/goat-price-half-carcass/": {
   "hash": "c2fdbfff50e00590",
@@ -533,8 +533,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/diced-goat-meat-near-me-bone/": {
-  "hash": "350e1233e4491a0e",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "8108493d60d7ce85",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/product/halal-goat-meat-full-plate-ribs/": {
   "hash": "07071afdb00f430f",
@@ -769,16 +769,16 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/beef-tongue/": {
-  "hash": "e03fe1760e8a4373",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "376638f9de54a6af",
+  "date": "2026-11-25T12:14:46.068Z"
  },
  "/product/beef-tendon/": {
-  "hash": "79e9a545f633c350",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "e8dda343eb0e5bb6",
+  "date": "2026-11-25T12:14:46.068Z"
  },
  "/product/beef-oxtail/": {
-  "hash": "d769b9b54cf73431",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "81fa29a2c4c55a28",
+  "date": "2026-11-25T12:14:46.068Z"
  },
  "/product/organic-chicken-liver/": {
   "hash": "92ddca3ee9752cdc",
@@ -793,8 +793,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/beef-marrow-bones/": {
-  "hash": "4a6977530ed7a529",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "500e0c6439b57a4e",
+  "date": "2026-11-25T12:14:46.068Z"
  },
  "/product/beef-bones-for-soup/": {
   "hash": "411c056811c8016f",
@@ -805,8 +805,8 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/bulk-rump-steak-beef-cryovac-carton/": {
-  "hash": "5308f174a13c2dce",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "03b02f81ddb99e55",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/beef-strip-loin-striploin-cryovac-carton/": {
   "hash": "c6c71c002995941a",
@@ -817,48 +817,48 @@ export const LASTMOD = {
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/whole-lamb-leg-price-cryovac-carton/": {
-  "hash": "bb4d7b33bd367549",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "9393317113f48c5c",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/buy-beef-mince-carton/": {
-  "hash": "24fb6e24f6735ba3",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "6b0ee73cb4bf17cb",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/bulk-meat-packs-lamb-curry-pieces-carton/": {
-  "hash": "b7c98aef98207972",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "29e7244bbb597066",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/wholesale-beef-diced-carton/": {
-  "hash": "09a82bb4becbe7a7",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "fd6e5d28368489ec",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/lamb-wholesale-shoulder-carton/": {
   "hash": "19fcfe35bb6b3c42",
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/product/goat-curry-near-me-cut-catering-pack/": {
-  "hash": "5590081fc93da6ad",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "ec70f10d92d313e3",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/whole-lamb-meat-for-sale-catering-pack/": {
-  "hash": "eaba800b157611c0",
-  "date": "2026-11-25T10:16:11.112Z"
+  "hash": "7c1599dbfb796046",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/product/chicken-curry-near-me-cut-catering-pack/": {
   "hash": "ba748c7b816c752a",
   "date": "2026-11-25T10:16:11.112Z"
  },
  "/shop/halal-beef/": {
-  "hash": "8e7a842c9e1c0913",
-  "date": "2026-11-24T01:00:00.317Z"
+  "hash": "e4f137817c45646b",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/shop/lambs-for-sale/": {
-  "hash": "39e5a816ba1570a1",
-  "date": "2026-11-24T01:00:00.317Z"
+  "hash": "1742acf630e637bc",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/shop/goat-meat-near-me/": {
-  "hash": "a1c4f7e30ee9de1a",
-  "date": "2026-11-05T17:03:46.132Z"
+  "hash": "7c51136a480431a1",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/shop/halal-chicken-near-me/": {
   "hash": "d99fe08ce1aa8937",
@@ -881,20 +881,20 @@ export const LASTMOD = {
   "date": "2026-11-05T17:03:46.132Z"
  },
  "/shop/buy-beef-offals-online/": {
-  "hash": "a5774eae3a784b71",
-  "date": "2026-11-24T01:00:00.317Z"
+  "hash": "858232bac68d1a34",
+  "date": "2026-11-25T12:14:46.068Z"
  },
  "/shop/meat-packs/": {
-  "hash": "3b9cd77a2149b8f3",
-  "date": "2026-11-05T17:03:46.132Z"
+  "hash": "f7a95c3071b58e5c",
+  "date": "2026-11-25T11:28:59.315Z"
  },
  "/": {
   "hash": "b9bd2cfeabd7d556",
   "date": "2026-11-12T21:47:59.863Z"
  },
  "/halal-meat-shop-near-me/": {
-  "hash": "e425863ceea6b2b0",
-  "date": "2026-11-02T16:28:08.324Z"
+  "hash": "2ec36eb62d69c15f",
+  "date": "2026-11-25T12:10:16.471Z"
  },
  "/wagyu-steak/": {
   "hash": "10c919cacb17600e",

@@ -33,7 +33,8 @@ export default function CartDelegate() {
       const btn = e.target.closest('[data-add]')
       if (!btn) return
       const qty = sync(row, input?.value)
-      addToCart(row.dataset.cart, qty)
+      const size = row.parentElement?.querySelector('[data-size]:checked')
+      addToCart(size ? size.value : row.dataset.cart, qty)
       sync(row, 1)
       btn.setAttribute('data-added', '')
       clearTimeout(timers.get(btn))
