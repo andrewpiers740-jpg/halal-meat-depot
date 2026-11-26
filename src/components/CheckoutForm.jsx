@@ -8,6 +8,7 @@ import { waOrderLink, waChatLink } from '@/lib/whatsapp'
 import EmailLink from './EmailLink'
 import { SITE, PAYMENT_METHODS } from '@/config/site'
 import { deliveryZone, PRIORITY_FROM } from '@/config/delivery'
+import { checkPromo, PROMO_MESSAGES } from '@/config/promo'
 
 const STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT']
 
@@ -24,6 +25,9 @@ export default function CheckoutForm() {
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState({ state: 'idle', message: '' })
   const [botcheck, setBotcheck] = useState('')
+  const [promoInput, setPromoInput] = useState('')
+  const [promo, setPromo] = useState('') // the applied code (canonical), '' when none
+  const [promoMsg, setPromoMsg] = useState(null) // { ok, text }
   const errRef = useRef(null)
 
   useEffect(() => {
@@ -40,9 +44,25 @@ export default function CheckoutForm() {
   }, [])
 
   const zone = deliveryZone(f.postcode)
-  const t = computeTotals(lines, { paymentMethod: payment, fulfilment, speed, postcode: f.postcode })
+  const t = computeTotals(lines, { paymentMethod: payment, fulfilment, speed, postcode: f.postcode, promoCode: promo })
   const method = findMethod(payment)
   const set = (k) => (e) => setF((v) => ({ ...v, [k]: e.target.value }))
+
+  function applyPromo() {
+    const r = checkPromo(promoInput)
+    if (r.ok) {
+      setPromo(r.code)
+      setPromoInput('')
+      setPromoMsg({ ok: true, text: `${r.label} applied: ${r.pct}% off your meat total.` })
+    } else {
+      setPromoMsg({ ok: false, text: PROMO_MESSAGES[r.reason] || PROMO_MESSAGES.invalid })
+    }
+  }
+
+  function removePromo() {
+    setPromo('')
+    setPromoMsg(null)
+  }
 
   function validate() {
     const e = {}
@@ -78,6 +98,10 @@ export default function CheckoutForm() {
       subtotal: t.subtotal,
       discount: t.discount,
       discountPct: t.discountPct,
+      promoCode: t.promoCode,
+      promoLabel: t.promoLabel,
+      promoPct: t.promoPct,
+      promoDiscount: t.promoDiscount,
       shipping: t.shipping,
       deliverySpeed: t.deliverySpeed,
       deliveryLabel: t.deliveryLabel,
@@ -102,6 +126,7 @@ export default function CheckoutForm() {
         fulfilment,
         deliverySpeed: t.deliverySpeed,
         paymentMethod: payment,
+        promoCode: promo,
         notes: order.notes,
         createAccount: createAccount && !user ? { password: f.password } : null,
       }),
@@ -116,6 +141,12 @@ export default function CheckoutForm() {
     setStatus({ state: 'sending', message: '' })
     try {
       const { ok, data, orderNumber } = await submit('email')
+      if (!ok && data.error === 'promo-invalid') {
+        setPromo('')
+        setPromoMsg({ ok: false, text: `${PROMO_MESSAGES[data.reason] || PROMO_MESSAGES.invalid} Your total has been updated, so please check it and place the order again.` })
+        setStatus({ state: 'idle', message: '' })
+        return
+      }
       if (!ok) throw new Error(data.error || 'failed')
       clear()
       router.push(`/thank-you-order/?id=${encodeURIComponent(orderNumber)}`)
@@ -145,6 +176,7 @@ export default function CheckoutForm() {
         fulfilment,
         deliverySpeed: t.deliverySpeed,
         paymentMethod: payment,
+        promoCode: promo,
         notes: order.notes,
         createAccount: createAccount && !user ? { password: f.password } : null,
       }),
@@ -395,11 +427,62 @@ export default function CheckoutForm() {
             </li>
           ))}
         </ul>
+        <div className="promo-box">
+          <label htmlFor="co-promo" className="promo-label">
+            Discount code
+          </label>
+          {promo ? (
+            <p className="promo-applied">
+              <strong>{promo}</strong> applied
+              <button type="button" className="link-btn" onClick={removePromo}>
+                Remove
+              </button>
+            </p>
+          ) : (
+            <div className="promo-row">
+              <input
+                id="co-promo"
+                type="text"
+                className="input"
+                value={promoInput}
+                onChange={(e) => {
+                  setPromoInput(e.target.value)
+                  if (promoMsg && !promoMsg.ok) setPromoMsg(null)
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault()
+                    applyPromo()
+                  }
+                }}
+                autoComplete="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                placeholder="Enter code"
+                aria-describedby="co-promo-msg"
+              />
+              <button type="button" className="btn btn--ghost" onClick={applyPromo}>
+                Apply
+              </button>
+            </div>
+          )}
+          <p id="co-promo-msg" className={promoMsg ? (promoMsg.ok ? 'promo-msg promo-msg--ok' : 'promo-msg promo-msg--err') : 'promo-msg'} role="status">
+            {promoMsg ? promoMsg.text : ''}
+          </p>
+        </div>
         <div aria-live="polite">
           <div className="summary-row">
             <span>Subtotal</span>
             <span>{money(t.subtotal)}</span>
           </div>
+          {t.promoDiscount > 0 && (
+            <div className="summary-row summary-row--discount">
+              <span>
+                {t.promoLabel} ({t.promoCode}, {t.promoPct}%)
+              </span>
+              <span>−{money(t.promoDiscount)}</span>
+            </div>
+          )}
           {t.discount > 0 && (
             <div className="summary-row summary-row--discount">
               <span>Crypto discount ({t.discountPct}%)</span>

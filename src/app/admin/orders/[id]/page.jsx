@@ -68,6 +68,12 @@ export default function AdminOrder() {
           <h2 style={{ fontSize: '1.1rem' }}>Payment</h2>
           <p style={{ margin: 0 }}>
             {o.paymentLabel}
+            {o.promoDiscount > 0 && (
+              <>
+                <br />
+                {o.promoLabel || 'Discount'} (code {o.promoCode}, {o.promoPct}%): −{money(o.promoDiscount)}
+              </>
+            )}
             {o.discount > 0 && (
               <>
                 <br />

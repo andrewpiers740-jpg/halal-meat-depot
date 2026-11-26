@@ -66,6 +66,7 @@ function itemsTable(order) {
   return `<tr><td style="padding:0 0 16px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows}
 <tr><td colspan="2" style="padding:6px 0;"><div style="height:1px;background:${C.rule};"></div></td></tr>
 ${line('Subtotal', money(order.subtotal))}
+${order.promoDiscount ? line(`${escapeHtml(order.promoLabel || 'Discount')} (${escapeHtml(order.promoCode)}, ${order.promoPct}%)`, `−${money(order.promoDiscount)}`) : ''}
 ${order.discount ? line(`Crypto discount (${order.discountPct}%)`, `−${money(order.discount)}`) : ''}
 ${line(order.fulfilment === 'pickup' ? 'Pickup' : escapeHtml(order.deliveryLabel || 'Delivery'), order.shipping ? money(order.shipping) : 'Free')}
 ${line('Total due', money(order.amountDue), true)}

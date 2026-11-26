@@ -3,6 +3,7 @@
 // a tampered client price can never change what the customer is charged.
 import { SITE, REPLY, PAYMENT_METHODS, lineProduct } from '../config/site.js'
 import { deliveryZone } from '../config/delivery.js'
+import { checkPromo } from '../config/promo.js'
 
 export function money(n) {
   const { code, locale } = REPLY.currency
@@ -24,7 +25,7 @@ export function findMethod(id) {
  * 'priority' is priced by the postcode's distance zone (src/config/delivery.js)
  * and charged on every order; without a valid postcode it falls back to standard.
  */
-export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', speed = 'standard', postcode = '' } = {}) {
+export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', speed = 'standard', postcode = '', promoCode = '', now = new Date() } = {}) {
   const items = []
   for (const line of lines || []) {
     const product = lineProduct(line.slug)
@@ -36,16 +37,27 @@ export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', s
   const method = findMethod(paymentMethod)
   const discountPct = method?.discountPct || 0
   const discount = round2((subtotal * discountPct) / 100)
+  // Promo code (Christmas discount): a percentage of the meat subtotal, stacks with the crypto discount.
+  // The minimum order is checked on the subtotal BEFORE any discount; the free-delivery threshold on the
+  // subtotal AFTER the promo discount (owner, 2026-11-26).
+  const promo = checkPromo(promoCode, now)
+  const promoDiscount = promo.ok ? round2((subtotal * promo.pct) / 100) : 0
+  const subtotalAfterPromo = round2(subtotal - promoDiscount)
   const zone = deliveryZone(postcode)
   const deliverySpeed = speed === 'priority' && zone ? 'priority' : 'standard'
-  const standardShip = fulfilment === 'pickup' || subtotal >= SITE.freeShipOver || subtotal === 0 ? 0 : SITE.flatShip
+  const standardShip = fulfilment === 'pickup' || subtotalAfterPromo >= SITE.freeShipOver || subtotal === 0 ? 0 : SITE.flatShip
   const shipping = deliverySpeed === 'priority' && subtotal > 0 ? zone.priorityPrice : standardShip
-  const total = round2(subtotal - discount + shipping)
+  const total = round2(subtotal - promoDiscount - discount + shipping)
   return {
     items,
     subtotal,
     discountPct,
     discount,
+    promoCode: promo.ok ? promo.code : '',
+    promoLabel: promo.ok ? promo.label : '',
+    promoPct: promo.ok ? promo.pct : 0,
+    promoDiscount,
+    promoReason: promo.ok ? '' : promoCode ? promo.reason : '',
     shipping,
     deliverySpeed,
     deliveryZone: zone ? zone.id : null,
@@ -53,7 +65,7 @@ export function computeTotals(lines, { paymentMethod, fulfilment = 'delivery', s
     total,
     meetsMinimum: subtotal >= SITE.minOrder,
     shortfall: round2(Math.max(0, SITE.minOrder - subtotal)),
-    freeShipShortfall: round2(Math.max(0, SITE.freeShipOver - subtotal)),
+    freeShipShortfall: round2(Math.max(0, SITE.freeShipOver - subtotalAfterPromo)),
   }
 }
 

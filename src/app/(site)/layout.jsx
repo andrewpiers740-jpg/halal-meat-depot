@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SupportChat from '@/components/SupportChat'
 import CartDelegate from '@/components/CartDelegate'
+import PromoPopup from '@/components/PromoPopup'
 import { SITE } from '@/config/site'
 import { headerProps } from '@/lib/headerProps'
 import { chatProps } from '@/lib/chatProps'
@@ -16,6 +17,7 @@ export default function SiteLayout({ children }) {
       <main id="main">{children}</main>
       <Footer />
       <SupportChat {...chatProps} />
+      <PromoPopup minOrder={SITE.minOrder} />
       <CartDelegate />
     </>
   )

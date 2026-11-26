@@ -8,6 +8,8 @@ import { createHash } from 'node:crypto'
 import { CATEGORY_KEYWORDS, PAGE_KEYWORDS } from '../src/config/support-keywords.js'
 import { SITE, PRODUCTS, CATEGORIES, POSTS, COMPLIANCE, PAGE_SEO, POST_SEO, containsFocus, focusWords, containsExact, exactWords, powerWordCount, POWER_WORDS } from '../src/config/site.js'
 import { TOOLS } from '../src/lib/tools.js'
+import { computeTotals } from '../src/lib/order.js'
+import { PROMO, checkPromo, promoWindow } from '../src/config/promo.js'
 import { STATIC_PAGES } from '../src/lib/sitemaps.js'
 import { PRODUCT_KEYWORDS } from '../src/config/product-keywords.js'
 import { POST_V4 } from '../src/config/post-v4.js'
@@ -388,6 +390,35 @@ r = await post('/api/contact/', {
   fulfilment: 'pickup', paymentMethod: 'crypto', lines: [{ slug: PRODUCTS[0].slug, qty: 1 }],
 })
 check(r.status === 400, '1', `order below minimum should 400, got ${r.status}`)
+// ── Christmas discount code (owner, 2026-11-26): 15% of the meat subtotal, stacks with crypto, minimum order before the
+//    discount, free-delivery threshold after it, valid 26 Nov – 24 Dec Sydney time, re-checked on the server ──
+{
+  const carton = PRODUCTS.find((p) => p.name === 'Beef Mince Carton')
+  const inWin = new Date('2026-12-01T03:00:00Z')
+  const one = [{ slug: carton.slug, qty: 1 }]
+  const three = [{ slug: carton.slug, qty: 3 }]
+  const a = computeTotals(one, { paymentMethod: 'payid', promoCode: 'halal2026', now: inWin })
+  check(a.promoCode === PROMO.code && a.promoDiscount === Math.round(a.subtotal * PROMO.pct) / 100, 'P1', 'promo should take 15% off the meat subtotal, case-insensitively')
+  check(a.total === Math.round((a.subtotal - a.promoDiscount + a.shipping) * 100) / 100, 'P1', 'promo total wrong')
+  const b = computeTotals(three, { paymentMethod: 'crypto', promoCode: PROMO.code, now: inWin })
+  check(b.promoDiscount > 0 && b.discount > 0 && b.total === Math.round((b.subtotal - b.promoDiscount - b.discount + b.shipping) * 100) / 100, 'P2', 'promo should stack with the crypto discount')
+  const c = computeTotals([{ slug: carton.slug, qty: 2 }], { paymentMethod: 'payid', promoCode: PROMO.code, now: inWin })
+  check(c.subtotal >= SITE.freeShipOver && c.shipping === SITE.flatShip, 'P3', 'free-delivery threshold must use the subtotal AFTER the promo discount')
+  check(computeTotals(one, { paymentMethod: 'payid', promoCode: 'wrong', now: inWin }).promoDiscount === 0, 'P4', 'wrong code must not discount')
+  check(computeTotals(one, { paymentMethod: 'payid', promoCode: PROMO.code, now: new Date('2026-12-25T01:00:00Z') }).promoDiscount === 0, 'P5', 'code must expire after 24 Dec (Sydney)')
+  check(computeTotals(one, { paymentMethod: 'payid', promoCode: PROMO.code, now: new Date('2026-11-25T01:00:00Z') }).promoDiscount === 0, 'P5', 'code must not work before 26 Nov (Sydney)')
+  check(promoWindow(new Date('2026-12-24T12:30:00Z')) === 'active' && promoWindow(new Date('2026-12-24T13:30:00Z')) === 'ended', 'P5', 'promo window must run to the end of 24 Dec Sydney time')
+  const tiny = PRODUCTS.find((p) => p.price < SITE.minOrder * 0.6)
+  check(!computeTotals([{ slug: tiny.slug, qty: 1 }], { paymentMethod: 'payid', promoCode: PROMO.code, now: inWin }).meetsMinimum, 'P6', 'promo must not lower the minimum order')
+  check(!checkPromo('').ok, 'P4', 'empty code must be rejected')
+  // server rejects an order that carries a code that is not valid (never silently changes the price)
+  const pr = await post('/api/contact/', {
+    formName: 'order', orderNumber: 'HMD-PROMO2', channel: 'email', customer: { name: 'Probe', email: 'p@example.com', phone: '0400000000' },
+    address: '1 Test St, Greenacre NSW 2190', paymentMethod: 'payid', promoCode: 'NOTACODE', lines: [{ slug: carton.slug, qty: 1 }],
+  })
+  const prj = await pr.json().catch(() => ({}))
+  check(pr.status === 400 && prj.error === 'promo-invalid', 'P7', `order with an invalid promo code should 400 promo-invalid, got ${pr.status} ${prj.error}`)
+}
 for (const p of ['/api/admin/orders/', '/api/admin/enquiries/']) {
   const a = await get(p)
   check([401, 503].includes(a.status), '47', `${p} without passcode returned ${a.status}`)

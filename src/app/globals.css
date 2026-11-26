@@ -588,3 +588,26 @@ legend { font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; padding: 0; 
 .cs-k { font-size: 0.82rem; font-weight: 700; }
 .cs-p { font-size: 0.78rem; font-weight: 700; color: var(--brand); }
 .cs-r { font-size: 0.72rem; color: var(--muted, #6b6459); }
+
+/* Christmas discount pop-up + checkout code box */
+.promo-pop { position: fixed; left: 16px; bottom: 16px; z-index: 45; width: min(320px, calc(100vw - 32px)); padding: 18px 16px 14px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 30px rgba(31, 22, 21, 0.2); animation: promo-in 0.25s ease-out; }
+@keyframes promo-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .promo-pop { animation: none; } }
+@media (max-width: 600px) { .promo-pop { bottom: 84px; left: 16px; right: 16px; width: auto; } }
+.promo-x { position: absolute; top: 4px; right: 4px; width: 44px; height: 44px; border: 0; background: transparent; color: var(--muted); font-size: 1.6rem; line-height: 1; cursor: pointer; border-radius: 50%; }
+.promo-x:hover { color: var(--ink); }
+.promo-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; background: var(--tint); color: var(--brand); border: 1px solid var(--line); font-size: 0.78rem; font-weight: 700; }
+.promo-big { margin: 8px 0 2px; font-size: 1.45rem; font-weight: 800; line-height: 1.2; color: var(--ink); }
+.promo-dates { margin: 0; font-size: 0.88rem; color: var(--muted); }
+.promo-code { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0; padding: 8px 10px; border: 2px dashed var(--brand); border-radius: 10px; background: var(--tint); }
+.promo-code strong { font-size: 1.1rem; letter-spacing: 0.06em; color: var(--brand); }
+.promo-copy { min-height: 44px; padding: 6px 12px; border: 1px solid var(--brand); border-radius: 8px; background: #fff; color: var(--brand); font: inherit; font-size: 0.88rem; font-weight: 700; cursor: pointer; }
+.promo-note { margin: 8px 0 0; font-size: 0.8rem; color: var(--muted); }
+.promo-box { margin: 0 0 12px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.promo-label { display: block; margin-bottom: 6px; font-weight: 700; font-size: 0.92rem; }
+.promo-row { display: flex; gap: 8px; }
+.promo-row .input { flex: 1; min-width: 0; }
+.promo-applied { display: flex; align-items: center; justify-content: space-between; margin: 0; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--tint); color: var(--ink); }
+.promo-msg { margin: 6px 0 0; font-size: 0.88rem; min-height: 1.2em; }
+.promo-msg--ok { color: #1f6a35; }
+.promo-msg--err { color: var(--err, #a32d2d); }

@@ -39,6 +39,7 @@ export function waOrderLink(order) {
     ...order.items.map((i) => `• ${i.quantity} × ${i.name} (${i.unit}) — ${money(i.lineTotal)}`),
     '',
     `Subtotal: ${money(order.subtotal)}`,
+    ...(order.promoDiscount ? [`${order.promoLabel || 'Discount'} (code ${order.promoCode}, ${order.promoPct}%): −${money(order.promoDiscount)}`] : []),
     ...(order.discount ? [`Crypto discount (${order.discountPct}%): −${money(order.discount)}`] : []),
     `${order.deliveryLabel || 'Delivery'}: ${order.shipping ? money(order.shipping) : 'Free'}`,
     `Total: ${money(order.amountDue)}`,

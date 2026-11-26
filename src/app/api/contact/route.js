@@ -47,9 +47,12 @@ async function handleOrder(body, base) {
 
   const lines = Array.isArray(body.lines) ? body.lines.slice(0, 100) : []
   const speed = body.deliverySpeed === 'priority' ? 'priority' : 'standard'
-  const t = computeTotals(lines, { paymentMethod: method.id, fulfilment, speed, postcode: postcodeFromAddress(address) })
+  const promoCode = clean(body.promoCode, 40)
+  const t = computeTotals(lines, { paymentMethod: method.id, fulfilment, speed, postcode: postcodeFromAddress(address), promoCode })
   if (!t.items.length) return Response.json({ ok: false, error: 'empty-cart' }, { status: 400 })
   if (!t.meetsMinimum) return Response.json({ ok: false, error: 'below-minimum' }, { status: 400 })
+  // A code the customer applied that is no longer valid (expired, mistyped) must not silently change what they pay.
+  if (promoCode && !t.promoCode) return Response.json({ ok: false, error: 'promo-invalid', reason: t.promoReason }, { status: 400 })
 
   // Optional account: attach a signed-in user, or create one if asked.
   let userId = null
@@ -87,6 +90,10 @@ async function handleOrder(body, base) {
     subtotal: t.subtotal,
     discount: t.discount,
     discountPct: t.discountPct,
+    promoCode: t.promoCode,
+    promoLabel: t.promoLabel,
+    promoPct: t.promoPct,
+    promoDiscount: t.promoDiscount,
     shipping: t.shipping,
     deliverySpeed: t.deliverySpeed,
     deliveryZone: t.deliveryZone,
